@@ -1,0 +1,6 @@
+<mat-toolbar>
+    <object id="logo" data="../assets/le-monde-pas-diplomatique.svg"></object>
+    <mat-slide-toggle (change)="onDarkModeSwitched($event)">
+        <mat-icon aria-hidden="false" aria-label="theme-icon">{{themeSwitch ? "wb_sunny" : "bedtime"}}</mat-icon>
+    </mat-slide-toggle>
+</mat-toolbar>

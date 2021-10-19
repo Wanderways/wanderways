@@ -1,0 +1,8 @@
+@import "../../shared/variables";
+@import "../../../custom-angular-theme.scss";
+:host {
+    display: flex;
+    background-color: $dark-background;
+    width: 100%;
+    height: 100%;
+}
