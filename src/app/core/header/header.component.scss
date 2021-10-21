@@ -1,7 +1,12 @@
 @import "../../shared/variables";
 mat-toolbar {
-    justify-content: space-between;
-    #logo {
+    display: flex;
+    gap: 1rem;
+    app-logo {
+        display: flex;
         height: 80%;
+    }
+    #themeSlider {
+        margin-left: auto;
     }
 }

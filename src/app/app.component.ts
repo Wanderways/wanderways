@@ -7,14 +7,21 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class AppComponent {
   title = 'le-monde-pas-diplomatique';
-  private isDark = false;
+  private isDark = localStorage.getItem("dark-mode") || "false";
+
 
   @HostBinding('class')
   get themeMode(){
-    return this.isDark ? 'theme-alternate':'';
+    return (this.isDark=="true" ? 'theme-dark':'theme-light')+' app-component';
   }
 
   switchMode(isDarkMode:boolean){
-    this.isDark = isDarkMode;
+    //console.log(isDarkMode);
+    this.isDark = isDarkMode?"true":"false";
+    //console.log(this.isDark);
+    // Pas le choix, on peut pas stocker direct un boolean
+    if (window.localStorage) {
+      localStorage.setItem("dark-mode", this.isDark=="true"?"true":"false");
+    }
   }
 }

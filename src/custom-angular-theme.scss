@@ -1,9 +1,10 @@
 /**
 * Generated theme by Material Theme Generator
 * https://materialtheme.arcsine.dev
-* Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48I2ZjY2IxYSIsIj9lcjwjZmVlZmJhIiwiO2VyPCNmYmI4MGZ$LCIlPmBePCMzNDdiOTgiLCI~ZXI8I2MyZDdlMCIsIjtlcjwjMjE1ZTdifiwid2Fybj5gXjwjYmUyZDBkIiwiP2VyPCNlY2MwYjYiLCI7ZXI8I2E3MWMwN34sIj9UZXh0PCMwOTI4MzQiLCI~PTwjZmZmZmZmIiwiO1RleHQ8I2Y3ZjBkNCIsIjs9PCMwOTI4MzR$LCJmb250cz5bYEA8KC00fixgQDwoLTN$LGBAPCgtMn4sYEA8KC0xfixgQDxoZWFkbGluZX4sYEA8dGl0bGV$LGBAPHN1YiktMn4sYEA8c3ViKS0xfixgQDxib2R5LTJ$LGBAPGJvZHktMX4sYEA8YnV0dG9ufixgQDxjYXB0aW9ufixgQDxpbnB1dCIsInNpemU$bnVsbH1dLCJpY29uczxGaWxsZWQiLCI~bmVzcz5mYWxzZSwidmVyc2lvbj4xMX0=
+* Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48IzM0N2I5OCIsIj9lcjwjYzJkN2UwIiwiO2VyPCMyMTVlN2J$LCIlPmBePCNmY2NiMWEiLCI~ZXI8I2ZlZWZiYSIsIjtlcjwjZmJiODBmfiwid2Fybj5gXjwjYmUyZDBkIiwiP2VyPCNlY2MwYjYiLCI7ZXI8I2E3MWMwN34sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZWRmMWYzIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00fixgQDwoLTN$LGBAPCgtMn4sYEA8KC0xfixgQDxoZWFkbGluZX4sYEA8dGl0bGV$LGBAPHN1YiktMn4sYEA8c3ViKS0xfixgQDxib2R5LTJ$LGBAPGJvZHktMX4sYEA8YnV0dG9ufixgQDxjYXB0aW9ufixgQDxpbnB1dCIsInNpemU$bnVsbH1dLCJpY29uczxGaWxsZWQiLCI~bmVzcz50cnVlLCJ2ZXJzaW9uPjExfQ==
 */
 
+@use './app/app.component-theming' as custom-background;
 @import '~@angular/material/theming';
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -25,7 +26,7 @@ caption: mat-typography-level(12px, 20px, 400, 'Roboto', 0.0333em),
 input: mat-typography-level(inherit, 1.125, 400, 'Roboto', 1.5px));
 // Foreground Elements
 // Light Theme Text
-$dark-text: #092834;
+$dark-text: #000000;
 $dark-primary-text: rgba($dark-text,
 0.87);
 $dark-accent-text: rgba($dark-primary-text,
@@ -54,7 +55,7 @@ slider-off : rgba($dark-text, 0.26),
 slider-off-active: $dark-disabled-text,
 );
 // Dark Theme text
-$light-text: #f7f0d4;
+$light-text: #ffffff;
 $light-primary-text: $light-text;
 $light-accent-text: rgba($light-primary-text,
 0.7);
@@ -83,7 +84,7 @@ slider-off-active: rgba($light-text, 0.3),
 );
 // Background config
 // Light bg
-$light-background : #ffffff;
+$light-background : #edf1f3;
 $light-bg-darker-5 : darken($light-background,
 5%);
 $light-bg-darker-10 : darken($light-background,
@@ -94,11 +95,11 @@ $light-bg-darker-30 : darken($light-background,
 30%);
 $light-bg-lighter-5 : lighten($light-background,
 5%);
-$dark-bg-tooltip : lighten(#092834,
+$dark-bg-tooltip : lighten(#2c2c2c,
 20%);
-$dark-bg-alpha-4 : rgba(#092834,
+$dark-bg-alpha-4 : rgba(#2c2c2c,
 0.04);
-$dark-bg-alpha-12 : rgba(#092834,
+$dark-bg-alpha-12 : rgba(#2c2c2c,
 0.12);
 $mat-light-theme-background: ( background : $light-background,
 status-bar : $light-bg-darker-20,
@@ -117,7 +118,7 @@ unselected-chip : $light-bg-darker-10,
 disabled-list-option : $light-bg-darker-10,
 );
 // Dark bg
-$dark-background : #092834;
+$dark-background : #2c2c2c;
 $dark-bg-lighter-5 : lighten($dark-background,
 5%);
 $dark-bg-lighter-10 : lighten($dark-background,
@@ -126,9 +127,9 @@ $dark-bg-lighter-20 : lighten($dark-background,
 20%);
 $dark-bg-lighter-30 : lighten($dark-background,
 30%);
-$light-bg-alpha-4 : rgba(#ffffff,
+$light-bg-alpha-4 : rgba(#edf1f3,
 0.04);
-$light-bg-alpha-12 : rgba(#ffffff,
+$light-bg-alpha-12 : rgba(#edf1f3,
 0.12);
 // Background palette for dark themes.
 $mat-dark-theme-background: ( background : $dark-background,
@@ -151,37 +152,37 @@ disabled-list-option : $dark-bg-lighter-10,
 @include mat-core($fontConfig);
 // Theme Config
 body {
-    --primary-color: #fccb1a;
-    --primary-lighter-color: #feefba;
-    --primary-darker-color: #fbb80f;
-    --text-primary-color: #{$dark-primary-text};
+    --primary-color: #347b98;
+    --primary-lighter-color: #c2d7e0;
+    --primary-darker-color: #215e7b;
+    --text-primary-color: #{$light-primary-text};
     --text-primary-lighter-color: #{$dark-primary-text};
-    --text-primary-darker-color: #{$dark-primary-text};
+    --text-primary-darker-color: #{$light-primary-text};
 }
 
-$mat-primary: ( main: #fccb1a,
-lighter: #feefba,
-darker: #fbb80f,
-200: #fccb1a, // For slide toggle,
-contrast: ( main: $dark-primary-text, lighter: $dark-primary-text, darker: $dark-primary-text, ));
+$mat-primary: ( main: #347b98,
+lighter: #c2d7e0,
+darker: #215e7b,
+200: #347b98, // For slide toggle,
+contrast: ( main: $light-primary-text, lighter: $dark-primary-text, darker: $light-primary-text, ));
 $theme-primary: mat-palette($mat-primary,
 main,
 lighter,
 darker);
 body {
-    --accent-color: #347b98;
-    --accent-lighter-color: #c2d7e0;
-    --accent-darker-color: #215e7b;
-    --text-accent-color: #{$light-primary-text};
+    --accent-color: #fccb1a;
+    --accent-lighter-color: #feefba;
+    --accent-darker-color: #fbb80f;
+    --text-accent-color: #{$dark-primary-text};
     --text-accent-lighter-color: #{$dark-primary-text};
-    --text-accent-darker-color: #{$light-primary-text};
+    --text-accent-darker-color: #{$dark-primary-text};
 }
 
-$mat-accent: ( main: #347b98,
-lighter: #c2d7e0,
-darker: #215e7b,
-200: #347b98, // For slide toggle,
-contrast: ( main: $light-primary-text, lighter: $dark-primary-text, darker: $light-primary-text, ));
+$mat-accent: ( main: #fccb1a,
+lighter: #feefba,
+darker: #fbb80f,
+200: #fccb1a, // For slide toggle,
+contrast: ( main: $dark-primary-text, lighter: $dark-primary-text, darker: $dark-primary-text, ));
 $theme-accent: mat-palette($mat-accent,
 main,
 lighter,
@@ -205,16 +206,21 @@ main,
 lighter,
 darker);
 ;
-$theme: mat-dark-theme($theme-primary,
+$theme-light: mat-light-theme($theme-primary,
 $theme-accent,
 $theme-warn);
-$altTheme: mat-light-theme($theme-primary,
+$theme-dark: mat-dark-theme($theme-primary,
 $theme-accent,
 $theme-warn);
 // Theme Init
-@include angular-material-theme($theme);
-.theme-alternate {
-    @include angular-material-theme($altTheme);
+.theme-light {
+    @include angular-material-theme($theme-light);
+    @include custom-background.theme($theme-light);
+}
+
+.theme-dark {
+    @include angular-material-theme($theme-dark);
+    @include custom-background.theme($theme-dark);
 }
 
 // Specific component overrides, pieces that are not in line with the general theming

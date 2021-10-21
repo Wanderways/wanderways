@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   @Output()
   readonly darkModeSwitched = new EventEmitter();
 
-  themeSwitch : boolean = false;
+  themeSwitch : boolean = localStorage.getItem("dark-mode")=="true" ? true:false;
 
   constructor() { }
 

@@ -1,12 +1,11 @@
 @import "../../shared/variables";
 :host {
     margin-top: auto;
-    height: 3rem;
     width: 100%;
     display: flex;
     background-color: $greyer;
     color: white;
-    footer {
+    .footer {
         display: flex;
         justify-content: center;
         width: 100%;

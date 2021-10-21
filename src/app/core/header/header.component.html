@@ -1,6 +1,10 @@
-<mat-toolbar>
-    <object id="logo" data="../assets/le-monde-pas-diplomatique.svg"></object>
-    <mat-slide-toggle (change)="onDarkModeSwitched($event)">
-        <mat-icon aria-hidden="false" aria-label="theme-icon">{{themeSwitch ? "wb_sunny" : "bedtime"}}</mat-icon>
+<mat-toolbar color="primary">
+    <!-- <object id="logo" height="3rem" data="../assets/logo.svg"></object> -->
+    <app-logo></app-logo>
+    <nav>
+        <button mat-button>Basic</button>
+    </nav>
+    <mat-slide-toggle id="themeSlider" (change)="onDarkModeSwitched($event)" [checked]="themeSwitch">
+        <mat-icon aria-hidden="false" aria-label="theme-icon">{{themeSwitch ? "bedtime" : "wb_sunny"}}</mat-icon>
     </mat-slide-toggle>
 </mat-toolbar>
