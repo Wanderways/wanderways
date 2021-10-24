@@ -1,4 +1,5 @@
 import { Output, Input, EventEmitter, Component } from "@angular/core";
+import { Departement } from "./map-departements-francais/interfaces/departement";
 
 
 @Component({
@@ -43,29 +44,29 @@ export class MapToolbox {
     /**
      * Retourne une area
      */
-    @Output() areaNode = new EventEmitter<HTMLElement>();
+    @Output() foundAreaNode = new EventEmitter<HTMLElement>();
     /**
      * Retourne une array d'areas
      */
-    @Output() areasNode = new EventEmitter<HTMLElement[]>();
+    @Output() foundAreasNodes = new EventEmitter<HTMLElement[]>();
     /**
      * Retourne une zone (et ses areas)
      */
-    @Output() zoneNode = new EventEmitter<HTMLElement>();
+    @Output() foundZoneNode = new EventEmitter<HTMLElement>();
     /**
      * Retourne une array de zones (et leurs areas)
      */
-    @Output() zonesNode = new EventEmitter<HTMLElement[]>();
+    @Output() foundZonesNode = new EventEmitter<HTMLElement[]>();
 
 
     /**
      * Lance un message d'erreur.
      * @param message : Le message en question, a une valeur par défaut.
      */
-    throwError(message: string = "An error Occured"){
-        throw new Error("Map-Toolbox - Error : " + message+".");
+    // throwError(message: string = "An error Occured"){
+    //     throw new Error("Map-Toolbox - Error : " + message+".");
         
-    }
+    // }
 
 
     /**
@@ -74,11 +75,11 @@ export class MapToolbox {
      * @returns Une node
      */
     getAreaNode(numarea : string) {
-        let result = document.getElementById(this.identifier + ('' + (numarea)).toLowerCase());
+        let result = document.getElementById(this.identifier + numarea.toLowerCase());
         if(result == null || result == undefined ){
-            this.throwError("In getAreaNode, area not found for numarea");
+            // this.throwError("In getAreaNode, area not found for numarea");
         }else{
-            this.areaNode.emit(result);
+            this.foundAreaNode.emit(result);
         }
     }
 
@@ -98,16 +99,25 @@ export class MapToolbox {
      * @param {*} e : L'évenement 'keypress'
      * @returns Le département ou undefined
      */
-    getAreaByName(area_name : string) {
-        let result = this.data.find(({ dep_name }) => this.replaceSpecialChars(dep_name).toLowerCase().normalize("NFD") == (this.replaceSpecialChars(area_name)).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ''));
-        console.log(result)
+    getAreaByName(area_name : string) : Departement {
+        let result = this.data.find(({ dep_name }) => this.normalizeString(dep_name) == this.normalizeString(area_name));     
         return result;
     }
 
     getAreasFromZone(zone_name : string) {
         return this.data.filter((departement) => {
-            return (departement.zone_name.replace(/[^a-zA-Z]/g, '')).toLowerCase().normalize("NFD") == (zone_name.replace(/[^a-zA-Z]/g, '')).toLowerCase().normalize("NFD")
+            return ( this.normalizeString(zone_name) ==  this.normalizeString(zone_name));
         })
+    }
+
+    /**
+     * Permet de retourné une chaine de charactère normalisé pour pouvoir être comparée.
+     * Exemple : "Puy-de-Dôme" donne "puydedome"
+     * @param str : Le string d'entrée
+     * @returns Le string normalisé
+     */
+    normalizeString(str : string) : string{
+        return this.replaceSpecialChars(str).toLowerCase().normalize("NFD");
     }
 
     /**

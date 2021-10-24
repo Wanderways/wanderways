@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
 import { Departement } from './interfaces/departement';
@@ -17,8 +17,11 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
   
 
   ngOnChanges( changes: SimpleChanges){
-    if(changes.item){
-      this.getAreaByName(changes.item.currentValue);
+    console.log(changes)
+    if(changes.area_input){
+      let mdr = this.getAreaByName(changes.area_input.currentValue)
+      if (mdr)
+        this.getAreaNode(mdr.num_dep);
     }
   }
 
