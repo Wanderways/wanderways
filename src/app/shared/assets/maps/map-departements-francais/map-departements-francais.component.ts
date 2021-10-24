@@ -1,4 +1,6 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { InputSubjectService } from 'src/app/shared/services/utilitary/input-subject.service';
+import { NodeSubjectService } from 'src/app/shared/services/utilitary/node-subject.service';
 import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
 import { Departement } from './interfaces/departement';
@@ -14,22 +16,14 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 
   data : Departement[] = data;
 
+  constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService){
+    super(inputSubjectService, nodeSubjectService);
+  }
+
   
 
-  ngOnChanges( changes: SimpleChanges){
-    console.log(changes)
-    if(changes.area_input){
-      let mdr = this.getAreaByName(changes.area_input.currentValue)
-      if (mdr)
-        this.getAreaNode(mdr.num_dep);
-    }
-  }
-
-  constructor() {
-    super();
-  }
-
   ngOnInit(): void {
+    super.ngOnInit();
     super.initialize("Départements Français (avec DotTom, hors Collectivité d'outre-mer française)", "departement-", data, "region");
   }
 }

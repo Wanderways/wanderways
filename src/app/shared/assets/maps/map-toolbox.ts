@@ -1,11 +1,13 @@
-import { Output, Input, EventEmitter, Component } from "@angular/core";
+import { Output, Input, EventEmitter, Component, OnInit } from "@angular/core";
+import { InputSubjectService } from "../../services/utilitary/input-subject.service";
+import { NodeSubjectService } from "../../services/utilitary/node-subject.service";
 import { Departement } from "./map-departements-francais/interfaces/departement";
 
 
 @Component({
     template:``
 })
-export class MapToolbox {
+export class MapToolbox implements OnInit {
 
     /**
      * Point vocabulaire
@@ -18,6 +20,22 @@ export class MapToolbox {
     identifier : string = "";
     data : any[] = [];
     area_identifier : string = ""
+    private inputSubjectService :InputSubjectService;
+    private nodeSubjectService : NodeSubjectService;
+
+    constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService ){
+        this.inputSubjectService = inputSubjectService;
+        this.nodeSubjectService = nodeSubjectService;
+    }
+
+    ngOnInit(){
+        this.inputSubjectService.inputChange.subscribe((value)=>{
+            this.getAreaNode(value);
+            let mdr = this.getAreaByName(value)
+            if (mdr)
+                this.getAreaNode(mdr.num_dep);
+        });
+    }
 
     protected _area_input : string = "";
     @Input() 
@@ -74,12 +92,14 @@ export class MapToolbox {
      * @param {*} numdep : Le numéro du département 
      * @returns Une node
      */
-    getAreaNode(numarea : string) {
-        let result = document.getElementById(this.identifier + numarea.toLowerCase());
-        if(result == null || result == undefined ){
-            // this.throwError("In getAreaNode, area not found for numarea");
+    getAreaNode(area : string) {
+        let result = document.getElementById(this.identifier + area.toLowerCase());
+        console.log('test')
+        if(result){// Si on a bien une valeur
+            console.log("yeah")
+            this.nodeSubjectService.setNodeValue(result)
         }else{
-            this.foundAreaNode.emit(result);
+            console.error("Erreur : Aucun département trouvé pour : "+area)
         }
     }
 

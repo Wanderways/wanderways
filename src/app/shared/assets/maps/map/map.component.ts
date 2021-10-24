@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { BehaviorSubject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { MapsType } from './MapsType.enum';
 import { ActionType } from './ActionType.enum';
 
@@ -11,7 +11,8 @@ import { ActionType } from './ActionType.enum';
 })
 export class MapComponent {
 
-  input_value = new BehaviorSubject<string>("");
+  input_value$ = new Subject<string>();
+
 
   /**
    * L'enum ActionType, pour qu'elle soit accessible dans le template
@@ -32,16 +33,6 @@ export class MapComponent {
   @Input() public  map : MapsType = MapsType.DEPARTEMENTS_FRANCAIS;
 
   /**
-   * 
-   */
-  area_node_to_process : HTMLElement = document.createElement("div");
-
-  /**
-   * Valeur rentrée, pour certains jeux comme les devinettes ou les contre la montre.
-   */
-  area_input : string = "";
-
-  /**
    * Permet de savoir si une map donnée est celle configurée.
    * @param map : La map donnée.
    * @returns Un boolean, true si c'est la map configurée, false sinon.
@@ -60,7 +51,7 @@ export class MapComponent {
   }
 
   areaFound( htmlElement : HTMLElement ){
-    console.log(htmlElement)
-    this.area_node_to_process = htmlElement;
+    // console.log(htmlElement)
+    // this.area_node_to_process = htmlElement;
   }
 }

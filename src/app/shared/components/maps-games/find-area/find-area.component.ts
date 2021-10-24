@@ -1,5 +1,7 @@
 import { Component, Input, OnInit, Output,EventEmitter, SimpleChanges} from '@angular/core';
-
+import { DataSubjectService } from 'src/app/shared/services/utilitary/data-subject.service';
+import { InputSubjectService } from 'src/app/shared/services/utilitary/input-subject.service';
+import { NodeSubjectService } from 'src/app/shared/services/utilitary/node-subject.service';
 @Component({
   selector: 'app-find-area',
   templateUrl: './find-area.component.html',
@@ -8,42 +10,39 @@ import { Component, Input, OnInit, Output,EventEmitter, SimpleChanges} from '@an
 export class FindAreaComponent implements OnInit {
 
   @Input() input_message : string = "";
+  @Input() fill_color : string = "";
   @Input() area_input : string = "";
   // @Input() area_node_to_color : HTMLElement | null = null;
   @Output() area_inputChange : EventEmitter<string> = new EventEmitter();
   value : any = '';
 
-  private _area_node_to_color : HTMLElement = document.createElement('div');
-  @Input() 
-    public set area_node_to_color(area_node_to_color : HTMLElement) {
-      this._area_node_to_color = area_node_to_color; // On met à jour la node à colorer
-      this.colorArea(this._area_node_to_color) // On colore la node
-      this._area_node_to_color = area_node_to_color; // On remet la node à zéro
-    };
-
-  constructor() { }
+  constructor(private inputSubjectService :InputSubjectService,
+	private nodeSubjectService : NodeSubjectService,
+	private dataSubjectService : DataSubjectService) {}
 
 
-  ngOnInit(): void {
-  }
+  ngOnInit(){
+    this.nodeSubjectService.nodeChange.subscribe((value)=>{
+      console.log(value)
+      this.colorArea(value);
+    });
+}
 
   clearInput(){
     this.value = "";
   }
 
   inputChanged(e : string){
-    this.area_inputChange.emit(e);
+    this.inputSubjectService.setInputValue(e);
+    // this.area_inputChange.emit(e);
   }
 
   /**
    * Permet de colorer une area donné.
    * @param area : Une area à colorer.
    */
-  colorArea(area : HTMLElement | null){
-    area!.style.fill = "red";
-    this.clearInput();
-    if(typeof(area) == typeof(HTMLElement) ){
-      area!.style.fill = "red";
-    }
+  colorArea(area : HTMLElement){
+      this.clearInput();
+      area!.style.fill = this.fill_color;
   }
 }
