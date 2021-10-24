@@ -1,0 +1,43 @@
+:host {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    svg {
+        .text {
+            font-size: 10px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            fill: #000000;
+            fill-opacity: 1;
+            stroke: none;
+            stroke-width: 1px;
+            stroke-linecap: butt;
+            stroke-linejoin: miter;
+            stroke-opacity: 1;
+            font-family: Sans;
+        }
+        .separator {
+            fill: none;
+            fill-rule: evenodd;
+            stroke: white;
+            stroke-width: 1px;
+            stroke-linecap: butt;
+            stroke-linejoin: miter;
+            stroke-opacity: 1;
+        }
+        .land {
+            fill: grey;
+            stroke: white;
+            stroke-width: 0.5px;
+        }
+        .idf-small {
+            display: none;
+        }
+        .idf-big {
+            display: unset;
+        }
+    }
+}

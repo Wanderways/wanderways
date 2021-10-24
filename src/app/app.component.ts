@@ -6,9 +6,8 @@ import { Component, HostBinding } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'le-monde-pas-diplomatique';
+  public title = 'le-monde-pas-diplomatique';
   private isDark = localStorage.getItem("dark-mode") || "false";
-
 
   @HostBinding('class')
   get themeMode(){
