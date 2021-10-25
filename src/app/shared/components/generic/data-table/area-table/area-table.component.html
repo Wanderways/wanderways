@@ -1,0 +1,25 @@
+<table mat-table [dataSource]="dataSource" class="area-table">
+
+    <ng-container matColumnDef="numero">
+        <th mat-header-cell *matHeaderCellDef> Numéro </th>
+        <td mat-cell *matCellDef="let element"> {{element.num_area}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="region">
+        <th mat-header-cell *matHeaderCellDef> Région </th>
+        <td mat-cell *matCellDef="let element"> {{element.zone.zone_name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="departement">
+        <th mat-header-cell *matHeaderCellDef> Département </th>
+        <td mat-cell *matCellDef="let element"> {{element.area_name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="logo">
+        <th mat-header-cell *matHeaderCellDef> Logo </th>
+        <td mat-cell *matCellDef="let element"> <img style="height: 3rem; margin: 1rem;" src="https://www.regions-et-departements.fr/images/logos-departements/thumbs/{{element.num_area}}-logo-{{replaceSpecialChars(element.area_name)}}.png"> </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -4,7 +4,7 @@ import { MaterialModule } from 'src/app/material.module';
 
 import { MainPageComponent } from './main-page.component';
 
-import { MapsModule } from 'src/app/shared/assets/maps/maps.module';
+import { MapsModule } from 'src/app/shared/components/maps/maps.module';
 import { MapsGamesModule } from 'src/app/shared/components/maps-games/maps-games.module';
 
 @NgModule({

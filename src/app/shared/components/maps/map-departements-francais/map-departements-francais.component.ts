@@ -4,8 +4,8 @@ import { InputSubjectService } from 'src/app/shared/services/utilitary/input-sub
 import { NodeSubjectService } from 'src/app/shared/services/utilitary/node-subject.service';
 import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
-import { Departement } from './interfaces/departement';
-import { Region } from './interfaces/region';
+import { Area } from './interfaces/area';
+import { Zone } from './interfaces/zone';
 
 
 @Component({
@@ -15,7 +15,7 @@ import { Region } from './interfaces/region';
 })
 export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnInit {
 
-  data : Departement[] = data;
+  data : Area[] = data;
 
   constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService){
     super(inputSubjectService, nodeSubjectService, dataSubjectService);
@@ -23,6 +23,9 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 
   ngOnInit(): void {
     super.ngOnInit();
-    super.initialize("Départements Français (avec DotTom, hors Collectivité d'outre-mer française)", "departement-", data, "region");
+    super.setMapMetaData( "Départements Français",
+                          "Avec DotTom, hors Collectivité d'outre-mer française",
+                          "Département",
+                          "Région");
   }
 }

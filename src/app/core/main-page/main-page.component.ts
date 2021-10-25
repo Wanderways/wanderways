@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MapsType } from 'src/app/shared/assets/maps/map/MapsType.enum';
-import { ActionType } from 'src/app/shared/assets/maps/map/ActionType.enum';
+import { MapsType } from 'src/app/shared/components/maps/map/MapsType.enum';
+import { ActionType } from 'src/app/shared/components/maps/map/ActionType.enum';
 
 @Component({
   selector: 'app-main-page',
@@ -13,6 +13,7 @@ export class MainPageComponent implements OnInit {
 
   actionType : ActionType = ActionType.InputGame;
   mapType : MapsType = MapsType.DEPARTEMENTS_FRANCAIS;
+  table : boolean = false;
 
   ngOnInit(): void {
   }

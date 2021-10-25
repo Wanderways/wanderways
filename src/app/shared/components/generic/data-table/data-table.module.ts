@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SnackBarComponent } from './snack-bar/snack-bar.component';
-import { DataTableModule } from './data-table/data-table.module';
+import { AreaTableComponent } from './area-table/area-table.component';
 import { MaterialModule } from 'src/app/material.module';
 
-
+let components : any[] = [
+  AreaTableComponent
+];
 
 @NgModule({
   declarations: [
-    SnackBarComponent
+    ...components
   ],
   imports: [
     CommonModule,
-    DataTableModule,
     MaterialModule
+  ],
+  exports:[
+    ...components
   ]
 })
-export class GenericModule { }
+export class DataTableModule { }

@@ -2,7 +2,8 @@ import { Component, OnInit } from "@angular/core";
 import { DataSubjectService } from "../../services/utilitary/data-subject.service";
 import { InputSubjectService } from "../../services/utilitary/input-subject.service";
 import { NodeSubjectService } from "../../services/utilitary/node-subject.service";
-import { Departement } from "./map-departements-francais/interfaces/departement";
+import { Area } from "./map-departements-francais/interfaces/area";
+import { MapMetadata } from "./map/MapMetaData.interface";
 
 
 @Component({
@@ -20,6 +21,12 @@ export class MapToolbox implements OnInit {
     /**
      * Données de base.
      */
+    mapMetaData : MapMetadata = {
+        map_name : "",
+        map_details : "",
+        area_identifier : "",
+        zone_identifier : ""
+    };
     name : string = "";
     identifier : string = "";
     data : any[] = [];
@@ -32,7 +39,7 @@ export class MapToolbox implements OnInit {
     private nodeSubjectService : NodeSubjectService;
     private dataSubjectService : DataSubjectService;
 
-    constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService ){
+    constructor( inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService ){
         this.inputSubjectService = inputSubjectService;
         this.nodeSubjectService = nodeSubjectService;
         this.dataSubjectService = dataSubjectService;
@@ -45,33 +52,35 @@ export class MapToolbox implements OnInit {
         this.inputSubjectService.inputChange.subscribe((value)=>{
             let area = this.getAreaByName(value);
             if (area){
-                this.getAreaNode(area.num_dep);
+                this.getAreaNode(area.num_area);
             }
         });
         this.dataSubjectService.setsourceDataValue(this.data);
     }
 
     /**
-     * Initialiseur de la class parente "MapToolbox".
-     * @param name : Le nom de la carte.
-     * @param identifier : Le préfixe d'identification de chaque zone du découpage.
-     * @param area : Le Json contenant toutes les informations relatives à la carte.
-     * @param area_identifier : Le préfixe d'identification des regroupemenrs de zones.
+     * Initialiseur des métas-données de la carte.
+     * @param map_name 
+     * @param map_details 
+     * @param area_identifier 
+     * @param zone_identifier 
      */
-    initialize(name : string, identifier : string, data : any[], area_identifier : string, maxheight : string = ''){
-        this.name = name;
-        this.identifier = identifier
-        this.data = data;
-        this.area_identifier = area_identifier;
+    setMapMetaData(map_name : string =  "",map_details : string = "",area_identifier : string = "",zone_identifier : string = "") : MapMetadata{
+        let mapMetaData : MapMetadata = {
+            "map_name" : map_name,
+            "map_details" : map_details,
+            "area_identifier" : area_identifier,
+            "zone_identifier" : zone_identifier
+        };
+        return mapMetaData;
     }
-
 
     /**
      * Envoie la node trouvé au service.
-     * @param {*} numdep : Le numéro du département .
+     * @param {*} numarea : Le numéro du département .
      */
     getAreaNode(area : string) {
-        let result = document.getElementById(this.identifier + area.toLowerCase());
+        let result = document.getElementById("area-" + area.toLowerCase());
         if(result){// Si on a bien une valeur.
             this.nodeSubjectService.setNodeValue(result)
         }
@@ -83,7 +92,7 @@ export class MapToolbox implements OnInit {
      * @returns Le département ou undefined.
      */
     getAreaInfoByCode(code : string) : HTMLElement | null {
-        let result = this.data.find(({ num_dep }) => num_dep == code);
+        let result = this.data.find(({ num_area }) => num_area == code);
         return result;
     }
 
@@ -92,8 +101,8 @@ export class MapToolbox implements OnInit {
      * @param area_name : Le nom de l'area.
      * @returns Le département ou undefined.
      */
-    getAreaByName(area_name : string) : Departement {
-        let result = this.data.find(({ dep_name }) => this.normalizeString(dep_name) == this.normalizeString(area_name)); 
+    getAreaByName(input_area_name : string) : Area {
+        let result = this.data.find(({ area_name }) => this.normalizeString(input_area_name) == this.normalizeString(area_name)); 
         console.log("C'est une réussite")
         if(result){// Si on a bien une valeur.
             this.dataSubjectService.setCurrentdataValue(result);
@@ -107,8 +116,8 @@ export class MapToolbox implements OnInit {
      * @returns 
      */
     getAreasFromZone(zone_name : string) {
-        return this.data.filter(({ dep_name }) => {
-            ( this.normalizeString(dep_name) ==  this.normalizeString(zone_name));
+        return this.data.filter(({ area_name }) => {
+            ( this.normalizeString(area_name) ==  this.normalizeString(zone_name));
         })
     }
 

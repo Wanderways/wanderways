@@ -33,6 +33,11 @@ export class MapComponent {
   @Input() public  map : MapsType = MapsType.DEPARTEMENTS_FRANCAIS;
 
   /**
+   * La carte que l'on souhaite afficher
+   */
+   @Input() public  table : boolean = false;
+
+  /**
    * Permet de savoir si une map donnée est celle configurée.
    * @param map : La map donnée.
    * @returns Un boolean, true si c'est la map configurée, false sinon.
