@@ -1,4 +1,5 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { DataSubjectService } from 'src/app/shared/services/utilitary/data-subject.service';
 import { InputSubjectService } from 'src/app/shared/services/utilitary/input-subject.service';
 import { NodeSubjectService } from 'src/app/shared/services/utilitary/node-subject.service';
 import { MapToolbox } from '../map-toolbox';
@@ -16,11 +17,9 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 
   data : Departement[] = data;
 
-  constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService){
-    super(inputSubjectService, nodeSubjectService);
+  constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService){
+    super(inputSubjectService, nodeSubjectService, dataSubjectService);
   }
-
-  
 
   ngOnInit(): void {
     super.ngOnInit();

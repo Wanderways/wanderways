@@ -1,4 +1,5 @@
-import { Output, Input, EventEmitter, Component, OnInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { DataSubjectService } from "../../services/utilitary/data-subject.service";
 import { InputSubjectService } from "../../services/utilitary/input-subject.service";
 import { NodeSubjectService } from "../../services/utilitary/node-subject.service";
 import { Departement } from "./map-departements-francais/interfaces/departement";
@@ -10,43 +11,48 @@ import { Departement } from "./map-departements-francais/interfaces/departement"
 export class MapToolbox implements OnInit {
 
     /**
-     * Point vocabulaire
+     * Point vocabulaire :
      *  - Une Area est l'équivalent d'un département, d'une préfecture.
      *  - Une Zone est l'équivalent d'une région, ou d'un regroupement d'area plus généralement.
      *  - Un Country est un ensemble de Zone.  
      */
 
+    /**
+     * Données de base.
+     */
     name : string = "";
     identifier : string = "";
     data : any[] = [];
     area_identifier : string = ""
-    private inputSubjectService :InputSubjectService;
-    private nodeSubjectService : NodeSubjectService;
-
-    constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService ){
-        this.inputSubjectService = inputSubjectService;
-        this.nodeSubjectService = nodeSubjectService;
-    }
-
-    ngOnInit(){
-        this.inputSubjectService.inputChange.subscribe((value)=>{
-            this.getAreaNode(value);
-            let mdr = this.getAreaByName(value)
-            if (mdr)
-                this.getAreaNode(mdr.num_dep);
-        });
-    }
-
-    protected _area_input : string = "";
-    @Input() 
-    public set area_input(area_input : string) { this._area_input = area_input; this.getAreaByName(this._area_input) }
-    public get area_input() {return  this._area_input; }
-
-    @Input() zone_input : string = "";
-    @Input() country_input : string = "";
 
     /**
-     * Initialiseur de la class parente "MapToolbox"
+     * Initialisation des services.
+     */
+    private inputSubjectService :InputSubjectService;
+    private nodeSubjectService : NodeSubjectService;
+    private dataSubjectService : DataSubjectService;
+
+    constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService ){
+        this.inputSubjectService = inputSubjectService;
+        this.nodeSubjectService = nodeSubjectService;
+        this.dataSubjectService = dataSubjectService;
+    }
+
+    /**
+     * Mise en place de la surveillance des données.
+     */
+    ngOnInit(){
+        this.inputSubjectService.inputChange.subscribe((value)=>{
+            let area = this.getAreaByName(value);
+            if (area){
+                this.getAreaNode(area.num_dep);
+            }
+        });
+        this.dataSubjectService.setsourceDataValue(this.data);
+    }
+
+    /**
+     * Initialiseur de la class parente "MapToolbox".
      * @param name : Le nom de la carte.
      * @param identifier : Le préfixe d'identification de chaque zone du découpage.
      * @param area : Le Json contenant toutes les informations relatives à la carte.
@@ -59,82 +65,58 @@ export class MapToolbox implements OnInit {
         this.area_identifier = area_identifier;
     }
 
-    /**
-     * Retourne une area
-     */
-    @Output() foundAreaNode = new EventEmitter<HTMLElement>();
-    /**
-     * Retourne une array d'areas
-     */
-    @Output() foundAreasNodes = new EventEmitter<HTMLElement[]>();
-    /**
-     * Retourne une zone (et ses areas)
-     */
-    @Output() foundZoneNode = new EventEmitter<HTMLElement>();
-    /**
-     * Retourne une array de zones (et leurs areas)
-     */
-    @Output() foundZonesNode = new EventEmitter<HTMLElement[]>();
-
 
     /**
-     * Lance un message d'erreur.
-     * @param message : Le message en question, a une valeur par défaut.
-     */
-    // throwError(message: string = "An error Occured"){
-    //     throw new Error("Map-Toolbox - Error : " + message+".");
-        
-    // }
-
-
-    /**
-     * Retourne la node associé au numéro donné
-     * @param {*} numdep : Le numéro du département 
-     * @returns Une node
+     * Envoie la node trouvé au service.
+     * @param {*} numdep : Le numéro du département .
      */
     getAreaNode(area : string) {
         let result = document.getElementById(this.identifier + area.toLowerCase());
-        console.log('test')
-        if(result){// Si on a bien une valeur
-            console.log("yeah")
+        if(result){// Si on a bien une valeur.
             this.nodeSubjectService.setNodeValue(result)
-        }else{
-            console.error("Erreur : Aucun département trouvé pour : "+area)
         }
     }
 
     /**
-     * Retourne le démartement associé au numéro donné
-     * @param {*} code : Le numéro du département
-     * @returns Le département ou undefined
+     * Retourne le démartement associé au numéro donné.
+     * @param {*} code : Le numéro du département.
+     * @returns Le département ou undefined.
      */
     getAreaInfoByCode(code : string) : HTMLElement | null {
         let result = this.data.find(({ num_dep }) => num_dep == code);
         return result;
     }
 
-
     /**
-     * Retourne le département si il existe ou retourne undefined
-     * @param {*} e : L'évenement 'keypress'
-     * @returns Le département ou undefined
+     * Retourne le département si il existe ou retourne undefined.
+     * @param area_name : Le nom de l'area.
+     * @returns Le département ou undefined.
      */
     getAreaByName(area_name : string) : Departement {
-        let result = this.data.find(({ dep_name }) => this.normalizeString(dep_name) == this.normalizeString(area_name));     
+        let result = this.data.find(({ dep_name }) => this.normalizeString(dep_name) == this.normalizeString(area_name)); 
+        console.log("C'est une réussite")
+        if(result){// Si on a bien une valeur.
+            this.dataSubjectService.setCurrentdataValue(result);
+        }    
         return result;
     }
 
+    /**
+     * Retourne les areas inféodées à une zone.
+     * @param zone_name 
+     * @returns 
+     */
     getAreasFromZone(zone_name : string) {
-        return this.data.filter((departement) => {
-            return ( this.normalizeString(zone_name) ==  this.normalizeString(zone_name));
+        return this.data.filter(({ dep_name }) => {
+            ( this.normalizeString(dep_name) ==  this.normalizeString(zone_name));
         })
     }
 
     /**
      * Permet de retourné une chaine de charactère normalisé pour pouvoir être comparée.
-     * Exemple : "Puy-de-Dôme" donne "puydedome"
-     * @param str : Le string d'entrée
-     * @returns Le string normalisé
+     * Exemple : "Puy-de-Dôme" donne "puydedome".
+     * @param str : Le string d'entrée.
+     * @returns Le string normalisé.
      */
     normalizeString(str : string) : string{
         return this.replaceSpecialChars(str).toLowerCase().normalize("NFD");

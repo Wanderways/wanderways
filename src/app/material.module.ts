@@ -10,6 +10,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 let mat_modules : any[] = [
   MatButtonModule,
@@ -18,7 +19,8 @@ let mat_modules : any[] = [
   MatSlideToggleModule,
   MatIconModule,
   MatCardModule,
-  MatInputModule
+  MatInputModule,
+  MatSnackBarModule
 ];
 
 

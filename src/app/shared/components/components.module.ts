@@ -12,7 +12,8 @@ let child_modules : any[] = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     ...child_modules
