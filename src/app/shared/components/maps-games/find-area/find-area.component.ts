@@ -38,7 +38,7 @@ export class FindAreaComponent implements OnInit {
                     SnackBarComponent,
                      {
                          data : {message:"Vous avez déjà trouvé : "+value.dep_name,action:"Okay..."},
-                         duration: 1000
+                         duration: 2000
                   })
 			}
 		});
