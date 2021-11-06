@@ -4,6 +4,7 @@ import { InputSubjectService } from 'src/app/shared/services/utilitary/input-sub
 import { NodeSubjectService } from 'src/app/shared/services/utilitary/node-subject.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { SnackBarComponent } from '../../generic/snack-bar/snack-bar.component';
+import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
 @Component({
     selector: 'app-find-area',
     templateUrl: './find-area.component.html',
@@ -21,27 +22,17 @@ export class FindAreaComponent implements OnInit {
     constructor(private inputSubjectService :InputSubjectService,
 		private nodeSubjectService : NodeSubjectService,
 		private dataSubjectService : DataSubjectService,
+        private stringFactoryService : StringFactoryService,
 		private _snackBar: MatSnackBar) {}
 
 	/**
 	 * Lance la subscription aux différents services.
 	 */
     ngOnInit(){
-		this.dataSubjectService.currentdataChange.subscribe((value)=>{this.current_data = value;});
-		this.nodeSubjectService.nodeChange.subscribe((value)=>{this.colorArea(value);});
-		this.dataSubjectService.currentdataChange.subscribe((value)=>{
-			console.log("yeah")
-			if(!this.dataSubjectService.isInFinalData(value)){
-				this.dataSubjectService.addDataToFinalData(value);
-			}else{
-                this._snackBar.openFromComponent(
-                    SnackBarComponent,
-                     {
-                         data : {message:"Vous avez déjà trouvé : "+value.dep_name,action:"Okay..."},
-                         duration: 2000
-                  })
-			}
-		});
+        // On surveille si une node est à colorer
+		this.nodeSubjectService.nodeChange.subscribe((value)=>{
+            this.colorArea(value);
+        });
     }
 
 
@@ -57,7 +48,35 @@ export class FindAreaComponent implements OnInit {
      * @param value : La valeur de l'input.
      */
     inputChanged(value : string){
-        this.inputSubjectService.setInputValue(value);
+        //this.inputSubjectService.setInputValue(value);
+        
+        if(this.dataSubjectService.isValidData(value)){
+            console.log("inputChanged : isValidData - Data est dans la liste des valeurs");
+            console.log(value);
+            
+            if(!this.dataSubjectService.isInFinalData(value)){
+                this.inputSubjectService.setInputValue(value);
+
+                // @TODO ajouter la valeur 
+                this.dataSubjectService.addDataToFinalDataFromName(value);
+            }else{ 
+                // Si il existe un nom allant plus loin mais prenant la même base, alors on ne fait rien
+    
+                // Sinon on annonce au joueur qu'il a déjà trouvé l'area
+                console.log(value);
+                
+                let snackMessage = "Vous avez déjà trouvé : "+value;
+                this._snackBar.openFromComponent(
+                    SnackBarComponent,
+                     {
+                         data : {message:snackMessage ,action:"Okay..."}, // Message et message du bouton
+                         duration: 2000 // Durée de deux secondes
+                  })
+            }
+        }
+
+
+        
     }
 
     /**

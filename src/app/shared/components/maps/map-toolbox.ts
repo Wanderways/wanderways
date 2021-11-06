@@ -49,10 +49,12 @@ export class MapToolbox implements OnInit {
      * Mise en place de la surveillance des données.
      */
     ngOnInit(){
+        // On surveille la liste des valeur mise en zone input
         this.inputSubjectService.inputChange.subscribe((value)=>{
+            // Si la valeur en input correspond à une zone/area, alors on récupère la node associé
             let area = this.getAreaByName(value);
             if (area){
-                this.getAreaNode(area.num_area);
+                this.getAreaNode(area.num);
             }
         });
         this.dataSubjectService.setsourceDataValue(this.data);
@@ -76,20 +78,20 @@ export class MapToolbox implements OnInit {
     }
 
     /**
-     * Envoie la node trouvé au service.
-     * @param {*} numarea : Le numéro du département .
+     * Envoie la node trouvé au service
+     * @param {*} numarea : Le numéro du département
      */
     getAreaNode(area : string) {
         let result = document.getElementById("area-" + area.toLowerCase());
-        if(result){// Si on a bien une valeur.
+        if(result){// Si on a bien une valeur
             this.nodeSubjectService.setNodeValue(result)
         }
     }
 
     /**
-     * Retourne le démartement associé au numéro donné.
-     * @param {*} code : Le numéro du département.
-     * @returns Le département ou undefined.
+     * Retourne le démartement associé au numéro donné
+     * @param {*} code : Le numéro du département
+     * @returns Le département ou undefined
      */
     getAreaInfoByCode(code : string) : HTMLElement | null {
         let result = this.data.find(({ num_area }) => num_area == code);
@@ -97,12 +99,14 @@ export class MapToolbox implements OnInit {
     }
 
     /**
-     * Retourne le département si il existe ou retourne undefined.
-     * @param area_name : Le nom de l'area.
-     * @returns Le département ou undefined.
+     * Retourne le département si il existe ou retourne undefined
+     * @param area_name : Le nom de l'area
+     * @returns Le département ou undefined
      */
     getAreaByName(input_area_name : string) : Area {
-        let result = this.data.find(({ area_name }) => this.normalizeString(input_area_name) == this.normalizeString(area_name)); 
+        console.log(input_area_name);
+        
+        let result = this.data.find(({ name }) => this.normalizeString(input_area_name) == this.normalizeString(name)); 
         console.log("C'est une réussite")
         if(result){// Si on a bien une valeur.
             this.dataSubjectService.setCurrentdataValue(result);
@@ -111,30 +115,30 @@ export class MapToolbox implements OnInit {
     }
 
     /**
-     * Retourne les areas inféodées à une zone.
+     * Retourne les areas inféodées à une zone
      * @param zone_name 
      * @returns 
      */
     getAreasFromZone(zone_name : string) {
-        return this.data.filter(({ area_name }) => {
-            ( this.normalizeString(area_name) ==  this.normalizeString(zone_name));
+        return this.data.filter(({ name }) => {
+            ( this.normalizeString(name) ==  this.normalizeString(zone_name));
         })
     }
 
     /**
-     * Permet de retourné une chaine de charactère normalisé pour pouvoir être comparée.
-     * Exemple : "Puy-de-Dôme" donne "puydedome".
-     * @param str : Le string d'entrée.
-     * @returns Le string normalisé.
+     * Permet de retourner une chaine de charactère normalisé pour pouvoir être comparée
+     * Exemple : "Puy-de-Dôme" donne "puydedome"
+     * @param str : Le string d'entrée
+     * @returns Le string normalisé
      */
     normalizeString(str : string) : string{
         return this.replaceSpecialChars(str).toLowerCase().normalize("NFD");
     }
 
     /**
-     * Permet de remplacer des char ayant des accents par leurs équivalent sans accent.
-     * @param str : La chaîne de charactères dont on veut remplacer ceux accentuées.
-     * @returns Le string sans les accents.
+     * Permet de remplacer des char ayant des accents par leurs équivalent sans accent
+     * @param str : La chaîne de charactères dont on veut remplacer ceux accentuées
+     * @returns Le string sans les accents
      */
     replaceSpecialChars(str : string){
         return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '') // Remove accents

@@ -1,6 +1,6 @@
 import { Zone } from "./zone";
 export interface Area{
-    num_area : string;
-    area_name : string;
+    num : string;
+    name : string;
     zone : Zone;
 }
