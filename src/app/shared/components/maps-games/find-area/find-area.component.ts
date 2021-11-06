@@ -51,32 +51,27 @@ export class FindAreaComponent implements OnInit {
         //this.inputSubjectService.setInputValue(value);
         
         if(this.dataSubjectService.isValidData(value)){
-            console.log("inputChanged : isValidData - Data est dans la liste des valeurs");
-            console.log(value);
-            
             if(!this.dataSubjectService.isInFinalData(value)){
                 this.inputSubjectService.setInputValue(value);
-
-                // @TODO ajouter la valeur 
                 this.dataSubjectService.addDataToFinalDataFromName(value);
+                // @TODO REFA, possible duplicata
+                this.clearInput();
             }else{ 
                 // Si il existe un nom allant plus loin mais prenant la même base, alors on ne fait rien
-    
-                // Sinon on annonce au joueur qu'il a déjà trouvé l'area
-                console.log(value);
-                
-                let snackMessage = "Vous avez déjà trouvé : "+value;
-                this._snackBar.openFromComponent(
-                    SnackBarComponent,
-                     {
-                         data : {message:snackMessage ,action:"Okay..."}, // Message et message du bouton
-                         duration: 2000 // Durée de deux secondes
-                  })
+                if(this.dataSubjectService.extendedNameExist(value)){
+                    console.log("On a détecté que le nom existe sous une forme étendue");
+                }else{// Sinon on annonce au joueur qu'il a déjà trouvé l'area
+                    console.log("On a pas détecté que le nom existe sous une forme étendue");
+                    let snackMessage = "Vous avez déjà trouvé : "+value;
+                    this._snackBar.openFromComponent(
+                        SnackBarComponent,
+                        {
+                            data : {message:snackMessage ,action:"Okay..."}, // Message et message du bouton
+                            duration: 2000 // Durée de deux secondes
+                    })
+                }
             }
-        }
-
-
-        
+        }  
     }
 
     /**

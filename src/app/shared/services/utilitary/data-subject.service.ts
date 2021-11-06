@@ -60,21 +60,27 @@ export class DataSubjectService {
     }
     /**
      * Permet de savoir si l'objet donné fait partie des valeur de la liste de base
-     * @param obj : L'objet à vérifier.
+     * @param obj : Le nom à vérifier.
      * @returns Vrai si l'objet est dans la liste, faux sinon.
      */
-    isValidData(obj : any) : boolean{
-        return this.sourceData.find((value)=>{return this.stringFactoryService.compareNormalizedStrings(value.name , obj)});
+    isValidData(name : string) : boolean{
+        return this.sourceData.find((value)=>{return this.stringFactoryService.compareNormalizedStrings(value.name , name)});
     }
     /**
      * Permet de savoir si l'objet donné figure déjà parmis les données trouvées.
-     * @param obj : L'objet à vérifier.
+     * @param obj : Le nom à vérifier.
      * @returns Vrai si l'objet est dans la liste, faux sinon.
      */
     isInFinalData(name : string) : boolean{
-        console.log(this.finalData)
         return this.finalData.find((value)=>{
-        return this.stringFactoryService.compareNormalizedStrings(value.name , name)
+            return this.stringFactoryService.compareNormalizedStrings(value.name , name)
+        });
+    }
+
+    extendedNameExist(name : string){
+        var regex = new RegExp(this.stringFactoryService.replaceSpecialChars(name)+'.+');
+        return this.sourceData.find((value)=>{
+            return this.stringFactoryService.replaceSpecialChars(value.name).match(regex);
         });
     }
 }
