@@ -1,4 +1,19 @@
-<app-map-departements-francais *ngIf="isConfiguredMap(MapsType.DEPARTEMENTS_FRANCAIS)" style="height:70vh"></app-map-departements-francais>
-<!-- <app-map-departements-francais *ngIf="isConfiguredMap(MapsType.PREFECTURES_JAPON)"></app-map-departements-francais> -->
-<app-find-area fill_color="#347b98" style="width: 50%; margin: 1rem auto;"></app-find-area>
-<app-area-table></app-area-table>
+<div class="header">
+    <h1>
+
+    </h1>
+</div>
+<div class="right-sidenav">
+    <app-area-table></app-area-table>
+</div>
+<div class="left-sidenav">
+
+</div>
+
+<div class="main">
+    <app-map-departements-francais *ngIf="isConfiguredMap(MapsType.DEPARTEMENTS_FRANCAIS)"></app-map-departements-francais>
+    <app-map-departements-francais *ngIf="isConfiguredMap(MapsType.PREFECTURES_JAPON)"></app-map-departements-francais>
+</div>
+<div class="footer">
+    <app-find-area fill_color="#347b98"></app-find-area>
+</div>

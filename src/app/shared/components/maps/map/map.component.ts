@@ -30,7 +30,7 @@ export class MapComponent {
   /**
    * La carte que l'on souhaite afficher
    */
-  @Input() public  map : MapsType = MapsType.DEPARTEMENTS_FRANCAIS;
+  @Input() public  map : MapsType = MapsType.NO_MAPS_DEFINED;
 
   /**
    * La carte que l'on souhaite afficher

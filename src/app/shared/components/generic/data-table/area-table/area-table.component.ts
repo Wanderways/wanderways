@@ -3,16 +3,25 @@ import { DataSubjectService } from 'src/app/shared/services/utilitary/data-subje
 import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
 import { data } from '../../../maps/map-departements-francais/data';
 import { Area } from '../../../maps/map-departements-francais/interfaces/area';
+import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-area-table',
   templateUrl: './area-table.component.html',
-  styleUrls: ['./area-table.component.scss']
+  styleUrls: ['./area-table.component.scss'],
+  animations: [
+    trigger('detailExpand', [
+      state('collapsed', style({height: '0px', minHeight: '0'})),
+      state('expanded', style({height: '*'})),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+    ]),
+  ],
 })
 export class AreaTableComponent implements OnInit {
 
   dataSource : Area[] = data; 
-  displayedColumns : string[]=["numero", "region", "departement", "logo"];
+  displayedColumns : string[]=['numero', 'departement'];
+  expandedElement: Area | null = null;
 
   constructor(private dataSubjectService : DataSubjectService, private stringFactoryService : StringFactoryService) { }
 
