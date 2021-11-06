@@ -48,8 +48,6 @@ export class FindAreaComponent implements OnInit {
      * @param value : La valeur de l'input.
      */
     inputChanged(value : string){
-        //this.inputSubjectService.setInputValue(value);
-        
         if(this.dataSubjectService.isValidData(value)){
             if(!this.dataSubjectService.isInFinalData(value)){
                 this.inputSubjectService.setInputValue(value);
