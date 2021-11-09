@@ -59,6 +59,9 @@
                         }
                     }
                 }
+                &:not(.expanded-row) {
+                    background-color: unset;
+                }
             }
             &.element-row {
                 &:not(.expanded-row) {
