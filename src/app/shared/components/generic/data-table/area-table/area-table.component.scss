@@ -22,13 +22,13 @@
         //background: #555;
     }
     table {
-        td {
-            cursor: pointer;
-        }
         .mat-column-numero {
             min-width: 2rem;
         }
         tr {
+            td {
+                cursor: pointer;
+            }
             &.detail-row {
                 height: 0;
                 background-color: #c2d7e0;
@@ -64,6 +64,9 @@
                 }
             }
             &.element-row {
+                td {
+                    border-bottom-width: 0;
+                }
                 &:not(.expanded-row) {
                     &:hover {
                         background: #347b98;
@@ -75,10 +78,8 @@
                 &.expanded-row {
                     background: #347b98;
                 }
-            }
-            &.element-row {
-                td {
-                    border-bottom-width: 0;
+                &:not(.is-row-visible) {
+                    visibility: hidden;
                 }
             }
         }

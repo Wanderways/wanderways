@@ -28,8 +28,8 @@
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
 
-    <tr mat-row *matRowDef="let element; columns: displayedColumns;" id="{{element.num}}-element-row" class="element-row" [class.expanded-row]="expandedElement === element" (click)="expandedElement = expandedElement === element ? null : element"></tr>
-    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" id="{{row.num}}-detail-row" [class.expanded-row]="expandedElement" class="detail-row"></tr>
+    <tr mat-row *matRowDef="let element; columns: displayedColumns;" class="element-row" [class.expanded-row]="expandedElement === element" [class.is-row-visible]="isRowVisible(element.num)" (click)="expandedElement = expandedElement === element ? null : element"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" [class.expanded-row]="expandedElement" class="detail-row" [class.is-row-visible]='isRowVisible(row.num)'></tr>
 
 
 </table>
