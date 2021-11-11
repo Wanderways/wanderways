@@ -78,7 +78,7 @@ export class DataSubjectService {
     }
 
     extendedNameExist(name : string){
-        var regex = new RegExp(this.stringFactoryService.replaceSpecialChars(name)+'.+');
+        var regex = new RegExp('^'+this.stringFactoryService.replaceSpecialChars(name)+'.+');
         return this.sourceData.find((value)=>{
             return this.stringFactoryService.replaceSpecialChars(value.name).match(regex);
         });

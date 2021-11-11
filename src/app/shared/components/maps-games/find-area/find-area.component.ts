@@ -55,18 +55,16 @@ export class FindAreaComponent implements OnInit {
                 // @TODO REFA, possible duplicata
                 this.clearInput();
             }else{ 
-                // Si il existe un nom allant plus loin mais prenant la même base, alors on ne fait rien
-                if(this.dataSubjectService.extendedNameExist(value)){
-                    console.log("On a détecté que le nom existe sous une forme étendue");
-                }else{// Sinon on annonce au joueur qu'il a déjà trouvé l'area
-                    console.log("On a pas détecté que le nom existe sous une forme étendue");
+                // Si il n'existe pas un nom allant plus loin en prenant la même base, alors on affiche au joueur qu'il a déjà trouvé cette valeur.
+                if(!this.dataSubjectService.extendedNameExist(value)){
                     let snackMessage = "Vous avez déjà trouvé : "+value;
+                    this.clearInput();
                     this._snackBar.openFromComponent(
                         SnackBarComponent,
                         {
                             data : {message:snackMessage ,action:"Okay..."}, // Message et message du bouton
                             duration: 2000 // Durée de deux secondes
-                    })
+                    });
                 }
             }
         }  
