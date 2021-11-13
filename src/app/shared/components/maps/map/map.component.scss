@@ -1,8 +1,7 @@
 :host {
     display: grid;
-    width: 100%;
     grid-gap: 1rem;
-    grid-template-areas: 'left-sidenav header right-sidenav' 'left-sidenav main right-sidenav' 'left-sidenav footer right-sidenav';
+    grid-template-areas: 'top-left-sidenav header top-right-sidenav' 'left-sidenav main right-sidenav' 'bottom-left-sidenav footer bottom-right-sidenav';
     grid-template-columns: 30vw auto 30vw;
     grid-template-rows: 5rem auto 8rem;
     .left-sidenav {
@@ -17,6 +16,7 @@
     .main {
         grid-area: main;
         min-width: 80%;
+        max-height: 60vh;
     }
     .header {
         display: flex;
