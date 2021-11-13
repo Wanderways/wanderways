@@ -1,9 +1,11 @@
 import { Component, OnInit } from "@angular/core";
+import { MapMetadata } from "../../services/map-specific/map-meta-data.interface";
 import { DataSubjectService } from "../../services/utilitary/data-subject.service";
 import { InputSubjectService } from "../../services/utilitary/input-subject.service";
 import { NodeSubjectService } from "../../services/utilitary/node-subject.service";
+import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { Area } from "./map-departements-francais/interfaces/area";
-import { MapMetadata } from "./map/MapMetaData.interface";
+
 
 
 @Component({
@@ -22,10 +24,10 @@ export class MapToolbox implements OnInit {
      * Données de base.
      */
     mapMetaData : MapMetadata = {
-        map_name : "",
-        map_details : "",
-        area_identifier : "",
-        zone_identifier : ""
+        map_name : "undefined",
+        map_details : "undefined",
+        area_identifier : "undefined",
+        zone_identifier : "undefined"
     };
     name : string = "";
     identifier : string = "";
@@ -38,11 +40,15 @@ export class MapToolbox implements OnInit {
     private inputSubjectService :InputSubjectService;
     private nodeSubjectService : NodeSubjectService;
     private dataSubjectService : DataSubjectService;
+    private mapMetaDataService : MapMetaDataService;
 
-    constructor( inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService ){
+    constructor( inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService, mapMetaDataService : MapMetaDataService){
         this.inputSubjectService = inputSubjectService;
         this.nodeSubjectService = nodeSubjectService;
         this.dataSubjectService = dataSubjectService;
+        this.mapMetaDataService = mapMetaDataService;
+        // Quand les métas data changes, on met à jour
+        this.mapMetaDataService.mapMetaDataChange.subscribe((value)=>{this.mapMetaData = value;})
     }
 
     /**

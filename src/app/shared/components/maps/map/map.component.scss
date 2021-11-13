@@ -18,12 +18,23 @@
         grid-area: main;
         min-width: 80%;
     }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            margin: 0;
+        }
+        sub {
+            color: rgb(150, 150, 150);
+        }
+    }
     .footer {
         grid-area: footer;
     }
     .left-sidenav,
     .right-sidenav,
-    .header,
     .main,
     .footer {
         display: flex;

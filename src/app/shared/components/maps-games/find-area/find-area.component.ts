@@ -22,7 +22,6 @@ export class FindAreaComponent implements OnInit {
     constructor(private inputSubjectService :InputSubjectService,
 		private nodeSubjectService : NodeSubjectService,
 		private dataSubjectService : DataSubjectService,
-        private stringFactoryService : StringFactoryService,
 		private _snackBar: MatSnackBar) {}
 
 	/**
