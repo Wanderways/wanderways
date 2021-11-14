@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { MapMetadata } from "../../services/map-specific/map-meta-data.interface";
 import { DataSubjectService } from "../../services/utilitary/data-subject.service";
 import { InputSubjectService } from "../../services/utilitary/input-subject.service";
 import { NodeSubjectService } from "../../services/utilitary/node-subject.service";
@@ -19,16 +18,6 @@ export class MapToolbox implements OnInit {
      *  - Une Zone est l'équivalent d'une région, ou d'un regroupement d'area plus généralement.
      *  - Un Country est un ensemble de Zone.  
      */
-
-    /**
-     * Données de base.
-     */
-    mapMetaData : MapMetadata = {
-        map_name : "undefined",
-        map_details : "undefined",
-        area_identifier : "undefined",
-        zone_identifier : "undefined"
-    };
     name : string = "";
     identifier : string = "";
     data : any[] = [];
@@ -40,15 +29,13 @@ export class MapToolbox implements OnInit {
     private inputSubjectService :InputSubjectService;
     private nodeSubjectService : NodeSubjectService;
     private dataSubjectService : DataSubjectService;
-    private mapMetaDataService : MapMetaDataService;
+    protected mapMetaDataService : MapMetaDataService;
 
     constructor( inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService, mapMetaDataService : MapMetaDataService){
         this.inputSubjectService = inputSubjectService;
         this.nodeSubjectService = nodeSubjectService;
         this.dataSubjectService = dataSubjectService;
         this.mapMetaDataService = mapMetaDataService;
-        // Quand les métas data changes, on met à jour
-        this.mapMetaDataService.mapMetaDataChange.subscribe((value)=>{this.mapMetaData = value;})
     }
 
     /**
@@ -64,23 +51,6 @@ export class MapToolbox implements OnInit {
             }
         });
         this.dataSubjectService.setsourceDataValue(this.data);
-    }
-
-    /**
-     * Initialiseur des métas-données de la carte.
-     * @param map_name 
-     * @param map_details 
-     * @param area_identifier 
-     * @param zone_identifier 
-     */
-    setMapMetaData(map_name : string =  "",map_details : string = "",area_identifier : string = "",zone_identifier : string = "") : MapMetadata{
-        let mapMetaData : MapMetadata = {
-            "map_name" : map_name,
-            "map_details" : map_details,
-            "area_identifier" : area_identifier,
-            "zone_identifier" : zone_identifier
-        };
-        return mapMetaData;
     }
 
     /**

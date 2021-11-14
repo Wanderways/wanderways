@@ -25,6 +25,8 @@ export class MapMetaDataService {
    * @param mapMetadata : Une instance valide du type "MapMetadata"
    */
   setMapMetaData(mapMetadata : MapMetadata){
+    console.log(this.mapMetaData);
+    console.log(mapMetadata);
     this.mapMetaDataChange.next(mapMetadata);
   }
 
