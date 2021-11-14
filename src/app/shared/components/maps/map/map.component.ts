@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
 
 import { Subject } from 'rxjs';
-import { MapsType } from './MapsType.enum';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapMetadata } from 'src/app/shared/services/map-specific/map-meta-data.interface';
 import { GameModeType } from '../../maps-games/game_mode_type';
+import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
+import { MapsType } from './maps-type';
+import { GameModeMetaData } from 'src/app/shared/services/game-mode-specific/game-mode-mode-meta-data.interface';
 
 @Component({
 	selector: 'app-map',
@@ -13,36 +15,31 @@ import { GameModeType } from '../../maps-games/game_mode_type';
 })
 export class MapComponent {
 
-	input_value$ = new Subject<string>();
-
 	/**
-	 * L'enum MapsType, pour qu'elle soit accessible dans le template
+	 * On rend accessible les types de maps pour le template (les types de map étant dans un context static)
 	 */
 	MapsType = MapsType;
 
-	mapMetaData : MapMetadata =  {
-			map_name : "undefined",
-			map_details : "undefined",
-			area_identifier : "undefined",
-			zone_identifier : "undefined"
-	};
+	mapMetaData : MapMetadata =  MapsType.MAP_UNDEFINED;
+	gameModeMetadata : GameModeMetaData =  GameModeType.GAME_CONSULT;
 
 	/**
 	 * Le type de mode de jeu que l'on souhaite faire. Comme consultation, contre la montre etc..
 	 */
-	@Input() public  gameModeType : GameModeType = GameModeType.INPUT_GAME;
+	@Input() public  gameModeType : GameModeType = GameModeType.GAME_LISTE;
 	/**
 	 * La carte que l'on souhaite afficher
 	 */
-	@Input() public  map : MapsType = MapsType.NO_MAPS_DEFINED;
+	@Input() public  map : MapsType = MapsType.MAP_UNDEFINED;
 
 	/**
 	 * La carte que l'on souhaite afficher
 	 */
 	 @Input() public  table : boolean = false;
 
-	constructor(mapMetaDataService : MapMetaDataService){
+	constructor(mapMetaDataService : MapMetaDataService, gameModeMetaDataService : GameModeMetaDataService){
 		mapMetaDataService.mapMetaDataChange.subscribe((value)=>{this.mapMetaData = value;})
+		gameModeMetaDataService.gameModeMetaDataChange.subscribe((value)=>{this.gameModeMetadata = value;})
 	}
 
 	/**
@@ -61,10 +58,5 @@ export class MapComponent {
 	 */
 	isConfiguredAction(gameModeType : GameModeType) : boolean{
 		return this.gameModeType == gameModeType;
-	}
-
-	areaFound( htmlElement : HTMLElement ){
-		// console.log(htmlElement)
-		// this.area_node_to_process = htmlElement;
 	}
 }

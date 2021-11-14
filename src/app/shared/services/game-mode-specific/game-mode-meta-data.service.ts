@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { GameModeMetadata } from './game-mode-meta-data.interface';
+import { GameModeMetaData } from './game-mode-mode-meta-data.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameModeMetaDataService {
 
-  gameModeMetaData : GameModeMetadata = {
+  gameModeMetaData : GameModeMetaData = {
     game_mode_name : "undefined",
     game_mode_rules : "undefined"
   }
-  gameModeMetaDataChange : Subject<GameModeMetadata> = new Subject<GameModeMetadata>()
+  gameModeMetaDataChange : Subject<GameModeMetaData> = new Subject<GameModeMetaData>()
 
   constructor() { }
 
@@ -19,8 +19,8 @@ export class GameModeMetaDataService {
    * Permet de mettre à jour la valeur des métas données
    * @param mapMetadata : Une instance valide du type "GameModeMetadata"
    */
-   setGameMetaData(gameModeMetadata : GameModeMetadata){
-    this.gameModeMetaDataChange.next(gameModeMetadata);
+   setGameMetaData(gameModeMetadata : GameModeMetaData){
+		setTimeout(() => { this.gameModeMetaDataChange.next(gameModeMetadata); });
   }
 
   /**

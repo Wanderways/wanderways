@@ -7,7 +7,7 @@ import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
 import { Area } from './interfaces/area';
 import { Zone } from './interfaces/zone';
-import { MapsType } from '../map/map-type';
+import { MapsType } from '../map/maps-type';
 
 
 @Component({

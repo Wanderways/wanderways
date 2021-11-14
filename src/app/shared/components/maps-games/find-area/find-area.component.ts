@@ -4,8 +4,7 @@ import { InputSubjectService } from 'src/app/shared/services/utilitary/input-sub
 import { NodeSubjectService } from 'src/app/shared/services/utilitary/node-subject.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { SnackBarComponent } from '../../generic/snack-bar/snack-bar.component';
-import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
-import { GameModeMetaDataService } from 'src/app/shared/services/game-specific/game-meta-data.service';
+import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
 import { GameModeType } from '../game_mode_type';
 @Component({
     selector: 'app-find-area',
@@ -35,7 +34,7 @@ export class FindAreaComponent implements OnInit {
 		this.nodeSubjectService.nodeChange.subscribe((value)=>{
             this.colorArea(value);
         });
-        this.gameModeMetaDataService.setGameMetaData(GameModeType.INPUT_GAME);
+        this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
     }
 
 

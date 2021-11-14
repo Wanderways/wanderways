@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { GameMetaDataService } from './game-meta-data.service';
+import { GameModeMetaDataService } from './game-mode-meta-data.service';
 
 describe('GameMetaDataService', () => {
-  let service: GameMetaDataService;
+  let service: GameModeMetaDataService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(GameMetaDataService);
+    service = TestBed.inject(GameModeMetaDataService);
   });
 
   it('should be created', () => {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GameModeType } from 'src/app/shared/components/maps-games/game_mode_type';
-import { MapsType } from 'src/app/shared/components/maps/map/MapsType.enum';
+import { MapsType } from 'src/app/shared/components/maps/map/maps-type';
 
 @Component({
   selector: 'app-main-page',
@@ -11,8 +11,8 @@ export class MainPageComponent implements OnInit {
 
   constructor() { }
 
-  gameModeType : GameModeType = GameModeType.INPUT_GAME;
-  mapType : MapsType = MapsType.DEPARTEMENTS_FRANCAIS;
+  gameModeType : GameModeType = GameModeType.GAME_INPUT;
+  mapType : MapsType = MapsType.MAP_DEPARTEMENTS_FRANCE;
   table : boolean = false;
 
   ngOnInit(): void {
