@@ -7,6 +7,7 @@ import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
 import { Area } from './interfaces/area';
 import { Zone } from './interfaces/zone';
+import { MapsType } from '../map/map-type';
 
 
 @Component({
@@ -24,14 +25,6 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 
 	ngOnInit(): void {
 		super.ngOnInit();
-		setTimeout(() => {
-		this.mapMetaDataService.setMapMetaData({
-			map_name :"Départements Français",
-			map_details:"Avec DotTom, hors Collectivité d'outre-mer française",
-			area_identifier:"Département",
-			zone_identifier :"Région"
-		});
-		});
-		
+		this.mapMetaDataService.setMapMetaData( MapsType.MAP_DEPARTEMENTS_FRANCE );
 	}
 }

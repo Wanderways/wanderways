@@ -2,9 +2,9 @@ import { Component, Input } from '@angular/core';
 
 import { Subject } from 'rxjs';
 import { MapsType } from './MapsType.enum';
-import { ActionType } from './ActionType.enum';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapMetadata } from 'src/app/shared/services/map-specific/map-meta-data.interface';
+import { GameModeType } from '../../maps-games/game_mode_type';
 
 @Component({
 	selector: 'app-map',
@@ -15,11 +15,6 @@ export class MapComponent {
 
 	input_value$ = new Subject<string>();
 
-
-	/**
-	 * L'enum ActionType, pour qu'elle soit accessible dans le template
-	 */
-	ActionType = ActionType;
 	/**
 	 * L'enum MapsType, pour qu'elle soit accessible dans le template
 	 */
@@ -33,9 +28,9 @@ export class MapComponent {
 	};
 
 	/**
-	 * Le type de d'action que l'on souhaite faire. Comme consultation, contre la montre etc..
+	 * Le type de mode de jeu que l'on souhaite faire. Comme consultation, contre la montre etc..
 	 */
-	@Input() public  action : ActionType = ActionType.InputGame;
+	@Input() public  gameModeType : GameModeType = GameModeType.INPUT_GAME;
 	/**
 	 * La carte que l'on souhaite afficher
 	 */
@@ -61,11 +56,11 @@ export class MapComponent {
 
 	/**
 	 * Permet de savoir si une action donnée est celle configurée.
-	 * @param action : L'action donnée.
-	 * @returns Un boolean, true si c'est l'action configurée, false sinon.
+	 * @param action : Le mode de jeu donnée.
+	 * @returns Un boolean, true si c'est le mode de jeu est configuré, false sinon.
 	 */
-	isConfiguredAction(action : ActionType) : boolean{
-		return this.action == action;
+	isConfiguredAction(gameModeType : GameModeType) : boolean{
+		return this.gameModeType == gameModeType;
 	}
 
 	areaFound( htmlElement : HTMLElement ){

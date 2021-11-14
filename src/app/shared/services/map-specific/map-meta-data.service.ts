@@ -13,7 +13,7 @@ export class MapMetaDataService {
     zone_identifier : "undefined"
   };
 
-  mapMetaDataChange = new Subject<MapMetadata>();
+  mapMetaDataChange : Subject<MapMetadata> = new Subject<MapMetadata>();
 
   constructor() { 
     this.mapMetaDataChange.next(this.mapMetaData);
@@ -25,7 +25,7 @@ export class MapMetaDataService {
    * @param mapMetadata : Une instance valide du type "MapMetadata"
    */
   setMapMetaData(mapMetadata : MapMetadata){
-    this.mapMetaDataChange.next(mapMetadata);
+		setTimeout(() => { this.mapMetaDataChange.next(mapMetadata); });
   }
 
   /**
