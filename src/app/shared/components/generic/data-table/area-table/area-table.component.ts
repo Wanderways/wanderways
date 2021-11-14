@@ -93,6 +93,19 @@ export class AreaTableComponent implements OnInit {
 	 * @param id : 
 	 */
 	 displayByContentId(id : string){
+		this.scrollToElement(id);
 		this.displayedElements.set(id, true)
+	}
+
+	/**
+	 * Makes the table scroll to the specified element of the list
+	 * @param id : The id of one of the list elements
+	 */
+	scrollToElement(id : string){
+		setTimeout(() => {
+			let element = document.getElementById("element-"+id);
+			element?.scrollIntoView({block: 'center'});
+			element?.click();
+		  },200);
 	}
 }
