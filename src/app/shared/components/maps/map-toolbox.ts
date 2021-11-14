@@ -43,7 +43,7 @@ export class MapToolbox implements OnInit {
      */
     ngOnInit(){
         // On surveille la liste des valeur mise en zone input
-        this.inputSubjectService.inputChange.subscribe((value)=>{
+        this.inputSubjectService.getInputChange().subscribe((value)=>{
             // Si la valeur en input correspond à une zone/area, alors on récupère la node associé
             let area = this.getAreaByName(value);
             if (area){

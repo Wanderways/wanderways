@@ -7,13 +7,13 @@ import { StringFactoryService } from 'src/app/shared/services/utilitary/string-f
 })
 export class DataSubjectService {
 
-    sourceData : any[] = [];
-    currentData : any = {};
-    finalData : any[] = [];
+    private sourceData : any[] = [];
+    private currentData : any = {};
+    private finalData : any[] = [];
 
-    sourceDataChange : Subject<any[]> = new Subject<any[]>();
-    currentdataChange : Subject<any> = new Subject<any>();
-    finalDataChange : Subject<any[]> = new Subject<any[]>();
+    private sourceDataChange : Subject<any[]> = new Subject<any[]>();
+    private currentdataChange : Subject<any> = new Subject<any>();
+    private finalDataChange : Subject<any[]> = new Subject<any[]>();
 
     constructor(private stringFactoryService : StringFactoryService) {
         this.sourceDataChange.subscribe((value)=>{this.sourceData = value;});
@@ -82,5 +82,15 @@ export class DataSubjectService {
         return this.sourceData.find((value)=>{
             return this.stringFactoryService.replaceSpecialChars(value.name).match(regex);
         });
+    }
+
+    getSourceDataChange(){
+        return this.sourceDataChange;
+    }
+    getFinalDataChange(){
+        return this.finalDataChange;
+    }
+    getCurrentdataChange(){
+        return this.currentdataChange;
     }
 }

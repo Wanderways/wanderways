@@ -29,7 +29,7 @@ export class AreaTableComponent implements OnInit {
 
   	ngOnInit(): void {
 		//Quoi qu'il arrive on charge l'ensemble des données dans le tableau
-		this.dataSubjectService.sourceDataChange.subscribe((value)=>{
+		this.dataSubjectService.getSourceDataChange().subscribe((value)=>{
 			this.dataSource=value;
 			this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, true)});
 			//Si on est en mode jeu, alors on cache toutes les données, et on surveille l'avancé du tableau de résultat
@@ -37,7 +37,7 @@ export class AreaTableComponent implements OnInit {
 				this.hideAllContent();
 			}
 		});
-		this.dataSubjectService.currentdataChange.subscribe((value)=>{this.displayByContentId(value.num);});
+		this.dataSubjectService.getCurrentdataChange().subscribe((value)=>{this.displayByContentId(value.num);});
 	}
 
 	/**

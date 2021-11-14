@@ -8,7 +8,7 @@ export class InputSubjectService {
 
   content : string = "";
 
-  inputChange : Subject<string> = new Subject<string>();
+  private inputChange : Subject<string> = new Subject<string>();
 
   constructor() {
     this.inputChange.subscribe((value)=>{
@@ -18,5 +18,9 @@ export class InputSubjectService {
 
   setInputValue(str : string){
     this.inputChange.next(str);
+  }
+
+  getInputChange(){
+    return this.inputChange;
   }
 }

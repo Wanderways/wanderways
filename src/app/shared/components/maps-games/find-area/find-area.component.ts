@@ -31,7 +31,7 @@ export class FindAreaComponent implements OnInit {
 	 */
     ngOnInit(){
         // On surveille si une node est à colorer
-		this.nodeSubjectService.nodeChange.subscribe((value)=>{
+		this.nodeSubjectService.getNodeChange().subscribe((value)=>{
             this.colorArea(value);
         });
         this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);

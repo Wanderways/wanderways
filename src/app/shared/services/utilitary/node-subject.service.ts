@@ -6,9 +6,9 @@ import { Subject } from 'rxjs';
 })
 export class NodeSubjectService {
 
-  content : HTMLElement = document.createElement("div");
+  private content : HTMLElement = document.createElement("div");
 
-  nodeChange : Subject<HTMLElement> = new Subject<HTMLElement>();
+  private nodeChange : Subject<HTMLElement> = new Subject<HTMLElement>();
 
   constructor() {
       this.nodeChange.subscribe((value) => {
@@ -18,5 +18,9 @@ export class NodeSubjectService {
 
   setNodeValue(htmlElement : HTMLElement){
     this.nodeChange.next(htmlElement);
+  }
+
+  getNodeChange (){
+    return this.nodeChange;
   }
 }

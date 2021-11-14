@@ -7,11 +7,11 @@ import { GameModeMetaData } from './game-mode-mode-meta-data.interface';
 })
 export class GameModeMetaDataService {
 
-  gameModeMetaData : GameModeMetaData = {
+  private gameModeMetaData : GameModeMetaData = {
     game_mode_name : "undefined",
     game_mode_rules : "undefined"
   }
-  gameModeMetaDataChange : Subject<GameModeMetaData> = new Subject<GameModeMetaData>()
+  private gameModeMetaDataChange : Subject<GameModeMetaData> = new Subject<GameModeMetaData>()
 
   constructor() { }
 
@@ -27,7 +27,15 @@ export class GameModeMetaDataService {
    * Permet d'obtenir les métas données de la gamemode
    * @returns 
    */
-  getGameModeMetadata(){
+  getGameModeMetaData(){
     return this.gameModeMetaData;
   }
+
+   /**
+   * Permet d'obtenir l'abonnement au changement des métas données
+   * @returns 
+   */
+    getGameModeMetaDataChange(){
+      return this.gameModeMetaDataChange;
+    }
 }
