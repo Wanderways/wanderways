@@ -13,6 +13,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 let mat_modules : any[] = [
   MatButtonModule,
@@ -24,7 +25,8 @@ let mat_modules : any[] = [
   MatInputModule,
   MatSnackBarModule,
   MatTableModule,
-  MatSortModule
+  MatSortModule,
+  MatProgressSpinnerModule
 ];
 
 
