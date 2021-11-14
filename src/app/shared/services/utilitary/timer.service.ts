@@ -19,8 +19,6 @@ export class TimerService {
       
     }
     this.interval = setInterval(() => {
-      console.log(this.currentValue);
-      
       if(this.currentValue > 0) {
         this.currentValue--;
         this.currentValueChange.next(this.currentValue);
