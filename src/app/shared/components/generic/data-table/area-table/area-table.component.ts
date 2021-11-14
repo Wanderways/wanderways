@@ -37,11 +37,7 @@ export class AreaTableComponent implements OnInit {
 				this.hideAllContent();
 			}
 		});
-		this.dataSubjectService.currentdataChange.subscribe((value)=>{
-			console.log(value);
-			
-			this.displayByContentId(value.num);
-		});
+		this.dataSubjectService.currentdataChange.subscribe((value)=>{this.displayByContentId(value.num);});
 	}
 
 	/**
@@ -58,11 +54,7 @@ export class AreaTableComponent implements OnInit {
 	 * @param rowidentifier : The row identifier
 	 * @returns True if element must be displayed, false otherwise
 	 */
-	isRowColored( rowidentifier : string ){
-		// if(this.expandedElement?.num == rowidentifier){
-		// 	console.log(rowidentifier);
-		// 	console.log(this.expandedElement?.num);
-		// }
+	isRowColored(rowidentifier : string ){
 		return this.expandedElement?.num == rowidentifier;
 	}
 
