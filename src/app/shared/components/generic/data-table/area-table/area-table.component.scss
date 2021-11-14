@@ -60,8 +60,12 @@
                         }
                     }
                 }
-                &:not(.expanded-row) {
+                &:not(.is-row-colored) {
+                    transition: background-color 225ms cubic-bezier(0.4, 0.0, 0.2, 1);
                     background-color: unset;
+                }
+                &.is-row-colored {
+                    background-color: '#c2d7e0'
                 }
             }
             &.element-row {

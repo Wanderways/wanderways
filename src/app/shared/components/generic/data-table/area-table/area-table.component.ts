@@ -10,8 +10,8 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   styleUrls: ['./area-table.component.scss'],
   animations: [
     trigger('detailExpand', [
-      state('collapsed', style({height: '0px', minHeight: '0', backgroundColor:'unset' })),
-      state('expanded', style({height: '*',backgroundColor: '#c2d7e0'})),
+      state('collapsed', style({height: '0px', minHeight: '0'})),
+      state('expanded', style({height: '*'})),
       transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
     ]),
   ],
@@ -51,6 +51,19 @@ export class AreaTableComponent implements OnInit {
 	 */
 	isRowVisible( rowidentifier : string ){
 		return this.displayedElements.get(rowidentifier);
+	}
+
+	/**
+	 * Gives the row its visibility property
+	 * @param rowidentifier : The row identifier
+	 * @returns True if element must be displayed, false otherwise
+	 */
+	isRowColored( rowidentifier : string ){
+		// if(this.expandedElement?.num == rowidentifier){
+		// 	console.log(rowidentifier);
+		// 	console.log(this.expandedElement?.num);
+		// }
+		return this.expandedElement?.num == rowidentifier;
 	}
 
 	/**
