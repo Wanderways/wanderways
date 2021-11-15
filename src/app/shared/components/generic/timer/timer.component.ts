@@ -11,13 +11,15 @@ import { TimerService } from 'src/app/shared/services/utilitary/timer.service';
 export class TimerComponent implements OnInit {
   color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
-  value = 0;
-  @Input() upperBound : number = 300;
+  readableTime : string = "";
+  @Input() upperBound : number = 90;
+  value : number = this.upperBound;
   
   constructor(private timerService : TimerService) {
     timerService.setUpperBound(this.upperBound);
     timerService.getCurrentValueChange().subscribe((value)=>{
       this.value = value;
+      this.readableTime = this.generateReadableTime(value);
       if((this.value/this.upperBound)*100 <= 20){
         this.color = "warn";
       }else if((this.value/this.upperBound)*100 <= 50){
@@ -30,6 +32,17 @@ export class TimerComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  /**
+   * Allows to obtain a human readable time
+   * @param timeAmount : A number in seconds
+   * @returns The readable value
+   */
+  generateReadableTime( timeAmount : number) : string{
+    let minutes = ( Math.floor(timeAmount/60 ) < 10 ? "0" : "" )+  Math.floor(timeAmount / 60 );
+    let secondes = ( timeAmount%60 < 10 ? "0" : "" ) + timeAmount%60;
+    return minutes + ":"+ secondes;
   }
 
 }

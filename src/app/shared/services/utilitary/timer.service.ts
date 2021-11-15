@@ -41,9 +41,9 @@ export class TimerService {
     return this.currentValueChange;
   }
 
-    setUpperBound(upperBound : number) : void{
-      this.upperBound = upperBound;
-    }
+  setUpperBound(upperBound : number) : void{
+    this.upperBound = upperBound;
+  }
 
 
 }
