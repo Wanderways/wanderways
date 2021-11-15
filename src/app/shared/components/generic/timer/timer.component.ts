@@ -16,7 +16,6 @@ export class TimerComponent implements OnInit {
   value : number = this.upperBound;
   
   constructor(private timerService : TimerService) {
-    timerService.setUpperBound(this.upperBound);
     timerService.getCurrentValueChange().subscribe((value)=>{
       this.value = value;
       this.readableTime = this.generateReadableTime(value);
@@ -28,10 +27,12 @@ export class TimerComponent implements OnInit {
         this.color = "primary";
       }
     });
-    timerService.startTimer();
   }
 
   ngOnInit(): void {
+    this.timerService.setUpperBound(this.upperBound);
+    this.value = this.timerService.getUpperBound();
+    this.timerService.startTimer();
   }
 
   /**
