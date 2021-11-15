@@ -4,15 +4,17 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { DataTableModule } from './data-table/data-table.module';
 import { MaterialModule } from 'src/app/material.module';
 import { TimerComponent } from './timer/timer.component';
+import { ProgressTrackerComponent } from './progress-tracker/progress-tracker.component';
 
 let components : any[]= [
   SnackBarComponent,
-  TimerComponent
+  TimerComponent,
+  ProgressTrackerComponent
 ]
 
 @NgModule({
   declarations: [
-    components
+    components,
   ],
   imports: [
     CommonModule,

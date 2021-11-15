@@ -18,6 +18,10 @@
     }
     .left-sidenav {
         grid-area: left-sidenav;
+        mat-card-content {
+            display: flex;
+            justify-content: space-around;
+        }
     }
     .main {
         grid-area: main;
