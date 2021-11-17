@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-import { Subject } from 'rxjs';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapMetadata } from 'src/app/shared/services/map-specific/map-meta-data.interface';
 import { GameModeType } from '../../maps-games/game_mode_type';

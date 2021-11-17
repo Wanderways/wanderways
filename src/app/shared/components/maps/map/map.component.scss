@@ -18,9 +18,11 @@
     }
     .left-sidenav {
         grid-area: left-sidenav;
+        gap : 1rem;
         mat-card-content {
             display: flex;
             justify-content: space-around;
+            gap:1rem;
         }
     }
     .main {
@@ -56,7 +58,6 @@
     .right-sidenav,
     .main,
     .footer {
-        justify-content: space-around;
         align-items: center;
     }
     .header,
@@ -79,10 +80,6 @@
         mat-card {
             width: 100%;
         }
-    }
-    .left-sidenav,
-    .right-sidenav {
-        justify-content: space-between;
     }
 }
 

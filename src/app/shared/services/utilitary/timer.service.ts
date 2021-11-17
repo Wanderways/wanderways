@@ -16,18 +16,21 @@ export class TimerService {
   startTimer() : void {
     if(this.upperBound <=0){
       console.error("Erreur : La valeur max du timer "+(this.upperBound==0?"n'a pas été initialisée.":"est inférieur à zéro.")+" Valeur actuelle : "+this.upperBound);
-      
     }
+    
     this.interval = setInterval(() => {
       if(this.currentValue > 0) {
-        this.currentValue--;
-        this.currentValueChange.next(this.currentValue);
+        this.updateValue(this.currentValue-1);
       } else {
-        this.currentValue = this.upperBound;
-        this.currentValueChange.next(this.currentValue);
+        this.resetTimer();
       }
     },1000)
   }
+  
+  resetTimer(){
+    this.updateValue(this.upperBound);
+  }
+  
 
   pauseTimer() : void{
     clearInterval(this.interval);
@@ -44,6 +47,16 @@ export class TimerService {
   setUpperBound(upperBound : number) : void{
     this.upperBound = upperBound;
   }
+
+  /**
+   * Allozs to update the value of the timer
+   * @param value The new value to be set
+   */
+   private updateValue(value : number){
+    this.currentValue = value;
+    this.currentValueChange.next(value);
+  }
+
 
 
 }
