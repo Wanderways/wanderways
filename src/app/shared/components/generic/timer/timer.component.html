@@ -1,3 +1,6 @@
 <mat-progress-spinner [color]="color" [mode]="mode" [value]="(value/upperBound)*100">
 </mat-progress-spinner>
-<p>{{this.generateReadableTime(value)}}</p>
+<div>
+    <p class="main-text">{{this.generateReadableTime(value)}}</p>
+    <p class="sub-text">/{{this.generateReadableTime(upperBound)}}</p>
+</div>

@@ -22,14 +22,14 @@ export class ProgressTrackerComponent implements OnInit {
     this.dataSubjectService.getSourceDataChange().subscribe((value)=>{this.upperBound = value.length;});
     this.dataSubjectService.getFinalDataChange().subscribe((value)=>{
       this.value = value.length;
-      let tempPerc = ((this.value/this.upperBound)*100);
-      this.readablePercentage = tempPerc.toFixed(2);
+      let temporaryPercentage = ((this.value/this.upperBound)*100);
+      this.readablePercentage = temporaryPercentage.toFixed(2);
       
-      if(tempPerc <= 20){
+      if(temporaryPercentage <= 20){
         this.color = "warn";
-      }else if(tempPerc <= 50){
+      }else if(temporaryPercentage <= 50){
         this.color = "accent";
-      }else if(this.color =="warn" && tempPerc > 50){
+      }else if(this.color =="warn" && temporaryPercentage > 50){
         this.color = "primary";
       }
   });
