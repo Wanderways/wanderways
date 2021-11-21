@@ -14,15 +14,11 @@
 </div>
 <div class="left-sidenav">
     <mat-card>
-        <mat-card-content>
+        <div class="my-mat-card-content">
             <app-timer [upperBound]="300"></app-timer>
             <app-progress-tracker></app-progress-tracker>
-        </mat-card-content>
-    </mat-card>
-    <mat-card>
-        <mat-card-content>
-            <app-game-controller></app-game-controller>
-        </mat-card-content>
+        </div>
+        <app-game-controller style="margin-bottom:16px"></app-game-controller>
     </mat-card>
 </div>
 <div class="main">
