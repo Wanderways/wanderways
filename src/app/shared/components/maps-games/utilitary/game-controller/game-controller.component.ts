@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TimerService } from 'src/app/shared/services/utilitary/timer.service';
+import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.service';
 
 @Component({
   selector: 'app-game-controller',

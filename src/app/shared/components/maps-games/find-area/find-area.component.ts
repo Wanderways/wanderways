@@ -1,11 +1,11 @@
 import { Component, Input, OnInit, Output,EventEmitter, SimpleChanges} from '@angular/core';
-import { DataSubjectService } from 'src/app/shared/services/utilitary/data-subject.service';
-import { InputSubjectService } from 'src/app/shared/services/utilitary/input-subject.service';
-import { NodeSubjectService } from 'src/app/shared/services/utilitary/node-subject.service';
+import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { SnackBarComponent } from '../../generic/snack-bar/snack-bar.component';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
 import { GameModeType } from '../game_mode_type';
+import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
+import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
 @Component({
     selector: 'app-find-area',
     templateUrl: './find-area.component.html',

@@ -1,13 +1,12 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
-import { DataSubjectService } from 'src/app/shared/services/utilitary/data-subject.service';
-import { InputSubjectService } from 'src/app/shared/services/utilitary/input-subject.service';
-import { NodeSubjectService } from 'src/app/shared/services/utilitary/node-subject.service';
+import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
 import { Area } from './interfaces/area';
-import { Zone } from './interfaces/zone';
 import { MapsType } from '../map/maps-type';
+import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
+import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 
 
 @Component({

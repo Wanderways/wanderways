@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
-import { TimerService } from 'src/app/shared/services/utilitary/timer.service';
+import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.service';
 
 @Component({
   selector: 'app-timer',

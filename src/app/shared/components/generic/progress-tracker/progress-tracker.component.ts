@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
-import { DataSubjectService } from 'src/app/shared/services/utilitary/data-subject.service';
+import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 
 @Component({
   selector: 'app-progress-tracker',
