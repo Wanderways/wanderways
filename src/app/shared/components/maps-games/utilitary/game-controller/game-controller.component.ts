@@ -10,11 +10,12 @@ import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 })
 export class GameControllerComponent implements OnInit {
 
-    constructor(private gameStatusService :GameStatusService) {}
+    constructor(private gameStatusService : GameStatusService ) {}
 
     isPaused : boolean = false;
 
     ngOnInit(): void {
+        this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.isPaused = value == GameStatus.PLAYING })
     }
 
     restartTimer(){
@@ -22,9 +23,7 @@ export class GameControllerComponent implements OnInit {
     }
 
     toggleTimer(){
-        
-        this.isPaused = !this.isPaused;
-        this.setIsPaused(this.isPaused);
+        this.setIsPaused(!this.isPaused);
         this.gameStatusService.setGameStatus(this.isPaused ? GameStatus.PLAYING : GameStatus.PAUSE);
     }
 
