@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
+import { GameStatus } from '../../utils/enums/GameStatus.enum';
+import { GameStatusService } from '../game-mode-specific/game-status.service';
 
 @Injectable({
     providedIn: 'root'
@@ -15,10 +17,12 @@ export class DataSubjectService {
     private currentdataChange : Subject<any> = new Subject<any>();
     private finalDataChange : Subject<any[]> = new Subject<any[]>();
 
-    constructor(private stringFactoryService : StringFactoryService) {
+    constructor(private stringFactoryService : StringFactoryService,
+                private gameStatusService : GameStatusService) {
         this.sourceDataChange.subscribe((value)=>{this.sourceData = value;});
         this.currentdataChange.subscribe((value)=>{this.currentData = value;});
         this.finalDataChange.subscribe((value)=>{this.finalData = value;});
+        this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)});
     }
 
     /**
@@ -51,6 +55,25 @@ export class DataSubjectService {
         this.finalData.push(obj);
         this.finalDataChange.next(this.finalData);
     }
+
+    /**
+     * Permet d'ajouter un objet à la liste des données actuels.
+     * @param obj 
+     */
+     removeDataFromFinalData(obj : any){
+        this.finalData.splice(this.finalData.indexOf(obj), 1);
+        this.finalDataChange.next(this.finalData);
+    }
+
+    /**
+     * Permet d'ajouter un objet à la liste des données actuels.
+     * @param obj 
+     */
+     removeAllDataFromFinalData(){
+        this.finalData = [];
+        this.finalDataChange.next(this.finalData);
+    }
+
     /**
      * Permet de mettre en place la liste actuel de données (dans le cadre d'un jeu).
      * @param array : La liste actuel de données trouvées
@@ -92,5 +115,13 @@ export class DataSubjectService {
     }
     getCurrentdataChange(){
         return this.currentdataChange;
+    }
+
+    private processGameStatusChange(gameStatus : GameStatus){
+        switch(gameStatus){
+            case GameStatus.START :
+                this.removeAllDataFromFinalData();
+                break;
+        }
     }
 }

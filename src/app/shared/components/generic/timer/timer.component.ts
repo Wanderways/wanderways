@@ -32,7 +32,6 @@ export class TimerComponent implements OnInit {
   ngOnInit(): void {
     this.timerService.setUpperBound(this.upperBound);
     this.value = this.timerService.getUpperBound();
-    this.timerService.startTimer();
   }
 
   /**

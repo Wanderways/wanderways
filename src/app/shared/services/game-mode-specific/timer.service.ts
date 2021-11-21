@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
+import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +13,22 @@ export class TimerService {
   private isEnded : boolean = false;
 
   private currentValueChange : Subject<number> = new Subject<number>();
-  constructor() { }
+  constructor( private gameStatusService : GameStatusService ) {
+    this.gameStatusService.getGameStatusChange().subscribe((value)=>{
+      switch(value){
+        case GameStatus.PAUSE :
+          this.pauseTimer();
+          break;
+        case GameStatus.START :
+          this.pauseTimer();
+          this.resetTimer();
+          break;
+        case GameStatus.PLAYING :          
+          this.startTimer();
+          break;
+      }
+    });
+  }
 
   startTimer() : void {
     if(this.upperBound <=0){
@@ -49,7 +66,7 @@ export class TimerService {
   }
 
   /**
-   * Allozs to update the value of the timer
+   * Allows to update the value of the timer
    * @param value The new value to be set
    */
    private updateValue(value : number){

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.service';
+import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
+import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 
 @Component({
   selector: 'app-game-controller',
@@ -8,20 +10,25 @@ import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.s
 })
 export class GameControllerComponent implements OnInit {
 
-    constructor(private timerService : TimerService) {}
+    constructor(private gameStatusService :GameStatusService) {}
+
+    isPaused : boolean = false;
 
     ngOnInit(): void {
     }
 
     restartTimer(){
-        this.timerService.resetTimer();
-    }
-    pauseTimer(){
-        this.timerService.pauseTimer();
+        this.gameStatusService.setGameStatus(GameStatus.START);
     }
 
-    startTimer(){
-        this.timerService.startTimer();
+    toggleTimer(){
+        
+        this.isPaused = !this.isPaused;
+        this.setIsPaused(this.isPaused);
+        this.gameStatusService.setGameStatus(this.isPaused ? GameStatus.PLAYING : GameStatus.PAUSE);
     }
 
+    setIsPaused(isPaused : boolean){
+        this.isPaused = isPaused;
+    }
 }

@@ -1,6 +1,6 @@
-<mat-form-field class="example-form-field" appearance="fill">
+<mat-form-field appearance="fill">
     <mat-label>{{ input_message }}</mat-label>
-    <input matInput type="text" [(ngModel)]="value" (ngModelChange)="inputChanged($event)">
+    <input matInput type="text" [(ngModel)]="value" (ngModelChange)="inputChanged($event)" disabled="{{ isDisabled }}">
     <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
       <mat-icon>close</mat-icon>
     </button>

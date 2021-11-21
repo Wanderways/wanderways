@@ -1,11 +1,14 @@
-import { Component, Input, OnInit, Output,EventEmitter, SimpleChanges} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackBarComponent } from '../../generic/snack-bar/snack-bar.component';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
 import { GameModeType } from '../game_mode_type';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
+import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
+import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
+
 @Component({
     selector: 'app-find-area',
     templateUrl: './find-area.component.html',
@@ -19,12 +22,14 @@ export class FindAreaComponent implements OnInit {
 
     value : any = '';
     current_data : any = {};
+    isDisabled : boolean = true;
 
     constructor(private inputSubjectService :InputSubjectService,
 		private nodeSubjectService : NodeSubjectService,
 		private dataSubjectService : DataSubjectService,
         private gameModeMetaDataService : GameModeMetaDataService,
-		private _snackBar: MatSnackBar) {}
+        private gameStatusService : GameStatusService,
+		private _snackBar: MatSnackBar) { }
 
 	/**
 	 * Lance la subscription aux différents services.
@@ -35,6 +40,7 @@ export class FindAreaComponent implements OnInit {
             this.colorArea(value);
         });
         this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
+        this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)})
     }
 
 
@@ -79,5 +85,20 @@ export class FindAreaComponent implements OnInit {
     colorArea(area : HTMLElement){
             this.clearInput();
             area!.style.fill = this.fill_color;
+    }
+
+    processGameStatusChange(gameStatus : GameStatus){
+        this.setDisabled(gameStatus != GameStatus.PLAYING);
+        if(this.isDisabled){
+            this.clearInput();
+        }
+    }
+
+    /**
+     * Allows to set if the input should be disabled
+     * @param isDisabled 
+     */
+     setDisabled(isDisabled : boolean){
+        this.isDisabled = isDisabled;
     }
 }
