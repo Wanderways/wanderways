@@ -1,4 +1,4 @@
-import { Area } from './interfaces/area'
+import { Area } from '../../../utils/interfaces/area'
 
 let data : Area[] = [
     {

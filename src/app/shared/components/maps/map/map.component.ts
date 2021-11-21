@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
-import { MapMetadata } from 'src/app/shared/services/map-specific/map-meta-data.interface';
+import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.interface';
 import { GameModeType } from '../../maps-games/game_mode_type';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
-import { MapsType } from './maps-type';
+import { MapsTypes } from './maps-types';
 import { GameModeMetaData } from 'src/app/shared/services/game-mode-specific/game-mode-mode-meta-data.interface';
 
 @Component({
@@ -17,9 +17,9 @@ export class MapComponent {
 	/**
 	 * On rend accessible les types de maps pour le template (les types de map étant dans un context static)
 	 */
-	MapsType = MapsType;
+	MapsTypes = MapsTypes;
 
-	mapMetaData : MapMetadata =  MapsType.MAP_UNDEFINED;
+	mapMetaData : MapMetaData =  MapsTypes.MAP_UNDEFINED;
 	gameModeMetadata : GameModeMetaData =  GameModeType.GAME_CONSULT;
 
 	/**
@@ -29,7 +29,7 @@ export class MapComponent {
 	/**
 	 * La carte que l'on souhaite afficher
 	 */
-	@Input() public  map : MapsType = MapsType.MAP_UNDEFINED;
+	@Input() public  map : MapsTypes = MapsTypes.MAP_UNDEFINED;
 
 	/**
 	 * La carte que l'on souhaite afficher
@@ -46,7 +46,7 @@ export class MapComponent {
 	 * @param map : La map donnée.
 	 * @returns Un boolean, true si c'est la map configurée, false sinon.
 	 */
-	isConfiguredMap(map : MapsType) : boolean{
+	isConfiguredMap(map : MapsTypes) : boolean{
 		return this.map == map;
 	}
 

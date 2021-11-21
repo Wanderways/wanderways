@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { DataSubjectService } from "../../services/map-specific/data-subject.service";
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
-import { Area } from "./map-departements-francais/interfaces/area";
+import { Area } from "../../utils/interfaces/area";
 import { NodeSubjectService } from "../../services/map-specific/node-subject.service";
 import { InputSubjectService } from "../../services/game-mode-specific/input-subject.service";
 
