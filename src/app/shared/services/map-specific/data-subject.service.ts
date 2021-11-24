@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { throwToolbarMixedModesError } from '@angular/material/toolbar';
 import { Subject } from 'rxjs';
 import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
 import { GameStatus } from '../../utils/enums/GameStatus.enum';
@@ -29,21 +30,21 @@ export class DataSubjectService {
      * Permet de mettre en place la source de données.
      * @param array : La liste de données source.
      */
-    setsourceDataValue(array : any[]){
+     public setsourceDataValue(array : any[]) : void{
         this.sourceDataChange.next(array);
     }
     /**
      * Permet d'indiquer l'objet en cours de traitement.
      * @param obj : L'objet en cours de traitement.
      */
-    setCurrentdataValue(obj : any){
+     public setCurrentdataValue(obj : any) : void{
         this.currentdataChange.next(obj);
     }
     /**
    * Permet d'ajouter un objet à la liste des données actuels à partir du nom de celui-ci
    * @param obj 
    */
-     addDataToFinalDataFromName(name : string){
+     public addDataToFinalDataFromName(name : string) : void{
       let result = this.sourceData.find((value) => this.stringFactoryService.replaceSpecialChars(name) == this.stringFactoryService.replaceSpecialChars(value.name)); 
       this.addDataToFinalData(result);
     }
@@ -51,16 +52,18 @@ export class DataSubjectService {
      * Permet d'ajouter un objet à la liste des données actuels.
      * @param obj 
      */
-    addDataToFinalData(obj : any){
+     public addDataToFinalData(obj : any) : void{
         this.finalData.push(obj);
         this.finalDataChange.next(this.finalData);
+        if(this.checkIfAllDataFound())
+            this.gameStatusService.setGameStatus(GameStatus.WON);
     }
 
     /**
      * Permet d'ajouter un objet à la liste des données actuels.
      * @param obj 
      */
-     removeDataFromFinalData(obj : any){
+     public removeDataFromFinalData(obj : any) : void{
         this.finalData.splice(this.finalData.indexOf(obj), 1);
         this.finalDataChange.next(this.finalData);
     }
@@ -69,7 +72,7 @@ export class DataSubjectService {
      * Permet d'ajouter un objet à la liste des données actuels.
      * @param obj 
      */
-     removeAllDataFromFinalData(){
+     public removeAllDataFromFinalData() : void{
         this.finalData = [];
         this.finalDataChange.next(this.finalData);
     }
@@ -78,7 +81,7 @@ export class DataSubjectService {
      * Permet de mettre en place la liste actuel de données (dans le cadre d'un jeu).
      * @param array : La liste actuel de données trouvées
      */
-    setFinalDataValue(array : any[]){
+     public setFinalDataValue(array : any[]) : void{
         this.finalDataChange.next(array);
     }
     /**
@@ -86,7 +89,7 @@ export class DataSubjectService {
      * @param obj : Le nom à vérifier.
      * @returns Vrai si l'objet est dans la liste, faux sinon.
      */
-    isValidData(name : string) : boolean{
+     public isValidData(name : string) : boolean{
         return this.sourceData.find((value)=>{return this.stringFactoryService.compareNormalizedStrings(value.name , name)});
     }
     /**
@@ -94,34 +97,48 @@ export class DataSubjectService {
      * @param obj : Le nom à vérifier.
      * @returns Vrai si l'objet est dans la liste, faux sinon.
      */
-    isInFinalData(name : string) : boolean{
+     public isInFinalData(name : string) : boolean{
         return this.finalData.find((value)=>{
             return this.stringFactoryService.compareNormalizedStrings(value.name , name)
         });
     }
 
-    extendedNameExist(name : string){
+    /**
+     * Allows to know if an area which could be considered as an extension of an already found area exists.
+     * E.g : "Loire" and "Loiret"
+     * @param name : A name, of anything
+     * @returns True if one or more exists
+     */
+     public extendedNameExist(name : string) : boolean{
         var regex = new RegExp('^'+this.stringFactoryService.replaceSpecialChars(name)+'.+');
         return this.sourceData.find((value)=>{
             return this.stringFactoryService.replaceSpecialChars(value.name).match(regex);
         });
     }
 
-    getSourceDataChange(){
+    public getSourceDataChange() : Subject<any[]>{
         return this.sourceDataChange;
     }
-    getFinalDataChange(){
+    public getFinalDataChange() : Subject<any[]>{
         return this.finalDataChange;
     }
-    getCurrentdataChange(){
+    public getCurrentdataChange() : Subject<any>{
         return this.currentdataChange;
     }
 
-    private processGameStatusChange(gameStatus : GameStatus){
+    private processGameStatusChange(gameStatus : GameStatus) : void{
         switch(gameStatus){
             case GameStatus.START :
                 this.removeAllDataFromFinalData();
                 break;
         }
+    }
+
+    /**
+     * Check if all the data has been found
+     * @returns 
+     */
+    public checkIfAllDataFound() : boolean{
+        return this.sourceData.length == this.finalData.length;
     }
 }
