@@ -55,7 +55,7 @@ export class TimerService {
         this.updateValue(this.currentValue-1);
       } else if(this.currentValue == 0){ // If timer reach 0, then pause timer then end game
         this.pauseTimer();
-        this.gameStatusService.setGameStatus(GameStatus.GAME_END);
+        this.gameStatusService.setGameStatus(GameStatus.LOST);
       } else {
         this.resetTimer();
       }
