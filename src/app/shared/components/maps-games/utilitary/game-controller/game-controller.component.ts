@@ -15,19 +15,37 @@ export class GameControllerComponent implements OnInit {
     isPaused : boolean = false;
 
     ngOnInit(): void {
-        this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.isPaused = value == GameStatus.PLAYING })
+        this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.handleGameStatusChange(value) })
     }
 
-    restartTimer(){
+    /**
+     * Handle the game status changes, and make the timer act as supposed to
+     * @param gameStatus The current game status
+     */
+    handleGameStatusChange(gameStatus : GameStatus) : void{
+        this.isPaused = ( gameStatus == GameStatus.PLAYING );
+    }
+
+    /**
+     * Restart button action
+     */
+    restartTimer() : void{
         this.gameStatusService.setGameStatus(GameStatus.START);
     }
 
-    toggleTimer(){
+    /**
+     * Pause or unpause the timer
+     */
+    toggleTimer() : void{
         this.setIsPaused(!this.isPaused);
         this.gameStatusService.setGameStatus(this.isPaused ? GameStatus.PLAYING : GameStatus.PAUSE);
     }
 
-    setIsPaused(isPaused : boolean){
+    /**
+     * Set the pause status
+     * @param isPaused The Pause status, a boolean, true if paused
+     */
+    setIsPaused(isPaused : boolean) : void{
         this.isPaused = isPaused;
     }
 }

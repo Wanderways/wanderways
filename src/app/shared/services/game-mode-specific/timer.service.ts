@@ -20,7 +20,7 @@ export class TimerService {
 
   /**
    * Handle the game status changes, and make the timer act as supposed to
-   * @param gameStatus 
+   * @param gameStatus The current game status
    */
   handleGameStatusChange(gameStatus : GameStatus){
     switch(gameStatus){
