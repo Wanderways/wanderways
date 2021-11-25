@@ -11,10 +11,6 @@ export class MainPageComponent implements OnInit {
 
   constructor() { }
 
-  gameModeType : GameModeType = GameModeType.GAME_INPUT;
-  mapType : MapsTypes = MapsTypes.MAP_DEPARTEMENTS_FRANCE;
-  table : boolean = false;
-
   ngOnInit(): void {
   }
 
