@@ -6,6 +6,7 @@ import { MapsGamesModule } from 'src/app/shared/components/maps-games/maps-games
 import { MapsModule } from 'src/app/shared/components/maps/maps.module';
 import { LogoModule } from '../shared/assets/logo/logo.module';
 
+import { MainPageComponent } from './main-page/main-page.component';
 import { MapPageComponent } from './map-page/map-page.component';
 
 // Shared components
@@ -18,6 +19,7 @@ const shared_components : any[] = [
 ];
 @NgModule({
   declarations: [
+    MainPageComponent,
     MapPageComponent,
     ...shared_components
   ],
