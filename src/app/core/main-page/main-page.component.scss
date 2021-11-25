@@ -1,7 +1,67 @@
 :host {
-    display: flex;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     height: 100%;
-    gap: 1rem;
-    padding: 0 1rem;
-    display: grid;
+    width: 100%;
+    max-width:80rem;
+    margin:0 auto;
+    .grid{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-areas: 'left-upper-side upper-main right-upper-side' 'left-side main right-side' 'left-lower-side lower-main right-lower-side';
+        grid-template-columns: 24rem auto 24rem;
+        grid-template-rows: 8rem auto 5rem;
+
+        #left-upper-side{
+            grid-area: left-upper-side;
+        }
+        #left-side{
+            grid-area: left-side;
+        }
+        #left-lower-side{
+            grid-area: left-lower-side;
+        }
+        #upper-main{
+            grid-area: upper-main;
+        }
+        #main{
+            grid-area: main;
+            app-logo {
+                min-width: 15vw;
+                margin : auto auto;
+            }
+        }
+        #lower-main{
+            grid-area: lower-main;}
+        #right-upper-side{
+            grid-area: right-upper-side;
+        }
+        #right-side{
+            grid-area: right-side;
+        }
+        #right-lower-side{
+            grid-area: right-lower-side;
+        }
+
+        #left-upper-side,
+        #left-side,
+        #left-lower-side,
+        #upper-main,
+        #main,
+        #lower-main,
+        #right-upper-side,
+        #right-side,
+        #right-lower-side{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            h1{
+                text-align:center;
+                margin : 0 0;
+            }
+        }
+    }
+    
 }
