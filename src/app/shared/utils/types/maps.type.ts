@@ -1,6 +1,6 @@
 import { MapMetaData } from "src/app/shared/utils/interfaces/map-meta-data.interface";
 
-export class MapsTypes {
+export class MapsType {
     
     public static readonly  MAP_UNDEFINED : MapMetaData = {
         map_country : "undefined",
@@ -26,7 +26,7 @@ export class MapsTypes {
     };
 
     public static readonly LIST_MAPS : MapMetaData[] = [
-        MapsTypes.MAP_UNDEFINED,
-        MapsTypes.MAP_DEPARTEMENTS_FRANCE,
+        MapsType.MAP_UNDEFINED,
+        MapsType.MAP_DEPARTEMENTS_FRANCE,
     ];
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
-import { MapsTypes } from 'src/app/shared/utils/types/maps.types';
+import { MapsType } from 'src/app/shared/utils/types/maps.type';
 
 @Component({
   selector: 'app-map-page',
@@ -10,7 +10,7 @@ import { MapsTypes } from 'src/app/shared/utils/types/maps.types';
 export class MapPageComponent implements OnInit {
 
   gameModeType : GameModeType = GameModeType.GAME_INPUT;
-  mapType : MapsTypes = MapsTypes.MAP_DEPARTEMENTS_FRANCE;
+  mapType : MapsType = MapsType.MAP_DEPARTEMENTS_FRANCE;
   table : boolean = false;
 
   constructor() { }

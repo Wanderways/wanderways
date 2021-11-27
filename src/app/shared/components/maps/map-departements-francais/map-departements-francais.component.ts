@@ -4,7 +4,7 @@ import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-met
 import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
 import { Area } from '../../../utils/interfaces/area';
-import { MapsTypes } from '../../../utils/types/maps.types';
+import { MapsType } from '../../../utils/types/maps.type';
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 
@@ -24,6 +24,6 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 
 	ngOnInit(): void {
 		super.ngOnInit();
-		this.mapMetaDataService.setMapMetaData( MapsTypes.MAP_DEPARTEMENTS_FRANCE );
+		this.mapMetaDataService.setMapMetaData( MapsType.MAP_DEPARTEMENTS_FRANCE );
 	}
 }

@@ -4,7 +4,7 @@ import { DataSubjectService } from 'src/app/shared/services/map-specific/data-su
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 import { MapToolbox } from '../map-toolbox';
-import { MapsTypes } from '../../../utils/types/maps.types';
+import { MapsType } from '../../../utils/types/maps.type';
 import { Area } from 'src/app/shared/utils/interfaces/area';
 import { data } from './data'
 @Component({
@@ -19,7 +19,7 @@ export class MapPrefecturesJaponComponent extends MapToolbox  implements OnInit 
   }
   ngOnInit(): void {
 		super.ngOnInit();
-		this.mapMetaDataService.setMapMetaData( MapsTypes.MAP_PREFECTURES_JAPON );
+		this.mapMetaDataService.setMapMetaData( MapsType.MAP_PREFECTURES_JAPON );
   }
 
 }

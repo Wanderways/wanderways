@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { MapsTypes } from '../../utils/types/maps.types';
+import { MapsType } from '../../utils/types/maps.type';
 import { MapMetaData } from '../../utils/interfaces/map-meta-data.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MapMetaDataService {
-  mapMetaData : MapMetaData = MapsTypes.MAP_UNDEFINED;
+  mapMetaData : MapMetaData = MapsType.MAP_UNDEFINED;
 
   mapMetaDataChange : Subject<MapMetaData> = new Subject<MapMetaData>();
 

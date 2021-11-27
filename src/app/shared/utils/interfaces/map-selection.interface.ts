@@ -1,7 +1,7 @@
 import { GameModeType } from "../types/game-mode.type";
-import { MapsTypes } from "../types/maps.types";
+import { MapsType } from "../types/maps.type";
 
 export interface MapSelection{
-    map : MapsTypes,
+    map : MapsType,
     game : GameModeType
 }

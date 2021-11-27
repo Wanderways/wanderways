@@ -22,8 +22,8 @@
     </mat-card>
 </div>
 <div class="main">
-    <app-map-departements-francais *ngIf="isConfiguredMap(MapsTypes.MAP_DEPARTEMENTS_FRANCE)"></app-map-departements-francais>
-    <app-map-prefectures-japon *ngIf="isConfiguredMap(MapsTypes.MAP_PREFECTURES_JAPON)"></app-map-prefectures-japon>
+    <app-map-departements-francais *ngIf="isConfiguredMap(MapsType.MAP_DEPARTEMENTS_FRANCE)"></app-map-departements-francais>
+    <app-map-prefectures-japon *ngIf="isConfiguredMap(MapsType.MAP_PREFECTURES_JAPON)"></app-map-prefectures-japon>
 </div>
 <div class="right-sidenav">
     <app-area-table [inGameMode]="true"></app-area-table>
