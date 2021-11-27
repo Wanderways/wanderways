@@ -4,7 +4,7 @@ import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-met
 import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
 import { Area } from '../../../utils/interfaces/area';
-import { MapsTypes } from '../../../utils/types/maps-types';
+import { MapsTypes } from '../../../utils/types/maps.types';
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 

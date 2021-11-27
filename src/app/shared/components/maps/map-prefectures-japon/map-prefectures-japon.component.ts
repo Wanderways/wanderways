@@ -4,7 +4,7 @@ import { DataSubjectService } from 'src/app/shared/services/map-specific/data-su
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 import { MapToolbox } from '../map-toolbox';
-import { MapsTypes } from '../../../utils/types/maps-types';
+import { MapsTypes } from '../../../utils/types/maps.types';
 import { Area } from 'src/app/shared/utils/interfaces/area';
 import { data } from './data'
 @Component({

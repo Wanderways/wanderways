@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { MapsTypes } from '../../utils/types/maps-types';
+import { MapsTypes } from '../../utils/types/maps.types';
 import { MapMetaData } from '../../utils/interfaces/map-meta-data.interface';
 
 @Injectable({

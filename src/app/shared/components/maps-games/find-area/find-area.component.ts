@@ -3,7 +3,7 @@ import { DataSubjectService } from 'src/app/shared/services/map-specific/data-su
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackBarComponent } from '../../generic/snack-bar/snack-bar.component';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
-import { GameModeType } from '../game_mode_type';
+import { GameModeType } from '../../../utils/types/game-mode.type';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
 import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
