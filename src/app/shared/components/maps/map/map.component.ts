@@ -4,7 +4,7 @@ import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-met
 import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.interface';
 import { GameModeType } from '../../maps-games/game_mode_type';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
-import { MapsTypes } from './maps-types';
+import { MapsTypes } from '../../../utils/types/maps-types';
 import { GameModeMetaData } from 'src/app/shared/services/game-mode-specific/game-mode-mode-meta-data.interface';
 
 @Component({

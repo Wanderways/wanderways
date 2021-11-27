@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GameModeType } from 'src/app/shared/components/maps-games/game_mode_type';
-import { MapsTypes } from 'src/app/shared/components/maps/map/maps-types';
+import { MapsTypes } from 'src/app/shared/utils/types/maps-types';
 
 @Component({
   selector: 'app-map-page',
