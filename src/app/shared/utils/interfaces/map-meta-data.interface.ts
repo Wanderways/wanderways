@@ -1,4 +1,5 @@
 export interface MapMetaData {
+    map_country : string;
     map_name : string;
     map_details : string;
     area_identifier : string;
