@@ -4,7 +4,23 @@
             Cartes du jour
         </h1>
     </div>
-    <div id="left-side"></div>
+    <div id="left-side">
+        <mat-card>
+            <mat-card-title>
+                <span>Préfectures - Japon</span>
+                <mat-icon matTooltip="Contre la montre" matTooltipPosition="above">alarm</mat-icon>
+            </mat-card-title>
+            <mat-card-content>
+                <div class="img-container">
+                    <app-map-prefectures-japon></app-map-prefectures-japon>
+                </div>
+                <div class="description-container">
+                    <p>Carte des préfectures du Japon</p>
+                    <button mat-raised-button>C'est parti !</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
     <div id="left-lower-side"></div>
     <div id="upper-main"></div>
     <div id="main">
@@ -16,6 +32,22 @@
             Recommendation du chef
         </h1>
     </div>
-    <div id="right-side"></div>
+    <div id="right-side">
+        <mat-card>
+            <mat-card-title>
+                <span>Départements - France</span>
+                <mat-icon>alarm</mat-icon>
+            </mat-card-title>
+            <mat-card-content>
+                <div class="img-container">
+                    <app-map-departements-francais></app-map-departements-francais>
+                </div>
+                <div class="description-container">
+                    <p>Carte des départements<br>Avec DOMTOM mais sans les collectivitées d'outres mer</p>
+                    <button mat-raised-button>C'est parti !</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
     <div id="right-lower-side"></div>
 </div>
