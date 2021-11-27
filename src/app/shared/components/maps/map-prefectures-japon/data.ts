@@ -1,6 +1,6 @@
 import { Area } from '../../../utils/interfaces/area';
 
-let data : Area[] = [
+export let data : Area[] = [
     {
         "iso_3166" : "JP-23",
         "num" : "23",
@@ -103,7 +103,7 @@ let data : Area[] = [
     {
         "iso_3166" : "JP-01",
         "num" : "01",
-        "name": " Hokkaido",
+        "name": " Hokkaidō",
         "zone":{
             "name":"Hokkaidō"
         },
@@ -319,7 +319,7 @@ let data : Area[] = [
     {
         "iso_3166" : "JP-25",
         "num" : "25",
-        "name": " Shiga",
+        "name": "Shiga",
         "zone":{
             "name":"Kansai"
         },
