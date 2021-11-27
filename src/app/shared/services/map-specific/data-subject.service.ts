@@ -15,15 +15,45 @@ export class DataSubjectService {
     private finalData : any[] = [];
 
     private sourceDataChange : Subject<any[]> = new Subject<any[]>();
-    private currentdataChange : Subject<any> = new Subject<any>();
+    private currentDataChange : Subject<any> = new Subject<any>();
     private finalDataChange : Subject<any[]> = new Subject<any[]>();
 
     constructor(private stringFactoryService : StringFactoryService,
                 private gameStatusService : GameStatusService) {
         this.sourceDataChange.subscribe((value)=>{this.sourceData = value;});
-        this.currentdataChange.subscribe((value)=>{this.currentData = value;});
+        this.currentDataChange.subscribe((value)=>{this.currentData = value;});
         this.finalDataChange.subscribe((value)=>{this.finalData = value;});
         this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)});
+    }
+
+    private processGameStatusChange(gameStatus : GameStatus) : void{
+        switch(gameStatus){
+            case GameStatus.START :
+                this.removeAllDataFromFinalData();
+                break;
+        }
+    }
+
+    /**
+     * Return the Subject object of the source data
+     * @returns The sourceDataChange object to subscribe to
+     */
+    public getSourceDataChange() : Subject<any[]>{
+        return this.sourceDataChange;
+    }
+    /**
+     * Return the Subject object of the final data
+     * @returns The finalDataChange object to subscribe to
+     */
+    public getFinalDataChange() : Subject<any[]>{
+        return this.finalDataChange;
+    }
+    /**
+     * Return the Subject object of the current data
+     * @returns The currentDataChange object to subscribe to
+     */
+    public getCurrentdataChange() : Subject<any>{
+        return this.currentDataChange;
     }
 
     /**
@@ -38,15 +68,19 @@ export class DataSubjectService {
      * @param obj : L'objet en cours de traitement.
      */
      public setCurrentdataValue(obj : any) : void{
-        this.currentdataChange.next(obj);
+        this.currentDataChange.next(obj);
     }
     /**
    * Permet d'ajouter un objet à la liste des données actuels à partir du nom de celui-ci
+   * Also check if all the data has been found, if so, then set the game status to "WON"
    * @param obj 
    */
      public addDataToFinalDataFromName(name : string) : void{
       let result = this.sourceData.find((value) => this.stringFactoryService.replaceSpecialChars(name) == this.stringFactoryService.replaceSpecialChars(value.name)); 
       this.addDataToFinalData(result);
+      if(this.checkIfAllDataFound()){
+          this.gameStatusService.setGameStatus(GameStatus.WON);
+      }
     }
     /**
      * Permet d'ajouter un objet à la liste des données actuels.
@@ -114,24 +148,6 @@ export class DataSubjectService {
         return this.sourceData.find((value)=>{
             return this.stringFactoryService.replaceSpecialChars(value.name).match(regex);
         });
-    }
-
-    public getSourceDataChange() : Subject<any[]>{
-        return this.sourceDataChange;
-    }
-    public getFinalDataChange() : Subject<any[]>{
-        return this.finalDataChange;
-    }
-    public getCurrentdataChange() : Subject<any>{
-        return this.currentdataChange;
-    }
-
-    private processGameStatusChange(gameStatus : GameStatus) : void{
-        switch(gameStatus){
-            case GameStatus.START :
-                this.removeAllDataFromFinalData();
-                break;
-        }
     }
 
     /**
