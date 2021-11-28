@@ -3,6 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 import { MapsType } from 'src/app/shared/utils/types/maps.type';
 import { MapSelection } from 'src/app/shared/utils/interfaces/map-selection.interface';
+import { GameModeMetaData } from 'src/app/shared/services/game-mode-specific/game-mode-mode-meta-data.interface';
+import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.interface';
 
 @Component({
   selector: 'app-map-page',
@@ -11,10 +13,19 @@ import { MapSelection } from 'src/app/shared/utils/interfaces/map-selection.inte
 })
 export class MapPageComponent implements OnInit {
 
+  GameModeType = GameModeType;
+  MapsType = MapsType;
+
   displaySelection : boolean = false;
   gameModeType : GameModeType = GameModeType.GAME_INPUT;
   mapType : MapsType = MapsType.MAP_UNDEFINED;
   table : boolean = false;
+
+
+  displayedColumns: string[] = ['radio','game_mode'];
+
+  selectedGameMode : GameModeMetaData = GameModeType.GAME_LIST[0];
+  selectedMap : MapMetaData = MapsType.MAPS_LIST[0];
 
   constructor(private route: ActivatedRoute, private router: Router ) { }
 

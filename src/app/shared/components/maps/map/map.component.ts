@@ -25,7 +25,7 @@ export class MapComponent {
 	/**
 	 * Le type de mode de jeu que l'on souhaite faire. Comme consultation, contre la montre etc..
 	 */
-	@Input() public  gameModeType : GameModeType = GameModeType.GAME_LISTE;
+	@Input() public  gameModeType : GameModeType = GameModeType.GAME_LIST;
 	/**
 	 * La carte que l'on souhaite afficher
 	 */

@@ -1,7 +1,28 @@
 :host {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
     gap: 1rem;
     padding: 0 1rem;
-    display: grid;
+    .selection-container {
+        display: flex;
+        padding: 1rem;
+        gap: 1rem;
+        width: 100%;
+        max-width: 1300px;
+        .table-container {
+            position: relative;
+            overflow: auto;
+            width: 100%;
+            table {
+                width: 100%;
+                min-height: 20rem;
+                td {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }

@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
 import { MaterialModule } from 'src/app/material.module';
 
 import { MapsGamesModule } from 'src/app/shared/components/maps-games/maps-games.module';
@@ -12,7 +15,7 @@ import { MapPageComponent } from './map-page/map-page.component';
 // Shared components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { RouterModule } from '@angular/router';
+
 const shared_components : any[] = [
   HeaderComponent,
   FooterComponent
@@ -29,7 +32,8 @@ const shared_components : any[] = [
     MapsModule,
     MaterialModule,
     LogoModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ] ,
   exports:[
     shared_components

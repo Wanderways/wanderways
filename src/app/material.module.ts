@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
 // Material ui
 import {MatButtonModule} from '@angular/material/button';
 import {MatCommonModule} from '@angular/material/core';
@@ -15,6 +14,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSortModule} from '@angular/material/sort';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatRadioModule} from '@angular/material/radio';
 
 let mat_modules : any[] = [
   MatButtonModule,
@@ -28,7 +28,8 @@ let mat_modules : any[] = [
   MatTableModule,
   MatSortModule,
   MatProgressSpinnerModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatRadioModule
 ];
 
 

@@ -29,7 +29,6 @@ export class MapsType {
     };
 
     public static readonly MAPS_LIST : MapMetaData[] = [
-        MapsType.MAP_UNDEFINED,
         MapsType.MAP_DEPARTEMENTS_FRANCE,
         MapsType.MAP_PREFECTURES_JAPON
     ];
