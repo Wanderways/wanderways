@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { GameStatus } from '../../utils/enums/GameStatus.enum';
+import { GameModeType } from '../../utils/types/game-mode.type';
+import { GameModeMetaDataService } from './game-mode-meta-data.service';
+import { GameModeMetaData } from './game-mode-mode-meta-data.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -23,5 +26,9 @@ export class GameStatusService {
 
   public setGameStatus(gameStatus : GameStatus){
     this.gameStatusChange.next(gameStatus);
+  }
+
+  public clear(){
+    this.setGameStatus(GameStatus.START);
   }
 }
