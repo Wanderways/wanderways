@@ -21,7 +21,7 @@ export class MapPageComponent implements OnInit {
   table : boolean = false;
 
 
-  displayedColumns: string[] = ['radio','game_mode'];
+  displayedColumns: string[] = ['radio','visual','choice', 'description'];
 
   selectedGameMode : GameModeMetaData = GameModeType.GAME_LIST[0];
   selectedMap : MapMetaData = MapsType.MAPS_LIST[0];

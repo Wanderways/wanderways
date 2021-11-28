@@ -18,9 +18,20 @@
             width: 100%;
             table {
                 width: 100%;
-                min-height: 20rem;
-                td {
-                    cursor: pointer;
+                tr {
+                    td {
+                        cursor: pointer;
+                        padding: 0.5rem;
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            max-height: 3rem;
+                            * {
+                                height: 3rem;
+                            }
+                        }
+                    }
                 }
             }
         }
