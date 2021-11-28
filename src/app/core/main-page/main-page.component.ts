@@ -9,6 +9,9 @@ import { MapsType } from 'src/app/shared/utils/types/maps.type';
 })
 export class MainPageComponent implements OnInit {
 
+  GameModeType = GameModeType;
+  MapsType = MapsType;
+  
   constructor() { }
 
   ngOnInit(): void {

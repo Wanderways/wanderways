@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import { GameModeType } from '../../utils/types/game-mode.type';
 import { GameModeMetaData } from './game-mode-mode-meta-data.interface';
 
 @Injectable({
@@ -7,10 +8,7 @@ import { GameModeMetaData } from './game-mode-mode-meta-data.interface';
 })
 export class GameModeMetaDataService {
 
-  private gameModeMetaData : GameModeMetaData = {
-    game_mode_name : "undefined",
-    game_mode_rules : "undefined"
-  }
+  private gameModeMetaData : GameModeMetaData = GameModeType.GAME_INPUT;
   private gameModeMetaDataChange : Subject<GameModeMetaData> = new Subject<GameModeMetaData>()
 
   constructor() { }
