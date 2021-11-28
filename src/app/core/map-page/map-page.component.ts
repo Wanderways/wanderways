@@ -37,6 +37,7 @@ export class MapPageComponent implements OnInit {
       game : this.route.snapshot.queryParamMap.get('game')||""
     };
     
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     // If the values are correct ones, then we process them, else we redirect to choosing page with an error snackbar
     if(MapsType.isValidType(routeParams.map) && GameModeType.isValidType(routeParams.game)){
       this.displaySelection = false;
@@ -49,7 +50,6 @@ export class MapPageComponent implements OnInit {
        * @TODO Implements map choosing
        */
     }else{
-      this.router.routeReuseStrategy.shouldReuseRoute = () => false;
       this.router.navigate(['/maps']);
       /**
        * @TODO Implements error snackbar
