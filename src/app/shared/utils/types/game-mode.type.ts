@@ -22,4 +22,13 @@ export class GameModeType{
     public static isValidType(game_mode_identifier : string) : boolean{
         return GameModeType.GAME_LISTE.find(value =>  value.game_mode_identifier == game_mode_identifier ) != undefined;
     }
+
+    /**
+     * Allows to get the valid instance of final data from the type identifier
+     * @param type_identifier : The type identifier
+     * @returns The corresponding type
+     */
+    public static getTypeFromIdentifier(type_identifier : string) : GameModeMetaData | undefined {
+        return GameModeType.GAME_LISTE.find(value => value.game_mode_identifier == type_identifier);
+    }
 }

@@ -37,4 +37,13 @@ export class MapsType {
     public static isValidType(map_identifier : string) : boolean{
         return MapsType.MAPS_LIST.find(value => value.map_identifier == map_identifier) != undefined;
     }
+
+    /**
+     * Allows to get the valid instance of final data from the type identifier
+     * @param type_identifier : The type identifier
+     * @returns The corresponding type
+     */
+    public static getTypeFromIdentifier(map_identifier : string) : MapMetaData | undefined {
+        return MapsType.MAPS_LIST.find(value => value.map_identifier == map_identifier);
+    }
 }

@@ -18,6 +18,7 @@ export class MapPageComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+
     // Gets the url parameters
     let routeParams : MapSelection = {
       map : this.route.snapshot.queryParamMap.get('map')||"",
@@ -26,8 +27,12 @@ export class MapPageComponent implements OnInit {
     
     // If the values are correct ones, then we process them, else we redirect to choosing page with an error snackbar
     if(MapsType.isValidType(routeParams.map) && GameModeType.isValidType(routeParams.game)){
+      // On force l'affectation car la vérification précédente assure que les données sont valides
+      this.mapType = MapsType.getTypeFromIdentifier( routeParams.map)!;
+      this.gameModeType = GameModeType.getTypeFromIdentifier(routeParams.game)!;
+    }else if(this.route.snapshot.queryParamMap.keys.length == 0){
       /**
-       * @TODO Implements sucess
+       * @TODO Implements map choosing
        */
     }else{
       /**
