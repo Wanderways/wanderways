@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 import { MapsType } from 'src/app/shared/utils/types/maps.type';
-import { MapSelection } from 'src/app/shared/utils/interfaces/map-selection.interface';
 import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-mode-mode-meta-data.interface';
 import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.interface';
 
@@ -32,18 +31,16 @@ export class MapPageComponent implements OnInit {
   ngOnInit(): void {
 
     // Gets the url parameters
-    let routeParams : MapSelection = {
-      map : this.route.snapshot.queryParamMap.get('map')||"",
-      game : this.route.snapshot.queryParamMap.get('game')||""
-    };
+    let map : string = this.route.snapshot.queryParamMap.get('map')||"";
+    let game : string = this.route.snapshot.queryParamMap.get('game')||"";
     
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     // If the values are correct ones, then we process them, else we redirect to choosing page with an error snackbar
-    if(MapsType.isValidType(routeParams.map) && GameModeType.isValidType(routeParams.game)){
+    if(MapsType.isValidType(map) && GameModeType.isValidType(game)){
       this.displaySelection = false;
       // On force l'affectation car la vérification précédente assure que les données sont valides
-      this.mapType = MapsType.getTypeFromIdentifier( routeParams.map)!;
-      this.gameModeType = GameModeType.getTypeFromIdentifier(routeParams.game)!;
+      this.mapType = MapsType.getTypeFromIdentifier(map)!;
+      this.gameModeType = GameModeType.getTypeFromIdentifier(game)!;
     }else if(this.route.snapshot.queryParamMap.keys.length == 0){
       this.displaySelection = true;
       /**
