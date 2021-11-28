@@ -3,7 +3,7 @@ import { Subject } from 'rxjs';
 import { GameStatus } from '../../utils/enums/GameStatus.enum';
 import { GameModeType } from '../../utils/types/game-mode.type';
 import { GameModeMetaDataService } from './game-mode-meta-data.service';
-import { GameModeMetaData } from '../../utils/interfaces/game-mode-mode-meta-data.interface';
+import { GameModeMetaData } from '../../utils/interfaces/game-mode-meta-data.interface';
 
 @Injectable({
   providedIn: 'root'

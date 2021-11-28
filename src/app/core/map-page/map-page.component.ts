@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 import { MapsType } from 'src/app/shared/utils/types/maps.type';
-import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-mode-mode-meta-data.interface';
+import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-mode-meta-data.interface';
 import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.interface';
 
 @Component({
