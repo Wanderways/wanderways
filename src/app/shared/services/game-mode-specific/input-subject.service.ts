@@ -23,4 +23,11 @@ export class InputSubjectService {
   getInputChange(){
     return this.inputChange;
   }
+
+  /**
+   * Set the currents data to null
+   */
+  public clear() : void {
+    this.setInputValue("");
+  }
 }

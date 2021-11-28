@@ -36,9 +36,17 @@ export class MapComponent {
 	 */
 	 @Input() public  table : boolean = false;
 
-	constructor(mapMetaDataService : MapMetaDataService, gameModeMetaDataService : GameModeMetaDataService){
-		mapMetaDataService.mapMetaDataChange.subscribe((value)=>{this.mapMetaData = value;})
+	constructor(private mapMetaDataService : MapMetaDataService, private gameModeMetaDataService : GameModeMetaDataService){
+		mapMetaDataService.getMapMetaDataChange().subscribe((value)=>{this.mapMetaData = value;})
 		gameModeMetaDataService.getGameModeMetaDataChange().subscribe((value)=>{this.gameModeMetadata = value;})
+	}
+
+	/**
+	 * Clear the component used static data
+	 */
+	ngOnDestroy(){
+		this.mapMetaDataService.clear();
+		this.gameModeMetaDataService.clear()
 	}
 
 	/**

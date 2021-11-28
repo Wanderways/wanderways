@@ -23,4 +23,11 @@ export class NodeSubjectService {
   getNodeChange (){
     return this.nodeChange;
   }
+
+  /**
+   * Set the currents data to null
+   */
+   public clear() : void {
+    this.setNodeValue(document.createElement("div"));
+  }
 }

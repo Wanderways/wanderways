@@ -41,6 +41,13 @@ export class AreaTableComponent implements OnInit {
 	}
 
 	/**
+	 * Clear the component used static data
+	 */
+	 ngOnDestroy(){
+		this.dataSubjectService.clear();
+	}
+
+	/**
 	 * Gives the row its visibility property
 	 * @param rowidentifier : The row identifier
 	 * @returns True if element must be displayed, false otherwise

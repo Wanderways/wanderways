@@ -36,4 +36,11 @@ export class GameModeMetaDataService {
     getGameModeMetaDataChange(){
       return this.gameModeMetaDataChange;
     }
+
+   /**
+   * Set the current game mode to consult by default
+   */
+  public clear() : void {
+    this.setGameMetaData(GameModeType.GAME_CONSULT);
+  }
 }

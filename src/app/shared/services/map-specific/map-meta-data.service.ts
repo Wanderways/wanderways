@@ -7,11 +7,11 @@ import { MapMetaData } from '../../utils/interfaces/map-meta-data.interface';
   providedIn: 'root'
 })
 export class MapMetaDataService {
-  mapMetaData : MapMetaData = MapsType.MAP_UNDEFINED;
+  private mapMetaData : MapMetaData = MapsType.MAP_UNDEFINED;
 
-  mapMetaDataChange : Subject<MapMetaData> = new Subject<MapMetaData>();
+  private mapMetaDataChange : Subject<MapMetaData> = new Subject<MapMetaData>();
 
-  constructor() { 
+  public constructor() { 
     this.mapMetaDataChange.next(this.mapMetaData);
     this.mapMetaDataChange.subscribe((value : MapMetaData)=>{this.mapMetaData = value;});
   }
@@ -20,7 +20,7 @@ export class MapMetaDataService {
    * Permet de mettre à jour la valeur des métas données
    * @param mapMetadata : Une instance valide du type "MapMetaData"
    */
-  setMapMetaData(mapMetadata : MapMetaData){
+   public setMapMetaData(mapMetadata : MapMetaData) : void {
 		setTimeout(() => { this.mapMetaDataChange.next(mapMetadata); });
   }
 
@@ -28,7 +28,22 @@ export class MapMetaDataService {
    * Permet d'obtenir les métas données de la map
    * @returns 
    */
-  getMapMetaData(){
+  public getMapMetaData() : MapMetaData{
     return this.mapMetaData;
+  }
+
+  /**
+   * Allows to get the MapMetadata subject to subscribe to
+   * @returns The MapMetadata subject to subscribe to
+   */
+   public getMapMetaDataChange() : Subject<MapMetaData>{
+    return this.mapMetaDataChange;
+  }
+
+  /**
+   * Set the current meta data to undefined
+   */
+  public clear() : void {
+    this.setMapMetaData(MapsType.MAP_UNDEFINED);
   }
 }

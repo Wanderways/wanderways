@@ -157,4 +157,13 @@ export class DataSubjectService {
     public checkIfAllDataFound() : boolean{
         return this.sourceData.length == this.finalData.length;
     }
+
+    /**
+     * Set the currents data to null
+     */
+    public clear() : void {
+        this.setCurrentdataValue(null);
+        this.setsourceDataValue([]);
+        this.setFinalDataValue([]);
+    }
 }

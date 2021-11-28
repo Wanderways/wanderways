@@ -43,6 +43,15 @@ export class FindAreaComponent implements OnInit {
         this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)})
     }
 
+    /**
+	 * Clear the component used static data
+	 */
+	 ngOnDestroy(){
+        this.inputSubjectService.clear()
+		this.nodeSubjectService.clear();
+		this.dataSubjectService.clear();
+	}
+
 
 	/**
 	 * Permet de vider le champs d'input.
