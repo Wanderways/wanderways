@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { GameModeType } from '../../utils/types/game-mode.type';
-import { GameModeMetaData } from './game-mode-mode-meta-data.interface';
+import { GameModeMetaData } from '../../utils/interfaces/game-mode-mode-meta-data.interface';
 
 @Injectable({
   providedIn: 'root'

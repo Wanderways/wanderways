@@ -1,4 +1,4 @@
-import { GameModeMetaData } from "../../services/game-mode-specific/game-mode-mode-meta-data.interface";
+import { GameModeMetaData } from "../interfaces/game-mode-mode-meta-data.interface";
 
 export class GameModeType{
     

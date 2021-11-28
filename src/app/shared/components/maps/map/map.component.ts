@@ -5,7 +5,7 @@ import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.inter
 import { GameModeType } from '../../../utils/types/game-mode.type';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
 import { MapsType } from '../../../utils/types/maps.type';
-import { GameModeMetaData } from 'src/app/shared/services/game-mode-specific/game-mode-mode-meta-data.interface';
+import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-mode-mode-meta-data.interface';
 
 @Component({
 	selector: 'app-map',
