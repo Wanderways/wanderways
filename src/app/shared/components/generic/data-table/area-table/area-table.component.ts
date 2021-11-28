@@ -40,12 +40,6 @@ export class AreaTableComponent implements OnInit {
 		this.dataSubjectService.getCurrentdataChange().subscribe((value)=>{this.displayByContentId(value.num);});
 	}
 
-	/**
-	 * Clear the component used static data
-	 */
-	 ngOnDestroy(){
-		this.dataSubjectService.clear();
-	}
 
 	/**
 	 * Gives the row its visibility property

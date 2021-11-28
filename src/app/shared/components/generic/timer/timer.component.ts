@@ -34,6 +34,10 @@ export class TimerComponent implements OnInit {
     this.value = this.timerService.getUpperBound();
   }
 
+  ngOnDestroy(){
+    this.timerService.clear();
+  }
+
   /**
    * Allows to obtain a human readable time
    * @param timeAmount : A number in seconds

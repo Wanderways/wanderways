@@ -47,9 +47,8 @@ export class FindAreaComponent implements OnInit {
 	 * Clear the component used static data
 	 */
 	 ngOnDestroy(){
-        this.inputSubjectService.clear()
+        this.inputSubjectService.clear();
 		this.nodeSubjectService.clear();
-		this.dataSubjectService.clear();
 	}
 
 

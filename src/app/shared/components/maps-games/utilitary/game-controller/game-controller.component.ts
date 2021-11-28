@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.service';
 import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
 import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 
@@ -16,6 +15,10 @@ export class GameControllerComponent implements OnInit {
 
     ngOnInit(): void {
         this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.handleGameStatusChange(value) })
+    }
+
+    ngOnDestroy(){
+        this.gameStatusService.clear();
     }
 
     /**

@@ -36,7 +36,8 @@ export class MapComponent {
 	 */
 	 @Input() public  table : boolean = false;
 
-	constructor(private mapMetaDataService : MapMetaDataService, private gameModeMetaDataService : GameModeMetaDataService){
+	constructor(private mapMetaDataService : MapMetaDataService,
+				private gameModeMetaDataService : GameModeMetaDataService){
 		mapMetaDataService.getMapMetaDataChange().subscribe((value)=>{this.mapMetaData = value;})
 		gameModeMetaDataService.getGameModeMetaDataChange().subscribe((value)=>{this.gameModeMetadata = value;})
 	}
@@ -46,7 +47,7 @@ export class MapComponent {
 	 */
 	ngOnDestroy(){
 		this.mapMetaDataService.clear();
-		this.gameModeMetaDataService.clear()
+		this.gameModeMetaDataService.clear();
 	}
 
 	/**

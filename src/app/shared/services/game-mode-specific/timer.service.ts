@@ -110,6 +110,9 @@ export class TimerService {
     this.currentValueChange.next(value);
   }
 
-
-
+  public clear(): void{
+    this.upperBound = 0;
+    this.currentValue = -1;
+    this.resetTimer();
+  }
 }
