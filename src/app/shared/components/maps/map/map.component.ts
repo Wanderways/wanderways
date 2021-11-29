@@ -39,7 +39,8 @@ export class MapComponent {
 	constructor(private mapMetaDataService : MapMetaDataService,
 				private gameModeMetaDataService : GameModeMetaDataService){
 		mapMetaDataService.getMapMetaDataChange().subscribe((value)=>{this.mapMetaData = value;})
-		gameModeMetaDataService.getGameModeMetaDataChange().subscribe((value)=>{this.gameModeMetadata = value;})
+		gameModeMetaDataService.getGameModeMetaDataChange().subscribe((value)=>{this.gameModeMetadata = value;console.log(this.gameModeMetadata);
+		})
 	}
 
 	/**

@@ -4,6 +4,7 @@ import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 import { MapsType } from 'src/app/shared/utils/types/maps.type';
 import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-mode-meta-data.interface';
 import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.interface';
+import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
 
 @Component({
   selector: 'app-map-page',
@@ -16,8 +17,6 @@ export class MapPageComponent implements OnInit {
   MapsType = MapsType;
 
   displaySelection : boolean = false;
-  gameModeType : GameModeType = GameModeType.GAME_INPUT;
-  mapType : MapsType = MapsType.MAP_UNDEFINED;
   table : boolean = false;
 
 
@@ -26,7 +25,10 @@ export class MapPageComponent implements OnInit {
   selectedGameMode : GameModeMetaData = GameModeType.GAME_LIST[0];
   selectedMap : MapMetaData = MapsType.MAPS_LIST[0];
 
-  constructor(private route: ActivatedRoute, private router: Router ) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private gameModeMetaDataService : GameModeMetaDataService) { }
 
   ngOnInit(): void {
 
@@ -42,8 +44,11 @@ export class MapPageComponent implements OnInit {
     if(!this.displaySelection){
       this.displaySelection = false;
       // On force l'affectation car la vérification précédente assure que les données sont valides
-      this.mapType = MapsType.getTypeFromIdentifier(map)!;
-      this.gameModeType = GameModeType.getTypeFromIdentifier(game)!;
+      this.selectedMap = MapsType.getTypeFromIdentifier(map)!;
+      this.selectedGameMode = GameModeType.getTypeFromIdentifier(game)!;
+      console.log(this.selectedGameMode);
+      
+      this.gameModeMetaDataService.setGameMetaData(this.selectedGameMode);
     }else{
       this.displaySelection = true;
       this.router.navigate(['/maps']);

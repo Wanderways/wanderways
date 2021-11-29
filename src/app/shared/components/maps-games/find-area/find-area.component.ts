@@ -39,7 +39,6 @@ export class FindAreaComponent implements OnInit {
 		this.nodeSubjectService.getNodeChange().subscribe((value)=>{
             this.colorArea(value);
         });
-        this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
         this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)})
     }
 
