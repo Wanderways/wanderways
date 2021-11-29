@@ -35,19 +35,25 @@ export class MapPageComponent implements OnInit {
     let game : string = this.route.snapshot.queryParamMap.get('game')||"";
     
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+
+    this.displaySelection = !(MapsType.isValidType(map) && GameModeType.isValidType(game));
+
     // If the values are correct ones, then we process them, else we redirect to choosing page with an error snackbar
-    if(MapsType.isValidType(map) && GameModeType.isValidType(game)){
+    if(!this.displaySelection){
       this.displaySelection = false;
       // On force l'affectation car la vérification précédente assure que les données sont valides
       this.mapType = MapsType.getTypeFromIdentifier(map)!;
       this.gameModeType = GameModeType.getTypeFromIdentifier(game)!;
-    }else if(this.route.snapshot.queryParamMap.keys.length == 0){
+    }else{
       this.displaySelection = true;
+      this.router.navigate(['/maps']);
       /**
        * @TODO Implements map choosing
        */
-    }else{
-      this.router.navigate(['/maps']);
+    }
+
+    // If there where args and the maps/game mode has been disaproved, then we show error
+    if(this.route.snapshot.queryParamMap.keys.length != 0 && this.displaySelection){
       /**
        * @TODO Implements error snackbar
        */
