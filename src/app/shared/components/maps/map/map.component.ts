@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
-import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.interface';
+import { MapMetaData } from "src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface";
 import { GameModeType } from '../../../utils/types/game-mode.type';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
 import { MapsType } from '../../../utils/types/maps.type';
-import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-mode-meta-data.interface';
+import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-oriented/game-mode-meta-data.interface';
 
 @Component({
 	selector: 'app-map',

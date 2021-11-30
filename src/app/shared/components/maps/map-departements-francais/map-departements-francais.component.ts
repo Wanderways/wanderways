@@ -3,7 +3,7 @@ import { DataSubjectService } from 'src/app/shared/services/map-specific/data-su
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapToolbox } from '../map-toolbox';
 import { data } from './data';
-import { Area } from '../../../utils/interfaces/area';
+import { Area } from '../../../utils/interfaces/map-oriented/area';
 import { MapsType } from '../../../utils/types/maps.type';
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';

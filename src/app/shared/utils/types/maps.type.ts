@@ -1,4 +1,4 @@
-import { MapMetaData } from "src/app/shared/utils/interfaces/map-meta-data.interface";
+import { MapMetaData } from "src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface";
 
 export class MapsType {
     

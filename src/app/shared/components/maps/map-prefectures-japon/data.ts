@@ -1,4 +1,4 @@
-import { Area } from '../../../utils/interfaces/area';
+import { Area } from '../../../utils/interfaces/map-oriented/area';
 
 export let data : Area[] = [
     {

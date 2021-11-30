@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { MapsType } from '../../utils/types/maps.type';
-import { MapMetaData } from '../../utils/interfaces/map-meta-data.interface';
+import { MapMetaData } from "src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface";
 
 @Injectable({
   providedIn: 'root'

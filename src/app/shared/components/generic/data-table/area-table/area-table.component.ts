@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
-import { Area } from '../../../../utils/interfaces/area';
+import { Area } from '../../../../utils/interfaces/map-oriented/area';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
