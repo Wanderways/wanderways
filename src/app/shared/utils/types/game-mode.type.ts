@@ -3,13 +3,13 @@ import { GameModeMetaData } from "../interfaces/game-oriented/game-mode-meta-dat
 export class GameModeType{
     
     public static readonly GAME_CONSULT : GameModeMetaData = {
-        game_mode_identifier:"GAME_CONSULT",
+        game_mode_identifier:"consultation",
         game_mode_name : "Consultation",
         game_mode_rules : "Consultez librement les données de la carte.",
         game_mode_mat_logo : "visibility"
     }
     public static readonly GAME_INPUT : GameModeMetaData = {
-        game_mode_identifier:"GAME_INPUT",
+        game_mode_identifier:"input-against-time",
         game_mode_name : "Saisie clavier - Contre la montre",
         game_mode_rules : "Tapez l'ensemble des valeurs avant la fin du temps !",
         game_mode_mat_logo : "alarm"

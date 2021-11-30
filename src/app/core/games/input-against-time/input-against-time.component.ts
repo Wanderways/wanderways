@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
+import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { Game } from 'src/app/shared/utils/abstract/game.abstract';
+import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 
 @Component({
-  selector: 'app-consultation',
-  templateUrl: './consultation.component.html',
-  styleUrls: ['./consultation.component.scss']
+  selector: 'app-input-against-time',
+  templateUrl: './input-against-time.component.html',
+  styleUrls: ['./input-against-time.component.scss']
 })
-export class ConsultationComponent extends Game implements OnInit {
+export class InputAgainstTimeComponent extends Game implements OnInit {
 
   constructor(protected route: ActivatedRoute,
     protected router: Router,
@@ -17,7 +19,16 @@ export class ConsultationComponent extends Game implements OnInit {
   }
 
   ngOnInit(): void {
+    this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
   }
+
+  /**
+	 * Clear the component used static data
+	 */
+	ngOnDestroy(){
+		this.gameModeMetaDataService.clear();
+	}
+  
   bindGameStatus(): void {
     throw new Error('Method not implemented.');
   }
@@ -39,4 +50,5 @@ export class ConsultationComponent extends Game implements OnInit {
   onError(): void {
     throw new Error('Method not implemented.');
   }
+
 }

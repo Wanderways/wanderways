@@ -1,9 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapMetaData } from "src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface";
 import { GameModeType } from '../../../utils/types/game-mode.type';
-import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
 import { MapsType } from '../../../utils/types/maps.type';
 import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-oriented/game-mode-meta-data.interface';
 
@@ -12,43 +11,29 @@ import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-oriented/
 	templateUrl: './map.component.html',
 	styleUrls: ['./map.component.scss']
 })
-export class MapComponent {
+export class MapComponent implements OnInit {
 
 	/**
 	 * On rend accessible les types de maps pour le template (les types de map étant dans un context static)
 	 */
 	MapsType = MapsType;
 
-	mapMetaData : MapMetaData =  MapsType.MAP_UNDEFINED;
-	gameModeMetadata : GameModeMetaData =  GameModeType.GAME_CONSULT;
-
-	/**
-	 * Le type de mode de jeu que l'on souhaite faire. Comme consultation, contre la montre etc..
-	 */
-	@Input() public  gameModeType : GameModeType = GameModeType.GAME_LIST;
-	/**
-	 * La carte que l'on souhaite afficher
-	 */
-	@Input() public  map : MapsType = MapsType.MAP_UNDEFINED;
 
 	/**
 	 * La carte que l'on souhaite afficher
 	 */
-	 @Input() public  table : boolean = false;
+	@Input() public  map : MapMetaData = MapsType.MAP_UNDEFINED;
 
-	constructor(private mapMetaDataService : MapMetaDataService,
-				private gameModeMetaDataService : GameModeMetaDataService){
-		mapMetaDataService.getMapMetaDataChange().subscribe((value)=>{this.mapMetaData = value;})
-		gameModeMetaDataService.getGameModeMetaDataChange().subscribe((value)=>{this.gameModeMetadata = value;console.log(this.gameModeMetadata);
-		})
+	constructor(private mapMetaDataService : MapMetaDataService){
+		console.log(this.map);
+		
 	}
 
-	/**
-	 * Clear the component used static data
-	 */
-	ngOnDestroy(){
+	ngOnInit(): void {
+		this.mapMetaDataService.setMapMetaData(this.map);
+	}
+	ngOnDestroy() : void {
 		this.mapMetaDataService.clear();
-		this.gameModeMetaDataService.clear();
 	}
 
 	/**
@@ -56,16 +41,7 @@ export class MapComponent {
 	 * @param map : La map donnée.
 	 * @returns Un boolean, true si c'est la map configurée, false sinon.
 	 */
-	isConfiguredMap(map : MapsType) : boolean{
+	 isConfiguredMap(map : MapsType) : boolean{
 		return this.map == map;
-	}
-
-	/**
-	 * Permet de savoir si une action donnée est celle configurée.
-	 * @param action : Le mode de jeu donnée.
-	 * @returns Un boolean, true si c'est le mode de jeu est configuré, false sinon.
-	 */
-	isConfiguredAction(gameModeType : GameModeType) : boolean{
-		return this.gameModeType == gameModeType;
 	}
 }

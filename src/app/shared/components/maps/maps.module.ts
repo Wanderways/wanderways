@@ -22,8 +22,7 @@ let maps : any[] = [
 
 @NgModule({
   declarations: [
-    ...maps,
-    MapComponent,
+    ...maps
   ],
   imports: [
     CommonModule,
@@ -33,7 +32,7 @@ let maps : any[] = [
     GenericModule
   ],
   exports:[
-    ...maps,
+    ...maps
   ]
 })
 export class MapsModule { }
