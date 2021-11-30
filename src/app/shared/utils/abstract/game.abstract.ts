@@ -17,8 +17,10 @@ export abstract class Game implements GameModeFactory{
 
 	constructor(protected route: ActivatedRoute,
 				protected router: Router,
-				protected gameModeMetaDataService : GameModeMetaDataService){
+				protected gameModeMetaDataService : GameModeMetaDataService,
+				protected mapMetaDataService : MapMetaDataService){
 		this.gameModeMetaDataService.getGameModeMetaDataChange().subscribe((value)=>{this.gameModeMetadata = value;});
+		this.mapMetaDataService.getMapMetaDataChange().subscribe((value)=>{this.mapMetaData = value;})
 
 		// Gets the url parameters
 		let map : string = this.route.snapshot.queryParamMap.get('map')||"";

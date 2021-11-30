@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
+import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { Game } from 'src/app/shared/utils/abstract/game.abstract';
 
 @Component({
@@ -12,11 +13,14 @@ export class ConsultationComponent extends Game implements OnInit {
 
   constructor(protected route: ActivatedRoute,
     protected router: Router,
-    protected gameModeMetaDataService : GameModeMetaDataService) {
-    super(route, router,  gameModeMetaDataService);
+    protected gameModeMetaDataService : GameModeMetaDataService,
+    protected mapMetaDataService : MapMetaDataService) {
+    super(route, router,  gameModeMetaDataService, mapMetaDataService);
   }
 
   ngOnInit(): void {
+    console.log(this.selectedMap);
+    
   }
   bindGameStatus(): void {
     throw new Error('Method not implemented.');

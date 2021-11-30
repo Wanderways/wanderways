@@ -14,8 +14,9 @@ export class InputAgainstTimeComponent extends Game implements OnInit {
 
   constructor(protected route: ActivatedRoute,
     protected router: Router,
-    protected gameModeMetaDataService : GameModeMetaDataService) {
-    super(route, router,  gameModeMetaDataService);
+    protected gameModeMetaDataService : GameModeMetaDataService,
+    protected mapMetaDataService : MapMetaDataService) {
+    super(route, router,  gameModeMetaDataService, mapMetaDataService);
   }
 
   ngOnInit(): void {
