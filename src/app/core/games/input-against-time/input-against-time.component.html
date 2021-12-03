@@ -1,38 +1,43 @@
-<div class="container">
-    <div class="top-left-sidenav">
-        <mat-card>
-            <mat-card-title>{{ gameModeMetadata.game_mode_name }}</mat-card-title>
-            <mat-card-subtitle>{{ gameModeMetadata.game_mode_rules }}</mat-card-subtitle>
-        </mat-card>
+<div class="parent-container">
+    <div *ngIf="checkCurrentGameStatus(GameStatus.START)" class="start-scene slide slide-in">
+        <button mat-raised-button (click)="setGameStatus(GameStatus.PLAYING)">Start</button>
     </div>
-    <div class="header">
-        <mat-card>
-            <mat-card-title> {{ mapMetaData.map_country }} - {{ mapMetaData.map_name }}</mat-card-title>
-            <mat-card-subtitle>{{ mapMetaData.map_details }}</mat-card-subtitle>
-        </mat-card>
-    </div>
-    <div class="top-right-sidenav">
-    </div>
-    <div class="left-sidenav">
-        <mat-card>
-            <div class="my-mat-card-content">
-                <app-timer [upperBound]="1010"></app-timer>
-                <app-progress-tracker></app-progress-tracker>
-            </div>
-            <app-game-controller style="margin-bottom:16px"></app-game-controller>
-        </mat-card>
-    </div>
-    <div class="main">
-        <app-map [map]="selectedMap"></app-map>
-    </div>
-    <div class="right-sidenav">
-        <app-area-table [inGameMode]="true"></app-area-table>
-    </div>
-    <div class="bottom-left-sidenav">
-    </div>
-    <div class="footer">
-        <app-find-area fill_color="#347b98"></app-find-area>
-    </div>
-    <div class="bottom-right-sidenav">
+    <div *ngIf="checkCurrentGameStatus(GameStatus.PLAYING)" class="container slide slide-in">
+        <div class="top-left-sidenav">
+            <mat-card>
+                <mat-card-title>{{ gameModeMetadata.game_mode_name }}</mat-card-title>
+                <mat-card-subtitle>{{ gameModeMetadata.game_mode_rules }}</mat-card-subtitle>
+            </mat-card>
+        </div>
+        <div class="header">
+            <mat-card>
+                <mat-card-title> {{ mapMetaData.map_country }} - {{ mapMetaData.map_name }}</mat-card-title>
+                <mat-card-subtitle>{{ mapMetaData.map_details }}</mat-card-subtitle>
+            </mat-card>
+        </div>
+        <div class="top-right-sidenav">
+        </div>
+        <div class="left-sidenav">
+            <mat-card>
+                <div class="my-mat-card-content">
+                    <app-timer [upperBound]="1010"></app-timer>
+                    <app-progress-tracker></app-progress-tracker>
+                </div>
+                <app-game-controller style="margin-bottom:16px"></app-game-controller>
+            </mat-card>
+        </div>
+        <div class="main">
+            <app-map [map]="selectedMap"></app-map>
+        </div>
+        <div class="right-sidenav">
+            <app-area-table [inGameMode]="true"></app-area-table>
+        </div>
+        <div class="bottom-left-sidenav">
+        </div>
+        <div class="footer">
+            <app-find-area fill_color="#347b98"></app-find-area>
+        </div>
+        <div class="bottom-right-sidenav">
+        </div>
     </div>
 </div>
