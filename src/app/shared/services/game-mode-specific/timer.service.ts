@@ -1,4 +1,3 @@
-import { EventListenerFocusTrapInertStrategy } from '@angular/cdk/a11y';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';

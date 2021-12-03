@@ -2,8 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackBarComponent } from '../../generic/snack-bar/snack-bar.component';
-import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
-import { GameModeType } from '../../../utils/types/game-mode.type';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
 import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
@@ -27,7 +25,6 @@ export class FindAreaComponent implements OnInit {
     constructor(private inputSubjectService :InputSubjectService,
 		private nodeSubjectService : NodeSubjectService,
 		private dataSubjectService : DataSubjectService,
-        private gameModeMetaDataService : GameModeMetaDataService,
         private gameStatusService : GameStatusService,
 		private _snackBar: MatSnackBar) { }
 

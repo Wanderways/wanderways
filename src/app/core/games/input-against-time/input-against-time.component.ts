@@ -4,7 +4,6 @@ import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-speci
 import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { Game } from 'src/app/shared/utils/abstract/game.abstract';
-import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 
 @Component({

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { throwToolbarMixedModesError } from '@angular/material/toolbar';
 import { Subject } from 'rxjs';
 import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
 import { GameStatus } from '../../utils/enums/GameStatus.enum';

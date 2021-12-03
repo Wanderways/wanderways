@@ -2,9 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapMetaData } from "src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface";
-import { GameModeType } from '../../../utils/types/game-mode.type';
 import { MapsType } from '../../../utils/types/maps.type';
-import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-oriented/game-mode-meta-data.interface';
 
 @Component({
 	selector: 'app-map',
