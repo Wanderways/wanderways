@@ -4,21 +4,31 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 import { MapsType } from 'src/app/shared/utils/types/maps.type';
 import { GameModeMetaDataService } from '../../services/game-mode-specific/game-mode-meta-data.service';
+import { GameStatusService } from '../../services/game-mode-specific/game-status.service';
 import { MapMetaDataService } from '../../services/map-specific/map-meta-data.service';
 import { GameStatus } from '../enums/GameStatus.enum';
 import { GameModeFactory } from '../interfaces/game-oriented/game-mode-factory.interface';
 import { GameModeMetaData } from '../interfaces/game-oriented/game-mode-meta-data.interface';
 import { MapMetaData } from '../interfaces/map-oriented/map-meta-data.interface';
 
+/**
+ * Generalizes and facilitate the game mode creation. Limit the customizations possibilities.
+ */
 @Component({template : ''})
 export abstract class Game implements GameModeFactory{
     
+	/**
+	 * Allows child to use the enum
+	 */
+	GameStatus = GameStatus;
+
 	selectedMap : MapMetaData = MapsType.MAPS_LIST[0]; 
 
 	constructor(protected route: ActivatedRoute,
 				protected router: Router,
 				protected gameModeMetaDataService : GameModeMetaDataService,
-				protected mapMetaDataService : MapMetaDataService){
+				protected mapMetaDataService : MapMetaDataService,
+				protected gameStatusService : GameStatusService){
 		this.gameModeMetaDataService.getGameModeMetaDataChange().subscribe((value)=>{this.gameModeMetadata = value;});
 		this.mapMetaDataService.getMapMetaDataChange().subscribe((value)=>{this.mapMetaData = value;})
 
@@ -45,6 +55,9 @@ export abstract class Game implements GameModeFactory{
 		   * @TODO Implements error snackbar
 		   */
 		}
+
+		// We start the event binding for gamestatus change
+		this.bindGameStatus();
 	}
 
     /**
@@ -71,11 +84,41 @@ export abstract class Game implements GameModeFactory{
 
     currentStatus: GameStatus = GameStatus.START;
 
-    abstract bindGameStatus(): void;
+    bindGameStatus(): void{
+		this.gameStatusService.getGameStatusChange().subscribe(gameStatus=>{
+			switch(gameStatus){
+				case GameStatus.START:
+					this.onStart();
+					break;
+				case GameStatus.PAUSE:
+					this.onPause();
+					break;
+				case GameStatus.PLAYING:
+					this.onPlaying();
+					break;
+				case GameStatus.WON:
+					this.onWon();
+					break;
+				case GameStatus.LOST:
+					this.onLost();
+					break;
+				default :
+					this.onError();
+					break;
+			}});
+	}
     abstract onStart(): void;
     abstract onPlaying(): void;
     abstract onPause(): void;
     abstract onWon(): void;
     abstract onLost(): void;
     abstract onError(): void;
+
+	public checkCurrentGameStatus(gamestatus : GameStatus){		
+		return this.gameStatusService.getGameStatus() == gamestatus;
+	}
+
+	public setGameStatus(gameStatus : GameStatus){
+		this.gameStatusService.setGameStatus(gameStatus);
+	}
 }

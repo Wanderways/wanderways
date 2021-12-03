@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
+import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { Game } from 'src/app/shared/utils/abstract/game.abstract';
 
@@ -14,8 +15,9 @@ export class ConsultationComponent extends Game implements OnInit {
   constructor(protected route: ActivatedRoute,
     protected router: Router,
     protected gameModeMetaDataService : GameModeMetaDataService,
-    protected mapMetaDataService : MapMetaDataService) {
-    super(route, router,  gameModeMetaDataService, mapMetaDataService);
+    protected mapMetaDataService : MapMetaDataService,
+    protected gameStatusService : GameStatusService) {
+    super(route, router,  gameModeMetaDataService, mapMetaDataService, gameStatusService);
   }
 
   ngOnInit(): void {
