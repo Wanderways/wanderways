@@ -1,12 +1,14 @@
-@import "../../shared/variables";
-mat-toolbar {
-    display: flex;
-    gap: 1rem;
-    app-logo {
+:host {
+    z-index: 9999;
+    mat-toolbar {
         display: flex;
-        height: 80%;
-    }
-    #themeSlider {
-        margin-left: auto;
+        gap: 1rem;
+        app-logo {
+            display: flex;
+            height: 80%;
+        }
+        #themeSlider {
+            margin-left: auto;
+        }
     }
 }
