@@ -12,33 +12,40 @@ export class ProgressTrackerComponent implements OnInit {
 
 	color: ThemePalette = 'primary';
 	mode: ProgressSpinnerMode = 'determinate';
+	currentPercentage : number = 0;
 	readablePercentage : string = "0";
-	upperBound : number = 0;
-	value : number = this.upperBound;
+	foundUpperBound : number = 0;
+	foundValue : number = 0;
 
 	constructor(private dataSubjectService : DataSubjectService) {}
-
 	ngOnInit(): void {
-		this.dataSubjectService.getSourceDataChange().subscribe((value)=>{this.upperBound = value.length;});
-		this.dataSubjectService.getFinalDataChange().subscribe((value)=>{
-			this.value = value.length;
-			let temporaryPercentage = ((this.value/this.upperBound)*100);
-			this.readablePercentage = temporaryPercentage.toFixed(2);
-			
-			if(temporaryPercentage <= 20){
-				this.color = "warn";
-			}else if(temporaryPercentage <= 50){
-				this.color = "accent";
-			}else if(this.color =="warn" && temporaryPercentage > 50){
-				this.color = "primary";
-			}
-		});
+		this.dataSubjectService.getSourceDataChange().subscribe((value)=>this.processSourceDataChange(value));
+		this.dataSubjectService.getFinalDataChange().subscribe((value : any[])=>this.processFinalDataChange(value));
 	}
+
   	/**
 	 * Clear the component used static data
 	 */
 	 ngOnDestroy(){
 		this.dataSubjectService.clear();
+	}
+
+	processSourceDataChange( value : any[] ){
+		this.foundUpperBound = value.length;
+	}
+
+	processFinalDataChange( value : any[] ){		
+		this.foundValue = value.length;
+		if( this.foundUpperBound < 0 )
+			this.currentPercentage = ((this.foundValue/this.foundUpperBound)*100)
+		this.readablePercentage = this.currentPercentage.toFixed(2);
+		if(this.currentPercentage <= 20){
+			this.color = "warn";
+		}else if(this.currentPercentage <= 50){
+			this.color = "accent";
+		}else if(this.color =="warn" && this.currentPercentage > 50){
+			this.color = "primary";
+		}
 	}
 
 }

@@ -1,6 +1,6 @@
-<mat-progress-spinner [color]="color" [mode]="mode" [value]="(value/upperBound)*100">
+<mat-progress-spinner [color]="color" [mode]="mode" [value]="currentPercentage">
 </mat-progress-spinner>
 <div>
     <p class="main-text">{{readablePercentage}} %</p>
-    <p class="sub-text">{{value}}/{{upperBound}}</p>
+    <p class="sub-text">{{foundValue}}/{{foundUpperBound}}</p>
 </div>
