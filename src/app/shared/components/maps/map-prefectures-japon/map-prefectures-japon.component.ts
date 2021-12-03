@@ -5,7 +5,7 @@ import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-met
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 import { MapToolbox } from '../map-toolbox';
 import { MapsType } from '../../../utils/types/maps.type';
-import { Area } from 'src/app/shared/utils/interfaces/area';
+import { Area } from 'src/app/shared/utils/interfaces/map-oriented/area';
 import { data } from './data'
 @Component({
   selector: 'app-map-prefectures-japon',

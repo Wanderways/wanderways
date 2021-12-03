@@ -14,6 +14,7 @@ export class GameControllerComponent implements OnInit {
     isPaused : boolean = false;
 
     ngOnInit(): void {
+        this.isPaused = ( this.gameStatusService.getGameStatus() == GameStatus.PLAYING );
         this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.handleGameStatusChange(value) })
     }
 

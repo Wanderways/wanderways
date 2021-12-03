@@ -5,6 +5,7 @@
     display: flex;
     background-color: $greyer;
     color: white;
+    z-index: 9999;
     .footer {
         display: flex;
         justify-content: center;

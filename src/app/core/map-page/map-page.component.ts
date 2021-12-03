@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 import { MapsType } from 'src/app/shared/utils/types/maps.type';
-import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-mode-meta-data.interface';
-import { MapMetaData } from 'src/app/shared/utils/interfaces/map-meta-data.interface';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
+import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-oriented/game-mode-meta-data.interface';
+import { MapMetaData } from 'src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface';
 
 @Component({
   selector: 'app-map-page',

@@ -15,6 +15,7 @@ import { MapPageComponent } from './map-page/map-page.component';
 // Shared components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { GamesModule } from './games/games.module';
 
 const shared_components : any[] = [
   HeaderComponent,
@@ -33,7 +34,8 @@ const shared_components : any[] = [
     MaterialModule,
     LogoModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    GamesModule
   ] ,
   exports:[
     shared_components

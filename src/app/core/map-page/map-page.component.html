@@ -1,4 +1,4 @@
-<app-map *ngIf="!displaySelection" [table]="true" [map]="selectedMap" [gameModeType]="selectedGameMode"></app-map>
+<app-map *ngIf="!displaySelection" [map]="selectedMap"></app-map>
 <ng-container *ngIf="displaySelection">
     <h1>- Choix de la carte et du mode de jeu -</h1>
     <div class="selection-container">
@@ -66,6 +66,6 @@
             </table>
         </div>
     </div>
-    <button mat-raised-button color="primary" [routerLink]="['/maps']" [queryParams]="{ map : selectedMap.map_identifier, game: selectedGameMode.game_mode_identifier }">Lancer &gt;</button>
+    <button mat-raised-button color="primary" [routerLink]="['games/', selectedGameMode.game_mode_identifier ]" [queryParams]="{ map : selectedMap.map_identifier }">Lancer &gt;</button>
 
 </ng-container>
