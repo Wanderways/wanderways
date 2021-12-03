@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-specific/game-mode-meta-data.service';
 import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
+import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.service';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { Game } from 'src/app/shared/utils/abstract/game.abstract';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
@@ -17,12 +18,17 @@ export class InputAgainstTimeComponent extends Game implements OnInit {
     protected router: Router,
     protected gameModeMetaDataService : GameModeMetaDataService,
     protected mapMetaDataService : MapMetaDataService,
-    protected gameStatusService : GameStatusService) {
+    protected gameStatusService : GameStatusService,
+    private timerService : TimerService) {
     super(route, router,  gameModeMetaDataService, mapMetaDataService,gameStatusService);
   }
 
   ngOnInit(): void {
     this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
+  }
+
+  ngAfterContentInit(): void{
+    this.timerService.launchGameStatusChangeDetection();
   }
 
   /**
@@ -31,6 +37,7 @@ export class InputAgainstTimeComponent extends Game implements OnInit {
 	ngOnDestroy(){
 		this.gameModeMetaDataService.clear();
     this.gameStatusService.clear();
+    this.timerService.stopGameStatusChangeDetection();
 	}
   
   bindGameStatus(): void {

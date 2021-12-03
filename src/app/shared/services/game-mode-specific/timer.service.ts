@@ -13,13 +13,25 @@ export class TimerService {
 
   private currentValueChange : Subject<number> = new Subject<number>();
 
-  constructor( private gameStatusService : GameStatusService ) {
+  constructor( private gameStatusService : GameStatusService ) {}
+
+  /**
+   * Allows to launch the game status change detection only when we want
+   */
+  public launchGameStatusChangeDetection(){
     this.processGameStatusChange(this.gameStatusService.getGameStatus());
     this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.processGameStatusChange(value)});
+  }
+  /**
+   * Allows to stop the game status change detection
+   */
+  public stopGameStatusChangeDetection(){
+    this.gameStatusService.getGameStatusChange().unsubscribe();
   }
 
   /**
    * Process the game status changes, and make the timer act as supposed to
+   * @TODO Change responsibility. Timer status shouldn't be bound by default to the game status.
    * @param gameStatus The current game status
    */
    processGameStatusChange(gameStatus : GameStatus){
