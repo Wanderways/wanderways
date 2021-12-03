@@ -15,7 +15,7 @@ export class GameControllerComponent implements OnInit {
 
     ngOnInit(): void {
         this.isPaused = ( this.gameStatusService.getGameStatus() == GameStatus.PLAYING );
-        this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.handleGameStatusChange(value) })
+        this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.processGameStatusChange(value) })
     }
 
     ngOnDestroy(){
@@ -23,10 +23,10 @@ export class GameControllerComponent implements OnInit {
     }
 
     /**
-     * Handle the game status changes, and make the timer act as supposed to
+     * Process the game status changes, and make the timer act as supposed to
      * @param gameStatus The current game status
      */
-    handleGameStatusChange(gameStatus : GameStatus) : void{
+    processGameStatusChange(gameStatus : GameStatus) : void{
         this.isPaused = ( gameStatus == GameStatus.PLAYING );
     }
 

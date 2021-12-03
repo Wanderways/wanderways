@@ -14,14 +14,15 @@ export class TimerService {
   private currentValueChange : Subject<number> = new Subject<number>();
 
   constructor( private gameStatusService : GameStatusService ) {
-    this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.handleGameStatusChange(value)});
+    this.processGameStatusChange(this.gameStatusService.getGameStatus());
+    this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.processGameStatusChange(value)});
   }
 
   /**
-   * Handle the game status changes, and make the timer act as supposed to
+   * Process the game status changes, and make the timer act as supposed to
    * @param gameStatus The current game status
    */
-  handleGameStatusChange(gameStatus : GameStatus){
+   processGameStatusChange(gameStatus : GameStatus){
     switch(gameStatus){
       case GameStatus.PAUSE :
         this.pauseTimer();
