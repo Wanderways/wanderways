@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
-import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
+import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { Area } from '../../../../utils/interfaces/map-oriented/area';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
@@ -25,7 +25,7 @@ export class AreaTableComponent implements OnInit {
 	expandedElement: Area | null = null;
 	displayedElements : Map<string, boolean> = new Map<string,boolean>();
 
-	constructor(private dataSubjectService : DataSubjectService, private stringFactoryService : StringFactoryService) { }
+	constructor(private dataSubjectService : DataSubjectService) { }
 
   	ngOnInit(): void {
 		//Quoi qu'il arrive on charge l'ensemble des données dans le tableau
@@ -65,7 +65,7 @@ export class AreaTableComponent implements OnInit {
 	 * @returns The normalized string
 	 */
 	replaceSpecialChars(str : string){
-		return this.stringFactoryService.replaceSpecialChars(str);
+		return new StringFactory().replaceSpecialChars(str);
 	}
 
 	/**

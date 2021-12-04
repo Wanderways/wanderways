@@ -5,4 +5,10 @@ export interface Area{
     name : string;
     zone : Zone;
     city : String;
+    logo : logo;
+}
+
+interface logo{
+    url:string;
+    alt:string;
 }

@@ -1,3 +1,4 @@
+import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { Area } from '../../../utils/interfaces/map-oriented/area'
 
 let data : Area[] = [
@@ -8,7 +9,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Bourg-en-Bresse"
+		"city" : "Bourg-en-Bresse",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "	FR-02",
@@ -17,7 +22,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Hauts-de-France"
         },
-		"city" : "Laon"
+		"city" : "Laon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-03",
@@ -26,7 +35,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Moulins"
+		"city" : "Moulins",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-04",
@@ -35,7 +48,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Provence-Alpes-Côte d'Azur"
         },
-		"city" : "Digne-les-Bains"
+		"city" : "Digne-les-Bains",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-04",
@@ -44,7 +61,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Provence-Alpes-Côte d'Azur"
         },
-		"city" : "Gap"
+		"city" : "Gap",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-06",
@@ -53,7 +74,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Provence-Alpes-Côte d'Azur"
         },
-		"city" : "Nice"
+		"city" : "Nice",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-07",
@@ -62,7 +87,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Privas"
+		"city" : "Privas",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-08",
@@ -71,7 +100,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Charleville-Mézières"
+		"city" : "Charleville-Mézières",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-09",
@@ -80,7 +113,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Foix"
+		"city" : "Foix",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-10",
@@ -89,7 +126,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Troyes"
+		"city" : "Troyes",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-11",
@@ -98,7 +139,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Carcassonne"
+		"city" : "Carcassonne",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-12",
@@ -107,7 +152,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Rodez"
+		"city" : "Rodez",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-13",
@@ -116,7 +165,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Provence-Alpes-Côte d'Azur"
         },
-		"city" : "Marseille"
+		"city" : "Marseille",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-14",
@@ -125,7 +178,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Normandie"
         },
-		"city" : "Caen"
+		"city" : "Caen",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-15",
@@ -134,7 +191,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Aurillac"
+		"city" : "Aurillac",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-16",
@@ -143,7 +204,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Angoulême"
+		"city" : "Angoulême",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-17",
@@ -152,7 +217,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "La Rochelle"
+		"city" : "La Rochelle",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-18",
@@ -161,7 +230,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Centre-Val de Loire"
         },
-		"city" : "Bourges"
+		"city" : "Bourges",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-19",
@@ -170,7 +243,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Tulle"
+		"city" : "Tulle",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-21",
@@ -179,7 +256,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bourgogne-Franche-Comté"
         },
-		"city" : "Dijon"
+		"city" : "Dijon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-22",
@@ -188,7 +269,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bretagne"
         },
-		"city" : "Saint-Brieuc"
+		"city" : "Saint-Brieuc",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-23",
@@ -197,7 +282,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Guéret"
+		"city" : "Guéret",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-24",
@@ -206,7 +295,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Périgueux"
+		"city" : "Périgueux",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-25",
@@ -215,7 +308,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bourgogne-Franche-Comté"
         },
-		"city" : "Besançon"
+		"city" : "Besançon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-26",
@@ -224,7 +321,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Valence"
+		"city" : "Valence",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-27",
@@ -233,7 +334,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Normandie"
         },
-		"city" : "Évreux"
+		"city" : "Évreux",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-28",
@@ -242,7 +347,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Centre-Val de Loire"
         },
-		"city" : "Chartres"
+		"city" : "Chartres",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-29",
@@ -251,7 +360,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bretagne"
         },
-		"city" : "Quimper"
+		"city" : "Quimper",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-2A",
@@ -260,7 +373,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Corse"
         },
-		"city" : "Ajaccio"
+		"city" : "Ajaccio",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-2B",
@@ -269,7 +386,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Corse"
         },
-		"city" : "Bastia"
+		"city" : "Bastia",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-30",
@@ -278,7 +399,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Nîmes"
+		"city" : "Nîmes",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-31",
@@ -287,7 +412,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Toulouse"
+		"city" : "Toulouse",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-32",
@@ -296,7 +425,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Auch"
+		"city" : "Auch",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-33",
@@ -305,7 +438,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Bordeaux"
+		"city" : "Bordeaux",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-34",
@@ -314,7 +451,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Montpellier"
+		"city" : "Montpellier",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-35",
@@ -323,7 +464,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bretagne"
         },
-		"city" : "Rennes"
+		"city" : "Rennes",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-36",
@@ -332,7 +477,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Centre-Val de Loire"
         },
-		"city" : "Châteauroux"
+		"city" : "Châteauroux",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-37",
@@ -341,7 +490,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Centre-Val de Loire"
         },
-		"city" : "Tours"
+		"city" : "Tours",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-38",
@@ -350,7 +503,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Grenoble"
+		"city" : "Grenoble",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-39",
@@ -359,7 +516,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bourgogne-Franche-Comté"
         },
-		"city" : "Lons-le-Saunier"
+		"city" : "Lons-le-Saunier",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-40",
@@ -368,7 +529,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Mont-de-Marsan"
+		"city" : "Mont-de-Marsan",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-41",
@@ -377,7 +542,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Centre-Val de Loire"
         },
-		"city" : "Blois"
+		"city" : "Blois",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-42",
@@ -386,7 +555,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Saint-Étienne"
+		"city" : "Saint-Étienne",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-43",
@@ -395,7 +568,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Le Puy-en-Velay"
+		"city" : "Le Puy-en-Velay",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-44",
@@ -404,7 +581,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Pays de la Loire"
         },
-		"city" : "Nantes"
+		"city" : "Nantes",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-45",
@@ -413,7 +594,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Centre-Val de Loire"
         },
-		"city" : "Orléans"
+		"city" : "Orléans",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-46",
@@ -422,7 +607,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Cahors"
+		"city" : "Cahors",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-47",
@@ -431,7 +620,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Agen"
+		"city" : "Agen",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-48",
@@ -440,7 +633,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Mende"
+		"city" : "Mende",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-49",
@@ -449,7 +646,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Pays de la Loire"
         },
-		"city" : "Angers"
+		"city" : "Angers",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-50",
@@ -458,7 +659,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Normandie"
         },
-		"city" : "Saint-Lô"
+		"city" : "Saint-Lô",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-51",
@@ -467,7 +672,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Châlons-en-Champagne"
+		"city" : "Châlons-en-Champagne",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-52",
@@ -476,7 +685,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Chaumont"
+		"city" : "Chaumont",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-53",
@@ -485,7 +698,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Pays de la Loire"
         },
-		"city" : "Laval"
+		"city" : "Laval",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-54",
@@ -494,7 +711,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Nancy"
+		"city" : "Nancy",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-55",
@@ -503,7 +724,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Bar-le-Duc"
+		"city" : "Bar-le-Duc",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-56",
@@ -512,7 +737,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bretagne"
         },
-		"city" : "Vannes"
+		"city" : "Vannes",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-57",
@@ -521,7 +750,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Metz"
+		"city" : "Metz",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-58",
@@ -530,7 +763,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bourgogne-Franche-Comté"
         },
-		"city" : "Nevers"
+		"city" : "Nevers",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-59",
@@ -539,7 +776,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Hauts-de-France"
         },
-		"city" : "Lille"
+		"city" : "Lille",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-60",
@@ -548,7 +789,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Hauts-de-France"
         },
-		"city" : "Beauvais"
+		"city" : "Beauvais",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-61",
@@ -557,7 +802,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Normandie"
         },
-		"city" : "Alençon"
+		"city" : "Alençon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-62",
@@ -566,7 +815,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Hauts-de-France"
         },
-		"city" : "Arras"
+		"city" : "Arras",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-63",
@@ -575,7 +828,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Clermont-Ferrand"
+		"city" : "Clermont-Ferrand",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-64",
@@ -584,7 +841,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Pau"
+		"city" : "Pau",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-65",
@@ -593,7 +854,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Tarbes"
+		"city" : "Tarbes",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-66",
@@ -602,7 +867,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Perpignan"
+		"city" : "Perpignan",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-67",
@@ -611,7 +880,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Strasbourg"
+		"city" : "Strasbourg",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-68",
@@ -620,7 +893,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Colmar"
+		"city" : "Colmar",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-69",
@@ -629,7 +906,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Lyon"
+		"city" : "Lyon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-70",
@@ -638,7 +919,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bourgogne-Franche-Comté"
         },
-		"city" : "Vesoul"
+		"city" : "Vesoul",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-71",
@@ -647,7 +932,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bourgogne-Franche-Comté"
         },
-		"city" : "Mâcon"
+		"city" : "Mâcon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-72",
@@ -656,7 +945,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Pays de la Loire"
         },
-		"city" : "Le Mans"
+		"city" : "Le Mans",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-73",
@@ -665,7 +958,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Chambéry"
+		"city" : "Chambéry",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-74",
@@ -674,7 +971,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Auvergne-Rhône-Alpes"
         },
-		"city" : "Annecy"
+		"city" : "Annecy",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-75",
@@ -683,7 +984,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Île-de-France"
         },
-		"city" : "Paris"
+		"city" : "Paris",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-76",
@@ -692,7 +997,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Normandie"
         },
-		"city" : "Rouen"
+		"city" : "Rouen",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-77",
@@ -701,7 +1010,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Île-de-France"
         },
-		"city" : "Melun"
+		"city" : "Melun",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-78",
@@ -710,7 +1023,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Île-de-France"
         },
-		"city" : "Versailles"
+		"city" : "Versailles",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-79",
@@ -719,7 +1036,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Niort"
+		"city" : "Niort",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-80",
@@ -728,7 +1049,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Hauts-de-France"
         },
-		"city" : "Amiens"
+		"city" : "Amiens",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-81",
@@ -737,7 +1062,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Albi"
+		"city" : "Albi",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-82",
@@ -746,7 +1075,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Occitanie"
         },
-		"city" : "Montauban"
+		"city" : "Montauban",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-83",
@@ -755,7 +1088,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Provence-Alpes-Côte d'Azur"
         },
-		"city" : "Toulon"
+		"city" : "Toulon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-84",
@@ -764,7 +1101,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Provence-Alpes-Côte d'Azur"
         },
-		"city" : "Avignon"
+		"city" : "Avignon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-85",
@@ -773,7 +1114,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Pays de la Loire"
         },
-		"city" : "La Roche-sur-Yon"
+		"city" : "La Roche-sur-Yon",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-86",
@@ -782,7 +1127,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Poitiers"
+		"city" : "Poitiers",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-87",
@@ -791,7 +1140,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Nouvelle-Aquitaine"
         },
-		"city" : "Limoges"
+		"city" : "Limoges",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-88",
@@ -800,7 +1153,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Grand Est"
         },
-		"city" : "Épinal"
+		"city" : "Épinal",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-89",
@@ -809,7 +1166,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bourgogne-Franche-Comté"
         },
-		"city" : "Auxerre"
+		"city" : "Auxerre",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-90",
@@ -818,7 +1179,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Bourgogne-Franche-Comté"
         },
-		"city" : "Belfort"
+		"city" : "Belfort",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-91",
@@ -827,7 +1192,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Île-de-France"
         },
-		"city" : "Évry-Courcouronnes"
+		"city" : "Évry-Courcouronnes",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-92",
@@ -836,7 +1205,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Île-de-France"
         },
-		"city" : "Nanterre"
+		"city" : "Nanterre",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-93",
@@ -845,7 +1218,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Île-de-France"
         },
-		"city" : "Bobigny"
+		"city" : "Bobigny",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-94",
@@ -854,7 +1231,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Île-de-France"
         },
-		"city" : "Créteil"
+		"city" : "Créteil",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-95",
@@ -863,7 +1244,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Île-de-France"
         },
-		"city" : "Cergy"
+		"city" : "Cergy",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     }
     ,
     {
@@ -873,7 +1258,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Guadeloupe"
         },
-		"city" : "Basse-Terre"
+		"city" : "Basse-Terre",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-972",
@@ -882,7 +1271,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Martinique"
         },
-		"city" : "Fort-de-France"
+		"city" : "Fort-de-France",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-973",
@@ -891,7 +1284,11 @@ let data : Area[] = [
         "zone" : {
             "name": "Guyane"
         },
-		"city" : "Cayenne"
+		"city" : "Cayenne",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-974",
@@ -900,7 +1297,11 @@ let data : Area[] = [
         "zone" : {
             "name": "La Réunion"
         },
-		"city" : "Saint-Denis"
+		"city" : "Saint-Denis",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "FR-976",
@@ -909,8 +1310,17 @@ let data : Area[] = [
         "zone" : {
             "name": "Mayotte"
         },
-		"city" : "Dzaoudzi"
+		"city" : "Dzaoudzi",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     }
 ]
+
+data.forEach(element => {
+    element.logo.url = "https://www.regions-et-departements.fr/images/logos-departements/thumbs/"+element.num+"-logo-"+new StringFactory().replaceSpecialChars(element.name)+".png";
+    element.logo.alt = "Logo de "+element.name;
+});
 
 export {data};

@@ -1,12 +1,4 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class StringFactoryService {
-
-  constructor() { }
-
+export class StringFactory{
     /**
      * Replace accented char by their ascii equivalent. To lower case and space replaced by hyphen.
      * @param str : A string to normalise
@@ -34,7 +26,7 @@ export class StringFactoryService {
      * @returns Modified string
      */
     replaceSpaceWithHyphens(str : string){
-      return str.replace(/([^\w]+|\s+)/g, '-');
+    return str.replace(/([^\w]+|\s+)/g, '-');
     }
 
     /**
@@ -43,7 +35,7 @@ export class StringFactoryService {
      * @returns Modified string
      */
     replaceMultipleHyphensByOne(str : string){
-      return str.replace(/\-\-+/g, '-');
+    return str.replace(/\-\-+/g, '-');
     }
 
     /**
@@ -52,7 +44,7 @@ export class StringFactoryService {
      * @returns Modified string
      */
     removeExtraHypensFromBeginning(str : string){
-      return str.replace(/(^-+|-+$)/, '');// 
+    return str.replace(/(^-+|-+$)/, '');// 
     }
 
     /**
@@ -62,8 +54,8 @@ export class StringFactoryService {
      * @returns True si les deux sont identiques après normalisation
      */
     compareNormalizedStrings(str1: string, str2 : string){
-      // console.log(str1);
-      // console.log(str2);
-      return this.replaceSpecialChars(str1) == this.replaceSpecialChars(str2);
+    // console.log(str1);
+    // console.log(str2);
+    return this.replaceSpecialChars(str1) == this.replaceSpecialChars(str2);
     }
 }
