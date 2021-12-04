@@ -26,12 +26,10 @@ export class MapToolbox implements OnInit {
     /**
      * Initialisation des services.
      */
-    private inputSubjectService :InputSubjectService;
-    private nodeSubjectService : NodeSubjectService;
-    private dataSubjectService : DataSubjectService;
-    protected mapMetaDataService : MapMetaDataService;
-
-    constructor( inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService, mapMetaDataService : MapMetaDataService){
+    constructor(protected inputSubjectService :InputSubjectService,
+                protected nodeSubjectService : NodeSubjectService,
+                protected dataSubjectService : DataSubjectService,
+                protected mapMetaDataService : MapMetaDataService){
         this.inputSubjectService = inputSubjectService;
         this.nodeSubjectService = nodeSubjectService;
         this.dataSubjectService = dataSubjectService;
