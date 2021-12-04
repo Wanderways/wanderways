@@ -34,11 +34,6 @@ export class MapToolbox implements OnInit {
         this.nodeSubjectService = nodeSubjectService;
         this.dataSubjectService = dataSubjectService;
         this.mapMetaDataService = mapMetaDataService;
-        /**
-         * The data source must be initialized in the constructor for stability issues
-         * More precisely, if not executed in the constructor, the value will be set during the building stage, between components state checking. Between two checks, the value will have changed, and cause a non-fatal error
-         */
-        this.dataSubjectService.setsourceDataValue(this.data);
     }
 
     /**

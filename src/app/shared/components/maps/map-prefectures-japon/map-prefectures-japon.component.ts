@@ -21,10 +21,10 @@ export class MapPrefecturesJaponComponent extends MapToolbox  implements OnInit 
      * More precisely, if not executed in the constructor, the value will be set during the building stage, between components state checking. Between two checks, the value will have changed, and cause a non-fatal error
      */
 		this.dataSubjectService.setsourceDataValue(this.data);
+		this.mapMetaDataService.setMapMetaData( MapsType.MAP_PREFECTURES_JAPON );
   }
   ngOnInit(): void {
 		super.ngOnInit();
-		this.mapMetaDataService.setMapMetaData( MapsType.MAP_PREFECTURES_JAPON );
   }
 
 }

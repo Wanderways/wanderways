@@ -47,8 +47,6 @@ export class MapPageComponent implements OnInit {
       this.selectedMap = MapsType.getTypeFromIdentifier(map)!;
       this.selectedGameMode = GameModeType.getTypeFromIdentifier(game)!;
       console.log(this.selectedGameMode);
-      
-      this.gameModeMetaDataService.setGameMetaData(this.selectedGameMode);
     }else{
       this.displaySelection = true;
       this.router.navigate(['/maps']);

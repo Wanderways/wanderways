@@ -28,7 +28,6 @@ export class MapComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
-		this.mapMetaDataService.setMapMetaData(this.map);
 	}
 	ngOnDestroy() : void {
 		this.mapMetaDataService.clear();

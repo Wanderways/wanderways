@@ -15,16 +15,16 @@ import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 export class InputAgainstTimeComponent extends Game implements OnInit {
 
   constructor(protected route: ActivatedRoute,
-    protected router: Router,
-    protected gameModeMetaDataService : GameModeMetaDataService,
-    protected mapMetaDataService : MapMetaDataService,
-    protected gameStatusService : GameStatusService,
-    private timerService : TimerService) {
+              protected router: Router,
+              protected gameModeMetaDataService : GameModeMetaDataService,
+              protected mapMetaDataService : MapMetaDataService,
+              protected gameStatusService : GameStatusService,
+              private timerService : TimerService) {
     super(route, router,  gameModeMetaDataService, mapMetaDataService,gameStatusService);
+    this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
   }
 
   ngOnInit(): void {
-    this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
   }
 
   ngAfterContentInit(): void{
