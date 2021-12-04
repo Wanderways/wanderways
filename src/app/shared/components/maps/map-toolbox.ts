@@ -84,10 +84,7 @@ export class MapToolbox implements OnInit {
      * @returns Le département ou undefined
      */
     getAreaByName(input_area_name : string) : Area {
-        console.log(input_area_name);
-        
         let result = this.data.find(({ name }) => this.normalizeString(input_area_name) == this.normalizeString(name)); 
-        console.log("C'est une réussite")
         if(result){// Si on a bien une valeur.
             this.dataSubjectService.setCurrentdataValue(result);
         }    

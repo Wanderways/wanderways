@@ -161,7 +161,7 @@ export class DataSubjectService {
      * Set the currents data to null
      */
     public clear() : void {
-        this.setCurrentdataValue(null);
+        this.setCurrentdataValue({});
         this.setsourceDataValue([]);
         this.setFinalDataValue([]);
     }
