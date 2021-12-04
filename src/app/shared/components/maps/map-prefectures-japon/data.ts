@@ -1,6 +1,7 @@
+import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { Area } from '../../../utils/interfaces/map-oriented/area';
 
-export let data : Area[] = [
+let data : Area[] = [
     {
         "iso_3166" : "JP-01",
         "num" : "01",
@@ -8,7 +9,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Hokkaidō"
         },
-        "city":"Sapporo"
+        "city":"Sapporo",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-02",
@@ -17,7 +22,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Tōhoku"
         },
-        "city":"Aomori"
+        "city":"Aomori",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-03",
@@ -26,7 +35,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Tōhoku"
         },
-        "city":"Morioka"
+        "city":"Morioka",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-04",
@@ -35,7 +48,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Tōhoku"
         },
-        "city":"Sendai"
+        "city":"Sendai",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-05",
@@ -44,7 +61,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Tōhoku"
         },
-        "city":"Akita"
+        "city":"Akita",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-06",
@@ -53,7 +74,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Tōhoku"
         },
-        "city":"Yamagata"
+        "city":"Yamagata",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-07",
@@ -62,7 +87,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Tōhoku"
         },
-        "city":"Fukushima"
+        "city":"Fukushima",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-08",
@@ -71,7 +100,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kantō"
         },
-        "city":"Mito"
+        "city":"Mito",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-09",
@@ -80,7 +113,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kantō"
         },
-        "city":"Utsunomiya"
+        "city":"Utsunomiya",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-10",
@@ -89,7 +126,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kantō"
         },
-        "city":"Maebashi"
+        "city":"Maebashi",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-11",
@@ -98,7 +139,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kantō"
         },
-        "city":"Saitama"
+        "city":"Saitama",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-12",
@@ -107,7 +152,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kantō"
         },
-        "city":"Chiba"
+        "city":"Chiba",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-13",
@@ -116,7 +165,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kantō"
         },
-        "city":"Tokyo"
+        "city":"Tokyo",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-14",
@@ -125,7 +178,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kantō"
         },
-        "city":"Yokohama"
+        "city":"Yokohama",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-15",
@@ -134,7 +191,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Niigata"
+        "city":"Niigata",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-16",
@@ -143,7 +204,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Toyama"
+        "city":"Toyama",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-17",
@@ -152,7 +217,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Kanazawa"
+        "city":"Kanazawa",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-18",
@@ -161,7 +230,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Fukui"
+        "city":"Fukui",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-19",
@@ -170,7 +243,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Kōfu"
+        "city":"Kōfu",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-20",
@@ -179,7 +256,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Nagano"
+        "city":"Nagano",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-21",
@@ -188,7 +269,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Gifu"
+        "city":"Gifu",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-22",
@@ -197,7 +282,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Shizuoka"
+        "city":"Shizuoka",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-23",
@@ -206,7 +295,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūbu"
         },
-        "city":"Nagoya"
+        "city":"Nagoya",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-24",
@@ -215,7 +308,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kansai"
         },
-        "city":"Tsu"
+        "city":"Tsu",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-25",
@@ -224,7 +321,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kansai"
         },
-        "city":"Ōtsu"
+        "city":"Ōtsu",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-26",
@@ -233,7 +334,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kansai"
         },
-        "city":"Kyoto"
+        "city":"Kyoto",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-27",
@@ -242,7 +347,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kansai"
         },
-        "city":"Ōsaka"
+        "city":"Ōsaka",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-28",
@@ -251,7 +360,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kansai"
         },
-        "city":"Kōbe"
+        "city":"Kōbe",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-29",
@@ -260,7 +373,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kansai"
         },
-        "city":"Nara"
+        "city":"Nara",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-30",
@@ -269,7 +386,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kansai"
         },
-        "city":"Wakayama"
+        "city":"Wakayama",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-31",
@@ -278,7 +399,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūgoku"
         },
-        "city":"Tottori"
+        "city":"Tottori",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-32",
@@ -287,7 +412,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūgoku"
         },
-        "city":"Matsue"
+        "city":"Matsue",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-33",
@@ -296,7 +425,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūgoku"
         },
-        "city":"Okayama"
+        "city":"Okayama",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-34",
@@ -305,7 +438,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūgoku"
         },
-        "city":"Hiroshima"
+        "city":"Hiroshima",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-35",
@@ -314,7 +451,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Chūgoku"
         },
-        "city":"Yamaguchi"
+        "city":"Yamaguchi",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-36",
@@ -323,7 +464,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Shikoku"
         },
-        "city":"Tokushima"
+        "city":"Tokushima",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-37",
@@ -332,7 +477,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Shikoku"
         },
-        "city":"Takamatsu"
+        "city":"Takamatsu",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-38",
@@ -341,7 +490,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Shikoku"
         },
-        "city":"Matsuyama"
+        "city":"Matsuyama",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-39",
@@ -350,7 +503,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Shikoku"
         },
-        "city":"Kōchi"
+        "city":"Kōchi",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-40",
@@ -359,7 +516,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kyūshū"
         },
-        "city":"Fukuoka"
+        "city":"Fukuoka",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-41",
@@ -368,7 +529,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kyūshū"
         },
-        "city":"Saga"
+        "city":"Saga",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-42",
@@ -377,7 +542,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kyūshū"
         },
-        "city":"Nagasaki"
+        "city":"Nagasaki",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-43",
@@ -386,7 +555,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kyūshū"
         },
-        "city":"Kumamoto"
+        "city":"Kumamoto",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-44",
@@ -395,7 +568,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kyūshū"
         },
-        "city":"Ōita"
+        "city":"Ōita",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-45",
@@ -404,7 +581,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kyūshū"
         },
-        "city":"Miyazaki"
+        "city":"Miyazaki",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-46",
@@ -413,7 +594,11 @@ export let data : Area[] = [
         "zone":{
             "name":"Kyūshū"
         },
-        "city":"Kagoshima"
+        "city":"Kagoshima",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
     {
         "iso_3166" : "JP-47",
@@ -422,6 +607,17 @@ export let data : Area[] = [
         "zone":{
             "name":"Kyūshū"
         },
-        "city":"Naha"
+        "city":"Naha",
+		"logo":{
+			"url":"",
+			"alt":""
+		}
     },
 ];
+
+data.forEach(element => {
+    element.logo.url = "https://www.regions-et-departements.fr/images/logos-departements/thumbs/"+element.num+"-logo-"+new StringFactory().replaceSpecialChars(element.name)+".png";
+    element.logo.alt = "Logo de "+element.name;
+});
+
+export { data };
