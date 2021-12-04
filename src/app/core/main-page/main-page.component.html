@@ -16,7 +16,7 @@
                 </div>
                 <div class="description-container">
                     <p>Carte des préfectures du Japon</p>
-                    <button mat-raised-button [routerLink]="['/maps']" [queryParams]="{ map : MapsType.MAP_PREFECTURES_JAPON.map_identifier, game: GameModeType.GAME_INPUT.game_mode_identifier }">C'est parti !</button>
+                    <button mat-raised-button [routerLink]="['/maps/games', GameModeType.GAME_INPUT.game_mode_identifier ]" [queryParams]="{ map : MapsType.MAP_PREFECTURES_JAPON.map_identifier }">C'est parti !</button>
                 </div>
             </mat-card-content>
         </mat-card>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="description-container">
                     <p>Carte des départements<br>Avec DOMTOM mais sans les collectivitées d'outres mer</p>
-                    <button mat-raised-button [routerLink]="['/maps']" [queryParams]="{ map : MapsType.MAP_DEPARTEMENTS_FRANCE.map_identifier, game: GameModeType.GAME_INPUT.game_mode_identifier }">C'est parti !</button>
+                    <button mat-raised-button [routerLink]="['/maps/games', GameModeType.GAME_INPUT.game_mode_identifier]" [queryParams]="{ map : MapsType.MAP_DEPARTEMENTS_FRANCE.map_identifier }">C'est parti !</button>
                 </div>
             </mat-card-content>
         </mat-card>
