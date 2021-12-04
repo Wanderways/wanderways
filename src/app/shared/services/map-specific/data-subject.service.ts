@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { StringFactoryService } from 'src/app/shared/services/utilitary/string-factory.service';
+import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { GameStatus } from '../../utils/enums/GameStatus.enum';
 import { GameStatusService } from '../game-mode-specific/game-status.service';
 
@@ -17,8 +17,7 @@ export class DataSubjectService {
     private currentDataChange : Subject<any> = new Subject<any>();
     private finalDataChange : Subject<any[]> = new Subject<any[]>();
 
-    constructor(private stringFactoryService : StringFactoryService,
-                private gameStatusService : GameStatusService) {
+    constructor(private gameStatusService : GameStatusService) {
         this.sourceDataChange.subscribe((value)=>{this.sourceData = value;});
         this.currentDataChange.subscribe((value)=>{this.currentData = value;});
         this.finalDataChange.subscribe((value)=>{this.finalData = value;});
@@ -75,11 +74,12 @@ export class DataSubjectService {
    * @param obj 
    */
      public addDataToFinalDataFromName(name : string) : void{
-      let result = this.sourceData.find((value) => this.stringFactoryService.replaceSpecialChars(name) == this.stringFactoryService.replaceSpecialChars(value.name)); 
-      this.addDataToFinalData(result);
-      if(this.checkIfAllDataFound()){
-          this.gameStatusService.setGameStatus(GameStatus.WON);
-      }
+        let stringFactory = new StringFactory()
+        let result = this.sourceData.find((value) => stringFactory.replaceSpecialChars(name) == stringFactory.replaceSpecialChars(value.name)); 
+        this.addDataToFinalData(result);
+        if(this.checkIfAllDataFound()){
+            this.gameStatusService.setGameStatus(GameStatus.WON);
+        }
     }
     /**
      * Permet d'ajouter un objet à la liste des données actuels.
@@ -123,7 +123,7 @@ export class DataSubjectService {
      * @returns Vrai si l'objet est dans la liste, faux sinon.
      */
      public isValidData(name : string) : boolean{
-        return this.sourceData.find((value)=>{return this.stringFactoryService.compareNormalizedStrings(value.name , name)});
+        return this.sourceData.find((value)=>{return new StringFactory().compareNormalizedStrings(value.name , name)});
     }
     /**
      * Permet de savoir si l'objet donné figure déjà parmis les données trouvées.
@@ -132,7 +132,7 @@ export class DataSubjectService {
      */
      public isInFinalData(name : string) : boolean{
         return this.finalData.find((value)=>{
-            return this.stringFactoryService.compareNormalizedStrings(value.name , name)
+            return new StringFactory().compareNormalizedStrings(value.name , name)
         });
     }
 
@@ -143,9 +143,10 @@ export class DataSubjectService {
      * @returns True if one or more exists
      */
      public extendedNameExist(name : string) : boolean{
-        var regex = new RegExp('^'+this.stringFactoryService.replaceSpecialChars(name)+'.+');
+        let stringFactory = new StringFactory()
+        var regex = new RegExp('^'+stringFactory.replaceSpecialChars(name)+'.+');
         return this.sourceData.find((value)=>{
-            return this.stringFactoryService.replaceSpecialChars(value.name).match(regex);
+            return stringFactory.replaceSpecialChars(value.name).match(regex);
         });
     }
 
