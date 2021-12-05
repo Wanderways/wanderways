@@ -5,6 +5,7 @@ import { GameStatusService } from 'src/app/shared/services/game-mode-specific/ga
 import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.service';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { InputAgainstTimeComponent } from '../../input-against-time.component';
+import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 
 @Component({
   selector: 'app-input-against-time-scene',
@@ -21,6 +22,7 @@ export class InputAgainstTimeSceneComponent extends InputAgainstTimeComponent im
     protected gameStatusService : GameStatusService,
     protected timerService : TimerService) {
       super(route, router, gameModeMetaDataService, mapMetaDataService,gameStatusService, timerService);
+      this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
   }
 
   ngOnInit(): void {
