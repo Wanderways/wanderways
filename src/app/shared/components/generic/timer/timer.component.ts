@@ -16,12 +16,13 @@ export class TimerComponent implements OnInit {
 	value : number = this.upperBound;
   
 	constructor(private timerService : TimerService) {
-		this.timerService.setUpperBound(this.upperBound);
-		timerService.getCurrentValueChange().subscribe((value : number)=>this.processCurrentValueChange(value));
 	}
 
 	ngOnInit(): void {
-		this.value = this.timerService.getUpperBound();
+		this.value = this.upperBound;
+		// This service setter must be in ngInit for timing issues (waiting for @Input to be loaded)
+		this.timerService.setUpperBound(this.upperBound);
+		this.timerService.getCurrentValueChange().subscribe((value : number)=>this.processCurrentValueChange(value));
 	}
 
 	ngOnDestroy(){

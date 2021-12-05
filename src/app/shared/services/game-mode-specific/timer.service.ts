@@ -26,7 +26,7 @@ export class TimerService {
    * Allows to stop the game status change detection
    */
   public stopGameStatusChangeDetection(){
-    this.gameStatusService.getGameStatusChange().unsubscribe();
+    //this.gameStatusService.getGameStatusChange().unsubscribe();
   }
 
   /**
@@ -60,18 +60,23 @@ export class TimerService {
    */
   startTimer() : void {
     if(this.upperBound <=0){
-      console.error("Erreur : La valeur max du timer "+(this.upperBound==0?"n'a pas été initialisée.":"est inférieur à zéro.")+" Valeur actuelle : "+this.upperBound);
+      console.error("Error : La valeur max du timer "+(this.upperBound==0?"n'a pas été initialisée.":"est inférieur à zéro.")+" Valeur actuelle : "+this.upperBound);
     }
-    this.interval = setInterval(() => {
-      if(this.currentValue > 0) { // If value is initialized, then starts counting
-        this.updateValue(this.currentValue-1);
-      } else if(this.currentValue == 0){ // If timer reach 0, then pause timer then end game
-        this.pauseTimer();
-        this.gameStatusService.setGameStatus(GameStatus.LOST);
-      } else {
-        this.resetTimer();
-      }
-    },1000)
+    if(!this.interval){
+      this.interval = setInterval(() => {
+        if(this.currentValue > 0) { // If value is initialized, then starts counting
+          this.updateValue(this.currentValue-1);
+        } else if(this.currentValue == 0){ // If timer reach 0, then pause timer then end game
+          this.pauseTimer();
+          this.gameStatusService.setGameStatus(GameStatus.LOST);
+        } else {
+          this.resetTimer();
+        }
+      },1000)
+    }else{
+      console.error("Erreur : Un timer est déjà en cours.");
+    }
+    
   }
   
   /**
