@@ -15,16 +15,13 @@ import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-su
 	styleUrls: ['./map-departements-francais.component.scss']
 })
 export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnInit {
-
-  	data : Area[] = data;
-
 	constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService, mapMetaDataService : MapMetaDataService){
 			super(inputSubjectService, nodeSubjectService, dataSubjectService, mapMetaDataService); 
 		/**
          * The data source must be initialized in the constructor for stability issues
          * More precisely, if not executed in the constructor, the value will be set during the building stage, between components state checking. Between two checks, the value will have changed, and cause a non-fatal error
          */
-		this.dataSubjectService.setsourceDataValue(this.data);
+		this.dataSubjectService.setsourceDataValue(data);
 		this.mapMetaDataService.setMapMetaData( MapsType.MAP_DEPARTEMENTS_FRANCE );
 	}
 
