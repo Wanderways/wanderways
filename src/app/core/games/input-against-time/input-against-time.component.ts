@@ -19,7 +19,7 @@ export class InputAgainstTimeComponent extends Game implements OnInit {
               protected gameModeMetaDataService : GameModeMetaDataService,
               protected mapMetaDataService : MapMetaDataService,
               protected gameStatusService : GameStatusService,
-              private timerService : TimerService) {
+              protected timerService : TimerService) {
     super(route, router,  gameModeMetaDataService, mapMetaDataService,gameStatusService);
     this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
   }
@@ -37,7 +37,7 @@ export class InputAgainstTimeComponent extends Game implements OnInit {
 	ngOnDestroy(){
 		this.gameModeMetaDataService.clear();
     this.gameStatusService.clear();
-    this.timerService.stopGameStatusChangeDetection();
+    this.timerService.clear();
 	}
   
   bindGameStatus(): void {
