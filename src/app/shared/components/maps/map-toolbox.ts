@@ -4,6 +4,7 @@ import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-met
 import { Area } from "../../utils/interfaces/map-oriented/area";
 import { NodeSubjectService } from "../../services/map-specific/node-subject.service";
 import { InputSubjectService } from "../../services/game-mode-specific/input-subject.service";
+import { StringFactory } from "../../utils/factories/string.factory";
 
 
 
@@ -41,13 +42,22 @@ export class MapToolbox implements OnInit {
      */
     ngOnInit(){
         // On surveille la liste des valeur mise en zone input
-        this.inputSubjectService.getInputChange().subscribe((value)=>{
-            // Si la valeur en input correspond à une zone/area, alors on récupère la node associé
-            let area = this.getAreaByName(value);
-            if (area){
-                this.getAreaNode(area.num);
-            }
-        });
+        this.inputSubjectService.getInputChange().subscribe((value : string)=>this.processInputChange(value));
+        this.dataSubjectService.getSourceDataChange().subscribe((value : any[]) =>this.processSourceDataChange(value));
+    }
+
+    processInputChange(value : string){
+        // Si la valeur en input correspond à une zone/area, alors on récupère la node associé
+        let area = this.getAreaByName(value);
+        if (area){
+            this.getAreaNode(area.num);
+        }
+    }
+
+    processSourceDataChange(data : any[]){
+        console.log(data);
+        
+        this.data = data;
     }
 
     /**
@@ -77,7 +87,8 @@ export class MapToolbox implements OnInit {
      * @returns Le département ou undefined
      */
     getAreaByName(input_area_name : string) : Area {
-        let result = this.data.find(({ name }) => this.normalizeString(input_area_name) == this.normalizeString(name)); 
+        let stringFactory = new StringFactory();
+        let result = this.data.find(({ name }) => stringFactory.replaceSpecialChars(input_area_name) == stringFactory.replaceSpecialChars(name));
         if(result){// Si on a bien une valeur.
             this.dataSubjectService.setCurrentdataValue(result);
         }    
@@ -90,30 +101,9 @@ export class MapToolbox implements OnInit {
      * @returns 
      */
     getAreasFromZone(zone_name : string) {
+        let stringFactory = new StringFactory();
         return this.data.filter(({ name }) => {
-            ( this.normalizeString(name) ==  this.normalizeString(zone_name));
+            ( stringFactory.replaceSpecialChars(name) ==  stringFactory.replaceSpecialChars(zone_name));
         })
-    }
-
-    /**
-     * Permet de retourner une chaine de charactère normalisé pour pouvoir être comparée
-     * Exemple : "Puy-de-Dôme" donne "puydedome"
-     * @param str : Le string d'entrée
-     * @returns Le string normalisé
-     */
-    normalizeString(str : string) : string{
-        return this.replaceSpecialChars(str).toLowerCase().normalize("NFD");
-    }
-
-    /**
-     * Permet de remplacer des char ayant des accents par leurs équivalent sans accent
-     * @param str : La chaîne de charactères dont on veut remplacer ceux accentuées
-     * @returns Le string sans les accents
-     */
-    replaceSpecialChars(str : string){
-        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '') // Remove accents
-            .replace(/([^\w]+|\s+)/g, '-') // Replace space and other characters by hyphen
-            .replace(/\-\-+/g, '-')	// Replaces multiple hyphens by one hyphen
-            .replace(/(^-+|-+$)/, ''); // Remove extra hyphens from beginning or end of the string
     }
 }

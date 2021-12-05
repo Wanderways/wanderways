@@ -31,13 +31,14 @@ export class AreaTableComponent implements OnInit {
 		//Quoi qu'il arrive on charge l'ensemble des données dans le tableau
 		this.dataSubjectService.getSourceDataChange().subscribe((value)=>{
 			this.dataSource=value;
+			// We set all elements as visible
 			this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, true)});
 			//Si on est en mode jeu, alors on cache toutes les données, et on surveille l'avancé du tableau de résultat
 			if(this.inGameMode){
 				this.hideAllContent();
 			}
 		});
-		this.dataSubjectService.getCurrentdataChange().subscribe((value)=>{this.displayByContentId(value.num);});
+		this.dataSubjectService.getCurrentdataChange().subscribe(value=>this.displayByContentId(value.num));
 	}
 
 

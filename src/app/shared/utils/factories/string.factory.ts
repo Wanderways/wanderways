@@ -26,7 +26,7 @@ export class StringFactory{
      * @returns Modified string
      */
     replaceSpaceWithHyphens(str : string){
-    return str.replace(/([^\w]+|\s+)/g, '-');
+        return str.replace(/([^\w]+|\s+)/g, '-');
     }
 
     /**
@@ -35,7 +35,7 @@ export class StringFactory{
      * @returns Modified string
      */
     replaceMultipleHyphensByOne(str : string){
-    return str.replace(/\-\-+/g, '-');
+        return str.replace(/\-\-+/g, '-');
     }
 
     /**
@@ -44,7 +44,7 @@ export class StringFactory{
      * @returns Modified string
      */
     removeExtraHypensFromBeginning(str : string){
-    return str.replace(/(^-+|-+$)/, '');// 
+        return str.replace(/(^-+|-+$)/, '');// 
     }
 
     /**
