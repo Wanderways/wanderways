@@ -89,7 +89,7 @@ let data : Area[] = [
         },
 		"city" : "Privas",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/07-logo-ardèche.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/07-logo-ardeche.png",
 			"alt":"Logo du département Ardèche"
 		}
     },
@@ -115,7 +115,7 @@ let data : Area[] = [
         },
 		"city" : "Foix",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/09-logo-ariège.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/09-logo-ariege.png",
 			"alt":"Logo du département Ariège"
 		}
     },
@@ -167,7 +167,7 @@ let data : Area[] = [
         },
 		"city" : "Marseille",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/13-logo-bouches-du-rhône.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/13-logo-bouches-du-rhone.png",
 			"alt":"Logo du département Bouches-du-Rhône"
 		}
     },
@@ -245,7 +245,7 @@ let data : Area[] = [
         },
 		"city" : "Tulle",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/19-logo-corrèze.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/19-logo-correze.png",
 			"alt":"Logo du département Corrèze"
 		}
     },
@@ -258,7 +258,7 @@ let data : Area[] = [
         },
 		"city" : "Dijon",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/21-logo-côte-d'or.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/21-logo-cote-d-or.png",
 			"alt":"Logo du département Côte-d'Or"
 		}
     },
@@ -271,7 +271,7 @@ let data : Area[] = [
         },
 		"city" : "Saint-Brieuc",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/22-logo-côtes-d'armor.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/22-logo-cotes-d-armor.png",
 			"alt":"Logo du département Côtes-d'Armor"
 		}
     },
@@ -323,7 +323,7 @@ let data : Area[] = [
         },
 		"city" : "Valence",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/26-logo-drôme.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/26-logo-drome.png",
 			"alt":"Logo du département Drôme"
 		}
     },
@@ -362,7 +362,7 @@ let data : Area[] = [
         },
 		"city" : "Quimper",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/29-logo-finistère.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/29-logo-finistere.png",
 			"alt":"Logo du département Finistère"
 		}
     },
@@ -453,7 +453,7 @@ let data : Area[] = [
         },
 		"city" : "Montpellier",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/34-logo-hérault.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/34-logo-herault.png",
 			"alt":"Logo du département Hérault"
 		}
     },
@@ -505,7 +505,7 @@ let data : Area[] = [
         },
 		"city" : "Grenoble",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/38-logo-isère.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/38-logo-isere.png",
 			"alt":"Logo du département Isère"
 		}
     },
@@ -635,7 +635,7 @@ let data : Area[] = [
         },
 		"city" : "Mende",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/48-logo-lozère.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/48-logo-lozere.png",
 			"alt":"Logo du département Lozère"
 		}
     },
@@ -765,7 +765,7 @@ let data : Area[] = [
         },
 		"city" : "Nevers",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/58-logo-nièvre.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/58-logo-nievre.png",
 			"alt":"Logo du département Nièvre"
 		}
     },
@@ -830,7 +830,7 @@ let data : Area[] = [
         },
 		"city" : "Clermont-Ferrand",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/63-logo-puy-de-dôme.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/63-logo-puy-de-dome.png",
 			"alt":"Logo du département Puy-de-Dôme"
 		}
     },
@@ -843,7 +843,7 @@ let data : Area[] = [
         },
 		"city" : "Pau",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/64-logo-pyrénées-atlantiques.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/64-logo-pyrenees-atlantiques.png",
 			"alt":"Logo du département Pyrénées-Atlantiques"
 		}
     },
@@ -856,7 +856,7 @@ let data : Area[] = [
         },
 		"city" : "Tarbes",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/65-logo-hautes-pyrénées.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/65-logo-hautes-pyrenees.png",
 			"alt":"Logo du département Hautes-Pyrénées"
 		}
     },
@@ -869,7 +869,7 @@ let data : Area[] = [
         },
 		"city" : "Perpignan",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/66-logo-pyrénées-orientales.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/66-logo-pyrenees-orientales.png",
 			"alt":"Logo du département Pyrénées-Orientales"
 		}
     },
@@ -908,7 +908,7 @@ let data : Area[] = [
         },
 		"city" : "Lyon",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/69-logo-rhône.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/69-logo-rhone.png",
 			"alt":"Logo du département Rhône"
 		}
     },
@@ -921,7 +921,7 @@ let data : Area[] = [
         },
 		"city" : "Vesoul",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/70-logo-haute-saône.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/70-logo-haute-saone.png",
 			"alt":"Logo du département Haute-Saône"
 		}
     },
@@ -934,7 +934,7 @@ let data : Area[] = [
         },
 		"city" : "Mâcon",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/71-logo-saône-et-loire.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/71-logo-saone-et-loire.png",
 			"alt":"Logo du département Saône-et-Loire"
 		}
     },
@@ -1038,7 +1038,7 @@ let data : Area[] = [
         },
 		"city" : "Niort",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/79-logo-deux-sèvres.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/79-logo-deux-sevres.png",
 			"alt":"Logo du département Deux-Sèvres"
 		}
     },
@@ -1116,7 +1116,7 @@ let data : Area[] = [
         },
 		"city" : "La Roche-sur-Yon",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/85-logo-vendée.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/85-logo-vendee.png",
 			"alt":"Logo du département Vendée"
 		}
     },
@@ -1246,7 +1246,7 @@ let data : Area[] = [
         },
 		"city" : "Cergy",
 		"logo":{
-			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/95-logo-val-d'oise.png",
+			"url":"https://www.regions-et-departements.fr/images/logos-departements/thumbs/95-logo-val-d-oise.png",
 			"alt":"Logo du département Val-d'Oise"
 		}
     }
