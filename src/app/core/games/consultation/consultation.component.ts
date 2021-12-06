@@ -4,6 +4,7 @@ import { GameModeMetaDataService } from 'src/app/shared/services/game-mode-speci
 import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { Game } from 'src/app/shared/utils/abstract/game.abstract';
+import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 
 @Component({
   selector: 'app-consultation',
@@ -11,6 +12,7 @@ import { Game } from 'src/app/shared/utils/abstract/game.abstract';
   styleUrls: ['./consultation.component.scss']
 })
 export class ConsultationComponent extends Game implements OnInit {
+  
 
   constructor(protected route: ActivatedRoute,
     protected router: Router,
@@ -21,7 +23,6 @@ export class ConsultationComponent extends Game implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.selectedMap);
     
   }
   bindGameStatus(): void {
@@ -43,6 +44,10 @@ export class ConsultationComponent extends Game implements OnInit {
     throw new Error('Method not implemented.');
   }
   onError(): void {
+    throw new Error('Method not implemented.');
+  }
+
+  checkCurrentGameStatus(gamestatus: GameStatus): boolean {
     throw new Error('Method not implemented.');
   }
 }

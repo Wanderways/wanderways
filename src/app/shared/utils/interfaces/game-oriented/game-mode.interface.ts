@@ -1,14 +1,8 @@
-import { GameStatus } from "../../enums/GameStatus.enum";
-
 /**
  * Class that must be implemented by all game modes.
  * Force the developer to explicitly implement the behaviour of the game mode throughout the game
  */
-export interface GameModeFactory{
-    /**
-     * The current game status
-     */
-    currentStatus : GameStatus;
+export interface GameMode{
 
     /**
      * Function that should implement a basic binding between the gameStatus and the GameStatusService

@@ -24,11 +24,13 @@ export class DataSubjectService {
         this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)});
     }
 
+    /**
+     * If the game status is not PLAYING or PAUSE than the current data must be erased
+     * @param gameStatus The current game status
+     */
     private processGameStatusChange(gameStatus : GameStatus) : void{
-        switch(gameStatus){
-            case GameStatus.START :
-                this.removeAllDataFromFinalData();
-                break;
+        if(![GameStatus.PLAYING, GameStatus.PAUSE].includes(gameStatus)){
+            this.removeAllDataFromFinalData();
         }
     }
 
@@ -77,19 +79,22 @@ export class DataSubjectService {
         let stringFactory = new StringFactory()
         let result = this.sourceData.find((value) => stringFactory.replaceSpecialChars(name) == stringFactory.replaceSpecialChars(value.name)); 
         this.addDataToFinalData(result);
-        if(this.checkIfAllDataFound()){
-            this.gameStatusService.setGameStatus(GameStatus.WON);
-        }
     }
     /**
      * Permet d'ajouter un objet à la liste des données actuels.
      * @param obj 
      */
+    /**
+     * Add an object to the found data list. Also check if the player won.
+     * @param obj 
+     */
      public addDataToFinalData(obj : any) : void{
         this.finalData.push(obj);
         this.finalDataChange.next(this.finalData);
-        if(this.checkIfAllDataFound())
+        // If the player won, then we change the current game status
+        if(this.checkIfAllDataFound()){
             this.gameStatusService.setGameStatus(GameStatus.WON);
+        }
     }
 
     /**

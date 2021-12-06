@@ -54,9 +54,11 @@ export class MapToolbox implements OnInit {
         }
     }
 
+    /**
+     * Sets the current object data to the current source data
+     * @param data The new data
+     */
     processSourceDataChange(data : any[]){
-        console.log(data);
-        
         this.data = data;
     }
 

@@ -54,8 +54,6 @@ export class StringFactory{
      * @returns True si les deux sont identiques après normalisation
      */
     compareNormalizedStrings(str1: string, str2 : string){
-    // console.log(str1);
-    // console.log(str2);
     return this.replaceSpecialChars(str1) == this.replaceSpecialChars(str2);
     }
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
 import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
+import { GameStatusService } from './game-status.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,54 +13,19 @@ export class TimerService {
 
   private currentValueChange : Subject<number> = new Subject<number>();
 
-  constructor( private gameStatusService : GameStatusService ) {}
-
-  /**
-   * Allows to launch the game status change detection only when we want
-   */
-  public launchGameStatusChangeDetection(){
-    this.processGameStatusChange(this.gameStatusService.getGameStatus());
-    this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.processGameStatusChange(value)});
-  }
-  /**
-   * Allows to stop the game status change detection
-   */
-  public stopGameStatusChangeDetection(){
-    //this.gameStatusService.getGameStatusChange().unsubscribe();
-  }
-
-  /**
-   * Process the game status changes, and make the timer act as supposed to
-   * @TODO Change responsibility. Timer status shouldn't be bound by default to the game status.
-   * @param gameStatus The current game status
-   */
-   processGameStatusChange(gameStatus : GameStatus){
-    switch(gameStatus){
-      case GameStatus.PAUSE :
-        this.pauseTimer();
-        break;
-      case GameStatus.START :
-        this.pauseTimer();
-        this.resetTimer();
-        break;
-      case GameStatus.PLAYING :          
-        this.startTimer();
-        break;
-      default :
-        this.resetTimer();
-        break;
-    }
-  }
+  constructor() {}
 
   /**
    * @TODO Make the start so that it takes a function as parameter, so that anything can be done at the end
    */
   /**
-   * Start the timer
+   * Starts the timer
+   * @param onTimerEnd Callback function that is executed once the timer reaches 0.
+   * @tutorial Don't forget to bind to the object if you want to use `this`
    */
-  startTimer() : void {
+  startTimer(onTimerEnd : ()=>void) : void {
     if(this.upperBound <=0){
-      console.error("Error : La valeur max du timer "+(this.upperBound==0?"n'a pas été initialisée.":"est inférieur à zéro.")+" Valeur actuelle : "+this.upperBound);
+      console.error("Error :The timers upperbound "+(this.upperBound==0?"hasn't been initialized.":"is inferior to 0.")+" Current value : "+this.upperBound);
     }
     if(!this.interval){
       this.interval = setInterval(() => {
@@ -68,13 +33,13 @@ export class TimerService {
           this.updateValue(this.currentValue-1);
         } else if(this.currentValue == 0){ // If timer reach 0, then pause timer then end game
           this.pauseTimer();
-          this.gameStatusService.setGameStatus(GameStatus.LOST);
+          onTimerEnd();
         } else {
           this.resetTimer();
         }
       },1000)
     }else{
-      console.error("Erreur : Un timer est déjà en cours.");
+      console.error("Error : A timer has already started.");
     }
     
   }
@@ -127,9 +92,13 @@ export class TimerService {
     this.currentValueChange.next(value);
   }
 
+  /**
+   * Clear the timer so that it stops running and won't begin at an incorrect value
+   */
   public clear(): void{
     this.upperBound = 0;
     this.currentValue = -1;
     this.resetTimer();
+    this.interval = null;    
   }
 }

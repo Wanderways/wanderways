@@ -6,6 +6,7 @@ import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.s
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { InputAgainstTimeComponent } from '../../input-against-time.component';
 import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
+import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 
 @Component({
   selector: 'app-input-against-time-scene',
@@ -14,18 +15,28 @@ import { GameModeType } from 'src/app/shared/utils/types/game-mode.type';
 })
 export class InputAgainstTimeSceneComponent extends InputAgainstTimeComponent implements OnInit {
 
-  constructor(
-    protected route: ActivatedRoute,
-    protected router: Router,
-    protected gameModeMetaDataService : GameModeMetaDataService,
-    protected mapMetaDataService : MapMetaDataService,
-    protected gameStatusService : GameStatusService,
-    protected timerService : TimerService) {
-      super(route, router, gameModeMetaDataService, mapMetaDataService,gameStatusService, timerService);
-      this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
-  }
+	constructor(
+		protected route: ActivatedRoute,
+		protected router: Router,
+		protected gameModeMetaDataService : GameModeMetaDataService,
+		protected mapMetaDataService : MapMetaDataService,
+		protected gameStatusService : GameStatusService,
+		protected timerService : TimerService) {
+		super(route, router, gameModeMetaDataService, mapMetaDataService,gameStatusService);
+		this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
+	}
 
-  ngOnInit(): void {
-  }
-
+	ngOnInit(): void {
+		/**
+		 * @TODO remove setTimeout that allows to wait for the upperbound to be set.
+		 */
+		setTimeout(()=>this.timerService.startTimer(this.onLost.bind(this)));
+	}
+	/**
+	 * Clear the component used static data
+	 */
+	ngOnDestroy(){
+		this.gameModeMetaDataService.clear();
+		this.timerService.clear();
+	}
 }

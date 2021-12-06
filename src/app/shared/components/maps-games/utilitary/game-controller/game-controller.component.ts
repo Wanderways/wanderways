@@ -18,10 +18,6 @@ export class GameControllerComponent implements OnInit {
         this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.processGameStatusChange(value) })
     }
 
-    ngOnDestroy(){
-        this.gameStatusService.clear();
-    }
-
     /**
      * Process the game status changes, and make the timer act as supposed to
      * @param gameStatus The current game status

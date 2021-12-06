@@ -46,7 +46,6 @@ export class MapPageComponent implements OnInit {
       // On force l'affectation car la vérification précédente assure que les données sont valides
       this.selectedMap = MapsType.getTypeFromIdentifier(map)!;
       this.selectedGameMode = GameModeType.getTypeFromIdentifier(game)!;
-      console.log(this.selectedGameMode);
     }else{
       this.displaySelection = true;
       this.router.navigate(['/maps']);
