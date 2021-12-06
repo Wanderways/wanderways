@@ -96,9 +96,10 @@ export class TimerService {
    * Clear the timer so that it stops running and won't begin at an incorrect value
    */
   public clear(): void{
+    clearInterval(this.interval);  
+    this.interval = null;  
     this.upperBound = 0;
     this.currentValue = -1;
     this.resetTimer();
-    this.interval = null;    
   }
 }
