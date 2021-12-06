@@ -151,6 +151,14 @@ export class DataSubjectService {
     }
 
     /**
+     * Returns the source data lenght
+     * @returns The source data length
+     */
+    public getSourceDataLength() : number {
+        return this.sourceData.length;
+    }
+
+    /**
      * Check if all the data has been found
      * @returns 
      */
