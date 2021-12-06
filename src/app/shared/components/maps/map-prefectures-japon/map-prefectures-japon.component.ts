@@ -15,15 +15,16 @@ import { data } from './data'
 export class MapPrefecturesJaponComponent extends MapToolbox  implements OnInit {
   constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService, mapMetaDataService : MapMetaDataService){
     super(inputSubjectService, nodeSubjectService, dataSubjectService, mapMetaDataService); 
-    /**
-     * The data source must be initialized in the constructor for stability issues
-     * More precisely, if not executed in the constructor, the value will be set during the building stage, between components state checking. Between two checks, the value will have changed, and cause a non-fatal error
-     */
-		this.dataSubjectService.setsourceDataValue(data);
+    
 		this.mapMetaDataService.setMapMetaData( MapsType.MAP_PREFECTURES_JAPON );
   }
   ngOnInit(): void {
 		super.ngOnInit();
+    /**
+     * The data source must be initialized in the constructor for stability issues
+     * More precisely, if not executed in the constructor, the value will be set during the building stage, between components state checking. Between two checks, the value will have changed, and cause a non-fatal error
+     */
+		setTimeout(()=>this.dataSubjectService.setsourceDataValue(data));
   }
 
 }

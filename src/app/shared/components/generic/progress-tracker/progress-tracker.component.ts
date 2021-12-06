@@ -14,12 +14,12 @@ export class ProgressTrackerComponent implements OnInit {
 	mode: ProgressSpinnerMode = 'determinate';
 	currentPercentage : number = 0;
 	readablePercentage : string = "0";
-	foundUpperBound : number = 0;
-	foundValue : number = 0;
+	upperBound : number = 0;
+	currentValue : number = 0;
 
 	constructor(private dataSubjectService : DataSubjectService) {}
 	ngOnInit(): void {
-		this.dataSubjectService.getSourceDataChange().subscribe((value)=>this.processSourceDataChange(value));
+		this.dataSubjectService.getSourceDataChange().subscribe(()=> this.upperBound = this.dataSubjectService.getSourceDataLength())
 		this.dataSubjectService.getFinalDataChange().subscribe((value : any[])=>this.processFinalDataChange(value));
 	}
 
@@ -30,14 +30,10 @@ export class ProgressTrackerComponent implements OnInit {
 		this.dataSubjectService.clear();
 	}
 
-	processSourceDataChange( value : any[] ){
-		this.foundUpperBound = value.length;
-	}
-
-	processFinalDataChange( value : any[] ){		
-		this.foundValue = value.length;
-		if( this.foundUpperBound < 0 )
-			this.currentPercentage = ((this.foundValue/this.foundUpperBound)*100)
+	processFinalDataChange( value : any[] ){
+		this.currentValue = value.length;
+		if( this.upperBound > 0 )
+			this.currentPercentage = ((this.currentValue/this.upperBound)*100)
 		this.readablePercentage = this.currentPercentage.toFixed(2);
 		if(this.currentPercentage <= 20){
 			this.color = "warn";

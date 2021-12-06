@@ -26,7 +26,8 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 		/**
          * The data source must be initialized in the constructor for stability issues
          * More precisely, if not executed in the constructor, the value will be set during the building stage, between components state checking. Between two checks, the value will have changed, and cause a non-fatal error
+		 * @TODO Remove data setting from this part and transfer to game.abstract class the responsibility using a service to call the database.
          */
-		 this.dataSubjectService.setsourceDataValue(data);
+		setTimeout(()=>this.dataSubjectService.setsourceDataValue(data));
 	}
 }
