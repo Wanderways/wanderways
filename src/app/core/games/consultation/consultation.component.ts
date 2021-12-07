@@ -26,25 +26,25 @@ export class ConsultationComponent extends Game implements OnInit {
     
   }
   bindGameStatus(): void {
-    throw new Error('Method not implemented.');
+    
   }
   onStart(): void {
-    throw new Error('Method not implemented.');
+    
   }
   onPlaying(): void {
-    throw new Error('Method not implemented.');
+    
   }
   onPause(): void {
-    throw new Error('Method not implemented.');
+    
   }
   onWon(): void {
-    throw new Error('Method not implemented.');
+    
   }
   onLost(): void {
-    throw new Error('Method not implemented.');
+    
   }
   onError(): void {
-    throw new Error('Method not implemented.');
+    
   }
 
   checkCurrentGameStatus(gamestatus: GameStatus): boolean {
