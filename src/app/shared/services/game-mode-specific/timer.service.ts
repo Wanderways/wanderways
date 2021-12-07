@@ -24,24 +24,21 @@ export class TimerService {
    * @tutorial Don't forget to bind to the object if you want to use `this`
    */
   startTimer(onTimerEnd : ()=>void) : void {
+    // We clear the interval to ensure the onTimerEnd function is the last one passed
+    this.clearInterval();
     if(this.upperBound <=0){
-      console.error("Error :The timers upperbound "+(this.upperBound==0?"hasn't been initialized.":"is inferior to 0.")+" Current value : "+this.upperBound);
+      console.error("Non-fatal error : The timers upperbound "+(this.upperBound==0?"hasn't been initialized.":"is inferior to 0.")+" Current value : "+this.upperBound);
     }
-    if(!this.interval){
-      this.interval = setInterval(() => {
-        if(this.currentValue > 0) { // If value is initialized, then starts counting
-          this.updateValue(this.currentValue-1);
-        } else if(this.currentValue == 0){ // If timer reach 0, then pause timer then end game
-          this.pauseTimer();
-          onTimerEnd();
-        } else {
-          this.resetTimer();
-        }
-      },1000)
-    }else{
-      console.error("Error : A timer has already started.");
-    }
-    
+    this.interval = setInterval(() => {
+      if(this.currentValue > 0) { // If value is initialized, then starts counting
+        this.updateValue(this.currentValue-1);
+      } else if(this.currentValue == 0){ // If timer reach 0, then pause timer then end game
+        this.pauseTimer();
+        onTimerEnd();
+      } else {
+        this.resetTimer();
+      }
+    },1000)
   }
   
   /**
@@ -55,7 +52,7 @@ export class TimerService {
    * Pause the timer
    */
   pauseTimer() : void{
-    clearInterval(this.interval);
+    this.clearInterval();
   }
 
   /**
@@ -96,10 +93,17 @@ export class TimerService {
    * Clear the timer so that it stops running and won't begin at an incorrect value
    */
   public clear(): void{
-    clearInterval(this.interval);  
-    this.interval = null;  
+    this.clearInterval();
     this.upperBound = 0;
     this.currentValue = -1;
     this.resetTimer();
+  }
+
+  /**
+   * Clears the current interval
+   */
+  private clearInterval(){
+    clearInterval(this.interval);  
+    this.interval = null;  
   }
 }

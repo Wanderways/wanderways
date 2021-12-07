@@ -5,7 +5,9 @@
 export interface GameMode{
 
     /**
-     * Function that should implement a basic binding between the gameStatus and the GameStatusService
+     * Invoked on component construction.
+     * 
+     * Should implement a basic binding on the GameStatusService, describing appropriate behaviour.
      */
     bindGameStatus():void;
 

@@ -22,15 +22,12 @@ export class InputAgainstTimeSceneComponent extends InputAgainstTimeComponent im
 		protected mapMetaDataService : MapMetaDataService,
 		protected gameStatusService : GameStatusService,
 		protected timerService : TimerService) {
-		super(route, router, gameModeMetaDataService, mapMetaDataService,gameStatusService);
+		super(route, router, gameModeMetaDataService, mapMetaDataService,gameStatusService, timerService);
 		this.gameModeMetaDataService.setGameMetaData(GameModeType.GAME_INPUT);
 	}
 
 	ngOnInit(): void {
-		/**
-		 * @TODO remove setTimeout that allows to wait for the upperbound to be set.
-		 */
-		setTimeout(()=>this.timerService.startTimer(this.onLost.bind(this)));
+		this.onPlaying();
 	}
 	/**
 	 * Clear the component used static data

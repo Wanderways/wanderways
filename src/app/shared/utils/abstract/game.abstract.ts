@@ -27,6 +27,7 @@ export abstract class Game implements GameMode{
 	gameModeMetadata : GameModeMetaData =  GameModeType.GAME_CONSULT;
 
 	constructor(protected route: ActivatedRoute,protected router: Router,protected gameModeMetaDataService : GameModeMetaDataService,protected mapMetaDataService : MapMetaDataService,protected gameStatusService : GameStatusService){
+		this.bindGameStatus();
 		this.subscribe();
 		this.processUrlParameter();
 	}

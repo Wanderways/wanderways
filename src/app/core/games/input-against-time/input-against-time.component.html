@@ -1,4 +1,4 @@
 <app-start-scene *ngIf="checkCurrentGameStatus(GameStatus.START)" (startEvent)="startEventHandler()" class="slide slide-in"></app-start-scene>
-<app-input-against-time-scene *ngIf="checkCurrentGameStatus(GameStatus.PLAYING)" class="slide slide-in"></app-input-against-time-scene>
+<app-input-against-time-scene *ngIf="checkCurrentGameStatus(GameStatus.PLAYING)||checkCurrentGameStatus(GameStatus.PAUSE)" class="slide slide-in"></app-input-against-time-scene>
 <app-won-scene *ngIf="checkCurrentGameStatus(GameStatus.WON)" class="slide slide-in"></app-won-scene>
 <app-lost-scene *ngIf="checkCurrentGameStatus(GameStatus.LOST)" class="slide slide-in"></app-lost-scene>
