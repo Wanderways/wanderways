@@ -22,12 +22,11 @@ export class MapComponent implements OnInit {
 	 */
 	@Input() public  map : MapMetaData = MapsType.MAP_UNDEFINED;
 
-	constructor(private mapMetaDataService : MapMetaDataService){}
+	constructor(){}
 
 	ngOnInit(): void {}
 	
 	ngOnDestroy() : void {
-		this.mapMetaDataService.clear();
 	}
 
 	/**

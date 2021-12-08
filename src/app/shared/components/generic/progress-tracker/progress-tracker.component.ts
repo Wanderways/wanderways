@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
+import { Subscription } from 'rxjs';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 
 @Component({
@@ -17,10 +18,12 @@ export class ProgressTrackerComponent implements OnInit {
 	upperBound : number = 0;
 	currentValue : number = 0;
 
+	private subscriptions : {[key:string]:Subscription} = {};
+
 	constructor(private dataSubjectService : DataSubjectService) {}
 	ngOnInit(): void {
-		this.dataSubjectService.getSourceDataChange().subscribe(()=> this.upperBound = this.dataSubjectService.getSourceDataLength())
-		this.dataSubjectService.getFinalDataChange().subscribe((value : any[])=>this.processFinalDataChange(value));
+		this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe(()=> this.upperBound = this.dataSubjectService.getSourceDataLength())
+		this.subscriptions.finalDataChange = this.dataSubjectService.getFinalDataChange().subscribe((value : any[])=>this.processFinalDataChange(value));
 	}
 
   	/**
@@ -28,6 +31,10 @@ export class ProgressTrackerComponent implements OnInit {
 	 */
 	 ngOnDestroy(){
 		this.dataSubjectService.clear();
+		// Unsubscribe from all registered subscriptions
+		Object.keys(this.subscriptions).forEach((key : string) => {
+			this.subscriptions[key].unsubscribe();
+		});
 	}
 
 	processFinalDataChange( value : any[] ){

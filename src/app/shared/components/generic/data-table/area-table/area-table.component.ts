@@ -3,6 +3,7 @@ import { DataSubjectService } from 'src/app/shared/services/map-specific/data-su
 import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { Area } from '../../../../utils/interfaces/map-oriented/area';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-area-table',
@@ -25,11 +26,13 @@ export class AreaTableComponent implements OnInit {
 	expandedElement: Area | null = null;
 	displayedElements : Map<string, boolean> = new Map<string,boolean>();
 
+	private subscriptions : {[key: string]: Subscription} = {};
+
 	constructor(private dataSubjectService : DataSubjectService) { }
 
   	ngOnInit(): void {
 		//Quoi qu'il arrive on charge l'ensemble des données dans le tableau
-		this.dataSubjectService.getSourceDataChange().subscribe((value)=>{
+		this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe((value)=>{
 			this.dataSource=value;
 			// We set all elements as visible
 			this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, true)});
@@ -38,7 +41,14 @@ export class AreaTableComponent implements OnInit {
 				this.hideAllContent();
 			}
 		});
-		this.dataSubjectService.getCurrentdataChange().subscribe(value=>this.displayByContentId(value.num));
+		this.subscriptions.currentdataChange = this.dataSubjectService.getCurrentdataChange().subscribe(value=>this.displayByContentId(value.num));
+	}
+
+	ngOnDestroy(){
+		// Unsubscribe from all registered subscriptions
+		Object.keys(this.subscriptions).forEach((key : string) => {
+			this.subscriptions[key].unsubscribe();
+		});
 	}
 
 
@@ -96,12 +106,13 @@ export class AreaTableComponent implements OnInit {
 	 */
 	 displayByContentId(id : string){
 		this.scrollToElement(id);
-		this.displayedElements.set(id, true)
+		this.displayedElements.set(id, true);
 	}
 
 	/**
 	 * Makes the table scroll to the specified element of the list
 	 * @param id : The id of one of the list elements
+	 * @todo use directives to make elements ref self log
 	 */
 	scrollToElement(id : string){
 		setTimeout(() => {

@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
+import { Subscription } from 'rxjs';
 import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.service';
 
 @Component({
@@ -14,6 +15,8 @@ export class TimerComponent implements OnInit {
 	readableTime : string = "";
 	@Input() upperBound : number = 90;
 	value : number = this.upperBound;
+
+	private subscriptions : {[key:string]:Subscription} = {};
   
 	constructor(private timerService : TimerService) {
 	}
@@ -27,6 +30,10 @@ export class TimerComponent implements OnInit {
 
 	ngOnDestroy(){
 		this.timerService.clear();
+		// Unsubscribe from all registered subscriptions
+		Object.keys(this.subscriptions).forEach((key : string) => {
+			this.subscriptions[key].unsubscribe();
+		});
 	}
 
 	processCurrentValueChange(value : number){

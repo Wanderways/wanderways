@@ -27,8 +27,7 @@ export class MapPageComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
-    private gameModeMetaDataService : GameModeMetaDataService) { }
+    private router: Router) { }
 
   ngOnInit(): void {
 

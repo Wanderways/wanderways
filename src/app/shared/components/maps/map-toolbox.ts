@@ -95,9 +95,6 @@ export class MapToolbox implements OnInit {
         let stringFactory = new StringFactory();
         let result = this.data.find(({ name }) => stringFactory.replaceSpecialChars(input_area_name) == stringFactory.replaceSpecialChars(name));
         if(result){// Si on a bien une valeur.
-            console.group('getAreaByName');
-            console.log('input_area_name');
-            console.groupEnd();
             this.dataSubjectService.setCurrentdataValue(result);
         }    
         return result;

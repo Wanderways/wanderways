@@ -9,6 +9,7 @@ import { GameStatus } from '../enums/GameStatus.enum';
 import { GameMode } from '../interfaces/game-oriented/game-mode.interface';
 import { GameModeMetaData } from '../interfaces/game-oriented/game-mode-meta-data.interface';
 import { MapMetaData } from '../interfaces/map-oriented/map-meta-data.interface';
+import { Subscription } from 'rxjs';
 
 /**
  * Generalizes and facilitate the game mode creation. Limit the customizations possibilities.
@@ -25,6 +26,8 @@ export abstract class Game implements GameMode{
 
 	mapMetaData : MapMetaData =  MapsType.MAP_UNDEFINED;
 	gameModeMetadata : GameModeMetaData =  GameModeType.GAME_CONSULT;
+
+    protected subscriptions : {[key:string]:Subscription} = {};
 
 	constructor(protected route: ActivatedRoute,protected router: Router,protected gameModeMetaDataService : GameModeMetaDataService,protected mapMetaDataService : MapMetaDataService,protected gameStatusService : GameStatusService){
 		this.bindGameStatus();
@@ -52,8 +55,8 @@ export abstract class Game implements GameMode{
 	 * Subscribes to the appropriates services
 	 */
 	private subscribe(){
-		this.gameModeMetaDataService.getGameModeMetaDataChange().subscribe(value => this.gameModeMetadata = value);
-		this.mapMetaDataService.getMapMetaDataChange().subscribe(value => this.mapMetaData = value)
+		this.subscriptions.gameModeMetaDataChange = this.gameModeMetaDataService.getGameModeMetaDataChange().subscribe(value => this.gameModeMetadata = value);
+		this.subscriptions.mapMetaDataChange = this.mapMetaDataService.getMapMetaDataChange().subscribe(value => this.mapMetaData = value)
 	}
 
 	/**

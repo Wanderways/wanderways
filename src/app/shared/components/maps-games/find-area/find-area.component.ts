@@ -6,6 +6,7 @@ import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-su
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
 import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
 import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-find-area',
@@ -22,6 +23,8 @@ export class FindAreaComponent implements OnInit {
     current_data : any = {};
     isDisabled : boolean = true;
 
+    private subscriptions : {[key: string]: Subscription} = {};
+
     constructor(private inputSubjectService :InputSubjectService,
 		private nodeSubjectService : NodeSubjectService,
 		private dataSubjectService : DataSubjectService,
@@ -33,11 +36,11 @@ export class FindAreaComponent implements OnInit {
 	 */
     ngOnInit(){
         // On surveille si une node est à colorer
-		this.nodeSubjectService.getNodeChange().subscribe((value)=>{
+		this.subscriptions.nodeChange = this.nodeSubjectService.getNodeChange().subscribe((value)=>{
             this.colorArea(value);
         });
         this.setDisabled(this.gameStatusService.getGameStatus() != GameStatus.PLAYING);
-        this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)})
+        this.subscriptions.gameStatusChange = this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)})
     }
 
     /**
@@ -46,6 +49,10 @@ export class FindAreaComponent implements OnInit {
 	 ngOnDestroy(){
         this.inputSubjectService.clear();
 		this.nodeSubjectService.clear();
+        // Unsubscribe from all registered subscriptions
+		Object.keys(this.subscriptions).forEach((key : string) => {
+			this.subscriptions[key].unsubscribe();
+		});
 	}
 
 

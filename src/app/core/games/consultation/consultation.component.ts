@@ -25,6 +25,14 @@ export class ConsultationComponent extends Game implements OnInit {
   ngOnInit(): void {
     
   }
+
+  ngOnDestroy(){
+    // Unsubscribe from all registered subscriptions
+		Object.keys(this.subscriptions).forEach((key : string) => {
+			this.subscriptions[key].unsubscribe();
+		});
+  }
+  
   bindGameStatus(): void {
     
   }

@@ -6,15 +6,9 @@ import { Subject } from 'rxjs';
 })
 export class InputSubjectService {
 
-  content : string = "";
-
   private inputChange : Subject<string> = new Subject<string>();
 
-  constructor() {
-    this.inputChange.subscribe((value)=>{
-      this.content = value;
-    });
-  }
+  constructor() {}
 
   setInputValue(str : string){
     this.inputChange.next(str);

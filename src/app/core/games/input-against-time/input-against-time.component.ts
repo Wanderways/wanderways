@@ -31,7 +31,11 @@ export class InputAgainstTimeComponent extends Game implements OnInit {
 	 */
 	ngOnDestroy(){
     this.gameStatusService.clear();
-	}
+    // Unsubscribe from all registered subscriptions
+		Object.keys(this.subscriptions).forEach((key : string) => {
+			this.subscriptions[key].unsubscribe();
+		});
+  }
   
   bindGameStatus(): void {
     this.gameStatusService.getGameStatusChange().subscribe((value : GameStatus)=>this.processGameStatusChange(value));
