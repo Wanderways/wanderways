@@ -5,6 +5,7 @@ import { Area } from "../../utils/interfaces/map-oriented/area";
 import { NodeSubjectService } from "../../services/map-specific/node-subject.service";
 import { InputSubjectService } from "../../services/game-mode-specific/input-subject.service";
 import { StringFactory } from "../../utils/factories/string.factory";
+import { Subscription } from "rxjs";
 
 
 
@@ -24,6 +25,8 @@ export class MapToolbox implements OnInit {
     data : any[] = [];
     area_identifier : string = ""
 
+    protected subscriptions : {[key:string]:Subscription} = {};
+
     /**
      * Initialisation des services.
      */
@@ -42,8 +45,8 @@ export class MapToolbox implements OnInit {
      */
     ngOnInit(){
         // On surveille la liste des valeur mise en zone input
-        this.inputSubjectService.getInputChange().subscribe((value : string)=>this.processInputChange(value));
-        this.dataSubjectService.getSourceDataChange().subscribe((value : any[]) =>this.processSourceDataChange(value));
+        this.subscriptions.inputChange = this.inputSubjectService.getInputChange().subscribe((value : string)=>this.processInputChange(value));
+        this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe((value : any[]) =>this.processSourceDataChange(value));
     }
 
     processInputChange(value : string){
@@ -92,6 +95,9 @@ export class MapToolbox implements OnInit {
         let stringFactory = new StringFactory();
         let result = this.data.find(({ name }) => stringFactory.replaceSpecialChars(input_area_name) == stringFactory.replaceSpecialChars(name));
         if(result){// Si on a bien une valeur.
+            console.group('getAreaByName');
+            console.log('input_area_name');
+            console.groupEnd();
             this.dataSubjectService.setCurrentdataValue(result);
         }    
         return result;

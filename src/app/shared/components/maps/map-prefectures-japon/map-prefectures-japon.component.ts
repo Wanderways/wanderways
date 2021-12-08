@@ -28,4 +28,9 @@ export class MapPrefecturesJaponComponent extends MapToolbox  implements OnInit 
 		setTimeout(()=>this.dataSubjectService.setsourceDataValue(data));
   }
 
+  ngOnDestroy(){
+		Object.keys(this.subscriptions).forEach((key : string) => {
+			this.subscriptions[key].unsubscribe();
+		});
+	}
 }
