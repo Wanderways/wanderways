@@ -1,4 +1,3 @@
-import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { Area } from '../../../utils/interfaces/map-oriented/area';
 
 let data : Area[] = [
