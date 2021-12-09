@@ -35,6 +35,13 @@
             fill: grey;
             stroke: white;
             stroke-width: 0.5px;
+            transition: all 0.2s;
+            transform-origin: center center;
+            transform-box: fill-box;
+            &:hover {
+                fill: #fbb80f;
+                transform: scale(1.1);
+            }
         }
     }
 }
