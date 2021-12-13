@@ -1,4 +1,4 @@
-import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapToolbox } from '../map-toolbox';
@@ -15,6 +15,12 @@ import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-su
 	styleUrls: ['./map-departements-francais.component.scss']
 })
 export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnInit {
+
+	/**
+	 * If node selection should be allowed or not
+	 */
+	 @Input() public  clickArea : boolean = false;
+
 	constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService, mapMetaDataService : MapMetaDataService){
 		super(inputSubjectService, nodeSubjectService, dataSubjectService, mapMetaDataService); 
 		
@@ -29,6 +35,8 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 		 * @TODO Remove data setting from this part and transfer to game.abstract class the responsibility using a service to call the database.
          */
 		setTimeout(()=>this.dataSubjectService.setsourceDataValue(data));
+		if(this.clickArea)
+			this.generateOnClickEvent();
 	}
 
 	ngOnDestroy(){

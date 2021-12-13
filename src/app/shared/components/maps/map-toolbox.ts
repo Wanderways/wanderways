@@ -49,7 +49,7 @@ export class MapToolbox implements OnInit {
         this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe((value : any[]) =>this.processSourceDataChange(value));
     }
 
-    processInputChange(value : string){
+    private processInputChange(value : string){
         // Si la valeur en input correspond à une zone/area, alors on récupère la node associé
         let area = this.getAreaByName(value);
         if (area){
@@ -61,12 +61,30 @@ export class MapToolbox implements OnInit {
      * Sets the current object data to the current source data
      * @param data The new data
      */
-    processSourceDataChange(data : any[]){
+     private processSourceDataChange(data : any[]){
         this.data = data;
     }
 
     /**
-     * Envoie la node trouvé au service
+     * Enable area discovery by clicking on svgs nodes
+     * @TODO replace with a proper version that prevents unwanted clicking 
+     */
+    public generateOnClickEvent(){
+        Array.from(document.getElementsByClassName("land")).forEach((land : Element )=>{
+            land.addEventListener('click', ()=>{
+                this.getAreaByName(land.id.replace("area-",""));
+                let result = this.data.find(({ num }) => land.id.replace("area-","").toLowerCase() == num.toLowerCase());
+                if(result){
+                    this.dataSubjectService.setCurrentdataValue(result);
+                }
+            });
+        });
+    }
+
+    
+
+    /**
+     * Search for the element 
      * @param {*} numarea : Le numéro du département
      */
     getAreaNode(area : string) {
@@ -74,16 +92,6 @@ export class MapToolbox implements OnInit {
         if(result){// Si on a bien une valeur
             this.nodeSubjectService.setNodeValue(result)
         }
-    }
-
-    /**
-     * Retourne le démartement associé au numéro donné
-     * @param {*} code : Le numéro du département
-     * @returns Le département ou undefined
-     */
-    getAreaInfoByCode(code : string) : HTMLElement | null {
-        let result = this.data.find(({ num_area }) => num_area == code);
-        return result;
     }
 
     /**
@@ -96,12 +104,12 @@ export class MapToolbox implements OnInit {
         let result = this.data.find(({ name }) => stringFactory.replaceSpecialChars(input_area_name) == stringFactory.replaceSpecialChars(name));
         if(result){// Si on a bien une valeur.
             this.dataSubjectService.setCurrentdataValue(result);
-        }    
+        }
         return result;
     }
 
     /**
-     * Retourne les areas inféodées à une zone
+     * Returns all area from a zone
      * @param zone_name 
      * @returns 
      */
@@ -109,6 +117,6 @@ export class MapToolbox implements OnInit {
         let stringFactory = new StringFactory();
         return this.data.filter(({ name }) => {
             ( stringFactory.replaceSpecialChars(name) ==  stringFactory.replaceSpecialChars(zone_name));
-        })
+        });
     }
 }

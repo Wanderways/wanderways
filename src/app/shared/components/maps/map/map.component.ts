@@ -22,6 +22,11 @@ export class MapComponent implements OnInit {
 	 */
 	@Input() public  map : MapMetaData = MapsType.MAP_UNDEFINED;
 
+	/**
+	 * If node selection should be allowed or not
+	 */
+	 @Input() public  clickArea : boolean = false;
+	 
 	constructor(){}
 
 	ngOnInit(): void {}
