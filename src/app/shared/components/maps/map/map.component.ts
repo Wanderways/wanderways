@@ -25,7 +25,7 @@ export class MapComponent implements OnInit {
 	/**
 	 * If node selection should be allowed or not
 	 */
-	 @Input() public  clickArea : boolean = false;
+	@Input() public  clickArea : boolean = false;
 	 
 	constructor(){}
 

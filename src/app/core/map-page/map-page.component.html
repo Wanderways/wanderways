@@ -1,4 +1,4 @@
-<app-map *ngIf="!displaySelection" [map]="selectedMap"></app-map>
+<app-map *ngIf="!displaySelection" [map]="selectedMap" [clickArea]="false"></app-map>
 <ng-container *ngIf="displaySelection">
     <h1>- Choix de la carte et du mode de jeu -</h1>
     <div class="selection-container">
