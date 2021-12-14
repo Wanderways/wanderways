@@ -16,7 +16,6 @@ import { Subscription } from 'rxjs';
 export class FindAreaComponent implements OnInit {
 
     @Input() input_message : string = "";
-    @Input() fill_color : string = "";
     @Input() area_input : string = "";
 
     value : any = '';
@@ -96,7 +95,7 @@ export class FindAreaComponent implements OnInit {
      */
     colorArea(area : HTMLElement){
             this.clearInput();
-            area!.style.fill = this.fill_color;
+            area!.classList.add("found");
     }
 
     processGameStatusChange(gameStatus : GameStatus){

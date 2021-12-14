@@ -52,7 +52,7 @@ export class DataSubjectService {
      * Return the Subject object of the current data
      * @returns The currentDataChange object to subscribe to
      */
-    public getCurrentdataChange() : Subject<any>{
+    public getCurrentDataChange() : Subject<any>{
         return this.currentDataChange;
     }
 
@@ -67,7 +67,7 @@ export class DataSubjectService {
      * Permet d'indiquer l'objet en cours de traitement.
      * @param obj : L'objet en cours de traitement.
      */
-     public setCurrentdataValue(obj : any) : void{
+     public setCurrentDataValue(obj : any) : void{
         this.currentDataChange.next(obj);
     }
     /**
@@ -175,7 +175,7 @@ export class DataSubjectService {
      * Set the currents data to null
      */
     public clear() : void {
-        this.setCurrentdataValue({});
+        this.setCurrentDataValue({});
         this.setsourceDataValue([]);
         this.setFinalDataValue([]);
     }

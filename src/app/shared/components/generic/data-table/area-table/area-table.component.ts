@@ -32,16 +32,8 @@ export class AreaTableComponent implements OnInit {
 
   	ngOnInit(): void {
 		//Quoi qu'il arrive on charge l'ensemble des données dans le tableau
-		this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe((value)=>{
-			this.dataSource=value;
-			// We set all elements as visible
-			this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, true)});
-			//Si on est en mode jeu, alors on cache toutes les données, et on surveille l'avancé du tableau de résultat
-			if(this.inGameMode){
-				this.hideAllContent();
-			}
-		});
-		this.subscriptions.currentdataChange = this.dataSubjectService.getCurrentdataChange().subscribe(value=>this.displayByContentId(value.num));
+		this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe((value)=> this.processSourceDataChange(value));
+		this.subscriptions.currentdataChange = this.dataSubjectService.getCurrentDataChange().subscribe(value=> this.processCurrentDataChange(value));
 	}
 
 	ngOnDestroy(){
@@ -51,13 +43,36 @@ export class AreaTableComponent implements OnInit {
 		});
 	}
 
+	/**
+	 * Processes the source data changes. If in game, then hide all. Else display all
+	 * @param value : The current data list
+	 * @deprecated Shoudl be strenghtened
+	 */
+	private processSourceDataChange(value : any[]): void{
+		this.dataSource=value;
+		// We set all elements as visible
+		this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, true)});
+		//Si on est en mode jeu, alors on cache toutes les données, et on surveille l'avancé du tableau de résultat
+		if(this.inGameMode){
+			this.hideAllContent();
+		}
+	}
+
+	/**
+	 * Processes the current data changes. Display the data in it.
+	 * @param value : An area
+	 * @deprecated Shoudl be strenghtened
+	 */
+	private processCurrentDataChange(value:any): void{
+		this.displayByContentId(value.num);
+	}
 
 	/**
 	 * Gives the row its visibility property
 	 * @param rowidentifier : The row identifier
 	 * @returns True if element must be displayed, false otherwise
 	 */
-	isRowVisible( rowidentifier : string ){
+	isRowVisible( rowidentifier : string ): boolean | undefined{
 		return this.displayedElements.get(rowidentifier);
 	}
 
@@ -66,7 +81,7 @@ export class AreaTableComponent implements OnInit {
 	 * @param rowidentifier : The row identifier
 	 * @returns True if element must be displayed, false otherwise
 	 */
-	isRowColored(rowidentifier : string ){
+	isRowColored(rowidentifier : string ): boolean{
 		return this.expandedElement?.num == rowidentifier;
 	}
 
@@ -75,20 +90,20 @@ export class AreaTableComponent implements OnInit {
 	 * @param str : A string to normalise
 	 * @returns The normalized string
 	 */
-	replaceSpecialChars(str : string){
+	replaceSpecialChars(str : string): string{
 		return new StringFactory().replaceSpecialChars(str);
 	}
 
 	/**
 	 * Hide all content from table, with placeholder
 	 */
-	hideAllContent(){
+	hideAllContent(): void{
 		this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, false)})
 	}
 	/**
 	 * Display all content from table,
 	 */
-	displayAllContent(){
+	displayAllContent(): void{
 		this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, true)})
 	}
 
@@ -96,7 +111,7 @@ export class AreaTableComponent implements OnInit {
 	 * Hide specific content, with placeholder
 	 * @param id : 
 	 */
-	hideByContentId(id : string){
+	hideByContentId(id : string): void{
 		this.displayedElements.set(id, false)
 	}
 
@@ -104,7 +119,7 @@ export class AreaTableComponent implements OnInit {
 	 * Display specific content
 	 * @param id : 
 	 */
-	 displayByContentId(id : string){
+	 displayByContentId(id : string): void{
 		this.scrollToElement(id);
 		this.displayedElements.set(id, true);
 	}
@@ -114,7 +129,7 @@ export class AreaTableComponent implements OnInit {
 	 * @param id : The id of one of the list elements
 	 * @todo use directives to make elements ref self log
 	 */
-	scrollToElement(id : string){
+	scrollToElement(id : string): void{
 		setTimeout(() => {
 			let element = document.getElementById("element-"+id);
 			element?.scrollIntoView({block: 'center'});

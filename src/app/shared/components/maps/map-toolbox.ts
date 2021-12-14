@@ -25,6 +25,8 @@ export class MapToolbox implements OnInit {
     data : any[] = [];
     area_identifier : string = ""
 
+    currentSelected : HTMLElement | null = null;
+
     protected subscriptions : {[key:string]:Subscription} = {};
 
     /**
@@ -47,6 +49,7 @@ export class MapToolbox implements OnInit {
         // On surveille la liste des valeur mise en zone input
         this.subscriptions.inputChange = this.inputSubjectService.getInputChange().subscribe((value : string)=>this.processInputChange(value));
         this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe((value : any[]) =>this.processSourceDataChange(value));
+        this.subscriptions.currentDataChange = this.dataSubjectService.getCurrentDataChange().subscribe((value : any) =>this.processCurrentDataChange(value));
     }
 
     private processInputChange(value : string){
@@ -66,6 +69,20 @@ export class MapToolbox implements OnInit {
     }
 
     /**
+     * Sets the current object data to the current source data
+     * @param data The new data
+     */
+     private processCurrentDataChange(data : any){
+        try{
+            this.currentSelected?.classList.remove("selected");
+            this.currentSelected = document.getElementById("area-" + data.num.toLowerCase());
+            this.currentSelected?.classList.add("selected");    
+        }catch(e){
+            console.error(e);
+        }
+    }
+
+    /**
      * Enable area discovery by clicking on svgs nodes
      * @TODO replace with a proper version that prevents unwanted clicking 
      */
@@ -75,13 +92,11 @@ export class MapToolbox implements OnInit {
                 this.getAreaByName(land.id.replace("area-",""));
                 let result = this.data.find(({ num }) => land.id.replace("area-","").toLowerCase() == num.toLowerCase());
                 if(result){
-                    this.dataSubjectService.setCurrentdataValue(result);
+                    this.dataSubjectService.setCurrentDataValue(result);
                 }
             });
         });
     }
-
-    
 
     /**
      * Search for the element 
@@ -103,7 +118,7 @@ export class MapToolbox implements OnInit {
         let stringFactory = new StringFactory();
         let result = this.data.find(({ name }) => stringFactory.replaceSpecialChars(input_area_name) == stringFactory.replaceSpecialChars(name));
         if(result){// Si on a bien une valeur.
-            this.dataSubjectService.setCurrentdataValue(result);
+            this.dataSubjectService.setCurrentDataValue(result);
         }
         return result;
     }

@@ -40,8 +40,25 @@
             transform-box: fill-box;
             &:hover {
                 fill: #fbb80f;
-                transform: scale(1.1);
                 cursor: pointer;
+            }
+            &.found {
+                fill: #347b98;
+            }
+            &.selected {
+                fill: #fbb80f;
+                animation: select-animation 1s forwards;
+                @keyframes select-animation {
+                    0% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.2);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
             }
         }
     }
