@@ -64,7 +64,7 @@ export class AreaTableComponent implements OnInit {
 	 * @deprecated Shoudl be strenghtened
 	 */
 	private processCurrentDataChange(value:any): void{
-		this.displayByContentId(value.num);
+			this.displayByContentId(value);
 	}
 
 	/**
@@ -119,9 +119,9 @@ export class AreaTableComponent implements OnInit {
 	 * Display specific content
 	 * @param id : 
 	 */
-	 displayByContentId(id : string): void{
-		this.scrollToElement(id);
-		this.displayedElements.set(id, true);
+	 displayByContentId(area : Area): void{
+		this.scrollToElement(area);
+		this.displayedElements.set(area.num, true);
 	}
 
 	/**
@@ -129,11 +129,22 @@ export class AreaTableComponent implements OnInit {
 	 * @param id : The id of one of the list elements
 	 * @todo use directives to make elements ref self log
 	 */
-	scrollToElement(id : string): void{
+	scrollToElement(area : Area): void{
 		setTimeout(() => {
-			let element = document.getElementById("element-"+id);
-			element?.scrollIntoView({block: 'center'});
-			element?.click();
+			document.getElementById("element-"+area.num)?.scrollIntoView({block: 'center'});
+			this.listElementExpanded(area);
 		  },200);
+	}
+
+	/**
+	 * Expands a given element and launch node customizations process
+	 * @param area : An area that has been selected
+	 */
+	listElementExpanded(area : Area){
+		if(area != this.expandedElement){ // Avoids loop and make it so you cannot shrink selected content in list
+			this.expandedElement = this.expandedElement === area ? null : area;
+			this.dataSubjectService.setCurrentDataValue(area);
+
+		}
 	}
 }
