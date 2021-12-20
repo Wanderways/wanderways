@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { Area } from '../../../../utils/interfaces/map-oriented/area';
@@ -21,7 +21,10 @@ export class AreaTableComponent implements OnInit {
 
 	@Input() inGameMode : boolean = false;
 
-	dataSource : Area[] = []; 
+	@Input() dataSourceInput : Area[] = [];
+
+	@Input() currentDataInput : Area | undefined = undefined;
+
 	displayedColumns : string[]=['numero', 'departement'];
 	expandedElement: Area | null = null;
 	displayedElements : Map<string, boolean> = new Map<string,boolean>();
@@ -31,10 +34,16 @@ export class AreaTableComponent implements OnInit {
 	constructor(private dataSubjectService : DataSubjectService) { }
 
   	ngOnInit(): void {
-		//Quoi qu'il arrive on charge l'ensemble des données dans le tableau
-		this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe((value)=> this.processSourceDataChange(value));
-		this.subscriptions.currentdataChange = this.dataSubjectService.getCurrentDataChange().subscribe(value=> this.processCurrentDataChange(value));
 	}
+
+	/**
+	 * Watch if any input value change, and act accordingly
+	 * @param changes A change that occured
+	 */
+	ngOnChanges(changes: SimpleChanges) {
+		if(changes.dataSourceInput)this.processSourceDataChange(changes.dataSourceInput.currentValue);
+		if(changes.currentDataInput)this.processCurrentDataChange(changes.currentDataInput?.currentValue)
+    }
 
 	ngOnDestroy(){
 		// Unsubscribe from all registered subscriptions
@@ -49,9 +58,9 @@ export class AreaTableComponent implements OnInit {
 	 * @deprecated Shoudl be strenghtened
 	 */
 	private processSourceDataChange(value : any[]): void{
-		this.dataSource=value;
+		this.dataSourceInput=value;
 		// We set all elements as visible
-		this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, true)});
+		this.dataSourceInput.forEach((value)=>{this.displayedElements.set(value.num, true)});
 		//Si on est en mode jeu, alors on cache toutes les données, et on surveille l'avancé du tableau de résultat
 		if(this.inGameMode){
 			this.hideAllContent();
@@ -64,7 +73,7 @@ export class AreaTableComponent implements OnInit {
 	 * @deprecated Shoudl be strenghtened
 	 */
 	private processCurrentDataChange(value:any): void{
-			this.displayByContentId(value);
+		this.displayByContentId(value);
 	}
 
 	/**
@@ -98,13 +107,13 @@ export class AreaTableComponent implements OnInit {
 	 * Hide all content from table, with placeholder
 	 */
 	hideAllContent(): void{
-		this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, false)})
+		this.dataSourceInput.forEach((value)=>{this.displayedElements.set(value.num, false)})
 	}
 	/**
 	 * Display all content from table,
 	 */
 	displayAllContent(): void{
-		this.dataSource.forEach((value)=>{this.displayedElements.set(value.num, true)})
+		this.dataSourceInput.forEach((value)=>{this.displayedElements.set(value.num, true)})
 	}
 
 	/**
@@ -121,7 +130,7 @@ export class AreaTableComponent implements OnInit {
 	 */
 	 displayByContentId(area : Area): void{
 		this.scrollToElement(area);
-		this.displayedElements.set(area.num, true);
+		this.displayedElements.set(area?.num, true);
 	}
 
 	/**
@@ -131,7 +140,7 @@ export class AreaTableComponent implements OnInit {
 	 */
 	scrollToElement(area : Area): void{
 		setTimeout(() => {
-			document.getElementById("element-"+area.num)?.scrollIntoView({block: 'center'});
+			document.getElementById("element-"+area?.num)?.scrollIntoView({block: 'center'});
 			this.listElementExpanded(area);
 		  },200);
 	}
@@ -144,7 +153,6 @@ export class AreaTableComponent implements OnInit {
 		if(area != this.expandedElement){ // Avoids loop and make it so you cannot shrink selected content in list
 			this.expandedElement = this.expandedElement === area ? null : area;
 			this.dataSubjectService.setCurrentDataValue(area);
-
 		}
 	}
 }

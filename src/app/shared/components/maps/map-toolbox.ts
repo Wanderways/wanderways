@@ -75,7 +75,7 @@ export class MapToolbox implements OnInit {
      private processCurrentDataChange(data : any){
         try{
             this.currentSelected?.classList.remove("selected");
-            this.currentSelected = document.getElementById("area-" + data.num.toLowerCase());
+            this.currentSelected = document.getElementById("area-" + data.num?.toLowerCase());
             this.currentSelected?.classList.add("selected");    
         }catch(e){
             console.error(e);
