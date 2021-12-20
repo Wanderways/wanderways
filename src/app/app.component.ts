@@ -6,7 +6,7 @@ import { Component, HostBinding } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public title = 'le-monde-pas-diplomatique';
+  public title = 'learn-your-maps';
   private isDark = localStorage.getItem("dark-mode") || "false";
 
   @HostBinding('class')

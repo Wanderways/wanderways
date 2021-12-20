@@ -1,1 +1,1 @@
-# le-monde-pas-diplomatique
+# learn-your-maps
