@@ -15,9 +15,7 @@ export class AppComponent {
   }
 
   switchMode(isDarkMode:boolean){
-    //console.log(isDarkMode);
     this.isDark = isDarkMode?"true":"false";
-    //console.log(this.isDark);
     // Pas le choix, on peut pas stocker direct un boolean
     if (window.localStorage) {
       localStorage.setItem("dark-mode", this.isDark=="true"?"true":"false");
