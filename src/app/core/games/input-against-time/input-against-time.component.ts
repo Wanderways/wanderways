@@ -50,6 +50,10 @@ export class InputAgainstTimeComponent {
     this.gameStatus = gameStatus;
   }
 
+  setFinalData(areas : Area[]){
+    this.finalData = areas;
+  }
+
   /**
 	 * Get the url parameters to act appropriatly
 	 */

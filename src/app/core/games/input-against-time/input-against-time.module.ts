@@ -7,12 +7,17 @@ import { MapsGamesModule } from 'src/app/shared/components/maps-games/maps-games
 import { DataTableModule } from 'src/app/shared/components/generic/data-table/data-table.module';
 import { GenericModule } from 'src/app/shared/components/generic/generic.module';
 import { MapsModule } from 'src/app/shared/components/maps/maps.module';
-import { ScenesModule } from 'src/app/shared/components/scenes/scenes.module';
+import { StartSceneComponent } from './scenes/start-scene/start-scene.component'
+import { WonSceneComponent } from './scenes/won-scene/won-scene.component'
+import { LostSceneComponent } from './scenes/lost-scene/lost-scene.component'
 
 
 let components : any[] = [
   InputAgainstTimeComponent,
-  InputAgainstTimeSceneComponent
+  InputAgainstTimeSceneComponent,
+  StartSceneComponent,
+  WonSceneComponent,
+  LostSceneComponent
 ];
 
 @NgModule({
@@ -26,8 +31,7 @@ let components : any[] = [
     DataTableModule,
     MaterialModule,
     GenericModule,
-    MapsModule,
-    ScenesModule
+    MapsModule
   ],exports:[
     ...components
   ]

@@ -18,6 +18,7 @@ import { Subscription } from 'rxjs';
 export class InputAgainstTimeSceneComponent implements OnInit {
 
 	private subscriptions : {[key:string]:Subscription} = {};
+	public finalData : Area[] = [];
 
 	// Input attributes
 	@Input() sourceData :  Area[] = [];
@@ -27,7 +28,7 @@ export class InputAgainstTimeSceneComponent implements OnInit {
 	@Input() gameStatus: GameStatus = GameStatus.START;
 	@Output() gameStatusChange : EventEmitter<GameStatus> = new EventEmitter<GameStatus>();
 	// Output attributes
-	@Output() finalData : Area[] = [];
+	@Output() finalDataChange : EventEmitter<Area[]> = new EventEmitter<Area[]>();
   
   	// Data storage for child component data sharing
 	public currentData : Area | undefined = undefined;
@@ -101,13 +102,13 @@ export class InputAgainstTimeSceneComponent implements OnInit {
 	 * Implements the behaviour for when the player won
 	 */
 	onWon(): void {
-		this.gameStatusChange.emit(GameStatus.WON);
+		this.emitEndGameValues();
 	}
 	 /**
 	 * Implements the behaviour for when the player lost
 	 */
 	onLost(): void {
-		this.gameStatusChange.emit(GameStatus.LOST);
+		this.emitEndGameValues();
 	}
 
 	/**
@@ -118,6 +119,10 @@ export class InputAgainstTimeSceneComponent implements OnInit {
 	processKeyDown(ev: KeyboardEvent){
 		if(ev.key == "1") this.setGameStatus(GameStatus.LOST)
 		if(ev.key == "2") this.setGameStatus(GameStatus.WON)
+	}
+
+	emitEndGameValues(){
+		this.finalDataChange.emit(this.finalData);
 	}
 
 	/**
