@@ -138,10 +138,8 @@ export class AreaTableComponent implements OnInit {
 	 * @todo use directives to make elements ref self log
 	 */
 	scrollToElement(area : Area): void{
-		setTimeout(() => {
-			document.getElementById("element-"+area?.num)?.scrollIntoView({block: 'center'});
-			this.listElementExpanded(area);
-		  },200);
+		document.getElementById("element-"+area?.num)?.scrollIntoView({block: 'center'});
+		this.listElementExpanded(area);
 	}
 
 	/**
