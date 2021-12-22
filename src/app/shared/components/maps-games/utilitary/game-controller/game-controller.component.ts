@@ -34,6 +34,13 @@ export class GameControllerComponent implements OnInit {
     }
 
     /**
+     * Give up button action
+     */
+    giveUp(){
+        this.changeGameStatus(GameStatus.LOST);
+    }
+
+    /**
      * Pause or unpause the timer
      */
     toggleTimer() : void{
