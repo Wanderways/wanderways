@@ -1,6 +1,6 @@
 import { Area } from '../../../utils/interfaces/map-oriented/area'
 
-let data : Area[] = [
+export let france_data : Area[] = [
     {
         "iso_3166" : "FR-01",
         "num": "01",
@@ -1315,6 +1315,4 @@ let data : Area[] = [
 			"alt":"Logo du département Mayotte"
 		}
     }
-]
-
-export {data};
+];

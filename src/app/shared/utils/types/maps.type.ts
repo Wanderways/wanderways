@@ -1,4 +1,6 @@
 import { MapMetaData } from "src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface";
+import { france_data } from "../../components/maps/map-departements-francais/france_data";
+import { japan_data } from "../../components/maps/map-prefectures-japon/japan_data";
 
 export class MapsType {
     
@@ -8,7 +10,8 @@ export class MapsType {
         map_name :"undefined",
         map_details:"undefined",
         area_identifier:"undefined",
-        zone_identifier :"undefined"
+        zone_identifier :"undefined",
+        data:[]
     };
     public static readonly  MAP_DEPARTEMENTS_FRANCE : MapMetaData = {
         map_identifier : "MAP_DEPARTEMENTS_FRANCE",
@@ -16,7 +19,8 @@ export class MapsType {
         map_name :"Départements",
         map_details:"Avec DomTom, hors Collectivité d'outre-mer française",
         area_identifier:"Département",
-        zone_identifier :"Région"
+        zone_identifier :"Région",
+        data : france_data
     };
 
     public static readonly MAP_PREFECTURES_JAPON : MapMetaData = {
@@ -25,7 +29,8 @@ export class MapsType {
         map_name :"Préfectures",
         map_details:"",
         area_identifier:"Préfecture",
-        zone_identifier :"Région"
+        zone_identifier :"Région",
+        data:japan_data
     };
 
     public static readonly MAPS_LIST : MapMetaData[] = [

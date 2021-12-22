@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 import { Subscription } from 'rxjs';
@@ -13,40 +13,45 @@ export class TimerComponent implements OnInit {
 	color: ThemePalette = 'primary';
 	mode: ProgressSpinnerMode = 'determinate';
 	readableTime : string = "";
+
+	@Input() currentTimerValue : number = 0;
 	@Input() upperBound : number = 90;
-	value : number = this.upperBound;
 
 	private subscriptions : {[key:string]:Subscription} = {};
   
-	constructor(private timerService : TimerService) {
+	ngOnInit(): void {
 	}
 
-	ngOnInit(): void {
-		this.value = this.upperBound;
-		// This service setter must be in ngInit for timing issues (waiting for @Input to be loaded)
-		this.timerService.setUpperBound(this.upperBound);
-		this.timerService.getCurrentValueChange().subscribe((value : number)=>this.processCurrentValueChange(value));
-	}
+	/**
+	 * Watch if any input value change, and act accordingly
+	 * @param changes A change that occured
+	 */
+	 ngOnChanges(changes: SimpleChanges) {
+		if(changes.currentTimerValue)this.processCurrentValueChange(changes.currentTimerValue.currentValue);
+	 }
 
 	ngOnDestroy(){
-		this.timerService.clear();
 		// Unsubscribe from all registered subscriptions
 		Object.keys(this.subscriptions).forEach((key : string) => {
 			this.subscriptions[key].unsubscribe();
 		});
 	}
 
+	/**
+	 * Process the currentValue input changes
+	 * @param value The current new value
+	 */
 	processCurrentValueChange(value : number){
-		this.value = value;
 		this.readableTime = this.generateReadableTime(value);
-		if((this.value/this.upperBound)*100 <= 20){
+		if((this.currentTimerValue/this.upperBound)*100 <= 20){
 			this.color = "warn";
-		}else if((this.value/this.upperBound)*100 <= 50){
+		}else if((this.currentTimerValue/this.upperBound)*100 <= 50){
 			this.color = "accent";
-		}else if(this.color =="warn" && (this.value/this.upperBound)*100 > 50){
+		}else if(this.color =="warn" && (this.currentTimerValue/this.upperBound)*100 > 50){
 			this.color = "primary";
 		}
-  }
+   }
+
 	/**
 	 * Allows to obtain a human readable time
 	 * @param timeAmount : A number in seconds

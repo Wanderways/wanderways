@@ -34,6 +34,7 @@ export class AreaTableComponent implements OnInit {
 	constructor(private dataSubjectService : DataSubjectService) { }
 
   	ngOnInit(): void {
+		this.dataSubjectService.getCurrentDataChange().subscribe(value=>this.processCurrentDataChange(value));
 	}
 
 	/**
@@ -55,7 +56,6 @@ export class AreaTableComponent implements OnInit {
 	/**
 	 * Processes the source data changes. If in game, then hide all. Else display all
 	 * @param value : The current data list
-	 * @deprecated Shoudl be strenghtened
 	 */
 	private processSourceDataChange(value : any[]): void{
 		this.dataSourceInput=value;
@@ -70,7 +70,6 @@ export class AreaTableComponent implements OnInit {
 	/**
 	 * Processes the current data changes. Display the data in it.
 	 * @param value : An area
-	 * @deprecated Shoudl be strenghtened
 	 */
 	private processCurrentDataChange(value:any): void{
 		this.displayByContentId(value);

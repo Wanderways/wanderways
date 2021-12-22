@@ -1,6 +1,6 @@
 import { Area } from '../../../utils/interfaces/map-oriented/area';
 
-let data : Area[] = [
+export let japan_data : Area[] = [
     {
         "iso_3166" : "JP-01",
         "num" : "01",
@@ -613,5 +613,3 @@ let data : Area[] = [
 		}
     },
 ];
-
-export { data };

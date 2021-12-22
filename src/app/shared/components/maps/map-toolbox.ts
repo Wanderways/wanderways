@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { DataSubjectService } from "../../services/map-specific/data-subject.service";
-import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { Area } from "../../utils/interfaces/map-oriented/area";
 import { NodeSubjectService } from "../../services/map-specific/node-subject.service";
 import { InputSubjectService } from "../../services/game-mode-specific/input-subject.service";
@@ -34,12 +33,10 @@ export class MapToolbox implements OnInit {
      */
     constructor(protected inputSubjectService :InputSubjectService,
                 protected nodeSubjectService : NodeSubjectService,
-                protected dataSubjectService : DataSubjectService,
-                protected mapMetaDataService : MapMetaDataService){
+                protected dataSubjectService : DataSubjectService){
         this.inputSubjectService = inputSubjectService;
         this.nodeSubjectService = nodeSubjectService;
         this.dataSubjectService = dataSubjectService;
-        this.mapMetaDataService = mapMetaDataService;
     }
 
     /**
@@ -52,6 +49,10 @@ export class MapToolbox implements OnInit {
         this.subscriptions.currentDataChange = this.dataSubjectService.getCurrentDataChange().subscribe((value : any) =>this.processCurrentDataChange(value));
     }
 
+    /**
+     * Search then add the html element linked to given input to the node service
+     * @param value An area name
+     */
     private processInputChange(value : string){
         // Si la valeur en input correspond à une zone/area, alors on récupère la node associé
         let area = this.getAreaByName(value);

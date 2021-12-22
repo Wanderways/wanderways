@@ -15,22 +15,22 @@
 <div class="left-sidenav">
     <mat-card>
         <div class="my-mat-card-content">
-            <app-timer [upperBound]="1010"></app-timer>
-            <app-progress-tracker></app-progress-tracker>
+            <app-timer [currentTimerValue]="currentTimerValue" [upperBound]="sourceData.length * timerPerValue"></app-timer>
+            <app-progress-tracker [currentValue]="finalData.length" [upperBound]="sourceData.length"></app-progress-tracker>
         </div>
-        <app-game-controller style="margin-bottom:16px"></app-game-controller>
+        <app-game-controller style="margin-bottom:16px" [gameStatus]="gameStatus" (gameStatusChange)="setGameStatus($event)"></app-game-controller>
     </mat-card>
 </div>
 <div class="main">
-    <app-map [map]="selectedMap" [clickArea]="false"></app-map>
+    <app-map [map]="mapMetaData" [data]="sourceData" [clickArea]="false"></app-map>
 </div>
 <div class="right-sidenav">
-    <app-area-table [inGameMode]="true" [dataSourceInput]="dataSource" [currentDataInput]="currentData"></app-area-table>
+    <app-area-table [inGameMode]="true" [dataSourceInput]="sourceData" [currentDataInput]="currentData"></app-area-table>
 </div>
 <div class="bottom-left-sidenav">
 </div>
 <div class="footer">
-    <app-find-area></app-find-area>
+    <app-find-area [gameStatus]="gameStatus"></app-find-area>
 </div>
 <div class="bottom-right-sidenav">
 </div>

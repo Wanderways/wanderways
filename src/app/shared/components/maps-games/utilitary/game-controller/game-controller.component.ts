@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
+import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
 import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 
 @Component({
@@ -9,28 +8,29 @@ import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 })
 export class GameControllerComponent implements OnInit {
 
-    constructor(private gameStatusService : GameStatusService ) {}
+    constructor() {}
 
-    isPaused : boolean = false;
+    @Input() gameStatus : GameStatus = GameStatus.PAUSE;
+    @Output() gameStatusChange : EventEmitter<GameStatus> = new EventEmitter<GameStatus>();
+
+    isPaused : boolean = true;
 
     ngOnInit(): void {
-        this.isPaused = ( this.gameStatusService.getGameStatus() == GameStatus.PLAYING );
-        this.gameStatusService.getGameStatusChange().subscribe((value)=>{ this.processGameStatusChange(value) })
     }
 
     /**
-     * Process the game status changes, and make the timer act as supposed to
-     * @param gameStatus The current game status
+     * Detects input attributes changes and start appropriate attributes onchange function
+     * @param changes A change in attributes
      */
-    processGameStatusChange(gameStatus : GameStatus) : void{
-        this.isPaused = ( gameStatus == GameStatus.PLAYING );
+    ngOnChanges(changes : SimpleChanges){
+        if(changes.gameStatus)this.changeGameStatus(changes.gameStatus.currentValue);
     }
 
     /**
      * Restart button action
      */
     restartTimer() : void{
-        this.gameStatusService.setGameStatus(GameStatus.START);
+        this.changeGameStatus(GameStatus.START);
     }
 
     /**
@@ -38,7 +38,7 @@ export class GameControllerComponent implements OnInit {
      */
     toggleTimer() : void{
         this.setIsPaused(!this.isPaused);
-        this.gameStatusService.setGameStatus(this.isPaused ? GameStatus.PLAYING : GameStatus.PAUSE);
+        this.changeGameStatus(this.isPaused ? GameStatus.PLAYING : GameStatus.PAUSE);
     }
 
     /**
@@ -47,5 +47,13 @@ export class GameControllerComponent implements OnInit {
      */
     setIsPaused(isPaused : boolean) : void{
         this.isPaused = isPaused;
+    }
+
+    /**
+     * Send an event to parent component with new gameStatus to set
+     * @param gameStatus A `GameStatus` instance
+     */
+    changeGameStatus(gameStatus : GameStatus){
+        this.gameStatusChange.emit(gameStatus);
     }
 }

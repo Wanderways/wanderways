@@ -1,10 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackBarComponent } from '../../generic/snack-bar/snack-bar.component';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
-import { GameStatusService } from 'src/app/shared/services/game-mode-specific/game-status.service';
 import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 import { Subscription } from 'rxjs';
 
@@ -18,6 +17,8 @@ export class FindAreaComponent implements OnInit {
     @Input() input_message : string = "";
     @Input() area_input : string = "";
 
+    @Input() gameStatus : GameStatus = GameStatus.START;
+
     value : any = '';
     current_data : any = {};
     isDisabled : boolean = true;
@@ -27,7 +28,6 @@ export class FindAreaComponent implements OnInit {
     constructor(private inputSubjectService :InputSubjectService,
 		private nodeSubjectService : NodeSubjectService,
 		private dataSubjectService : DataSubjectService,
-        private gameStatusService : GameStatusService,
 		private _snackBar: MatSnackBar) { }
 
 	/**
@@ -38,8 +38,15 @@ export class FindAreaComponent implements OnInit {
 		this.subscriptions.nodeChange = this.nodeSubjectService.getNodeChange().subscribe((value)=>{
             this.colorArea(value);
         });
-        this.setDisabled(this.gameStatusService.getGameStatus() != GameStatus.PLAYING);
-        this.subscriptions.gameStatusChange = this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)})
+        this.setDisabled(this.gameStatus != GameStatus.PLAYING);
+    }
+
+    /**
+     * Detects input attributes changes and start appropriate attributes onchange function
+     * @param changes A change in attributes
+     */
+    ngOnChanges(changes : SimpleChanges){
+        if(changes.gameStatus)this.processGameStatusChange(changes.gameStatus.currentValue);
     }
 
     /**

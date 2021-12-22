@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 import { Subscription } from 'rxjs';
@@ -15,15 +15,22 @@ export class ProgressTrackerComponent implements OnInit {
 	mode: ProgressSpinnerMode = 'determinate';
 	currentPercentage : number = 0;
 	readablePercentage : string = "0";
-	upperBound : number = 0;
-	currentValue : number = 0;
+	
+	@Input() upperBound : number = 0;
+	@Input() currentValue : number = 0
 
 	private subscriptions : {[key:string]:Subscription} = {};
 
 	constructor(private dataSubjectService : DataSubjectService) {}
 	ngOnInit(): void {
-		this.subscriptions.sourceDataChange = this.dataSubjectService.getSourceDataChange().subscribe(()=> this.upperBound = this.dataSubjectService.getSourceDataLength())
-		this.subscriptions.finalDataChange = this.dataSubjectService.getFinalDataChange().subscribe((value : any[])=>this.processFinalDataChange(value));
+	}
+
+	/**
+     * Detects input attributes changes and start appropriate attributes onchange function
+     * @param changes A change in attributes
+     */
+	ngOnChanges(changes: SimpleChanges){
+		if(changes.currentValue)this.processFinalDataChange();
 	}
 
   	/**
@@ -37,10 +44,12 @@ export class ProgressTrackerComponent implements OnInit {
 		});
 	}
 
-	processFinalDataChange( value : any[] ){
-		this.currentValue = value.length;
-		if( this.upperBound > 0 )
-			this.currentPercentage = ((this.currentValue/this.upperBound)*100)
+	/**
+	 * If the upperbound has been set, then process the current amount of data in final data list
+	 */
+	processFinalDataChange() : void{
+		if( this.upperBound <= 0 ) return; // Don't go further if not necessary
+		this.currentPercentage = ((this.currentValue/this.upperBound)*100)
 		this.readablePercentage = this.currentPercentage.toFixed(2);
 		if(this.currentPercentage <= 20){
 			this.color = "warn";

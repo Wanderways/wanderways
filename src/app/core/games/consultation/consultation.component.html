@@ -13,10 +13,10 @@
     </div>
 
     <div class="left-sidenav">
-        <app-area-table [inGameMode]="false"></app-area-table>
+        <app-area-table [inGameMode]="false" [dataSourceInput]="mapMetaData.data" [currentDataInput]="currentData"></app-area-table>
     </div>
 
     <div class="main">
-        <app-map [map]="selectedMap" [clickArea]="true"></app-map>
+        <app-map [map]="mapMetaData" [data]="mapMetaData.data" [clickArea]="true"></app-map>
     </div>
 </div>

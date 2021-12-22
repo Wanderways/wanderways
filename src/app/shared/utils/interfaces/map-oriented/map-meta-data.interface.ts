@@ -1,3 +1,5 @@
+import { Area } from "./area";
+
 export interface MapMetaData {
     map_identifier : string;
     map_country : string;
@@ -5,4 +7,5 @@ export interface MapMetaData {
     map_details : string;
     area_identifier : string;
     zone_identifier : string;
+    data : Area[];
 }

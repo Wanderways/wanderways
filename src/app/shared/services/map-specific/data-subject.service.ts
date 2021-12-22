@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { GameStatus } from '../../utils/enums/GameStatus.enum';
-import { GameStatusService } from '../game-mode-specific/game-status.service';
 
 @Injectable({
     providedIn: 'root'
@@ -17,21 +16,10 @@ export class DataSubjectService {
     private currentDataChange : Subject<any> = new Subject<any>();
     private finalDataChange : Subject<any[]> = new Subject<any[]>();
 
-    constructor(private gameStatusService : GameStatusService) {
+    constructor() {
         this.sourceDataChange.subscribe((value)=>{this.sourceData = value;});
         this.currentDataChange.subscribe((value)=>{this.currentData = value;});
         this.finalDataChange.subscribe((value)=>{this.finalData = value;});
-        this.gameStatusService.getGameStatusChange().subscribe((value)=>{this.processGameStatusChange(value)});
-    }
-
-    /**
-     * If the game status is not PLAYING or PAUSE than the current data must be erased
-     * @param gameStatus The current game status
-     */
-    private processGameStatusChange(gameStatus : GameStatus) : void{
-        if(![GameStatus.PLAYING, GameStatus.PAUSE].includes(gameStatus)){
-            this.removeAllDataFromFinalData();
-        }
     }
 
     /**
@@ -91,10 +79,6 @@ export class DataSubjectService {
      public addDataToFinalData(obj : any) : void{
         this.finalData.push(obj);
         this.finalDataChange.next(this.finalData);
-        // If the player won, then we change the current game status
-        if(this.checkIfAllDataFound()){
-            this.gameStatusService.setGameStatus(GameStatus.WON);
-        }
     }
 
     /**

@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { MapMetaDataService } from 'src/app/shared/services/map-specific/map-meta-data.service';
 import { MapMetaData } from "src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface";
 import { MapsType } from '../../../utils/types/maps.type';
+import { Area } from 'src/app/shared/utils/interfaces/map-oriented/area';
 
 @Component({
 	selector: 'app-map',
@@ -16,6 +16,7 @@ export class MapComponent implements OnInit {
 	 */
 	MapsType = MapsType;
 
+	@Input() data : Area[] = [];
 
 	/**
 	 * La carte que l'on souhaite afficher

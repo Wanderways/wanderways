@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
-import { GameStatusService } from './game-status.service';
 
 @Injectable({
   providedIn: 'root'
