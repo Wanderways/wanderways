@@ -71,6 +71,7 @@ export class InputAgainstTimeSceneComponent implements OnInit {
   	}
 
   	processFinalDataChange(value : Area[]){
+		if(this.gameStatus!=GameStatus.PLAYING) return; // If not int game, then shall stop
 		this.finalData = value;
 		if(this.dataSubjectService.checkIfAllDataFound()){
             this.setGameStatus(GameStatus.WON);
