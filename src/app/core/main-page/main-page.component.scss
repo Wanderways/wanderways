@@ -1,73 +1,30 @@
 :host {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    max-width: 80rem;
-    margin: 0 auto;
-    .grid {
-        display: grid;
-        height: 100%;
-        width: 100%;
-        grid-template-areas: 'left-upper-side upper-main right-upper-side' 'left-side main right-side' 'left-lower-side lower-main right-lower-side';
-        grid-template-columns: 24rem auto 24rem;
-        grid-template-rows: 8rem auto 5rem;
-        #left-upper-side {
-            grid-area: left-upper-side;
+    flex: 1 0 auto;
+    max-width: 1280px;
+    margin: 1rem auto;
+    gap: 1rem;
+    flex-direction: column;
+    .first-section {
+        .text-presentation {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 0 auto;
         }
-        #left-side {
-            grid-area: left-side;
-        }
-        #left-lower-side {
-            grid-area: left-lower-side;
-        }
-        #upper-main {
-            grid-area: upper-main;
-        }
-        #main {
-            grid-area: main;
-            app-logo {
-                min-width: 15vw;
-                margin: auto auto;
-            }
-            justify-content: center;
-            align-items: center;
-        }
-        #lower-main {
-            grid-area: lower-main;
-        }
-        #right-upper-side {
-            grid-area: right-upper-side;
-        }
-        #right-side {
-            grid-area: right-side;
-        }
-        #right-lower-side {
-            grid-area: right-lower-side;
-        }
-        #left-upper-side,
-        #right-upper-side {
-            justify-content: center;
-            align-items: center;
-        }
-        #left-upper-side,
-        #left-side,
-        #left-lower-side,
-        #upper-main,
-        #main,
-        #lower-main,
-        #right-upper-side,
-        #right-side,
-        #right-lower-side {
+    }
+    .second-section {
+        display: flex;
+        margin-top: 1rem;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        .recommendation {
             display: flex;
-            h1 {
-                text-align: center;
-                margin: 0 0;
-            }
+            flex-direction: column;
             mat-card {
                 width: 100%;
-                align-self: flex-start;
+                max-width: 20rem;
                 mat-card-title {
                     display: flex;
                     mat-icon {
@@ -78,12 +35,12 @@
                     display: flex;
                     .img-container {
                         max-width: 40%;
+                        height: 10rem;
                     }
                     .description-container {
                         display: flex;
                         flex-direction: column;
                         width: 100%;
-                        p {}
                         button {
                             margin: auto auto 0 auto;
                         }
@@ -95,5 +52,36 @@
                 }
             }
         }
+        #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            app-logo {
+                height: 10rem;
+                width: 10rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+     :host {
+        max-width: 800px;
+        #main {
+            order: -1;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+     :host {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+     :host {
+        max-width: 550px;
     }
 }
