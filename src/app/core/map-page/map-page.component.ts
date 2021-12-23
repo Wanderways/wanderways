@@ -30,27 +30,14 @@ export class MapPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // Gets the url parameters
-    let map : string = this.route.snapshot.queryParamMap.get('map')||"";
-    let game : string = this.route.snapshot.queryParamMap.get('game')||"";
     
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-
-    this.displaySelection = !(MapsType.isValidType(map) && GameModeType.isValidType(game));
 
     // If the values are correct ones, then we process them, else we redirect to choosing page with an error snackbar
-    if(!this.displaySelection){
-      this.displaySelection = false;
-      // On force l'affectation car la vérification précédente assure que les données sont valides
-      this.selectedMap = MapsType.getTypeFromIdentifier(map)!;
-      this.selectedGameMode = GameModeType.getTypeFromIdentifier(game)!;
-    }else{
-      this.displaySelection = true;
-      this.router.navigate(['/maps']);
+
       /**
        * @TODO Implements map choosing
        */
-    }
+    
 
     // If there where args and the maps/game mode has been disaproved, then we show error
     if(this.route.snapshot.queryParamMap.keys.length != 0 && this.displaySelection){

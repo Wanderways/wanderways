@@ -1,9 +1,8 @@
 :host {
     display: flex;
-    justify-content: center;
+    flex: 1 0 auto;
     align-items: center;
     flex-direction: column;
-    height: 100%;
     gap: 1rem;
     padding: 0 1rem;
     .selection-container {
@@ -33,6 +32,34 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .selection-container {
+        flex-wrap: wrap;
+        .table-container {
+            max-height: 20rem;
+            overflow-y: auto;
+            /* width */
+            &::-webkit-scrollbar {
+                width: 20px;
+            }
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background-color: rgba(66, 66, 66, 0.1);
+                width: 20px;
+                padding-left: 2px;
+                padding-right: 2px;
+                padding-top: 1rem;
+            }
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                border-radius: 100px;
+                width: 15px;
+                background-color: #808080;
             }
         }
     }
