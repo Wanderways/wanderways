@@ -9,6 +9,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
+import {MatRippleModule} from '@angular/material/core';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatTooltipModule} from '@angular/material/tooltip';
@@ -24,6 +25,7 @@ let mat_modules : any[] = [
   MatIconModule,
   MatCardModule,
   MatInputModule,
+  MatRippleModule,
   MatSnackBarModule,
   MatTableModule,
   MatSortModule,

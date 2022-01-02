@@ -1,3 +1,6 @@
-<app-header (darkModeSwitched)="switchMode($event)"></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-side-nav *ngIf="displaySideNav" (displaySideNavChange)="displaySideNav = !displaySideNav"></app-side-nav>
+<div id="main-content">
+    <app-header [displaySideNav]="displaySideNav" (displaySideNavChange)="displaySideNav = !displaySideNav" (darkModeSwitched)="switchMode($event)"></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</div>

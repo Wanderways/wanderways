@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 
 @Component({
@@ -8,10 +8,13 @@ import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output()
-  readonly darkModeSwitched = new EventEmitter();
+  @Output() readonly darkModeSwitched = new EventEmitter();
 
   themeSwitch : boolean = localStorage.getItem("dark-mode")=="true" ? true:false;
+
+  @Input() displaySideNav : boolean = false
+  @Output() displaySideNavChange = new EventEmitter();
+
 
   constructor() { }
 
@@ -23,4 +26,8 @@ export class HeaderComponent implements OnInit {
     this.themeSwitch = checked;
   }
 
+  toggleSideNavDisplayed(){
+    this.displaySideNav = !this.displaySideNav;
+    this.displaySideNavChange.emit(this.displaySideNav);
+  }
 }

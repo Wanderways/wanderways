@@ -1,10 +1,12 @@
 <mat-toolbar color="primary">
-    <app-logo></app-logo>
-    <nav>
-        <button mat-button [routerLink]="['/home']">Home</button>
-        <button mat-button [routerLink]="['/maps']">Cartes</button>
+    <nav id="nav">
+        <button *ngIf="!displaySideNav" mat-button (click)="toggleSideNavDisplayed()"><mat-icon>sort</mat-icon></button>
+        <a *ngIf="!displaySideNav" id="menu-button" [routerLink]="['/home']">
+            <app-logo></app-logo>
+            <span id="menu-button-text">Learn your maps</span>
+        </a>
+        <mat-slide-toggle id="theme-slider" (change)="onDarkModeSwitched($event)" [checked]="themeSwitch">
+            <mat-icon aria-hidden="false" aria-label="theme-icon">{{themeSwitch ? "bedtime" : "wb_sunny"}}</mat-icon>
+        </mat-slide-toggle>
     </nav>
-    <mat-slide-toggle id="themeSlider" (change)="onDarkModeSwitched($event)" [checked]="themeSwitch">
-        <mat-icon aria-hidden="false" aria-label="theme-icon">{{themeSwitch ? "bedtime" : "wb_sunny"}}</mat-icon>
-    </mat-slide-toggle>
 </mat-toolbar>

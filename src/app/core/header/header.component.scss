@@ -3,12 +3,46 @@
     mat-toolbar {
         display: flex;
         gap: 1rem;
-        app-logo {
+        #nav {
             display: flex;
-            height: 80%;
+            align-items: center;
+            max-width: 1392px;
+            margin: 0 auto;
+            width: 100%;
+            #menu-button {
+                display: flex;
+                text-decoration: none;
+                color: unset;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                app-logo {
+                    width: 2.5rem;
+                    display: flex;
+                }
+            }
+            #theme-slider {
+                margin-left: auto;
+            }
         }
-        #themeSlider {
-            margin-left: auto;
+    }
+    #side-nav-pannel {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 400px) {
+     :host {
+        mat-toolbar {
+            #nav {
+                justify-content: space-between;
+                #menu-button {
+                    #menu-button-text {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

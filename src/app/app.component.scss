@@ -1,5 +1,9 @@
 :host {
     display: flex;
-    flex-direction: column;
     flex: 1 0 auto;
+    #main-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
 }

@@ -16,16 +16,18 @@ import { MapPageComponent } from './map-page/map-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { GamesModule } from './games/games.module';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 const shared_components : any[] = [
   HeaderComponent,
-  FooterComponent
+  FooterComponent,
+  SideNavComponent
 ];
 @NgModule({
   declarations: [
     MainPageComponent,
     MapPageComponent,
-    ...shared_components
+    ...shared_components,
   ],
   imports: [
     CommonModule,
