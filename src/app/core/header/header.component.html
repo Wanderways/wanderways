@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
     <nav id="nav">
         <button *ngIf="!displaySideNav" mat-button (click)="toggleSideNavDisplayed()"><mat-icon>sort</mat-icon></button>
-        <a *ngIf="!displaySideNav" id="menu-button" [routerLink]="['/home']">
+        <a matRipple *ngIf="!displaySideNav" id="menu-button" [routerLink]="['/home']">
             <app-logo></app-logo>
             <span id="menu-button-text">Learn your maps</span>
         </a>

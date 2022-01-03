@@ -2,25 +2,33 @@
     flex: 0 0 auto;
     position: static;
     .side-nav-container {
-        margin-left: -230px;
-        width: 230px;
-        top: 0;
-        position: sticky;
-        height: 100vh;
         display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.1);
         flex: 0 0 auto;
+        flex-direction: column;
+        position: sticky;
+        width: 230px;
+        height: 100vh;
+        top: 0;
+        margin-left: -230px;
+        background-color: rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
         #menu-button {
             display: flex;
-            text-decoration: none;
-            color: unset;
-            display: flex;
+            flex: 0 0 auto;
             justify-content: center;
             align-items: center;
-            gap: 0.5rem;
             margin: 0.75rem;
             cursor: pointer;
+            div {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                border-radius: 0.5rem;
+            }
+            mat-icon {
+                padding: 0.5rem;
+                border-radius: 50%;
+            }
             app-logo {
                 width: 2.5rem;
                 display: flex;
