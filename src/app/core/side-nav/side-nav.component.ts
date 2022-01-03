@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,16 +6,16 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent implements OnInit {
-
-    @Output() displaySideNavChange = new EventEmitter();
-
-
-  constructor() { }
+  @Input() displaySideNav : boolean | undefined = undefined;
+  @Output() displaySideNavChange = new EventEmitter();
 
   ngOnInit(): void {
   }
 
-  displaySideNav(){
+  /**
+   * Emits the event that the side nav is being toggled
+   */
+  displaySideNavEvent(){
     this.displaySideNavChange.emit();
   }
 }

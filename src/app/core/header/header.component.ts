@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   themeSwitch : boolean = localStorage.getItem("dark-mode")=="true" ? true:false;
 
-  @Input() displaySideNav : boolean = false
+  @Input() displaySideNav : boolean | undefined = false
   @Output() displaySideNavChange = new EventEmitter();
 
 

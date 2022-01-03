@@ -1,7 +1,9 @@
-<div matRipple id="menu-button" (click)="displaySideNav()">
-    <app-logo></app-logo>
-    <span id="menu-button-text">Learn your maps</span>
-    <mat-icon>close</mat-icon>
+<div class="side-nav-container {{displaySideNav !== undefined ? displaySideNav ? 'slide-sidenav-show':'slide-sidenav-hide' : ''}}">
+    <div matRipple id="menu-button" (click)="displaySideNavEvent()">
+        <app-logo></app-logo>
+        <span id="menu-button-text">Learn your maps</span>
+        <mat-icon>close</mat-icon>
+    </div>
+    <button mat-button [routerLink]="['/home']"><mat-icon>home</mat-icon> Home</button>
+    <button mat-button [routerLink]="['/maps']"><mat-icon>map</mat-icon> Cartes</button>
 </div>
-<button mat-button [routerLink]="['/home']"><mat-icon>home</mat-icon> Home</button>
-<button mat-button [routerLink]="['/maps']"><mat-icon>map</mat-icon> Cartes</button>

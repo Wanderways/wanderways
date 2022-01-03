@@ -9,7 +9,7 @@ export class AppComponent {
   public title = 'learn-your-maps';
   private isDark = localStorage.getItem("dark-mode") || "false";
 
-  displaySideNav : boolean = false;
+  displaySideNav : boolean | undefined = undefined;
 
   @HostBinding('class')
   get themeMode(){
