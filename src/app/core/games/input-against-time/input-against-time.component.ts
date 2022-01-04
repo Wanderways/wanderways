@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, SimpleChanges } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-oriented/game-mode-meta-data.interface';
@@ -22,14 +22,13 @@ export class InputAgainstTimeComponent {
   // Attributes in a two way binding
   public gameStatus : GameStatus = GameStatus.START;
   // Data storage for scenes transition
-  private finalData : Area[] = [];
-  private currentData : Area | undefined = undefined;
+  public finalData : Area[] = [];
+  public currentData : Area | undefined = undefined;
 
   constructor(protected route: ActivatedRoute,
               protected router: Router) {
     this.processUrlParameter();
   }
-
 
   /**
    * Check if the given GameStatus is the current one

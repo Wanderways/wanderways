@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 
 import { MapMetaData } from "src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface";
 import { MapsType } from '../../../utils/types/maps.type';
@@ -18,6 +18,8 @@ export class MapComponent implements OnInit {
 
 	@Input() data : Area[] = [];
 
+	@Input() public finalData : Area[] = [];
+
 	/**
 	 * La carte que l'on souhaite afficher
 	 */
@@ -27,10 +29,23 @@ export class MapComponent implements OnInit {
 	 * If node selection should be allowed or not
 	 */
 	@Input() public  clickArea : boolean = false;
+	/**
+	 * If color for result should be applied or not
+	 */
+	@Input() public displayResult : boolean = false;
 	 
 	constructor(){}
 
 	ngOnInit(): void {}
+
+	/**
+	 * Look for input changes
+	 * @param changes A detected input change
+	 */
+	ngOnChanges(changes : SimpleChanges){
+		console.log("onChanges map");
+		if(changes.finalData)if(this.displayResult)this.finalData=changes.finalData.currentValue;
+	}
 	
 	ngOnDestroy() : void {
 	}

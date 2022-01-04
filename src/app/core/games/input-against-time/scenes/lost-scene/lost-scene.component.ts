@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { Area } from 'src/app/shared/utils/interfaces/map-oriented/area';
 import { MapMetaData } from 'src/app/shared/utils/interfaces/map-oriented/map-meta-data.interface';
 import { MapsType } from 'src/app/shared/utils/types/maps.type';
@@ -11,6 +11,7 @@ import { MapsType } from 'src/app/shared/utils/types/maps.type';
 export class LostSceneComponent implements OnInit {
 
 	@Input() sourceData :  Area[] = [];
+	@Input() finalData :  Area[] = [];
 	@Input() mapMetaData : MapMetaData = MapsType.MAP_DEPARTEMENTS_FRANCE;
 
   constructor() { }
@@ -18,4 +19,11 @@ export class LostSceneComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * Look for input changes
+   * @param changes A detected input change
+   */
+  ngOnChanges(changes : SimpleChanges){
+		if(changes.finalData)this.finalData=changes.finalData.currentValue;
+	}
 }

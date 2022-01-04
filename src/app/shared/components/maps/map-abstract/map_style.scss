@@ -40,10 +40,17 @@
             transform-box: fill-box;
             &:hover {
                 fill: #fbb80f;
+                filter: brightness(1.1);
                 cursor: pointer;
             }
             &.found {
                 fill: #347b98;
+            }
+            &.not-valid {
+                fill: #be2d0d;
+            }
+            &.valid {
+                fill: #49be25;
             }
             &.selected {
                 fill: #fbb80f;

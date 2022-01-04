@@ -3,12 +3,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
     gap: 1rem;
     padding: 0 1rem;
     position: relative;
+    flex: 1 0 auto;
     .slide {
-        position: absolute;
         animation-timing-function: ease-in-out;
         z-index: 1000;
         &.slide-in {

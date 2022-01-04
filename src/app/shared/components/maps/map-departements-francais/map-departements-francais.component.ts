@@ -18,8 +18,14 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 	 * If node selection should be allowed or not
 	 */
 	 @Input() public  clickArea : boolean = false;
+	/**
+	 * If color for result should be applied or not
+	 */
+	 @Input() public displayResult : boolean = false;
 
 	 @Input() public data : Area[] = [];
+
+	 @Input() public finalData : Area[] = [];
 
 	constructor(inputSubjectService :InputSubjectService, nodeSubjectService : NodeSubjectService, dataSubjectService : DataSubjectService){
 		super(inputSubjectService, nodeSubjectService, dataSubjectService);
@@ -27,9 +33,12 @@ export class MapDepartementsFrancaisComponent extends MapToolbox  implements OnI
 
 	ngOnInit(): void {
 		super.ngOnInit();
-		if(this.clickArea)
-			this.generateOnClickEvent();
+		if(this.clickArea) this.generateOnClickEvent();
 	}
+
+	ngAfterViewInit(){
+		if(this.displayResult) this.colorResult(this.finalData);
+	  }
 
 	ngOnDestroy(){
 		Object.keys(this.subscriptions).forEach((key : string) => {

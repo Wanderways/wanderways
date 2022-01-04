@@ -49,6 +49,7 @@ export class InputAgainstTimeSceneComponent implements OnInit {
 		this.timerService.setUpperBound( this.sourceData.length * this.timerPerValue);
     	this.currentTimerValue = this.sourceData.length * this.timerPerValue;
 		this.onPlaying();
+		// @TODO REMOVE
 		document.addEventListener('keydown',this.processKeyDown.bind(this));
 	}
 

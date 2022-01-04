@@ -135,4 +135,15 @@ export class MapToolbox implements OnInit {
             ( stringFactory.replaceSpecialChars(name) ==  stringFactory.replaceSpecialChars(zone_name));
         });
     }
+
+    /**
+     * Function to color the map for result display. Showing which were not found, and which were.
+     * @param finalData 
+     * @TODO Refacto or move
+     */
+    colorResult(finalData : Area[]){        
+        this.data.forEach((value : Area)=>{
+            setTimeout(()=>document.getElementById("area-" + value.num.toLowerCase())!.classList.add(finalData.find(area => area.iso_3166 === value.iso_3166)?"valid":"not-valid"));
+        });
+    }
 }
