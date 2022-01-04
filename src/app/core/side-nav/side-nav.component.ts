@@ -1,4 +1,5 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-nav',
@@ -9,7 +10,12 @@ export class SideNavComponent implements OnInit {
   @Input() displaySideNav : boolean | undefined = undefined;
   @Output() displaySideNavChange = new EventEmitter();
 
+  isMobileDevice : boolean = false;
+
+  constructor(private router : Router){}
+
   ngOnInit(): void {
+    this.onResize();
   }
 
   /**
@@ -17,5 +23,22 @@ export class SideNavComponent implements OnInit {
    */
   displaySideNavEvent(){
     this.displaySideNavChange.emit();
+  }
+
+  /**
+   * Deals with windows resize
+   */
+  onResize(){
+    this.isMobileDevice = window.innerWidth<1024;
+  }
+  /**
+   * Navigate to the given path. If on mobile device, then also close sidenav.
+   * @param path A string reprensing a valid path.
+   */
+  navigate(path : string){
+    this.router.navigate([path]);
+    if(this.isMobileDevice)this.displaySideNavEvent();
+    console.log("yeah");
+    
   }
 }

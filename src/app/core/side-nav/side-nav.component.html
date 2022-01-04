@@ -1,11 +1,14 @@
-<div class="side-nav-container {{displaySideNav !== undefined ? displaySideNav ? 'slide-sidenav-show':'slide-sidenav-hide' : ''}}">
+<div *ngIf="displaySideNav && isMobileDevice" id="mobile-responsive-sidenav" (click)="displaySideNavEvent()">
+
+</div>
+<div (window:resize)="onResize()" class="side-nav-container {{displaySideNav !== undefined ? displaySideNav ? 'slide-sidenav-show':'slide-sidenav-hide' : ''}}">
     <div id="menu-button">
-        <div matRipple id="main-button" [routerLink]="['/home']">
+        <div matRipple id="main-button" (click)="navigate('/home')">
             <app-logo></app-logo>
             <span id="menu-button-text">Learn your maps</span>
         </div>
-        <mat-icon matRipple (click)="displaySideNavEvent()">close</mat-icon>
+        <mat-icon *ngIf="!isMobileDevice" matRipple (click)="displaySideNavEvent()">close</mat-icon>
     </div>
-    <button mat-button [routerLink]="['/home']"><mat-icon>home</mat-icon> Home</button>
-    <button mat-button [routerLink]="['/maps']"><mat-icon>map</mat-icon> Cartes</button>
+    <button mat-button (click)="navigate('/home')"><mat-icon>home</mat-icon> Home</button>
+    <button mat-button (click)="navigate('/maps')"><mat-icon>map</mat-icon> Cartes</button>
 </div>

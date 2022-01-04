@@ -1,6 +1,7 @@
 :host {
     flex: 0 0 auto;
     position: static;
+    z-index: 9999;
     .side-nav-container {
         display: flex;
         flex: 0 0 auto;
@@ -10,12 +11,11 @@
         height: 100vh;
         top: 0;
         margin-left: -230px;
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba( #000000, 0.1);
         overflow-y: auto;
         #menu-button {
             display: flex;
             flex: 0 0 auto;
-            justify-content: center;
             align-items: center;
             margin: 0.75rem;
             cursor: pointer;
@@ -47,6 +47,14 @@
     .slide-sidenav-hide {
         animation: slide-sidenav-hide 0.2s ease-in-out forwards;
     }
+    #mobile-responsive-sidenav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }
 
 @keyframes slide-sidenav-show {
@@ -64,5 +72,23 @@
     }
     100% {
         margin-left: -230px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+     :host {
+        position: absolute;
+        .side-nav-container {
+            background-color: rgba( #303030, 1.0);
+        }
+    }
+    @keyframes slide-sidenav-show {
+        0% {
+            margin-left: -230px;
+        }
+        100% {
+            margin-left: 0px;
+            box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.5);
+        }
     }
 }
