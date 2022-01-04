@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -28,6 +28,7 @@ export class SideNavComponent implements OnInit {
   /**
    * Deals with windows resize
    */
+  @HostListener('window:resize', ['$event'])
   onResize(){
     this.isMobileDevice = window.innerWidth<1024;
   }
