@@ -216,11 +216,13 @@ $theme-accent,
 $theme-warn);
 // Theme Init
 .theme-light {
+    color-scheme: light;
     @include angular-material-theme($theme-light);
     @include custom-components.theme($theme-light);
 }
 
 .theme-dark {
+    color-scheme: dark;
     @include angular-material-theme($theme-dark);
     @include custom-components.theme($theme-dark);
 }

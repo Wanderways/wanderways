@@ -7,23 +7,36 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class AppComponent {
   public title = 'learn-your-maps';
-  private isDark = localStorage.getItem("dark-mode") || "false";
+  private isDark = localStorage.getItem("dark-mode")==="true";
 
   displaySideNav : boolean | undefined = undefined;
 
   @HostBinding('class')
   get themeMode(){
-    return (this.isDark=="true" ? 'theme-dark':'theme-light')+' app-component';
+    return 'app-component';
+  }
+  constructor(){
+    this.switchMode(this.isDark);
   }
 
+  /**
+   * Changes app color theme
+   * @param isDarkMode A boolean, true if dark mode, false otherwise
+   */
   switchMode(isDarkMode:boolean){
-    this.isDark = isDarkMode?"true":"false";
-    // Pas le choix, on peut pas stocker direct un boolean
+    this.isDark = isDarkMode;
     if (window.localStorage) {
-      localStorage.setItem("dark-mode", this.isDark=="true"?"true":"false");
+      localStorage.setItem("dark-mode", this.isDark?"true":"false");
     }
+    
+    let htmlElement = document.getElementsByTagName("html")[0];
+    htmlElement?.classList.add(isDarkMode?"theme-dark":"theme-light");
+    htmlElement?.classList.remove(isDarkMode?"theme-light":"theme-dark");
   }
 
+  /**
+   * Displays the sidenav
+   */
   displaySideNavChange(){
     this.displaySideNav = !this.displaySideNav;
   }

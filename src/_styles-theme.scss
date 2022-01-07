@@ -4,12 +4,7 @@
     $color-config: mat.get-color-config($theme);
     $background-palette: map.get($color-config, 'background');
     $foreground-palette: map.get($color-config, 'foreground');
-    &.theme-dark {
-        background-color: mat.get-color-from-palette($background-palette, 'background');
-        color: mat.get-color-from-palette($foreground-palette, 'text');
-        ;
-    }
-    &.theme-light {
+    & {
         background-color: mat.get-color-from-palette($background-palette, 'background');
         color: mat.get-color-from-palette($foreground-palette, 'text');
     }
@@ -18,7 +13,7 @@
 @mixin typography($theme) {
     // Get the typography config from the theme.
     $typography-config: mat.get-typography-config($theme);
-    &.theme-light {
+    & {
         font-family: mat.font-family($typography-config);
     }
 }
