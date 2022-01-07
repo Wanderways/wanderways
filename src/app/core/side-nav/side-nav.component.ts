@@ -10,7 +10,7 @@ export class SideNavComponent implements OnInit {
   @Input() displaySideNav : boolean | undefined = undefined;
   @Output() displaySideNavChange = new EventEmitter();
 
-  isMobileDevice : boolean = false;
+  isSmallDevice : boolean = false;
 
   constructor(private router : Router){}
 
@@ -30,7 +30,7 @@ export class SideNavComponent implements OnInit {
    */
   @HostListener('window:resize', ['$event'])
   onResize(){
-    this.isMobileDevice = window.innerWidth<1024;
+    this.isSmallDevice = window.innerWidth<=1024;
   }
   /**
    * Navigate to the given path. If on mobile device, then also close sidenav.
@@ -38,7 +38,7 @@ export class SideNavComponent implements OnInit {
    */
   navigate(path : string){
     this.router.navigate([path]);
-    if(this.isMobileDevice)this.displaySideNavEvent();
+    if(this.isSmallDevice)this.displaySideNavEvent();
     console.log("yeah");
     
   }
