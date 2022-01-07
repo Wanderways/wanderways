@@ -4,8 +4,9 @@
 * Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48IzM0N2I5OCIsIj9lcjwjYzJkN2UwIiwiO2VyPCMyMTVlN2J$LCIlPmBePCNmY2NiMWEiLCI~ZXI8I2ZlZWZiYSIsIjtlcjwjZmJiODBmfiwid2Fybj5gXjwjYmUyZDBkIiwiP2VyPCNlY2MwYjYiLCI7ZXI8I2E3MWMwN34sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZWRmMWYzIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00fixgQDwoLTN$LGBAPCgtMn4sYEA8KC0xfixgQDxoZWFkbGluZX4sYEA8dGl0bGV$LGBAPHN1YiktMn4sYEA8c3ViKS0xfixgQDxib2R5LTJ$LGBAPGJvZHktMX4sYEA8YnV0dG9ufixgQDxjYXB0aW9ufixgQDxpbnB1dCIsInNpemU$bnVsbH1dLCJpY29uczxGaWxsZWQiLCI~bmVzcz50cnVlLCJ2ZXJzaW9uPjExfQ==
 */
 
-@use './app/app.component-theming' as custom-background;
 @use './app/shared/components/generic/snack-bar/snack-bar.component-theming' as snack-bar;
+// Custom components declaration
+@use './_components_theme_declaration' as custom-components;
 @import '~@angular/material/theming';
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -216,14 +217,12 @@ $theme-warn);
 // Theme Init
 .theme-light {
     @include angular-material-theme($theme-light);
-    @include custom-background.theme($theme-light);
-    @include snack-bar.theme($theme-light);
+    @include custom-components.theme($theme-light);
 }
 
 .theme-dark {
     @include angular-material-theme($theme-dark);
-    @include custom-background.theme($theme-dark);
-    @include snack-bar.theme($theme-dark);
+    @include custom-components.theme($theme-dark);
 }
 
 // Specific component overrides, pieces that are not in line with the general theming
