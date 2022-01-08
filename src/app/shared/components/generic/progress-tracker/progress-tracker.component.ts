@@ -19,8 +19,6 @@ export class ProgressTrackerComponent implements OnInit {
 	@Input() upperBound : number = 0;
 	@Input() currentValue : number = 0
 
-	private subscriptions : {[key:string]:Subscription} = {};
-
 	constructor(private dataSubjectService : DataSubjectService) {}
 	ngOnInit(): void {
 	}
@@ -31,17 +29,6 @@ export class ProgressTrackerComponent implements OnInit {
      */
 	ngOnChanges(changes: SimpleChanges){
 		if(changes.currentValue)this.processFinalDataChange();
-	}
-
-  	/**
-	 * Clear the component used static data
-	 */
-	 ngOnDestroy(){
-		this.dataSubjectService.clear();
-		// Unsubscribe from all registered subscriptions
-		Object.keys(this.subscriptions).forEach((key : string) => {
-			this.subscriptions[key].unsubscribe();
-		});
 	}
 
 	/**

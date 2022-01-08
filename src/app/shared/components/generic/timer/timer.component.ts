@@ -17,8 +17,6 @@ export class TimerComponent implements OnInit {
 	@Input() currentTimerValue : number = 0;
 	@Input() upperBound : number = 90;
 
-	private subscriptions : {[key:string]:Subscription} = {};
-  
 	ngOnInit(): void {
 	}
 
@@ -29,13 +27,6 @@ export class TimerComponent implements OnInit {
 	 ngOnChanges(changes: SimpleChanges) {
 		if(changes.currentTimerValue)this.processCurrentValueChange(changes.currentTimerValue.currentValue);
 	 }
-
-	ngOnDestroy(){
-		// Unsubscribe from all registered subscriptions
-		Object.keys(this.subscriptions).forEach((key : string) => {
-			this.subscriptions[key].unsubscribe();
-		});
-	}
 
 	/**
 	 * Process the currentValue input changes

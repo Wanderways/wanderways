@@ -47,9 +47,6 @@ export class MapComponent implements OnInit {
 		if(changes.finalData)if(this.displayResult)this.finalData=changes.finalData.currentValue;
 	}
 	
-	ngOnDestroy() : void {
-	}
-
 	/**
 	 * Permet de savoir si une map donnée est celle configurée.
 	 * @param map : La map donnée.
