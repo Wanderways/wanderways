@@ -29,7 +29,7 @@ export class AreaTableComponent implements OnInit {
 	expandedElement: Area | null = null;
 	displayedElements : Map<string, boolean> = new Map<string,boolean>();
 
-	private subscriptions : {[key: string]: Subscription} = {};
+	private currentvalue : Area | undefined = undefined;
 
 	constructor(private dataSubjectService : DataSubjectService) { }
 
@@ -45,13 +45,6 @@ export class AreaTableComponent implements OnInit {
 		if(changes.dataSourceInput)this.processSourceDataChange(changes.dataSourceInput.currentValue);
 		if(changes.currentDataInput)this.processCurrentDataChange(changes.currentDataInput?.currentValue)
     }
-
-	ngOnDestroy(){
-		// Unsubscribe from all registered subscriptions
-		Object.keys(this.subscriptions).forEach((key : string) => {
-			this.subscriptions[key].unsubscribe();
-		});
-	}
 
 	/**
 	 * Processes the source data changes. If in game, then hide all. Else display all
@@ -72,7 +65,11 @@ export class AreaTableComponent implements OnInit {
 	 * @param value : An area
 	 */
 	private processCurrentDataChange(value:any): void{
-		this.displayByContentId(value);
+		// Avoid multiple execution when not real change
+		if(this.currentvalue !== value){
+			this.currentvalue = value;
+			this.displayByContentId(value);
+		}
 	}
 
 	/**
@@ -138,7 +135,8 @@ export class AreaTableComponent implements OnInit {
 	 * @todo use directives to make elements ref self log
 	 */
 	scrollToElement(area : Area): void{
-		document.getElementById("element-"+area?.num)?.scrollIntoView({block: 'center'});
+		// Must set a timeout, else scroll command will not be executed.
+		setTimeout(()=>document.getElementById("element-"+area?.num)?.scrollIntoView({block: 'center'}));
 		this.listElementExpanded(area);
 	}
 
