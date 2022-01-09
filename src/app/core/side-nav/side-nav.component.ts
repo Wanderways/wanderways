@@ -39,7 +39,5 @@ export class SideNavComponent implements OnInit {
   navigate(path : string){
     this.router.navigate([path]);
     if(this.isSmallDevice)this.displaySideNavEvent();
-    console.log("yeah");
-    
   }
 }
