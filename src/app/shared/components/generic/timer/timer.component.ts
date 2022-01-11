@@ -1,24 +1,19 @@
-import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
-import { Subscription } from 'rxjs';
-import { TimerService } from 'src/app/shared/services/game-mode-specific/timer.service';
 
 @Component({
 	selector: 'app-timer',
 	templateUrl: './timer.component.html',
 	styleUrls: ['./timer.component.scss']
 })
-export class TimerComponent implements OnInit {
+export class TimerComponent{
 	color: ThemePalette = 'primary';
 	mode: ProgressSpinnerMode = 'determinate';
 	readableTime : string = "";
 
 	@Input() currentTimerValue : number = 0;
 	@Input() upperBound : number = 90;
-
-	ngOnInit(): void {
-	}
 
 	/**
 	 * Watch if any input value change, and act accordingly

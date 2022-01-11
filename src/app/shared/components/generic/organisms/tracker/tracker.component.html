@@ -1,0 +1,11 @@
+<div class="text-zone {{isSmallDevice?'isSmallDevice':''}}">
+    <ng-content select="[text-zone]"></ng-content>
+</div>
+
+<ng-container *ngIf="!isSmallDevice">
+    <mat-progress-spinner [color]="color" [value]="(currentValue/upperBound)*100"></mat-progress-spinner>
+</ng-container>
+
+<ng-container *ngIf="isSmallDevice">
+    <mat-progress-bar [color]="color" [value]="(currentValue/upperBound)*100"></mat-progress-bar>
+</ng-container>

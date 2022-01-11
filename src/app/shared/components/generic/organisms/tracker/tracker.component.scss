@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .text-zone:not(.isSmallDevice) {
+        position: absolute;
+    }
+    mat-progress-bar>div>div.mat-progress-bar-buffer.mat-progress-bar-element {
+        min-width: 100px;
+    }
+}

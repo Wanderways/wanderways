@@ -1,5 +1,10 @@
-<mat-progress-spinner [color]="color" [mode]="mode" [value]="currentPercentage"></mat-progress-spinner>
-<div>
+<app-tracker [currentValue]="currentPercentage" [upperBound]="100" [color]="color">
+    <ng-container text-zone>
+        <ng-container *ngTemplateOutlet="value"></ng-container>
+    </ng-container>
+</app-tracker>
+
+<ng-template #value>
     <p class="main-text">{{readablePercentage}} %</p>
     <p class="sub-text"><span>{{currentValue}}</span>/<span>{{upperBound}}</span></p>
-</div>
+</ng-template>

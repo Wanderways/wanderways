@@ -5,6 +5,7 @@ import { DataTableModule } from './data-table/data-table.module';
 import { MaterialModule } from 'src/app/material.module';
 import { TimerComponent } from './timer/timer.component';
 import { ProgressTrackerComponent } from './progress-tracker/progress-tracker.component';
+import { OrganismsModule } from '../generic/organisms/organisms.module'
 
 let components : any[]= [
   SnackBarComponent,
@@ -14,12 +15,13 @@ let components : any[]= [
 
 @NgModule({
   declarations: [
-    components,
+    components
   ],
   imports: [
     CommonModule,
     DataTableModule,
-    MaterialModule
+    MaterialModule,
+    OrganismsModule
   ],
   exports : [
     components

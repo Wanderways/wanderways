@@ -16,6 +16,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSortModule} from '@angular/material/sort';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 let mat_modules : any[] = [
   MatButtonModule,
@@ -31,7 +32,8 @@ let mat_modules : any[] = [
   MatSortModule,
   MatProgressSpinnerModule,
   MatTooltipModule,
-  MatRadioModule
+  MatRadioModule,
+  MatProgressBarModule
 ];
 
 

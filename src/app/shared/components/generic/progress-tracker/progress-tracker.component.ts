@@ -1,27 +1,21 @@
-import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
-import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
-import { Subscription } from 'rxjs';
-import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 
 @Component({
 	selector: 'app-progress-tracker',
 	templateUrl: './progress-tracker.component.html',
 	styleUrls: ['./progress-tracker.component.scss']
 })
-export class ProgressTrackerComponent implements OnInit {
+export class ProgressTrackerComponent  {
 
 	color: ThemePalette = 'primary';
-	mode: ProgressSpinnerMode = 'determinate';
 	currentPercentage : number = 0;
 	readablePercentage : string = "0";
 	
 	@Input() upperBound : number = 0;
 	@Input() currentValue : number = 0
 
-	constructor(private dataSubjectService : DataSubjectService) {}
-	ngOnInit(): void {
-	}
+	constructor() {}
 
 	/**
      * Detects input attributes changes and start appropriate attributes onchange function
