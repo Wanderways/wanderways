@@ -17,11 +17,8 @@ export class TrackerComponent implements OnInit {
    * The upper bound
    */
   @Input() upperBound : number = 0;
-
-  /**
-   * Direction of the progression (LEFT or RIGHT)
-   */
-  @Input() dir : ("LEFT"|"RIGHT") = "LEFT";
+	
+	@Input() icon : string | undefined = undefined;
   
 	@Input() color: ThemePalette = 'primary';
 	readableTime : string = "";

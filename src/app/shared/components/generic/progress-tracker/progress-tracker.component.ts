@@ -13,7 +13,7 @@ export class ProgressTrackerComponent  {
 	readablePercentage : string = "0";
 	
 	@Input() upperBound : number = 0;
-	@Input() currentValue : number = 0
+	@Input() currentValue : number = 0;
 
 	constructor() {}
 

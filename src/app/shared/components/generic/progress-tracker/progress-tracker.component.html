@@ -1,10 +1,10 @@
-<app-tracker [currentValue]="currentPercentage" [upperBound]="100" [color]="color">
+<app-tracker [currentValue]="currentPercentage" [upperBound]="100" [color]="color" [icon]="'alarm'">
     <ng-container text-zone>
         <ng-container *ngTemplateOutlet="value"></ng-container>
     </ng-container>
 </app-tracker>
 
 <ng-template #value>
-    <p class="main-text">{{readablePercentage}} %</p>
+    <p class="main-text">{{readablePercentage}}%</p>
     <p class="sub-text"><span>{{currentValue}}</span>/<span>{{upperBound}}</span></p>
 </ng-template>
