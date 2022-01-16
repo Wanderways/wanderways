@@ -3,7 +3,6 @@ import { DataSubjectService } from 'src/app/shared/services/map-specific/data-su
 import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { Area } from '../../../../utils/interfaces/map-oriented/area';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-area-table',

@@ -3,11 +3,11 @@ import {ThemePalette} from '@angular/material/core';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 
 @Component({
-	selector: 'app-timer',
-	templateUrl: './timer.component.html',
-	styleUrls: ['./timer.component.scss']
+	selector: 'app-timer-tracker',
+	templateUrl: './timer-tracker.component.html',
+	styleUrls: ['./timer-tracker.component.scss']
 })
-export class TimerComponent{
+export class TimerTrackerComponent{
 	color: ThemePalette = 'primary';
 	mode: ProgressSpinnerMode = 'determinate';
 	readableTime : string = "";

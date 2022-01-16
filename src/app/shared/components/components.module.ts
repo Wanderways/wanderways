@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import  { ErrorModule } from  './error/error.module';
-import { GenericModule } from './generic/generic.module'
 import { MapsGamesModule } from './maps-games/maps-games.module';
+import { TemplatesModule } from './generic/templates/templates.module';
 
 let child_modules : any[] = [
   ErrorModule,
-  GenericModule,
   MapsGamesModule,
 ];
 
@@ -16,6 +15,7 @@ let child_modules : any[] = [
   ],
   imports: [
     CommonModule,
+    TemplatesModule,
     ...child_modules
   ],
   exports : [

@@ -1,0 +1,34 @@
+@use 'sass:map';
+@use '~@angular/material' as mat;
+@mixin colorButton($bg-color) {
+    button {
+        background-color: $bg-color;
+    }
+}
+
+@mixin color($theme) {
+    $color-config: mat.get-color-config($theme);
+    $background-palette: map.get($color-config, 'background');
+    $foreground-palette: map.get($color-config, 'foreground');
+    $accent-palette: map.get($color-config, 'accent');
+    $warn-palette: map.get($color-config, 'warn');
+    .mat-snack-bar-container.warn {
+        background-color: mat.get-color-from-palette($background-palette, 'background');
+        color: mat.get-color-from-palette($foreground-palette, 'text');
+    }
+    .mat-snack-bar-container {
+        &.accent {
+            @include colorButton(mat.get-color-from-palette($warn-palette, 'darker'));
+        }
+        &.warn {
+            @include colorButton(mat.get-color-from-palette($warn-palette, 'darker'));
+        }
+    }
+}
+
+@mixin theme($theme) {
+    $color-config: mat.get-color-config($theme);
+    @if $color-config !=null {
+        @include color($theme);
+    }
+}
