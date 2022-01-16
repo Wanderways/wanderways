@@ -14,13 +14,11 @@ import { MapPageComponent } from './map-page/map-page.component';
 
 // Shared components
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { GamesModule } from './games/games.module';
 import { SideNavComponent } from './side-nav/side-nav.component';
 
 const shared_components : any[] = [
   HeaderComponent,
-  FooterComponent,
   SideNavComponent
 ];
 @NgModule({
