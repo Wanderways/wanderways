@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges, ViewContainerRef } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import { StringFactory } from 'src/app/shared/utils/factories/string.factory';
 import { Area } from '../../../../utils/interfaces/map-oriented/area';
@@ -31,7 +31,7 @@ export class AreaTableComponent implements OnInit {
 
 	private currentvalue : Area | undefined = undefined;
 
-	constructor(private dataSubjectService : DataSubjectService) { }
+	constructor(private readonly viewRef: ViewContainerRef, private dataSubjectService : DataSubjectService) { }
 
   	ngOnInit(): void {
 		this.dataSubjectService.getCurrentDataChange().subscribe(value=>this.processCurrentDataChange(value));
@@ -136,7 +136,7 @@ export class AreaTableComponent implements OnInit {
 	 */
 	scrollToElement(area : Area): void{
 		// Must set a timeout, else scroll command will not be executed.
-		setTimeout(()=>document.getElementById("element-"+area?.num)?.scrollIntoView({block: 'center'}));
+		this.viewRef.element.nativeElement.scrollTo(0,document.getElementById("element-"+area?.num)?.offsetTop!-200)
 		this.listElementExpanded(area);
 	}
 
