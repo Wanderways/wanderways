@@ -1,7 +1,7 @@
 <div *ngIf="displaySideNav && isSmallDevice" id="mobile-responsive-sidenav" (click)="displaySideNavEvent()">
 
 </div>
-<div class="side-nav-container {{displaySideNav !== undefined ? displaySideNav ? 'slide-sidenav-show':'slide-sidenav-hide' : ''}}">
+<div *ngIf="displaySideNav!==undefined" class="side-nav-container" [class.slide-sidenav-show]="displaySideNav" [class.slide-sidenav-hide]="!displaySideNav">
     <div id="menu-button">
         <div matRipple id="main-button" (click)="navigate('/home')">
             <app-logo></app-logo>
