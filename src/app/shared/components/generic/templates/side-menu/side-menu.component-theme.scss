@@ -4,11 +4,11 @@
     $color-config: mat.get-color-config($theme);
     $background-palette: map.get($color-config, 'background');
     $foreground-palette: map.get($color-config, 'foreground');
-    .side-nav-container {
+    .side-menu-container {
         background-color: mat.get-color-from-palette($background-palette, 'background');
         color: mat.get-color-from-palette($foreground-palette, 'text');
     }
-    #mobile-responsive-sidenav {
+    #mobile-responsive-sidemenu {
         background-color: mat.get-color-from-palette($background-palette, 'background');
     }
 }

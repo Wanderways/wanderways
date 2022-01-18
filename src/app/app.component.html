@@ -1,4 +1,12 @@
-<app-side-nav [displaySideNav]="displaySideNav" (displaySideNavChange)="displaySideNav = !displaySideNav"></app-side-nav>
+<!-- <app-side-nav [displaySideNav]="displaySideNav" (displaySideNavChange)="displaySideNav = !displaySideNav"></app-side-nav> -->
+<app-side-menu #app_side_menu [displaySideMenu]="displaySideNav" (displaySideMenuChange)="displaySideNav = !displaySideNav" [behavior]="'reactive'" [direction]="'left'">
+    <app-side-nav-header id="menu-button" header [isSmallDevice]="app_side_menu.isSmallDevice" (closeSideNavEvent)="displaySideNav = !displaySideNav"></app-side-nav-header>
+    <ng-container main>
+        <button mat-button (click)="app_side_menu.navigate('/home')"><mat-icon>home</mat-icon> Home</button>
+        <button mat-button (click)="app_side_menu.navigate('/maps')"><mat-icon>map</mat-icon> Cartes</button>
+    </ng-container>
+
+</app-side-menu>
 <div id="main-content">
     <app-header [displaySideNav]="displaySideNav" (displaySideNavChange)="displaySideNav = !displaySideNav" (darkModeSwitched)="switchMode($event)"></app-header>
     <router-outlet></router-outlet>

@@ -6,4 +6,19 @@
         flex-direction: column;
         flex: 1 1 auto;
     }
+    app-side-menu {
+        #menu-button {
+            display: flex;
+            flex: 0 0 auto;
+            align-items: center;
+            margin: 0.75rem;
+            cursor: pointer;
+        }
+        button {
+            display: flex;
+            mat-icon {
+                margin-right: 0.5rem;
+            }
+        }
+    }
 }

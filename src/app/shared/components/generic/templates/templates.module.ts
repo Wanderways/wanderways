@@ -7,12 +7,14 @@ import { TimerTrackerComponent } from './timer/timer-tracker.component';
 import { ProgressTrackerComponent } from './progress-tracker/progress-tracker.component';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { AreaTableComponent } from './area-table/area-table.component'
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 const components_list : any[] = [
   TimerTrackerComponent,
   ProgressTrackerComponent,
   AreaTableComponent,
-  SnackBarComponent
+  SnackBarComponent,
+  SideMenuComponent
 ]
 
 @NgModule({

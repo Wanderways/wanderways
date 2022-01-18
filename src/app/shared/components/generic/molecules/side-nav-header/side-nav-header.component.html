@@ -1,0 +1,5 @@
+<div matRipple id="main-button" (click)="navigate('/home')">
+    <app-logo></app-logo>
+    <span id="menu-button-text">Learn your maps</span>
+</div>
+<mat-icon *ngIf="!isSmallDevice" matRipple (click)="closeSideNav()">close</mat-icon>
