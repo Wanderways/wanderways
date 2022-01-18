@@ -23,6 +23,7 @@
     }
     &.fixed {
         position: fixed;
+        bottom: 0;
         .side-nav-container {
             opacity: 1.0;
         }

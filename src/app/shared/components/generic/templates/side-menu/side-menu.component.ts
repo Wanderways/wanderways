@@ -13,7 +13,7 @@ export class SideMenuComponent implements OnInit {
 
   
   @Input() behavior : ('reactive'|'static'|'fixed') = 'static';
-  @HostBinding('class') class = this.behavior === 'fixed'?'fixed':'static';
+  @HostBinding('class') class = 'static';
 
 
   @Input() displaySideMenu : boolean | undefined = undefined;
@@ -24,7 +24,12 @@ export class SideMenuComponent implements OnInit {
   constructor(private router : Router){}
 
   ngOnInit(): void {
-    this.onResize();
+    if(this.behavior === 'reactive'){// Depends on size
+      this.onResize();
+    }else{// Depends on initialisation
+      this.class = this.behavior === 'fixed'?'fixed':'static';
+      this.class += ' '+ this.direction;
+    }
   }
 
   /**
@@ -39,20 +44,10 @@ export class SideMenuComponent implements OnInit {
    */
   @HostListener('window:resize', ['$event'])
   onResize(){
-    console.log(this.behavior);
-    
-    if(this.behavior === 'reactive'){
-      console.log(window.innerWidth);
-      if(window.innerWidth<=1024){
-        this.isSmallDevice = true;
-        this.class = 'fixed';
-        console.log(this.class);
-      }else{
-        this.isSmallDevice = false;
-        this.class = 'static';
-      }
-      this.class += ' '+ this.direction;
-    }
+    this.isSmallDevice = window.innerWidth<=1024;
+    if(this.behavior === 'reactive') // If depends on size
+      this.class = this.isSmallDevice ? 'fixed':'static';
+    this.class += ' '+ this.direction;
   }
   /**
    * Menuigate to the given path. If on mobile device, then also close sidemenu.

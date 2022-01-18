@@ -1,4 +1,4 @@
-<div *ngIf="displaySideMenu && isSmallDevice" id="mobile-responsive-sidemenu" (click)="displaySideMenuEvent()"></div>
+<div *ngIf="displaySideMenu && (isSmallDevice || behavior === 'fixed' )" id="mobile-responsive-sidemenu" (click)="displaySideMenuEvent()"></div>
 <div *ngIf="displaySideMenu!==undefined" class="side-menu-container" [class.slide-sidemenu-show]="displaySideMenu" [class.slide-sidemenu-hide]="!displaySideMenu">
     <ng-content select="[header]"></ng-content>
     <ng-content select="[main]"></ng-content>
