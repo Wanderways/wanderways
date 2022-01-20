@@ -17,6 +17,9 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatDividerModule} from '@angular/material/divider';
+
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
 let mat_modules : any[] = [
   MatButtonModule,
@@ -33,16 +36,24 @@ let mat_modules : any[] = [
   MatProgressSpinnerModule,
   MatTooltipModule,
   MatRadioModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatDividerModule
 ];
 
+let cdk_modules : any[] = [
+  CdkAccordionModule
+];
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    ...mat_modules
+    ...mat_modules,
+    ...cdk_modules
   ],
-  exports :[...mat_modules]
+  exports :
+  [...mat_modules,
+    ...cdk_modules
+  ]
 })
 export class MaterialModule { }
