@@ -42,24 +42,25 @@
                     .element-detail {
                         overflow: hidden;
                         display: flex;
-                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 1rem;
                         .element-description {
-                            padding: 16px 0;
+                            padding: 8px 0;
                             display: flex;
+                            flex-direction: column;
                             h3 {
-                                color: #215e7b;
-                                font-weight: 500;
-                                width: 3rem;
-                                margin: auto 2rem auto 0;
+                                color: rgba(33, 96, 125, 0.8);
+                                font-size: 0.7rem;
+                                margin:  0;
                             }
                             p {
                                 color: rgba(50, 50, 50, 0.7);
+                                font-weight: 500;
                                 margin: auto 0;
                             }
                             img {
                                 max-height: 3rem;
                                 max-width: 7rem;
-                                align-self: center;
                                 object-fit: contain;
                             }
                         }
