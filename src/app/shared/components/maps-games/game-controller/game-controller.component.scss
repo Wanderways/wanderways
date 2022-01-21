@@ -3,4 +3,11 @@
     gap: 0.5rem;
     display: flex;
     justify-content: space-evenly;
+    button{
+        flex: 1 1 auto;
+        padding: 0;
+        width: 100%;
+        min-width: 30px;
+        max-width: 64px;
+    }
 }
