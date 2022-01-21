@@ -1,12 +1,12 @@
 <ng-template >
-    <cdk-accordion-item #accordionItem="cdkAccordionItem" >
-        <div id="accordion-item-component-tab" matRipple (click)="accordionItem.toggle();isExpanded = accordionItem.expanded;">
+    <cdk-accordion-item #accordionItem="cdkAccordionItem" [expanded]="isExpanded" >
+        <div id="accordion-item-component-tab"  matRipple (click)="accordionItem.toggle()">
             <ng-content select="app-accordion-item-header"></ng-content>
             <ng-content select="[tab]"></ng-content>
         </div>
         <mat-divider></mat-divider>
         <div id="accordion-item-component-tabpanel">
-            <ng-content select="app-accordion-item-body" *ngIf="isExpanded"></ng-content>
+            <ng-content select="app-accordion-item-body" *ngIf="accordionItem.expanded"></ng-content>
             <ng-content select="[tabpanel]" *ngIf="isExpanded"></ng-content>
         </div>
     </cdk-accordion-item>
