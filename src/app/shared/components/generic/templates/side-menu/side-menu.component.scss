@@ -1,14 +1,15 @@
 :host {
     flex: 0 0 auto;
     z-index: 9999;
+    top: 0;
+    height: 100%;
     .side-menu-container {
         display: flex;
         flex: 0 0 auto;
         flex-direction: column;
         position: sticky;
         width: 230px;
-        height: 100vh;
-        top: 0;
+        height: 100%;
         overflow-y: auto;   
         scrollbar-color: auto ;
         &::-webkit-scrollbar {
@@ -30,7 +31,6 @@
     }
     &.fixed {
         position: fixed;
-        bottom: 0;
         .side-nav-container {
             opacity: 1.0;
         }
