@@ -1,40 +1,14 @@
-<!-- <ng-container *ngIf="isSmallDevice && icon">
-    <div style="display: flex; align-items: flex-end; gap:1rem">
-        <mat-icon>{{icon}}</mat-icon>
-        <ng-container *ngTemplateOutlet="progress_zone">
-
-        </ng-container>
-    </div>
-</ng-container>
-
-<ng-template #progress_zone>
-    <div class="text-zone {{isSmallDevice?'isSmallDevice':''}}">
-        <ng-content select="[text-zone]"></ng-content>
-    </div>
-</ng-template>
-
-
-<ng-container *ngIf="!isSmallDevice">
-    <mat-progress-spinner [color]="color" [value]="(currentValue/upperBound)*100"></mat-progress-spinner>
-</ng-container>
-
-<ng-container *ngIf="isSmallDevice">
-    <mat-progress-bar [color]="color" [value]="(currentValue/upperBound)*100"></mat-progress-bar>
-</ng-container> -->
-
 <ng-container *ngIf="isSmallDevice && icon">
     <mat-icon>{{icon}}</mat-icon>
 </ng-container>
 
-
-
-
-<div>
+<div class="tracker-container">
     <ng-container *ngTemplateOutlet="progress_zone"></ng-container>
+    <!-- Large device -->
     <ng-container *ngIf="!isSmallDevice">
         <mat-progress-spinner [color]="color" [value]="(currentValue/upperBound)*100"></mat-progress-spinner>
     </ng-container>
-
+    <!-- Small device -->
     <ng-container *ngIf="isSmallDevice">
         <mat-progress-bar [color]="color" [value]="(currentValue/upperBound)*100"></mat-progress-bar>
     </ng-container>

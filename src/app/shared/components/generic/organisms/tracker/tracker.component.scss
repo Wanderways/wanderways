@@ -2,12 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     flex: 1 1 auto;
     gap: 0.5rem;
     align-items: center;
     user-select: none;
-    div {
+    .tracker-container {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,7 +19,6 @@
         }
         .text-zone.isSmallDevice {
             display: flex;
-            flex-direction: row;
             align-items: flex-end;
             gap: 0.5rem;
             * {
@@ -28,8 +26,9 @@
                 user-select: none;
             }
         }
-        mat-progress-bar>div>div.mat-progress-bar-buffer.mat-progress-bar-element {
-            min-width: 100px;
+        .mat-progress-bar{
+            border-radius: 5px;
+            min-width: 80px;
         }
     }
 }
