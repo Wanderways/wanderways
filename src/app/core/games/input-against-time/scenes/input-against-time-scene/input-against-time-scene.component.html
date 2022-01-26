@@ -1,36 +1,149 @@
-<div class="top-left-sidenav">
-    <mat-card>
-        <mat-card-title>{{ gameModeMetadata.game_mode_name }}</mat-card-title>
-        <mat-card-subtitle>{{ gameModeMetadata.game_mode_rules }}</mat-card-subtitle>
-    </mat-card>
-</div>
-<div class="header">
-    <mat-card>
-        <mat-card-title> {{ mapMetaData.map_country }} - {{ mapMetaData.map_name }}</mat-card-title>
-        <mat-card-subtitle>{{ mapMetaData.map_details }}</mat-card-subtitle>
-    </mat-card>
-</div>
-<div class="top-right-sidenav">
-</div>
-<div class="left-sidenav">
-    <mat-card>
-        <div class="my-mat-card-content">
-            <app-timer [currentTimerValue]="currentTimerValue" [upperBound]="sourceData.length * timerPerValue"></app-timer>
-            <app-progress-tracker [currentValue]="finalData.length" [upperBound]="sourceData.length"></app-progress-tracker>
-        </div>
-        <app-game-controller style="margin-bottom:16px" [gameStatus]="gameStatus" (gameStatusChange)="setGameStatus($event)"></app-game-controller>
-    </mat-card>
-</div>
-<div class="main">
-    <app-map [map]="mapMetaData" [data]="sourceData" [clickArea]="false"></app-map>
-</div>
-<div class="right-sidenav">
-    <app-area-table [inGameMode]="true" [dataSourceInput]="sourceData" [currentDataInput]="currentData"></app-area-table>
-</div>
-<div class="bottom-left-sidenav">
-</div>
-<div class="footer">
-    <app-find-area [gameStatus]="gameStatus"></app-find-area>
-</div>
-<div class="bottom-right-sidenav">
-</div>
+<!-- <ng-container *ngIf="!isSmallDevice; else mobile">
+    
+</ng-container> -->
+
+<ng-container *ngIf="isSmallDevice then smallDevice; else largeDevice"></ng-container>
+
+<!-- large templates -->
+<ng-template #largeDevice>
+    <div class="top-left-sidenav">
+        <mat-card>
+            <mat-card-title>{{ gameModeMetadata.game_mode_name }}</mat-card-title>
+            <mat-card-subtitle>{{ gameModeMetadata.game_mode_rules }}</mat-card-subtitle>
+        </mat-card>
+    </div>
+    <div class="header">
+        <mat-card>
+            <mat-card-title> {{ mapMetaData.map_country }} - {{ mapMetaData.map_name }}</mat-card-title>
+            <mat-card-subtitle>{{ mapMetaData.map_details }}</mat-card-subtitle>
+        </mat-card>
+    </div>
+    <div class="top-right-sidenav">
+    </div>
+    <div class="left-sidenav">
+        <mat-card>
+            <div class="my-mat-card-content">
+                <ng-container *ngTemplateOutlet="timer"></ng-container>
+                <ng-container *ngTemplateOutlet="progress"></ng-container>
+            </div>
+            <ng-container *ngTemplateOutlet="controller"></ng-container>
+        </mat-card>
+    </div>
+    <div class="main">
+        <ng-container *ngTemplateOutlet="map"></ng-container>
+    </div>
+    <div class="right-sidenav">
+        <ng-container *ngTemplateOutlet="table"></ng-container>
+    </div>
+    <div class="bottom-left-sidenav">
+    </div>
+    <div class="footer">
+        <ng-container *ngTemplateOutlet="find_area"></ng-container>
+    </div>
+    <div class="bottom-right-sidenav">
+    </div>
+</ng-template>
+<!-- small templates -->
+<ng-template #smallDevice>
+    <app-side-menu #app_side_menu [displaySideMenu]="displaySideMenu" (displaySideMenuChange)="displaySideMenu = !displaySideMenu" [behavior]="'fixed'" [direction]="'right'">
+        <ng-container main>
+            <app-accordion-container>
+                <app-accordion-item [isExpanded]="true">
+                    <app-accordion-item-header>
+                        <ng-container header-content-icon>play_arrow</ng-container>
+                        <ng-container header-content-title>Contrôle</ng-container>
+                    </app-accordion-item-header>
+                    <app-accordion-item-body>
+                        <ng-container *ngTemplateOutlet="controller"></ng-container>
+                    </app-accordion-item-body>
+                </app-accordion-item>
+
+                <app-accordion-item [isExpanded]="true">
+                    <app-accordion-item-header>
+                        <ng-container header-content-icon>format_list_bulleted</ng-container>
+                        <ng-container header-content-title>Résultat</ng-container>
+                    </app-accordion-item-header>
+                    <app-accordion-item-body>
+                        <ng-container *ngTemplateOutlet="table"></ng-container>
+                    </app-accordion-item-body>
+                </app-accordion-item>
+
+                <app-accordion-item >
+                    <app-accordion-item-header>
+                        <ng-container header-content-icon>map</ng-container>
+                        <ng-container header-content-title>Carte</ng-container>
+                    </app-accordion-item-header>
+                    <app-accordion-item-body>
+                        <div style="display:flex; flex-direction: column;">
+                            <ng-container *ngTemplateOutlet="mapmetadata"></ng-container>
+                        </div>
+                    </app-accordion-item-body>
+                </app-accordion-item>
+
+                <app-accordion-item >
+                    <app-accordion-item-header>
+                        <ng-container header-content-icon>videogame_asset</ng-container>
+                        <ng-container header-content-title>Règles</ng-container>
+                    </app-accordion-item-header>
+                    <app-accordion-item-body>
+                        <div style="display:flex; flex-direction: column;">
+                            <ng-container *ngTemplateOutlet="gamemode"></ng-container>
+                        </div>
+                    </app-accordion-item-body>
+                </app-accordion-item>
+                <app-accordion-item >
+                    <app-accordion-item-header>
+                        <ng-container header-content-icon>settings</ng-container>
+                        <ng-container header-content-title>Paramètres</ng-container>
+                    </app-accordion-item-header>
+                    <app-accordion-item-body>
+                        Nothing there !
+                    </app-accordion-item-body>
+                </app-accordion-item>
+            </app-accordion-container>
+        </ng-container>
+
+    </app-side-menu>
+
+    <div class="progress">
+        <ng-container *ngTemplateOutlet="timer "></ng-container>
+        <ng-container *ngTemplateOutlet="progress "></ng-container>
+    </div>
+    <div class="side-button" mat-ripple (click)="displaySideMenu = !displaySideMenu">
+        &lt;
+    </div>
+    <div class="side ">
+
+    </div>
+    <ng-container *ngTemplateOutlet="map "></ng-container>
+    <!-- <ng-container *ngTemplateOutlet="table "></ng-container> -->
+    <ng-container *ngTemplateOutlet="find_area "></ng-container>
+</ng-template>
+
+<!-- Generique templates -->
+<ng-template #mapmetadata>
+    <h2> {{ mapMetaData.map_country }} - {{ mapMetaData.map_name }}</h2>
+    <p>{{ mapMetaData.map_details }}</p>
+</ng-template>
+<ng-template #gamemode>
+    <h2> {{ gameModeMetadata.game_mode_name }}</h2>
+     <p>{{ gameModeMetadata.game_mode_rules }}</p>
+</ng-template>
+<ng-template #controller>
+    <app-game-controller style="margin: 0.5rem; " [gameStatus]="gameStatus " (gameStatusChange)="setGameStatus($event) "></app-game-controller>
+</ng-template>
+<ng-template #timer>
+    <app-timer-tracker [currentTimerValue]="currentTimerValue " [upperBound]="sourceData.length * timerPerValue "></app-timer-tracker>
+</ng-template>
+<ng-template #progress>
+    <app-progress-tracker [currentValue]="finalData.length " [upperBound]="sourceData.length "></app-progress-tracker>
+</ng-template>
+<ng-template #map>
+    <app-map [map]="mapMetaData " [data]="sourceData " [clickArea]="false "></app-map>
+</ng-template>
+<ng-template #table>
+    <app-area-table  [inGameMode]="true " [dataSourceInput]="sourceData " [currentDataInput]="currentData "></app-area-table>
+</ng-template>
+<ng-template #find_area>
+    <app-find-area [gameStatus]="gameStatus "></app-find-area>
+</ng-template>

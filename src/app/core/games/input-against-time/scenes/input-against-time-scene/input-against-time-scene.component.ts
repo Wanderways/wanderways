@@ -24,6 +24,7 @@ export class InputAgainstTimeSceneComponent implements OnInit {
 	@Input() sourceData :  Area[] = [];
 	@Input() gameModeMetadata : GameModeMetaData = GameModeType.GAME_CONSULT;
 	@Input() mapMetaData : MapMetaData = MapsType.MAP_DEPARTEMENTS_FRANCE;
+	@Input() isSmallDevice : boolean = false;
 	// Two way binding attributes
 	@Input() gameStatus: GameStatus = GameStatus.START;
 	@Output() gameStatusChange : EventEmitter<GameStatus> = new EventEmitter<GameStatus>();
@@ -34,18 +35,18 @@ export class InputAgainstTimeSceneComponent implements OnInit {
 	public currentData : Area | undefined = undefined;
 	public currentTimerValue : number = 0;
 	public timerPerValue : number = 10;
-  
+
+	public displaySideMenu : boolean | undefined = undefined;
 
 	constructor(protected route: ActivatedRoute,protected router: Router,protected dataSubjectService : DataSubjectService,protected timerService : TimerService) {
 		this.subscriptions.currentDataChange = this.dataSubjectService.getCurrentDataChange().subscribe(value=> this.processCurrentDataChange(value));
 		this.subscriptions.finalDataChange = this.dataSubjectService.getFinalDataChange().subscribe(value=> this.processFinalDataChange(value));
-		this.dataSubjectService.setsourceDataValue(this.sourceData);
 		this.subscriptions.currentValueChange = this.timerService.getCurrentValueChange().subscribe(value=> this.currentTimerValue = value);
-		setTimeout(()=>this.dataSubjectService.setsourceDataValue(this.sourceData));
 	}
 
 
 	ngOnInit(): void {
+		this.dataSubjectService.setsourceDataValue(this.sourceData);
 		this.timerService.setUpperBound( this.sourceData.length * this.timerPerValue);
     	this.currentTimerValue = this.sourceData.length * this.timerPerValue;
 		this.onPlaying();
