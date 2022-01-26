@@ -33,6 +33,7 @@ export class AreaTableComponent implements OnInit {
 	constructor(private readonly viewRef: ViewContainerRef, private dataSubjectService : DataSubjectService) { }
 
   	ngOnInit(): void {
+		// When an area is selected, act appropriately (scroll to the element, then expand)
 		this.dataSubjectService.getCurrentDataChange().subscribe(value=>this.processCurrentDataChange(value));
 	}
 
