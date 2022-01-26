@@ -1,0 +1,24 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "home": "Home",
+    "maps": "Maps",
+    "controls": "Controls",
+    "results": "Results",
+    "map": "Map",
+    "rules": "Rules",
+    "settings": "Settings",
+    "start": "Start",
+    "won-scene-you-won": "You won !",
+    "main-page-welcome": "Welcome to Learn Your Maps.",
+    "main-page-presentation": "The place to learn maps the fun way !",
+    "main-page-title-today-map": "On the menu today",
+    "time-trial": "Time trial",
+    "lets-go": "Let's go !",
+    "main-page-title-recommendation-map": "Chiefs recommendation",
+    "map-page-choose-map-and-gamemode": "Choice of the map and game mode",
+    "description": "Description",
+    "gamemode": "Game mode",
+    "launch": "Launch"
+  }
+}

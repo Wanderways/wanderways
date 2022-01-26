@@ -51,7 +51,7 @@
                 <app-accordion-item [isExpanded]="true">
                     <app-accordion-item-header>
                         <ng-container header-content-icon>play_arrow</ng-container>
-                        <ng-container header-content-title>Contrôle</ng-container>
+                        <ng-container header-content-title><ng-container i18n="@@controls">Controls</ng-container></ng-container>
                     </app-accordion-item-header>
                     <app-accordion-item-body>
                         <ng-container *ngTemplateOutlet="controller"></ng-container>
@@ -61,7 +61,7 @@
                 <app-accordion-item [isExpanded]="true">
                     <app-accordion-item-header>
                         <ng-container header-content-icon>format_list_bulleted</ng-container>
-                        <ng-container header-content-title>Résultat</ng-container>
+                        <ng-container header-content-title><ng-container i18n="@@results">Results</ng-container></ng-container>
                     </app-accordion-item-header>
                     <app-accordion-item-body>
                         <ng-container *ngTemplateOutlet="table"></ng-container>
@@ -70,7 +70,7 @@
 
                 <app-accordion-item >
                     <app-accordion-item-header>
-                        <ng-container header-content-icon>map</ng-container>
+                        <ng-container header-content-icon><ng-container i18n="@@map">Map</ng-container></ng-container>
                         <ng-container header-content-title>Carte</ng-container>
                     </app-accordion-item-header>
                     <app-accordion-item-body>
@@ -83,7 +83,7 @@
                 <app-accordion-item >
                     <app-accordion-item-header>
                         <ng-container header-content-icon>videogame_asset</ng-container>
-                        <ng-container header-content-title>Règles</ng-container>
+                        <ng-container header-content-title><ng-container i18n="@@rules">Rules</ng-container></ng-container>
                     </app-accordion-item-header>
                     <app-accordion-item-body>
                         <div style="display:flex; flex-direction: column;">
@@ -94,7 +94,7 @@
                 <app-accordion-item >
                     <app-accordion-item-header>
                         <ng-container header-content-icon>settings</ng-container>
-                        <ng-container header-content-title>Paramètres</ng-container>
+                        <ng-container header-content-title><ng-container i18n="@@settings">Settings</ng-container></ng-container>
                     </app-accordion-item-header>
                     <app-accordion-item-body>
                         Nothing there !

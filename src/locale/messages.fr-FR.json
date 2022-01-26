@@ -1,0 +1,24 @@
+{
+  "locale": "fr-FR",
+  "translations": {
+    "home": "Home",
+    "maps": "Cartes",
+    "controls": "Contrôles",
+    "results": "Résultats",
+    "map": "Carte",
+    "rules": "Règles",
+    "settings": "Paramètres",
+    "start": "Commencer",
+    "won-scene-you-won": "Vous avez gagné !",
+    "main-page-welcome": "Bienvenue sur Learn Your Maps.",
+    "main-page-presentation": "Le site pour apprendre les cartes du monde en t'amusant ",
+    "main-page-title-today-map": "Cartes du jour",
+    "lets-go": "C'est parti !",
+    "main-page-title-recommendation-map": "Conseil du chef",
+    "map-page-choose-map-and-gamemode": "Choix de la carte et du mode de jeu",
+    "description": "Description",
+    "gamemode": "Mode de jeu",
+    "launch": "Lancer",
+    "time-trial": "Contre la montre"
+  }
+}

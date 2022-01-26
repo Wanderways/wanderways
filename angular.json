@@ -19,6 +19,15 @@
             "root": "",
             "sourceRoot": "src",
             "prefix": "app",
+            "i18n":{
+                "sourceLocale":"en-US",
+                "locales": {
+                    "fr-FR": "src/locale/messages.fr-FR.json",
+                    "de-DE": "src/locale/messages.de-DE.json",
+                    "es-ES": "src/locale/messages.es-ES.json",
+                    "it-IT": "src/locale/messages.it-IT.json"
+                }
+            },
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
@@ -67,18 +76,27 @@
                             "extractLicenses": false,
                             "sourceMap": true,
                             "namedChunks": true
+                        },
+                        "fr-FR":{
+                            "localize":["fr-FR"]
                         }
                     },
                     "defaultConfiguration": "production"
                 },
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
+                    "options":{
+                        "browserTarget":"learn-your-maps:build"
+                    },
                     "configurations": {
                         "production": {
                             "browserTarget": "learn-your-maps:build:production"
                         },
                         "development": {
                             "browserTarget": "learn-your-maps:build:development"
+                        },
+                        "fr-FR":{
+                            "browserTarget":"learn-your-maps:build:fr-FR"
                         }
                     },
                     "defaultConfiguration": "development"

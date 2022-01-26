@@ -1,17 +1,18 @@
 <div class="first-section">
-    <p class="text-presentation">
-        Bienvenue sur Learn Your Maps.<br>Le site pour apprendre les cartes du monde en t'amusant !
+    <p class="text-presentation" >
+        <ng-container i18n="@@main-page-welcome">Welcome to Learn Your Maps.</ng-container>
+        <br>
+        <span i18n="@@main-page-presentation">The place to learn maps the fun way !</span>
+        
     </p>
 </div>
 <div class="second-section">
     <div class="recommendation">
-        <h1>
-            Cartes du jour
-        </h1>
+        <h1 i18n="@@main-page-title-today-map">On the menu today</h1>
         <mat-card>
             <mat-card-title>
                 <span>Préfectures - Japon</span>
-                <mat-icon matTooltip="Contre la montre" matTooltipPosition="above">alarm</mat-icon>
+                <mat-icon i18n-matTooltip="@@time-trial" matTooltip="Time trial" matTooltipPosition="above">alarm</mat-icon>
             </mat-card-title>
             <mat-card-content>
                 <div class="img-container">
@@ -19,7 +20,10 @@
                 </div>
                 <div class="description-container">
                     <p>Carte des préfectures du Japon</p>
-                    <button mat-raised-button [routerLink]="['/maps/games', GameModeType.GAME_INPUT.game_mode_identifier ]" [queryParams]="{ map : MapsType.MAP_PREFECTURES_JAPON.map_identifier }">C'est parti !</button>
+                    <button mat-raised-button
+                    [routerLink]="['/maps/games', GameModeType.GAME_INPUT.game_mode_identifier ]"
+                    [queryParams]="{ map : MapsType.MAP_PREFECTURES_JAPON.map_identifier }"
+                    i18n="@@lets-go">Let's go !</button>
                 </div>
             </mat-card-content>
         </mat-card>
@@ -28,13 +32,11 @@
         <app-logo></app-logo>
     </div>
     <div class="recommendation">
-        <h1>
-            Recommendation du chef
-        </h1>
+        <h1 i18n="@@main-page-title-recommendation-map">Chiefs recommendation</h1>
         <mat-card>
             <mat-card-title>
                 <span>Départements - France</span>
-                <mat-icon matTooltip="Contre la montre" matTooltipPosition="above">alarm</mat-icon>
+                <mat-icon i18n-matTooltip="@@time-trial" matTooltip="Time trial"  matTooltipPosition="above">alarm</mat-icon>
             </mat-card-title>
             <mat-card-content>
                 <div class="img-container">
@@ -42,7 +44,10 @@
                 </div>
                 <div class="description-container">
                     <p>Carte des départements<br>Avec DOMTOM mais sans les collectivitées d'outres mer</p>
-                    <button mat-raised-button [routerLink]="['/maps/games', GameModeType.GAME_INPUT.game_mode_identifier]" [queryParams]="{ map : MapsType.MAP_DEPARTEMENTS_FRANCE.map_identifier }">C'est parti !</button>
+                    <button mat-raised-button
+                    [routerLink]="['/maps/games', GameModeType.GAME_INPUT.game_mode_identifier]"
+                    [queryParams]="{ map : MapsType.MAP_DEPARTEMENTS_FRANCE.map_identifier }"
+                    i18n="@@lets-go">Let's go !</button>
                 </div>
             </mat-card-content>
         </mat-card>
