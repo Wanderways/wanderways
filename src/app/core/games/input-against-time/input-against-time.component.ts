@@ -1,4 +1,4 @@
-import { Component, SimpleChanges } from '@angular/core';
+import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
 import { GameModeMetaData } from 'src/app/shared/utils/interfaces/game-oriented/game-mode-meta-data.interface';
@@ -12,7 +12,10 @@ import { MapsType } from 'src/app/shared/utils/types/maps.type';
   templateUrl: './input-against-time.component.html',
   styleUrls: ['./input-against-time.component.scss']
 })
-export class InputAgainstTimeComponent {
+export class InputAgainstTimeComponent implements OnInit {
+	@HostBinding('class.input-against-time-component') component_class = true; 
+
+	@HostBinding('style.min-height') minHeight = "0px"; 
 
   // Object made available to template
   public GameStatus = GameStatus;
@@ -25,9 +28,20 @@ export class InputAgainstTimeComponent {
   public finalData : Area[] = [];
   public currentData : Area | undefined = undefined;
 
+  public isSmallDevice : boolean = false;
+
   constructor(protected route: ActivatedRoute,
               protected router: Router) {
     this.processUrlParameter();
+  }
+  
+  ngOnInit(): void {
+    this.onResize();
+    if(this.isSmallDevice) this.goFullScreen();
+    //We set the min-height so that it's mobile adapted (because the adress bar and the header changes the way we must deal with the problem)
+		this.minHeight = window.innerHeight+"px";
+    // Scroll to what we are interested in
+    document.getElementsByTagName("app-input-against-time")[0].scrollIntoView();
   }
 
   /**
@@ -54,6 +68,15 @@ export class InputAgainstTimeComponent {
   }
 
   /**
+   * By default, try to set the game as full screen, may be inadapted.
+   * @TODO Problem of compatibility with input that takes full screen width. Also with toasters that does not appear.
+   * @TODO Make default behavior optional and add button to go full sreen in game
+   */
+  goFullScreen(){
+    document.getElementsByTagName("app-input-against-time")[0].requestFullscreen().catch(e => console.error(e));
+  }
+
+  /**
 	 * Get the url parameters to act appropriatly
 	 */
 	private processUrlParameter(){
@@ -77,4 +100,11 @@ export class InputAgainstTimeComponent {
 		 */
 		}
 	}
+  /**
+   * Deals with windows resize
+   */
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.isSmallDevice = window.innerWidth<=1024;
+  }
 }

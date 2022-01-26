@@ -1,5 +1,5 @@
-<app-start-scene *ngIf="checkCurrentGameStatus(GameStatus.START)" (startEvent)="startEventHandler()" class="slide slide-in"></app-start-scene>
-<app-input-against-time-scene *ngIf="checkCurrentGameStatus(GameStatus.PLAYING)||checkCurrentGameStatus(GameStatus.PAUSE)" [(gameStatus)]="gameStatus" class="slide slide-in" [gameStatus]="gameStatus" [gameModeMetadata]="gameModeMetadata" [mapMetaData]="mapMetaData"
-    [sourceData]="mapMetaData.data" (finalDataChange)="setFinalData($event)"></app-input-against-time-scene>
-<app-won-scene *ngIf="checkCurrentGameStatus(GameStatus.WON)" class="slide slide-in"></app-won-scene>
-<app-lost-scene *ngIf="checkCurrentGameStatus(GameStatus.LOST)" [sourceData]="mapMetaData.data" [finalData]="finalData" [mapMetaData]="mapMetaData" class="slide slide-in"></app-lost-scene>
+<app-start-scene *ngIf="checkCurrentGameStatus(GameStatus.START)" (startEvent)="startEventHandler()"></app-start-scene>
+<app-input-against-time-scene *ngIf="checkCurrentGameStatus(GameStatus.PLAYING)||checkCurrentGameStatus(GameStatus.PAUSE)" [(gameStatus)]="gameStatus" [gameStatus]="gameStatus" [gameModeMetadata]="gameModeMetadata" [mapMetaData]="mapMetaData"
+    [sourceData]="mapMetaData.data" (finalDataChange)="setFinalData($event)" [isSmallDevice]="isSmallDevice"></app-input-against-time-scene>
+<app-won-scene *ngIf="checkCurrentGameStatus(GameStatus.WON)"></app-won-scene>
+<app-lost-scene *ngIf="checkCurrentGameStatus(GameStatus.LOST)" [sourceData]="mapMetaData.data" [finalData]="finalData" [mapMetaData]="mapMetaData"></app-lost-scene>

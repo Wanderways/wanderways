@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use '~@angular/material' as mat;
+@mixin color($theme) {
+    $color-config: mat.get-color-config($theme);
+    $background-palette: map.get($color-config, 'background');
+    $foreground-palette: map.get($color-config, 'foreground');
+    // Set the color for when the game goes full screen
+    app-input-against-time>* {
+        background-color: mat.get-color-from-palette($background-palette, 'background');
+        color: mat.get-color-from-palette($foreground-palette, 'text');
+    }
+}
+
+@mixin theme($theme) {
+    $color-config: mat.get-color-config($theme);
+    @if $color-config !=null {
+        @include color($theme);
+    }
+}
