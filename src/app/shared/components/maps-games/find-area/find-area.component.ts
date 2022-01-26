@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { DataSubjectService } from 'src/app/shared/services/map-specific/data-subject.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { SnackBarComponent } from '../../generic/snack-bar/snack-bar.component';
+import { SnackBarComponent } from '../../generic/templates/snack-bar/snack-bar.component';
 import { NodeSubjectService } from 'src/app/shared/services/map-specific/node-subject.service';
 import { InputSubjectService } from 'src/app/shared/services/game-mode-specific/input-subject.service';
 import { GameStatus } from 'src/app/shared/utils/enums/GameStatus.enum';
@@ -89,7 +89,8 @@ export class FindAreaComponent implements OnInit {
                         SnackBarComponent,
                         {
                             data : {message:snackMessage ,action:"Okay..."}, // Message et message du bouton
-                            duration: 2000 // Durée de deux secondes
+                            duration: 2000, // Durée de deux secondes
+                            panelClass: ['warn']
                     });
                 }
             }
