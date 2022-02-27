@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "le-monde-pas-diplomatique": {
+    "learn-your-maps": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,14 +23,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/le-monde-pas-diplomatique",
+            "outputPath": "dist/learn-your-maps",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/favicon.svg",
               "src/assets"
             ],
             "styles": [
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "le-monde-pas-diplomatique:build:production"
+              "browserTarget": "learn-your-maps:build:production"
             },
             "development": {
-              "browserTarget": "le-monde-pas-diplomatique:build:development"
+              "browserTarget": "learn-your-maps:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "le-monde-pas-diplomatique:build"
+            "browserTarget": "learn-your-maps:build"
           }
         },
         "test": {
@@ -106,9 +106,19 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "learn-your-maps:build:production",
+            "firebaseProject": "learn-your-maps",
+            "firebaseHostingSite": "learn-your-maps"
+          }
         }
       }
     }
   },
-  "defaultProject": "le-monde-pas-diplomatique"
+  "defaultProject": "learn-your-maps"
 }

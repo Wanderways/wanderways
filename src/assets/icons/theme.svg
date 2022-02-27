@@ -1,0 +1,14 @@
+<svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path data-v-20f285ec="" d="m9 1.69 5.66 5.66a8 8 0 1 1-11.31 0L9 1.69Z"
+    >
+</path>
+<style>
+    path{
+        stroke: var(--current-color);
+        stroke-width:2px;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+    }
+    
+</style>
+</svg>

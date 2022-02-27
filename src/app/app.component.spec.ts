@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'le-monde-pas-diplomatique'`, () => {
+  it(`should have as title 'learn-your-maps'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('le-monde-pas-diplomatique');
+    expect(app.title).toEqual('learn-your-maps');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('le-monde-pas-diplomatique app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('learn-your-maps app is running!');
   });
 });

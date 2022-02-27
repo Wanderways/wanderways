@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "learn-your-maps": {
+      "hosting": {
+        "learn-your-maps": [
+          "learn-your-maps"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "learn-your-maps"
+  }
+}

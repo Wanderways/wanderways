@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'le-monde-pas-diplomatique';
+  title = 'learn-your-maps';
+
+  private removeClassList(){
+    document.documentElement.classList.value = "";
+  }
+
+  setTheme(theme : string){
+    console.log(theme);
+    console.log(document.documentElement.classList);
+    
+    this.removeClassList();
+    document.documentElement.classList.add(theme);
+    console.log(document.documentElement.classList);
+  }
 }

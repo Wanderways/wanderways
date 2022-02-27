@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$learn-your-maps-primary: mat.define-palette(mat.$indigo-palette);
+$learn-your-maps-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$learn-your-maps-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$learn-your-maps-theme: mat.define-light-theme((
+  color: (
+    primary: $learn-your-maps-primary,
+    accent: $learn-your-maps-accent,
+    warn: $learn-your-maps-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($learn-your-maps-theme);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+        .default {
+            --color-scheme: dark;
+            --light-background: var(--theme-default-background-light);
+            --dark-background: var(--theme-default-background-dark);
+            --current-color: var(--theme-default-text-color);
+        }
+        .light {
+            --color-scheme: light;
+            --light-background: var(--theme-light-background-light);
+            --dark-background: var(--theme-light-background-dark);
+            --current-color: #000000;
+        }
+        .dark {
+            --color-scheme: dark;
+            --light-background: var(--theme-dark-background-light);
+            --dark-background: var(--theme-dark-background-dark);
+            --current-color: var(--theme-dark-text-color);
+        }
+    
+}
+
+:root{
+    --theme-default-background-light: #C4E0E5;
+    --theme-default-background-dark: #4CA1AF;
+    --theme-default-text-color:#FFFFFF;
+
+    --theme-light-background-light:#FFFFFF;
+    --theme-light-background-dark:#CCF9FF;
+    --theme-light-text-color:#000000;
+
+    --theme-dark-background-light:#243B55;
+    --theme-dark-background-dark:#141E30;
+    --theme-dark-text-color:#FFFFFF;
+}
+
+html{
+    height: 100%;
+    @apply h-full;
+    @apply text-current-color;
+    background: linear-gradient(180deg, var(--dark-background) 0%, var(--light-background) 100%);
+    background-attachment: fixed;
+    color-scheme: var(--color-scheme);
+    body{
+        @apply flex flex-col;
+        @apply h-full m-0;
+        
+        
+    }
+}
+
+.candy-text-color,
+.violetta-text-color,
+.pepper-text-color{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.candy-text-color{
+    background: linear-gradient(225deg, #F7A2E4 0%, #FCCB1A 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.violetta-text-color{
+    background: linear-gradient(45deg, #BE2D0D 0%, #4E3498 99.57%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
