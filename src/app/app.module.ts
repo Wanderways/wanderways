@@ -31,7 +31,7 @@ let matModules : any[]=[
     providePerformance(() => getPerformance())
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+    ScreenTrackingService
   ],
   bootstrap: [AppComponent]
 })
