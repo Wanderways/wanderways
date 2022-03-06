@@ -73,13 +73,19 @@ $learn-your-maps-theme: mat.define-light-theme((
     --theme-dark-background-light:#243B55;
     --theme-dark-background-dark:#141E30;
     --theme-dark-text-color:#FFFFFF;
+
+    --violetta-primary:#BE2D0D;
+    --violetta-secondary:#4E3498;
+
+    --candy-primary:#F7A2E4;
+    --candy-secondary:#FCCB1A;
 }
 
 html{
     height: 100%;
     @apply h-full;
     @apply text-current-color;
-    background: linear-gradient(180deg, var(--dark-background) 0%, var(--light-background) 100%);
+    @apply current-bg-color;
     background-attachment: fixed;
     color-scheme: var(--color-scheme);
     body{
@@ -90,24 +96,44 @@ html{
     }
 }
 
-.candy-text-color,
-.violetta-text-color,
-.pepper-text-color{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+@layer utilities{
+    .current-bg-color{
+        background: linear-gradient(180deg, var(--dark-background) 0%, var(--light-background) 100%);
+    }
+    .bg-default-theme{
+        background: linear-gradient(180deg, var(--theme-default-background-dark) 0%, var(--theme-default-background-light) 100%);
+    }
+    .bg-light-theme{
+        background: linear-gradient(180deg, var(--theme-light-background-dark) 0%, var(--theme-light-background-light) 100%);
+    }
+    .bg-dark-theme{
+        background: linear-gradient(180deg, var(--theme-dark-background-dark) 0%, var(--theme-dark-background-light) 100%);
+    }
+    .bg-candy-theme{
+        background: linear-gradient(225deg, var(--candy-primary) 0%, var(--candy-secondary) 100%);
+    }
+    .bg-violetta-theme{
+        background: linear-gradient(45deg, var(--violetta-primary) 0%, var(--violetta-secondary) 100%);
+    }
+    
+    .candy-text-color,
+    .violetta-text-color
+    {
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .candy-text-color{
+        @apply bg-candy-theme;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    .violetta-text-color{
+        @apply bg-violetta-theme;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
 }
 
-.candy-text-color{
-    background: linear-gradient(225deg, #F7A2E4 0%, #FCCB1A 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-.violetta-text-color{
-    background: linear-gradient(45deg, #BE2D0D 0%, #4E3498 99.57%);
-    -webkit-background-clip: text;
-    background-clip: text;
-}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

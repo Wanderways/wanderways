@@ -20,11 +20,6 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'learn-your-maps'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('learn-your-maps');
-  });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
