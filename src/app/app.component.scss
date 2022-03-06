@@ -1,0 +1,64 @@
+:host {
+    @apply flex;
+    flex: 1 0 auto;
+
+    #sidenav {
+        #sidenav-header {
+            @apply flex items-center;
+            @apply justify-around;
+            border-radius: 0.5rem;
+            mat-icon {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    #main-content {
+        @apply flex flex-col;
+        #nav {
+            @apply flex items-center;
+            @apply w-full;
+            max-width: 1392px;
+            margin: 0 auto;
+            #menu-button {
+                @apply flex justify-center items-center;
+                @apply p-2;
+                text-decoration: none;
+                color: unset;
+                border-radius: 0.5rem;
+                app-logo {
+                    width: 2.5rem;
+                    display: flex;
+                }
+            }
+            #theme-slider {
+                margin-left: auto;
+            }
+        }
+    }
+    
+    #header{
+        @apply flex items-center;
+        @apply my-1 gap-2;
+        @apply select-none;
+        font-weight: 300;
+        font-size: 15px;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        app-logo {
+            width: 2.5rem;
+            display: flex;
+        }
+    }
+    
+    
+}
+
+:host:not(.relativeHeader) {
+    position: sticky;
+}
+
+:host.relativeHeader {
+    position: relative;
+}

@@ -4,12 +4,14 @@ import { AtomsModule } from './atoms/atoms.module';
 import { MoleculesModule } from './molecules/molecules.module';
 import { OrganismsModule } from './organisms/organisms.module';
 import { TemplatesModule } from './templates/templates.module';
+import { UniqueModule } from './unique/unique.module';
 
 let modules : any[] = [
   AtomsModule,
   MoleculesModule,
   OrganismsModule,
-  TemplatesModule
+  TemplatesModule,
+  UniqueModule
 ]
 
 @NgModule({

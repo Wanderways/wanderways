@@ -1,2 +1,30 @@
-<app-theme-selector></app-theme-selector>
-<router-outlet></router-outlet>
+<!-- SIDE-NAV -->
+<app-side-menu #app_side_menu id="sidenav" [displaySideMenu]="displaySideNav" (displaySideMenuChange)="displaySideNav = !displaySideNav" [behavior]="'reactive'" [direction]="'left'">
+    <div id="sidenav-header" header>
+        <ng-container *ngTemplateOutlet="header"></ng-container>
+        <mat-icon id="close-button" matRipple (click)="displaySideNav = !displaySideNav">close</mat-icon>
+    </div>
+    <ng-container main>
+        <button mat-button [routerLink]="['/']"></button>
+    </ng-container>
+    <ng-container footer>
+        <app-theme-selector></app-theme-selector>
+    </ng-container>
+</app-side-menu>
+<!-- MAIN CONTENT -->
+<div id="main-content">
+    <!-- HEADER -->
+    <header id="nav">
+        <button *ngIf="!displaySideNav" mat-button (click)="displaySideNav = !displaySideNav"><mat-icon>sort</mat-icon></button>
+        <ng-container *ngIf="!displaySideNav"><ng-container *ngTemplateOutlet="header"></ng-container></ng-container>
+    </header>
+    <router-outlet></router-outlet>
+</div>
+
+<!-- TEMPLATES -->
+<ng-template #header>
+    <div matRipple id="header" [routerLink]="['/']">
+        <app-logo></app-logo>
+        <span>Learn your maps</span>
+    </div>
+</ng-template>
