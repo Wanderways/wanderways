@@ -1,3 +1,17 @@
 :host{
-    @apply flex;
+    @apply flex items-start;
+    @apply cursor-pointer;
+    .theme-line{
+        @apply rounded;
+        @apply p-2;
+        span{
+            @apply select-none;
+        }
+        &.selected{
+            span{
+                @apply text-[#FFFFFF];
+            }
+        }
+    }
+    
 }
