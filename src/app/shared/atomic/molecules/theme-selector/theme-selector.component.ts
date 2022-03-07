@@ -7,15 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThemeSelectorComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
-  displayThemeSelector :boolean=false;
+  displayThemeSelector : boolean = false;
 
-  currentTheme : string = "default";
+  themes : string[] = [
+    "light",
+    "default",
+    "dark"
+  ]
+
+  currentTheme : string = localStorage.getItem("theme") || "default";
 
   ngOnInit(): void {
+    this.applyTheme();
   }
+
   private applyTheme(){
+    if (window.localStorage) {
+      localStorage.setItem("theme", this.currentTheme);
+    }
+
     document.documentElement.classList.value = "";
     document.documentElement.classList.add(this.currentTheme);
   }

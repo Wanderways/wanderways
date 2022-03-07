@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
+import { MatRippleModule } from '@angular/material/core';
 
 let components : any[] = [
   ThemeSelectorComponent
@@ -13,6 +14,7 @@ let components : any[] = [
   ],
   imports: [
     CommonModule,
+    MatRippleModule
   ],exports:[
     ...components
   ]
