@@ -10,12 +10,14 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService } from '@angular/fire/analytics';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-import { MatRippleModule } from '@angular/material/core';
+import {MatRippleModule} from '@angular/material/core';
 
 let matModules : any[]=[
+  BrowserAnimationsModule,
   MatButtonModule,
   MatIconModule,
   MatRippleModule

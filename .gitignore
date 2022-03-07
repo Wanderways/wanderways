@@ -3,6 +3,7 @@
 /environments
 
 /.angular
+./package-lock.json
 # compiled output
 /dist
 /tmp

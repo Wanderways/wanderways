@@ -35,13 +35,7 @@ module.exports = {
     },
     fontFamily: {
       'material':['Material Icons']
-    },
-    rippls:theme=>({
-      colors: theme('colors')
-    })
-  },
-  plugins: [
-    require('tailwindcss-ripple')()
-  ],
+    }
+  }
 }
 
