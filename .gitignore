@@ -2,6 +2,7 @@
 
 /environments
 
+/.angular
 # compiled output
 /dist
 /tmp
