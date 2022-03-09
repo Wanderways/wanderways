@@ -1,0 +1,25 @@
+:host{
+    @apply flex flex-col;
+    flex : 1 0 auto;
+    #map-scroll-fixed-container{
+        @apply fixed;
+        @apply pointer-events-none;
+        @apply w-full;
+        @apply top-0 right-0;
+        #rotated{
+            @apply  flex;
+            width: 200vw;
+            transform: rotate(20deg);
+            -webkit-mask-image: radial-gradient(circle at 100% 0%,rgb(0, 0, 0), transparent 90%);
+            img{
+                animation: move-left 20s infinite;
+                animation-timing-function : linear;
+            }
+        }
+    }
+}
+
+@keyframes move-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
