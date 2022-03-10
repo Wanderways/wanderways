@@ -1,5 +1,6 @@
 // background color that should be loaded whatever happens because lay be used dynamically, skipping tree shaking
 let bg_colors = ['current-bg-color','bg-default-theme','bg-light-theme','bg-dark-theme','bg-candy-theme','bg-violetta-theme'];
+let themes = ['dark','default','light'];
 
 module.exports = {
   darkMode: 'class',
@@ -12,8 +13,6 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'light-background':'var(--light-background)',
-      'dark-background':'var(--dark-background)',
       'current-color':'var(--current-color)',
       'blue': "#1fb6ff",
       'purple': '#7e5bef',
@@ -41,7 +40,8 @@ module.exports = {
     }
   },
   safelist:[
-    ...bg_colors
+    ...bg_colors,
+    ...themes
   ]
 }
 

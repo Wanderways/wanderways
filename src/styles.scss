@@ -37,65 +37,26 @@ $learn-your-maps-theme: mat.define-light-theme((
 @tailwind components;
 @tailwind utilities;
 
-
-
-@layer base {
-        .default {
-            --color-scheme: dark;
-            --light-background: var(--theme-default-background-light);
-            --dark-background: var(--theme-default-background-dark);
-            --current-color: var(--theme-default-text-color);
-        }
-        .light {
-            --color-scheme: light;
-            --light-background: var(--theme-light-background-light);
-            --dark-background: var(--theme-light-background-dark);
-            --current-color: #000000;
-        }
-        .dark {
-            --color-scheme: dark;
-            --light-background: var(--theme-dark-background-light);
-            --dark-background: var(--theme-dark-background-dark);
-            --current-color: var(--theme-dark-text-color);
-        }
-    
-}
-
-:root{
-    --theme-default-background-light: #C4E0E5;
-    --theme-default-background-dark: #4CA1AF;
-    --theme-default-text-color:#FFFFFF;
-
-    --theme-light-background-light:#FFFFFF;
-    --theme-light-background-dark:#CCF9FF;
-    --theme-light-text-color:#000000;
-
-    --theme-dark-background-light:#243B55;
-    --theme-dark-background-dark:#141E30;
-    --theme-dark-text-color:#FFFFFF;
-
-    --violetta-primary:#BE2D0D;
-    --violetta-secondary:#4E3498;
-
-    --candy-primary:#F7A2E4;
-    --candy-secondary:#FCCB1A;
-}
-
-html{
-    height: 100%;
-    @apply h-full;
-    @apply text-current-color;
-    @apply current-bg-color;
-    background-attachment: fixed;
-    color-scheme: var(--color-scheme);
-    body{
-        @apply flex flex-col;
-        @apply h-full m-0;
-        
-        
+@layer base{
+    .default {
+        --color-scheme: dark;
+        --light-background: var(--theme-default-background-light);
+        --dark-background: var(--theme-default-background-dark);
+        --current-color: var(--theme-default-text-color);
+    }
+    .light {
+        --color-scheme: light;
+        --light-background: var(--theme-light-background-light);
+        --dark-background: var(--theme-light-background-dark);
+        --current-color: #000000;
+    }
+    .dark {
+        --color-scheme: dark;
+        --light-background: var(--theme-dark-background-light);
+        --dark-background: var(--theme-dark-background-dark);
+        --current-color: var(--theme-dark-text-color);
     }
 }
-
 @layer utilities{
     .current-bg-color{
         background: linear-gradient(180deg, var(--dark-background) 0%, var(--light-background) 100%);
@@ -132,8 +93,43 @@ html{
         -webkit-background-clip: text;
         background-clip: text;
     }
+
+    
 }
 
+html{
+    height: 100%;
+    @apply h-full;
+    @apply text-current-color;
+    @apply current-bg-color;
+    background-attachment: fixed;
+    color-scheme: var(--color-scheme);
+    body{
+        @apply flex flex-col;
+        @apply h-full m-0;
+    }
+}
+
+:root{
+    pointer-events: all;
+    --theme-default-background-light: #C4E0E5;
+    --theme-default-background-dark: #4CA1AF;
+    --theme-default-text-color:#FFFFFF;
+
+    --theme-light-background-light:#FFFFFF;
+    --theme-light-background-dark:#CCF9FF;
+    --theme-light-text-color:#000000;
+
+    --theme-dark-background-light:#243B55;
+    --theme-dark-background-dark:#141E30;
+    --theme-dark-text-color:#FFFFFF;
+
+    --violetta-primary:#BE2D0D;
+    --violetta-secondary:#4E3498;
+
+    --candy-primary:#F7A2E4;
+    --candy-secondary:#FCCB1A;
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
