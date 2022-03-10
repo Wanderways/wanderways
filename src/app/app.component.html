@@ -14,9 +14,9 @@
 <!-- MAIN CONTENT -->
 <div id="main-content">
     <!-- HEADER -->
-    <header id="nav">
-        <button *ngIf="!displaySideNav" mat-button (click)="displaySideNav = !displaySideNav"><mat-icon>sort</mat-icon></button>
-        <ng-container *ngIf="!displaySideNav"><ng-container *ngTemplateOutlet="header"></ng-container></ng-container>
+    <header id="nav" [style.visibility]="displaySideNav?'hidden':''">
+        <button  mat-button (click)="displaySideNav = !displaySideNav"><mat-icon>sort</mat-icon></button>
+        <ng-container ><ng-container *ngTemplateOutlet="header"></ng-container></ng-container>
     </header>
     <router-outlet></router-outlet>
 </div>
