@@ -1,6 +1,9 @@
 :host{
     @apply flex flex-col;
     flex : 1 0 auto;
+    width: 100%;
+    max-width: 1392px;
+    margin: 0 auto;
     #map-scroll-fixed-container{
         @apply fixed;
         @apply pointer-events-none;
@@ -17,6 +20,21 @@
             }
         }
     }
+    #presentation-text{
+        margin-top: 25vh;
+        width: min(100%, 100vw);
+        z-index: 1;
+        padding: 0 1rem;
+        letter-spacing: 0.13rem;
+        @apply uppercase ;
+        #welcome{
+            @apply text-xl ;
+        }
+        #title{
+            @apply text-5xl font-semibold;
+        }
+    }
+    
 }
 
 @keyframes move-left {
