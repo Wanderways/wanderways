@@ -3,15 +3,15 @@
     flex : 1 0 auto;
     width: 100%;
     max-width: min(1392px, 100vw);
-    #map-scroll-fixed-container{
+    #home-rotating-maps-container{
         @apply fixed;
         @apply pointer-events-none;
-        @apply w-full;
-        @apply top-0 right-0;
-        #rotated{
+        @apply top-0;
+        #home-rotating-maps{
             @apply  flex;
             width: 200vw;
             transform: rotate(20deg);
+            mask-image: radial-gradient(circle at 100% 0%,rgb(0, 0, 0), transparent 90%);
             -webkit-mask-image: radial-gradient(circle at 100% 0%,rgb(0, 0, 0), transparent 90%);
             img{
                 animation: move-left 20s infinite;
@@ -19,17 +19,22 @@
             }
         }
     }
-    #presentation-text{
+    #home-presentation-text{
         @apply flex flex-col items-start uppercase;
+        @apply tracking-widest uppercase;
         margin-top: 25vh;
-        z-index: 1;
         padding: 0 1rem;
-        letter-spacing: 0.13rem;
-        #welcome{
+        z-index: 1;
+        #home-welcome{
             @apply text-xl ;
         }
-        #title{
+        #home-title{
             @apply text-5xl font-semibold;
+        }
+        #home-button-see-maps{
+            @apply self-end;
+            @apply px-4 py-3 rounded-lg;
+            @apply text-white uppercase;
         }
     }
     
