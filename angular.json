@@ -30,7 +30,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets/favicon.svg",
+              "src/assets/favicon.png",
               "src/assets"
             ],
             "styles": [
