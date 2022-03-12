@@ -1,0 +1,8 @@
+{
+  "locale": "fr-FR",
+  "translations": {
+    "home-welcome-to": "Bienvenue sur",
+    "home-view-maps": "Voir les cartes",
+    "theme-selector-label": "Thème"
+  }
+}

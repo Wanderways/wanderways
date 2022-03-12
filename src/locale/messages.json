@@ -1,0 +1,8 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "home-welcome-to": "Welcome to",
+    "home-view-maps": "See maps",
+    "theme-selector-label": "Theme"
+  }
+}

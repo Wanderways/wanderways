@@ -6,7 +6,14 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "en": "ng serve --port 4200",
+    "fr": "ng serve --configuration=fr --port 4201",
+    "de": "ng serve --configuration=de --port 4202",
+    "es": "ng serve --configuration=es --port 4203",
+    "pt": "ng serve --configuration=pt --port 4204",
+    "test": "ng test",
+    "fb-t": "ng build --localize && firebase hosting:channel:deploy learn-your-maps-test",
+    "fb-d": "ng build --localize && firebase deploy"
   },
   "private": true,
   "dependencies": {
@@ -32,6 +39,7 @@
     "@angular-devkit/build-angular": "^13.2.4",
     "@angular/cli": "~13.2.4",
     "@angular/compiler-cli": "~13.2.3",
+    "@angular/localize": "^13.2.3",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.8.0",

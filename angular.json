@@ -16,6 +16,15 @@
           "strict": true
         }
       },
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "fr-FR":{ "translation":"src/locale/messages.fr-FR.json" },
+          "de-DE":{ "translation":"src/locale/messages.de-DE.json" },
+          "es-ES":{ "translation":"src/locale/messages.es-ES.json" },
+          "pt-PT":{ "translation":"src/locale/messages.pt-PT.json" }
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -67,6 +76,22 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "fr-FR":{
+              "localize" : ["fr-FR"],
+              "baseHref":"/fr/"
+            },
+            "de-DE":{
+              "localize" : ["de-DE"],
+              "baseHref":"/de/"
+            },
+            "es-ES":{
+              "localize" : ["es-ES"],
+              "baseHref":"/es/"
+            },
+            "pt-PT":{
+              "localize" : ["pt-PT"],
+              "baseHref":"/pt/"
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +101,18 @@
           "configurations": {
             "production": {
               "browserTarget": "learn-your-maps:build:production"
+            },
+            "fr-FR":{
+              "browserTarget": "learn-your-maps:build:fr-FR"
+            },
+            "de-DE":{
+              "browserTarget": "learn-your-maps:build:de-DE"
+            },
+            "es-ES":{
+              "browserTarget": "learn-your-maps:build:es-ES"
+            },
+            "pt-PT":{
+              "browserTarget": "learn-your-maps:build:pt-PT"
             },
             "development": {
               "browserTarget": "learn-your-maps:build:development"

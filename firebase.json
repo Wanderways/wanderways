@@ -28,7 +28,23 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "/en-US/index.html"
+      },
+      {
+        "source": "/fr-FR/{,/**}",
+        "destination": "/fr-FR/index.html"
+      },
+      {
+        "source": "/de-DE/{,/**}",
+        "destination": "/de-De/index.html"
+      },
+      {
+        "source": "/es-ES/{,/**}",
+        "destination": "/es-ES/index.html"
+      },
+      {
+        "source": "/pt-PT/{,/**}",
+        "destination": "/pt-PT/index.html"
       }
     ]
   }
