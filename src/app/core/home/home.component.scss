@@ -3,10 +3,12 @@
     flex : 1 0 auto;
     width: 100%;
     max-width: min(1392px, 100vw);
+    z-index: 1;
     #home-rotating-maps-container{
-        @apply fixed;
+        @apply absolute;
         @apply pointer-events-none;
-        @apply top-0;
+        @apply top-0 right-0 w-screen;
+        @apply overflow-hidden;
         #home-rotating-maps{
             @apply  flex;
             width: 200vw;
