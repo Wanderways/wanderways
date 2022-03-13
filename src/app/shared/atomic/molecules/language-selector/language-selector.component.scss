@@ -1,0 +1,20 @@
+:host{
+    @apply flex items-start;
+    @apply cursor-pointer;
+    @apply select-none;
+    .theme-line{
+        @apply  flex gap-1 items-center;
+        @apply rounded;
+        @apply p-2;
+        .color-indicator{
+            @apply h-8 w-8 rounded-full;
+        }
+        span{
+        }
+        &.selected{
+            span{
+                @apply text-[#FFFFFF];
+            }
+        }
+    }
+}
