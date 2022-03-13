@@ -12,7 +12,7 @@
         #home-rotating-maps{
             @apply  flex;
             width: 200vw;
-            transform: rotate(20deg);
+            transform: rotate(20deg) translateY(-20px);
             mask-image: radial-gradient(circle at 100% 0%,rgb(0, 0, 0), transparent 90%);
             -webkit-mask-image: radial-gradient(circle at 100% 0%,rgb(0, 0, 0), transparent 90%);
             img{
