@@ -59,22 +59,23 @@ $learn-your-maps-theme: mat.define-light-theme((
 }
 @layer utilities{
     .current-bg-color{
-        background: linear-gradient(180deg, var(--dark-background) 0%, var(--light-background) 100%);
+        background-image: linear-gradient(180deg, var(--dark-background) 0%, var(--light-background) 100%);
+        background-color : var(--light-background);
     }
     .bg-default-theme{
-        background: linear-gradient(180deg, var(--theme-default-background-dark) 0%, var(--theme-default-background-light) 100%);
+        background-image: linear-gradient(180deg, var(--theme-default-background-dark) 0%, var(--theme-default-background-light) 100%);
     }
     .bg-light-theme{
-        background: linear-gradient(180deg, var(--theme-light-background-dark) 0%, var(--theme-light-background-light) 100%);
+        background-image: linear-gradient(180deg, var(--theme-light-background-dark) 0%, var(--theme-light-background-light) 100%);
     }
     .bg-dark-theme{
-        background: linear-gradient(180deg, var(--theme-dark-background-dark) 0%, var(--theme-dark-background-light) 100%);
+        background-image: linear-gradient(180deg, var(--theme-dark-background-dark) 0%, var(--theme-dark-background-light) 100%);
     }
     .bg-candy-theme{
-        background: linear-gradient(225deg, var(--candy-primary) 0%, var(--candy-secondary) 100%);
+        background-image: linear-gradient(225deg, var(--candy-primary) 0%, var(--candy-secondary) 100%);
     }
     .bg-violetta-theme{
-        background: linear-gradient(45deg, var(--violetta-primary) 0%, var(--violetta-secondary) 100%);
+        background-image: linear-gradient(45deg, var(--violetta-primary) 0%, var(--violetta-secondary) 100%);
     }
     
     .candy-text-color,
@@ -130,9 +131,6 @@ html{
     --candy-primary:#F7A2E4;
     --candy-secondary:#FCCB1A;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
