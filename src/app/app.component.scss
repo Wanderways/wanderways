@@ -16,29 +16,52 @@
     #main-content {
         @apply flex flex-col;
         flex:1 0 auto;
-        #nav {
-            @apply flex items-center;
-            @apply w-full;
-            max-width: 1392px;
-            margin: 0 auto;
-            #menu-button {
-                @apply flex justify-center items-center;
-                @apply p-2;
-                text-decoration: none;
-                color: unset;
-                border-radius: 0.5rem;
-                app-logo {
-                    width: 2.5rem;
-                    display: flex;
+        #header {
+            @apply flex ;
+            @apply w-screen;
+            z-index: 50;
+            #header-content{
+                max-width: 1392px;
+                margin: 0 auto;
+                @apply flex items-center w-full;
+                #menu-button {
+                    @apply flex justify-center items-center;
+                    @apply p-2;
+                    text-decoration: none;
+                    color: unset;
+                    border-radius: 0.5rem;
+                    app-logo {
+                        width: 2.5rem;
+                        display: flex;
+                    }
                 }
             }
-            #theme-slider {
-                margin-left: auto;
+            
+            &.isFixed{
+                @apply fixed top-0 w-screen;
+                backdrop-filter: blur(20px) opacity(0);
+                &.isScrolled{
+                    backdrop-filter: blur(20px) opacity(1);
+                    &::after{
+                        opacity : 0.5;
+                    }
+                }
+                &::after{
+                    content:"";
+                    background: linear-gradient(45deg, var(--violetta-primary) 0%, var(--violetta-secondary) 100%);
+                    height:1px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    opacity : 0;
+                    transition: opacity 0.2s;
+                }
             }
+            
         }
     }
     
-    #header{
+    #logo-and-title{
         @apply flex items-center;
         @apply my-1 p-1 gap-2;
         @apply select-none;
@@ -52,6 +75,7 @@
             display: flex;
         }
     }
+    
 }
 
 :host:not(.relativeHeader) {

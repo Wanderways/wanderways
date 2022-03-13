@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component,  HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,16 +8,20 @@ import { Component, HostBinding } from '@angular/core';
 export class AppComponent {
 
   displaySideNav : boolean | undefined = undefined;
+  isScrolled : boolean = false;
 
-  @HostBinding('class')
-  get themeMode(){
-    return 'app-component';
+  /**
+   * On scroll, if not top page, then blur header
+   */
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    this.isScrolled = window.scrollY>0;
   }
 
-    /**
+  /**
    * Displays the sidenav
    */
-     displaySideNavChange(){
-      this.displaySideNav = !this.displaySideNav;
-    }
+    displaySideNavChange(){
+    this.displaySideNav = !this.displaySideNav;
+  }
 }
