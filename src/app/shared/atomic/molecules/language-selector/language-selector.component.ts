@@ -43,12 +43,6 @@ export class LanguageSelectorComponent implements OnInit {
   constructor(@Inject(LOCALE_ID) public locale: string) {}
 
   ngOnInit(): void {
-    this.setLanguage(this.locale);
+    this.currentLanguage = this.supportedLanguages.find(e => e.localeId === this.locale)!;
   }
-
-  setLanguage(localeID : string){
-    this.currentLanguage = this.supportedLanguages.find(e => e.localeId === localeID)!;
-  }
-  
-
 }
