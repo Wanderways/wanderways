@@ -63,11 +63,11 @@
     
     #logo-and-title{
         @apply flex items-center;
-        @apply my-1 p-1 gap-2;
+        @apply my-2 p-1 gap-2;
         @apply select-none;
+        @apply uppercase;
         font-weight: 300;
-        font-size: 15px;
-        text-transform: uppercase;
+        font-size: 1.25rem;
         border-radius: 0.5rem;
         cursor: pointer;
         img {

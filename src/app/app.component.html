@@ -8,8 +8,10 @@
         <button mat-button [routerLink]="['/']"></button>
     </ng-container>
     <ng-container footer>
-        <app-theme-selector></app-theme-selector>
-        <app-language-selector></app-language-selector>
+        <div class="flex justify-around">
+            <app-theme-selector></app-theme-selector>
+            <app-language-selector></app-language-selector>
+        </div>
     </ng-container>
 </app-side-menu>
 <!-- MAIN CONTENT -->
