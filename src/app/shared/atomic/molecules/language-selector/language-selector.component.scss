@@ -1,20 +1,19 @@
 :host{
-    @apply flex items-start;
+    @apply relative;
     @apply cursor-pointer;
     @apply select-none;
-    .theme-line{
-        @apply  flex gap-1 items-center;
+    .language-line{
+        @apply  flex gap-2 p-2 items-center rounded;
         @apply rounded;
-        @apply p-2;
-        .color-indicator{
-            @apply h-8 w-8 rounded-full;
-        }
         span{
+            @apply uppercase;
         }
         &.selected{
-            span{
-                @apply text-[#FFFFFF];
-            }
+            @apply text-white;
         }
+    }
+    #supportedLanguagesContainer{
+        @apply absolute flex flex-col rounded;
+        background-color: var(--dark-background);
     }
 }

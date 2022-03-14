@@ -1,22 +1,22 @@
-<div id="" matRipple class="flex gap-2 p-2 items-center rounded" (click)="displayLanguageSelector = !displayLanguageSelector" >
-    <img
-        src="https://flagcdn.com/w20/{{currentLanguage.iso3166}}.png"
-        srcset="https://flagcdn.com/w40/{{currentLanguage.iso3166}}.png 2x"
-        width="20"
-        alt="{{currentLanguage.displayName}}">
-    <span class="capitalize">{{currentLanguage.displayName}}</span>
-  </div>
-  
-  <div *ngIf='displayLanguageSelector' class="flex flex-col rounded p-1"   >
+<div matRipple class="language-line" [ngClass]="{'bg-violetta-theme selected': displayLanguageSelector }" (click)="displayLanguageSelector = !displayLanguageSelector" >
+  <img
+    src="https://flagcdn.com/w20/{{currentLanguage.iso3166}}.png"
+    srcset="https://flagcdn.com/w40/{{currentLanguage.iso3166}}.png 2x"
+    width="20"
+    alt="{{currentLanguage.displayName}}">
+  <span class="uppercase">{{currentLanguage.iso3166}}</span>
+</div>
+<div id="supportedLanguagesContainer">
     <ng-container *ngFor="let language of supportedLanguages">
-      <a href="/{{language.localeId}}/" class="theme-line" [ngClass]="{'bg-violetta-theme selected': currentLanguage.localeId === language.localeId}">
-        <img
-        src="https://flagcdn.com/w20/{{language.iso3166}}.png"
-        srcset="https://flagcdn.com/w40/{{language.iso3166}}.png 2x"
-        width="20"
-        alt="{{language.displayName}}">
-        <span  mat-button class="current-color text-xl capitalize">{{language.displayName}}</span>
-      </a>
+      <ng-container *ngIf='displayLanguageSelector &&language.localeId != currentLanguage.localeId'>
+        <a href="/{{language.localeId}}/" class="language-line">
+          <img src="https://flagcdn.com/w20/{{language.iso3166}}.png"
+            srcset="https://flagcdn.com/w40/{{language.iso3166}}.png 2x"
+            width="20"
+            alt="{{language.displayName}}">
+          <span  mat-button class="current-color uppercase">{{language.iso3166}}</span>
+        </a>
+      </ng-container>
     </ng-container>
-  </div>
   
+</div>

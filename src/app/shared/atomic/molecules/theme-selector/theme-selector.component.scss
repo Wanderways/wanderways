@@ -1,21 +1,22 @@
 :host{
-    @apply flex items-start;
+    @apply relative;
     @apply cursor-pointer;
     @apply select-none;
     .theme-line{
-        @apply  flex gap-1 items-center;
+        @apply  flex gap-2 items-center;
         @apply rounded;
         @apply p-2;
         .color-indicator{
-            @apply h-8 w-8 rounded-full;
-        }
-        span{
+            @apply h-6 w-6 rounded-full;
         }
         &.selected{
             span{
-                @apply text-[#FFFFFF];
+                @apply text-white;
             }
         }
     }
-    
+    #supportedThemesContainer{
+        @apply absolute flex flex-col rounded;
+        background-color: var(--dark-background);
+    }
 }
