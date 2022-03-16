@@ -1,14 +1,14 @@
-<div matRipple class="theme-line" (click)="displayThemeSelector = !displayThemeSelector" >
+<div matRipple class="proposition-line" (click)="displayThemeSelector = !displayThemeSelector" >
   <svg width="19"  viewBox="0 0 19 23" xmlns="http://www.w3.org/2000/svg" >
     <path d="m9 1.69 5.66 5.66a8 8 0 1 1-11.31 0L9 1.69Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </svg>
   <span i18n="@@theme-selector-label" class="capitalize">Theme</span>
 </div>
 
-<div  id="supportedThemesContainer">
+<div  id="proposition-container" class="custom-scrollbar">
   <ng-container *ngFor="let theme of themes">
     <ng-container *ngIf="displayThemeSelector">
-      <div (click)="setTheme(theme)" class="theme-line" [ngClass]="{'bg-violetta-theme selected': currentTheme === theme}">
+      <div (click)="setTheme(theme)" class="proposition-line" [ngClass]="{'bg-violetta-theme selected': currentTheme === theme}">
         <div class="color-indicator bg-{{theme}}-theme"></div>
         <span  mat-button class="current-color capitalize">{{theme}}</span>
       </div>

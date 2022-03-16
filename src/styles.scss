@@ -134,3 +134,20 @@ html{
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.custom-scrollbar{
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        @apply w-3;
+        }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(255,255,255, 0.3);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-corner{
+        background: transparent;
+    }
+}
