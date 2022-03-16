@@ -9,6 +9,7 @@
             border-radius: 0.5rem;
             mat-icon {
                 border-radius: 50%;
+                @apply cursor-pointer;
             }
         }
     }
