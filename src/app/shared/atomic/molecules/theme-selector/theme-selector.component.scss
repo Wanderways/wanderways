@@ -2,6 +2,7 @@
     @apply relative;
     @apply cursor-pointer;
     @apply select-none;
+    flex-grow : 1;
     .theme-line{
         @apply  flex gap-2 items-center;
         @apply rounded;
@@ -16,7 +17,21 @@
         }
     }
     #supportedThemesContainer{
-        @apply absolute flex flex-col rounded;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            @apply w-3;
+          }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(255,255,255, 0.3);
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-corner{
+            background: transparent;
+        }
+        @apply absolute flex flex-col rounded w-full;
         background-color: var(--dark-background);
     }
 }
