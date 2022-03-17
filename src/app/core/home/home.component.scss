@@ -8,7 +8,7 @@
         @apply absolute;
         @apply pointer-events-none;
         @apply top-0 right-0 w-screen;
-        @apply overflow-hidden;
+        @apply overflow-hidden select-none;
         #home-rotating-maps{
             @apply  flex;
             width: 200vw;
