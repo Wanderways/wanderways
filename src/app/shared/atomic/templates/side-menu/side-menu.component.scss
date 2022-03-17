@@ -37,11 +37,21 @@
         }
         #mobile-responsive-sidemenu {
             @apply h-screen;
-            @apply top-0 left-0;
-            width: 100vw;
+            @apply top-0 ;
+            left: 230px;
+            width: calc(100vw - 230px);
+            opacity: 0;
             background-color: #000000;
             position: fixed;
-            opacity: 0.2;
+            animation: 0.2s ease-in-out forwards appear;
+        }
+        @keyframes appear {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0.2;
+            }
         }
     }
     &.left {
