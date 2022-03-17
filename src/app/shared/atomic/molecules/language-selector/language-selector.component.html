@@ -1,4 +1,4 @@
-<div matRipple class="proposition-line" [ngClass]="{'bg-violetta-theme selected': displayLanguageSelector }" (click)="displayLanguageSelector = !displayLanguageSelector" >
+<div matRipple matRippleColor="#FFFFFF60" class="proposition-line" [ngClass]="{'bg-violetta-theme selected': displayLanguageSelector }" (click)="displayLanguageSelector = !displayLanguageSelector" >
   <img
     src="https://flagcdn.com/w20/{{currentLanguage.iso3166}}.png"
     srcset="https://flagcdn.com/w40/{{currentLanguage.iso3166}}.png 2x"
@@ -9,7 +9,7 @@
 <div id="proposition-container" class="custom-scrollbar">
     <ng-container *ngFor="let language of supportedLanguages">
       <ng-container *ngIf='displayLanguageSelector &&language.localeId != currentLanguage.localeId'>
-        <a href="/{{language.localeId}}/" class="proposition-line">
+        <a matRipple matRippleColor="#FFFFFF60" href="/{{language.localeId}}/" class="proposition-line">
           <img src="https://flagcdn.com/w20/{{language.iso3166}}.png"
             srcset="https://flagcdn.com/w40/{{language.iso3166}}.png 2x"
             width="20"

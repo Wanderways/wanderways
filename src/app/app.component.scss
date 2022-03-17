@@ -7,9 +7,9 @@
             @apply flex items-center;
             @apply justify-around;
             border-radius: 0.5rem;
-            mat-icon {
+            #close-button {
                 border-radius: 50%;
-                @apply cursor-pointer;
+                @apply cursor-pointer w-8 h-8;
             }
         }
     }

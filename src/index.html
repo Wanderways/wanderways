@@ -13,4 +13,10 @@
 <body  class="mat-typography">
   <app-root></app-root>
 </body>
+<style>
+/* Forced to be set here, SASS crashes on compile time with this one*/
+.svg-current-color{
+  filter: invert(var(--svg-invert)) sepia(var(--svg-sepia)) saturate(var(--svg-saturate)) hue-rotate(var(--svg-hue-rotate)) brightness(var(--svg-brightness)) contrast(var(--svg-contrast));
+}
+</style>
 </html>

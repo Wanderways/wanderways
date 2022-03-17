@@ -2,7 +2,9 @@
 <app-side-menu #app_side_menu id="sidenav" [displaySideMenu]="displaySideNav" (displaySideMenuChange)="displaySideNav = !displaySideNav" [behavior]="'reactive'" [direction]="'left'">
     <div id="sidenav-header" header>
         <ng-container *ngTemplateOutlet="header_content"></ng-container>
-        <mat-icon id="close-button" matRipple (click)="displaySideNav = !displaySideNav">close</mat-icon>
+        <div matRipple matRippleColor="#FFFFFF60" class="rounded cursor-pointer select-none" (click)="displaySideNav = !displaySideNav">
+            <img id="close-button" src="./assets/icons/close.svg" class="svg-current-color mx-0">
+        </div>
     </div>
     <ng-container main>
         <button mat-button [routerLink]="['/']"></button>
@@ -17,9 +19,12 @@
 <!-- MAIN CONTENT -->
 <div id="main-content">
     <!-- HEADER -->
+    <!-- @TODO class.isFixed should be associated with a service so that pages can use it -->
     <header id="header" #nav [class.isFixed]="1===1" [class.isScrolled]="isScrolled">
         <div id="header-content">
-            <button  mat-button (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav?'hidden':''"><mat-icon>sort</mat-icon></button>
+            <div matRipple matRippleColor="#FFFFFF60" class="mx-3 my-2 rounded cursor-pointer select-none" (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav?'hidden':''">
+                <img src="./assets/icons/menu.svg" class="svg-current-color mx-1">
+            </div>
             <ng-container *ngTemplateOutlet="header_content; context:{$implicit:displaySideNav}" ></ng-container>
         </div>
         
@@ -29,7 +34,7 @@
 
 <!-- TEMPLATES -->
 <ng-template #header_content let-isVisible>
-    <div matRipple id="logo-and-title" [routerLink]="['/']" [style.visibility]="isVisible?'hidden':''">
+    <div matRipple matRippleColor="#FFFFFF60" id="logo-and-title" [routerLink]="['/']" [style.visibility]="isVisible?'hidden':''">
         <img src="./assets/icons/logo.svg">
         <span>Learn your maps</span>
     </div>
