@@ -13,8 +13,8 @@
             @apply  flex;
             width: 200vw;
             transform: rotate(20deg) translateY(-20px);
-            mask-image: radial-gradient(circle at 100% 0%,rgb(0, 0, 0), transparent 90%);
-            -webkit-mask-image: radial-gradient(circle at 100% 0%,rgb(0, 0, 0), transparent 90%);
+            mask-image: radial-gradient(circle at 100% 0%,#000000, transparent 90%);
+            -webkit-mask-image: radial-gradient(circle at 100% 0%,#000000, transparent 90%);
             img{
                 animation: move-left 20s infinite;
                 animation-timing-function : linear;
