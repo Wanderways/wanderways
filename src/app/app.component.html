@@ -19,8 +19,8 @@
 <!-- MAIN CONTENT -->
 <div id="main-content">
     <!-- HEADER -->
-    <!-- @TODO class.isFixed should be associated with a service so that pages can use it -->
-    <header id="header" #nav [class.isFixed]="1===1" [class.isScrolled]="isScrolled">
+    <!-- @TODO class.isSticky should be associated with a service so that pages can use it -->
+    <header id="header" #nav [class.isSticky]="1===1" [class.isScrolled]="isScrolled">
         <div id="header-content">
             <div matRipple matRippleColor="#FFFFFF60" class="mx-3 my-2 rounded cursor-pointer select-none" (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav?'hidden':''">
                 <img src="./assets/icons/menu.svg" class="svg-current-color mx-1">

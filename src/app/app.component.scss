@@ -38,8 +38,8 @@
                 }
             }
             
-            &.isFixed{
-                @apply fixed top-0 w-screen;
+            &.isSticky{
+                @apply sticky top-0 w-screen;
                 backdrop-filter: blur(20px) opacity(0);
                 &.isScrolled{
                     backdrop-filter: blur(20px) opacity(1);
