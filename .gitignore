@@ -2,7 +2,7 @@
 
 /src/environments/
 
-/src/assets/flags_iso3166_*
+/src/assets/maps/
 /.angular
 ./package-lock.json
 # compiled output
