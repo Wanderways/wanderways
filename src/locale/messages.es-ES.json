@@ -3,6 +3,7 @@
   "translations": {
     "home-welcome-to": "Bienvenido a",
     "home-view-maps": "ver mapas",
-    "theme-selector-label": "Tema"
+    "theme-selector-label": "Tema",
+    "home-catch-phrase": "Para aprender los mapas de forma divertida"
   }
 }

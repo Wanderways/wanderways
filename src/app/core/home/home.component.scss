@@ -22,16 +22,16 @@
         }
     }
     #home-presentation-text{
-        @apply flex flex-col items-start uppercase;
-        @apply tracking-widest uppercase;
+        @apply flex flex-col items-start ;
+        @apply tracking-widest;
         margin-top: 25vh;
         padding: 0 1rem;
         z-index: 1;
         #home-welcome{
-            @apply text-xl ;
+            @apply text-xl uppercase;
         }
         #home-title{
-            @apply text-5xl font-semibold;
+            @apply text-5xl font-semibold uppercase;
         }
         #home-button-see-maps{
             @apply self-end;
