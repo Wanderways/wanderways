@@ -1,0 +1,152 @@
+[
+  {
+    "mapIdentifier": "world_onu",
+    "relatedSvg": "",
+    "mapDisplayName": {
+        "en_US":["Pays du monde - ONU"],
+        "fr_FR":["Countries of the world - UN"],
+        "de_DE":["Länder der Welt - UNO"],
+        "es_ES":["Países del mundo - ONU"],
+        "pt_PT":["Países do mundo - ONU"]
+    },
+    "map_type":"coun",
+    "tags":["cont_wo"],
+    "wiki_url":"https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
+    "available":false
+  },
+  {
+    "mapIdentifier": "world_iso",
+    "relatedSvg": "",
+    "mapDisplayName": {
+        "en_US":["Pays du monde - ISO 3166-1"],
+        "fr_FR":["Countries of the world - ISO 3166-1"],
+        "de_DE":["Länder der Welt - ISO3166-1"],
+        "es_ES":["Países del mundo - ISO 3166-1"],
+        "pt_PT":["Países do mundo - ISO 3166-1"]
+    },
+    "map_type":"coun",
+    "tags":["cont_wo"],
+    "wiki_url":"https://en.wikipedia.org/wiki/ISO_3166-1",
+    "available":false
+  },
+  {
+    "mapIdentifier": "eu_cont_coun",
+    "relatedSvg": "",
+    "mapDisplayName": {
+        "en_US":["European countries"],
+        "fr_FR":["Pays d'Europe"],
+        "de_DE":["Europäische Länder"],
+        "es_ES":["Países europeos"],
+        "pt_PT":["Países europeus"]
+    },
+    "map_type":"coun",
+    "tags":["cont_eu"],
+    "wiki_url":"https://en.wikipedia.org/wiki/Europe",
+    "available":false
+  },
+  {
+    "mapIdentifier": "as_cont_coun",
+    "relatedSvg": "",
+    "mapDisplayName": {
+        "en_US":["Asian countries"],
+        "fr_FR":["Pays d'Asie"],
+        "de_DE":["Asiatische Länder"],
+        "es_ES":["Países asiáticos"],
+        "pt_PT":["Países asiáticos"]
+    },
+    "map_type":"coun",
+    "tags":["cont_as"],
+    "wiki_url":"https://en.wikipedia.org/wiki/Asia",
+    "available":false
+  },
+  {
+    "mapIdentifier": "na_cont_coun",
+    "relatedSvg": "",
+    "mapDisplayName": {
+        "en_US":["North American countries"],
+        "fr_FR":["Pays d'Amérique du nord"],
+        "de_DE":["Nordamerikanische Länder"],
+        "es_ES":["Paises de america del norte"],
+        "pt_PT":["Países da América do Norte"]
+    },
+    "map_type":"coun",
+    "tags":["cont_na"],
+    "wiki_url":"https://en.wikipedia.org/wiki/North_America",
+    "available":false
+  },
+  {
+    "mapIdentifier": "sa_cont_coun",
+    "relatedSvg": "",
+    "mapDisplayName": {
+        "en_US":["South American countries"],
+        "fr_FR":["Pays d'Amérique du sud"],
+        "de_DE":["Südamerikanische Länder"],
+        "es_ES":["Países sudamericanos"],
+        "pt_PT":["Países da América do Sul"]
+    },
+    "map_type":"coun",
+    "tags":["cont_sa"],
+    "wiki_url":"https://en.wikipedia.org/wiki/South_America",
+    "available":false
+  },
+  {
+    "mapIdentifier": "af_cont_coun",
+    "relatedSvg": "",
+    "mapDisplayName": {
+        "en_US":["African countries"],
+        "fr_FR":["Pays d'Afrique"],
+        "de_DE":["Afrikanische Länder"],
+        "es_ES":["Países africanos"],
+        "pt_PT":["Países africanos"]
+    },
+    "map_type":"coun",
+    "tags":["cont_af"],
+    "wiki_url":"https://en.wikipedia.org/wiki/Africa",
+    "available":false
+  },
+  {
+    "mapIdentifier": "oc_cont_coun",
+    "relatedSvg": "",
+    "mapDisplayName": {
+        "en_US":["Oceania countries"],
+        "fr_FR":["Pays d'Océanie"],
+        "de_DE":["Länder Ozeaniens"],
+        "es_ES":["Países de Oceania"],
+        "pt_PT":["Países da Oceania"]
+    },
+    "map_type":"coun",
+    "tags":["cont_oc"],
+    "wiki_url":"https://en.wikipedia.org/wiki/Oceania",
+    "available":false
+  },
+  {
+    "mapIdentifier": "fr_dep",
+    "relatedSvg": "map-fr-sub-lvl2",
+    "mapDisplayName": {
+        "en_US":["French departments"],
+        "fr_FR":["Départements français"],
+        "de_DE":["Französische Abteilungen"],
+        "es_ES":["Departamentos franceses"],
+        "pt_PT":["Departamentos franceses"]
+    },
+    "map_type":"subd",
+    "tags":["cont_eu","coun_fr"],
+    "wiki_url":"https://en.wikipedia.org/wiki/Departments_of_France",
+    "available":true
+  },
+  {
+    "mapIdentifier": "jp_pref",
+    "relatedSvg": "map-jp-sub-lvl2",
+    "mapDisplayName": {
+        "en_US":["Prefectures of japan"],
+        "fr_FR":["Préfectures du japon"],
+        "de_DE":["Präfekturen von Japan"],
+        "es_ES":["Prefecturas de japón"],
+        "pt_PT":["Prefeituras do japão"]
+    },
+    "map_type":"subd",
+    "tags":["cont_as","coun_jp"],
+    "wiki_url":"https://en.wikipedia.org/wiki/Prefectures_of_Japan",
+    "available":true
+  }
+]

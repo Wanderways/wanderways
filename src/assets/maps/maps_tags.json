@@ -1,0 +1,200 @@
+[
+    {
+        "id":"cont_wo",
+        "areaTypes":"cont",
+        "displayName":{
+            "en_US":["World"],
+            "fr_FR":["Monde"],
+            "de_DE":["Welt"],
+            "es_ES":["Mundo"],
+            "pt_PT":["Mundo"]
+        },
+        "info":{
+            "en_US":["Maps composed of at least 2 continents."],
+            "fr_FR":["Cartes composées d'au moins 2 continents."],
+            "de_DE":["Karten bestehend aus mindestens 2 Kontinenten."],
+            "es_ES":["Mapas compuestos por al menos 2 continentes."],
+            "pt_PT":["Mapas compostos por pelo menos 2 continentes."]
+        }
+    },
+    {
+        "id":"cont_eu",
+        "areaTypes":"cont",
+        "displayName":{
+            "en_US":["Europe"],
+            "fr_FR":["Europe"],
+            "de_DE":["Europa"],
+            "es_ES":["Europa"],
+            "pt_PT":["Europa"]
+        },
+        "info":{
+            "en_US":["Map representing whole or part of Europe."],
+            "fr_FR":["Carte représentant tout ou partie de l'Europe."],
+            "de_DE":["Karte, die ganz oder einen Teil von Europa darstellt."],
+            "es_ES":["Mapa que representa toda o parte de Europa."],
+            "pt_PT":["Mapa representando toda ou parte da Europa."]
+        }
+    },
+    {
+        "id":"cont_as",
+        "areaTypes":"cont",
+        "displayName":{
+            "en_US":["Asia"],
+            "fr_FR":["Asie"],
+            "de_DE":["Asien"],
+            "es_ES":["Asia"],
+            "pt_PT":["Ásia"]
+        },
+        "info":{
+            "en_US":["Map representing whole or part of Asia."],
+            "fr_FR":["Carte représentant tout ou partie de l'Asie."],
+            "de_DE":["Karte, die ganz oder einen Teil Asiens darstellt."],
+            "es_ES":["Mapa que representa toda o parte de Asia."],
+            "pt_PT":["Mapa representando todo ou parte da Ásia."]
+        }
+    },
+    {
+        "id":"cont_na",
+        "areaTypes":"cont",
+        "displayName":{
+            "en_US":["North America"],
+            "fr_FR":["Amérique du nord"],
+            "de_DE":["Nordamerika"],
+            "es_ES":["Norteamérica"],
+            "pt_PT":["América do Norte"]
+        },
+        "info":{
+            "en_US":["Map representing whole or part of North America."],
+            "fr_FR":["Carte représentant tout ou partie de l'Amérique du nord."],
+            "de_DE":["Karte, die ganz oder einen Teil von Nordamerika darstellt."],
+            "es_ES":["Mapa que representa la totalidad o parte de América del Norte."],
+            "pt_PT":["Mapa representando toda ou parte da América do Norte."]
+        }
+    },
+    {
+        "id":"cont_so",
+        "areaTypes":"cont",
+        "displayName":{
+            "en_US":["South America"],
+            "fr_FR":["Amérique du sud"],
+            "de_DE":["Südamerika"],
+            "es_ES":["Sudamerica"],
+            "pt_PT":["América do Sul"]
+        },
+        "info":{
+            "en_US":["Map representing whole or part of South America."],
+            "fr_FR":["Carte représentant tout ou partie de l'Amérique du sud."],
+            "de_DE":["Karte, die ganz oder einen Teil von Südamerika darstellt."],
+            "es_ES":["Mapa que representa la totalidad o parte de América del Sur."],
+            "pt_PT":["Mapa representando toda ou parte da América do Sul."]
+        }
+    },
+    {
+        "id":"cont_af",
+        "areaTypes":"cont",
+        "displayName":{
+            "en_US":["Africa"],
+            "fr_FR":["Afrique"],
+            "de_DE":["Afrika"],
+            "es_ES":["África"],
+            "pt_PT":["África"]
+        },
+        "info":{
+            "en_US":["Map representing whole or part of Africa."],
+            "fr_FR":["Carte représentant tout ou partie de l'Afrique."],
+            "de_DE":["Karte, die ganz oder einen Teil von Afrika darstellt."],
+            "es_ES":["Mapa que representa la totalidad o parte de África."],
+            "pt_PT":["Mapa representando toda ou parte da África."]
+        }
+    },
+    {
+        "id":"cont_oc",
+        "areaTypes":"cont",
+        "displayName":{
+            "en_US":["Oceania"],
+            "fr_FR":["Océanie"],
+            "de_DE":["Ozeanien"],
+            "es_ES":["Oceanía"],
+            "pt_PT":["Oceania"]
+        },
+        "info":{
+            "en_US":["Map representing whole or part of Oceania."],
+            "fr_FR":["Carte représentant tout ou partie de l'Océanie."],
+            "de_DE":["Karte, die ganz oder teilweise Ozeanien darstellt."],
+            "es_ES":["Mapa que representa la totalidad o parte de Oceanía."],
+            "pt_PT":["Mapa representando toda ou parte da Oceania."]
+        }
+    },
+    {
+        "id":"orga_mi",
+        "areaTypes":"orga",
+        "displayName":{
+            "en_US":["Military organization"],
+            "fr_FR":["Organisation militaire"],
+            "de_DE":["Militärische Organisation"],
+            "es_ES":["Organización militar"],
+            "pt_PT":["Organização militar"]
+        },
+        "info":{
+            "en_US":["Map representing a military-like organization/alliance."],
+            "fr_FR":["Carte représentant une organisation/alliance de type militaire."],
+            "de_DE":["Karte, die eine militärähnliche Organisation/Allianz repräsentiert."],
+            "es_ES":["Mapa que representa una organización/alianza de tipo militar."],
+            "pt_PT":["Mapa representando uma organização/aliança militar."]
+        }
+    },
+    {
+        "id":"orga_ec",
+        "areaTypes":"orga",
+        "displayName":{
+            "en_US":["Economic organization"],
+            "fr_FR":["Organisation économique"],
+            "de_DE":["Wirtschaftliche Organisation"],
+            "es_ES":["Organización económica"],
+            "pt_PT":["Organização econômica"]
+        },
+        "info":{
+            "en_US":["Map representing an organization/alliance of an economic type."],
+            "fr_FR":["Carte représentant une organisation/alliance de type économique."],
+            "de_DE":["Karte, die eine Organisation/Allianz wirtschaftlichen Typs darstellt."],
+            "es_ES":["Mapa que representa una organización/alianza de tipo económico."],
+            "pt_PT":["Mapa representando uma organização/aliança de tipo econômico."]
+        }
+    },
+    {
+        "id":"coun_fr",
+        "areaTypes":"coun",
+        "displayName":{
+            "en_US":["France"],
+            "fr_FR":["France"],
+            "de_DE":["Frankreich"],
+            "es_ES":["França"],
+            "pt_PT":["França"]
+        },
+        "info":{
+            "en_US":["Map representing whole or part of France."],
+            "fr_FR":["Carte représentant tout ou partie de la France."],
+            "de_DE":["Karte, die ganz oder teilweise Frankreich darstellt."],
+            "es_ES":["Mapa que representa toda o parte de Francia."],
+            "pt_PT":["Mapa representando todo ou parte da França."]
+        }
+    },
+    {
+        "id":"coun_jp",
+        "areaTypes":"coun",
+        "displayName":{
+            "en_US":["Japan"],
+            "fr_FR":["Japon"],
+            "de_DE":["Japan"],
+            "es_ES":["Japón"],
+            "pt_PT":["Japão"]
+        },
+        "info":{
+            "en_US":["Map representing whole or part of Japan."],
+            "fr_FR":["Carte représentant tout ou partie du Japon."],
+            "de_DE":["Karte, die ganz oder teilweise Japan darstellt."],
+            "es_ES":["Mapa que representa todo o parte de Japón."],
+            "pt_PT":["Mapa representando todo ou parte do Japão."]
+        }
+    }
+]
