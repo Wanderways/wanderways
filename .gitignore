@@ -2,7 +2,7 @@
 
 /src/environments/
 
-/src/assets/maps/
+/src/assets/maps/flags/
 /.angular
 ./package-lock.json
 # compiled output
