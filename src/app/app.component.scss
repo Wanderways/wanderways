@@ -19,7 +19,7 @@
         flex:1 0 auto;
         #header {
             @apply flex ;
-            @apply w-screen;
+            @apply w-full;
             z-index: 50;
             #header-content{
                 max-width: 1392px;
@@ -39,7 +39,7 @@
             }
             
             &.isSticky{
-                @apply sticky top-0 w-screen;
+                @apply sticky top-0 ;
                 backdrop-filter: blur(20px) opacity(0);
                 &.isScrolled{
                     backdrop-filter: blur(20px) opacity(1);

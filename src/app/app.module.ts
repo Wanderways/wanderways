@@ -12,6 +12,7 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 
 import {MatRippleModule} from '@angular/material/core';
 import { CoreModule } from './core/core.module';
+import { HttpClientModule } from '@angular/common/http';
 
 let matModules : any[]=[
   MatRippleModule
@@ -26,6 +27,7 @@ let matModules : any[]=[
     CoreModule,
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ...matModules,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),

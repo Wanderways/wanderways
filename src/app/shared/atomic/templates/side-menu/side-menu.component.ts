@@ -11,8 +11,8 @@ export class SideMenuComponent implements OnInit {
   @Input() direction : ('left'|'right') = 'left';
 
   
-  @Input() behavior : ('reactive'|'static'|'fixed') = 'static';
-  @HostBinding('class') class = 'static';
+  @Input() behavior : ('reactive'|'sticky'|'fixed') = 'sticky';
+  @HostBinding('class') class = 'sticky';
 
 
   @Input() displaySideMenu : boolean | undefined = undefined;
@@ -26,7 +26,7 @@ export class SideMenuComponent implements OnInit {
     if(this.behavior === 'reactive'){// Depends on size
       this.onResize();
     }else{// Depends on initialisation
-      this.class = this.behavior === 'fixed'?'fixed':'static';
+      this.class = this.behavior === 'fixed'?'fixed':'sticky';
       this.class += ' '+ this.direction;
     }
   }
@@ -45,7 +45,7 @@ export class SideMenuComponent implements OnInit {
   onResize(){
     this.isSmallDevice = window.innerWidth<=1024;
     if(this.behavior === 'reactive') // If depends on size
-      this.class = this.isSmallDevice ? 'fixed':'static';
+      this.class = this.isSmallDevice ? 'fixed':'sticky';
     this.class += ' '+ this.direction;
   }
   /**
