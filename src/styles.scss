@@ -57,6 +57,14 @@ $svg-invert-white :1;
         --svg-hue-rotate:3deg;
         --svg-brightness:104%;
         --svg-contrast:101%;
+
+        /* Map related */
+        --map-land : #08080833;
+        --map-land-stroke : #ffffffff;
+        --map-land-found : #347B98FF;
+        --map-land-selected : #FDFDFDFF;
+        --map-land-error : #BE2D0DFF;
+        --map-land-won : #FCCB1AFF;
     }
     .light {
         --color-scheme: light;
@@ -71,6 +79,14 @@ $svg-invert-white :1;
         --svg-hue-rotate:82deg;
         --svg-brightness:94%;
         --svg-contrast:103%;
+
+        /* Map related */
+        --map-land : #32323257;
+        --map-land-stroke : #ffffffff;
+        --map-land-found : #347B98FF;
+        --map-land-selected : #FDFDFDFF;
+        --map-land-error : #BE2D0DFF;
+        --map-land-won : #FCCB1AFF;
     }
     .dark {
         --color-scheme: dark;
@@ -85,6 +101,14 @@ $svg-invert-white :1;
         --svg-hue-rotate:3deg;
         --svg-brightness:104%;
         --svg-contrast:101%;
+
+        /* Map related */
+        --map-land : #80808033;
+        --map-land-stroke : #ffffffff;
+        --map-land-found : #347B98FF;
+        --map-land-selected : #FDFDFDFF;
+        --map-land-error : #BE2D0DFF;
+        --map-land-won : #FCCB1AFF;
     }
 }
 @layer utilities{
@@ -193,4 +217,28 @@ img {
     -moz-user-drag: none;
     -o-user-drag: none;
     user-drag: none;
-  }
+}
+
+.land{
+    fill: var(--map-land);
+    stroke: white;
+    stroke-width: 0.5px;
+}
+.found{
+    fill: var(--map-land-found);
+}
+.selected{
+    fill: var(--map-land-selected);
+    fill: #FDFDFD;
+}
+.error{
+    fill: var(--map-land-error);
+}
+.won{
+    fill: var(--map-land-won);
+}
+
+.separator{
+    fill: transparent;
+    stroke: white;
+}
