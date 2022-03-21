@@ -1,0 +1,8 @@
+<ng-container *ngIf="loadedMap !== undefined else loading">
+    <svg [attr.xlmns]="loadedMap.xlmns" [attr.viewBox]="loadedMap.viewBox">
+        <path #path.id *ngFor="let path of loadedMap.content" id="{{path.id}}" (click)="logId(path.id)" class="{{path.class}}" [attr.d]="path.d"/>
+    </svg>
+</ng-container>
+<ng-template #loading>
+    <div id="loading"></div>
+</ng-template>
