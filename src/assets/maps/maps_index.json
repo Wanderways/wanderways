@@ -3,11 +3,11 @@
     "mapIdentifier": "world_onu",
     "relatedSvg": "",
     "mapDisplayName": {
-        "en_US":["Pays du monde - ONU"],
-        "fr_FR":["Countries of the world - UN"],
-        "de_DE":["Länder der Welt - UNO"],
-        "es_ES":["Países del mundo - ONU"],
-        "pt_PT":["Países do mundo - ONU"]
+        "en_US":["Country - World - UN"],
+        "fr_FR":["Pays - Monde - ONU"],
+        "de_DE":["Land - Welt - UNO"],
+        "es_ES":["País - Mundo - ONU"],
+        "pt_PT":["País - Mundo - ONU"]
     },
     "map_type":"coun",
     "tags":["cont_wo"],
@@ -18,11 +18,11 @@
     "mapIdentifier": "world_iso",
     "relatedSvg": "",
     "mapDisplayName": {
-        "en_US":["Pays du monde - ISO 3166-1"],
-        "fr_FR":["Countries of the world - ISO 3166-1"],
-        "de_DE":["Länder der Welt - ISO3166-1"],
-        "es_ES":["Países del mundo - ISO 3166-1"],
-        "pt_PT":["Países do mundo - ISO 3166-1"]
+        "en_US":["Country - World - ISO"],
+        "fr_FR":["Pays - Monde - ISO"],
+        "de_DE":["Land - Welt - ISO"],
+        "es_ES":["País - Mundo - ISO"],
+        "pt_PT":["País - Mundo - ISO"]
     },
     "map_type":"coun",
     "tags":["cont_wo"],
@@ -33,11 +33,11 @@
     "mapIdentifier": "eu_cont_coun",
     "relatedSvg": "",
     "mapDisplayName": {
-        "en_US":["European countries"],
-        "fr_FR":["Pays d'Europe"],
-        "de_DE":["Europäische Länder"],
-        "es_ES":["Países europeos"],
-        "pt_PT":["Países europeus"]
+        "en_US":["Country - Europe"],
+        "fr_FR":["Pays - Europe"],
+        "de_DE":["Land - Europa"],
+        "es_ES":["País - Europa"],
+        "pt_PT":["País - Europa"]
     },
     "map_type":"coun",
     "tags":["cont_eu"],
@@ -48,11 +48,11 @@
     "mapIdentifier": "as_cont_coun",
     "relatedSvg": "",
     "mapDisplayName": {
-        "en_US":["Asian countries"],
-        "fr_FR":["Pays d'Asie"],
-        "de_DE":["Asiatische Länder"],
-        "es_ES":["Países asiáticos"],
-        "pt_PT":["Países asiáticos"]
+        "en_US":["Country - Asia"],
+        "fr_FR":["Pays - Asie"],
+        "de_DE":["Land - Asien"],
+        "es_ES":["País - Asia"],
+        "pt_PT":["País - Ásia"]
     },
     "map_type":"coun",
     "tags":["cont_as"],
@@ -63,11 +63,11 @@
     "mapIdentifier": "na_cont_coun",
     "relatedSvg": "",
     "mapDisplayName": {
-        "en_US":["North American countries"],
-        "fr_FR":["Pays d'Amérique du nord"],
-        "de_DE":["Nordamerikanische Länder"],
-        "es_ES":["Paises de america del norte"],
-        "pt_PT":["Países da América do Norte"]
+        "en_US":["Country - North America"],
+        "fr_FR":["Pays - Amérique du nord"],
+        "de_DE":["Land - Nordamerika"],
+        "es_ES":["País - Norteamérica"],
+        "pt_PT":["País - América do Norte"]
     },
     "map_type":"coun",
     "tags":["cont_na"],
@@ -78,11 +78,11 @@
     "mapIdentifier": "sa_cont_coun",
     "relatedSvg": "",
     "mapDisplayName": {
-        "en_US":["South American countries"],
-        "fr_FR":["Pays d'Amérique du sud"],
-        "de_DE":["Südamerikanische Länder"],
-        "es_ES":["Países sudamericanos"],
-        "pt_PT":["Países da América do Sul"]
+        "en_US":["Country - South America"],
+        "fr_FR":["Pays - Amérique du sud"],
+        "de_DE":["Land - Südamerika"],
+        "es_ES":["País - América del Sur"],
+        "pt_PT":["País - América do Sul"]
     },
     "map_type":"coun",
     "tags":["cont_sa"],
@@ -93,11 +93,11 @@
     "mapIdentifier": "af_cont_coun",
     "relatedSvg": "",
     "mapDisplayName": {
-        "en_US":["African countries"],
-        "fr_FR":["Pays d'Afrique"],
-        "de_DE":["Afrikanische Länder"],
-        "es_ES":["Países africanos"],
-        "pt_PT":["Países africanos"]
+        "en_US":["Country - Africa"],
+        "fr_FR":["Pays - Afrique"],
+        "de_DE":["Land - Afrika"],
+        "es_ES":["País - África"],
+        "pt_PT":["País - África"]
     },
     "map_type":"coun",
     "tags":["cont_af"],
@@ -108,11 +108,11 @@
     "mapIdentifier": "oc_cont_coun",
     "relatedSvg": "",
     "mapDisplayName": {
-        "en_US":["Oceania countries"],
-        "fr_FR":["Pays d'Océanie"],
-        "de_DE":["Länder Ozeaniens"],
-        "es_ES":["Países de Oceania"],
-        "pt_PT":["Países da Oceania"]
+        "en_US":["Country - Oceania"],
+        "fr_FR":["Pays - Océanie"],
+        "de_DE":["Land - Ozeanien"],
+        "es_ES":["País - Oceania"],
+        "pt_PT":["País - Oceania"]
     },
     "map_type":"coun",
     "tags":["cont_oc"],
@@ -123,11 +123,11 @@
     "mapIdentifier": "fr_dep",
     "relatedSvg": "map-fr-sub-lvl2",
     "mapDisplayName": {
-        "en_US":["French departments"],
-        "fr_FR":["Départements français"],
-        "de_DE":["Französische Abteilungen"],
-        "es_ES":["Departamentos franceses"],
-        "pt_PT":["Departamentos franceses"]
+        "en_US":["Departments - France "],
+        "fr_FR":["Départements - France"],
+        "de_DE":["Abteilungen - Frankreich"],
+        "es_ES":["Departamentos - Francia"],
+        "pt_PT":["Departamentos - França"]
     },
     "map_type":"subd",
     "tags":["cont_eu","coun_fr"],
@@ -138,11 +138,11 @@
     "mapIdentifier": "jp_pref",
     "relatedSvg": "map-jp-sub-lvl2",
     "mapDisplayName": {
-        "en_US":["Prefectures of japan"],
-        "fr_FR":["Préfectures du japon"],
-        "de_DE":["Präfekturen von Japan"],
-        "es_ES":["Prefecturas de japón"],
-        "pt_PT":["Prefeituras do japão"]
+        "en_US":["Prefectures - Japan"],
+        "fr_FR":["Préfectures - Japon"],
+        "de_DE":["Präfekturen - Japan"],
+        "es_ES":["Prefecturas - Japón"],
+        "pt_PT":["Prefeituras - Japão"]
     },
     "map_type":"subd",
     "tags":["cont_as","coun_jp"],
