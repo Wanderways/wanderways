@@ -1,44 +1,52 @@
-<div id="filter-container" class="mx-2 flex flex-col select-none items-end">
-    <div class="flex items-center justify-start p-2 gap-1 rounded cursor-pointer " matRipple matRippleColor="#FFFFFF60" (click)="displayFilter = !displayFilter">
+<!-- Filter container -->
+<div id="filter-container">
+    <!-- Open filter button -->
+    <div id="filter-button" matRipple matRippleColor="#FFFFFF60" (click)="displayFilter = !displayFilter">
         <img src="./assets/icons/filter.svg" class="svg-current-color">
-        <span class="flex items-center">Filter</span>
+        <span>Filter</span>
+
     </div>
+    <!-- Filters -->
     <ng-container *ngIf="displayFilter">
-        <div class="p-2 flex gap-4 flex-wrap">
-            <ng-container *ngFor="let tagFilter of tagFilterList">
-                <label class="flex gap-1 items-center cursor-pointer  my-2"> <input type="checkbox" name="{{tagFilter.label| i18n}}" [checked]="tagFilter.active" (change)="tagFilter.active = !tagFilter.active">{{tagFilter.label| i18n}}</label>
-            </ng-container>
-        </div>
+        <!-- Go through tag categories -->
+        <ng-container *ngFor="let tagGroup of tagGroupList">
+            <div class="my-2 flex flex-col gap-1">
+                <span class="font-light capitalize text-xs">{{tagGroup.displayName | i18n}}</span>
+                <div class="flex gap-4 flex-wrap">
+                    <!-- Go throug tag list -->
+                    <ng-container *ngFor="let tagFilter of tagFilterList">
+                        <ng-container *ngIf="tagFilter.mapTag.tagGroup === tagGroup.id">
+                            <label class="flex gap-1 items-center cursor-pointer"> <input type="checkbox" name="{{tagFilter.mapTag.displayName| i18n}}" [checked]="tagFilter.active" (change)="tagFilter.active = !tagFilter.active">{{tagFilter.mapTag.displayName| i18n}}</label>
+                        </ng-container>
+                    </ng-container>
+                </div>
+            </div>
+        </ng-container>
+        <!-- @TODO Make it so conf is saved if user wants it -->
+        <label class="flex gap-1 items-center cursor-pointer self-end"> <input type="checkbox" name="saveFilter" [checked]="false">Save filter ?</label>
     </ng-container>
-    
 </div>
-<div class=" mx-4 flex flex-col gap-8">
+
+<!-- Map tiles container -->
+<div id="map-tiles-container" class=" ">
     <ng-container *ngFor="let tag of mapTagsList">
         <ng-container *ngIf="isTagFiltered(tag)">
-            <div>
-                <p class="uppercase font-medium">{{ tag.displayName | i18n }}</p>
+            <div class="map-tiles-category-container">
+                <span class="">{{ tag.displayName | i18n }}</span>
                 <ng-container *ngIf="tagHasMap(tag,mapIndexEntryList) else noMapForTag">
-                    <div class="flex gap-2  flex-wrap">
+                    <div class="flex gap-2 p-1 flex-wrap">
                         <ng-container *ngFor="let entry of mapIndexEntryList">
-                            <ng-container *ngIf="entryHasTag(entry,tag.id) && entry.available">
-                                <div class="current-bg-color flex rounded overflow-hidden relative" style="height: 10rem; width: 15rem; background-blend-mode: multiply;">
-                                    <div class="tumbnail-container top-0 right-0 absolute w-full h-full"
-                                    style="mask-image: linear-gradient(to bottom left, black,15%, transparent);;
-                                    -webkit-mask-image: linear-gradient(to bottom left, black,15%, transparent);">
-                                        <img class="svg-current-color w-auto h-full  absolute top-0 right-0 mx-0"
-                                        style="transform: translate(20%, -10%) rotate(-5deg);max-width: 20rem;"
-                                        src="./assets/maps/map_thumbnail/{{entry.mapIdentifier}}.png">
-                                    </div>
-                                    <span class="current-color opacity-100 mt-auto font-thin mx-2 mb-2 text-xl">{{entry.mapDisplayName | i18n}}</span>
-                                </div>
+                            <ng-container *ngIf="entryHasTag(entry,tag.id)">
+                                <app-map-tile [mapEntry]="entry" [available]="entry.available"></app-map-tile>
                             </ng-container>
                         </ng-container>
                     </div>
                 </ng-container>
+                <ng-template #noMapForTag >
+                    <span>No map for tag : {{ tag.displayName | i18n }}</span>
+                    
+                </ng-template>
             </div>
-            <ng-template #noMapForTag >
-                No map available for tag : {{ tag.displayName | i18n }}
-            </ng-template>
         </ng-container>
     </ng-container>
 </div>

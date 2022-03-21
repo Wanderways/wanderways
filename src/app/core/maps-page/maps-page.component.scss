@@ -4,4 +4,24 @@
     width: 100%;
     max-width: min(1392px, 100vw);
     z-index: 1;
+    #filter-container{
+        @apply m-4 flex flex-col select-none items-start;
+        #filter-button{
+            @apply flex items-center justify-start p-2 gap-1 rounded cursor-pointer;
+            span{
+                @apply flex items-center;
+            }
+        }
+    }
+    #map-tiles-container{
+        @apply mx-4 flex flex-wrap gap-8;
+
+        .map-tiles-category-container{
+            display: flex;
+            flex-direction: column;
+            p{
+                @apply uppercase font-medium;
+            }
+        }
+    }
 }

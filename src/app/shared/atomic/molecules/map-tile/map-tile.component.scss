@@ -1,0 +1,49 @@
+:host {
+  @apply flex flex-col rounded overflow-hidden relative;
+  flex-shrink: 0;
+  height: 10rem;
+  width: 15rem;
+  background-blend-mode: multiply;
+  transition: box-shadow 0.3s ease-in-out;
+  .thumbnail-container {
+    @apply top-0 right-0 absolute w-full h-full select-none;
+    mask-image: linear-gradient(to bottom left, black, 15%, transparent);
+    -webkit-mask-image: linear-gradient(
+      to bottom left,
+      black,
+      15%,
+      transparent
+    );
+    img {
+      @apply w-auto h-full  absolute top-0 right-0 mx-0;
+      transform: translate(20%, -10%) rotate(-5deg);
+      max-width: 20rem;
+    }
+  }
+
+  .button-access-maps {
+    @apply self-start;
+    @apply mx-2 mb-2 px-3 py-2 rounded;
+    @apply text-current-color capitalize select-none;
+  }
+
+  span {
+    @apply opacity-100 mt-auto font-thin mx-2 mb-2 text-xl;
+  }
+
+  .map-tile-not-available {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #0000008f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &:not(.not-available) {
+    box-shadow: 0px 0px 3px 1px #8888882f;
+  }
+  &:not(.not-available):hover {
+    box-shadow: 0px 0px 10px 2px #888888;
+  }
+}

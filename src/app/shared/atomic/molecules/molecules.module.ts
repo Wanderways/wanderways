@@ -3,10 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
 import { MatRippleModule } from '@angular/material/core';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
+import { MapTileComponent } from './map-tile/map-tile.component';
+import { MapsModule } from '../../maps/maps.module';
 
 let components : any[] = [
   ThemeSelectorComponent,
-  LanguageSelectorComponent
+  LanguageSelectorComponent,
+  MapTileComponent
 ]
 
 
@@ -16,7 +19,8 @@ let components : any[] = [
   ],
   imports: [
     CommonModule,
-    MatRippleModule
+    MatRippleModule,
+    MapsModule
   ],exports:[
     ...components
   ]

@@ -1,0 +1,8 @@
+<div class="thumbnail-container">
+    <img class="svg-current-color" src="./assets/maps/map_thumbnail/{{mapEntry.mapIdentifier}}.png">
+</div>
+<span class="current-color">{{mapEntry.mapDisplayName | i18n}}</span>
+<button matRipple matRippleColor="#FFFFFF60"  i18n="@@button-access-maps" class="button-access-maps" >Let's go</button>
+<ng-container *ngIf="!available">
+    <div class="map-tile-not-available" i18n="@@map-tile-not-available">Not available yet !</div>
+</ng-container>
