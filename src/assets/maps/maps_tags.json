@@ -1,7 +1,7 @@
 [
     {
         "id":"cont_wo",
-        "areaTypes":"cont",
+        "tagGroup":"cont",
         "displayName":{
             "en_US":["World"],
             "fr_FR":["Monde"],
@@ -19,7 +19,7 @@
     },
     {
         "id":"cont_eu",
-        "areaTypes":"cont",
+        "tagGroup":"cont",
         "displayName":{
             "en_US":["Europe"],
             "fr_FR":["Europe"],
@@ -37,7 +37,7 @@
     },
     {
         "id":"cont_as",
-        "areaTypes":"cont",
+        "tagGroup":"cont",
         "displayName":{
             "en_US":["Asia"],
             "fr_FR":["Asie"],
@@ -55,7 +55,7 @@
     },
     {
         "id":"cont_na",
-        "areaTypes":"cont",
+        "tagGroup":"cont",
         "displayName":{
             "en_US":["North America"],
             "fr_FR":["Amérique du nord"],
@@ -73,7 +73,7 @@
     },
     {
         "id":"cont_so",
-        "areaTypes":"cont",
+        "tagGroup":"cont",
         "displayName":{
             "en_US":["South America"],
             "fr_FR":["Amérique du sud"],
@@ -91,7 +91,7 @@
     },
     {
         "id":"cont_af",
-        "areaTypes":"cont",
+        "tagGroup":"cont",
         "displayName":{
             "en_US":["Africa"],
             "fr_FR":["Afrique"],
@@ -109,7 +109,7 @@
     },
     {
         "id":"cont_oc",
-        "areaTypes":"cont",
+        "tagGroup":"cont",
         "displayName":{
             "en_US":["Oceania"],
             "fr_FR":["Océanie"],
@@ -127,7 +127,7 @@
     },
     {
         "id":"orga_mi",
-        "areaTypes":"orga",
+        "tagGroup":"orga",
         "displayName":{
             "en_US":["Military organization"],
             "fr_FR":["Organisation militaire"],
@@ -145,7 +145,7 @@
     },
     {
         "id":"orga_ec",
-        "areaTypes":"orga",
+        "tagGroup":"orga",
         "displayName":{
             "en_US":["Economic organization"],
             "fr_FR":["Organisation économique"],
@@ -163,7 +163,7 @@
     },
     {
         "id":"coun_fr",
-        "areaTypes":"coun",
+        "tagGroup":"coun",
         "displayName":{
             "en_US":["France"],
             "fr_FR":["France"],
@@ -181,7 +181,7 @@
     },
     {
         "id":"coun_jp",
-        "areaTypes":"coun",
+        "tagGroup":"coun",
         "displayName":{
             "en_US":["Japan"],
             "fr_FR":["Japon"],

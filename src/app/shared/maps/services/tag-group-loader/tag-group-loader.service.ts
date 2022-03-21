@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AreaType } from './area-types-loader.interface';
+import { TagGroup } from './tag-group.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AreaTypesLoaderService {
+export class TagGroupLoaderService {
   private PATH : string = "./assets/maps/";
-  private FILE_NAME : string = "areaTypes";
+  private FILE_NAME : string = "area_types";
   private FILE_EXTENSION=".json";
 
   constructor(private http: HttpClient) { }
@@ -17,7 +17,7 @@ export class AreaTypesLoaderService {
    * Allows to load the list of area types
    * @returns The list of existing area types
    */
-  loadAreaTypes() : Observable<AreaType[]>{
-    return this.http.get<AreaType[]>(this.PATH+this.FILE_NAME+this.FILE_EXTENSION);
+  loadTagGroup() : Observable<TagGroup[]>{
+    return this.http.get<TagGroup[]>(this.PATH+this.FILE_NAME+this.FILE_EXTENSION);
   }
 }
