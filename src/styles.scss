@@ -131,6 +131,13 @@ $svg-invert-white :1;
     .bg-violetta-theme{
         background-image: linear-gradient(45deg, var(--violetta-primary) 0%, var(--violetta-secondary) 100%);
     }
+
+    .bg-dark{
+        background-color: var(--dark-background);
+    }
+    .bg-light{
+        background-color: var(--light-background);
+    }
     
     .candy-text-color,
     .violetta-text-color
