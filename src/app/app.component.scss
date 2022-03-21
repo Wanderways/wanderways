@@ -15,8 +15,7 @@
     }
 
     #main-content {
-        @apply flex flex-col;
-        flex:1 0 auto;
+        width: 100%;
         #header {
             @apply flex ;
             @apply w-full;

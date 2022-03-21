@@ -1,5 +1,5 @@
 :host{
-    @apply flex flex-col self-center;
+    @apply flex flex-col mx-auto mb-2;
     flex : 1 0 auto;
     width: 100%;
     max-width: min(1392px, 100vw);
@@ -19,6 +19,8 @@
         .map-tiles-category-container{
             display: flex;
             flex-direction: column;
+            flex-grow: 1;
+            gap: 0.5rem;
             p{
                 @apply uppercase font-medium;
             }
