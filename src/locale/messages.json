@@ -4,6 +4,11 @@
     "home-welcome-to": "Welcome to",
     "home-view-maps": "See maps",
     "theme-selector-label": "Theme",
-    "home-catch-phrase": "To learn maps the fun way"
+    "home-catch-phrase": "To learn maps the fun way",
+    "button-access-maps": "Let's go",
+    "map-tile-not-available": "Not available yet !",
+    "map-no-map-for-tag":"No map for tag :",
+    "map-save-filter":"Save filter ?",
+    "map-filter":"Filter"
   }
 }

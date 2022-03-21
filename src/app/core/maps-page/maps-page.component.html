@@ -3,8 +3,7 @@
     <!-- Open filter button -->
     <div id="filter-button" matRipple matRippleColor="#FFFFFF60" (click)="displayFilter = !displayFilter">
         <img src="./assets/icons/filter.svg" class="svg-current-color">
-        <span>Filter</span>
-
+        <span i18n="@@map-filter">Filter</span>
     </div>
     <!-- Filters -->
     <ng-container *ngIf="displayFilter">
@@ -23,7 +22,7 @@
             </div>
         </ng-container>
         <!-- @TODO Make it so conf is saved if user wants it -->
-        <label class="flex gap-1 items-center cursor-pointer self-end"> <input type="checkbox" name="saveFilter" [checked]="false">Save filter ?</label>
+        <label class="flex gap-1 items-center cursor-pointer self-end"> <input type="checkbox" name="saveFilter" [checked]="false" i18n="@@map-save-filter" >Save filter ?</label>
     </ng-container>
 </div>
 
@@ -32,9 +31,9 @@
     <ng-container *ngFor="let tag of mapTagsList">
         <ng-container *ngIf="isTagFiltered(tag)">
             <div class="map-tiles-category-container">
-                <span class="">{{ tag.displayName | i18n }}</span>
+                <span class="font-light capitalize text-xs">{{ tag.displayName | i18n }}</span>
                 <ng-container *ngIf="tagHasMap(tag,mapIndexEntryList) else noMapForTag">
-                    <div class="flex gap-2 p-1 flex-wrap">
+                    <div class="flex gap-2 flex-wrap">
                         <ng-container *ngFor="let entry of mapIndexEntryList">
                             <ng-container *ngIf="entryHasTag(entry,tag.id)">
                                 <app-map-tile [mapEntry]="entry" [available]="entry.available"></app-map-tile>
@@ -43,7 +42,7 @@
                     </div>
                 </ng-container>
                 <ng-template #noMapForTag >
-                    <span>No map for tag : {{ tag.displayName | i18n }}</span>
+                    <span i18n="@@map-no-map-for-tag">No map for tag :</span><span>{{ tag.displayName | i18n }}</span>
                     
                 </ng-template>
             </div>
