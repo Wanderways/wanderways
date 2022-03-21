@@ -1,13 +1,12 @@
-<div id="filter-container" class="mx-2 flex flex-col self-start">
-    <div class="flex items-center justify-start p-2 gap-1 rounded cursor-pointer" matRipple matRippleColor="#FFFFFF60" (click)="displayFilter = !displayFilter">
+<div id="filter-container" class="mx-2 flex flex-col select-none items-end">
+    <div class="flex items-center justify-start p-2 gap-1 rounded cursor-pointer " matRipple matRippleColor="#FFFFFF60" (click)="displayFilter = !displayFilter">
         <img src="./assets/icons/filter.svg" class="svg-current-color">
         <span class="flex items-center">Filter</span>
     </div>
     <ng-container *ngIf="displayFilter">
-        <div class="p-2">
+        <div class="p-2 flex gap-4 flex-wrap">
             <ng-container *ngFor="let tagFilter of tagFilterList">
-                <input type="checkbox" name="{{tagFilter.label| i18n}}" [checked]="tagFilter.active" (change)="tagFilter.active = !tagFilter.active">
-                <label for="{{tagFilter.label| i18n}}"> {{tagFilter.label| i18n}}</label><br>
+                <label class="flex gap-1 items-center cursor-pointer  my-2"> <input type="checkbox" name="{{tagFilter.label| i18n}}" [checked]="tagFilter.active" (change)="tagFilter.active = !tagFilter.active">{{tagFilter.label| i18n}}</label>
             </ng-container>
         </div>
     </ng-container>
