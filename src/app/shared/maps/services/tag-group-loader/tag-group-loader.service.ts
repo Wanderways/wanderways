@@ -8,7 +8,7 @@ import { TagGroup } from './tag-group.interface';
 })
 export class TagGroupLoaderService {
   private PATH : string = "./assets/maps/";
-  private FILE_NAME : string = "area_types";
+  private FILE_NAME : string = "tag_group";
   private FILE_EXTENSION=".json";
 
   constructor(private http: HttpClient) { }

@@ -10,7 +10,7 @@
         "pt_PT":["País - Mundo - ONU"]
     },
     "map_type":"coun",
-    "tags":["cont_wo"],
+    "tagIdList":["cont_wo"],
     "wiki_url":"https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
     "available":false
   },
@@ -25,7 +25,7 @@
         "pt_PT":["País - Mundo - ISO"]
     },
     "map_type":"coun",
-    "tags":["cont_wo"],
+    "tagIdList":["cont_wo"],
     "wiki_url":"https://en.wikipedia.org/wiki/ISO_3166-1",
     "available":false
   },
@@ -40,7 +40,7 @@
         "pt_PT":["País - Europa"]
     },
     "map_type":"coun",
-    "tags":["cont_eu"],
+    "tagIdList":["cont_eu"],
     "wiki_url":"https://en.wikipedia.org/wiki/Europe",
     "available":false
   },
@@ -55,7 +55,7 @@
         "pt_PT":["País - Ásia"]
     },
     "map_type":"coun",
-    "tags":["cont_as"],
+    "tagIdList":["cont_as"],
     "wiki_url":"https://en.wikipedia.org/wiki/Asia",
     "available":false
   },
@@ -70,7 +70,7 @@
         "pt_PT":["País - América do Norte"]
     },
     "map_type":"coun",
-    "tags":["cont_na"],
+    "tagIdList":["cont_na"],
     "wiki_url":"https://en.wikipedia.org/wiki/North_America",
     "available":false
   },
@@ -85,7 +85,7 @@
         "pt_PT":["País - América do Sul"]
     },
     "map_type":"coun",
-    "tags":["cont_sa"],
+    "tagIdList":["cont_sa"],
     "wiki_url":"https://en.wikipedia.org/wiki/South_America",
     "available":false
   },
@@ -100,7 +100,7 @@
         "pt_PT":["País - África"]
     },
     "map_type":"coun",
-    "tags":["cont_af"],
+    "tagIdList":["cont_af"],
     "wiki_url":"https://en.wikipedia.org/wiki/Africa",
     "available":false
   },
@@ -115,7 +115,7 @@
         "pt_PT":["País - Oceania"]
     },
     "map_type":"coun",
-    "tags":["cont_oc"],
+    "tagIdList":["cont_oc"],
     "wiki_url":"https://en.wikipedia.org/wiki/Oceania",
     "available":false
   },
@@ -130,7 +130,7 @@
         "pt_PT":["Departamentos - França"]
     },
     "map_type":"subd",
-    "tags":["cont_eu","coun_fr"],
+    "tagIdList":["cont_eu","coun_fr"],
     "wiki_url":"https://en.wikipedia.org/wiki/Departments_of_France",
     "available":true
   },
@@ -145,7 +145,7 @@
         "pt_PT":["Prefeituras - Japão"]
     },
     "map_type":"subd",
-    "tags":["cont_as","coun_jp"],
+    "tagIdList":["cont_as","coun_jp"],
     "wiki_url":"https://en.wikipedia.org/wiki/Prefectures_of_Japan",
     "available":true
   }
