@@ -50,6 +50,10 @@
       {
         "source": "/pt-PT/**",
         "destination": "/pt-PT/index.html"
+      },
+      {
+        "source": "**",
+        "destination": "/en-US/index.html"
       }
     ]
   }
