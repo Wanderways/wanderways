@@ -5,7 +5,7 @@ export interface MapIndexEntry{
         relatedSvg : string,
         mapDisplayName : Locale_I18n,
         map_type: string,
-        tags:string[],
+        tagIdList:string[],
         wiki_url:string,
         available:boolean
 }
