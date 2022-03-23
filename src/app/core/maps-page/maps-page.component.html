@@ -2,33 +2,16 @@
 <div id="filter-container">
     <!-- Open filter button -->
     <div id="filter-button" matRipple matRippleColor="#FFFFFF60" (click)="displayFilter = !displayFilter">
-        <img src="./assets/icons/filter.svg" class="svg-current-color">
+        <img src="./assets/icons/filter.svg" class="svg-current-color" alt="filter image">
         <span i18n="@@map-filter">Filter</span>
     </div>
     <!-- Filters -->
-    <ng-container *ngIf="displayFilter">
-        <!-- Go through tag categories -->
-        <ng-container *ngFor="let tagGroup of tagGroupList">
-            <div class="my-2 flex flex-col gap-1">
-                <span class="font-light capitalize text-xs">{{tagGroup.displayName | i18n}}</span>
-                <div class="flex gap-4 flex-wrap">
-                    <!-- Go throug tag list -->
-                    <ng-container *ngFor="let tagFilter of tagFilterList">
-                        <ng-container *ngIf="tagFilter.mapTag.tagGroup === tagGroup.id">
-                            <label class="flex gap-1 items-center cursor-pointer"> <input type="checkbox" name="{{tagFilter.mapTag.displayName| i18n}}" [checked]="tagFilter.active" (change)="tagFilter.active = !tagFilter.active">{{tagFilter.mapTag.displayName| i18n}}</label>
-                        </ng-container>
-                    </ng-container>
-                </div>
-            </div>
-        </ng-container>
-        <!-- @TODO Make it so conf is saved if user wants it -->
-        <label class="flex gap-1 items-center cursor-pointer self-end"> <input type="checkbox" name="saveFilter" [checked]="false" i18n="@@map-save-filter" >Save filter ?</label>
-    </ng-container>
+    <app-tag-displayer [saveFilterId]="'mapFilter'" [displayed]="displayFilter" [tagList]="mapTagList" [tagGroupList]="tagGroupList" (currentTagList)="currentTagListHandler($event)"></app-tag-displayer>
 </div>
 
 <!-- Map tiles container -->
 <div id="map-tiles-container" class=" ">
-    <ng-container *ngFor="let tag of mapTagsList">
+    <ng-container *ngFor="let tag of mapTagList">
         <ng-container *ngIf="isTagFiltered(tag)">
             <div class="map-tiles-category-container">
                 <span class="font-light capitalize text-xs">{{ tag.displayName | i18n }}</span>
@@ -43,7 +26,6 @@
                 </ng-container>
                 <ng-template #noMapForTag >
                     <span i18n="@@map-no-map-for-tag">No map for tag :</span><span>{{ tag.displayName | i18n }}</span>
-                    
                 </ng-template>
             </div>
         </ng-container>

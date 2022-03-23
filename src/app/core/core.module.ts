@@ -8,6 +8,7 @@ import { MapsPageComponent } from './maps-page/maps-page.component';
 import { RouterModule } from '@angular/router';
 import { MapsModule } from '../shared/maps/maps.module';
 import { MoleculesModule } from '../shared/atomic/molecules/molecules.module';
+import { OrganismsModule } from '../shared/atomic/organisms/organisms.module';
 
 let components : any[] = [
   HomeComponent,
@@ -26,6 +27,7 @@ let matModules : any[]=[
     RouterModule,
     MapsModule,
     MoleculesModule,
+    OrganismsModule,
     ...matModules
   ]
 })
