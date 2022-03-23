@@ -1,0 +1,24 @@
+:host{
+    .tag-groups-container{
+        @apply my-2 flex flex-col gap-1;
+        span{
+            @apply font-light capitalize text-xs;
+        }
+        .tag-group{
+            @apply flex gap-4 flex-wrap;
+            label{
+                @apply flex gap-1 items-center cursor-pointer;
+            }
+            
+            .tag{
+                @apply flex gap-1 items-center cursor-pointer p-2 rounded;
+                &.bg-violetta-theme{
+                    color : white;
+                }
+            }
+        }
+    }
+    .save-filter-button{
+        @apply flex gap-1 items-center cursor-pointer self-end;
+    }
+}

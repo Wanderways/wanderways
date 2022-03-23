@@ -1,0 +1,23 @@
+<!-- Go through tag categories -->
+<ng-container *ngIf="displayed">
+    <ng-container *ngFor="let tagGroup of tagGroupList">
+        <ng-container *ngIf="tagGroupHasTag(tagGroup.id)">
+            <div class="tag-groups-container">
+                <span>{{tagGroup.displayName | i18n}}</span>
+                <div class="tag-group">
+                    <!-- Go throug tag list -->
+                    <ng-container *ngFor="let tagObj of tagList">
+                        <ng-container *ngIf="tagObj.tagGroupId === tagGroup.id">
+                            <div class="tag" matRipple matRippleColor="#FFFFFF60" [class.bg-violetta-theme]="isSelected(tagObj)" (click)="updateTag(tagObj)">
+                                {{tagObj.displayName| i18n}}
+                            </div>
+                        </ng-container>
+                    </ng-container>
+                </div>
+            </div>
+        </ng-container>
+    </ng-container>
+    <ng-container *ngIf="saveFilterId">
+        <label class="save-filter-button"> <input type="checkbox" name="saveFilter" [checked]="this.isFilterSaveActive" (change)="saveFilterchange()" i18n="@@map-save-filter" >Save filter ?</label>
+    </ng-container>
+</ng-container>
