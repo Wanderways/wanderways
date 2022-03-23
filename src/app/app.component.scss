@@ -42,9 +42,7 @@
             
             &.isSticky{
                 @apply sticky top-0 ;
-                backdrop-filter: blur(20px) opacity(0);
                 &.isScrolled{
-                    backdrop-filter: blur(20px) opacity(1);
                     &::after{
                         opacity : 0.5;
                     }
@@ -89,3 +87,30 @@
     position: relative;
 }
 
+/* if backdrop support: blurred */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    #main-content {
+        &.isSticky{
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+            &.isScrolled{
+                -webkit-backdrop-filter: blur(20px) opacity(1);
+                backdrop-filter: blur(20px) opacity(1);
+            }
+        }
+    }
+}
+/* else */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    :host{
+        background-color:var(--dark-background);
+    }
+    #main-content {
+        &.isSticky{
+            background-color:var(--dark-background);
+            &.isScrolled{
+                background-color:var(--dark-background);
+            }
+        }
+    }
+}

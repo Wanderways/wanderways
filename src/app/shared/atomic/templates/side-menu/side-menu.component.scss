@@ -3,7 +3,6 @@
     z-index: 9999;
     top: 0;
     height: 100vh;
-    backdrop-filter: blur(20px);
     .side-menu-container {
         @apply flex flex-col;
         @apply sticky;
@@ -109,5 +108,20 @@
     }
     100% {
         margin-left: -230px;
+    }
+}
+
+/* if backdrop support: blurred */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    :host{
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    
+}
+/* else */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    :host{
+        background-color:var(--dark-background);
     }
 }
