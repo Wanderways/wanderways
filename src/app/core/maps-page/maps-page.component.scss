@@ -5,8 +5,9 @@
     max-width: min(1392px, 100vw);
     z-index: 1;
     #filter-container{
-        @apply m-4 flex flex-col select-none items-start;
+        @apply m-4 flex flex-col select-none items-stretch;
         #filter-button{
+            border: 1px solid #88888830;
             @apply flex items-center justify-start p-2 gap-1 rounded cursor-pointer;
             span{
                 @apply flex items-center;

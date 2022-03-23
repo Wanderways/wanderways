@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, OnInit, Output, SimpleChange, SimpleChanges } from '@angular/core';
 import { Tag } from 'src/app/shared/maps/services/map-tags-loader/tag.interface';
 import { TagGroup } from 'src/app/shared/maps/services/tag-group-loader/tag-group.interface';
 
@@ -9,6 +9,10 @@ import { TagGroup } from 'src/app/shared/maps/services/tag-group-loader/tag-grou
   styleUrls: ['./tag-displayer.component.scss']
 })
 export class TagDisplayerComponent implements OnInit {
+
+  @Input('rtl') rtl : boolean = false;
+  @HostBinding('class.rtl') isRtl = false;
+  @HostBinding('class.displayed') isDisplayed = false;
 
   @Input('saveFilterId') saveFilterId : string | undefined = undefined;
   @Input('displayed') displayed : boolean = false;
@@ -29,6 +33,7 @@ export class TagDisplayerComponent implements OnInit {
     if(this.saveFilterId){
       this.isFilterSaveActive = !!localStorage.getItem(this.saveFilterId);
     }
+    this.isRtl = this.rtl;
   }
 
   /**
@@ -36,9 +41,12 @@ export class TagDisplayerComponent implements OnInit {
    * @param changes An input change
    */
   ngOnChanges(changes : SimpleChanges){
+    if(changes.displayed) this.isDisplayed = this.displayed;
+        
     if(changes.tagList) // If the change is about tag list
       if(changes.tagList.currentValue.length) // If tag list not empty
         this.setTagFilterList(changes.tagList.currentValue);
+  
   }
 
   /**

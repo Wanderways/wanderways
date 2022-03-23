@@ -10,7 +10,7 @@
         </div>
     </div>
     <!-- Filters -->
-    <app-tag-displayer [saveFilterId]="'mapFilter'" [displayed]="displayFilter" [tagList]="mapTagList" [tagGroupList]="tagGroupList" (currentTagList)="currentTagListHandler($event)"></app-tag-displayer>
+    <app-tag-displayer [rtl]="true" [saveFilterId]="'mapFilter'" [displayed]="displayFilter" [tagList]="mapTagList" [tagGroupList]="tagGroupList" (currentTagList)="currentTagListHandler($event)"></app-tag-displayer>
 </div>
 
 <!-- Map tiles container -->
