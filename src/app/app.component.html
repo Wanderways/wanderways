@@ -3,7 +3,7 @@
     <div id="sidenav-header" header>
         <ng-container *ngTemplateOutlet="header_content"></ng-container>
         <div matRipple matRippleColor="#FFFFFF60" class="rounded cursor-pointer select-none" (click)="displaySideNav = !displaySideNav">
-            <img id="close-button" src="./assets/icons/close.svg" class="svg-current-color mx-0">
+            <img id="close-button" src="./assets/icons/close.svg" alt="close button icon" class="svg-current-color mx-0">
         </div>
     </div>
     <ng-container main>
@@ -23,7 +23,7 @@
     <header id="header" #nav [class.isSticky]="1===1" [class.isScrolled]="isScrolled">
         <div id="header-content">
             <div matRipple matRippleColor="#FFFFFF60" class="mx-3 my-2 rounded cursor-pointer select-none" (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav?'hidden':''">
-                <img src="./assets/icons/menu.svg" class="svg-current-color mx-1">
+                <img src="./assets/icons/menu.svg" alt="menu button icon" class="svg-current-color mx-1">
             </div>
             <ng-container *ngTemplateOutlet="header_content; context:{$implicit:displaySideNav}" ></ng-container>
         </div>
@@ -35,7 +35,7 @@
 <!-- TEMPLATES -->
 <ng-template #header_content let-isVisible>
     <div matRipple matRippleColor="#FFFFFF60" id="logo-and-title" [routerLink]="['/']" [style.visibility]="isVisible?'hidden':''">
-        <img src="./assets/icons/logo.svg">
+        <img src="./assets/icons/logo.svg" alt="menu button icon">
         <span>Learn your maps</span>
     </div>
 </ng-template>
