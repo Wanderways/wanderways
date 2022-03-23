@@ -9,6 +9,8 @@
     "map-tile-not-available": "Zurzeit nicht verfügbar !",
     "map-no-map-for-tag":"Keine Karte für Tag:",
     "map-save-filter":"Filter speichern?",
-    "map-filter":"Filter"
+    "map-filter":"Filter",
+    "sidenav-home":"Home",
+    "sidenav-maps":"Karten"
   }
 }
