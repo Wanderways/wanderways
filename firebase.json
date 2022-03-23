@@ -3,7 +3,9 @@
     "target": "learn-your-maps",
     "public": "dist/learn-your-maps",
     "ignore": [
-      "**/.*"
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ],
     "headers": [
       {
@@ -25,25 +27,28 @@
         ]
       }
     ],
+    "i18n": {
+      "root": "."
+    },
     "rewrites": [
       {
-        "source": "**",
+        "source": "/en-US/**",
         "destination": "/en-US/index.html"
       },
       {
-        "source": "/fr-FR/{,/**}",
+        "source": "/fr-FR/**",
         "destination": "/fr-FR/index.html"
       },
       {
-        "source": "/de-DE/{,/**}",
-        "destination": "/de-De/index.html"
+        "source": "/de-DE/**",
+        "destination": "/de-DE/index.html"
       },
       {
-        "source": "/es-ES/{,/**}",
+        "source": "/es-ES/**",
         "destination": "/es-ES/index.html"
       },
       {
-        "source": "/pt-PT/{,/**}",
+        "source": "/pt-PT/**",
         "destination": "/pt-PT/index.html"
       }
     ]

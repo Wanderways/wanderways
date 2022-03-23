@@ -79,19 +79,19 @@
             },
             "fr-FR":{
               "localize" : ["fr-FR"],
-              "baseHref":"/fr/"
+              "baseHref":"/fr-FR/"
             },
             "de-DE":{
               "localize" : ["de-DE"],
-              "baseHref":"/de/"
+              "baseHref":"/de-DE/"
             },
             "es-ES":{
               "localize" : ["es-ES"],
-              "baseHref":"/es/"
+              "baseHref":"/es-ES/"
             },
             "pt-PT":{
               "localize" : ["pt-PT"],
-              "baseHref":"/pt/"
+              "baseHref":"/pt-PT/"
             }
           },
           "defaultConfiguration": "production"
