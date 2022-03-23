@@ -7,7 +7,7 @@
         </div>
     </div>
     <ng-container main>
-        <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/']" routerLinkActive="active-link" class="flex p-2 justify-start" i18n="@@sidenav-home">Home</button>
+        <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="flex p-2 justify-start" i18n="@@sidenav-home">Home</button>
         <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/maps']" routerLinkActive="active-link" class="flex p-2 justify-start" i18n="@@sidenav-maps">Maps</button>
     </ng-container>
     <ng-container footer>
