@@ -89,10 +89,10 @@
 
 /* if backdrop support: blurred */
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    #main-content {
+    #header{
         &.isSticky{
-        backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
             &.isScrolled{
                 -webkit-backdrop-filter: blur(20px) opacity(1);
                 backdrop-filter: blur(20px) opacity(1);
@@ -102,8 +102,7 @@
 }
 /* else */
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-
-    #main-content {
+    #header{
         &.isSticky{
             background-color:var(--dark-background);
             &.isScrolled{
