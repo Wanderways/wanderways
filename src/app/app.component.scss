@@ -102,9 +102,7 @@
 }
 /* else */
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    :host{
-        background-color:var(--dark-background);
-    }
+
     #main-content {
         &.isSticky{
             background-color:var(--dark-background);
