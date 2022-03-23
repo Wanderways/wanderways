@@ -9,7 +9,7 @@
 <div id="proposition-container" class="custom-scrollbar">
     <ng-container *ngFor="let language of supportedLanguages">
       <ng-container *ngIf='displayLanguageSelector &&language.localeId != currentLanguage.localeId'>
-        <a matRipple matRippleColor="#FFFFFF60" href="/{{language.localeId}}/" class="proposition-line">
+        <a matRipple matRippleColor="#FFFFFF60" href="/{{language.localeId}}/{{getCurrentUrl()}}" class="proposition-line">
           <img src="./assets/locale_flag/w20/{{language.iso3166}}.png"
             srcset="./assets/locale_flag/w40/{{language.iso3166}}.png 2x"
             width="20"

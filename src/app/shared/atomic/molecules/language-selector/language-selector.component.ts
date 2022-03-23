@@ -1,5 +1,5 @@
-import { getLocaleId } from '@angular/common';
 import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Language } from './language.interface';
 
 @Component({
@@ -40,9 +40,12 @@ export class LanguageSelectorComponent implements OnInit {
 
   currentLanguage! : Language;
 
-  constructor(@Inject(LOCALE_ID) public locale: string) {}
+  constructor(@Inject(LOCALE_ID) public locale: string, private router : Router) {}
 
   ngOnInit(): void {
     this.currentLanguage = this.supportedLanguages.find(e => e.localeId === this.locale)!;
+  }
+  getCurrentUrl(){
+    return this.router.url.replace(/\/[a-z]{2}-[A-Z]{2}\//,'');
   }
 }
