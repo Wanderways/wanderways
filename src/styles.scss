@@ -62,6 +62,7 @@ $svg-invert-white :1;
         --map-land : #08080833;
         --map-land-stroke : #ffffffff;
         --map-land-found : #347B98FF;
+        --map-subdivision-selected : #FDFDFD4F;
         --map-land-selected : #FDFDFDFF;
         --map-land-error : #BE2D0DFF;
         --map-land-won : #FCCB1AFF;
@@ -85,6 +86,7 @@ $svg-invert-white :1;
         --map-land-stroke : #ffffffff;
         --map-land-found : #347B98FF;
         --map-land-selected : #FDFDFDFF;
+        --map-subdivision-selected : #FDFDFD4F;
         --map-land-error : #BE2D0DFF;
         --map-land-won : #FCCB1AFF;
     }
@@ -107,6 +109,7 @@ $svg-invert-white :1;
         --map-land-stroke : #ffffffff;
         --map-land-found : #347B98FF;
         --map-land-selected : #FDFDFDFF;
+        --map-subdivision-selected : #FDFDFD4F;
         --map-land-error : #BE2D0DFF;
         --map-land-won : #FCCB1AFF;
     }
@@ -236,7 +239,10 @@ img {
 }
 .selected{
     fill: var(--map-land-selected);
-    fill: #FDFDFD;
+}
+.subdivision-selected{
+    fill: var(--map-subdivision-selected);
+
 }
 .error{
     fill: var(--map-land-error);
@@ -246,6 +252,9 @@ img {
 }
 
 .separator{
-    fill: transparent;
+    fill: none;
     stroke: white;
+}
+.zone{
+    fill: transparent;
 }
