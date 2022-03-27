@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Svg } from './maps_svg.interface';
+import { MapSvg } from './maps_svg.interface';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -18,7 +18,7 @@ export class MapSvgLoaderService {
    * @param map_identifier The map id
    * @returns The data to build an svg representation of the map from
    */
-  getMapSvg(map_identifier : string): Observable<Svg>{
-    return this.http.get<Svg>(this.PATH+map_identifier+this.FILE_EXTENSION);
+  getMapSvg(map_identifier : string): Observable<MapSvg>{
+    return this.http.get<MapSvg>(this.PATH+map_identifier+this.FILE_EXTENSION);
   }
 }

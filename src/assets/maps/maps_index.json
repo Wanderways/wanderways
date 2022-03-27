@@ -16,7 +16,7 @@
   },
   {
     "mapIdentifier": "world_iso",
-    "relatedSvg": "",
+    "relatedSvg": "map-world-iso",
     "mapDisplayName": {
         "en_US":["Country - World - ISO"],
         "fr_FR":["Pays - Monde - ISO"],
