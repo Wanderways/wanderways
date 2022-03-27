@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { MapsModule } from '../shared/maps/maps.module';
 import { MoleculesModule } from '../shared/atomic/molecules/molecules.module';
 import { OrganismsModule } from '../shared/atomic/organisms/organisms.module';
+import { CanvasComponent } from './canvas/canvas.component';
 
 let components : any[] = [
   HomeComponent,
@@ -21,6 +22,7 @@ let matModules : any[]=[
 @NgModule({
   declarations: [
     ...components,
+    CanvasComponent,
   ],
   imports: [
     CommonModule,
