@@ -27,7 +27,7 @@
     "map_type":"coun",
     "tagIdList":["cont_wo"],
     "wiki_url":"https://en.wikipedia.org/wiki/ISO_3166-1",
-    "available":false
+    "available":true
   },
   {
     "mapIdentifier": "eu_cont_coun",

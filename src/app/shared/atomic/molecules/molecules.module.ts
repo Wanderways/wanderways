@@ -5,6 +5,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { MapTileComponent } from './map-tile/map-tile.component';
 import { MapsModule } from '../../maps/maps.module';
+import { RouterModule } from '@angular/router';
 
 let components : any[] = [
   ThemeSelectorComponent,
@@ -18,6 +19,7 @@ let components : any[] = [
     ...components,
   ],
   imports: [
+    RouterModule,
     CommonModule,
     MatRippleModule,
     MapsModule
