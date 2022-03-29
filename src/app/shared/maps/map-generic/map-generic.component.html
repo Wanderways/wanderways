@@ -1,25 +1,26 @@
 <ng-container *ngIf="loadedMap !== undefined; else loading">
-  <div id="map-control-box" class="flex gap-2 justify-center">
-    <button class="p-2 bg-gray" (mousedown)="scaleClick(false)" (pointerdown)="scaleClick(false)" (mouseup)="pointerUp($event)" (pointerup)="pointerUp($event)" (mouseleave)="pointerUp($event)" (pointerleave)="pointerUp($event)"> -</button>
-    <button (click)="resetTransform()">Reset</button>
-    <button class="p-2 bg-gray" (mousedown)="scaleClick(true)" (pointerdown)="scaleClick(true)" (mouseup)="pointerUp($event)" (pointerup)="pointerUp($event)" (mouseleave)="pointerUp($event)" (pointerleave)="pointerUp($event)">+</button>
-  </div>
-    <svg #mapRef id="map-container" [attr.xlmns]="loadedMap.xlmns" attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
-    class="test mx-auto"
-    [class.panning]="mouseStates.isPanned"
-    (wheel)="wheelEvent($event)" (mousedown)="pointerDown($event)" (pointerdown)="pointerDown($event)"
-    (mouseup)="pointerUp($event)" (pointerup)="pointerUp($event)" (mouseleave)="pointerUp($event)"
-    (pointerleave)="pointerUp($event)" (mousemove)="pointerMove($event)" (pointermove)="pointerMove($event)">
-      <g #groupRef id="scaled-map-container">
-        <path *ngFor="let path of loadedMap.contentPath" id="{{ path.id }}" (click)="areaClick($event)"
-          class="{{ path.class }}" [attr.d]="path.d" />
-        <g *ngFor="let groupe of loadedMap.contentGroupe" id="{{ groupe.id }}" (click)="areaClick($event)"
-          class="{{ groupe.class }}">
-          <path *ngFor="let groupePath of groupe.contentPath" id="{{ groupePath.id }}" (click)="areaClick($event)"
-            class="{{ groupePath.class }}" [attr.d]="groupePath.d" />
-        </g>
+  
+  <svg #mapRef id="map-container" [attr.xlmns]="loadedMap.xlmns" attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
+  class="test mx-auto"
+  [class.panning]="mouseStates.isPanned"
+  (wheel)="wheelEvent($event)" (mousedown)="pointerDown($event)" (pointerdown)="pointerDown($event)"
+  (mouseup)="pointerUp($event)" (pointerup)="pointerUp($event)" (mouseleave)="pointerUp($event)"
+  (pointerleave)="pointerUp($event)"  (pointermove)="pointerMove($event)">
+    <g #groupRef id="scaled-map-container">
+      <path *ngFor="let path of loadedMap.contentPath" id="{{ path.id }}" (click)="areaClick($event)"
+        class="{{ path.class }}" [attr.d]="path.d" />
+      <g *ngFor="let groupe of loadedMap.contentGroupe" id="{{ groupe.id }}" (click)="areaClick($event)"
+        class="{{ groupe.class }}">
+        <path *ngFor="let groupePath of groupe.contentPath" id="{{ groupePath.id }}" (click)="areaClick($event)"
+          class="{{ groupePath.class }}" [attr.d]="groupePath.d" />
       </g>
-    </svg>
+    </g>
+  </svg>
+  <div id="map-control-box" class="flex flex-col justify-center absolute bottom-0 right-0">
+    <button class="p-2 bg-[#888888] border border-white rounded-t" (mousedown)="scaleClick(true)" (mouseup)="pointerUp($event)"  (mouseleave)="pointerUp($event)">+</button>
+    <button class="p-2 bg-[#888888] border border-white rounded-b" (mousedown)="scaleClick(false)" (mouseup)="pointerUp($event)"(mouseleave)="pointerUp($event)"> -</button>
+    <button class="mt-1 p-2 bg-[#888888] border border-white rounded" (click)="resetTransform()">Reset</button>
+  </div>
   
 </ng-container>
 
