@@ -4,7 +4,7 @@ import { Coordinates } from "./coordinates";
 
 export function zoom(zoomParameters :ZoomParameters) : DOMMatrix{
     // Get the mouse position as SVG coordinates
-    var coords = convertScreenCoordsToSvgCoords(zoomParameters.containerElement, zoomParameters.toScaleElement, zoomParameters.coordinates.x, zoomParameters.coordinates.y);
+    var coords = convertScreenCoordsToSvgCoords(zoomParameters.containerElement, zoomParameters.toScaleElement, {x:zoomParameters.coordinates.x, y:zoomParameters.coordinates.y});
     
     // Calculate an appropriate scale adjustment
     let scale = 1.0 + (zoomParameters.deltaScale * 0.001);
