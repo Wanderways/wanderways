@@ -5,10 +5,27 @@
     position: relative;
     width: 100%;
     flex-direction: column;
-    -webkit-user-select:none;
-    user-select: none;
     #map-control-box{
-        
+        @apply flex flex-col gap-2 absolute;
+        @apply bottom-0 right-0 mb-4 mr-4 ;
+        div{
+            position: relative;
+            @apply flex flex-col bg-white rounded ;
+            hr{
+                background-color: #88888888;
+                height: 2.5px;
+            }
+            button{
+                padding: 0.25rem;
+                position: relative;
+                img{
+                    margin: 0.25rem;
+                    width: 1rem;
+                    height: 1rem;
+                    pointer-events: none;
+                }
+            }
+        }
     }
     #map-container{
         // border: 1px solid white;
@@ -27,6 +44,17 @@
         &:not(.panning){
             .land{
                 cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    :host{
+        height: 70%;
+        #map-container{
+            height: 100%;
+            #scaled-map-container{
+                height: 100%;
             }
         }
     }
