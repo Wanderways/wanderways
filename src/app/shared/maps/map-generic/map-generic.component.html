@@ -3,7 +3,7 @@
   <svg #mapRef id="map-container" [attr.xlmns]="loadedMap.xlmns" attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
   class="test mx-auto"
   [class.panning]="mouseStates.isPanned"
-  (wheel)="wheelEvent($event)" (pointerdown)="pointerDown($event)" (pointerup)="pointerUp($event)" (pointerleave)="pointerUp($event)"  (pointermove)="pointerMove($event)">
+  (wheel)="wheelEvent($event)" (pointerdown)="panningBegin($event)" (pointerup)="panningEnd($event)" (pointerleave)="panningMove($event)"  (pointermove)="panningMove($event)">
     <g #groupRef id="scaled-map-container">
       <path *ngFor="let path of loadedMap.contentPath" id="{{ path.id }}" (click)="areaClick($event)"
         class="{{ path.class }}" [attr.d]="path.d" />
@@ -16,11 +16,11 @@
   </svg>
   <div id="map-control-box">
     <div>
-      <button id="zoom-in" class="rounded-t" (pointerdown)="scaleClick($event,true)" (pointerup)="zoomStop()" (pointerleave)="zoomStop()">
+      <button id="zoom-in" class="rounded-t" (pointerdown)="scaleClick(true)" (pointerup)="zoomStop()" (pointerleave)="zoomStop()">
         <img id="zoom-in-icon" src="./assets/icons/plus.svg" alt="zoom in button" class="mx-0">
       </button>
       <hr>
-      <button id="zoom-out" class="rounded-b" (pointerdown)="scaleClick($event,false)" (pointerup)="zoomStop()" (pointerleave)="zoomStop()">
+      <button id="zoom-out" class="rounded-b" (pointerdown)="scaleClick(false)" (pointerup)="zoomStop()" (pointerleave)="zoomStop()">
         <img id="zoom-out-icon" src="./assets/icons/minus.svg" alt="zoom out button" class="mx-0">
       </button>
     </div>

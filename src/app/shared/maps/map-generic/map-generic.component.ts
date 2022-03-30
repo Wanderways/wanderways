@@ -103,18 +103,19 @@ export class MapGenericComponent implements OnInit {
   }
 
   
-  pointerDown(event : MouseEvent){
-    this.mouseStates.isClickDown = true;
-  }
-  pointerUp(event : MouseEvent){
-    this.mouseStates.isClickDown = false;
-    this.mouseStates.isPanned = false;
-    clearInterval(this.scallingIntervalId!);
-    this.scallingIntervalId=undefined;
-  }
-  pointerMove(mouseMove : MouseEvent){
-    if (this.mouseStates.isClickDown){
+  panningBegin(event : MouseEvent){
+    if(event.button === 1 || !matchMedia('(pointer:fine)').matches){
       this.mouseStates.isPanned = true;
+    }
+  }
+  panningEnd(event : MouseEvent){
+    if(event.button === 1 || !matchMedia('(pointer:fine)').matches){
+      this.mouseStates.isPanned = false;
+    }
+  }
+  
+  panningMove(mouseMove : MouseEvent){
+    if (this.mouseStates.isPanned){
       this.pan({x:mouseMove.offsetX,y:mouseMove.offsetY},{x:mouseMove.movementX,y:mouseMove.movementY})
     }
   }
@@ -144,28 +145,46 @@ export class MapGenericComponent implements OnInit {
     this.zoom(-event.deltaY, coordinates);
   }
   /**
-   * Scalling down
+   * Scalling in or out
    */
   scaleClick(zoomIn : boolean){
     // If no current scalling loop, then do nothing
     if(!this.scallingIntervalId){
       this.scallingIntervalId = window.setInterval(()=>{
-        let element = this.mapRef!.nativeElement;
+        let element : DOMRect = this.mapRef!.nativeElement.getBoundingClientRect();
         let coordinates =  {
-          x: (element.clientWidth - element.clientLeft)/2,
-          y: (element.clientHeight - element.clientTop)/2
+          x: element.width/2 + element.x,
+          y: element.height/2 + element.y
         };
+        console.log(coordinates);
+        
         this.zoom((zoomIn?1:-1)*100, coordinates);
       }, 50);
     }
   }
 
+  /**
+   * Stops the zoom loop
+   */
+  zoomStop(){
+    clearInterval(this.scallingIntervalId!);
+    this.scallingIntervalId=undefined;
+  }
+
+  /**
+   * Reset the map to its initial state
+   */
   resetTransform(){
     this.currentMatrix = this.mapRef!.nativeElement.createSVGMatrix();
     this.groupRef!.nativeElement.style.transform = "";
     resetTransform(this.mapRef!.nativeElement,this.groupRef!.nativeElement);
   }
 
+  /**
+   * Zooms in the map at the given coordinates for the given delta
+   * @param scale A delta corresponding to the percentage to zoom (e.g : 0.8 or 1.2)
+   * @param coordinates Some absolute coordinates to zoom to
+   */
   zoom(scale : number, coordinates : {x:number,y:number}){
     this.currentMatrix = zoom({
       deltaScale : scale,
