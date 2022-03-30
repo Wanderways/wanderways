@@ -198,7 +198,7 @@ export class MapGenericComponent implements OnInit {
   /**
    * Zooms in the map at the given coordinates for the given delta
    * @param scale A delta corresponding to the percentage to zoom (e.g : 0.8 or 1.2)
-   * @param coordinates Some absolute coordinates to zoom to
+   * @param coordinates Some relative to a box coordinates to zoom to
    */
   zoom(scale : number, coordinates : {x:number,y:number}){
     this.currentMatrix = zoom({
