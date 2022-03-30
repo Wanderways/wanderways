@@ -26,7 +26,6 @@ export class MapGenericComponent implements OnInit {
     isClickDown : false
   }
 
-  
   /**
    * Represents the id of an interval. When launched, equals the id of the generated interval. When want to stop, then just clear the interval via its ID
    */
@@ -70,11 +69,10 @@ export class MapGenericComponent implements OnInit {
   }
 
   /**
-   * Function only for testing purpose
-   * @TODO DELETE THIS
-   * @param yeah String to log
+   * On an area click, search on associated data list the corresponding identifier. Colors the area and its subdivision
+   * @param event The mouse click event. We get the area node from it
    */
-  areaClick(event : MouseEvent){
+  areaClick(event : MouseEvent) : void{
     if(!(<HTMLElement>event.target).classList.contains('land'))return;
 
     Array.from(document.getElementsByClassName("selected")).forEach(e=>{
@@ -93,6 +91,10 @@ export class MapGenericComponent implements OnInit {
     
   }
 
+  /**
+   * Color selected subdivisions, but not the selected area
+   * @param className The subdivisions to color
+   */
   private colorAreas(className : string){
     let elements : HTMLCollectionOf<Element> = document.getElementsByClassName(className);
     Array.from(elements).forEach(e=>{
@@ -102,24 +104,41 @@ export class MapGenericComponent implements OnInit {
     })
   }
 
-  
+    /**
+   * Sets current mousestates as `panning`
+   * @param event 
+   */
   panningBegin(event : MouseEvent){
     if(event.button === 1 || !matchMedia('(pointer:fine)').matches){
       this.mouseStates.isPanned = true;
     }
   }
+
+  /**
+   * Sets current mousestates as not `panning`
+   * @param event 
+   */
   panningEnd(event : MouseEvent){
     if(event.button === 1 || !matchMedia('(pointer:fine)').matches){
       this.mouseStates.isPanned = false;
     }
   }
   
+  /**
+   * Gives the deltas to apply on map to pan
+   * @param mouseMove 
+   */
   panningMove(mouseMove : MouseEvent){
     if (this.mouseStates.isPanned){
       this.pan({x:mouseMove.offsetX,y:mouseMove.offsetY},{x:mouseMove.movementX,y:mouseMove.movementY})
     }
   }
 
+  /**
+   * 
+   * @param coordinates 
+   * @param deltaCoordinates 
+   */
   pan(coordinates : Coordinates, deltaCoordinates : Coordinates) {
     this.currentMatrix = pan({
       currentTransform: this.currentMatrix,
@@ -129,7 +148,6 @@ export class MapGenericComponent implements OnInit {
       deltaCoordinates: deltaCoordinates
     });
   }
-
 
   /**
    * Scalling with the wheel
@@ -141,7 +159,6 @@ export class MapGenericComponent implements OnInit {
       x: event.x ,
       y: event.y
     };
-    
     this.zoom(-event.deltaY, coordinates);
   }
   /**
@@ -156,8 +173,6 @@ export class MapGenericComponent implements OnInit {
           x: element.width/2 + element.x,
           y: element.height/2 + element.y
         };
-        console.log(coordinates);
-        
         this.zoom((zoomIn?1:-1)*100, coordinates);
       }, 50);
     }
