@@ -152,8 +152,6 @@ export class MapGenericComponent implements OnInit {
    * @param event 
    */
   wheelEvent(event: WheelEvent) {
-    console.log(event.x, event.y);
-
     event.preventDefault();
     let coordinates = {
       x: event.x,
@@ -193,6 +191,7 @@ export class MapGenericComponent implements OnInit {
     this.currentMatrix = this.mapRef!.nativeElement.createSVGMatrix();
     this.groupRef!.nativeElement.style.transform = "";
     resetTransform(this.mapRef!.nativeElement, this.groupRef!.nativeElement);
+    this.setLandWidth(this.currentMatrix.a);
   }
 
   /**
@@ -208,5 +207,14 @@ export class MapGenericComponent implements OnInit {
       toScaleElement: this.groupRef!.nativeElement,
       coordinates: coordinates
     });
+    this.setLandWidth(this.currentMatrix.a);
+  }
+
+  /**
+   * Adapt the land stroke to the current scale
+   * @param scale A scale to adapt to
+   */
+  setLandWidth(scale : number){
+    document.documentElement.style.setProperty('--land-stroke', (0.4/scale)+"px");
   }
 }

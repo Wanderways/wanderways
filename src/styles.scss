@@ -194,6 +194,8 @@ html{
 
     --candy-primary:#F7A2E4;
     --candy-secondary:#FCCB1A;
+
+    --land-stroke: 0.4px;
 }
 
 html, body { height: 100%; }
@@ -232,7 +234,7 @@ img {
 .land{
     fill: var(--map-land);
     stroke: white;
-    stroke-width: 0.4px;
+    stroke-width: var(--land-stroke);
 }
 .found{
     fill: var(--map-land-found);
