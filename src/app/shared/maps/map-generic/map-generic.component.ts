@@ -1,5 +1,7 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AreaCommons } from '../services/map-data-loader/interfaces/areaCommons.interface';
+import { MapDataLoaderService } from '../services/map-data-loader/map-data-loader.service';
 import { MapIndexEntry } from '../services/map-index-loader/interfaces/map-index-entry.interface';
 import { MapIndexLoaderService } from '../services/map-index-loader/map-index-loader.service';
 import { MapSvgLoaderService } from '../services/map-svg-loader/map-svg-loader.service';
@@ -12,24 +14,30 @@ import { pan, zoom, resetTransform, Coordinates } from './utils/index';
   styleUrls: ['./map-generic.component.scss']
 })
 export class MapGenericComponent implements OnInit {
-  @Input('colorSubdivision') colorSubdivision: boolean = false;
+  @Input('colorGroup') colorGroup: boolean = false;
 
   @ViewChild('mapRef') mapRef: ElementRef<SVGSVGElement> | undefined;
   @ViewChild('groupRef') groupRef: ElementRef<SVGGElement> | undefined;
 
   loadedMap: MapSvg | undefined = undefined;
+  loadedData: AreaCommons[] | undefined = undefined;
 
-  currentSelectedNode: HTMLElement | undefined = undefined;
+  currentSelected: AreaCommons | undefined = undefined;
 
-  mouseStates = {
+  mouseStates: { isPanned: boolean, isClickDown: boolean, pointerDownEvents: PointerEvent[] } = {
     isPanned: false,
-    isClickDown: false
+    isClickDown: false,
+    pointerDownEvents: []
   }
+
+  prevDiff: number = 0;
 
   /**
    * Represents the id of an interval. When launched, equals the id of the generated interval. When want to stop, then just clear the interval via its ID
    */
   scallingIntervalId: number | undefined = undefined;
+
+  pinchingTimeoutId: number | undefined = undefined;
 
   currentSelectedArea: string = "";
 
@@ -39,7 +47,7 @@ export class MapGenericComponent implements OnInit {
    */
   private currentMatrix!: DOMMatrix;
 
-  constructor(private route: ActivatedRoute, private mapIndexLoader: MapIndexLoaderService, private mapSvgLoaderService: MapSvgLoaderService) { }
+  constructor(private route: ActivatedRoute, private mapIndexLoader: MapIndexLoaderService, private mapSvgLoaderService: MapSvgLoaderService, private mapDataLoaderService : MapDataLoaderService) { }
 
   /**
    * On init, loads maps svg and related data
@@ -52,6 +60,7 @@ export class MapGenericComponent implements OnInit {
       this.mapIndexLoader.getEntryIfExists(queryParameter["map"]).then((mapIndexEntry: MapIndexEntry | undefined) => {
         if (!mapIndexEntry) return; // If no data found then skip
         this.loadMapSvg(mapIndexEntry);
+        this.loadMapData(mapIndexEntry);
       });
     })
   }
@@ -67,39 +76,43 @@ export class MapGenericComponent implements OnInit {
       setTimeout(() => { this.resetTransform() })
     });
   }
-
-  /**
-   * On an area click, search on associated data list the corresponding identifier. Colors the area and its subdivision
-   * @param event The mouse click event. We get the area node from it
-   */
-  areaClick(event: MouseEvent): void {
-    if (!(<HTMLElement>event.target).classList.contains('land')) return;
-
-    Array.from(document.getElementsByClassName("selected")).forEach(e => {
-      (<HTMLElement>e).classList.remove('selected');
-    })
-    this.currentSelectedNode = (<HTMLElement>event.target);
-    this.currentSelectedNode.classList.add('selected')
-
-    if (true) {
-      Array.from(document.getElementsByClassName("subdivision-selected")).forEach(e => {
-        (<HTMLElement>e).classList.remove('subdivision-selected');
-      })
-      this.currentSelectedArea = this.currentSelectedNode.classList[0];
-      this.colorAreas(this.currentSelectedArea);
-    }
-
+  private loadMapData(mapIndexEntry: MapIndexEntry){
+    this.mapDataLoaderService.getMapMetaData(mapIndexEntry.relatedSvg).subscribe(data => {
+      this.loadedData = data;
+    });
   }
 
   /**
-   * Color selected subdivisions, but not the selected area
-   * @param className The subdivisions to color
+   * On an area click, search on associated data list the corresponding identifier. Colors the area and its group
+   * @param event The mouse click event. We get the area node from it
+   */
+  areaClick(event: MouseEvent, areaId : string): void {
+    this.removeLandsColoration()
+    this.currentSelected= this.loadedData!.find(e=>e.identifier === areaId);
+    if (!this.currentSelected) return;
+    document.getElementById(areaId)!.classList.add('selected');
+    this.colorAreas(this.currentSelected!.group);
+  }
+
+  removeLandsColoration(){
+    Array.from(document.getElementsByClassName("selected")).forEach(e => {
+      (<HTMLElement>e).classList.remove('selected');
+    });
+    
+    Array.from(document.getElementsByClassName("group-selected")).forEach(e => {
+      (<HTMLElement>e).classList.remove('group-selected');
+    });
+  }
+
+  /**
+   * Color selected group, but not the selected area
+   * @param className The group to color
    */
   private colorAreas(className: string) {
     let elements: HTMLCollectionOf<Element> = document.getElementsByClassName(className);
     Array.from(elements).forEach(e => {
-      if (this.currentSelectedNode!.id !== (<HTMLElement>e).id) {
-        (<HTMLElement>e).classList.add("subdivision-selected");
+      if (this.currentSelected!.identifier !== (<HTMLElement>e).id) {
+        (<HTMLElement>e).classList.add("group-selected");
       }
     })
   }
@@ -109,6 +122,10 @@ export class MapGenericComponent implements OnInit {
    * @param event 
    */
   panningBegin(event: MouseEvent) {
+    if (event instanceof PointerEvent) {
+      this.mouseStates.pointerDownEvents.push(event);
+    }
+
     if (event.button === 1 || !matchMedia('(pointer:fine)').matches) {
       this.mouseStates.isPanned = true;
     }
@@ -119,8 +136,38 @@ export class MapGenericComponent implements OnInit {
    * @param event 
    */
   panningEnd(event: MouseEvent) {
+    if (event instanceof PointerEvent) {
+      this.mouseStates.pointerDownEvents = this.mouseStates.pointerDownEvents.filter(e => e.pointerId !== event.pointerId);
+    }
     if (event.button === 1 || !matchMedia('(pointer:fine)').matches) {
       this.mouseStates.isPanned = false;
+    }
+  }
+
+  /**
+   * Apply correct transform on map depending on : If on mobile, if pinching, if middle click
+   * @param mouseMove A mouseMove event that may be of type PointerEvent (case of mobile)
+   */
+  pointerMove(mouseMove: MouseEvent) {
+    // If on mobile device
+    if (mouseMove instanceof PointerEvent) {
+      // Find this event in the cache and update its record with this event
+      this.mouseStates.pointerDownEvents[this.mouseStates.pointerDownEvents.findIndex(e=> mouseMove.pointerId == e.pointerId)] = mouseMove;
+    }
+    // If two pointer at a time, then check if should try to zoom
+    if (this.mouseStates.pointerDownEvents.length == 2) {
+      if (!this.pinchingTimeoutId) {
+        // Set a timeout to debounce pinch event that can trigger many events at a time
+        this.pinchingTimeoutId = window.setTimeout(() => { this.pinchingTimeoutId = undefined }, 50);
+        // Calculates the difference vertically and hozizontally between the two pointers, then cumulates the general tendancy
+        let curDiff = (Math.abs(this.mouseStates.pointerDownEvents[0].x - this.mouseStates.pointerDownEvents[1].x) + Math.abs(this.mouseStates.pointerDownEvents[0].y - this.mouseStates.pointerDownEvents[1].y));
+        // To avoid mismovement, do not count too small changes
+        curDiff = curDiff < 10 ? 0 : curDiff;
+        this.zoom(curDiff - this.prevDiff > 0 ? 100 : -100, { x: (this.mouseStates.pointerDownEvents[1].clientX + this.mouseStates.pointerDownEvents[0].clientX) / 2, y: (this.mouseStates.pointerDownEvents[1].clientY + this.mouseStates.pointerDownEvents[0].clientY) / 2 });
+        this.prevDiff = curDiff;
+      }
+    } else if (this.mouseStates.pointerDownEvents.length == 1) {
+      this.panningMove(mouseMove);
     }
   }
 
@@ -214,7 +261,7 @@ export class MapGenericComponent implements OnInit {
    * Adapt the land stroke to the current scale
    * @param scale A scale to adapt to
    */
-  setLandWidth(scale : number){
-    document.documentElement.style.setProperty('--land-stroke', (0.4/scale)+"px");
+  setLandWidth(scale: number) {
+    document.documentElement.style.setProperty('--land-stroke', (0.4 / scale) + "px");
   }
 }

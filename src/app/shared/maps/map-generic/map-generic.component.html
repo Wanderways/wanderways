@@ -3,13 +3,12 @@
   <svg #mapRef id="map-container" [attr.xlmns]="loadedMap.xlmns" attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
   class="test mx-auto"
   [class.panning]="mouseStates.isPanned"
-  (wheel)="wheelEvent($event)" (pointerdown)="panningBegin($event)" (pointerup)="panningEnd($event)" (pointerleave)="panningMove($event)"  (pointermove)="panningMove($event)">
-    <g #groupRef id="scaled-map-container">
-      <path *ngFor="let path of loadedMap.contentPath" id="{{ path.id }}" (click)="areaClick($event)"
+  (wheel)="wheelEvent($event)" (pointerdown)="panningBegin($event)" (pointerup)="panningEnd($event)" (pointerleave)="pointerMove($event)"  (pointermove)="pointerMove($event)">
+    <g #groupRef id="scaled-map-container" >
+      <path *ngFor="let path of loadedMap.contentPath" id="{{ path.id }}" (click)="areaClick($event, path.id)"
         class="{{ path.class }}" [attr.d]="path.d" />
-      <g *ngFor="let groupe of loadedMap.contentGroupe" id="{{ groupe.id }}" (click)="areaClick($event)"
-        class="{{ groupe.class }}">
-        <path *ngFor="let groupePath of groupe.contentPath" id="{{ groupePath.id }}" (click)="areaClick($event)"
+      <g *ngFor="let groupe of loadedMap.contentGroupe" id="{{ groupe.id }}"  class="{{ groupe.class }}" (click)="areaClick($event, groupe.id)">
+        <path *ngFor="let groupePath of groupe.contentPath" id="{{ groupePath.id }}" 
           class="{{ groupePath.class }}" [attr.d]="groupePath.d" />
       </g>
     </g>
