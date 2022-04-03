@@ -6,6 +6,8 @@
     width: 100%;
     flex-direction: column;
     #map-control-box{
+        -webkit-user-select : none;
+        user-select: none;
         @apply flex flex-col gap-2 absolute;
         @apply bottom-0 right-0 mb-4 mr-4 ;
         div{
@@ -41,7 +43,7 @@
             cursor: move;
         }
         &:not(.panning){
-            .land{
+            .land,g{
                 cursor: pointer;
             }
         }
