@@ -18,7 +18,7 @@ export class ThemeSelectorComponent implements OnInit {
     "dark"
   ]
 
-  currentTheme : string = localStorage.getItem("theme") || "default";
+  currentTheme : string = localStorage.getItem("theme") || "dark";
 
   ngOnInit(): void {
     this.applyTheme();

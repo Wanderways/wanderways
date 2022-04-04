@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -13,20 +12,27 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $learn-your-maps-primary: mat.define-palette(mat.$indigo-palette);
-$learn-your-maps-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$learn-your-maps-accent: mat.define-palette(
+  mat.$pink-palette,
+  A200,
+  A100,
+  A400
+);
 
 // The warn palette is optional (defaults to red).
 $learn-your-maps-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$learn-your-maps-theme: mat.define-light-theme((
-  color: (
-    primary: $learn-your-maps-primary,
-    accent: $learn-your-maps-accent,
-    warn: $learn-your-maps-warn,
+$learn-your-maps-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $learn-your-maps-primary,
+      accent: $learn-your-maps-accent,
+      warn: $learn-your-maps-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -37,226 +43,268 @@ $learn-your-maps-theme: mat.define-light-theme((
 @tailwind components;
 @tailwind utilities;
 
-$svg-invert-white :1;
-$svg-sepia-white :0.64;
-$svg-invert-white :1;
-$svg-invert-white :1;
-$svg-invert-white :1;
-$svg-invert-white :1;
-@layer base{
-    .default {
-        --color-scheme: dark;
-        --light-background: var(--theme-default-background-light);
-        --dark-background: var(--theme-default-background-dark);
-        --current-color: var(--theme-default-text-color);
+$svg-invert-white: 1;
+$svg-sepia-white: 0.64;
+$svg-invert-white: 1;
+$svg-invert-white: 1;
+$svg-invert-white: 1;
+$svg-invert-white: 1;
+@layer base {
+  .default {
+    --color-scheme: dark;
+    --light-background: var(--theme-default-background-light);
+    --dark-background: var(--theme-default-background-dark);
+    --current-color: var(--theme-default-text-color);
 
-        /* SVG related */
-        --svg-invert:100%;
-        --svg-sepia:64%;
-        --svg-saturate:2%;
-        --svg-hue-rotate:3deg;
-        --svg-brightness:104%;
-        --svg-contrast:101%;
+    /* SVG related */
+    --svg-invert: 100%;
+    --svg-sepia: 64%;
+    --svg-saturate: 2%;
+    --svg-hue-rotate: 3deg;
+    --svg-brightness: 104%;
+    --svg-contrast: 101%;
 
-        /* Map related */
-        --map-land : #08080833;
-        --map-land-stroke : #ffffffff;
-        --map-land-found : #347B98FF;
-        --map-subdivision-selected : #FDFDFD4F;
-        --map-land-selected : #FDFDFDFF;
-        --map-land-error : #BE2D0DFF;
-        --map-land-won : #FCCB1AFF;
-    }
-    .light {
-        --color-scheme: light;
-        --light-background: var(--theme-light-background-light);
-        --dark-background: var(--theme-light-background-dark);
-        --current-color: #000000;
+    /* Map related */
+    --map-land: #08080833;
+    --map-land-stroke: #ffffffff;
+    --map-land-found: #347b98ff;
+    --map-group-selected: #fdfdfd4f;
+    --map-land-selected: #fdfdfdff;
+    --map-land-error: #be2d0dff;
+    --map-land-won: #fccb1aff;
+  }
+  .light {
+    --color-scheme: light;
+    --light-background: var(--theme-light-background-light);
+    --dark-background: var(--theme-light-background-dark);
+    --current-color: #000000;
 
-        /* SVG related */
-        --svg-invert:0%;
-        --svg-sepia:0%;
-        --svg-saturate:0%;
-        --svg-hue-rotate:82deg;
-        --svg-brightness:94%;
-        --svg-contrast:103%;
+    /* SVG related */
+    --svg-invert: 0%;
+    --svg-sepia: 0%;
+    --svg-saturate: 0%;
+    --svg-hue-rotate: 82deg;
+    --svg-brightness: 94%;
+    --svg-contrast: 103%;
 
-        /* Map related */
-        --map-land : #32323257;
-        --map-land-stroke : #ffffffff;
-        --map-land-found : #347B98FF;
-        --map-land-selected : #FDFDFDFF;
-        --map-subdivision-selected : #FDFDFD4F;
-        --map-land-error : #BE2D0DFF;
-        --map-land-won : #FCCB1AFF;
-    }
-    .dark {
-        --color-scheme: dark;
-        --light-background: var(--theme-dark-background-light);
-        --dark-background: var(--theme-dark-background-dark);
-        --current-color: var(--theme-dark-text-color);
+    /* Map related */
+    --map-land: #32323257;
+    --map-land-stroke: #ffffffff;
+    --map-land-found: #347b98ff;
+    --map-land-selected: #fdfdfdff;
+    --map-group-selected: #fdfdfd4f;
+    --map-land-error: #be2d0dff;
+    --map-land-won: #fccb1aff;
+  }
+  .dark {
+    --color-scheme: dark;
+    --light-background: var(--theme-dark-background-light);
+    --dark-background: var(--theme-dark-background-dark);
+    --current-color: var(--theme-dark-text-color);
 
-        /* SVG related */
-        --svg-invert:100%;
-        --svg-sepia:64%;
-        --svg-saturate:2%;
-        --svg-hue-rotate:3deg;
-        --svg-brightness:104%;
-        --svg-contrast:101%;
+    /* SVG related */
+    --svg-invert: 100%;
+    --svg-sepia: 64%;
+    --svg-saturate: 2%;
+    --svg-hue-rotate: 3deg;
+    --svg-brightness: 104%;
+    --svg-contrast: 101%;
 
-        /* Map related */
-        --map-land : #80808033;
-        --map-land-stroke : #ffffffff;
-        --map-land-found : #347B98FF;
-        --map-land-selected : #FDFDFDFF;
-        --map-subdivision-selected : #FDFDFD4F;
-        --map-land-error : #BE2D0DFF;
-        --map-land-won : #FCCB1AFF;
-    }
+    /* Map related */
+    --map-land: #80808033;
+    --map-land-stroke: #ffffffff;
+    --map-land-found: #347b98ff;
+    --map-land-selected: #fdfdfdff;
+    --map-group-selected: #fdfdfd4f;
+    --map-land-error: #be2d0dff;
+    --map-land-won: #fccb1aff;
+  }
 }
-@layer utilities{
-    .current-bg-color{
-        background-image: linear-gradient(180deg, var(--dark-background) 0%, var(--light-background) 100%);
-        background-color : var(--light-background);
-    }
-    .bg-default-theme{
-        background-image: linear-gradient(180deg, var(--theme-default-background-dark) 0%, var(--theme-default-background-light) 100%);
-    }
-    .bg-light-theme{
-        background-image: linear-gradient(180deg, var(--theme-light-background-dark) 0%, var(--theme-light-background-light) 100%);
-    }
-    .bg-dark-theme{
-        background-image: linear-gradient(180deg, var(--theme-dark-background-dark) 0%, var(--theme-dark-background-light) 100%);
-    }
-    .bg-candy-theme{
-        background-image: linear-gradient(225deg, var(--candy-primary) 0%, var(--candy-secondary) 100%);
-    }
-    .bg-violetta-theme{
-        background-image: linear-gradient(45deg, var(--violetta-primary) 0%, var(--violetta-secondary) 100%);
-    }
+@layer utilities {
+  .current-bg-color {
+    background-image: linear-gradient(
+      180deg,
+      var(--dark-background) 0%,
+      var(--light-background) 100%
+    );
+    background-color: var(--light-background);
+  }
+  .bg-default-theme {
+    background-image: linear-gradient(
+      180deg,
+      var(--theme-default-background-dark) 0%,
+      var(--theme-default-background-light) 100%
+    );
+  }
+  .bg-light-theme {
+    background-image: linear-gradient(
+      180deg,
+      var(--theme-light-background-dark) 0%,
+      var(--theme-light-background-light) 100%
+    );
+  }
+  .bg-dark-theme {
+    background-image: linear-gradient(
+      180deg,
+      var(--theme-dark-background-dark) 0%,
+      var(--theme-dark-background-light) 100%
+    );
+  }
+  .bg-candy-theme {
+    background-image: linear-gradient(
+      225deg,
+      var(--candy-primary) 0%,
+      var(--candy-secondary) 100%
+    );
+  }
+  .bg-violetta-theme {
+    background-image: linear-gradient(
+      45deg,
+      var(--violetta-primary) 0%,
+      var(--violetta-secondary) 100%
+    );
+  }
 
-    .bg-dark{
-        background-color: var(--dark-background);
-    }
-    .bg-light{
-        background-color: var(--light-background);
-    }
-    
-    .candy-text-color,
-    .violetta-text-color
-    {
-        -webkit-text-fill-color: transparent;
-    }
-    
-    .candy-text-color{
-        @apply bg-candy-theme;
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
-    .violetta-text-color{
-        @apply bg-violetta-theme;
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
+  .bg-dark {
+    background-color: var(--dark-background);
+  }
+  .bg-light {
+    background-color: var(--light-background);
+  }
 
-    
-}
+  .candy-text-color,
+  .violetta-text-color {
+    -webkit-text-fill-color: transparent;
+  }
 
-html{
-    height: 100%;
-    @apply h-full;
-    @apply text-current-color;
-    @apply current-bg-color;
-    background-attachment: fixed;
-    color-scheme: var(--color-scheme);
-    body{
-        @apply flex flex-col;
-        @apply h-full m-0;
-    }
-}
-
-:root{
-    pointer-events: all;
-    --theme-default-background-light: #C4E0E5;
-    --theme-default-background-dark: #4CA1AF;
-    --theme-default-text-color:#FFFFFF;
-
-    --theme-light-background-light:#FFFFFF;
-    --theme-light-background-dark:#CCF9FF;
-    --theme-light-text-color:#000000;
-
-    --theme-dark-background-light:#243B55;
-    --theme-dark-background-dark:#141E30;
-    --theme-dark-text-color:#FFFFFF;
-
-    --violetta-primary:#BE2D0D;
-    --violetta-secondary:#4E3498;
-
-    --candy-primary:#F7A2E4;
-    --candy-secondary:#FCCB1A;
-
-    --land-stroke: 0.4px;
+  .candy-text-color {
+    @apply bg-candy-theme;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .violetta-text-color {
+    @apply bg-violetta-theme;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+  height: 100%;
+  @apply h-full;
+  @apply text-current-color;
+  @apply current-bg-color;
+  background-attachment: fixed;
+  color-scheme: var(--color-scheme);
+  body {
+    @apply flex flex-col;
+    @apply h-full m-0;
+  }
+}
 
-.custom-scrollbar{
-    overflow-y: auto;
-    &::-webkit-scrollbar {
-        @apply w-3;
-        }
-    &::-webkit-scrollbar-track {
-        background: transparent;
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: #FFFFFF4D;
-        border-radius: 10px;
-    }
-    &::-webkit-scrollbar-corner{
-        background: transparent;
-    }
+:root {
+  pointer-events: all;
+  --theme-default-background-light: #c4e0e5;
+  --theme-default-background-dark: #4ca1af;
+  --theme-default-text-color: #ffffff;
+
+  --theme-light-background-light: #ffffff;
+  --theme-light-background-dark: #ccf9ff;
+  --theme-light-text-color: #000000;
+
+  --theme-dark-background-light: #243b55;
+  --theme-dark-background-dark: #141e30;
+  --theme-dark-text-color: #ffffff;
+
+  --violetta-primary: #be2d0d;
+  --violetta-secondary: #4e3498;
+
+  --candy-primary: #f7a2e4;
+  --candy-secondary: #fccb1a;
+
+  --land-stroke: 0.4px;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.custom-scrollbar {
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    @apply w-3;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ffffff4d;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 }
 /*removes highlighting on tap on mobile devices*/
 * {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* Disable image drag*/ 
+/* Disable image drag*/
 img {
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 
-.land{
-    fill: var(--map-land);
-    stroke: white;
-    stroke-width: var(--land-stroke);
+.land {
+  fill: var(--map-land);
 }
-.found{
-    fill: var(--map-land-found);
+.land,
+.zone {
+  stroke: white;
+  stroke-width: var(--land-stroke);
 }
-.selected{
+.found {
+  fill: var(--map-land-found);
+}
+.selected {
+  &,
+  .land {
     fill: var(--map-land-selected);
+  }
+  .zone {
+    stroke-width: calc(var(--land-stroke) * 5);
+  }
 }
-.subdivision-selected{
-    fill: var(--map-subdivision-selected);
+.group-selected {
+  &,
+  .land {
+    fill: var(--map-group-selected);
+  }
+  .zone {
+    stroke-width: calc(var(--land-stroke) * 3);
+  }
+}
+.error {
+  fill: var(--map-land-error);
+}
+.won {
+  fill: var(--map-land-won);
+}
 
+.separator {
+  fill: none;
+  stroke: white;
 }
-.error{
-    fill: var(--map-land-error);
-}
-.won{
-    fill: var(--map-land-won);
-}
-
-.separator{
-    fill: none;
-    stroke: white;
-}
-.zone{
-    fill: transparent;
+.zone {
+  fill: transparent;
+  stroke-dasharray: 3px;
 }
