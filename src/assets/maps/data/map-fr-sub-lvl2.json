@@ -1,0 +1,992 @@
+[
+  {
+    "name": {
+      "en_US": ["Ain"],
+      "fr-FR": ["Ain"]
+    },
+    "identifier": "FR-01",
+    "group": "FR-ARA",
+    "capital": "Bourg-en-Bresse",
+    "numeric_code": "01"
+  },
+  {
+    "name": {
+      "en_US": ["Aisne"],
+      "fr-FR": ["Aisne"]
+    },
+    "identifier": "FR-02",
+    "group": "FR-HDF",
+    "capital": "Laon",
+    "numeric_code": "02"
+  },
+  {
+    "name": {
+      "en_US": ["Allier"],
+      "fr-FR": ["Allier"]
+    },
+    "identifier": "FR-03",
+    "group": "FR-ARA",
+    "capital": "Moulins",
+    "numeric_code": "03"
+  },
+  {
+    "name": {
+      "en_US": ["Alpes-de-Haute-Provence"],
+      "fr-FR": ["Alpes-de-Haute-Provence"]
+    },
+    "identifier": "FR-04",
+    "group": "FR-PAC",
+    "capital": "Digne-les-Bains",
+    "numeric_code": "04"
+  },
+  {
+    "name": {
+      "en_US": ["Alpes-Maritimes"],
+      "fr-FR": ["Alpes-Maritimes"]
+    },
+    "identifier": "FR-06",
+    "group": "FR-PAC",
+    "capital": "Nice",
+    "numeric_code": "06"
+  },
+  {
+    "name": {
+      "en_US": ["Ardèche"],
+      "fr-FR": ["Ardèche"]
+    },
+    "identifier": "FR-07",
+    "group": "FR-ARA",
+    "capital": "Privas",
+    "numeric_code": "07"
+  },
+  {
+    "name": {
+      "en_US": ["Ardennes"],
+      "fr-FR": ["Ardennes"]
+    },
+    "identifier": "FR-08",
+    "group": "FR-GES",
+    "capital": "Charleville-Mézières",
+    "numeric_code": "08"
+  },
+  {
+    "name": {
+      "en_US": ["Ariège"],
+      "fr-FR": ["Ariège"]
+    },
+    "identifier": "FR-09",
+    "group": "FR-OCC",
+    "capital": "Foix",
+    "numeric_code": "09"
+  },
+  {
+    "name": {
+      "en_US": ["Aube"],
+      "fr-FR": ["Aube"]
+    },
+    "identifier": "FR-10",
+    "group": "FR-GES",
+    "capital": "Troyes",
+    "numeric_code": "10"
+  },
+  {
+    "name": {
+      "en_US": ["Aude"],
+      "fr-FR": ["Aude"]
+    },
+    "identifier": "FR-11",
+    "group": "FR-OCC",
+    "capital": "Carcassonne",
+    "numeric_code": "11"
+  },
+  {
+    "name": {
+      "en_US": ["Aveyron"],
+      "fr-FR": ["Aveyron"]
+    },
+    "identifier": "FR-12",
+    "group": "FR-OCC",
+    "capital": "Rodez",
+    "numeric_code": "12"
+  },
+  {
+    "name": {
+      "en_US": ["Bouches-du-Rhône"],
+      "fr-FR": ["Bouches-du-Rhône"]
+    },
+    "identifier": "FR-13",
+    "group": "FR-PAC",
+    "capital": "Marseille",
+    "numeric_code": "13"
+  },
+  {
+    "name": {
+      "en_US": ["Calvados"],
+      "fr-FR": ["Calvados"]
+    },
+    "identifier": "FR-14",
+    "group": "FR-NOR",
+    "capital": "Caen",
+    "numeric_code": "14"
+  },
+  {
+    "name": {
+      "en_US": ["Cantal"],
+      "fr-FR": ["Cantal"]
+    },
+    "identifier": "FR-15",
+    "group": "FR-ARA",
+    "capital": "Aurillac",
+    "numeric_code": "15"
+  },
+  {
+    "name": {
+      "en_US": ["Charente"],
+      "fr-FR": ["Charente"]
+    },
+    "identifier": "FR-16",
+    "group": "FR-NAQ",
+    "capital": "Angoulême",
+    "numeric_code": "16"
+  },
+  {
+    "name": {
+      "en_US": ["Charente-Maritime"],
+      "fr-FR": ["Charente-Maritime"]
+    },
+    "identifier": "FR-17",
+    "group": "FR-NAQ",
+    "capital": "La Rochelle",
+    "numeric_code": "17"
+  },
+  {
+    "name": {
+      "en_US": ["Cher"],
+      "fr-FR": ["Cher"]
+    },
+    "identifier": "FR-18",
+    "group": "FR-CVL",
+    "capital": "Bourges",
+    "numeric_code": "18"
+  },
+  {
+    "name": {
+      "en_US": ["Corrèze"],
+      "fr-FR": ["Corrèze"]
+    },
+    "identifier": "FR-19",
+    "group": "FR-NAQ",
+    "capital": "Tulle",
+    "numeric_code": "19"
+  },
+  {
+    "name": {
+      "en_US": ["Corse-du-Sud"],
+      "fr-FR": ["Corse-du-Sud"]
+    },
+    "identifier": "FR-2A",
+    "group": "FR-20R",
+    "capital": "Ajaccio",
+    "numeric_code": "2A"
+  },
+  {
+    "name": {
+      "en_US": ["Côte-d'Or"],
+      "fr-FR": ["Côte-d'Or"]
+    },
+    "identifier": "FR-21",
+    "group": "FR-BFC",
+    "capital": "Dijon",
+    "numeric_code": "21"
+  },
+  {
+    "name": {
+      "en_US": ["Côtes-d'Armor"],
+      "fr-FR": ["Côtes-d'Armor"]
+    },
+    "identifier": "FR-22",
+    "group": "FR-BRE",
+    "capital": "St-Brieuc",
+    "numeric_code": "22"
+  },
+  {
+    "name": {
+      "en_US": ["Creuse"],
+      "fr-FR": ["Creuse"]
+    },
+    "identifier": "FR-23",
+    "group": "FR-NAQ",
+    "capital": "Guéret",
+    "numeric_code": "23"
+  },
+  {
+    "name": {
+      "en_US": ["Deux-Sèvres"],
+      "fr-FR": ["Deux-Sèvres"]
+    },
+    "identifier": "FR-79",
+    "group": "FR-NAQ",
+    "capital": "Niort",
+    "numeric_code": "79"
+  },
+  {
+    "name": {
+      "en_US": ["Dordogne"],
+      "fr-FR": ["Dordogne"]
+    },
+    "identifier": "FR-24",
+    "group": "FR-NAQ",
+    "capital": "Périgueux",
+    "numeric_code": "24"
+  },
+  {
+    "name": {
+      "en_US": ["Doubs"],
+      "fr-FR": ["Doubs"]
+    },
+    "identifier": "FR-25",
+    "group": "FR-BFC",
+    "capital": "Besançon",
+    "numeric_code": "25"
+  },
+  {
+    "name": {
+      "en_US": ["Drôme"],
+      "fr-FR": ["Drôme"]
+    },
+    "identifier": "FR-26",
+    "group": "FR-ARA",
+    "capital": "Valence",
+    "numeric_code": "26"
+  },
+  {
+    "name": {
+      "en_US": ["Essonne"],
+      "fr-FR": ["Essonne"]
+    },
+    "identifier": "FR-91",
+    "group": "FR-IDF",
+    "capital": "Évry",
+    "numeric_code": "91"
+  },
+  {
+    "name": {
+      "en_US": ["Eure"],
+      "fr-FR": ["Eure"]
+    },
+    "identifier": "FR-27",
+    "group": "FR-NOR",
+    "capital": "Évreux",
+    "numeric_code": "27"
+  },
+  {
+    "name": {
+      "en_US": ["Eure-et-Loir"],
+      "fr-FR": ["Eure-et-Loir"]
+    },
+    "identifier": "FR-28",
+    "group": "FR-CVL",
+    "capital": "Chartres",
+    "numeric_code": "28"
+  },
+  {
+    "name": {
+      "en_US": ["Finistère"],
+      "fr-FR": ["Finistère"]
+    },
+    "identifier": "FR-29",
+    "group": "FR-BRE",
+    "capital": "Quimper",
+    "numeric_code": "29"
+  },
+  {
+    "name": {
+      "en_US": ["Guyane"],
+      "fr-FR": ["Guyane"]
+    },
+    "identifier": "FR-973",
+    "group": "",
+    "numeric_code": "973",
+    "capital": "Cayenne"
+  },
+  {
+    "name": {
+      "en_US": ["Gard"],
+      "fr-FR": ["Gard"]
+    },
+    "identifier": "FR-30",
+    "group": "FR-OCC",
+    "numeric_code": "30",
+    "capital": "Nîmes"
+  },
+  {
+    "name": {
+      "en_US": ["Gers"],
+      "fr-FR": ["Gers"]
+    },
+    "identifier": "FR-32",
+    "group": "FR-OCC",
+    "numeric_code": "32",
+    "capital": "Auch"
+  },
+  {
+    "name": {
+      "en_US": ["Gironde"],
+      "fr-FR": ["Gironde"]
+    },
+    "identifier": "FR-33",
+    "group": "FR-NAQ",
+    "numeric_code": "33",
+    "capital": "Bordeaux"
+  },
+  {
+    "name": {
+      "en_US": ["Guadeloupe"],
+      "fr-FR": ["Guadeloupe"]
+    },
+    "identifier": "FR-971",
+    "group": "",
+    "numeric_code": "971",
+    "capital": "Basse-Terre"
+  },
+  {
+    "name": {
+      "en_US": ["Haute-Corse"],
+      "fr-FR": ["Haute-Corse"]
+    },
+    "identifier": "FR-2B",
+    "group": "FR-20R",
+    "numeric_code": "2B",
+    "capital": "Bastia"
+  },
+  {
+    "name": {
+      "en_US": ["Haute-Garonne"],
+      "fr-FR": ["Haute-Garonne"]
+    },
+    "identifier": "FR-31",
+    "group": "FR-OCC",
+    "numeric_code": "31",
+    "capital": "Toulouse"
+  },
+  {
+    "name": {
+      "en_US": ["Haute-Loire"],
+      "fr-FR": ["Haute-Loire"]
+    },
+    "identifier": "FR-43",
+    "group": "FR-ARA",
+    "numeric_code": "43",
+    "capital": "Le Puy-en-Velay"
+  },
+  {
+    "name": {
+      "en_US": ["Haute-Marne"],
+      "fr-FR": ["Haute-Marne"]
+    },
+    "identifier": "FR-52",
+    "group": "FR-GES",
+    "numeric_code": "52",
+    "capital": "Chaumont"
+  },
+  {
+    "name": {
+      "en_US": ["Hautes-Alpes"],
+      "fr-FR": ["Hautes-Alpes"]
+    },
+    "identifier": "FR-05",
+    "group": "FR-PAC",
+    "numeric_code": "05",
+    "capital": "Gap"
+  },
+  {
+    "name": {
+      "en_US": ["Haute-Saône"],
+      "fr-FR": ["Haute-Saône"]
+    },
+    "identifier": "FR-70",
+    "group": "FR-BFC",
+    "numeric_code": "70",
+    "capital": "Vesoul"
+  },
+  {
+    "name": {
+      "en_US": ["Haute-Savoie"],
+      "fr-FR": ["Haute-Savoie"]
+    },
+    "identifier": "FR-74",
+    "group": "FR-ARA",
+    "numeric_code": "74",
+    "capital": "Annecy"
+  },
+  {
+    "name": {
+      "en_US": ["Hautes-Pyrénées"],
+      "fr-FR": ["Hautes-Pyrénées"]
+    },
+    "identifier": "FR-65",
+    "group": "FR-OCC",
+    "numeric_code": "65",
+    "capital": "Tarbes"
+  },
+  {
+    "name": {
+      "en_US": ["Haute-Vienne"],
+      "fr-FR": ["Haute-Vienne"]
+    },
+    "identifier": "FR-87",
+    "group": "FR-NAQ",
+    "numeric_code": "87",
+    "capital": "Limoges"
+  },
+  {
+    "name": {
+      "en_US": ["Hauts-de-Seine"],
+      "fr-FR": ["Hauts-de-Seine"]
+    },
+    "identifier": "FR-92",
+    "group": "FR-IDF",
+    "numeric_code": "92",
+    "capital": "Nanterre"
+  },
+  {
+    "name": {
+      "en_US": ["Hérault"],
+      "fr-FR": ["Hérault"]
+    },
+    "identifier": "FR-34",
+    "group": "FR-OCC",
+    "numeric_code": "34",
+    "capital": "Montpellier"
+  },
+  {
+    "name": {
+      "en_US": ["Ille-et-Vilaine"],
+      "fr-FR": ["Ille-et-Vilaine"]
+    },
+    "identifier": "FR-35",
+    "group": "FR-BRE",
+    "numeric_code": "35",
+    "capital": "Rennes"
+  },
+  {
+    "name": {
+      "en_US": ["Indre"],
+      "fr-FR": ["Indre"]
+    },
+    "identifier": "FR-36",
+    "group": "FR-CVL",
+    "numeric_code": "36",
+    "capital": "Châteauroux"
+  },
+  {
+    "name": {
+      "en_US": ["Indre-et-Loire"],
+      "fr-FR": ["Indre-et-Loire"]
+    },
+    "identifier": "FR-37",
+    "group": "FR-CVL",
+    "numeric_code": "37",
+    "capital": "Tours"
+  },
+  {
+    "name": {
+      "en_US": ["Isère"],
+      "fr-FR": ["Isère"]
+    },
+    "identifier": "FR-38",
+    "group": "FR-ARA",
+    "numeric_code": "38",
+    "capital": "Grenoble"
+  },
+  {
+    "name": {
+      "en_US": ["Jura"],
+      "fr-FR": ["Jura"]
+    },
+    "identifier": "FR-39",
+    "group": "FR-BFC",
+    "numeric_code": "39",
+    "capital": "Lons-le-Saunier"
+  },
+  {
+    "name": {
+      "en_US": ["Landes"],
+      "fr-FR": ["Landes"]
+    },
+    "identifier": "FR-40",
+    "group": "FR-NAQ",
+    "numeric_code": "40",
+    "capital": "Mont-de-Marsan"
+  },
+  {
+    "name": {
+      "en_US": ["Loire"],
+      "fr-FR": ["Loire"]
+    },
+    "identifier": "FR-42",
+    "group": "FR-ARA",
+    "numeric_code": "42",
+    "capital": "Saint-Étienne"
+  },
+  {
+    "name": {
+      "en_US": ["Loire-Atlantique"],
+      "fr-FR": ["Loire-Atlantique"]
+    },
+    "identifier": "FR-44",
+    "group": "FR-PDL",
+    "numeric_code": "44",
+    "capital": "Nantes"
+  },
+  {
+    "name": {
+      "en_US": ["Loiret"],
+      "fr-FR": ["Loiret"]
+    },
+    "identifier": "FR-45",
+    "group": "FR-CVL",
+    "numeric_code": "45",
+    "capital": "Orléans"
+  },
+  {
+    "name": {
+      "en_US": ["Loir-et-Cher"],
+      "fr-FR": ["Loir-et-Cher"]
+    },
+    "identifier": "FR-41",
+    "group": "FR-CVL",
+    "numeric_code": "41",
+    "capital": "Blois"
+  },
+  {
+    "name": {
+      "en_US": ["Lot"],
+      "fr-FR": ["Lot"]
+    },
+    "identifier": "FR-46",
+    "group": "FR-OCC",
+    "numeric_code": "46",
+    "capital": "Cahors"
+  },
+  {
+    "name": {
+      "en_US": ["Lot-et-Garonne"],
+      "fr-FR": ["Lot-et-Garonne"]
+    },
+    "identifier": "FR-47",
+    "group": "FR-NAQ",
+    "numeric_code": "47",
+    "capital": "Agen"
+  },
+  {
+    "name": {
+      "en_US": ["Lozère"],
+      "fr-FR": ["Lozère"]
+    },
+    "identifier": "FR-48",
+    "group": "FR-OCC",
+    "numeric_code": "48",
+    "capital": "Mende"
+  },
+  {
+    "name": {
+      "en_US": ["Maine-et-Loire"],
+      "fr-FR": ["Maine-et-Loire"]
+    },
+    "identifier": "FR-49",
+    "group": "FR-PDL",
+    "numeric_code": "49",
+    "capital": "Angers"
+  },
+  {
+    "name": {
+      "en_US": ["Manche"],
+      "fr-FR": ["Manche"]
+    },
+    "identifier": "FR-50",
+    "group": "FR-NOR",
+    "numeric_code": "50",
+    "capital": "Saint-Lô"
+  },
+  {
+    "name": {
+      "en_US": ["Marne"],
+      "fr-FR": ["Marne"]
+    },
+    "identifier": "FR-51",
+    "group": "FR-GES",
+    "numeric_code": "51",
+    "capital": "Châlons-en-Champagne"
+  },
+  {
+    "name": {
+      "en_US": ["Martinique"],
+      "fr-FR": ["Martinique"]
+    },
+    "identifier": "FR-972",
+    "group": "",
+    "numeric_code": "972",
+    "capital": "Fort-de-France"
+  },
+  {
+    "name": {
+      "en_US": ["Paris"],
+      "fr-FR": ["Paris"]
+    },
+    "identifier": "FR-75",
+    "group": "FR-IDF",
+    "numeric_code": "75",
+    "capital": "Paris"
+  },
+  {
+    "name": {
+      "en_US": ["Mayenne"],
+      "fr-FR": ["Mayenne"]
+    },
+    "identifier": "FR-53",
+    "group": "FR-PDL",
+    "numeric_code": "53",
+    "capital": "Laval"
+  },
+  {
+    "name": {
+      "en_US": ["Mayotte"],
+      "fr-FR": ["Mayotte"]
+    },
+    "identifier": "FR-976",
+    "group": "",
+    "numeric_code": "976",
+    "capital": "Dzaoudzi"
+  },
+  {
+    "name": {
+      "en_US": ["Meurthe-et-Moselle"],
+      "fr-FR": ["Meurthe-et-Moselle"]
+    },
+    "identifier": "FR-54",
+    "group": "FR-GES",
+    "numeric_code": "54",
+    "capital": "Nancy"
+  },
+  {
+    "name": {
+      "en_US": ["Meuse"],
+      "fr-FR": ["Meuse"]
+    },
+    "identifier": "FR-55",
+    "group": "FR-GES",
+    "numeric_code": "55",
+    "capital": "Bar-le-Duc"
+  },
+  {
+    "name": {
+      "en_US": ["Morbihan"],
+      "fr-FR": ["Morbihan"]
+    },
+    "identifier": "FR-56",
+    "group": "FR-BRE",
+    "numeric_code": "56",
+    "capital": "Vannes"
+  },
+  {
+    "name": {
+      "en_US": ["Moselle"],
+      "fr-FR": ["Moselle"]
+    },
+    "identifier": "FR-57",
+    "group": "FR-GES",
+    "numeric_code": "57",
+    "capital": "Metz"
+  },
+  {
+    "name": {
+      "en_US": ["Nièvre"],
+      "fr-FR": ["Nièvre"]
+    },
+    "identifier": "FR-58",
+    "group": "FR-BFC",
+    "numeric_code": "58",
+    "capital": "Nevers"
+  },
+  {
+    "name": {
+      "en_US": ["Nord"],
+      "fr-FR": ["Nord"]
+    },
+    "identifier": "FR-59",
+    "group": "FR-HDF",
+    "numeric_code": "59",
+    "capital": "Lille"
+  },
+  {
+    "name": {
+      "en_US": ["Oise"],
+      "fr-FR": ["Oise"]
+    },
+    "identifier": "FR-60",
+    "group": "FR-HDF",
+    "numeric_code": "60",
+    "capital": "Beauvais"
+  },
+  {
+    "name": {
+      "en_US": ["Orne"],
+      "fr-FR": ["Orne"]
+    },
+    "identifier": "FR-61",
+    "group": "FR-NOR",
+    "numeric_code": "61",
+    "capital": "Alençon"
+  },
+  {
+    "name": {
+      "en_US": ["Pas-de-Calais"],
+      "fr-FR": ["Pas-de-Calais"]
+    },
+    "identifier": "FR-62",
+    "group": "FR-HDF",
+    "numeric_code": "62",
+    "capital": "Arras"
+  },
+  {
+    "name": {
+      "en_US": ["Puy-de-Dôme"],
+      "fr-FR": ["Puy-de-Dôme"]
+    },
+    "identifier": "FR-63",
+    "group": "FR-ARA",
+    "numeric_code": "63",
+    "capital": "Clermont-Ferrand"
+  },
+  {
+    "name": {
+      "en_US": ["Pyrénées-Atlantiques"],
+      "fr-FR": ["Pyrénées-Atlantiques"]
+    },
+    "identifier": "FR-64",
+    "group": "FR-NAQ",
+    "numeric_code": "64",
+    "capital": "Pau"
+  },
+  {
+    "name": {
+      "en_US": ["Pyrénées-Orientales"],
+      "fr-FR": ["Pyrénées-Orientales"]
+    },
+    "identifier": "FR-66",
+    "group": "FR-OCC",
+    "numeric_code": "66",
+    "capital": "Perpignan"
+  },
+  {
+    "name": {
+      "en_US": ["La Réunion"],
+      "fr-FR": ["La Réunion"]
+    },
+    "identifier": "FR-974",
+    "group": "",
+    "numeric_code": "974",
+    "capital": "Saint-Denis"
+  },
+  {
+    "name": {
+      "en_US": ["Rhône"],
+      "fr-FR": ["Rhône"]
+    },
+    "identifier": "FR-69",
+    "group": "FR-ARA",
+    "numeric_code": "69",
+    "capital": "Lyon"
+  },
+  {
+    "name": {
+      "en_US": ["Saône-et-Loire"],
+      "fr-FR": ["Saône-et-Loire"]
+    },
+    "identifier": "FR-71",
+    "group": "FR-BFC",
+    "numeric_code": "71",
+    "capital": "Mâcon"
+  },
+  {
+    "name": {
+      "en_US": ["Sarthe"],
+      "fr-FR": ["Sarthe"]
+    },
+    "identifier": "FR-72",
+    "group": "FR-PDL",
+    "numeric_code": "72",
+    "capital": "Le Mans"
+  },
+  {
+    "name": {
+      "en_US": ["Savoie"],
+      "fr-FR": ["Savoie"]
+    },
+    "identifier": "FR-73",
+    "group": "FR-ARA",
+    "numeric_code": "73",
+    "capital": "Chambéry"
+  },
+  {
+    "name": {
+      "en_US": ["Seine-et-Marne"],
+      "fr-FR": ["Seine-et-Marne"]
+    },
+    "identifier": "FR-77",
+    "group": "FR-IDF",
+    "numeric_code": "77",
+    "capital": "Melun"
+  },
+  {
+    "name": {
+      "en_US": ["Seine-Maritime"],
+      "fr-FR": ["Seine-Maritime"]
+    },
+    "identifier": "FR-76",
+    "group": "FR-NOR",
+    "numeric_code": "76",
+    "capital": "Rouen"
+  },
+  {
+    "name": {
+      "en_US": ["Seine-Saint-Denis"],
+      "fr-FR": ["Seine-Saint-Denis"]
+    },
+    "identifier": "FR-93",
+    "group": "FR-IDF",
+    "numeric_code": "93",
+    "capital": "Bobigny"
+  },
+  {
+    "name": {
+      "en_US": ["Somme"],
+      "fr-FR": ["Somme"]
+    },
+    "identifier": "FR-80",
+    "group": "FR-HDF",
+    "numeric_code": "80",
+    "capital": "Amiens"
+  },
+  {
+    "name": {
+      "en_US": ["Tarn"],
+      "fr-FR": ["Tarn"]
+    },
+    "identifier": "FR-81",
+    "group": "FR-OCC",
+    "numeric_code": "81",
+    "capital": "Albi"
+  },
+  {
+    "name": {
+      "en_US": ["Tarn-et-Garonne"],
+      "fr-FR": ["Tarn-et-Garonne"]
+    },
+    "identifier": "FR-82",
+    "group": "FR-OCC",
+    "numeric_code": "82",
+    "capital": "Montauban"
+  },
+  {
+    "name": {
+      "en_US": ["Territoire de Belfort"],
+      "fr-FR": ["Territoire de Belfort"]
+    },
+    "identifier": "FR-90",
+    "group": "FR-BFC",
+    "numeric_code": "90",
+    "capital": "Belfort"
+  },
+  {
+    "name": {
+      "en_US": ["Val-de-Marne"],
+      "fr-FR": ["Val-de-Marne"]
+    },
+    "identifier": "FR-94",
+    "group": "FR-IDF",
+    "numeric_code": "94",
+    "capital": "Créteil"
+  },
+  {
+    "name": {
+      "en_US": ["Val-d'Oise"],
+      "fr-FR": ["Val-d'Oise"]
+    },
+    "identifier": "FR-95",
+    "group": "FR-IDF",
+    "numeric_code": "95",
+    "capital": "Pontoise"
+  },
+  {
+    "name": {
+      "en_US": ["Var"],
+      "fr-FR": ["Var"]
+    },
+    "identifier": "FR-83",
+    "group": "FR-PAC",
+    "numeric_code": "83",
+    "capital": "Toulon"
+  },
+  {
+    "name": {
+      "en_US": ["Vaucluse"],
+      "fr-FR": ["Vaucluse"]
+    },
+    "identifier": "FR-84",
+    "group": "FR-PAC",
+    "numeric_code": "84",
+    "capital": "Avignon"
+  },
+  {
+    "name": {
+      "en_US": ["Vendée"],
+      "fr-FR": ["Vendée"]
+    },
+    "identifier": "FR-85",
+    "group": "FR-PDL",
+    "numeric_code": "85",
+    "capital": "La Roche-sur-Yon"
+  },
+  {
+    "name": {
+      "en_US": ["Vienne"],
+      "fr-FR": ["Vienne"]
+    },
+    "identifier": "FR-86",
+    "group": "FR-NAQ",
+    "numeric_code": "86",
+    "capital": "Poitiers"
+  },
+  {
+    "name": {
+      "en_US": ["Vosges"],
+      "fr-FR": ["Vosges"]
+    },
+    "identifier": "FR-88",
+    "group": "FR-GES",
+    "numeric_code": "88",
+    "capital": "Épinal"
+  },
+  {
+    "name": {
+      "en_US": ["Yonne"],
+      "fr-FR": ["Yonne"]
+    },
+    "identifier": "FR-89",
+    "group": "FR-BFC",
+    "numeric_code": "89",
+    "capital": "Auxerre"
+  },
+  {
+    "name": {
+      "en_US": ["Yvelines"],
+      "fr-FR": ["Yvelines"]
+    },
+    "identifier": "FR-78",
+    "group": "FR-IDF",
+    "numeric_code": "78",
+    "capital": "Versailles"
+  }
+]

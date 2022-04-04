@@ -1,0 +1,331 @@
+[
+  {
+    "name": { "en_US": [" Aichi"] },
+    "identifier": "JP-23",
+    "numeric_code": "23",
+    "group": "JP-CHB",
+    "capital": "Nagoya"
+  },
+  {
+    "name": { "en_US": [" Akita"] },
+    "identifier": "JP-05",
+    "numeric_code": "05",
+    "group": "JP-TOH",
+    "capital": "Akita"
+  },
+  {
+    "name": { "en_US": [" Aomori"] },
+    "identifier": "JP-02",
+    "numeric_code": "02",
+    "group": "JP-TOH",
+    "capital": "Aomori"
+  },
+  {
+    "name": { "en_US": [" Chiba"] },
+    "identifier": "JP-12",
+    "numeric_code": "12",
+    "group": "JP-KNT",
+    "capital": "Chiba"
+  },
+  {
+    "name": { "en_US": [" Ehime"] },
+    "identifier": "JP-38",
+    "numeric_code": "38",
+    "group": "JP-SHI",
+    "capital": "Matsuyama"
+  },
+  {
+    "name": { "en_US": [" Fukui"] },
+    "identifier": "JP-18",
+    "numeric_code": "18",
+    "group": "JP-CHB",
+    "capital": "Fukui"
+  },
+  {
+    "name": { "en_US": [" Fukuoka"] },
+    "identifier": "JP-40",
+    "numeric_code": "40",
+    "group": "JP-KYU",
+    "capital": "Fukuoka"
+  },
+  {
+    "name": { "en_US": [" Fukushima"] },
+    "identifier": "JP-07",
+    "numeric_code": "07",
+    "group": "JP-TOH",
+    "capital": "Fukushima"
+  },
+  {
+    "name": { "en_US": [" Gifu"] },
+    "identifier": "JP-21",
+    "numeric_code": "21",
+    "group": "JP-CHB",
+    "capital": "Gifu"
+  },
+  {
+    "name": { "en_US": [" Gunma"] },
+    "identifier": "JP-10",
+    "numeric_code": "10",
+    "group": "JP-KNT",
+    "capital": "Maebashi"
+  },
+  {
+    "name": { "en_US": [" Hiroshima"] },
+    "identifier": "JP-34",
+    "numeric_code": "34",
+    "group": "JP-CHU",
+    "capital": "Hiroshima"
+  },
+  {
+    "name": { "en_US": [" Hokkaido"] },
+    "identifier": "JP-01",
+    "numeric_code": "01",
+    "group": "JP-HOK",
+    "capital": "Sapporo"
+  },
+  {
+    "name": { "en_US": [" Hyōgo"] },
+    "identifier": "JP-28",
+    "numeric_code": "28",
+    "group": "JP-KAN",
+    "capital": "Kōbe"
+  },
+  {
+    "name": { "en_US": [" Ibaraki"] },
+    "identifier": "JP-08",
+    "numeric_code": "08",
+    "group": "JP-KNT",
+    "capital": "Mito"
+  },
+  {
+    "name": { "en_US": [" Ishikawa"] },
+    "identifier": "JP-17",
+    "numeric_code": "17",
+    "group": "JP-CHB",
+    "capital": "Kanazawa"
+  },
+  {
+    "name": { "en_US": [" Iwate"] },
+    "identifier": "JP-03",
+    "numeric_code": "03",
+    "group": "JP-TOH",
+    "capital": "Morioka"
+  },
+  {
+    "name": { "en_US": [" Kagawa"] },
+    "identifier": "JP-37",
+    "numeric_code": "37",
+    "group": "JP-SHI",
+    "capital": "Takamatsu"
+  },
+  {
+    "name": { "en_US": [" Kagoshima"] },
+    "identifier": "JP-46",
+    "numeric_code": "46",
+    "group": "JP-KYU",
+    "capital": "Kagoshima"
+  },
+  {
+    "name": { "en_US": [" Kanagawa"] },
+    "identifier": "JP-14",
+    "numeric_code": "14",
+    "group": "JP-KNT",
+    "capital": "Yokohama"
+  },
+  {
+    "name": { "en_US": [" Kōchi"] },
+    "identifier": "JP-39",
+    "numeric_code": "39",
+    "group": "JP-SHI",
+    "capital": "Kōchi"
+  },
+  {
+    "name": { "en_US": [" Kumamoto"] },
+    "identifier": "JP-43",
+    "numeric_code": "43",
+    "group": "JP-KYU",
+    "capital": "Kumamoto"
+  },
+  {
+    "name": { "en_US": [" Kyoto"] },
+    "identifier": "JP-26",
+    "numeric_code": "26",
+    "group": "JP-KAN",
+    "capital": "Kyoto"
+  },
+  {
+    "name": { "en_US": [" Mie"] },
+    "identifier": "JP-24",
+    "numeric_code": "24",
+    "group": "JP-KAN",
+    "capital": "Tsu"
+  },
+  {
+    "name": { "en_US": [" Miyagi"] },
+    "identifier": "JP-04",
+    "numeric_code": "04",
+    "group": "JP-TOH",
+    "capital": "Sendai"
+  },
+  {
+    "name": { "en_US": [" Miyazaki"] },
+    "identifier": "JP-45",
+    "numeric_code": "45",
+    "group": "JP-KYU",
+    "capital": "Miyazaki"
+  },
+  {
+    "name": { "en_US": [" Nagano"] },
+    "identifier": "JP-20",
+    "numeric_code": "20",
+    "group": "JP-CHB",
+    "capital": "Nagano"
+  },
+  {
+    "name": { "en_US": [" Nagasaki"] },
+    "identifier": "JP-42",
+    "numeric_code": "42",
+    "group": "JP-KYU",
+    "capital": "Nagasaki"
+  },
+  {
+    "name": { "en_US": [" Nara"] },
+    "identifier": "JP-29",
+    "numeric_code": "29",
+    "group": "JP-KAN",
+    "capital": "Nara"
+  },
+  {
+    "name": { "en_US": [" Niigata"] },
+    "identifier": "JP-15",
+    "numeric_code": "15",
+    "group": "JP-CHB",
+    "capital": "Niigata"
+  },
+  {
+    "name": { "en_US": [" Ōita"] },
+    "identifier": "JP-44",
+    "numeric_code": "44",
+    "group": "JP-KYU",
+    "capital": "Ōita"
+  },
+  {
+    "name": { "en_US": [" Okayama"] },
+    "identifier": "JP-33",
+    "numeric_code": "33",
+    "group": "JP-CHU",
+    "capital": "Okayama"
+  },
+  {
+    "name": { "en_US": [" Okinawa"] },
+    "identifier": "JP-47",
+    "numeric_code": "47",
+    "group": "JP-KYU",
+    "capital": "Naha"
+  },
+  {
+    "name": { "en_US": [" Osaka"] },
+    "identifier": "JP-27",
+    "numeric_code": "27",
+    "group": "JP-KAN",
+    "capital": "Ōsaka"
+  },
+  {
+    "name": { "en_US": [" Saga"] },
+    "identifier": "JP-41",
+    "numeric_code": "41",
+    "group": "JP-KYU",
+    "capital": "Saga"
+  },
+  {
+    "name": { "en_US": [" Saitama"] },
+    "identifier": "JP-11",
+    "numeric_code": "11",
+    "group": "JP-KNT",
+    "capital": "Saitama"
+  },
+  {
+    "name": { "en_US": [" Shiga"] },
+    "identifier": "JP-25",
+    "numeric_code": "25",
+    "group": "JP-KAN",
+    "capital": "Ōtsu"
+  },
+  {
+    "name": { "en_US": [" Shimane"] },
+    "identifier": "JP-32",
+    "numeric_code": "32",
+    "group": "JP-CHU",
+    "capital": "Matsue"
+  },
+  {
+    "name": { "en_US": [" Shizuoka"] },
+    "identifier": "JP-22",
+    "numeric_code": "22",
+    "group": "JP-CHB",
+    "capital": "Shizuoka"
+  },
+  {
+    "name": { "en_US": [" Tochigi"] },
+    "identifier": "JP-09",
+    "numeric_code": "09",
+    "group": "JP-KNT",
+    "capital": "Utsunomiya"
+  },
+  {
+    "name": { "en_US": [" Tokushima"] },
+    "identifier": "JP-36",
+    "numeric_code": "36",
+    "group": "JP-SHI",
+    "capital": "Tokushima"
+  },
+  {
+    "name": { "en_US": [" Tokyo"] },
+    "identifier": "JP-13",
+    "numeric_code": "13",
+    "group": "JP-KNT",
+    "capital": "Tokyo"
+  },
+  {
+    "name": { "en_US": [" Tottori"] },
+    "identifier": "JP-31",
+    "numeric_code": "31",
+    "group": "JP-CHU",
+    "capital": "Tottori"
+  },
+  {
+    "name": { "en_US": [" Toyama"] },
+    "identifier": "JP-16",
+    "numeric_code": "16",
+    "group": "JP-CHB",
+    "capital": "Toyama"
+  },
+  {
+    "name": { "en_US": [" Wakayama"] },
+    "identifier": "JP-30",
+    "numeric_code": "30",
+    "group": "JP-KAN",
+    "capital": "Wakayama"
+  },
+  {
+    "name": { "en_US": [" Yamagata"] },
+    "identifier": "JP-06",
+    "numeric_code": "06",
+    "group": "JP-TOH",
+    "capital": "Yamagata"
+  },
+  {
+    "name": { "en_US": [" Yamaguchi"] },
+    "identifier": "JP-35",
+    "numeric_code": "35",
+    "group": "JP-CHU",
+    "capital": "Yamaguchi"
+  },
+  {
+    "name": { "en_US": [" Yamanashi"] },
+    "identifier": "JP-19",
+    "numeric_code": "19",
+    "group": "JP-CHB",
+    "capital": "Kōfu"
+  }
+]
