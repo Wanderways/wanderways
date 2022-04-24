@@ -347,7 +347,7 @@
     "identifier": "BV",
     "alpha_2": "BV",
     "alpha_3": "BVT",
-    "group": "sa",
+    "group": "an",
     "numeric_code": "074",
     "independant": false
   },
@@ -2305,7 +2305,7 @@
     "identifier": "GS",
     "alpha_2": "GS",
     "alpha_3": "SGS",
-    "group": "sa",
+    "group": "an",
     "numeric_code": "239",
     "independant": false
   },
