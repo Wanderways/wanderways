@@ -1,13 +1,11 @@
 import { NgModule  } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CanvasComponent } from './core/canvas/canvas.component';
 import { HomeComponent } from './core/home/home.component';
 import { MapsPageComponent } from './core/maps-page/maps-page.component';
 
 const routes: Routes = [
   { path:'', component: HomeComponent },
-  { path:'maps', component: MapsPageComponent },
-  { path:'canvas', component: CanvasComponent }
+  { path:'maps', component: MapsPageComponent }
 ];
 
 @NgModule({
