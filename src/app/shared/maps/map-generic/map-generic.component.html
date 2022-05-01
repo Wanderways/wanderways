@@ -1,7 +1,6 @@
 <ng-container *ngIf="loadedMap !== undefined; else loading">
   
   <svg #mapRef id="map-container" [attr.xlmns]="loadedMap.xlmns" attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
-  class="test mx-auto"
   [class.panning]="mouseStates.isPanned"
   (wheel)="wheelEvent($event)" (pointerdown)="panningBegin($event)" (pointerup)="panningEnd($event)" (pointerleave)="pointerMove($event)"  (pointermove)="pointerMove($event)">
     <g #groupRef id="scaled-map-container" >
