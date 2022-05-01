@@ -1,0 +1,8 @@
+
+<ng-container *ngIf="mapIndexEntry">
+    <h1>
+        {{mapIndexEntry!.mapDisplayName | i18n}}
+    </h1>
+</ng-container>
+
+<app-map-generic (mapIndexEntry)="onMapIndexEntry($event)"></app-map-generic>

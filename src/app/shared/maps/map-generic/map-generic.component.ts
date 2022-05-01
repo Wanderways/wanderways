@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, Output, EventEmitter, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AreaCommons } from '../services/map-data-loader/interfaces/areaCommons.interface';
 import { MapDataLoaderService } from '../services/map-data-loader/map-data-loader.service';
@@ -14,6 +14,8 @@ import { pan, zoom, resetTransform, Coordinates } from './utils/index';
   styleUrls: ['./map-generic.component.scss']
 })
 export class MapGenericComponent implements OnInit {
+  
+  @Output('mapIndexEntry') mapIndexEntry : EventEmitter<MapIndexEntry> = new EventEmitter<MapIndexEntry>();
   @Input('colorGroup') colorGroup: boolean = false;
 
   @ViewChild('mapRef') mapRef: ElementRef<SVGSVGElement> | undefined;
@@ -61,6 +63,7 @@ export class MapGenericComponent implements OnInit {
         if (!mapIndexEntry) return; // If no data found then skip
         this.loadMapSvg(mapIndexEntry);
         this.loadMapData(mapIndexEntry);
+        this.mapIndexEntry.emit(mapIndexEntry);
       });
     })
   }
@@ -77,7 +80,7 @@ export class MapGenericComponent implements OnInit {
     });
   }
   private loadMapData(mapIndexEntry: MapIndexEntry){
-    this.mapDataLoaderService.getMapMetaData(mapIndexEntry.relatedSvg).subscribe(data => {
+    this.mapDataLoaderService.getMapMetaData(mapIndexEntry.mapIdentifier).subscribe(data => {
       this.loadedData = data;
     });
   }
