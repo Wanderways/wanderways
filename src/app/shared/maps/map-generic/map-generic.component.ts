@@ -14,10 +14,10 @@ import { pan, zoom, resetTransform, Coordinates } from './utils/index';
   styleUrls: ['./map-generic.component.scss']
 })
 export class MapGenericComponent implements OnInit {
-  
-  @Output('mapIndexEntryLoaded') mapIndexEntry : EventEmitter<MapIndexEntry> = new EventEmitter<MapIndexEntry>();
-  @Output('areaSelected') areaSelected : EventEmitter<AreaCommons> = new EventEmitter<AreaCommons>();
-  
+
+  @Output('mapIndexEntryLoaded') mapIndexEntry: EventEmitter<MapIndexEntry> = new EventEmitter<MapIndexEntry>();
+  @Output('areaSelected') areaSelected: EventEmitter<AreaCommons> = new EventEmitter<AreaCommons>();
+
   @Input('colorGroup') colorGroup: boolean = false;
 
   @ViewChild('mapRef') mapRef: ElementRef<SVGSVGElement> | undefined;
@@ -28,10 +28,14 @@ export class MapGenericComponent implements OnInit {
 
   currentSelected: AreaCommons | undefined = undefined;
 
-  mouseStates: { isPanned: boolean, isClickDown: boolean, pointerDownEvents: PointerEvent[] } = {
+  mouseStates: MouseStates = {
     isPanned: false,
     isClickDown: false,
-    pointerDownEvents: []
+    pointerDownEvents: [],
+    lastX: 0,
+    lastY: 0,
+    curX: 0,
+    curY: 0
   }
 
   prevDiff: number = 0;
@@ -51,7 +55,7 @@ export class MapGenericComponent implements OnInit {
    */
   private currentMatrix!: DOMMatrix;
 
-  constructor(private route: ActivatedRoute, private mapIndexLoader: MapIndexLoaderService, private mapSvgLoaderService: MapSvgLoaderService, private mapDataLoaderService : MapDataLoaderService) { }
+  constructor(private route: ActivatedRoute, private mapIndexLoader: MapIndexLoaderService, private mapSvgLoaderService: MapSvgLoaderService, private mapDataLoaderService: MapDataLoaderService) { }
 
   /**
    * On init, loads maps svg and related data
@@ -81,7 +85,7 @@ export class MapGenericComponent implements OnInit {
       setTimeout(() => { this.resetTransform() })
     });
   }
-  private loadMapData(mapIndexEntry: MapIndexEntry){
+  private loadMapData(mapIndexEntry: MapIndexEntry) {
     this.mapDataLoaderService.getMapMetaData(mapIndexEntry.mapIdentifier).subscribe(data => {
       this.loadedData = data;
     });
@@ -91,20 +95,20 @@ export class MapGenericComponent implements OnInit {
    * On an area click, search on associated data list the corresponding identifier. Colors the area and its group
    * @param event The mouse click event. We get the area node from it
    */
-  areaClick(event: MouseEvent, areaId : string): void {
+  areaClick(event: MouseEvent, areaId: string): void {
     this.removeLandsColoration()
-    this.currentSelected= this.loadedData!.find(e=>e.identifier === areaId);
+    this.currentSelected = this.loadedData!.find(e => e.identifier === areaId);
     if (!this.currentSelected) return;
     document.getElementById(areaId)!.classList.add('selected');
     this.colorAreas(this.currentSelected!.group);
     this.areaSelected.emit(this.currentSelected);
   }
 
-  removeLandsColoration(){
+  removeLandsColoration() {
     Array.from(document.getElementsByClassName("selected")).forEach(e => {
       (<HTMLElement>e).classList.remove('selected');
     });
-    
+
     Array.from(document.getElementsByClassName("group-selected")).forEach(e => {
       (<HTMLElement>e).classList.remove('group-selected');
     });
@@ -127,7 +131,7 @@ export class MapGenericComponent implements OnInit {
    * Sets current mousestates as `panning`
    * @param event 
    */
-  panningBegin(event: MouseEvent) {
+  mouseDown(event: MouseEvent) {
     if (event instanceof PointerEvent) {
       this.mouseStates.pointerDownEvents.push(event);
     }
@@ -141,7 +145,7 @@ export class MapGenericComponent implements OnInit {
    * Sets current mousestates as not `panning`
    * @param event 
    */
-  panningEnd(event: MouseEvent) {
+  mouseUp(event: MouseEvent) {
     if (event instanceof PointerEvent) {
       this.mouseStates.pointerDownEvents = this.mouseStates.pointerDownEvents.filter(e => e.pointerId !== event.pointerId);
     }
@@ -154,11 +158,11 @@ export class MapGenericComponent implements OnInit {
    * Apply correct transform on map depending on : If on mobile, if pinching, if middle click
    * @param mouseMove A mouseMove event that may be of type PointerEvent (case of mobile)
    */
-  pointerMove(mouseMove: MouseEvent) {
+  mouseMove(mouseMove: MouseEvent) {
     // If on mobile device
     if (mouseMove instanceof PointerEvent) {
       // Find this event in the cache and update its record with this event
-      this.mouseStates.pointerDownEvents[this.mouseStates.pointerDownEvents.findIndex(e=> mouseMove.pointerId == e.pointerId)] = mouseMove;
+      this.mouseStates.pointerDownEvents[this.mouseStates.pointerDownEvents.findIndex(e => mouseMove.pointerId == e.pointerId)] = mouseMove;
     }
     // If two pointer at a time, then check if should try to zoom
     if (this.mouseStates.pointerDownEvents.length == 2) {
@@ -173,7 +177,7 @@ export class MapGenericComponent implements OnInit {
         this.prevDiff = curDiff;
       }
     } else if (this.mouseStates.pointerDownEvents.length == 1) {
-      this.panningMove(mouseMove);
+      this.panning(mouseMove);
     }
   }
 
@@ -181,7 +185,7 @@ export class MapGenericComponent implements OnInit {
    * Gives the deltas to apply on map to pan
    * @param mouseMove 
    */
-  panningMove(mouseMove: MouseEvent) {
+  panning(mouseMove: MouseEvent) {
     if (this.mouseStates.isPanned) {
       this.pan({ x: mouseMove.movementX, y: mouseMove.movementY })
     }
@@ -270,4 +274,15 @@ export class MapGenericComponent implements OnInit {
   setLandWidth(scale: number) {
     document.documentElement.style.setProperty('--land-stroke', (0.4 / scale) + "px");
   }
+}
+
+
+interface MouseStates {
+  isPanned: boolean,
+  isClickDown: boolean,
+  pointerDownEvents: PointerEvent[],
+  lastX: number,
+  lastY: number,
+  curX: number,
+  curY: number
 }

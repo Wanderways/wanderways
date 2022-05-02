@@ -25,6 +25,10 @@ export class ConsultationComponent implements OnInit {
     this.mapIndexEntry = mapIndexEntry;
   }
 
+  /**
+   * When an area is selected, get its data an display informations
+   * @param areaCommons An area data
+   */
   onAreaSelected(areaCommons :AreaCommons){
     this.areaSelected = areaCommons;
   }
