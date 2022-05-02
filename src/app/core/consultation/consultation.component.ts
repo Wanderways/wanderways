@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AreaCommons } from 'src/app/shared/maps/services/map-data-loader/interfaces/areaCommons.interface';
 import { MapIndexEntry } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-index-entry.interface';
 
 @Component({
@@ -9,6 +10,7 @@ import { MapIndexEntry } from 'src/app/shared/maps/services/map-index-loader/int
 export class ConsultationComponent implements OnInit {
 
   mapIndexEntry : MapIndexEntry | undefined = undefined;
+  areaSelected : AreaCommons | undefined = undefined;
 
   constructor() { }
 
@@ -21,5 +23,9 @@ export class ConsultationComponent implements OnInit {
    */
   onMapIndexEntry(mapIndexEntry : MapIndexEntry ){
     this.mapIndexEntry = mapIndexEntry;
+  }
+
+  onAreaSelected(areaCommons :AreaCommons){
+    this.areaSelected = areaCommons;
   }
 }

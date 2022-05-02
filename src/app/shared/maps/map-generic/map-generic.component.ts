@@ -15,7 +15,9 @@ import { pan, zoom, resetTransform, Coordinates } from './utils/index';
 })
 export class MapGenericComponent implements OnInit {
   
-  @Output('mapIndexEntry') mapIndexEntry : EventEmitter<MapIndexEntry> = new EventEmitter<MapIndexEntry>();
+  @Output('mapIndexEntryLoaded') mapIndexEntry : EventEmitter<MapIndexEntry> = new EventEmitter<MapIndexEntry>();
+  @Output('areaSelected') areaSelected : EventEmitter<AreaCommons> = new EventEmitter<AreaCommons>();
+  
   @Input('colorGroup') colorGroup: boolean = false;
 
   @ViewChild('mapRef') mapRef: ElementRef<SVGSVGElement> | undefined;
@@ -95,6 +97,7 @@ export class MapGenericComponent implements OnInit {
     if (!this.currentSelected) return;
     document.getElementById(areaId)!.classList.add('selected');
     this.colorAreas(this.currentSelected!.group);
+    this.areaSelected.emit(this.currentSelected);
   }
 
   removeLandsColoration(){
