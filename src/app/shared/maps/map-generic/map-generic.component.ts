@@ -31,11 +31,7 @@ export class MapGenericComponent implements OnInit {
   mouseStates: MouseStates = {
     isPanned: false,
     isClickDown: false,
-    pointerDownEvents: [],
-    lastX: 0,
-    lastY: 0,
-    curX: 0,
-    curY: 0
+    pointerDownEvents: []
   }
 
   prevDiff: number = 0;
@@ -131,7 +127,9 @@ export class MapGenericComponent implements OnInit {
    * Sets current mousestates as `panning`
    * @param event 
    */
-  mouseDown(event: MouseEvent) {
+  panningBegin(event: MouseEvent) {
+    console.log(event);
+    
     if (event instanceof PointerEvent) {
       this.mouseStates.pointerDownEvents.push(event);
     }
@@ -145,7 +143,7 @@ export class MapGenericComponent implements OnInit {
    * Sets current mousestates as not `panning`
    * @param event 
    */
-  mouseUp(event: MouseEvent) {
+  panningEnd(event: MouseEvent) {
     if (event instanceof PointerEvent) {
       this.mouseStates.pointerDownEvents = this.mouseStates.pointerDownEvents.filter(e => e.pointerId !== event.pointerId);
     }
@@ -158,7 +156,7 @@ export class MapGenericComponent implements OnInit {
    * Apply correct transform on map depending on : If on mobile, if pinching, if middle click
    * @param mouseMove A mouseMove event that may be of type PointerEvent (case of mobile)
    */
-  mouseMove(mouseMove: MouseEvent) {
+  pointerMove(mouseMove: MouseEvent) {
     // If on mobile device
     if (mouseMove instanceof PointerEvent) {
       // Find this event in the cache and update its record with this event
@@ -280,9 +278,5 @@ export class MapGenericComponent implements OnInit {
 interface MouseStates {
   isPanned: boolean,
   isClickDown: boolean,
-  pointerDownEvents: PointerEvent[],
-  lastX: number,
-  lastY: number,
-  curX: number,
-  curY: number
+  pointerDownEvents: PointerEvent[]
 }

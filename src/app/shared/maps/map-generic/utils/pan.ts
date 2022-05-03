@@ -14,8 +14,8 @@ export function pan({ currentTransform, containerElement, toPanElement, deltaCoo
     const ratioHeightPerWidth = containerElementViewBox.height/containerElementViewBox.width;
     
     currentTransform = currentTransform.translate(
-        (deltaCoordinates.x / containerElementRect.width * containerElementViewBox.width / currentTransform.a),
-        (deltaCoordinates.y / containerElementRect.width / ratioHeightPerWidth * containerElementViewBox.height / currentTransform.a));
+        (deltaCoordinates.x / window.devicePixelRatio / containerElementRect.width * containerElementViewBox.width / currentTransform.a),
+        (deltaCoordinates.y / window.devicePixelRatio / containerElementRect.width / ratioHeightPerWidth * containerElementViewBox.height / currentTransform.a));
     // Now we need to update the group's transform
     var transform = containerElement.createSVGTransform()!;        // An SVGTransform DOM object...
     applyTransformMatrix(transform, toPanElement, currentTransform);
