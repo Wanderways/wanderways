@@ -244,7 +244,6 @@ export class MapGenericComponent implements OnInit {
    */
   resetTransform() {
     this.currentMatrix = this.mapRef!.nativeElement.createSVGMatrix();
-    this.groupRef!.nativeElement.style.transform = "";
     resetTransform(this.mapRef!.nativeElement, this.groupRef!.nativeElement);
     this.setLandWidth(this.currentMatrix.a);
   }
