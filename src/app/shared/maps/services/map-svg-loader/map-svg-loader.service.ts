@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MapSvgLoaderService {
 
-  private PATH : string = "./assets/maps/maps_svg/";
+  private PATH : string = "./assets/maps/maps_svg/svg/";
   private FILE_EXTENSION=".svg.json";
 
   constructor(private http: HttpClient) { }
