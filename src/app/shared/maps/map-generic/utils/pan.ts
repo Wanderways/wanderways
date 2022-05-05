@@ -19,8 +19,6 @@ export function pan({ currentTransform, containerElement, toPanElement, deltaCoo
         (deltaCoordinates.x  / currentTransform.a) * ((containerElementViewBox.width * currentTransform.a) / toPanRect.width),
         (deltaCoordinates.y / currentTransform.a) *((containerElementViewBox.height * currentTransform.a)/ toPanRect.height),
         );
-    // console.log(deltaCoordinates.x /(toPanRect.width * currentTransform.a),deltaCoordinates.y *toPanRect.height*  currentTransform.a);
-    console.log(toPanRect.width, toPanRect.height);
     
     // Now we need to update the group's transform
     var transform = containerElement.createSVGTransform()!;        // An SVGTransform DOM object...
