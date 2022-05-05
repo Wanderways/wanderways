@@ -91,6 +91,7 @@ fs.readdir(DIRECTORY_PATH + "/raws", (err, files) => {
                 // Push the created path to path list
                 result.contentPath.push(pathObject);
             });
+            // Writes the new file from generated json structure and given path
             fs.writeFileSync(DIRECTORY_PATH + "/svg/" +fileName+".json", JSON.stringify(result))
 
         } catch (err) {
