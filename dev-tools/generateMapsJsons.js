@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const fs = require("fs");
 
-const DIRECTORY_PATH = "../src/assets/maps/maps_svg";
+const DIRECTORY_PATH = "src/assets/maps/maps_svg";
 
 const VIEWBOX_MATCHER = /viewBox="([\d.]*) ([\d.]*) ([\d.]*) ([\d.]*)"/gm;
 
