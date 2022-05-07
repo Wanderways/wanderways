@@ -5,7 +5,7 @@
     </h1>
 </ng-container>
 
-<app-map-generic class="mx-4" (mapIndexEntryLoaded)="onMapIndexEntry($event)" (areaSelected)="onAreaSelected($event)"></app-map-generic>
+<app-map-generic class="" (mapIndexEntryLoaded)="onMapIndexEntry($event)" (areaSelected)="onAreaSelected($event)"></app-map-generic>
 
 <ng-container *ngIf="areaSelected">
     <h2 class="mx-4">Selected area :</h2>
@@ -14,7 +14,7 @@
         <div class="font-medium">{{ areaSelected.name | i18n}}</div>
         <hr style="grid-column: 1/3;">
         <div class="font-thin text-xs">Flag</div>
-        <img style="max-height: 3rem;" src="assets/maps/flags/JP/flag_{{ areaSelected.identifier }}.svg" alt="Flag of {{ areaSelected.name | i18n}}">
+        <img style="max-height: 3rem;" src="assets/maps/flags/iso3166_1/flag_{{ areaSelected.identifier }}.svg" alt="Flag of {{ areaSelected.name | i18n}}">
         <hr style="grid-column: 1/3;">
     </div>
     
