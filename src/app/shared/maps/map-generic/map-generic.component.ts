@@ -34,8 +34,6 @@ export class MapGenericComponent implements OnInit {
     pointerDownEvents: []
   }
 
-  prevDiff: number = 0;
-
   /**
    * Represents the id of an interval. When launched, equals the id of the generated interval. When want to stop, then just clear the interval via its ID
    */
@@ -128,8 +126,6 @@ export class MapGenericComponent implements OnInit {
    * @param event 
    */
   panningBegin(event: MouseEvent) {
-    console.log(event);
-    
     if (event instanceof PointerEvent) {
       this.mouseStates.pointerDownEvents.push(event);
     }
@@ -167,12 +163,17 @@ export class MapGenericComponent implements OnInit {
       if (!this.pinchingTimeoutId) {
         // Set a timeout to debounce pinch event that can trigger many events at a time
         this.pinchingTimeoutId = window.setTimeout(() => { this.pinchingTimeoutId = undefined }, 50);
-        // Calculates the difference vertically and hozizontally between the two pointers, then cumulates the general tendancy
-        let curDiff = (Math.abs(this.mouseStates.pointerDownEvents[0].x - this.mouseStates.pointerDownEvents[1].x) + Math.abs(this.mouseStates.pointerDownEvents[0].y - this.mouseStates.pointerDownEvents[1].y));
-        // To avoid mismovement, do not count too small changes
-        curDiff = curDiff < 10 ? 0 : curDiff;
-        this.zoom(curDiff - this.prevDiff > 0 ? 100 : -100, { x: (this.mouseStates.pointerDownEvents[1].clientX + this.mouseStates.pointerDownEvents[0].clientX) / 2, y: (this.mouseStates.pointerDownEvents[1].clientY + this.mouseStates.pointerDownEvents[0].clientY) / 2 });
-        this.prevDiff = curDiff;
+        let firstPointer  = this.mouseStates.pointerDownEvents[0],
+            secondPointer = this.mouseStates.pointerDownEvents[1];
+        // Origin distance between pointers
+        let originDist = Math.sqrt((firstPointer.x - secondPointer.x)**2
+                                +  (firstPointer.y - secondPointer.y)**2);
+        // Distance between pointers after mov
+        let newDist = Math.sqrt(((firstPointer.x + firstPointer.movementX) - (secondPointer.x + secondPointer.movementX))**2
+                                +  ((firstPointer.y + firstPointer.movementY) - (secondPointer.y + secondPointer.movementY))**2);
+        // this.snapDiff = (curDiff)/window.devicePixelRatio;
+        this.zoom((newDist - originDist)/window.devicePixelRatio * 15, { x: (secondPointer.clientX + firstPointer.clientX) / 2, y: (secondPointer.clientY + firstPointer.clientY) / 2 });
+       
       }
     } else if (this.mouseStates.pointerDownEvents.length == 1) {
       this.panning(mouseMove);
