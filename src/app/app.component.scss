@@ -104,7 +104,6 @@
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     #header{
         &.isSticky{
-            background-color:var(--dark-background);
             &.isScrolled{
                 background-color:var(--dark-background);
             }
