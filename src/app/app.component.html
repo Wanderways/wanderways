@@ -7,8 +7,14 @@
         </div>
     </div>
     <ng-container main>
-        <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="flex p-2 justify-start" i18n="@@sidenav-home">Home</button>
-        <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/maps']" routerLinkActive="active-link" class="flex p-2 justify-start" i18n="@@sidenav-maps">Maps</button>
+        <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="menu-button" i18n="@@sidenav-home" style="background-image: url('./assets/icons/candy-button.svg');">
+            <img src="./assets/icons/home.svg" alt="home icon" class="gap-2 mx-1">
+            <span class="candy-text-color text-base font-bold">Home</span>
+        </button>
+        <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/maps']" routerLinkActive="active-link" class=" menu-button" i18n="@@sidenav-maps" style="background-image: url('./assets/icons/candy-button.svg');">
+            <img src="./assets/icons/map.svg" alt="home icon" class="gap-2 mx-1">
+            <span class="candy-text-color text-base font-bold">Maps</span>
+        </button>
     </ng-container>
     <ng-container footer>
         <div class="flex justify-around gap-1">

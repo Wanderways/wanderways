@@ -1,0 +1,30 @@
+<svg
+   width="195"
+   height="40"
+   viewBox="0 0 202 40"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   preserveAspectRatio="none">
+   
+  <defs>
+     <linearGradient id="candy-gradient" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F7A2E4"/>
+        <stop offset="1" stop-color="#FCCB1A"/>
+    </linearGradient>
+  </defs>
+<rect
+    id="rect846"
+    width="199"
+    height="37"
+    x="1"
+    y="1"
+    rx="6"
+    ry="6"
+    stroke-width="1.5px"
+    stroke-linejoin="round"
+    fill="none"
+    stroke="url(#candy-gradient)"
+    vector-effect="non-scaling-stroke"
+    />
+</svg>

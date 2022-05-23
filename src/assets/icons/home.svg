@@ -1,0 +1,10 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill="url(#candy-gradient)" d="M19.1667 6.79762V1.91683H16.2917V3.92262L19.1667 6.79762ZM23 12.4585L11.5 0.958496L0 12.4585H2.875V22.0418H9.58333V17.2502H13.4167V22.0418H20.125V12.4585H23ZM18.2083 20.1252H15.3333V15.3335H7.66667V20.1252H4.79167V10.2927L11.5 3.66866L18.2083 10.3674V20.1252Z"/>
+    <defs>
+    <linearGradient id="candy-gradient" x1="23" y1="22.0418" x2="-1.92184" y2="19.452" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F7A2E4"/>
+        <stop offset="1" stop-color="#FCCB1A"/>
+    </linearGradient>
+    </defs>
+    </svg>
+    

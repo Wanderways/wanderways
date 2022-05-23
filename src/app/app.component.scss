@@ -1,10 +1,22 @@
 :host {
-    .active-link{
-        background:#ffffff3f;
-    }
     @apply flex;
     flex: 1 0 auto;
+    .menu-button{
+        border-radius: 6px;
+        background-repeat: no-repeat;
+        background-size: 0% 0%;
+        @apply flex p-2 justify-start items-center;
+        span,img{
+            filter: brightness(10);
+        }
+        &.active-link{
+            background-size: 100% 100%;
+            span,img{
+                filter: drop-shadow(1px 1px #333) brightness(1);
+            }
+        }
 
+    }
     #sidenav {
         #sidenav-header {
             @apply flex items-center;
@@ -110,3 +122,11 @@
         }
     }
 }
+
+.gradient-box {
+    padding: 7px 17px;
+    display: flex;
+    gap:14px;
+    span, img{
+    }
+  }
