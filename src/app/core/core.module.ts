@@ -9,10 +9,12 @@ import { RouterModule } from '@angular/router';
 import { MapsModule } from '../shared/maps/maps.module';
 import { MoleculesModule } from '../shared/atomic/molecules/molecules.module';
 import { OrganismsModule } from '../shared/atomic/organisms/organisms.module';
+import { ConsultationComponent } from './consultation/consultation.component';
 
 let components : any[] = [
   HomeComponent,
-  MapsPageComponent
+  MapsPageComponent,
+  ConsultationComponent
 ]
 
 let matModules : any[]=[

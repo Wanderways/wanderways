@@ -8,14 +8,18 @@ import { Coordinates } from "./coordinates";
  */
 export function pan({ currentTransform, containerElement, toPanElement, deltaCoordinates }: PanParameters): DOMMatrix {
     // Get the mouse position as SVG coordinates
-    const containerElementRect = containerElement.getClientRects().item(0)!;
     const containerElementViewBox = containerElement.viewBox.baseVal;
-    // Ration to counter the potential height that makes parent container takes more space than usual, breakin svg ratio
-    const ratioHeightPerWidth = containerElementViewBox.height/containerElementViewBox.width;
+    const toPanRect = toPanElement.getClientRects().item(0)!;
     
+    // Adapt to screen resolution
+    deltaCoordinates.x /= window.devicePixelRatio;
+    deltaCoordinates.y /= window.devicePixelRatio;
+
     currentTransform = currentTransform.translate(
-        (deltaCoordinates.x / containerElementRect.width * containerElementViewBox.width / currentTransform.a),
-        (deltaCoordinates.y / containerElementRect.width / ratioHeightPerWidth * containerElementViewBox.height / currentTransform.a));
+        (deltaCoordinates.x  / currentTransform.a) * ((containerElementViewBox.width * currentTransform.a) / toPanRect.width),
+        (deltaCoordinates.y / currentTransform.a) *((containerElementViewBox.height * currentTransform.a)/ toPanRect.height),
+        );
+    
     // Now we need to update the group's transform
     var transform = containerElement.createSVGTransform()!;        // An SVGTransform DOM object...
     applyTransformMatrix(transform, toPanElement, currentTransform);

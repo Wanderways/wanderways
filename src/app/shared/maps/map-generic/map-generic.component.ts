@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, Output, EventEmitter, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AreaCommons } from '../services/map-data-loader/interfaces/areaCommons.interface';
 import { MapDataLoaderService } from '../services/map-data-loader/map-data-loader.service';
@@ -14,6 +14,10 @@ import { pan, zoom, resetTransform, Coordinates } from './utils/index';
   styleUrls: ['./map-generic.component.scss']
 })
 export class MapGenericComponent implements OnInit {
+
+  @Output('mapIndexEntryLoaded') mapIndexEntry: EventEmitter<MapIndexEntry> = new EventEmitter<MapIndexEntry>();
+  @Output('areaSelected') areaSelected: EventEmitter<AreaCommons> = new EventEmitter<AreaCommons>();
+
   @Input('colorGroup') colorGroup: boolean = false;
 
   @ViewChild('mapRef') mapRef: ElementRef<SVGSVGElement> | undefined;
@@ -24,13 +28,11 @@ export class MapGenericComponent implements OnInit {
 
   currentSelected: AreaCommons | undefined = undefined;
 
-  mouseStates: { isPanned: boolean, isClickDown: boolean, pointerDownEvents: PointerEvent[] } = {
+  mouseStates: MouseStates = {
     isPanned: false,
     isClickDown: false,
     pointerDownEvents: []
   }
-
-  prevDiff: number = 0;
 
   /**
    * Represents the id of an interval. When launched, equals the id of the generated interval. When want to stop, then just clear the interval via its ID
@@ -47,7 +49,7 @@ export class MapGenericComponent implements OnInit {
    */
   private currentMatrix!: DOMMatrix;
 
-  constructor(private route: ActivatedRoute, private mapIndexLoader: MapIndexLoaderService, private mapSvgLoaderService: MapSvgLoaderService, private mapDataLoaderService : MapDataLoaderService) { }
+  constructor(private route: ActivatedRoute, private mapIndexLoader: MapIndexLoaderService, private mapSvgLoaderService: MapSvgLoaderService, private mapDataLoaderService: MapDataLoaderService) { }
 
   /**
    * On init, loads maps svg and related data
@@ -61,6 +63,7 @@ export class MapGenericComponent implements OnInit {
         if (!mapIndexEntry) return; // If no data found then skip
         this.loadMapSvg(mapIndexEntry);
         this.loadMapData(mapIndexEntry);
+        this.mapIndexEntry.emit(mapIndexEntry);
       });
     })
   }
@@ -76,8 +79,8 @@ export class MapGenericComponent implements OnInit {
       setTimeout(() => { this.resetTransform() })
     });
   }
-  private loadMapData(mapIndexEntry: MapIndexEntry){
-    this.mapDataLoaderService.getMapMetaData(mapIndexEntry.relatedSvg).subscribe(data => {
+  private loadMapData(mapIndexEntry: MapIndexEntry) {
+    this.mapDataLoaderService.getMapMetaData(mapIndexEntry.mapIdentifier).subscribe(data => {
       this.loadedData = data;
     });
   }
@@ -86,19 +89,20 @@ export class MapGenericComponent implements OnInit {
    * On an area click, search on associated data list the corresponding identifier. Colors the area and its group
    * @param event The mouse click event. We get the area node from it
    */
-  areaClick(event: MouseEvent, areaId : string): void {
+  areaClick(event: MouseEvent, areaId: string): void {
     this.removeLandsColoration()
-    this.currentSelected= this.loadedData!.find(e=>e.identifier === areaId);
+    this.currentSelected = this.loadedData!.find(e => e.identifier === areaId);
     if (!this.currentSelected) return;
     document.getElementById(areaId)!.classList.add('selected');
     this.colorAreas(this.currentSelected!.group);
+    this.areaSelected.emit(this.currentSelected);
   }
 
-  removeLandsColoration(){
+  removeLandsColoration() {
     Array.from(document.getElementsByClassName("selected")).forEach(e => {
       (<HTMLElement>e).classList.remove('selected');
     });
-    
+
     Array.from(document.getElementsByClassName("group-selected")).forEach(e => {
       (<HTMLElement>e).classList.remove('group-selected');
     });
@@ -152,22 +156,27 @@ export class MapGenericComponent implements OnInit {
     // If on mobile device
     if (mouseMove instanceof PointerEvent) {
       // Find this event in the cache and update its record with this event
-      this.mouseStates.pointerDownEvents[this.mouseStates.pointerDownEvents.findIndex(e=> mouseMove.pointerId == e.pointerId)] = mouseMove;
+      this.mouseStates.pointerDownEvents[this.mouseStates.pointerDownEvents.findIndex(e => mouseMove.pointerId == e.pointerId)] = mouseMove;
     }
     // If two pointer at a time, then check if should try to zoom
     if (this.mouseStates.pointerDownEvents.length == 2) {
       if (!this.pinchingTimeoutId) {
         // Set a timeout to debounce pinch event that can trigger many events at a time
         this.pinchingTimeoutId = window.setTimeout(() => { this.pinchingTimeoutId = undefined }, 50);
-        // Calculates the difference vertically and hozizontally between the two pointers, then cumulates the general tendancy
-        let curDiff = (Math.abs(this.mouseStates.pointerDownEvents[0].x - this.mouseStates.pointerDownEvents[1].x) + Math.abs(this.mouseStates.pointerDownEvents[0].y - this.mouseStates.pointerDownEvents[1].y));
-        // To avoid mismovement, do not count too small changes
-        curDiff = curDiff < 10 ? 0 : curDiff;
-        this.zoom(curDiff - this.prevDiff > 0 ? 100 : -100, { x: (this.mouseStates.pointerDownEvents[1].clientX + this.mouseStates.pointerDownEvents[0].clientX) / 2, y: (this.mouseStates.pointerDownEvents[1].clientY + this.mouseStates.pointerDownEvents[0].clientY) / 2 });
-        this.prevDiff = curDiff;
+        let firstPointer  = this.mouseStates.pointerDownEvents[0],
+            secondPointer = this.mouseStates.pointerDownEvents[1];
+        // Origin distance between pointers
+        let originDist = Math.sqrt((firstPointer.x - secondPointer.x)**2
+                                +  (firstPointer.y - secondPointer.y)**2);
+        // Distance between pointers after mov
+        let newDist = Math.sqrt(((firstPointer.x + firstPointer.movementX) - (secondPointer.x + secondPointer.movementX))**2
+                                +  ((firstPointer.y + firstPointer.movementY) - (secondPointer.y + secondPointer.movementY))**2);
+        // this.snapDiff = (curDiff)/window.devicePixelRatio;
+        this.zoom((newDist - originDist)/window.devicePixelRatio * 15, { x: (secondPointer.clientX + firstPointer.clientX) / 2, y: (secondPointer.clientY + firstPointer.clientY) / 2 });
+       
       }
     } else if (this.mouseStates.pointerDownEvents.length == 1) {
-      this.panningMove(mouseMove);
+      this.panning(mouseMove);
     }
   }
 
@@ -175,7 +184,7 @@ export class MapGenericComponent implements OnInit {
    * Gives the deltas to apply on map to pan
    * @param mouseMove 
    */
-  panningMove(mouseMove: MouseEvent) {
+  panning(mouseMove: MouseEvent) {
     if (this.mouseStates.isPanned) {
       this.pan({ x: mouseMove.movementX, y: mouseMove.movementY })
     }
@@ -236,7 +245,6 @@ export class MapGenericComponent implements OnInit {
    */
   resetTransform() {
     this.currentMatrix = this.mapRef!.nativeElement.createSVGMatrix();
-    this.groupRef!.nativeElement.style.transform = "";
     resetTransform(this.mapRef!.nativeElement, this.groupRef!.nativeElement);
     this.setLandWidth(this.currentMatrix.a);
   }
@@ -264,4 +272,11 @@ export class MapGenericComponent implements OnInit {
   setLandWidth(scale: number) {
     document.documentElement.style.setProperty('--land-stroke', (0.4 / scale) + "px");
   }
+}
+
+
+interface MouseStates {
+  isPanned: boolean,
+  isClickDown: boolean,
+  pointerDownEvents: PointerEvent[]
 }

@@ -2,7 +2,7 @@ export interface MapSvg{
     xlmns : string,
     viewBox : ViewBox,
     contentPath : MapSvgPath[],
-    contentGroupe : MapSvgGroupe[]
+    contentGroup : MapSvgGroupe[]
 }
 interface MapSvgCircle {
     id : string,

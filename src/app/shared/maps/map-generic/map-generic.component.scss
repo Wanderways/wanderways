@@ -1,7 +1,6 @@
 :host{
     display: flex;
     position: relative;
-    width: 100%;
     flex-direction: column;
     #map-control-box{
         -webkit-user-select : none;
@@ -29,8 +28,9 @@
         }
     }
     #map-container{
-        max-width: 100vw;
-        max-height: 90vh;
+        max-width: 90vw;
+        height: 70vh;
+        margin: 0 auto;
         touch-action: none;
         -moz-box-shadow:    inset 0 0 10px #00000088;
         -webkit-box-shadow: inset 0 0 10px #00000088;
@@ -42,17 +42,6 @@
         &:not(.panning){
             .land,g{
                 cursor: pointer;
-            }
-        }
-    }
-}
-@media screen and (max-width: 600px) {
-    :host{
-        height: 70%;
-        #map-container{
-            height: 100%;
-            #scaled-map-container{
-                height: 100%;
             }
         }
     }
