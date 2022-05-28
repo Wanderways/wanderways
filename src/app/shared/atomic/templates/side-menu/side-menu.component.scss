@@ -30,8 +30,8 @@
         @apply flex flex-col;
         @apply sticky;
         @apply h-full;
-        @apply px-2;
-        width: 230px;
+        @apply px-6;
+        width: 244px;
         flex: 0 0 auto;
         overflow-y: auto;   
         scrollbar-color: auto ;
@@ -60,8 +60,8 @@
         #mobile-responsive-sidemenu {
             @apply h-screen;
             @apply top-0 ;
-            left: 230px;
-            width: calc(100vw - 230px);
+            left: 244px;
+            width: calc(100vw - 244px);
             opacity: 0.6;
             background-color: #000000;
             position: fixed;
@@ -72,31 +72,31 @@
                 opacity: 0;
             }
             100%{
-                opacity: 0.2;
+                opacity: 0.6;
             }
         }
     }
     &.left {
         left: 0;
         .slide-sidemenu-show {
-            @include slide(sidemenu-show-left, left, -230px, 0px);
+            @include slide(sidemenu-show-left, left, -244px, 0px);
             animation: slide-sidemenu-show-left 0.2s ease-in-out forwards,
             sidemenu-bs 0.2s ease-in-out forwards;
         }
         .slide-sidemenu-hide {
-            @include slide(sidemenu-hide-left, left, 0px, -230px);
+            @include slide(sidemenu-hide-left, left, 0px, -244px);
             animation: slide-sidemenu-hide-left 0.2s ease-in-out forwards;
         }
     }
     &.right {
         right: 0;
         .slide-sidemenu-show {
-            @include slide(sidemenu-show-right, right, -230px, 0px);
+            @include slide(sidemenu-show-right, right, -244px, 0px);
             animation: slide-sidemenu-show-right 0.2s ease-in-out forwards,
             sidemenu-bs 0.2s ease-in-out forwards;
         }
         .slide-sidemenu-hide {
-            @include slide(sidemenu-hide-right, right, 0px, -230px);
+            @include slide(sidemenu-hide-right, right, 0px, -244px);
             animation: slide-sidemenu-hide-right 0.2s ease-in-out forwards;
         }
     }

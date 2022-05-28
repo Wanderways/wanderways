@@ -1,0 +1,7 @@
+<svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <linearGradient id="candy-gradient" x1="23" y1="22.0418" x2="-1.92184" y2="19.452" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F7A2E4"/>
+        <stop offset="1" stop-color="#FCCB1A"/>
+    </linearGradient>
+    <path fill="url(#candy-gradient)"  d="M10 2V19.582L6 16.07L2 19.582V2H10ZM12 0H0V24L6 18.731L12 24V0Z"/>
+</svg>
