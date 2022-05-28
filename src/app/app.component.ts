@@ -7,7 +7,7 @@ import { Component,  HostListener } from '@angular/core';
 })
 export class AppComponent {
 
-  displaySideNav : boolean = window.innerWidth > 1024;
+  displaySideNav : boolean | undefined = (window.innerWidth > 1024 ? true : undefined);
   isScrolled : boolean = false;
   navLinks : NavLink[]= navLink;
   footerLinks: NavLink[]= footerLinks;
@@ -48,7 +48,7 @@ const navLink : NavLink[] = [
     isLink : true,
     link : "/",
     icon : "./assets/icons/home.svg",
-    label : $localize `:{sidenav-home}:Home`,
+    label : $localize `:@@sidenav-home:Home}`,
     isDisabled : false,
     catLink :[]
   },
@@ -56,17 +56,17 @@ const navLink : NavLink[] = [
     isLink : false,
     link : "",
     icon : "./assets/icons/binoculars.svg",
-    label : $localize `:{sidenav-maps}:Maps`,
+    label : $localize `:@@sidenav-maps:Maps`,
     isDisabled : false,
     catLink :[
       {
         link : "/maps",
-        label : $localize `:{sidenav-all-maps}:All maps`,
+        label : $localize `:@@sidenav-all-maps:All maps`,
         isDisabled : false
       },
       {
         link : "/favorites-map",
-        label : $localize `:{sidenav-favorites-map}:Favorites`,
+        label : $localize `:@@sidenav-favorites-map:Favorites`,
         isDisabled : true
       }
     ]
@@ -75,17 +75,17 @@ const navLink : NavLink[] = [
     isLink : false,
     link : "",
     icon : "./assets/icons/flag.svg",
-    label : $localize `:{sidenav-games}:Games`,
+    label : $localize `:@@sidenav-games:Games`,
     isDisabled : false,
     catLink :[
       {
         link : "/games",
-        label : $localize `:{sidenav-all-games}:All games`,
+        label : $localize `:@@sidenav-all-games:All games`,
         isDisabled : true
       },
       {
         link : "/favorites-game",
-        label : $localize `:{sidenav-favorites-game}:Favorites`,
+        label : $localize `:@@sidenav-favorites-game:Favorites`,
         isDisabled : true
       }
     ]
@@ -95,17 +95,17 @@ const navLink : NavLink[] = [
     isLink : false,
     link : "",
     icon : "./assets/icons/bookmark.svg",
-    label : $localize `:{sidenav-news-and-stuff}:News and stuff`,
+    label : $localize `:@@sidenav-news-and-stuff:News and stuff`,
     isDisabled : false,
     catLink :[
       {
         link : "/last-news",
-        label : $localize `:{sidenav-last-news}:Last news`,
+        label : $localize `:@@sidenav-last-news:Last news`,
         isDisabled : true
       },
       {
         link : "/roadmap",
-        label : $localize `:{sidenav-roadmap}:Roadmap`,
+        label : $localize `:@@sidenav-roadmap:Roadmap`,
         isDisabled : true
       }
     ]
@@ -113,18 +113,18 @@ const navLink : NavLink[] = [
 const footerLinks : NavLink[] = [{
   isLink : false,
   link : "",
-  icon : "/assets/icons/logo.svg",
+  icon : "./assets/icons/logo.svg",
   label : "Learn your maps",
   isDisabled : false,
   catLink :[
     {
       link : "/learn-more",
-      label : $localize `:{sidenav-learn-more}:Learn more`,
+      label : $localize `:@@sidenav-learn-more:Learn more`,
       isDisabled : true
     },
     {
       link : "/announces",
-      label : $localize `:{sidenav-announces}:Announces`,
+      label : $localize `:@@sidenav-announces:Announces`,
       isDisabled : true
     }
   ]
