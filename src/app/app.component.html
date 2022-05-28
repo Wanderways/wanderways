@@ -14,6 +14,7 @@
   <ng-container footer>
     <hr class="mt-auto" />
     <ng-container [ngTemplateOutlet]="nav_links" [ngTemplateOutletContext]="{links:footerLinks}"></ng-container>
+    <!-- @TODO when available, use svh unit -->
     <div class="flex justify-around gap-1 mb-2">
       <app-theme-selector></app-theme-selector>
       <app-language-selector></app-language-selector>
@@ -63,7 +64,7 @@
     </ng-container>
     <ng-template #subcat>
       <div class="subcat-nav">
-        <div class="subcat-title" i18n="@@sidenav-maps">
+        <div class="subcat-title">
           <div class="cat-icon-container">
             <img src="{{ link.icon }}" alt="{{ link.label }} icon" class="nav-icon gap-2 mx-1" />
           </div>
