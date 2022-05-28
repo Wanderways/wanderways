@@ -1,48 +1,77 @@
 <!-- SIDE-NAV -->
-<app-side-menu #app_side_menu id="sidenav" [displaySideMenu]="displaySideNav" (displaySideMenuChange)="displaySideNav = !displaySideNav" [behavior]="'reactive'" [direction]="'left'">
-    <div id="sidenav-header" header>
-        <ng-container *ngTemplateOutlet="header_content"></ng-container>
-        <div matRipple matRippleColor="#FFFFFF60" class="rounded cursor-pointer select-none" (click)="displaySideNav = !displaySideNav">
-            <img id="close-button" src="./assets/icons/close.svg" alt="close button icon" class="svg-current-color mx-0">
-        </div>
+<app-side-menu #app_side_menu id="sidenav" [displaySideMenu]="displaySideNav"
+  (displaySideMenuChange)="displaySideNav = !displaySideNav" [behavior]="'reactive'" [direction]="'left'">
+  <div id="sidenav-header" header>
+    <ng-container *ngTemplateOutlet="header_content"></ng-container>
+    <div id="close-sidenav-button" matRipple matRippleColor="#FFFFFF60" class="rounded cursor-pointer select-none"
+      (click)="displaySideNav = !displaySideNav">
+      <img id="close-button" src="./assets/icons/close.svg" alt="close button icon" class="svg-current-color mx-0" />
     </div>
-    <ng-container main>
-        <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="menu-button" i18n="@@sidenav-home" style="background-image: url('./assets/icons/candy-button.svg');">
-            <img src="./assets/icons/home.svg" alt="home icon" class="gap-2 mx-1">
-            <span class="candy-text-color text-base font-bold">Home</span>
-        </button>
-        <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="['/maps']" routerLinkActive="active-link" class=" menu-button" i18n="@@sidenav-maps" style="background-image: url('./assets/icons/candy-button.svg');">
-            <img src="./assets/icons/map.svg" alt="home icon" class="gap-2 mx-1">
-            <span class="candy-text-color text-base font-bold">Maps</span>
-        </button>
-    </ng-container>
-    <ng-container footer>
-        <div class="flex justify-around gap-1">
-            <app-theme-selector></app-theme-selector>
-            <app-language-selector></app-language-selector>
-        </div>
-    </ng-container>
+  </div>
+  <div main class="nav-container flex flex-col">
+    <ng-container [ngTemplateOutlet]="nav_links" [ngTemplateOutletContext]="{links:navLinks}"></ng-container>
+  </div>
+  <ng-container footer>
+    <hr class="mt-auto" />
+    <ng-container [ngTemplateOutlet]="nav_links" [ngTemplateOutletContext]="{links:footerLinks}"></ng-container>
+    <div class="flex justify-around gap-1 mb-2">
+      <app-theme-selector></app-theme-selector>
+      <app-language-selector></app-language-selector>
+    </div>
+  </ng-container>
 </app-side-menu>
 <!-- MAIN CONTENT -->
 <div id="main-content">
-    <!-- HEADER -->
-    <!-- @TODO class.isSticky should be associated with a service so that pages can use it -->
-    <header id="header" #nav [class.isSticky]="1===1" [class.isScrolled]="isScrolled">
-        <div id="header-content">
-            <div matRipple matRippleColor="#FFFFFF60" class="mx-3 my-2 rounded cursor-pointer select-none" (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav?'hidden':''">
-                <img src="./assets/icons/menu.svg" alt="menu button icon" class="svg-current-color mx-1">
-            </div>
-            <ng-container *ngTemplateOutlet="header_content; context:{$implicit:displaySideNav}" ></ng-container>
-        </div>
-        
-    </header>
-    <router-outlet></router-outlet>
+  <!-- HEADER -->
+  <!-- @TODO class.isSticky should be associated with a service so that pages can use it -->
+  <header id="header" #nav [class.isSticky]="1 === 1" [class.isScrolled]="isScrolled">
+    <div id="header-content">
+      <div matRipple matRippleColor="#FFFFFF60" class="mx-3 my-2 rounded cursor-pointer select-none"
+        (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav ? 'hidden' : ''">
+        <img src="./assets/icons/menu.svg" alt="menu button icon" class="svg-current-color mx-1" />
+      </div>
+      <ng-container *ngTemplateOutlet=" header_content; context: { $implicit: displaySideNav } "></ng-container>
+    </div>
+  </header>
+  <router-outlet></router-outlet>
 </div>
 
 <!-- TEMPLATES -->
 <ng-template #header_content let-isVisible>
-    <div matRipple matRippleColor="#FFFFFF60" id="logo-and-title" [routerLink]="['/']" [style.visibility]="isVisible?'hidden':''">
-        <img src="./assets/icons/logo.svg" alt="menu button icon">
-        <span>Learn your maps</span>
+  <div matRipple matRippleColor="#FFFFFF60" id="logo-and-title" [routerLink]="['/']"
+    [style.visibility]="isVisible ? 'hidden' : ''">
+    <img src="./assets/icons/logo.svg" alt="menu button icon" />
+    <span>Learn your maps</span>
+  </div>
+</ng-template>
+
+<ng-template #sidenavbutton let-link="link" let-label="label" let-isDisabled="isDisabled" let-icon="icon">
+  <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="[link]" routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }" [disabled]="isDisabled" class="menu-button">
+    <div *ngIf="icon" class="cat-icon-container">
+      <img class="nav-icon gap-2 mx-1" src="{{ icon }}" alt="{{ label }} icon" />
     </div>
+    <span class="candy-text-color text-base font-medium {{ isDisabled ? 'opacity-20' : '' }}">{{ label }}</span>
+  </button>
+</ng-template>
+
+<ng-template #nav_links let-links="links" >
+  <ng-container *ngFor="let link of links">
+    <ng-container *ngIf="link.isLink; else subcat">
+      <ng-container [ngTemplateOutlet]="sidenavbutton" [ngTemplateOutletContext]="{ link: link.link, label: link.label, isDisabled: link.isDisabled, icon: link.icon }"></ng-container>
+    </ng-container>
+    <ng-template #subcat>
+      <div class="subcat-nav">
+        <div class="subcat-title" i18n="@@sidenav-maps">
+          <div class="cat-icon-container">
+            <img src="{{ link.icon }}" alt="{{ link.label }} icon" class="nav-icon gap-2 mx-1" />
+          </div>
+          <span class="candy-text-color text-base font-bold">{{ link.label }}</span>
+        </div>
+        <ng-container *ngFor="let subLink of link.catLink">
+          <ng-container [ngTemplateOutlet]="sidenavbutton" [ngTemplateOutletContext]="{ link: subLink.link, label: subLink.label, isDisabled: subLink.isDisabled }"></ng-container>
+        </ng-container>
+      </div>
+    </ng-template>
+  </ng-container>
 </ng-template>

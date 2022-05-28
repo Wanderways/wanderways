@@ -1,132 +1,196 @@
 :host {
     @apply flex;
     flex: 1 0 auto;
-    .menu-button{
-        border-radius: 6px;
-        background-repeat: no-repeat;
-        background-size: 0% 0%;
-        @apply flex p-2 justify-start items-center;
-        span,img{
-            filter: brightness(10);
-        }
-        &.active-link{
-            background-size: 100% 100%;
-            span,img{
-                filter: drop-shadow(1px 1px #333) brightness(1);
-            }
-        }
 
-    }
+    // Sidenav menu
     #sidenav {
         #sidenav-header {
             @apply flex items-center;
-            @apply justify-around;
+            @apply justify-between;
             border-radius: 0.5rem;
+
             #close-button {
                 border-radius: 50%;
-                @apply cursor-pointer w-8 h-8;
+                @apply cursor-pointer w-4 h-4;
             }
+        }
+
+        // Content injected inside app-side-menu
+        .nav-container {
+            gap: .5rem;
+        }
+
+        .menu-button,
+        .subcat-title {
+            @apply p-2 gap-2 select-none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: 6px;
+
+            span,
+            img {
+                filter: brightness(10);
+                text-align: left;
+            }
+
+            .nav-icon {
+                width: 1.5rem;
+                max-width: 1.5rem;
+                max-height: 24px;
+            }
+        }
+
+        .menu-button {
+            @apply pl-3;
+            background-image: url("/assets/icons/candy-button.svg");
+            background-repeat: no-repeat;
+            background-size: 0% 0%;
+
+            &.active-link {
+                background-size: 100% 100%;
+
+                span,
+                img {
+                    filter: drop-shadow(1px 1px 1px #333) brightness(1);
+                }
+            }
+
+            &:hover {
+                background-color: #FFFFFF3d;
+            }
+        }
+
+        .cat-icon-container{
+            width: 2.5rem;
+            padding-left:0.25rem;
+        }
+        .subcat-nav {
+            @apply flex flex-col;
+
+            .subcat-title,
+            .menu-button  {
+                @apply p-1;
+            }
+            .subcat-title{
+                @apply pl-3;
+            }
+            .menu-button{
+                @apply pl-6;
+            }
+        }
+
+        hr {
+            @apply mb-8 mt-auto opacity-20;
         }
     }
 
+    // Main content
     #main-content {
         width: 100%;
+
         #header {
-            @apply flex ;
+            @apply flex;
             @apply w-full;
             z-index: 50;
-            #header-content{
+
+            #header-content {
                 max-width: 1392px;
                 margin: 0 auto;
                 @apply flex items-center w-full;
+
                 #menu-button {
                     @apply flex justify-center items-center;
                     @apply p-2;
                     text-decoration: none;
                     color: unset;
                     border-radius: 0.5rem;
+
                     app-logo {
                         width: 2.5rem;
                         display: flex;
                     }
                 }
             }
-            
-            &.isSticky{
-                @apply sticky top-0 ;
-                &.isScrolled{
-                    &::after{
-                        opacity : 0.5;
+
+            &.isSticky {
+                @apply sticky top-0;
+
+                &.isScrolled {
+                    &::after {
+                        opacity: 0.5;
                     }
                 }
-                &::after{
-                    content:"";
+
+                &::after {
+                    content: "";
                     background: linear-gradient(45deg, var(--violetta-primary) 0%, var(--violetta-secondary) 100%);
-                    height:1px;
+                    height: 1px;
                     width: 100%;
                     position: absolute;
                     bottom: 0;
-                    opacity : 0;
-                    transition: opacity 0.2s;
+                    opacity: 0;
+                    transition: opacity 0.6s;
                 }
             }
-            
+
         }
     }
-    
-    #logo-and-title{
+    // generic template logo and title
+    #logo-and-title {
         @apply flex items-center;
         @apply my-2 p-1 gap-2;
         @apply select-none;
         @apply uppercase;
         font-weight: 300;
-        font-size: 1.25rem;
+        font-size: 1rem;
         border-radius: 0.5rem;
         cursor: pointer;
+
         img {
-            width: 2.5rem;
+            width: 1.5rem;
             display: flex;
         }
     }
-    
-}
 
-:host:not(.relativeHeader) {
-    position: sticky;
-}
-
-:host.relativeHeader {
-    position: relative;
+    // @TODO verify 
+    &:not(.relativeHeader) {
+        position: sticky;
+    }
+    &.relativeHeader {
+        position: relative;
+    }
+    // @TODO end verify
 }
 
 /* if backdrop support: blurred */
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    #header{
-        &.isSticky{
-        -webkit-backdrop-filter: blur(20px) opacity(0);
-        backdrop-filter: blur(20px) opacity(0);
-            &.isScrolled{
+    #header {
+        &.isSticky {
+            -webkit-backdrop-filter: blur(20px) opacity(0);
+            backdrop-filter: blur(20px) opacity(0);
+
+            &.isScrolled {
                 -webkit-backdrop-filter: blur(20px) opacity(1);
                 backdrop-filter: blur(20px) opacity(1);
             }
         }
     }
 }
+
 /* else */
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    #header{
-        &.isSticky{
-            &.isScrolled{
-                background-color:var(--dark-background);
+@supports ((not(-webkit-backdrop-filter: none)) or (not (backdrop-filter: none))) {
+    #header {
+        &.isSticky {
+            &.isScrolled {
+                background-color: var(--dark-background);
             }
         }
     }
 }
 
-.gradient-box {
-    padding: 7px 17px;
-    display: flex;
-    gap:14px;
-    span, img{
+@media screen and (max-width: 1024px) {
+    #close-sidenav-button{
+        display: none;
     }
-  }
+}

@@ -11,6 +11,16 @@
     "map-save-filter":"¿Guardar filtro?",
     "map-filter":"Filtro",
     "sidenav-home":"Home",
-    "sidenav-maps":"Mapas"
+    "sidenav-maps":"Mapas",
+    "sidenav-all-maps":"Todos los mapas",
+    "sidenav-favorites-map":"Favoritos",
+    "sidenav-games":"Juegos",
+    "sidenav-all-games":"Todos los juegos",
+    "sidenav-favorites-game":"Favoritos",
+    "sidenav-news-and-stuff":"Noticias y cosas",
+    "sidenav-last-news":"Últimas noticias",
+    "sidenav-roadmap":"Roadmap",
+    "sidenav-learn-more":"Más información",
+    "sidenav-announces":"Anuncia"
   }
 }
