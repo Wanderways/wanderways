@@ -43,12 +43,12 @@
 
         .menu-button {
             @apply pl-3;
-            background-image: url("/assets/icons/candy-button.svg");
+            background-position: center;
             background-repeat: no-repeat;
             background-size: 0% 0%;
 
             &.active-link {
-                background-size: 100% 100%;
+                background-size: 100.5% 103%;
 
                 span,
                 img {
