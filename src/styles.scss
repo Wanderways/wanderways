@@ -74,29 +74,6 @@ $svg-invert-white: 1;
     --map-land-error: #be2d0dff;
     --map-land-won: #fccb1aff;
   }
-  .light {
-    --color-scheme: light;
-    --light-background: var(--theme-light-background-light);
-    --dark-background: var(--theme-light-background-dark);
-    --current-color: #000000;
-
-    /* SVG related */
-    --svg-invert: 0%;
-    --svg-sepia: 0%;
-    --svg-saturate: 0%;
-    --svg-hue-rotate: 82deg;
-    --svg-brightness: 94%;
-    --svg-contrast: 103%;
-
-    /* Map related */
-    --map-land: #32323257;
-    --map-land-stroke: #ffffffff;
-    --map-land-found: #347b98ff;
-    --map-land-selected: #fdfdfdff;
-    --map-group-selected: #fdfdfd4f;
-    --map-land-error: #be2d0dff;
-    --map-land-won: #fccb1aff;
-  }
   .dark {
     --color-scheme: dark;
     --light-background: var(--theme-dark-background-light);
@@ -135,13 +112,6 @@ $svg-invert-white: 1;
       180deg,
       var(--theme-default-background-dark) 0%,
       var(--theme-default-background-light) 100%
-    );
-  }
-  .bg-light-theme {
-    background-image: linear-gradient(
-      180deg,
-      var(--theme-light-background-dark) 0%,
-      var(--theme-light-background-light) 100%
     );
   }
   .bg-dark-theme {
@@ -208,10 +178,6 @@ html {
   --theme-default-background-light: #c4e0e5;
   --theme-default-background-dark: #4ca1af;
   --theme-default-text-color: #ffffff;
-
-  --theme-light-background-light: #ffffff;
-  --theme-light-background-dark: #ccf9ff;
-  --theme-light-text-color: #000000;
 
   --theme-dark-background-light: #243b55;
   --theme-dark-background-dark: #141e30;

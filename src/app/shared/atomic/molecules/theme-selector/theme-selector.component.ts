@@ -13,7 +13,6 @@ export class ThemeSelectorComponent implements OnInit {
   displayThemeSelector : boolean = false;
 
   themes : string[] = [
-    "light",
     "default",
     "dark"
   ]
