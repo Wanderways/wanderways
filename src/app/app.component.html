@@ -46,8 +46,9 @@
 </ng-template>
 
 <ng-template #sidenavbutton let-link="link" let-label="label" let-isDisabled="isDisabled" let-icon="icon">
+  <!-- Style set in template for background-url, else fails at build time -->
   <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="[link]" routerLinkActive="active-link"
-    [routerLinkActiveOptions]="{ exact: true }" [disabled]="isDisabled" class="menu-button">
+    [routerLinkActiveOptions]="{ exact: true }" [disabled]="isDisabled" class="menu-button" style="background-image: url('./assets/icons/candy-button.svg');">
     <div *ngIf="icon" class="cat-icon-container">
       <img class="nav-icon gap-2 mx-1" src="{{ icon }}" alt="{{ label }} icon" />
     </div>
