@@ -10,16 +10,10 @@ export function pan({ currentTransform, containerElement, toPanElement, deltaCoo
     // Get the mouse position as SVG coordinates
     const containerElementViewBox = containerElement.viewBox.baseVal;
     const toPanRect = toPanElement.getClientRects().item(0)!;
-    
-    // Adapt to screen resolution
-    deltaCoordinates.x /= window.devicePixelRatio;
-    deltaCoordinates.y /= window.devicePixelRatio;
-
     currentTransform = currentTransform.translate(
         (deltaCoordinates.x  / currentTransform.a) * ((containerElementViewBox.width * currentTransform.a) / toPanRect.width),
         (deltaCoordinates.y / currentTransform.a) *((containerElementViewBox.height * currentTransform.a)/ toPanRect.height),
         );
-    
     // Now we need to update the group's transform
     var transform = containerElement.createSVGTransform()!;        // An SVGTransform DOM object...
     applyTransformMatrix(transform, toPanElement, currentTransform);
