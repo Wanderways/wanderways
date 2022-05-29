@@ -160,19 +160,6 @@ $svg-invert-white: 1;
   }
 }
 
-html {
-  height: 100%;
-  @apply h-full;
-  @apply text-current-color;
-  @apply current-bg-color;
-  background-attachment: fixed;
-  color-scheme: var(--color-scheme);
-  body {
-    @apply flex flex-col;
-    @apply h-full m-0;
-  }
-}
-
 :root {
   pointer-events: all;
   --theme-default-background-light: #c4e0e5;
@@ -194,11 +181,23 @@ html {
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+html {
+  @apply text-current-color;
+  color-scheme: var(--color-scheme);
+  body {
+    @apply flex flex-col;
+    @apply m-0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+}
+#app-background{
+  @apply current-bg-color;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 .custom-scrollbar {
