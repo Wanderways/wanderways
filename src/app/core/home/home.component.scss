@@ -5,38 +5,48 @@
     max-width: min(1392px, 100vw);
     z-index: 1;
     #home-rotating-maps-container{
-        @apply absolute;
-        @apply pointer-events-none;
-        @apply top-0 right-0 w-screen;
-        @apply overflow-hidden select-none;
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        overflow: hidden;
+        -webkit-user-select: none;
+        user-select: none;
         #home-rotating-maps{
-            @apply  flex;
+            display: flex;
             width: 200vw;
             transform: rotate(20deg) translateY(-20px);
-            mask-image: radial-gradient(circle at 100% 0%,#000000, transparent 90%);
             -webkit-mask-image: radial-gradient(circle at 100% 0%,#000000, transparent 90%);
+            mask-image: radial-gradient(circle at 100% 0%,#000000, transparent 90%);
             img{
+                image-rendering: pixelated;
                 animation: move-left 20s infinite;
                 animation-timing-function : linear;
             }
         }
     }
     #home-presentation-text{
-        @apply flex flex-col items-start ;
         @apply tracking-widest;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin-top: 25vh;
         padding: 0 1rem;
         z-index: 1;
         #home-welcome{
-            @apply text-xl uppercase;
+            @apply text-xl;
+            text-transform: uppercase;
         }
         #home-title{
-            @apply text-5xl font-semibold uppercase;
+            @apply text-5xl font-semibold;
+            text-transform: uppercase;
         }
         #home-button-see-maps{
-            @apply self-end;
             @apply px-4 py-3 rounded-lg;
-            @apply text-white uppercase;
+            @apply text-white;
+            align-self: flex-end;
+            text-transform: uppercase;
         }
     }
     

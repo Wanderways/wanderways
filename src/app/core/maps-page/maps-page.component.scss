@@ -1,29 +1,45 @@
 :host{
-    @apply flex flex-col mx-auto mb-2;
+    @apply mx-auto mb-2;
+    display: flex;
+    flex-direction: column;
     flex : 1 0 auto;
     width: 100%;
     max-width: min(1392px, 100vw);
     z-index: 1;
     #filter-container{
-        @apply m-4 flex flex-col select-none items-stretch;
+        @apply m-4;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        -webkit-user-select: none;
+        user-select: none;
+        
         #filter-button{
+            @apply p-2 gap-1 rounded ;
             border: 1px solid #88888830;
-            @apply flex items-center justify-start p-2 gap-1 rounded cursor-pointer;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
             span{
-                @apply flex items-center;
+                display: flex;
+                align-items: center;
             }
         }
     }
     #map-tiles-container{
-        @apply mx-4 flex flex-wrap gap-8;
-
+        @apply mx-4 gap-8;
+        display: flex;
+        flex-wrap: wrap;
         .map-tiles-category-container{
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             gap: 0.5rem;
             p{
-                @apply uppercase font-medium;
+                @apply font-medium;
+                text-transform: uppercase;
             }
         }
     }
