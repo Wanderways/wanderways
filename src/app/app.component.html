@@ -24,10 +24,9 @@
 <!-- MAIN CONTENT -->
 <div id="main-content">
   <!-- HEADER -->
-  <!-- @TODO class.isSticky should be associated with a service so that pages can use it -->
-  <header id="header" #nav [class.isSticky]="1 === 1" [class.isScrolled]="isScrolled">
+  <header id="header" #nav [style.position]="position" [class]="position" [class.isScrolled]="isScrolled">
     <div id="header-content">
-      <div matRipple matRippleColor="#FFFFFF60" class="mx-3 my-2 rounded cursor-pointer select-none"
+      <div matRipple matRippleColor="#FFFFFF60" class="header-button mx-3 my-2 rounded cursor-pointer select-none"
         (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav ? 'hidden' : ''">
         <img src="./assets/icons/menu.svg" alt="menu button icon" class="svg-current-color mx-1" />
       </div>
@@ -39,7 +38,7 @@
 
 <!-- TEMPLATES -->
 <ng-template #header_content let-isVisible>
-  <div matRipple matRippleColor="#FFFFFF60" id="logo-and-title" [routerLink]="['/']"
+  <div matRipple matRippleColor="#FFFFFF60" id="logo-and-title" class="header-button" [routerLink]="['/']"
     [style.visibility]="isVisible ? 'hidden' : ''">
     <img src="./assets/icons/logo.svg" alt="menu button icon" />
     <span>Learn your maps</span>

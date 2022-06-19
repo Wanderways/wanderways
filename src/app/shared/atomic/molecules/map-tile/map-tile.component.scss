@@ -12,6 +12,7 @@
     mask-image: linear-gradient(to bottom left, black, 15%, transparent);
     img {
       @apply w-auto h-full  absolute top-0 right-0 mx-0;
+      image-rendering: pixelated;
       transform: translate(25%, -10%) rotate(-5deg);
       max-width: 20rem;
       min-height:13rem;

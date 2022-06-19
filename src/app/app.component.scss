@@ -1,17 +1,19 @@
 :host {
-    @apply flex;
+    display: flex;
     flex: 1 0 auto;
 
     // Sidenav menu
     #sidenav {
         #sidenav-header {
-            @apply flex items-center;
-            @apply justify-between;
-            border-radius: 0.5rem;
+            @apply rounded-lg;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
             #close-button {
+                @apply w-4 h-4;
                 border-radius: 50%;
-                @apply cursor-pointer w-4 h-4;
+                cursor: pointer;
             }
         }
 
@@ -22,7 +24,9 @@
 
         .menu-button,
         .subcat-title {
-            @apply p-2 gap-2 select-none;
+            @apply p-2 gap-2;
+            -webkit-user-select: none;
+            user-select: none;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -66,7 +70,8 @@
             padding-left:0.25rem;
         }
         .subcat-nav {
-            @apply flex flex-col;
+            display: flex;
+            flex-direction: column;
 
             .subcat-title,
             .menu-button  {
@@ -81,31 +86,38 @@
         }
 
         hr {
-            @apply mb-8 mt-auto opacity-20;
+            @apply mb-8;
+            margin-top: auto;
+            opacity: 0.2;
         }
     }
 
     // Main content
     #main-content {
         width: 100%;
-
         #header {
-            @apply flex;
-            @apply w-full;
+            @apply h-12;
+            display: flex;
+            width: 100%;
             z-index: 50;
 
             #header-content {
+                @apply p-6;
+                height: 100%;
                 max-width: 1392px;
                 margin: 0 auto;
-                @apply flex items-center w-full;
+                display: flex;
+                align-items: center;
+                width: 100%;;
 
                 #menu-button {
-                    @apply flex justify-center items-center;
                     @apply p-2;
+                    @apply rounded-lg;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     text-decoration: none;
                     color: unset;
-                    border-radius: 0.5rem;
-
                     app-logo {
                         width: 2.5rem;
                         display: flex;
@@ -113,8 +125,9 @@
                 }
             }
 
-            &.isSticky {
-                @apply sticky top-0;
+            &.sticky {
+                position: sticky;
+                top:0;
 
                 &.isScrolled {
                     &::after {
@@ -138,10 +151,12 @@
     }
     // generic template logo and title
     #logo-and-title {
-        @apply flex items-center;
         @apply my-2 p-1 gap-2;
-        @apply select-none;
-        @apply uppercase;
+        display: flex;
+        align-items: center;
+        -webkit-user-select: none;
+        user-select: none;
+        text-transform: uppercase;
         font-weight: 300;
         font-size: 1rem;
         border-radius: 0.5rem;
@@ -167,13 +182,12 @@
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     #header {
         &.isSticky {
-            -webkit-backdrop-filter: blur(20px) opacity(0);
-            backdrop-filter: blur(20px) opacity(0);
-
-            &.isScrolled {
-                -webkit-backdrop-filter: blur(20px) opacity(1);
-                backdrop-filter: blur(20px) opacity(1);
-            }
+            -webkit-backdrop-filter: opacity(0);
+            backdrop-filter: opacity(0) ;
+        }
+        &.isScrolled {
+            -webkit-backdrop-filter: blur(20px) opacity(1) brightness(0.6);
+            backdrop-filter: blur(20px) opacity(1) brightness(0.6);
         }
     }
 }

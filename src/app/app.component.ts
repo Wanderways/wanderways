@@ -1,16 +1,25 @@
-import { Component,  HostListener } from '@angular/core';
+import { Component,  HostListener, OnInit } from '@angular/core';
+import { HeaderDisplayService } from './shared/services/header-display.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   displaySideNav : boolean | undefined = (window.innerWidth > 1024 ? true : undefined);
+  position : "sticky"|"relative"|"fixed" = "sticky";
   isScrolled : boolean = false;
   navLinks : NavLink[]= navLink;
   footerLinks: NavLink[]= footerLinks;
+
+  constructor(private headerDisplayService : HeaderDisplayService){
+    
+  }
+  ngOnInit(): void {
+    this.headerDisplayService.getPosition().subscribe(position=>this.position = position);
+  }
 
   /**
    * On scroll, if not top page, then blur header
@@ -48,7 +57,7 @@ const navLink : NavLink[] = [
     isLink : true,
     link : "/",
     icon : "./assets/icons/home.svg",
-    label : $localize `:@@sidenav-home:Home}`,
+    label : $localize `:@@sidenav-home:Home`,
     isDisabled : false,
     catLink :[]
   },
