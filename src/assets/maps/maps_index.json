@@ -1,163 +1,238 @@
 [
   {
-    "mapIdentifier": "world_onu",
+    "mapIdentifier": "world",
     "mapFlagUrl":"",
-    "relatedSvg": "",
+    "tagIdList":["continent"],
     "mapDisplayName": {
-        "en_US":["Country - World - UN"],
-        "fr_FR":["Pays - Monde - ONU"],
-        "de_DE":["Land - Welt - UNO"],
-        "es_ES":["País - Mundo - ONU"],
-        "pt_PT":["País - Mundo - ONU"]
+        "en_US":["World"],
+        "fr_FR":["Monde"],
+        "de_DE":["Welt"],
+        "es_ES":["Mundo"],
+        "pt_PT":["Mundo"]
     },
-    "map_type":"coun",
-    "tagIdList":["cont_wo"],
-    "wiki_url":"https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
-    "available":false
+    "maps":[
+      {
+        "identifier":"world-country-iso",
+        "displayName":{
+          "en_US":["Country - World - ISO"],
+          "fr_FR":["Pays - Monde - ISO"],
+          "de_DE":["Land - Welt - ISO"],
+          "es_ES":["País - Mundo - ISO"],
+          "pt_PT":["País - Mundo - ISO"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/ISO_3166-1"
+      },
+      {
+        "identifier":"world-country-un",
+        "displayName":{
+          "en_US":["Country - World - UN"],
+          "fr_FR":["Pays - Monde - ONU"],
+          "de_DE":["Land - Welt - UNO"],
+          "es_ES":["País - Mundo - ONU"],
+          "pt_PT":["País - Mundo - ONU"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
+      }
+    ]
   },
   {
-    "mapIdentifier": "world_iso",
+    "mapIdentifier": "europe",
     "mapFlagUrl":"",
-    "relatedSvg": "map-world-iso",
-    "mapDisplayName": {
-        "en_US":["Country - World - ISO"],
-        "fr_FR":["Pays - Monde - ISO"],
-        "de_DE":["Land - Welt - ISO"],
-        "es_ES":["País - Mundo - ISO"],
-        "pt_PT":["País - Mundo - ISO"]
-    },
-    "map_type":"coun",
-    "tagIdList":["cont_wo"],
-    "wiki_url":"https://en.wikipedia.org/wiki/ISO_3166-1",
-    "available":true
-  },
-  {
-    "mapIdentifier": "eu_cont_coun",
-    "mapFlagUrl":"",
-    "relatedSvg": "",
-    "mapDisplayName": {
-        "en_US":["Country - Europe"],
-        "fr_FR":["Pays - Europe"],
-        "de_DE":["Land - Europa"],
-        "es_ES":["País - Europa"],
-        "pt_PT":["País - Europa"]
-    },
-    "map_type":"coun",
     "tagIdList":["cont_eu"],
-    "wiki_url":"https://en.wikipedia.org/wiki/Europe",
-    "available":false
+    "mapDisplayName": {
+      "en_US":["Europe"],
+      "fr_FR":["Europe"],
+      "de_DE":["Europa"],
+      "es_ES":["Europa"],
+      "pt_PT":["Europa"]
+    },
+    "maps":[
+      {
+        "identifier":"europe-countries",
+        "displayName":{
+          "en_US":["Country"],
+          "fr_FR":["Pays"],
+          "de_DE":["Land"],
+          "es_ES":["País"],
+          "pt_PT":["País"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/Europe"
+      }
+    ]
   },
   {
-    "mapIdentifier": "as_cont_coun",
+    "mapIdentifier": "asia",
     "mapFlagUrl":"",
-    "relatedSvg": "",
-    "mapDisplayName": {
-        "en_US":["Country - Asia"],
-        "fr_FR":["Pays - Asie"],
-        "de_DE":["Land - Asien"],
-        "es_ES":["País - Asia"],
-        "pt_PT":["País - Ásia"]
-    },
-    "map_type":"coun",
     "tagIdList":["cont_as"],
-    "wiki_url":"https://en.wikipedia.org/wiki/Asia",
-    "available":false
+    "mapDisplayName": {
+      "en_US":["Asia"],
+      "fr_FR":["Asie"],
+      "de_DE":["Asien"],
+      "es_ES":["Asia"],
+      "pt_PT":["Ásia"]
+    },
+    "maps":[
+      {
+        "identifier":"asia-countries",
+        "displayName":{
+          "en_US":["Country"],
+          "fr_FR":["Pays"],
+          "de_DE":["Land"],
+          "es_ES":["País"],
+          "pt_PT":["País"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/Asia"
+      }
+    ]
   },
   {
-    "mapIdentifier": "na_cont_coun",
+    "mapIdentifier": "north_america",
     "mapFlagUrl":"",
-    "relatedSvg": "",
-    "mapDisplayName": {
-        "en_US":["Country - North America"],
-        "fr_FR":["Pays - Amérique du nord"],
-        "de_DE":["Land - Nordamerika"],
-        "es_ES":["País - Norteamérica"],
-        "pt_PT":["País - América do Norte"]
-    },
-    "map_type":"coun",
     "tagIdList":["cont_na"],
-    "wiki_url":"https://en.wikipedia.org/wiki/North_America",
-    "available":false
+    "mapDisplayName": {
+      "en_US":["North America"],
+      "fr_FR":["Amérique du nord"],
+      "de_DE":["Nordamerika"],
+      "es_ES":["Norteamérica"],
+      "pt_PT":["América do Norte"]
+    },
+    "maps":[
+      {
+        "identifier":"north-america-countries",
+        "displayName":{
+          "en_US":["Country"],
+          "fr_FR":["Pays"],
+          "de_DE":["Land"],
+          "es_ES":["País"],
+          "pt_PT":["País"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/North_America"
+      }
+    ]
   },
   {
-    "mapIdentifier": "sa_cont_coun",
+    "mapIdentifier": "south_america",
     "mapFlagUrl":"",
-    "mapFlagUrl":"",
-    "relatedSvg": "",
-    "mapDisplayName": {
-        "en_US":["Country - South America"],
-        "fr_FR":["Pays - Amérique du sud"],
-        "de_DE":["Land - Südamerika"],
-        "es_ES":["País - América del Sur"],
-        "pt_PT":["País - América do Sul"]
-    },
-    "map_type":"coun",
     "tagIdList":["cont_sa"],
-    "wiki_url":"https://en.wikipedia.org/wiki/South_America",
-    "available":false
+    "mapDisplayName": {
+      "en_US":["South America"],
+      "fr_FR":["Amérique du sud"],
+      "de_DE":["Südamerika"],
+      "es_ES":["América del Sur"],
+      "pt_PT":["América do Sul"]
+    },
+    "maps":[
+      {
+        "identifier":"south-america-countries",
+        "displayName":{
+          "en_US":["Country"],
+          "fr_FR":["Pays"],
+          "de_DE":["Land"],
+          "es_ES":["País"],
+          "pt_PT":["País"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/South_America"
+      }
+    ]
   },
   {
-    "mapIdentifier": "af_cont_coun",
+    "mapIdentifier": "africa",
     "mapFlagUrl":"",
-    "relatedSvg": "",
-    "mapDisplayName": {
-        "en_US":["Country - Africa"],
-        "fr_FR":["Pays - Afrique"],
-        "de_DE":["Land - Afrika"],
-        "es_ES":["País - África"],
-        "pt_PT":["País - África"]
-    },
-    "map_type":"coun",
     "tagIdList":["cont_af"],
-    "wiki_url":"https://en.wikipedia.org/wiki/Africa",
-    "available":false
+    "mapDisplayName": {
+      "en_US":["Africa"],
+      "fr_FR":["Afrique"],
+      "de_DE":["Afrika"],
+      "es_ES":["África"],
+      "pt_PT":["África"]
+    },
+    "maps":[
+      {
+        "identifier":"africa-countries",
+        "displayName":{
+          "en_US":["Country"],
+          "fr_FR":["Pays"],
+          "de_DE":["Land"],
+          "es_ES":["País"],
+          "pt_PT":["País"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/Africa"
+      }
+    ]
   },
   {
-    "mapIdentifier": "oc_cont_coun",
+    "mapIdentifier": "oceania",
     "mapFlagUrl":"",
-    "relatedSvg": "",
-    "mapDisplayName": {
-        "en_US":["Country - Oceania"],
-        "fr_FR":["Pays - Océanie"],
-        "de_DE":["Land - Ozeanien"],
-        "es_ES":["País - Oceania"],
-        "pt_PT":["País - Oceania"]
-    },
-    "map_type":"coun",
     "tagIdList":["cont_oc"],
-    "wiki_url":"https://en.wikipedia.org/wiki/Oceania",
-    "available":false
+    "mapDisplayName": {
+      "en_US":["Oceania"],
+      "fr_FR":["Océanie"],
+      "de_DE":["Ozeanien"],
+      "es_ES":["Oceania"],
+      "pt_PT":["Oceania"]
+    },
+    "maps":[
+      {
+        "identifier":"oceania-countries",
+        "displayName":{
+          "en_US":["Country"],
+          "fr_FR":["Pays"],
+          "de_DE":["Land"],
+          "es_ES":["País"],
+          "pt_PT":["País"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/Oceania"
+      }
+    ]
   },
   {
-    "mapIdentifier": "fr_dep",
+    "mapIdentifier": "france",
     "mapFlagUrl":"./assets/maps/flags/iso3166_1/flag_FR.svg",
-    "relatedSvg": "map-fr-sub-lvl2",
-    "mapDisplayName": {
-        "en_US":["Departments - France "],
-        "fr_FR":["Départements - France"],
-        "de_DE":["Abteilungen - Frankreich"],
-        "es_ES":["Departamentos - Francia"],
-        "pt_PT":["Departamentos - França"]
-    },
-    "map_type":"subd",
     "tagIdList":["cont_eu","coun_fr"],
-    "wiki_url":"https://en.wikipedia.org/wiki/Departments_of_France",
-    "available":true
+    "mapDisplayName": {
+      "en_US":["France "],
+      "fr_FR":["France"],
+      "de_DE":["Frankreich"],
+      "es_ES":["Francia"],
+      "pt_PT":["França"]
+    },
+    "maps":[
+      {
+        "identifier":"france-departments",
+        "displayName":{
+          "en_US":["Departments"],
+          "fr_FR":["Départements"],
+          "de_DE":["Abteilungen"],
+          "es_ES":["Departamentos"],
+          "pt_PT":["Departamentos"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/Departments_of_France"
+      }
+    ]
   },
   {
-    "mapIdentifier": "jp_pref",
+    "mapIdentifier": "japan",
     "mapFlagUrl":"./assets/maps/flags/iso3166_1/flag_JP.svg",
-    "relatedSvg": "map-jp-sub-lvl2",
-    "mapDisplayName": {
-        "en_US":["Prefectures - Japan"],
-        "fr_FR":["Préfectures - Japon"],
-        "de_DE":["Präfekturen - Japan"],
-        "es_ES":["Prefecturas - Japón"],
-        "pt_PT":["Prefeituras - Japão"]
-    },
-    "map_type":"subd",
     "tagIdList":["cont_as","coun_jp"],
-    "wiki_url":"https://en.wikipedia.org/wiki/Prefectures_of_Japan",
-    "available":true
+    "mapDisplayName": {
+      "en_US":["Japan"],
+      "fr_FR":["Japon"],
+      "de_DE":["Japan"],
+      "es_ES":["Japón"],
+      "pt_PT":["Japão"]
+    },
+    "maps":[
+      {
+        "identifier":"japan-prefectures",
+        "displayName":{
+          "en_US":["Prefectures"],
+          "fr_FR":["Préfectures"],
+          "de_DE":["Präfekturen"],
+          "es_ES":["Prefecturas"],
+          "pt_PT":["Prefeituras"]
+        },
+        "wiki_url":"https://en.wikipedia.org/wiki/Prefectures_of_Japan"
+      }
+    ]
   }
 ]

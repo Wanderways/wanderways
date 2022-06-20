@@ -23,7 +23,7 @@
                     <div class="flex gap-2 flex-wrap">
                         <ng-container *ngFor="let entry of mapIndexEntryList">
                             <ng-container *ngIf="entryHasTag(entry,tag.id)">
-                                <app-map-tile [mapEntry]="entry" [available]="entry.available"></app-map-tile>
+                                <app-map-tile [mapEntry]="entry" [available]="true"></app-map-tile>
                             </ng-container>
                         </ng-container>
                     </div>
