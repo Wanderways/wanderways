@@ -133,6 +133,7 @@ export class MapGenericComponent implements OnInit {
     }
 
     if (event.button === 1 || !matchMedia('(pointer:fine)').matches) {
+      event.preventDefault();
       this.mouseStates.isPanned = true;
     }
   }
@@ -148,6 +149,7 @@ export class MapGenericComponent implements OnInit {
       this.mouseStates.pointerDownEvents = this.mouseStates.pointerDownEvents.filter(e => e.pointerId !== event.pointerId);
     }
     if (event.button === 1 || !matchMedia('(pointer:fine)').matches) {
+      event.preventDefault();
       this.mouseStates.isPanned = false;
     }
   }
@@ -180,6 +182,8 @@ export class MapGenericComponent implements OnInit {
     } else if (this.mouseStates.pointerDownEvents.length == 1) {
       // if first move on panning, then do not move (else you'll get a X - 0 which makes the map take your thumb as origin)
       if(this.mouseStates.lastX !== 0 && this.mouseStates.lastY !== 0){
+        
+        mouseMove.preventDefault();
         this.panning(mouseMove.clientX - this.mouseStates.lastX, mouseMove.clientY - this.mouseStates.lastY);
       }
     }

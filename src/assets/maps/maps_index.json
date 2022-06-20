@@ -1,6 +1,7 @@
 [
   {
     "mapIdentifier": "world_onu",
+    "mapFlagUrl":"",
     "relatedSvg": "",
     "mapDisplayName": {
         "en_US":["Country - World - UN"],
@@ -16,6 +17,7 @@
   },
   {
     "mapIdentifier": "world_iso",
+    "mapFlagUrl":"",
     "relatedSvg": "map-world-iso",
     "mapDisplayName": {
         "en_US":["Country - World - ISO"],
@@ -31,6 +33,7 @@
   },
   {
     "mapIdentifier": "eu_cont_coun",
+    "mapFlagUrl":"",
     "relatedSvg": "",
     "mapDisplayName": {
         "en_US":["Country - Europe"],
@@ -46,6 +49,7 @@
   },
   {
     "mapIdentifier": "as_cont_coun",
+    "mapFlagUrl":"",
     "relatedSvg": "",
     "mapDisplayName": {
         "en_US":["Country - Asia"],
@@ -61,6 +65,7 @@
   },
   {
     "mapIdentifier": "na_cont_coun",
+    "mapFlagUrl":"",
     "relatedSvg": "",
     "mapDisplayName": {
         "en_US":["Country - North America"],
@@ -76,6 +81,8 @@
   },
   {
     "mapIdentifier": "sa_cont_coun",
+    "mapFlagUrl":"",
+    "mapFlagUrl":"",
     "relatedSvg": "",
     "mapDisplayName": {
         "en_US":["Country - South America"],
@@ -91,6 +98,7 @@
   },
   {
     "mapIdentifier": "af_cont_coun",
+    "mapFlagUrl":"",
     "relatedSvg": "",
     "mapDisplayName": {
         "en_US":["Country - Africa"],
@@ -106,6 +114,7 @@
   },
   {
     "mapIdentifier": "oc_cont_coun",
+    "mapFlagUrl":"",
     "relatedSvg": "",
     "mapDisplayName": {
         "en_US":["Country - Oceania"],
@@ -121,6 +130,7 @@
   },
   {
     "mapIdentifier": "fr_dep",
+    "mapFlagUrl":"./assets/maps/flags/iso3166_1/flag_FR.svg",
     "relatedSvg": "map-fr-sub-lvl2",
     "mapDisplayName": {
         "en_US":["Departments - France "],
@@ -136,6 +146,7 @@
   },
   {
     "mapIdentifier": "jp_pref",
+    "mapFlagUrl":"./assets/maps/flags/iso3166_1/flag_JP.svg",
     "relatedSvg": "map-jp-sub-lvl2",
     "mapDisplayName": {
         "en_US":["Prefectures - Japan"],
