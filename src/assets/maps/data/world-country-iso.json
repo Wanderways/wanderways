@@ -13,6 +13,7 @@
       ]
     },
     "identifier": "AF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AF.svg",
     "alpha_2": "AF",
     "alpha_3": "AFG",
     "group": "as",
@@ -25,6 +26,7 @@
       "fr_FR": ["Åland"]
     },
     "identifier": "AX",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AX.svg",
     "alpha_2": "AX",
     "alpha_3": "ALA",
     "group": "eu",
@@ -37,6 +39,7 @@
       "fr_FR": ["Albanie", "République d'Albanie"]
     },
     "identifier": "AL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AL.svg",
     "alpha_2": "AL",
     "alpha_3": "ALB",
     "group": "eu",
@@ -48,6 +51,7 @@
       "en_US": ["Algeria", "People's Democratic Republic of Algeria"]
     },
     "identifier": "DZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_DZ.svg",
     "alpha_2": "DZ",
     "alpha_3": "DZA",
     "group": "af",
@@ -59,6 +63,7 @@
       "en_US": ["American Samoa"]
     },
     "identifier": "AS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AS.svg",
     "alpha_2": "AS",
     "alpha_3": "ASM",
     "group": "oc",
@@ -70,6 +75,7 @@
       "en_US": ["Andorra"]
     },
     "identifier": "AD",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AD.svg",
     "alpha_2": "AD",
     "alpha_3": "AND",
     "group": "eu",
@@ -81,6 +87,7 @@
       "en_US": ["Angola"]
     },
     "identifier": "AO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AO.svg",
     "alpha_2": "AO",
     "alpha_3": "AGO",
     "group": "af",
@@ -92,6 +99,7 @@
       "en_US": ["Anguilla"]
     },
     "identifier": "AI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AI.svg",
     "alpha_2": "AI",
     "alpha_3": "AIA",
     "group": "na",
@@ -103,6 +111,7 @@
       "en_US": ["Antarctica"]
     },
     "identifier": "AQ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AQ.svg",
     "alpha_2": "AQ",
     "alpha_3": "ATA",
     "group": "an",
@@ -114,6 +123,7 @@
       "en_US": ["Antigua and Barbuda"]
     },
     "identifier": "AG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AG.svg",
     "alpha_2": "AG",
     "alpha_3": "ATG",
     "group": "na",
@@ -125,6 +135,7 @@
       "en_US": ["Argentina"]
     },
     "identifier": "AR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AR.svg",
     "alpha_2": "AR",
     "alpha_3": "ARG",
     "group": "sa",
@@ -136,6 +147,7 @@
       "en_US": ["Armenia"]
     },
     "identifier": "AM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AM.svg",
     "alpha_2": "AM",
     "alpha_3": "ARM",
     "group": "as",
@@ -147,6 +159,7 @@
       "en_US": ["Aruba"]
     },
     "identifier": "AW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AW.svg",
     "alpha_2": "AW",
     "alpha_3": "ABW",
     "group": "na",
@@ -158,6 +171,7 @@
       "en_US": ["Australia"]
     },
     "identifier": "AU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AU.svg",
     "alpha_2": "AU",
     "alpha_3": "AUS",
     "group": "oc",
@@ -169,6 +183,7 @@
       "en_US": ["Austria"]
     },
     "identifier": "AT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AT.svg",
     "alpha_2": "AT",
     "alpha_3": "AUT",
     "group": "eu",
@@ -180,6 +195,7 @@
       "en_US": ["Azerbaijan"]
     },
     "identifier": "AZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AZ.svg",
     "alpha_2": "AZ",
     "alpha_3": "AZE",
     "group": "as",
@@ -191,6 +207,7 @@
       "en_US": ["Bahamas"]
     },
     "identifier": "BS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BS.svg",
     "alpha_2": "BS",
     "alpha_3": "BHS",
     "group": "na",
@@ -202,6 +219,7 @@
       "en_US": ["Bahrain"]
     },
     "identifier": "BH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BH.svg",
     "alpha_2": "BH",
     "alpha_3": "BHR",
     "group": "as",
@@ -213,6 +231,7 @@
       "en_US": ["Bangladesh"]
     },
     "identifier": "BD",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BD.svg",
     "alpha_2": "BD",
     "alpha_3": "BGD",
     "group": "as",
@@ -224,6 +243,7 @@
       "en_US": ["Barbados"]
     },
     "identifier": "BB",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BB.svg",
     "alpha_2": "BB",
     "alpha_3": "BRB",
     "group": "na",
@@ -235,6 +255,7 @@
       "en_US": ["Belarus"]
     },
     "identifier": "BY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BY.svg",
     "alpha_2": "BY",
     "alpha_3": "BLR",
     "group": "eu",
@@ -246,6 +267,7 @@
       "en_US": ["Belgium"]
     },
     "identifier": "BE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BE.svg",
     "alpha_2": "BE",
     "alpha_3": "BEL",
     "group": "eu",
@@ -257,6 +279,7 @@
       "en_US": ["Belize"]
     },
     "identifier": "BZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BZ.svg",
     "alpha_2": "BZ",
     "alpha_3": "BLZ",
     "group": "na",
@@ -268,6 +291,7 @@
       "en_US": ["Benin"]
     },
     "identifier": "BJ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BJ.svg",
     "alpha_2": "BJ",
     "alpha_3": "BEN",
     "group": "af",
@@ -279,6 +303,7 @@
       "en_US": ["Bermuda"]
     },
     "identifier": "BM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BM.svg",
     "alpha_2": "BM",
     "alpha_3": "BMU",
     "group": "na",
@@ -290,6 +315,7 @@
       "en_US": ["Bhutan"]
     },
     "identifier": "BT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BT.svg",
     "alpha_2": "BT",
     "alpha_3": "BTN",
     "group": "as",
@@ -301,6 +327,7 @@
       "en_US": ["Bolivia (Plurinational State of)"]
     },
     "identifier": "BO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BO.svg",
     "alpha_2": "BO",
     "alpha_3": "BOL",
     "group": "sa",
@@ -312,6 +339,7 @@
       "en_US": ["Bonaire, Sint Eustatius and Saba"]
     },
     "identifier": "BQ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BQ.svg",
     "alpha_2": "BQ",
     "alpha_3": "BES",
     "group": "na",
@@ -323,6 +351,7 @@
       "en_US": ["Bosnia and Herzegovina"]
     },
     "identifier": "BA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BA.svg",
     "alpha_2": "BA",
     "alpha_3": "BIH",
     "group": "eu",
@@ -334,6 +363,7 @@
       "en_US": ["Botswana"]
     },
     "identifier": "BW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BW.svg",
     "alpha_2": "BW",
     "alpha_3": "BWA",
     "group": "af",
@@ -345,6 +375,7 @@
       "en_US": ["Bouvet Island"]
     },
     "identifier": "BV",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BV.svg",
     "alpha_2": "BV",
     "alpha_3": "BVT",
     "group": "an",
@@ -356,6 +387,7 @@
       "en_US": ["Brazil"]
     },
     "identifier": "BR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BR.svg",
     "alpha_2": "BR",
     "alpha_3": "BRA",
     "group": "sa",
@@ -367,6 +399,7 @@
       "en_US": ["British Indian Ocean Territory"]
     },
     "identifier": "IO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IO.svg",
     "alpha_2": "IO",
     "alpha_3": "IOT",
     "group": "as",
@@ -378,6 +411,7 @@
       "en_US": ["Brunei Darussalam"]
     },
     "identifier": "BN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BN.svg",
     "alpha_2": "BN",
     "alpha_3": "BRN",
     "group": "as",
@@ -389,6 +423,7 @@
       "en_US": ["Bulgaria"]
     },
     "identifier": "BG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BG.svg",
     "alpha_2": "BG",
     "alpha_3": "BGR",
     "group": "eu",
@@ -400,6 +435,7 @@
       "en_US": ["Burkina Faso"]
     },
     "identifier": "BF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BF.svg",
     "alpha_2": "BF",
     "alpha_3": "BFA",
     "group": "af",
@@ -411,6 +447,7 @@
       "en_US": ["Burundi"]
     },
     "identifier": "BI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BI.svg",
     "alpha_2": "BI",
     "alpha_3": "BDI",
     "group": "af",
@@ -422,6 +459,7 @@
       "en_US": ["Cabo Verde", "Cape Verde"]
     },
     "identifier": "CV",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CV.svg",
     "alpha_2": "CV",
     "alpha_3": "CPV",
     "group": "af",
@@ -433,6 +471,7 @@
       "en_US": ["Cambodia"]
     },
     "identifier": "KH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KH.svg",
     "alpha_2": "KH",
     "alpha_3": "KHM",
     "group": "as",
@@ -444,6 +483,7 @@
       "en_US": ["Cameroon"]
     },
     "identifier": "CM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CM.svg",
     "alpha_2": "CM",
     "alpha_3": "CMR",
     "group": "af",
@@ -455,6 +495,7 @@
       "en_US": ["Canada"]
     },
     "identifier": "CA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CA.svg",
     "alpha_2": "CA",
     "alpha_3": "CAN",
     "group": "na",
@@ -466,6 +507,7 @@
       "en_US": ["Cayman Islands"]
     },
     "identifier": "KY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KY.svg",
     "alpha_2": "KY",
     "alpha_3": "CYM",
     "group": "na",
@@ -477,6 +519,7 @@
       "en_US": ["Central African Republic"]
     },
     "identifier": "CF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CF.svg",
     "alpha_2": "CF",
     "alpha_3": "CAF",
     "group": "af",
@@ -488,6 +531,7 @@
       "en_US": ["Chad"]
     },
     "identifier": "TD",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TD.svg",
     "alpha_2": "TD",
     "alpha_3": "TCD",
     "group": "af",
@@ -499,6 +543,7 @@
       "en_US": ["Chile"]
     },
     "identifier": "CL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CL.svg",
     "alpha_2": "CL",
     "alpha_3": "CHL",
     "group": "sa",
@@ -510,6 +555,7 @@
       "en_US": ["China"]
     },
     "identifier": "CN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CN.svg",
     "alpha_2": "CN",
     "alpha_3": "CHN",
     "group": "as",
@@ -521,6 +567,7 @@
       "en_US": ["Christmas Island"]
     },
     "identifier": "CX",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CX.svg",
     "alpha_2": "CX",
     "alpha_3": "CXR",
     "group": "as",
@@ -532,6 +579,7 @@
       "en_US": ["Cocos (Keeling) Islands"]
     },
     "identifier": "CC",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CC.svg",
     "alpha_2": "CC",
     "alpha_3": "CCK",
     "group": "as",
@@ -543,6 +591,7 @@
       "en_US": ["Colombia"]
     },
     "identifier": "CO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CO.svg",
     "alpha_2": "CO",
     "alpha_3": "COL",
     "group": "sa",
@@ -554,6 +603,7 @@
       "en_US": ["Comoros"]
     },
     "identifier": "KM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KM.svg",
     "alpha_2": "KM",
     "alpha_3": "COM",
     "group": "af",
@@ -565,6 +615,7 @@
       "en_US": ["Congo"]
     },
     "identifier": "CG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CG.svg",
     "alpha_2": "CG",
     "alpha_3": "COG",
     "group": "af",
@@ -576,6 +627,7 @@
       "en_US": ["Congo, Democratic Republic of the"]
     },
     "identifier": "CD",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CD.svg",
     "alpha_2": "CD",
     "alpha_3": "COD",
     "group": "af",
@@ -587,6 +639,7 @@
       "en_US": ["Cook Islands"]
     },
     "identifier": "CK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CK.svg",
     "alpha_2": "CK",
     "alpha_3": "COK",
     "group": "oc",
@@ -598,6 +651,7 @@
       "en_US": ["Costa Rica"]
     },
     "identifier": "CR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CR.svg",
     "alpha_2": "CR",
     "alpha_3": "CRI",
     "group": "na",
@@ -609,6 +663,7 @@
       "en_US": ["Côte d'Ivoire"]
     },
     "identifier": "CI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CI.svg",
     "alpha_2": "CI",
     "alpha_3": "CIV",
     "group": "af",
@@ -620,6 +675,7 @@
       "en_US": ["Croatia"]
     },
     "identifier": "HR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_HR.svg",
     "alpha_2": "HR",
     "alpha_3": "HRV",
     "group": "eu",
@@ -631,6 +687,7 @@
       "en_US": ["Cuba"]
     },
     "identifier": "CU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CU.svg",
     "alpha_2": "CU",
     "alpha_3": "CUB",
     "group": "na",
@@ -642,6 +699,7 @@
       "en_US": ["Curaçao"]
     },
     "identifier": "CW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CW.svg",
     "alpha_2": "CW",
     "alpha_3": "CUW",
     "group": "na",
@@ -653,6 +711,7 @@
       "en_US": ["Cyprus"]
     },
     "identifier": "CY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CY.svg",
     "alpha_2": "CY",
     "alpha_3": "CYP",
     "group": "as",
@@ -664,6 +723,7 @@
       "en_US": ["Czechia"]
     },
     "identifier": "CZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CZ.svg",
     "alpha_2": "CZ",
     "alpha_3": "CZE",
     "group": "eu",
@@ -675,6 +735,7 @@
       "en_US": ["Denmark"]
     },
     "identifier": "DK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_DK.svg",
     "alpha_2": "DK",
     "alpha_3": "DNK",
     "group": "eu",
@@ -686,6 +747,7 @@
       "en_US": ["Djibouti"]
     },
     "identifier": "DJ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_DJ.svg",
     "alpha_2": "DJ",
     "alpha_3": "DJI",
     "group": "af",
@@ -697,6 +759,7 @@
       "en_US": ["Dominica"]
     },
     "identifier": "DM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_DM.svg",
     "alpha_2": "DM",
     "alpha_3": "DMA",
     "group": "na",
@@ -708,6 +771,7 @@
       "en_US": ["Dominican Republic"]
     },
     "identifier": "DO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_DO.svg",
     "alpha_2": "DO",
     "alpha_3": "DOM",
     "group": "na",
@@ -719,6 +783,7 @@
       "en_US": ["Ecuador"]
     },
     "identifier": "EC",
+    "flag_url": "./assets/maps/flags/world-countries/flag_EC.svg",
     "alpha_2": "EC",
     "alpha_3": "ECU",
     "group": "na",
@@ -730,6 +795,7 @@
       "en_US": ["Egypt"]
     },
     "identifier": "EG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_EG.svg",
     "alpha_2": "EG",
     "alpha_3": "EGY",
     "group": "af",
@@ -741,6 +807,7 @@
       "en_US": ["El Salvador"]
     },
     "identifier": "SV",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SV.svg",
     "alpha_2": "SV",
     "alpha_3": "SLV",
     "group": "na",
@@ -752,6 +819,7 @@
       "en_US": ["Equatorial Guinea"]
     },
     "identifier": "GQ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GQ.svg",
     "alpha_2": "GQ",
     "alpha_3": "GNQ",
     "group": "af",
@@ -763,6 +831,7 @@
       "en_US": ["Eritrea"]
     },
     "identifier": "ER",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ER.svg",
     "alpha_2": "ER",
     "alpha_3": "ERI",
     "group": "af",
@@ -774,6 +843,7 @@
       "en_US": ["Estonia"]
     },
     "identifier": "EE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_EE.svg",
     "alpha_2": "EE",
     "alpha_3": "EST",
     "group": "eu",
@@ -785,6 +855,7 @@
       "en_US": ["Eswatini"]
     },
     "identifier": "SZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SZ.svg",
     "alpha_2": "SZ",
     "alpha_3": "SWZ",
     "group": "af",
@@ -796,6 +867,7 @@
       "en_US": ["Ethiopia"]
     },
     "identifier": "ET",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ET.svg",
     "alpha_2": "ET",
     "alpha_3": "ETH",
     "group": "af",
@@ -807,6 +879,7 @@
       "en_US": ["Falkland Islands (Malvinas)"]
     },
     "identifier": "FK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_FK.svg",
     "alpha_2": "FK",
     "alpha_3": "FLK",
     "group": "sa",
@@ -818,6 +891,7 @@
       "en_US": ["Faroe Islands"]
     },
     "identifier": "FO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_FO.svg",
     "alpha_2": "FO",
     "alpha_3": "FRO",
     "group": "eu",
@@ -829,6 +903,7 @@
       "en_US": ["Fiji"]
     },
     "identifier": "FJ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_FJ.svg",
     "alpha_2": "FJ",
     "alpha_3": "FJI",
     "group": "oc",
@@ -840,6 +915,7 @@
       "en_US": ["Finland"]
     },
     "identifier": "FI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_FI.svg",
     "alpha_2": "FI",
     "alpha_3": "FIN",
     "group": "eu",
@@ -851,6 +927,7 @@
       "en_US": ["France"]
     },
     "identifier": "FR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_FR.svg",
     "alpha_2": "FR",
     "alpha_3": "FRA",
     "group": "eu",
@@ -862,6 +939,7 @@
       "en_US": ["French Guiana"]
     },
     "identifier": "GF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GF.svg",
     "alpha_2": "GF",
     "alpha_3": "GUF",
     "group": "sa",
@@ -873,6 +951,7 @@
       "en_US": ["French Polynesia"]
     },
     "identifier": "PF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PF.svg",
     "alpha_2": "PF",
     "alpha_3": "PYF",
     "group": "oc",
@@ -884,6 +963,7 @@
       "en_US": ["French Southern Territories"]
     },
     "identifier": "TF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TF.svg",
     "alpha_2": "TF",
     "alpha_3": "ATF",
     "group": "an",
@@ -895,6 +975,7 @@
       "en_US": ["Gabon"]
     },
     "identifier": "GA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GA.svg",
     "alpha_2": "GA",
     "alpha_3": "GAB",
     "group": "af",
@@ -906,6 +987,7 @@
       "en_US": ["Gambia"]
     },
     "identifier": "GM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GM.svg",
     "alpha_2": "GM",
     "alpha_3": "GMB",
     "group": "af",
@@ -917,6 +999,7 @@
       "en_US": ["Georgia"]
     },
     "identifier": "GE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GE.svg",
     "alpha_2": "GE",
     "alpha_3": "GEO",
     "group": "as",
@@ -928,6 +1011,7 @@
       "en_US": ["Germany"]
     },
     "identifier": "DE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_DE.svg",
     "alpha_2": "DE",
     "alpha_3": "DEU",
     "group": "eu",
@@ -939,6 +1023,7 @@
       "en_US": ["Ghana"]
     },
     "identifier": "GH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GH.svg",
     "alpha_2": "GH",
     "alpha_3": "GHA",
     "group": "af",
@@ -950,6 +1035,7 @@
       "en_US": ["Gibraltar"]
     },
     "identifier": "GI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GI.svg",
     "alpha_2": "GI",
     "alpha_3": "GIB",
     "group": "eu",
@@ -961,6 +1047,7 @@
       "en_US": ["Greece"]
     },
     "identifier": "GR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GR.svg",
     "alpha_2": "GR",
     "alpha_3": "GRC",
     "group": "eu",
@@ -972,6 +1059,7 @@
       "en_US": ["Greenland"]
     },
     "identifier": "GL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GL.svg",
     "alpha_2": "GL",
     "alpha_3": "GRL",
     "group": "na",
@@ -983,6 +1071,7 @@
       "en_US": ["Grenada"]
     },
     "identifier": "GD",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GD.svg",
     "alpha_2": "GD",
     "alpha_3": "GRD",
     "group": "na",
@@ -994,6 +1083,7 @@
       "en_US": ["Guadeloupe"]
     },
     "identifier": "GP",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GP.svg",
     "alpha_2": "GP",
     "alpha_3": "GLP",
     "group": "na",
@@ -1005,6 +1095,7 @@
       "en_US": ["Guam"]
     },
     "identifier": "GU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GU.svg",
     "alpha_2": "GU",
     "alpha_3": "GUM",
     "group": "oc",
@@ -1016,6 +1107,7 @@
       "en_US": ["Guatemala"]
     },
     "identifier": "GT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GT.svg",
     "alpha_2": "GT",
     "alpha_3": "GTM",
     "group": "na",
@@ -1027,6 +1119,7 @@
       "en_US": ["Guernsey"]
     },
     "identifier": "GG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GG.svg",
     "alpha_2": "GG",
     "alpha_3": "GGY",
     "group": "eu",
@@ -1038,6 +1131,7 @@
       "en_US": ["Guinea"]
     },
     "identifier": "GN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GN.svg",
     "alpha_2": "GN",
     "alpha_3": "GIN",
     "group": "af",
@@ -1049,6 +1143,7 @@
       "en_US": ["Guinea-Bissau"]
     },
     "identifier": "GW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GW.svg",
     "alpha_2": "GW",
     "alpha_3": "GNB",
     "group": "af",
@@ -1060,6 +1155,7 @@
       "en_US": ["Guyana"]
     },
     "identifier": "GY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GY.svg",
     "alpha_2": "GY",
     "alpha_3": "GUY",
     "group": "sa",
@@ -1071,6 +1167,7 @@
       "en_US": ["Haiti"]
     },
     "identifier": "HT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_HT.svg",
     "alpha_2": "HT",
     "alpha_3": "HTI",
     "group": "na",
@@ -1082,6 +1179,7 @@
       "en_US": ["Heard Island and McDonald Islands"]
     },
     "identifier": "HM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_HM.svg",
     "alpha_2": "HM",
     "alpha_3": "HMD",
     "group": "an",
@@ -1093,6 +1191,7 @@
       "en_US": ["Vatican", "Holy See"]
     },
     "identifier": "VA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_VA.svg",
     "alpha_2": "VA",
     "alpha_3": "VAT",
     "group": "eu",
@@ -1104,6 +1203,7 @@
       "en_US": ["Honduras"]
     },
     "identifier": "HN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_HN.svg",
     "alpha_2": "HN",
     "alpha_3": "HND",
     "group": "na",
@@ -1115,6 +1215,7 @@
       "en_US": ["Hong Kong"]
     },
     "identifier": "HK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_HK.svg",
     "alpha_2": "HK",
     "alpha_3": "HKG",
     "group": "as",
@@ -1126,6 +1227,7 @@
       "en_US": ["Hungary"]
     },
     "identifier": "HU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_HU.svg",
     "alpha_2": "HU",
     "alpha_3": "HUN",
     "group": "eu",
@@ -1137,6 +1239,7 @@
       "en_US": ["Iceland"]
     },
     "identifier": "IS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IS.svg",
     "alpha_2": "IS",
     "alpha_3": "ISL",
     "group": "eu",
@@ -1148,6 +1251,7 @@
       "en_US": ["India"]
     },
     "identifier": "IN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IN.svg",
     "alpha_2": "IN",
     "alpha_3": "IND",
     "group": "as",
@@ -1159,6 +1263,7 @@
       "en_US": ["Indonesia"]
     },
     "identifier": "ID",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ID.svg",
     "alpha_2": "ID",
     "alpha_3": "IDN",
     "group": "as",
@@ -1170,6 +1275,7 @@
       "en_US": ["Iran (Islamic Republic of)"]
     },
     "identifier": "IR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IR.svg",
     "alpha_2": "IR",
     "alpha_3": "IRN",
     "group": "as",
@@ -1181,6 +1287,7 @@
       "en_US": ["Iraq"]
     },
     "identifier": "IQ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IQ.svg",
     "alpha_2": "IQ",
     "alpha_3": "IRQ",
     "group": "as",
@@ -1192,6 +1299,7 @@
       "en_US": ["Ireland"]
     },
     "identifier": "IE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IE.svg",
     "alpha_2": "IE",
     "alpha_3": "IRL",
     "group": "eu",
@@ -1203,6 +1311,7 @@
       "en_US": ["Isle of Man"]
     },
     "identifier": "IM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IM.svg",
     "alpha_2": "IM",
     "alpha_3": "IMN",
     "group": "eu",
@@ -1214,6 +1323,7 @@
       "en_US": ["Israel"]
     },
     "identifier": "IL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IL.svg",
     "alpha_2": "IL",
     "alpha_3": "ISR",
     "group": "as",
@@ -1225,6 +1335,7 @@
       "en_US": ["Italy"]
     },
     "identifier": "IT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_IT.svg",
     "alpha_2": "IT",
     "alpha_3": "ITA",
     "group": "eu",
@@ -1236,6 +1347,7 @@
       "en_US": ["Jamaica"]
     },
     "identifier": "JM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_JM.svg",
     "alpha_2": "JM",
     "alpha_3": "JAM",
     "group": "na",
@@ -1247,6 +1359,7 @@
       "en_US": ["Japan"]
     },
     "identifier": "JP",
+    "flag_url": "./assets/maps/flags/world-countries/flag_JP.svg",
     "alpha_2": "JP",
     "alpha_3": "JPN",
     "group": "as",
@@ -1258,6 +1371,7 @@
       "en_US": ["Jersey"]
     },
     "identifier": "JE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_JE.svg",
     "alpha_2": "JE",
     "alpha_3": "JEY",
     "group": "eu",
@@ -1269,6 +1383,7 @@
       "en_US": ["Jordan"]
     },
     "identifier": "JO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_JO.svg",
     "alpha_2": "JO",
     "alpha_3": "JOR",
     "group": "as",
@@ -1280,6 +1395,7 @@
       "en_US": ["Kazakhstan"]
     },
     "identifier": "KZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KZ.svg",
     "alpha_2": "KZ",
     "alpha_3": "KAZ",
     "group": "as",
@@ -1291,6 +1407,7 @@
       "en_US": ["Kenya"]
     },
     "identifier": "KE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KE.svg",
     "alpha_2": "KE",
     "alpha_3": "KEN",
     "group": "af",
@@ -1302,6 +1419,7 @@
       "en_US": ["Kiribati"]
     },
     "identifier": "KI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KI.svg",
     "alpha_2": "KI",
     "alpha_3": "KIR",
     "group": "oc",
@@ -1313,6 +1431,7 @@
       "en_US": ["North Korea", "Democratic People's Republic of Korea"]
     },
     "identifier": "KP",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KP.svg",
     "alpha_2": "KP",
     "alpha_3": "PRK",
     "group": "as",
@@ -1324,6 +1443,7 @@
       "en_US": ["Korea", "Republic of Korea"]
     },
     "identifier": "KR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KR.svg",
     "alpha_2": "KR",
     "alpha_3": "KOR",
     "group": "as",
@@ -1335,6 +1455,7 @@
       "en_US": ["Kosovo"]
     },
     "identifier": "XK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_XK.svg",
     "alpha_2": "XK",
     "alpha_3": "XXK",
     "group": "eu",
@@ -1346,6 +1467,7 @@
       "en_US": ["Kuwait"]
     },
     "identifier": "KW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KW.svg",
     "alpha_2": "KW",
     "alpha_3": "KWT",
     "group": "as",
@@ -1357,6 +1479,7 @@
       "en_US": ["Kyrgyzstan"]
     },
     "identifier": "KG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KG.svg",
     "alpha_2": "KG",
     "alpha_3": "KGZ",
     "group": "as",
@@ -1368,6 +1491,7 @@
       "en_US": ["Laos", "Lao People's Democratic Republic"]
     },
     "identifier": "LA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LA.svg",
     "alpha_2": "LA",
     "alpha_3": "LAO",
     "group": "as",
@@ -1379,6 +1503,7 @@
       "en_US": ["Latvia"]
     },
     "identifier": "LV",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LV.svg",
     "alpha_2": "LV",
     "alpha_3": "LVA",
     "group": "eu",
@@ -1390,6 +1515,7 @@
       "en_US": ["Lebanon"]
     },
     "identifier": "LB",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LB.svg",
     "alpha_2": "LB",
     "alpha_3": "LBN",
     "group": "as",
@@ -1401,6 +1527,7 @@
       "en_US": ["Lesotho"]
     },
     "identifier": "LS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LS.svg",
     "alpha_2": "LS",
     "alpha_3": "LSO",
     "group": "af",
@@ -1412,6 +1539,7 @@
       "en_US": ["Liberia"]
     },
     "identifier": "LR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LR.svg",
     "alpha_2": "LR",
     "alpha_3": "LBR",
     "group": "af",
@@ -1423,6 +1551,7 @@
       "en_US": ["Libya"]
     },
     "identifier": "LY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LY.svg",
     "alpha_2": "LY",
     "alpha_3": "LBY",
     "group": "af",
@@ -1434,6 +1563,7 @@
       "en_US": ["Liechtenstein"]
     },
     "identifier": "LI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LI.svg",
     "alpha_2": "LI",
     "alpha_3": "LIE",
     "group": "eu",
@@ -1445,6 +1575,7 @@
       "en_US": ["Lithuania"]
     },
     "identifier": "LT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LT.svg",
     "alpha_2": "LT",
     "alpha_3": "LTU",
     "group": "eu",
@@ -1456,6 +1587,7 @@
       "en_US": ["Luxembourg"]
     },
     "identifier": "LU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LU.svg",
     "alpha_2": "LU",
     "alpha_3": "LUX",
     "group": "eu",
@@ -1467,6 +1599,7 @@
       "en_US": ["Macao"]
     },
     "identifier": "MO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MO.svg",
     "alpha_2": "MO",
     "alpha_3": "MAC",
     "group": "as",
@@ -1478,6 +1611,7 @@
       "en_US": ["Madagascar"]
     },
     "identifier": "MG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MG.svg",
     "alpha_2": "MG",
     "alpha_3": "MDG",
     "group": "af",
@@ -1489,6 +1623,7 @@
       "en_US": ["Malawi"]
     },
     "identifier": "MW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MW.svg",
     "alpha_2": "MW",
     "alpha_3": "MWI",
     "group": "af",
@@ -1500,6 +1635,7 @@
       "en_US": ["Malaysia"]
     },
     "identifier": "MY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MY.svg",
     "alpha_2": "MY",
     "alpha_3": "MYS",
     "group": "as",
@@ -1511,6 +1647,7 @@
       "en_US": ["Maldives"]
     },
     "identifier": "MV",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MV.svg",
     "alpha_2": "MV",
     "alpha_3": "MDV",
     "group": "as",
@@ -1522,6 +1659,7 @@
       "en_US": ["Mali"]
     },
     "identifier": "ML",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ML.svg",
     "alpha_2": "ML",
     "alpha_3": "MLI",
     "group": "af",
@@ -1533,6 +1671,7 @@
       "en_US": ["Malta"]
     },
     "identifier": "MT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MT.svg",
     "alpha_2": "MT",
     "alpha_3": "MLT",
     "group": "eu",
@@ -1544,6 +1683,7 @@
       "en_US": ["Marshall Islands"]
     },
     "identifier": "MH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MH.svg",
     "alpha_2": "MH",
     "alpha_3": "MHL",
     "group": "oc",
@@ -1555,6 +1695,7 @@
       "en_US": ["Martinique"]
     },
     "identifier": "MQ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MQ.svg",
     "alpha_2": "MQ",
     "alpha_3": "MTQ",
     "group": "na",
@@ -1566,6 +1707,7 @@
       "en_US": ["Mauritania"]
     },
     "identifier": "MR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MR.svg",
     "alpha_2": "MR",
     "alpha_3": "MRT",
     "group": "af",
@@ -1577,6 +1719,7 @@
       "en_US": ["Mauritius"]
     },
     "identifier": "MU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MU.svg",
     "alpha_2": "MU",
     "alpha_3": "MUS",
     "group": "af",
@@ -1588,6 +1731,7 @@
       "en_US": ["Mayotte"]
     },
     "identifier": "YT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_YT.svg",
     "alpha_2": "YT",
     "alpha_3": "MYT",
     "group": "af",
@@ -1599,6 +1743,7 @@
       "en_US": ["Mexico"]
     },
     "identifier": "MX",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MX.svg",
     "alpha_2": "MX",
     "alpha_3": "MEX",
     "group": "na",
@@ -1610,6 +1755,7 @@
       "en_US": ["Micronesia", "Federated States of Micronesia"]
     },
     "identifier": "FM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_FM.svg",
     "alpha_2": "FM",
     "alpha_3": "FSM",
     "group": "oc",
@@ -1621,6 +1767,7 @@
       "en_US": ["Moldova", "Republic of Moldova"]
     },
     "identifier": "MD",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MD.svg",
     "alpha_2": "MD",
     "alpha_3": "MDA",
     "group": "as",
@@ -1632,6 +1779,7 @@
       "en_US": ["Monaco"]
     },
     "identifier": "MC",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MC.svg",
     "alpha_2": "MC",
     "alpha_3": "MCO",
     "group": "eu",
@@ -1643,6 +1791,7 @@
       "en_US": ["Mongolia"]
     },
     "identifier": "MN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MN.svg",
     "alpha_2": "MN",
     "alpha_3": "MNG",
     "group": "as",
@@ -1654,6 +1803,7 @@
       "en_US": ["Montenegro"]
     },
     "identifier": "ME",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ME.svg",
     "alpha_2": "ME",
     "alpha_3": "MNE",
     "group": "eu",
@@ -1665,6 +1815,7 @@
       "en_US": ["Montserrat"]
     },
     "identifier": "MS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MS.svg",
     "alpha_2": "MS",
     "alpha_3": "MSR",
     "group": "na",
@@ -1676,6 +1827,7 @@
       "en_US": ["Morocco"]
     },
     "identifier": "MA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MA.svg",
     "alpha_2": "MA",
     "alpha_3": "MAR",
     "group": "af",
@@ -1687,6 +1839,7 @@
       "en_US": ["Mozambique"]
     },
     "identifier": "MZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MZ.svg",
     "alpha_2": "MZ",
     "alpha_3": "MOZ",
     "group": "af",
@@ -1698,6 +1851,7 @@
       "en_US": ["Myanmar"]
     },
     "identifier": "MM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MM.svg",
     "alpha_2": "MM",
     "alpha_3": "MMR",
     "group": "as",
@@ -1709,6 +1863,7 @@
       "en_US": ["Namibia"]
     },
     "identifier": "NA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NA.svg",
     "alpha_2": "NA",
     "alpha_3": "NAM",
     "group": "af",
@@ -1720,6 +1875,7 @@
       "en_US": ["Nauru"]
     },
     "identifier": "NR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NR.svg",
     "alpha_2": "NR",
     "alpha_3": "NRU",
     "group": "oc",
@@ -1731,6 +1887,7 @@
       "en_US": ["Nepal"]
     },
     "identifier": "NP",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NP.svg",
     "alpha_2": "NP",
     "alpha_3": "NPL",
     "group": "as",
@@ -1742,6 +1899,7 @@
       "en_US": ["Netherlands"]
     },
     "identifier": "NL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NL.svg",
     "alpha_2": "NL",
     "alpha_3": "NLD",
     "group": "eu",
@@ -1753,6 +1911,7 @@
       "en_US": ["New Caledonia"]
     },
     "identifier": "NC",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NC.svg",
     "alpha_2": "NC",
     "alpha_3": "NCL",
     "group": "oc",
@@ -1764,6 +1923,7 @@
       "en_US": ["New Zealand"]
     },
     "identifier": "NZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NZ.svg",
     "alpha_2": "NZ",
     "alpha_3": "NZL",
     "group": "oc",
@@ -1775,6 +1935,7 @@
       "en_US": ["Nicaragua"]
     },
     "identifier": "NI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NI.svg",
     "alpha_2": "NI",
     "alpha_3": "NIC",
     "group": "na",
@@ -1786,6 +1947,7 @@
       "en_US": ["Niger"]
     },
     "identifier": "NE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NE.svg",
     "alpha_2": "NE",
     "alpha_3": "NER",
     "group": "af",
@@ -1797,6 +1959,7 @@
       "en_US": ["Nigeria"]
     },
     "identifier": "NG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NG.svg",
     "alpha_2": "NG",
     "alpha_3": "NGA",
     "group": "af",
@@ -1808,6 +1971,7 @@
       "en_US": ["Niue"]
     },
     "identifier": "NU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NU.svg",
     "alpha_2": "NU",
     "alpha_3": "NIU",
     "group": "oc",
@@ -1819,6 +1983,7 @@
       "en_US": ["Norfolk Island"]
     },
     "identifier": "NF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NF.svg",
     "alpha_2": "NF",
     "alpha_3": "NFK",
     "group": "oc",
@@ -1830,6 +1995,7 @@
       "en_US": ["North Macedonia"]
     },
     "identifier": "MK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MK.svg",
     "alpha_2": "MK",
     "alpha_3": "MKD",
     "group": "eu",
@@ -1841,6 +2007,7 @@
       "en_US": ["Northern Mariana Islands"]
     },
     "identifier": "MP",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MP.svg",
     "alpha_2": "MP",
     "alpha_3": "MNP",
     "group": "oc",
@@ -1852,6 +2019,7 @@
       "en_US": ["Norway"]
     },
     "identifier": "NO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_NO.svg",
     "alpha_2": "NO",
     "alpha_3": "NOR",
     "group": "eu",
@@ -1863,6 +2031,7 @@
       "en_US": ["Oman"]
     },
     "identifier": "OM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_OM.svg",
     "alpha_2": "OM",
     "alpha_3": "OMN",
     "group": "as",
@@ -1874,6 +2043,7 @@
       "en_US": ["Pakistan"]
     },
     "identifier": "PK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PK.svg",
     "alpha_2": "PK",
     "alpha_3": "PAK",
     "group": "as",
@@ -1885,6 +2055,7 @@
       "en_US": ["Palau"]
     },
     "identifier": "PW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PW.svg",
     "alpha_2": "PW",
     "alpha_3": "PLW",
     "group": "oc",
@@ -1896,6 +2067,7 @@
       "en_US": ["Palestine", "State of Palestine"]
     },
     "identifier": "PS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PS.svg",
     "alpha_2": "PS",
     "alpha_3": "PSE",
     "group": "as",
@@ -1907,6 +2079,7 @@
       "en_US": ["Panama"]
     },
     "identifier": "PA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PA.svg",
     "alpha_2": "PA",
     "alpha_3": "PAN",
     "group": "na",
@@ -1918,6 +2091,7 @@
       "en_US": ["Papua New Guinea"]
     },
     "identifier": "PG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PG.svg",
     "alpha_2": "PG",
     "alpha_3": "PNG",
     "group": "oc",
@@ -1929,6 +2103,7 @@
       "en_US": ["Paraguay"]
     },
     "identifier": "PY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PY.svg",
     "alpha_2": "PY",
     "alpha_3": "PRY",
     "group": "sa",
@@ -1940,6 +2115,7 @@
       "en_US": ["Peru"]
     },
     "identifier": "PE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PE.svg",
     "alpha_2": "PE",
     "alpha_3": "PER",
     "group": "sa",
@@ -1951,6 +2127,7 @@
       "en_US": ["Philippines"]
     },
     "identifier": "PH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PH.svg",
     "alpha_2": "PH",
     "alpha_3": "PHL",
     "group": "as",
@@ -1962,6 +2139,7 @@
       "en_US": ["Pitcairn"]
     },
     "identifier": "PN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PN.svg",
     "alpha_2": "PN",
     "alpha_3": "PCN",
     "group": "oc",
@@ -1973,6 +2151,7 @@
       "en_US": ["Poland"]
     },
     "identifier": "PL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PL.svg",
     "alpha_2": "PL",
     "alpha_3": "POL",
     "group": "eu",
@@ -1984,6 +2163,7 @@
       "en_US": ["Portugal"]
     },
     "identifier": "PT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PT.svg",
     "alpha_2": "PT",
     "alpha_3": "PRT",
     "group": "eu",
@@ -1995,6 +2175,7 @@
       "en_US": ["Puerto Rico"]
     },
     "identifier": "PR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PR.svg",
     "alpha_2": "PR",
     "alpha_3": "PRI",
     "group": "na",
@@ -2006,6 +2187,7 @@
       "en_US": ["Qatar"]
     },
     "identifier": "QA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_QA.svg",
     "alpha_2": "QA",
     "alpha_3": "QAT",
     "group": "as",
@@ -2017,6 +2199,7 @@
       "en_US": ["Réunion"]
     },
     "identifier": "RE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_RE.svg",
     "alpha_2": "RE",
     "alpha_3": "REU",
     "group": "af",
@@ -2028,6 +2211,7 @@
       "en_US": ["Romania"]
     },
     "identifier": "RO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_RO.svg",
     "alpha_2": "RO",
     "alpha_3": "ROU",
     "group": "eu",
@@ -2039,6 +2223,7 @@
       "en_US": ["Russia", "Russian Federation"]
     },
     "identifier": "RU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_RU.svg",
     "alpha_2": "RU",
     "alpha_3": "RUS",
     "group": "as",
@@ -2050,6 +2235,7 @@
       "en_US": ["Rwanda"]
     },
     "identifier": "RW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_RW.svg",
     "alpha_2": "RW",
     "alpha_3": "RWA",
     "group": "af",
@@ -2061,6 +2247,7 @@
       "en_US": ["Saint Barthélemy"]
     },
     "identifier": "BL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_BL.svg",
     "alpha_2": "BL",
     "alpha_3": "BLM",
     "group": "na",
@@ -2072,6 +2259,7 @@
       "en_US": ["Saint Helena, Ascension and Tristan da Cunha"]
     },
     "identifier": "SH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SH.svg",
     "alpha_2": "SH",
     "alpha_3": "SHN",
     "group": "af",
@@ -2083,6 +2271,7 @@
       "en_US": ["Saint Kitts and Nevis"]
     },
     "identifier": "KN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_KN.svg",
     "alpha_2": "KN",
     "alpha_3": "KNA",
     "group": "na",
@@ -2094,6 +2283,7 @@
       "en_US": ["Saint Lucia"]
     },
     "identifier": "LC",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LC.svg",
     "alpha_2": "LC",
     "alpha_3": "LCA",
     "group": "na",
@@ -2105,6 +2295,7 @@
       "en_US": ["Saint Martin (French part)"]
     },
     "identifier": "MF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_MF.svg",
     "alpha_2": "MF",
     "alpha_3": "MAF",
     "group": "na",
@@ -2116,6 +2307,7 @@
       "en_US": ["Saint Pierre and Miquelon"]
     },
     "identifier": "PM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_PM.svg",
     "alpha_2": "PM",
     "alpha_3": "SPM",
     "group": "na",
@@ -2127,6 +2319,7 @@
       "en_US": ["Saint Vincent and the Grenadines"]
     },
     "identifier": "VC",
+    "flag_url": "./assets/maps/flags/world-countries/flag_VC.svg",
     "alpha_2": "VC",
     "alpha_3": "VCT",
     "group": "na",
@@ -2138,6 +2331,7 @@
       "en_US": ["Samoa"]
     },
     "identifier": "WS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_WS.svg",
     "alpha_2": "WS",
     "alpha_3": "WSM",
     "group": "oc",
@@ -2149,6 +2343,7 @@
       "en_US": ["San Marino"]
     },
     "identifier": "SM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SM.svg",
     "alpha_2": "SM",
     "alpha_3": "SMR",
     "group": "eu",
@@ -2160,6 +2355,7 @@
       "en_US": ["Sao Tome and Principe"]
     },
     "identifier": "ST",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ST.svg",
     "alpha_2": "ST",
     "alpha_3": "STP",
     "group": "af",
@@ -2171,6 +2367,7 @@
       "en_US": ["Saudi Arabia"]
     },
     "identifier": "SA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SA.svg",
     "alpha_2": "SA",
     "alpha_3": "SAU",
     "group": "as",
@@ -2182,6 +2379,7 @@
       "en_US": ["Senegal"]
     },
     "identifier": "SN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SN.svg",
     "alpha_2": "SN",
     "alpha_3": "SEN",
     "group": "af",
@@ -2193,6 +2391,7 @@
       "en_US": ["Serbia"]
     },
     "identifier": "RS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_RS.svg",
     "alpha_2": "RS",
     "alpha_3": "SRB",
     "group": "eu",
@@ -2204,6 +2403,7 @@
       "en_US": ["Seychelles"]
     },
     "identifier": "SC",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SC.svg",
     "alpha_2": "SC",
     "alpha_3": "SYC",
     "group": "af",
@@ -2215,6 +2415,7 @@
       "en_US": ["Sierra Leone"]
     },
     "identifier": "SL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SL.svg",
     "alpha_2": "SL",
     "alpha_3": "SLE",
     "group": "af",
@@ -2226,6 +2427,7 @@
       "en_US": ["Singapore"]
     },
     "identifier": "SG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SG.svg",
     "alpha_2": "SG",
     "alpha_3": "SGP",
     "group": "as",
@@ -2237,6 +2439,7 @@
       "en_US": ["Sint Maarten (Dutch part)"]
     },
     "identifier": "SX",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SX.svg",
     "alpha_2": "SX",
     "alpha_3": "SXM",
     "group": "na",
@@ -2248,6 +2451,7 @@
       "en_US": ["Slovakia"]
     },
     "identifier": "SK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SK.svg",
     "alpha_2": "SK",
     "alpha_3": "SVK",
     "group": "eu",
@@ -2259,6 +2463,7 @@
       "en_US": ["Slovenia"]
     },
     "identifier": "SI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SI.svg",
     "alpha_2": "SI",
     "alpha_3": "SVN",
     "group": "eu",
@@ -2270,6 +2475,7 @@
       "en_US": ["Solomon Islands"]
     },
     "identifier": "SB",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SB.svg",
     "alpha_2": "SB",
     "alpha_3": "SLB",
     "group": "oc",
@@ -2281,6 +2487,7 @@
       "en_US": ["Somalia"]
     },
     "identifier": "SO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SO.svg",
     "alpha_2": "SO",
     "alpha_3": "SOM",
     "group": "af",
@@ -2292,6 +2499,7 @@
       "en_US": ["South Africa"]
     },
     "identifier": "ZA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ZA.svg",
     "alpha_2": "ZA",
     "alpha_3": "ZAF",
     "group": "af",
@@ -2303,6 +2511,7 @@
       "en_US": ["South Georgia and the South Sandwich Islands"]
     },
     "identifier": "GS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GS.svg",
     "alpha_2": "GS",
     "alpha_3": "SGS",
     "group": "an",
@@ -2314,6 +2523,7 @@
       "en_US": ["South Sudan"]
     },
     "identifier": "SS",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SS.svg",
     "alpha_2": "SS",
     "alpha_3": "SSD",
     "group": "af",
@@ -2325,6 +2535,7 @@
       "en_US": ["Spain"]
     },
     "identifier": "ES",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ES.svg",
     "alpha_2": "ES",
     "alpha_3": "ESP",
     "group": "eu",
@@ -2336,6 +2547,7 @@
       "en_US": ["Sri Lanka"]
     },
     "identifier": "LK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_LK.svg",
     "alpha_2": "LK",
     "alpha_3": "LKA",
     "group": "as",
@@ -2347,6 +2559,7 @@
       "en_US": ["Sudan"]
     },
     "identifier": "SD",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SD.svg",
     "alpha_2": "SD",
     "alpha_3": "SDN",
     "group": "af",
@@ -2358,6 +2571,7 @@
       "en_US": ["Suriname"]
     },
     "identifier": "SR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SR.svg",
     "alpha_2": "SR",
     "alpha_3": "SUR",
     "group": "sa",
@@ -2369,6 +2583,7 @@
       "en_US": ["Svalbard and Jan Mayen"]
     },
     "identifier": "SJ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SJ.svg",
     "alpha_2": "SJ",
     "alpha_3": "SJM",
     "group": "eu",
@@ -2380,6 +2595,7 @@
       "en_US": ["Sweden"]
     },
     "identifier": "SE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SE.svg",
     "alpha_2": "SE",
     "alpha_3": "SWE",
     "group": "eu",
@@ -2391,6 +2607,7 @@
       "en_US": ["Switzerland"]
     },
     "identifier": "CH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_CH.svg",
     "alpha_2": "CH",
     "alpha_3": "CHE",
     "group": "eu",
@@ -2402,6 +2619,7 @@
       "en_US": ["Syria", "Syrian Arab Republic"]
     },
     "identifier": "SY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_SY.svg",
     "alpha_2": "SY",
     "alpha_3": "SYR",
     "group": "as",
@@ -2413,6 +2631,7 @@
       "en_US": ["Taiwan", "Taiwan Province of China"]
     },
     "identifier": "TW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TW.svg",
     "alpha_2": "TW",
     "alpha_3": "TWN",
     "group": "as",
@@ -2424,6 +2643,7 @@
       "en_US": ["Tajikistan"]
     },
     "identifier": "TJ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TJ.svg",
     "alpha_2": "TJ",
     "alpha_3": "TJK",
     "group": "as",
@@ -2435,6 +2655,7 @@
       "en_US": ["Tanzania", "United Republic of Tanzania"]
     },
     "identifier": "TZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TZ.svg",
     "alpha_2": "TZ",
     "alpha_3": "TZA",
     "group": "af",
@@ -2446,6 +2667,7 @@
       "en_US": ["Thailand"]
     },
     "identifier": "TH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TH.svg",
     "alpha_2": "TH",
     "alpha_3": "THA",
     "group": "as",
@@ -2457,6 +2679,7 @@
       "en_US": ["Timor-Leste"]
     },
     "identifier": "TL",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TL.svg",
     "alpha_2": "TL",
     "alpha_3": "TLS",
     "group": "as",
@@ -2468,6 +2691,7 @@
       "en_US": ["Togo"]
     },
     "identifier": "TG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TG.svg",
     "alpha_2": "TG",
     "alpha_3": "TGO",
     "group": "af",
@@ -2479,6 +2703,7 @@
       "en_US": ["Tokelau"]
     },
     "identifier": "TK",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TK.svg",
     "alpha_2": "TK",
     "alpha_3": "TKL",
     "group": "oc",
@@ -2490,6 +2715,7 @@
       "en_US": ["Tonga"]
     },
     "identifier": "TO",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TO.svg",
     "alpha_2": "TO",
     "alpha_3": "TON",
     "group": "oc",
@@ -2501,6 +2727,7 @@
       "en_US": ["Trinidad and Tobago"]
     },
     "identifier": "TT",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TT.svg",
     "alpha_2": "TT",
     "alpha_3": "TTO",
     "group": "na",
@@ -2512,6 +2739,7 @@
       "en_US": ["Tunisia"]
     },
     "identifier": "TN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TN.svg",
     "alpha_2": "TN",
     "alpha_3": "TUN",
     "group": "af",
@@ -2523,6 +2751,7 @@
       "en_US": ["Turkey"]
     },
     "identifier": "TR",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TR.svg",
     "alpha_2": "TR",
     "alpha_3": "TUR",
     "group": "as",
@@ -2534,6 +2763,7 @@
       "en_US": ["Turkmenistan"]
     },
     "identifier": "TM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TM.svg",
     "alpha_2": "TM",
     "alpha_3": "TKM",
     "group": "as",
@@ -2545,6 +2775,7 @@
       "en_US": ["Turks and Caicos Islands"]
     },
     "identifier": "TC",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TC.svg",
     "alpha_2": "TC",
     "alpha_3": "TCA",
     "group": "na",
@@ -2556,6 +2787,7 @@
       "en_US": ["Tuvalu"]
     },
     "identifier": "TV",
+    "flag_url": "./assets/maps/flags/world-countries/flag_TV.svg",
     "alpha_2": "TV",
     "alpha_3": "TUV",
     "group": "oc",
@@ -2567,6 +2799,7 @@
       "en_US": ["Uganda"]
     },
     "identifier": "UG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_UG.svg",
     "alpha_2": "UG",
     "alpha_3": "UGA",
     "group": "af",
@@ -2578,6 +2811,7 @@
       "en_US": ["Ukraine"]
     },
     "identifier": "UA",
+    "flag_url": "./assets/maps/flags/world-countries/flag_UA.svg",
     "alpha_2": "UA",
     "alpha_3": "UKR",
     "group": "eu",
@@ -2589,6 +2823,7 @@
       "en_US": ["United Arab Emirates"]
     },
     "identifier": "AE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_AE.svg",
     "alpha_2": "AE",
     "alpha_3": "ARE",
     "group": "as",
@@ -2603,6 +2838,7 @@
       ]
     },
     "identifier": "GB",
+    "flag_url": "./assets/maps/flags/world-countries/flag_GB.svg",
     "alpha_2": "GB",
     "alpha_3": "GBR",
     "group": "eu",
@@ -2614,6 +2850,7 @@
       "en_US": ["USA", "United States of America"]
     },
     "identifier": "US",
+    "flag_url": "./assets/maps/flags/world-countries/flag_US.svg",
     "alpha_2": "US",
     "alpha_3": "USA",
     "group": "na",
@@ -2625,6 +2862,7 @@
       "en_US": ["United States Minor Outlying Islands"]
     },
     "identifier": "UM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_UM.svg",
     "alpha_2": "UM",
     "alpha_3": "UMI",
     "group": "oc",
@@ -2636,6 +2874,7 @@
       "en_US": ["Uruguay"]
     },
     "identifier": "UY",
+    "flag_url": "./assets/maps/flags/world-countries/flag_UY.svg",
     "alpha_2": "UY",
     "alpha_3": "URY",
     "group": "sa",
@@ -2647,6 +2886,7 @@
       "en_US": ["Uzbekistan"]
     },
     "identifier": "UZ",
+    "flag_url": "./assets/maps/flags/world-countries/flag_UZ.svg",
     "alpha_2": "UZ",
     "alpha_3": "UZB",
     "group": "as",
@@ -2658,6 +2898,7 @@
       "en_US": ["Vanuatu"]
     },
     "identifier": "VU",
+    "flag_url": "./assets/maps/flags/world-countries/flag_VU.svg",
     "alpha_2": "VU",
     "alpha_3": "VUT",
     "group": "oc",
@@ -2669,6 +2910,7 @@
       "en_US": ["Venezuela", "Bolivarian Republic of Venezuela"]
     },
     "identifier": "VE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_VE.svg",
     "alpha_2": "VE",
     "alpha_3": "VEN",
     "group": "sa",
@@ -2680,6 +2922,7 @@
       "en_US": ["Vietnam", "Viet Nam"]
     },
     "identifier": "VN",
+    "flag_url": "./assets/maps/flags/world-countries/flag_VN.svg",
     "alpha_2": "VN",
     "alpha_3": "VNM",
     "group": "as",
@@ -2691,6 +2934,7 @@
       "en_US": ["Virgin Islands (British)"]
     },
     "identifier": "VG",
+    "flag_url": "./assets/maps/flags/world-countries/flag_VG.svg",
     "alpha_2": "VG",
     "alpha_3": "VGB",
     "group": "na",
@@ -2702,6 +2946,7 @@
       "en_US": ["Virgin Islands (U.S.)"]
     },
     "identifier": "VI",
+    "flag_url": "./assets/maps/flags/world-countries/flag_VI.svg",
     "alpha_2": "VI",
     "alpha_3": "VIR",
     "group": "na",
@@ -2713,6 +2958,7 @@
       "en_US": ["Wallis and Futuna"]
     },
     "identifier": "WF",
+    "flag_url": "./assets/maps/flags/world-countries/flag_WF.svg",
     "alpha_2": "WF",
     "alpha_3": "WLF",
     "group": "oc",
@@ -2724,6 +2970,7 @@
       "en_US": ["Western Sahara"]
     },
     "identifier": "EH",
+    "flag_url": "./assets/maps/flags/world-countries/flag_EH.svg",
     "alpha_2": "EH",
     "alpha_3": "ESH",
     "group": "af",
@@ -2735,6 +2982,7 @@
       "en_US": ["Yemen"]
     },
     "identifier": "YE",
+    "flag_url": "./assets/maps/flags/world-countries/flag_YE.svg",
     "alpha_2": "YE",
     "alpha_3": "YEM",
     "group": "as",
@@ -2746,6 +2994,7 @@
       "en_US": ["Zambia"]
     },
     "identifier": "ZM",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ZM.svg",
     "alpha_2": "ZM",
     "alpha_3": "ZMB",
     "group": "af",
@@ -2757,6 +3006,7 @@
       "en_US": ["Zimbabwe"]
     },
     "identifier": "ZW",
+    "flag_url": "./assets/maps/flags/world-countries/flag_ZW.svg",
     "alpha_2": "ZW",
     "alpha_3": "ZWE",
     "group": "af",

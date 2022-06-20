@@ -1,7 +1,7 @@
 [
     {
-        "id":"cont_wo",
-        "tagGroupId":"cont",
+        "id":"world",
+        "tagGroupId":"world",
         "displayName":{
             "en_US":["World"],
             "fr_FR":["Monde"],

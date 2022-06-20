@@ -5,6 +5,7 @@ export interface MapIndexEntry{
         mapFlagUrl : string,
         tagIdList:string[],
         mapDisplayName : Locale_I18n,
+        available : boolean,
         maps:{
                 identifier:string,
                 mapDisplayName:Locale_I18n

@@ -16,23 +16,17 @@
 <!-- Map tiles container -->
 <div id="map-tiles-container" class=" ">
     <ng-container *ngFor="let tag of mapTagList">
-        <ng-container *ngIf="isTagFiltered(tag)">
-            <div class="map-tiles-category-container">
-                <span class="font-light capitalize text-xs">{{ tag.displayName | i18n }}</span>
-                <ng-container *ngIf="tagHasMap(tag,mapIndexEntryList) else noMapForTag">
-                    <div class="flex gap-2 flex-wrap">
-                        <ng-container *ngFor="let entry of mapIndexEntryList">
-                            <ng-container *ngIf="entryHasTag(entry,tag.id)">
-                                <app-map-tile [mapEntry]="entry" [available]="true"></app-map-tile>
-                            </ng-container>
-                        </ng-container>
-                    </div>
+        <div *ngIf="isTagFiltered(tag)" class="map-tiles-category-container">
+            <span class="font-light capitalize text-xs">{{ tag.displayName | i18n }}</span>
+            <div *ngIf="tagHasMap(tag,mapIndexEntryList) else noMapForTag" class="flex gap-2 flex-wrap">
+                <ng-container *ngFor="let entry of mapIndexEntryList">
+                    <app-map-tile  *ngIf="entryHasTag(entry,tag.id)" [mapEntry]="entry" [available]="entry.available"></app-map-tile>
                 </ng-container>
-                <ng-template #noMapForTag >
-                    <span i18n="@@map-no-map-for-tag">No map for tag :</span><span>{{ tag.displayName | i18n }}</span>
-                </ng-template>
             </div>
-        </ng-container>
+            <ng-template #noMapForTag >
+                <span i18n="@@map-no-map-for-tag">No map for tag :</span><span>{{ tag.displayName | i18n }}</span>
+            </ng-template>
+        </div>
     </ng-container>
 </div>
 <app-map-generic></app-map-generic>

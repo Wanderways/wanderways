@@ -4,5 +4,6 @@ export interface AreaCommons{
     identifier : string,
     numeric_code:string,
     name: Locale_I18n,
-    group:string
+    group:string,
+    flag_url:string
 }

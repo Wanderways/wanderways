@@ -4,7 +4,7 @@
 </div>
 
 
-<div class="page-flow px-6">
+<div class="page-flow px-6 mb-10">
     <div class="map-header " *ngIf="mapIndexEntry" >
         <div class="flex items-end z-30 mb-4 ">
             <img class="flag" src="{{mapIndexEntry.mapFlagUrl}}" alt="{{mapIndexEntry.mapDisplayName | i18n}} flag">
@@ -36,6 +36,6 @@
 
 
 
-    <app-map-generic class="z-0" (mapIndexEntryLoaded)="onMapIndexEntry($event)" (areaSelected)="onAreaSelected($event)"></app-map-generic>
+    <app-map-generic class="z-0" [mapIdentifier]="selectedMap" (areaSelected)="onAreaSelected($event)"></app-map-generic>
 
 </div>
