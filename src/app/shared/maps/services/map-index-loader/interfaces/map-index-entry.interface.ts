@@ -8,7 +8,7 @@ export interface MapIndexEntry{
         available : boolean,
         maps:{
                 identifier:string,
-                mapDisplayName:Locale_I18n
+                displayName:Locale_I18n
                 wiki_url:string
         }[]
 }
