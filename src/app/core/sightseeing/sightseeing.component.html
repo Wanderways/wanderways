@@ -17,21 +17,10 @@
         </div>
     </div>
     <form class="sub-maps " style="z-index:2;">
-        <div class="button-select-map">
-            <input type="radio" id="subdivision" name="selection" value="subdivision">
-            <label for="subdivision">Regions</label>
+        <div *ngFor="let map of mapIndexEntry?.maps" class="button-select-map">
+            <input type="radio" id="{{map.identifier}}" name="selection" value="{{map.identifier}}" (click)="setSelectedMap(map.identifier)" [checked]="selectedMap === map.identifier">
+            <label for="{{map.identifier}}" [class.bg-candy-theme]="selectedMap === map.identifier">{{map.displayName | i18n}}</label>
         </div>
-        <div class="button-select-map">
-            <input type="radio" id="prefectures" name="selection" value="subdivision">
-            <label for="prefectures">Prefectures</label>
-        </div>
-        <div class="button-select-map">
-            <input type="radio" id="cities" name="selection" value="cities">
-            <label for="cities">Cities</label>
-        </div>
-        
-        
-       
     </form>
 
 

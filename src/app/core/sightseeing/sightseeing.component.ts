@@ -17,18 +17,11 @@ export class SightseeingComponent implements OnInit {
 
   selectedMap : string = "";
 
-  @HostListener('window:resize', ['$event'])
-  onResize() {
-    if(window.innerWidth > 1024)
-      this.headerDisplayService.setPosition("fixed");
-    else
-      this.headerDisplayService.setPosition("sticky");
-}
 
   constructor(private mapIndexLoader: MapIndexLoaderService, private headerDisplayService : HeaderDisplayService,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.onResize()
+    this.headerDisplayService.setPosition("relative");
     this.route.queryParams.subscribe(queryParameter => {
       if (!queryParameter) return; // If there is no value then skip
 
@@ -37,9 +30,14 @@ export class SightseeingComponent implements OnInit {
         this.mapIndexEntry = mapIndexEntry;
         this.selectedMap = mapIndexEntry.maps[0].identifier;
         console.log(this.mapIndexEntry.mapFlagUrl);
+        mapIndexEntry.maps.forEach(e => console.log(e));
         
       });
     })
+  }
+
+  setSelectedMap(mapIdentifier : string){
+    this.selectedMap = mapIdentifier;
   }
 
   ngOnDestroy(): void{
