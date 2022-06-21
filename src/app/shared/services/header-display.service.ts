@@ -11,7 +11,8 @@ export class HeaderDisplayService {
   constructor() { }
 
   public setPosition(position : "sticky"|"relative"|"fixed"): void {
-    this.position$.next(position);
+    if(this.position$.value !== position)
+      this.position$.next(position);
   }
   public getPosition(): Observable<"sticky"|"relative"|"fixed">{
     return this.position$;
