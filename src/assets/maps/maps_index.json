@@ -15,22 +15,22 @@
       {
         "identifier":"world-country-iso",
         "displayName":{
-          "en_US":["Country - World - ISO"],
-          "fr_FR":["Pays - Monde - ISO"],
-          "de_DE":["Land - Welt - ISO"],
-          "es_ES":["País - Mundo - ISO"],
-          "pt_PT":["País - Mundo - ISO"]
+          "en_US":["Country - ISO"],
+          "fr_FR":["Pays - ISO"],
+          "de_DE":["Land - ISO"],
+          "es_ES":["País - ISO"],
+          "pt_PT":["País - ISO"]
         },
         "wiki_url":"https://en.wikipedia.org/wiki/ISO_3166-1"
       },
       {
         "identifier":"world-country-un",
         "displayName":{
-          "en_US":["Country - World - UN"],
-          "fr_FR":["Pays - Monde - ONU"],
-          "de_DE":["Land - Welt - UNO"],
-          "es_ES":["País - Mundo - ONU"],
-          "pt_PT":["País - Mundo - ONU"]
+          "en_US":["Country - UN"],
+          "fr_FR":["Pays - ONU"],
+          "de_DE":["Land - UNO"],
+          "es_ES":["País - ONU"],
+          "pt_PT":["País - ONU"]
         },
         "wiki_url":"https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
       }
