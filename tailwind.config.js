@@ -24,7 +24,8 @@ module.exports = {
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
       'black':'#000000',
-      'white':'#ffffff'
+      'white':'#ffffff',
+      'red': '#ef4444'
     },
     extend: {
       spacing: {
