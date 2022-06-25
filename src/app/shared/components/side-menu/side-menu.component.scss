@@ -1,3 +1,5 @@
+@use '../../../theming/customMixins' as customMixins;
+
 @mixin slide($name, $dir, $ox, $tx){
     @keyframes slide-#{$name} {
         0% {
@@ -26,6 +28,7 @@
     z-index: 1000;
     top: 0;
     height: 100vh;
+    @include customMixins.scrollbar('.side-menu-container', false);
     .side-menu-container {
         @apply flex flex-col;
         @apply sticky;
@@ -33,21 +36,6 @@
         @apply px-6;
         width: 244px;
         flex: 0 0 auto;
-        overflow-y: auto;   
-        scrollbar-color: auto ;
-        &::-webkit-scrollbar {
-            @apply w-3;
-          }
-          &::-webkit-scrollbar-track {
-            background: transparent;
-          }
-          &::-webkit-scrollbar-thumb {
-            background-color: #ffffff4d;
-            border-radius: 10px;
-          }
-          &::-webkit-scrollbar-corner{
-            background: transparent;
-          }
     }
     &.sticky {
         position: sticky;

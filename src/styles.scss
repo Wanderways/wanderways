@@ -1,44 +1,22 @@
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
-// Plus imports for other components in your app.
+@use "app/theming" as app;
+@use "sass:map";
+@use "app/theming/_customMixins" as customMixins;
 
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
 @include mat.core();
 
+$app-primary: mat.define-palette(mat.$indigo-palette);
+$app-accent: mat.define-palette(mat.$pink-palette);
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$learn-your-maps-primary: mat.define-palette(mat.$indigo-palette);
-$learn-your-maps-accent: mat.define-palette(
-  mat.$pink-palette,
-  A200,
-  A100,
-  A400
-);
-
-// The warn palette is optional (defaults to red).
-$learn-your-maps-warn: mat.define-palette(mat.$red-palette);
-
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$learn-your-maps-theme: mat.define-light-theme(
+// Use your own "app" define-light-theme function instead of "mat" one.
+$app-theme: app.define-light-theme(
   (
     color: (
-      primary: $learn-your-maps-primary,
-      accent: $learn-your-maps-accent,
-      warn: $learn-your-maps-warn,
-    ),
+      primary: $app-primary,
+      accent: $app-accent,
+    )
   )
 );
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include mat.all-component-themes($learn-your-maps-theme);
 
 @tailwind base;
 @tailwind components;
@@ -121,19 +99,26 @@ $svg-invert-white: 1;
       var(--theme-dark-background-light) 100%
     );
   }
-  .bg-candy-theme {
+  .bg-candy-theme,
+  .bg-candy-theme-text {
     background-image: linear-gradient(
       225deg,
       var(--candy-primary) 0%,
       var(--candy-secondary) 100%
     );
   }
-  .bg-violetta-theme {
+  .bg-violetta-theme,
+  .bg-violetta-theme-text {
     background-image: linear-gradient(
       45deg,
       var(--violetta-primary) 0%,
       var(--violetta-secondary) 100%
     );
+  }
+
+  .bg-candy-theme-text,
+  .bg-violetta-theme-text{
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   }
 
   .bg-dark {
@@ -200,22 +185,8 @@ html {
   background-position: center center;
 }
 
-.custom-scrollbar {
-  overflow-y: auto;
-  &::-webkit-scrollbar {
-    @apply w-3;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #ffffff4d;
-    border-radius: 10px;
-  }
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
-}
+@include customMixins.scrollbar('custom-scrollbar', false);
+
 /*removes highlighting on tap on mobile devices*/
 * {
   -webkit-tap-highlight-color: transparent;
@@ -274,3 +245,30 @@ img {
   fill: transparent;
   stroke-dasharray: 3px;
 }
+
+// Material overrides
+mat-dialog-container {
+  background-color: var(--dark-background) !important;
+}
+
+mat-option, mat-optgroup span {
+  background-color: var(--dark-background) !important;
+}
+
+mat-option:hover,
+mat-option span:hover,
+mat-select {
+  background-color: var(--light-background) !important;
+}
+
+mat-dialog-container,
+.mat-select-panel{
+  box-shadow: 0 0 5px 1px #AAAAAA61;
+}
+
+.mat-ripple-element{
+  background-color: #FFFFFF60;
+}
+
+
+@include customMixins.scrollbar('.mat-select-panel', true);
