@@ -1,7 +1,9 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
+import { SelectGamemodeDialogComponent } from 'src/app/shared/components/dialogs/select-gamemode-dialog/select-gamemode-dialog.component';
 import { AreaCommons } from 'src/app/shared/maps/services/map-data-loader/interfaces/areaCommons.interface';
-import { MapIndexEntry } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-index-entry.interface';
+import { MapIndexEntry, SpecificMap } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-index-entry.interface';
 import { MapIndexLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-index-loader.service';
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
 
@@ -15,10 +17,10 @@ export class SightseeingComponent implements OnInit {
   mapIndexEntry : MapIndexEntry | undefined = undefined;
   areaSelected : AreaCommons | undefined = undefined;
 
-  selectedMap : string = "";
+  selectedMap : SpecificMap | undefined;
 
 
-  constructor(private mapIndexLoader: MapIndexLoaderService, private headerDisplayService : HeaderDisplayService,private route: ActivatedRoute) { }
+  constructor(public dialog: MatDialog,private mapIndexLoader: MapIndexLoaderService, private headerDisplayService : HeaderDisplayService,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.headerDisplayService.setPosition("relative");
@@ -28,16 +30,13 @@ export class SightseeingComponent implements OnInit {
       this.mapIndexLoader.getEntryIfExists(queryParameter["map"]).then((mapIndexEntry: MapIndexEntry | undefined) => {
         if (!mapIndexEntry) return; // If no data found then skip
         this.mapIndexEntry = mapIndexEntry;
-        this.selectedMap = mapIndexEntry.maps[0].identifier;
-        console.log(this.mapIndexEntry.mapFlagUrl);
-        mapIndexEntry.maps.forEach(e => console.log(e));
-        
+        this.selectedMap = mapIndexEntry.maps[0];
       });
     })
   }
 
   setSelectedMap(mapIdentifier : string){
-    this.selectedMap = mapIdentifier;
+    this.selectedMap = this.mapIndexEntry?.maps.find(e=> e.identifier === mapIdentifier);
   }
 
   ngOnDestroy(): void{
@@ -58,5 +57,16 @@ export class SightseeingComponent implements OnInit {
    */
   onAreaSelected(areaCommons :AreaCommons){
     this.areaSelected = areaCommons;
+  }
+
+  onPlay(){
+    this.openDialog();
+
+  }
+
+  openDialog(): void {
+    this.dialog.open(SelectGamemodeDialogComponent, {
+      data: {selectedMap : this.selectedMap, mapIndexEntry : this.mapIndexEntry}
+    });
   }
 }

@@ -58,8 +58,8 @@
 
         .sub-maps {
             display: flex;
+            flex-direction: column;
             height: 5rem;
-            align-items: center;
             
             .button-select-map{
                 input[type=radio] {
@@ -67,18 +67,13 @@
                     z-index: 100;
                 }
     
-                input[type=radio]:checked+label {
-                    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-                }
-    
                 label {
                     padding: 0.5rem 1rem;
-                    border: 1px solid #CCC;
+                    border-top: 1px solid #CCC;
+                    border-bottom: 1px solid #CCC;
+                    border-left: 1px solid #CCC;
                     cursor: pointer;
                     z-index: 90;
-                }
-                label:first-child{
-                    color: rebeccapurple;
                 }
     
                 label:hover {
@@ -92,6 +87,7 @@
                 &:last-child label{
                     border-top-right-radius: 0.25rem;
                     border-bottom-right-radius: 0.25rem;
+                    border-right: 1px solid #CCC;
                 }
             }
 

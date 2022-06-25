@@ -11,20 +11,21 @@
             <h1 class="mx-4 mb-2 gap-4 text-2xl">
                 {{mapIndexEntry!.mapDisplayName | i18n}}
             </h1>
-            <svg class="mx-4 mb-2 flex gap-4 mb-4 items-center" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="mx-4 mb-2 flex gap-4 items-center" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 4.74192L13.1404 9.1575L18.0033 9.8285L14.4641 13.2293L15.3276 18.0602L11 15.7465L6.67242 18.0611L7.53592 13.2303L3.99667 9.82942L8.85958 9.1575L11 4.74192ZM11 0.538086L7.63767 7.47542L0 8.5305L5.55867 13.8728L4.202 21.4619L11 17.8255L17.798 21.461L16.4413 13.8719L22 8.5305L14.3623 7.47634L11 0.538086Z" fill="white"/>
             </svg>
         </div>
     </div>
-    <form class="sub-maps " style="z-index:2;">
+    <div class="flex mt-2">
+        <button (click)="onPlay()" class="bg-candy-theme-text px-4 py-2 rounded">Play</button>
+    </div>
+    <form *ngIf="selectedMap" class="sub-maps gap-2 mt-2" style="z-index:2;">
+        <p>Selected map :</p>
         <div *ngFor="let map of mapIndexEntry?.maps" class="button-select-map">
-            <input type="radio" id="{{map.identifier}}" name="selection" value="{{map.identifier}}" (click)="setSelectedMap(map.identifier)" [checked]="selectedMap === map.identifier">
-            <label for="{{map.identifier}}" [class.bg-candy-theme]="selectedMap === map.identifier">{{map.displayName | i18n}}</label>
+            <input type="radio" id="{{map.identifier}}" name="selection" value="{{map.identifier}}" (click)="setSelectedMap(map.identifier)" [checked]="selectedMap.identifier === map.identifier">
+            <label for="{{map.identifier}}" [class.bg-violetta-theme-text]="selectedMap.identifier === map.identifier">{{map.displayName | i18n}}</label>
         </div>
     </form>
-
-
-
-    <app-map-generic class="z-0" [mapIdentifier]="selectedMap" (areaSelected)="onAreaSelected($event)"></app-map-generic>
+    <app-map-generic *ngIf="selectedMap" class="z-0" [mapIdentifier]="selectedMap.identifier" (areaSelected)="onAreaSelected($event)"></app-map-generic>
 
 </div>

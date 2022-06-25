@@ -8,7 +8,6 @@ import { MapsPageComponent } from './maps-page/maps-page.component';
 import { RouterModule } from '@angular/router';
 import { MapsModule } from '../shared/maps/maps.module';
 import { SightseeingComponent } from './sightseeing/sightseeing.component';
-import { DialogsModule } from '../shared/dialogs/dialogs.module';
 import { ComponentsModule } from '../shared/components/components.module';
 
 let components : any[] = [
@@ -28,7 +27,6 @@ let matModules : any[]=[
     CommonModule,
     RouterModule,
     MapsModule,
-    DialogsModule,
     ComponentsModule,
     ...matModules
   ]

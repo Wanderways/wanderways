@@ -7,6 +7,7 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TagDisplayerComponent } from './tag-displayer/tag-displayer.component';
 import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
 import { RouterModule } from '@angular/router';
+import { DialogsModule } from './dialogs/dialogs.module';
 
 const components : any[] = [
   LanguageSelectorComponent,
@@ -23,10 +24,12 @@ const components : any[] = [
   imports: [
     CommonModule,
     MapsModule,
-    RouterModule
+    RouterModule,
+    DialogsModule
   ],
   exports:[
-    ...components
+    ...components,
+    DialogsModule
   ]
 })
 export class ComponentsModule { }

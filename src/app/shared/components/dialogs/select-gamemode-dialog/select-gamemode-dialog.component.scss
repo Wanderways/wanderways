@@ -1,0 +1,20 @@
+form{
+   min-width: 50vw;
+   width: 800px;
+   .game-mode-container{
+      display: flex;
+      flex-wrap: wrap;
+      .game-mode-tile{
+         cursor: pointer;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+       &:not(.selected) img{
+          filter: brightness(25);
+       }
+       &.selected{
+         background-color: var(--light-background) !important;
+       }
+      }
+   }
+}
