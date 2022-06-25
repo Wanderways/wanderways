@@ -3,7 +3,7 @@
   (displaySideMenuChange)="displaySideNav = !displaySideNav" [behavior]="'reactive'" [direction]="'left'">
   <div id="sidenav-header" header>
     <ng-container *ngTemplateOutlet="header_content"></ng-container>
-    <div id="close-sidenav-button" matRipple matRippleColor="#FFFFFF60" class="rounded cursor-pointer select-none"
+    <div id="close-sidenav-button" matRipple  class="rounded cursor-pointer select-none"
       (click)="displaySideNav = !displaySideNav">
       <img id="close-button" src="./assets/icons/close.svg" alt="close button icon" class="svg-current-color mx-0" />
     </div>
@@ -26,7 +26,7 @@
   <!-- HEADER -->
   <header id="header" #nav [style.position]="position" [class]="position" [class.isScrolled]="isScrolled">
     <div id="header-content">
-      <div matRipple matRippleColor="#FFFFFF60" class="header-button mx-3 my-2 rounded cursor-pointer select-none"
+      <div matRipple  class="header-button mx-3 my-2 rounded cursor-pointer select-none"
         (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav ? 'hidden' : ''">
         <img src="./assets/icons/menu.svg" alt="menu button icon" class="svg-current-color mx-1" />
       </div>
@@ -38,7 +38,7 @@
 
 <!-- TEMPLATES -->
 <ng-template #header_content let-isVisible>
-  <div matRipple matRippleColor="#FFFFFF60" id="logo-and-title" class="header-button" [routerLink]="['/']"
+  <div matRipple  id="logo-and-title" class="header-button" [routerLink]="['/']"
     [style.visibility]="isVisible ? 'hidden' : ''">
     <img src="./assets/icons/logo.svg" alt="menu button icon" />
     <span>Learn your maps</span>
@@ -47,7 +47,7 @@
 
 <ng-template #sidenavbutton let-link="link" let-label="label" let-isDisabled="isDisabled" let-icon="icon">
   <!-- Style set in template for background-url, else fails at build time -->
-  <button mat-button matRipple matRippleColor="#FFFFFF60" [routerLink]="[link]" routerLinkActive="active-link"
+  <button mat-button matRipple  [routerLink]="[link]" routerLinkActive="active-link"
     [routerLinkActiveOptions]="{ exact: true }" [disabled]="isDisabled" class="menu-button" style="background-image: url('./assets/icons/candy-button.svg');">
     <div *ngIf="icon" class="cat-icon-container">
       <img class="nav-icon gap-2 mx-1" src="{{ icon }}" alt="{{ label }} icon" />
