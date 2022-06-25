@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AtomicModule } from './shared/atomic/atomic.module';
 
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -13,6 +12,7 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import {MatRippleModule} from '@angular/material/core';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ComponentsModule } from './shared/components/components.module';
 
 let matModules : any[]=[
   MatRippleModule
@@ -23,7 +23,7 @@ let matModules : any[]=[
     AppComponent,
   ],
   imports: [
-    AtomicModule,
+    ComponentsModule,
     CoreModule,
     BrowserModule,
     AppRoutingModule,

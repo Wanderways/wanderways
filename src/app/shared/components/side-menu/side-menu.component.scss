@@ -23,7 +23,7 @@
 @include bs(sidemenu, 1px, 0px, 10px, 3px, #00000080);
 :host {
     flex: 0 0 auto;
-    z-index: 9999;
+    z-index: 1000;
     top: 0;
     height: 100vh;
     .side-menu-container {

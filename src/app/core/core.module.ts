@@ -7,9 +7,9 @@ import {MatRippleModule} from '@angular/material/core';
 import { MapsPageComponent } from './maps-page/maps-page.component';
 import { RouterModule } from '@angular/router';
 import { MapsModule } from '../shared/maps/maps.module';
-import { MoleculesModule } from '../shared/atomic/molecules/molecules.module';
-import { OrganismsModule } from '../shared/atomic/organisms/organisms.module';
 import { SightseeingComponent } from './sightseeing/sightseeing.component';
+import { DialogsModule } from '../shared/dialogs/dialogs.module';
+import { ComponentsModule } from '../shared/components/components.module';
 
 let components : any[] = [
   HomeComponent,
@@ -28,8 +28,8 @@ let matModules : any[]=[
     CommonModule,
     RouterModule,
     MapsModule,
-    MoleculesModule,
-    OrganismsModule,
+    DialogsModule,
+    ComponentsModule,
     ...matModules
   ]
 })
