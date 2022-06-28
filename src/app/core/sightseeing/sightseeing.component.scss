@@ -60,38 +60,42 @@
             display: flex;
             flex-direction: column;
             height: 5rem;
-            
-            .button-select-map{
-                input[type=radio] {
-                    display: none;
-                    z-index: 100;
-                }
-    
-                label {
-                    padding: 0.5rem 1rem;
-                    border-top: 1px solid #CCC;
-                    border-bottom: 1px solid #CCC;
-                    border-left: 1px solid #CCC;
-                    cursor: pointer;
-                    z-index: 90;
-                }
-    
-                label:hover {
-                    background: #DDD;
+
+            .selectable-maps-container {
+                display: flex;
+                .button-select-map {
+                    input[type=radio] {
+                        display: none;
+                        z-index: 100;
+                    }
+
+                    label {
+                        padding: 0.5rem 1rem;
+                        border-top: 1px solid #CCC;
+                        border-bottom: 1px solid #CCC;
+                        border-left: 1px solid #CCC;
+                        cursor: pointer;
+                        z-index: 90;
+                    }
+
+                    label:hover {
+                        background: #DDD;
+                    }
+
+                    &:first-child label {
+                        border-top-left-radius: 0.25rem;
+                        border-bottom-left-radius: 0.25rem;
+                    }
+
+                    &:last-child label {
+                        border-top-right-radius: 0.25rem;
+                        border-bottom-right-radius: 0.25rem;
+                        border-right: 1px solid #CCC;
+                    }
                 }
 
-                &:first-child label{
-                    border-top-left-radius: 0.25rem;
-                    border-bottom-left-radius: 0.25rem;
-                }
-                &:last-child label{
-                    border-top-right-radius: 0.25rem;
-                    border-bottom-right-radius: 0.25rem;
-                    border-right: 1px solid #CCC;
-                }
             }
 
         }
     }
 }
-

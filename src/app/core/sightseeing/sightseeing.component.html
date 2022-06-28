@@ -21,10 +21,13 @@
     </div>
     <form *ngIf="selectedMap" class="sub-maps gap-2 mt-2" style="z-index:2;">
         <p>Selected map :</p>
-        <div *ngFor="let map of mapIndexEntry?.maps" class="button-select-map">
-            <input type="radio" id="{{map.identifier}}" name="selection" value="{{map.identifier}}" (click)="setSelectedMap(map.identifier)" [checked]="selectedMap.identifier === map.identifier">
-            <label for="{{map.identifier}}" [class.bg-violetta-theme-text]="selectedMap.identifier === map.identifier">{{map.displayName | i18n}}</label>
+        <div class="selectable-maps-container">
+            <div *ngFor="let map of mapIndexEntry?.maps" class="button-select-map">
+                <input type="radio" id="{{map.identifier}}" name="selection" value="{{map.identifier}}" (click)="setSelectedMap(map.identifier)" [checked]="selectedMap.identifier === map.identifier">
+                <label for="{{map.identifier}}" [class.bg-violetta-theme-text]="selectedMap.identifier === map.identifier">{{map.displayName | i18n}}</label>
+            </div>
         </div>
+        
     </form>
     <app-map-generic *ngIf="selectedMap" class="z-0" [mapIdentifier]="selectedMap.identifier" (areaSelected)="onAreaSelected($event)"></app-map-generic>
 
