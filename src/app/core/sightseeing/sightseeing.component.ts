@@ -4,6 +4,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { SelectGamemodeDialogComponent } from 'src/app/shared/components/dialogs/select-gamemode-dialog/select-gamemode-dialog.component';
 import { AreaCommons } from 'src/app/shared/maps/services/map-data-loader/interfaces/areaCommons.interface';
 import { MapGroup, SpecificMap } from 'src/app/shared/maps/services/map-group-loader/interfaces/map-group.interface';
+import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-group-loader/map-group-loader.service';
+
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
 
 @Component({
@@ -14,15 +16,20 @@ import { HeaderDisplayService } from 'src/app/shared/services/header-display.ser
 export class SightseeingComponent implements OnInit {
 
   mapGroup: MapGroup | undefined = undefined;
-  areaSelected : AreaCommons | undefined = undefined;
+  areaSelected: AreaCommons | undefined = undefined;
 
-  selectedMap : SpecificMap | undefined;
+  selectedMap: SpecificMap | undefined;
 
 
+  constructor(public dialog: MatDialog,
     private mapGroupLoaderService: MapGroupLoaderService,
+    private headerDisplayService: HeaderDisplayService,
+    private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
-    this.headerDisplayService.setPosition("relative");
+    setTimeout(() => this.headerDisplayService.setPosition("relative"));
+
     this.route.queryParams.subscribe(queryParameter => {
       if (!queryParameter) return; // If there is no value then skip
 
@@ -54,18 +61,22 @@ export class SightseeingComponent implements OnInit {
    * When an area is selected, get its data an display informations
    * @param areaCommons An area data
    */
-  onAreaSelected(areaCommons :AreaCommons){
+  onAreaSelected(areaCommons: AreaCommons) {
     this.areaSelected = areaCommons;
   }
 
-  onPlay(){
+  onPlay() {
     this.openDialog();
 
   }
 
   openDialog(): void {
     this.dialog.open(SelectGamemodeDialogComponent, {
-      data: {selectedMap : this.selectedMap, mapIndexEntry : this.mapIndexEntry}
+      data: { selectedMap: this.selectedMap, mapGroup: this.mapGroup }
+    }).afterClosed().subscribe((data?: { mapIdentifier: string, gameIdentifier: string }) => {
+      if (data) {
+        this.router.navigate(["/game/" + data.gameIdentifier], { queryParams: { mapIdentifier: data.mapIdentifier } })
+      }
     });
   }
 }

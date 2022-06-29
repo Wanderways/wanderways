@@ -9,11 +9,13 @@ import { RouterModule } from '@angular/router';
 import { MapsModule } from '../shared/maps/maps.module';
 import { SightseeingComponent } from './sightseeing/sightseeing.component';
 import { ComponentsModule } from '../shared/components/components.module';
+import { AgainstTheClockComponent } from './games/against-the-clock/against-the-clock.component';
 
 let components : any[] = [
   HomeComponent,
   MapsPageComponent,
-  SightseeingComponent
+  SightseeingComponent,
+  AgainstTheClockComponent
 ]
 
 let matModules : any[]=[
