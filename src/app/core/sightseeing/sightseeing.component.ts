@@ -3,8 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SelectGamemodeDialogComponent } from 'src/app/shared/components/dialogs/select-gamemode-dialog/select-gamemode-dialog.component';
 import { AreaCommons } from 'src/app/shared/maps/services/map-data-loader/interfaces/areaCommons.interface';
-import { MapIndexEntry, SpecificMap } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-index-entry.interface';
-import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-group-loader.service';
+import { MapGroup, SpecificMap } from 'src/app/shared/maps/services/map-group-loader/interfaces/map-group.interface';
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
 
 @Component({
@@ -14,7 +13,7 @@ import { HeaderDisplayService } from 'src/app/shared/services/header-display.ser
 })
 export class SightseeingComponent implements OnInit {
 
-  mapIndexEntry : MapIndexEntry | undefined = undefined;
+  mapGroup: MapGroup | undefined = undefined;
   areaSelected : AreaCommons | undefined = undefined;
 
   selectedMap : SpecificMap | undefined;
@@ -27,28 +26,28 @@ export class SightseeingComponent implements OnInit {
     this.route.queryParams.subscribe(queryParameter => {
       if (!queryParameter) return; // If there is no value then skip
 
-      this.mapGroupLoaderService.getEntryIfExists(queryParameter["map"]).then((mapIndexEntry: MapIndexEntry | undefined) => {
-        if (!mapIndexEntry) return; // If no data found then skip
-        this.mapIndexEntry = mapIndexEntry;
-        this.selectedMap = mapIndexEntry.maps[0];
+      this.mapGroupLoaderService.getEntryIfExists(queryParameter["map"]).then((mapGroup: MapGroup | undefined) => {
+        if (!mapGroup) return; // If no data found then skip
+        this.mapGroup = mapGroup;
+        this.selectedMap = mapGroup.maps[0];
       });
     })
   }
 
-  setSelectedMap(mapIdentifier : string){
-    this.selectedMap = this.mapIndexEntry?.maps.find(e=> e.identifier === mapIdentifier);
+  setSelectedMap(mapIdentifier: string) {
+    this.selectedMap = this.mapGroup?.maps.find(e => e.identifier === mapIdentifier);
   }
 
-  ngOnDestroy(): void{
+  ngOnDestroy(): void {
     this.headerDisplayService.setPosition("sticky");
   }
 
   /**
    * When map is loaded, get its entry to display basic info
-   * @param mapIndexEntry A map index entry
+   * @param mapGroup A map index entry
    */
-  onMapIndexEntry(mapIndexEntry : MapIndexEntry ){
-    this.mapIndexEntry = mapIndexEntry;
+  onMapGroup(mapGroup: MapGroup) {
+    this.mapGroup = mapGroup;
   }
 
   /**

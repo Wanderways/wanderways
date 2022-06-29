@@ -1,10 +1,10 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MapGroup, SpecificMap } from '../../../maps/services/map-index-loader/interfaces/map-group.interface';
-import { Locale_I18n } from '../../../maps/utils/locale_i18n.interface';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-group-loader.service';
+import { Locale_I18n } from '../../../maps/utils/locale_i18n.interface';
 import { GameIndex } from 'src/app/shared/constants/game_index_constants';
+import { MapGroup, SpecificMap } from 'src/app/shared/maps/services/map-group-loader/interfaces/map-group.interface';
+import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-group-loader/map-group-loader.service';
 
 @Component({
   selector: 'app-select-gamemode-dialog[mapGroup][selectedMapIdentifier]',

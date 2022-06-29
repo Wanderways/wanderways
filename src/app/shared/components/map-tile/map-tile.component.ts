@@ -1,5 +1,5 @@
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
-import { MapGroup } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-group.interface';
+import { MapGroup } from '../../maps/services/map-group-loader/interfaces/map-group.interface';
 
 @Component({
   selector: 'app-map-tile[mapGroup]',

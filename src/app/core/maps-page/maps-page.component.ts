@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { TagGroup } from 'src/app/shared/maps/services/tag-group-loader/tag-group.interface';
 import { TagGroupLoaderService } from 'src/app/shared/maps/services/tag-group-loader/tag-group-loader.service';
-import { MapGroup } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-group.interface';
-import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-group-loader.service';
 import { MapTagsLoaderService } from 'src/app/shared/maps/services/map-tags-loader/map-tags-loader.service';
 import { Tag } from 'src/app/shared/maps/services/map-tags-loader/tag.interface';
+import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-group-loader/map-group-loader.service';
+import { MapGroup } from 'src/app/shared/maps/services/map-group-loader/interfaces/map-group.interface';
 
 @Component({
   selector: 'app-maps-page',
