@@ -18,9 +18,9 @@
     <ng-container *ngFor="let tag of mapTagList">
         <div *ngIf="isTagFiltered(tag)" class="map-tiles-category-container">
             <span class="font-light capitalize text-xs">{{ tag.displayName | i18n }}</span>
-            <div *ngIf="tagHasMap(tag,mapIndexEntryList) else noMapForTag" class="flex gap-2 flex-wrap">
-                <ng-container *ngFor="let entry of mapIndexEntryList">
-                    <app-map-tile  *ngIf="entryHasTag(entry,tag.id)" [mapEntry]="entry" [available]="entry.available"></app-map-tile>
+            <div *ngIf="tagHasMap(tag,mapGroupList) else noMapForTag" class="flex gap-2 flex-wrap">
+                <ng-container *ngFor="let entry of mapGroupList">
+                    <app-map-tile  *ngIf="entryHasTag(entry,tag.id)" [mapGroup]="entry" [available]="entry.available"></app-map-tile>
                 </ng-container>
             </div>
             <ng-template #noMapForTag >

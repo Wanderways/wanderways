@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { SelectGamemodeDialogComponent } from 'src/app/shared/components/dialogs/select-gamemode-dialog/select-gamemode-dialog.component';
 import { AreaCommons } from 'src/app/shared/maps/services/map-data-loader/interfaces/areaCommons.interface';
 import { MapIndexEntry, SpecificMap } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-index-entry.interface';
-import { MapIndexLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-index-loader.service';
+import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-group-loader.service';
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
 
 @Component({
@@ -20,14 +20,14 @@ export class SightseeingComponent implements OnInit {
   selectedMap : SpecificMap | undefined;
 
 
-  constructor(public dialog: MatDialog,private mapIndexLoader: MapIndexLoaderService, private headerDisplayService : HeaderDisplayService,private route: ActivatedRoute) { }
+    private mapGroupLoaderService: MapGroupLoaderService,
 
   ngOnInit(): void {
     this.headerDisplayService.setPosition("relative");
     this.route.queryParams.subscribe(queryParameter => {
       if (!queryParameter) return; // If there is no value then skip
 
-      this.mapIndexLoader.getEntryIfExists(queryParameter["map"]).then((mapIndexEntry: MapIndexEntry | undefined) => {
+      this.mapGroupLoaderService.getEntryIfExists(queryParameter["map"]).then((mapIndexEntry: MapIndexEntry | undefined) => {
         if (!mapIndexEntry) return; // If no data found then skip
         this.mapIndexEntry = mapIndexEntry;
         this.selectedMap = mapIndexEntry.maps[0];

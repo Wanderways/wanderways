@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MapIndexLoaderService } from './map-index-loader.service';
+import { MapGroupLoaderService } from './map-group-loader.service';
 
 describe('MapIndexLoaderService', () => {
-  let service: MapIndexLoaderService;
+  let service: MapGroupLoaderService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MapIndexLoaderService);
+    service = TestBed.inject(MapGroupLoaderService);
   });
 
   it('should be created', () => {

@@ -23,5 +23,5 @@
 </div>
 <div mat-dialog-actions class="flex justify-end gap-2 mt-2">
   <button matRipple (click)="close()" class="px-4 py-2 rounded hover:bg-white/25 ">Cancel</button>
-  <button matRipple [matRippleDisabled]="!startPlayingForm.valid" mat-dialog-close [ngClass]="{'bg-candy-theme-text':startPlayingForm.valid, 'bg-white/25':!startPlayingForm.valid}" class="px-4 py-2 rounded " cdkFocusInitial>LET'S GO</button>
+  <button matRipple [matRippleDisabled]="!startPlayingForm.valid" mat-dialog-close [ngClass]="{'bg-candy-theme-text':startPlayingForm.valid, 'bg-white/25':!startPlayingForm.valid}" class="px-4 py-2 rounded " (click)="startPlayingForm.valid && play()" cdkFocusInitial>LET'S GO</button>
 </div>

@@ -1,19 +1,19 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MapIndexEntry, SpecificMap } from '../../../maps/services/map-index-loader/interfaces/map-index-entry.interface';
+import { MapGroup, SpecificMap } from '../../../maps/services/map-index-loader/interfaces/map-group.interface';
 import { Locale_I18n } from '../../../maps/utils/locale_i18n.interface';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { MapIndexLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-index-loader.service';
+import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-group-loader.service';
 import { GameIndex } from 'src/app/shared/constants/game_index_constants';
 
 @Component({
-  selector: 'app-select-gamemode-dialog[mapIndexEntry][selectedMapIdentifier]',
+  selector: 'app-select-gamemode-dialog[mapGroup][selectedMapIdentifier]',
   templateUrl: './select-gamemode-dialog.component.html',
   styleUrls: ['./select-gamemode-dialog.component.scss']
 })
 export class SelectGamemodeDialogComponent implements OnInit {
 
-  availableMaps: MapIndexEntry[] = [];
+  availableMaps: MapGroup[] = [];
 
   selectedMapIdentifier = new FormControl('', Validators.required);
   selectedGameIdentifier = new FormControl('');
@@ -26,8 +26,8 @@ export class SelectGamemodeDialogComponent implements OnInit {
   });
 
   constructor(public dialogRef: MatDialogRef<SelectGamemodeDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { selectedMap: SpecificMap, mapIndexEntry: MapIndexEntry },
-    private mapIndexLoaderService: MapIndexLoaderService) {
+    @Inject(MAT_DIALOG_DATA) public data: { selectedMap: SpecificMap, mapGroup: MapGroup },
+    private mapGroupLoaderService: MapGroupLoaderService) {
   }
 
   ngOnInit(): void {
@@ -37,15 +37,19 @@ export class SelectGamemodeDialogComponent implements OnInit {
   }
 
   loadMapIndex() {
-    this.mapIndexLoaderService.loadIndex().subscribe(e => this.availableMaps = e)
+    this.mapGroupLoaderService.loadIndex().subscribe(e => this.availableMaps = e)
   }
 
   setSelectedMode(mapIndexIdentifier: string) {
     this.selectedGameIdentifier.setValue(mapIndexIdentifier);
   }
 
-  close() {
-    this.dialogRef.close();
+  close(data? : { mapIdentifier : string, gameIdentifier:string}) {
+    this.dialogRef.close(data);
+  }
+
+  play(){
+    this.close({mapIdentifier : this.selectedMapIdentifier.value, gameIdentifier : this.selectedGameIdentifier.value})
   }
 
 }

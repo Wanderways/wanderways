@@ -1,6 +1,6 @@
 import { Locale_I18n } from '../../../utils/locale_i18n.interface';
 
-export interface MapIndexEntry {
+export interface MapGroup {
         mapIdentifier: string,
         mapFlagUrl: string,
         tagIdList: string[],

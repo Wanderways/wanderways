@@ -1,9 +1,6 @@
 import { Component, ElementRef, Input, OnInit, Output, EventEmitter, ViewChild, SimpleChanges } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { AreaCommons } from '../services/map-data-loader/interfaces/areaCommons.interface';
 import { MapDataLoaderService } from '../services/map-data-loader/map-data-loader.service';
-import { MapIndexEntry } from '../services/map-index-loader/interfaces/map-index-entry.interface';
-import { MapIndexLoaderService } from '../services/map-index-loader/map-index-loader.service';
 import { MapSvgLoaderService } from '../services/map-svg-loader/map-svg-loader.service';
 import { MapSvg } from '../services/map-svg-loader/maps_svg.interface';
 import { pan, zoom, resetTransform, Coordinates } from './utils/index';
@@ -77,7 +74,7 @@ export class MapGenericComponent implements OnInit {
 
   /**
    * Loads the svg for a given map
-   * @param mapIndexEntry The map index entry corresponding to the wanted svg
+   * @param mapIdentifier The map index entry corresponding to the wanted svg
    */
   private loadMapSvg(mapIdentifier: string) {
     

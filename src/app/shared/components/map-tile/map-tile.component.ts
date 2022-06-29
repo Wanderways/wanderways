@@ -1,14 +1,14 @@
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
-import { MapIndexEntry } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-index-entry.interface';
+import { MapGroup } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-group.interface';
 
 @Component({
-  selector: 'app-map-tile[mapEntry]',
+  selector: 'app-map-tile[mapGroup]',
   templateUrl: './map-tile.component.html',
   styleUrls: ['./map-tile.component.scss']
 })
 export class MapTileComponent implements OnInit {
   @HostBinding("class.not-available") notAvaiableClass : boolean =false;
-  @Input("mapEntry") mapEntry! : MapIndexEntry;
+  @Input("mapGroup") mapGroup! : MapGroup;
   @Input("available") available : boolean = false;
   constructor() { }
 

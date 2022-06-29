@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TagGroup } from 'src/app/shared/maps/services/tag-group-loader/tag-group.interface';
 import { TagGroupLoaderService } from 'src/app/shared/maps/services/tag-group-loader/tag-group-loader.service';
-import { MapIndexEntry } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-index-entry.interface';
-import { MapIndexLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-index-loader.service';
+import { MapGroup } from 'src/app/shared/maps/services/map-index-loader/interfaces/map-group.interface';
+import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-index-loader/map-group-loader.service';
 import { MapTagsLoaderService } from 'src/app/shared/maps/services/map-tags-loader/map-tags-loader.service';
 import { Tag } from 'src/app/shared/maps/services/map-tags-loader/tag.interface';
 
@@ -17,12 +17,12 @@ export class MapsPageComponent implements OnInit {
 
   mapTagList : Tag[] = [];
 
-  mapIndexEntryList : MapIndexEntry[] = [];
+  mapGroupList : MapGroup[] = [];
 
   displayFilter : boolean = false;
   tagFilterList : Tag[]=[];
 
-  constructor(private mapIndexLoaderService : MapIndexLoaderService,
+  constructor(private mapGroupLoaderService : MapGroupLoaderService,
               public mapTagsLoaderService : MapTagsLoaderService,
               private TagGroupLoaderService : TagGroupLoaderService) {}
 
@@ -30,27 +30,27 @@ export class MapsPageComponent implements OnInit {
    * On component init
    */
   ngOnInit(): void {
-    this.mapIndexLoaderService.loadIndex().subscribe((e:MapIndexEntry[])=>this.mapIndexEntryList = e);
+    this.mapGroupLoaderService.loadIndex().subscribe((e:MapGroup[])=>this.mapGroupList = e);
     this.TagGroupLoaderService.loadTagGroup().subscribe((e : TagGroup[])=>this.onTagGroupsLoaded(e));
     this.mapTagsLoaderService.loadTags().subscribe((e : Tag[])=>this.onMapTagsLoaded(e));
   }
   /**
    * When map index are loaded, affect them to component index
-   * @param mapIndexEntryList The loaded index
+   * @param mapGroupList The loaded index
    */
   onTagGroupsLoaded(tagGroupList : TagGroup[]){
     this.tagGroupList = tagGroupList;
   }
   /**
    * When map index are loaded, affect them to component index
-   * @param mapIndexEntryList The loaded index
+   * @param mapGroupList The loaded index
    */
-  onMapIndexLoaded(mapIndexEntryList : MapIndexEntry[]){
-    this.mapIndexEntryList = mapIndexEntryList;
+  onMapIndexLoaded(mapGroupList : MapGroup[]){
+    this.mapGroupList = mapGroupList;
   }
   /**
    * When map tags are loaded, affect them to component tags list
-   * @param mapIndexEntryList The loaded tags list
+   * @param mapGroupList The loaded tags list
    */
   onMapTagsLoaded(mapTagList : Tag[]){
     this.mapTagList = mapTagList;
@@ -58,22 +58,22 @@ export class MapsPageComponent implements OnInit {
 
   /**
    * Checks wheter or not a map has a given tag
-   * @param mapIndexEntry The map to check
+   * @param mapGroup The map to check
    * @param tag The tag to test
    * @returns True if the map has the given tag, false otherwise
    */
-  entryHasTag(mapIndexEntry : MapIndexEntry, tag : string) : boolean{
-    return mapIndexEntry.tagIdList.some(e=>e === tag);
+  entryHasTag(mapGroup : MapGroup, tag : string) : boolean{
+    return mapGroup.tagIdList.some(e=>e === tag);
   }
 
   /**
    * Checks wheter or not a map has a given tag
-   * @param mapIndexEntry The map to check
+   * @param mapGroup The map to check
    * @param tag The tag to test
    * @returns True if the map has the given tag, false otherwise
    */
-  tagHasMap(mapTag : Tag, mapIndexEntry :MapIndexEntry[]) : boolean {
-    return mapIndexEntry.some((e : MapIndexEntry) => (this.entryHasTag(e, mapTag.id)));
+  tagHasMap(mapTag : Tag, mapGroup :MapGroup[]) : boolean {
+    return mapGroup.some((e : MapGroup) => (this.entryHasTag(e, mapTag.id)));
   }
   /**
    * Check wheter a given tag is in filtered tag list and is active
