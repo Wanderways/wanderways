@@ -1,6 +1,6 @@
 import { Component, EventEmitter, HostBinding, Input, OnInit, Output, SimpleChange, SimpleChanges } from '@angular/core';
-import { Tag } from 'src/app/shared/maps/services/map-tags-loader/tag.interface';
-import { TagGroup } from 'src/app/shared/maps/services/tag-group-loader/tag-group.interface';
+import { Tag } from 'src/app/shared/maps/services/map-tags/interfaces/tag.interface';
+import { TagGroup } from 'src/app/shared/maps/services/tag-group/interfaces/tag-group.interface';
 
 
 @Component({

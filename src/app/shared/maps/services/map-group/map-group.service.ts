@@ -6,9 +6,9 @@ import { MapGroup } from './interfaces/map-group.interface';
 @Injectable({
   providedIn: 'root'
 })
-export class MapGroupLoaderService {
+export class MapGroupService {
   private PATH : string = "./assets/maps/";
-  private FILE_NAME : string = "maps_index";
+  private FILE_NAME : string = "maps_groups";
   private FILE_EXTENSION=".json";
 
   constructor(private http: HttpClient) { }
@@ -23,13 +23,13 @@ export class MapGroupLoaderService {
 
   /**
    * Check if a map corresponds to a given identifier
-   * @param mapIdentifier The map identifier
+   * @param mapGroupidentifier The map group identifier
    * @returns The corresponding map if exists, else undefined
    */
-  async getEntryIfExists(mapIdentifier : string) : Promise<MapGroup | undefined>{
+  async getEntryIfExists(mapGroupidentifier : string) : Promise<MapGroup | undefined>{
     return new Promise(resolve =>{
       this.loadIndex().subscribe((loadedIndex : MapGroup[]) =>{
-        resolve(loadedIndex.find(mapGroup =>mapGroup.mapIdentifier === mapIdentifier)); // Check the map identifier exists, if so then gets meta data
+        resolve(loadedIndex.find(mapGroup =>mapGroup.mapGroupidentifier === mapGroupidentifier)); // Check the map identifier exists, if so then gets meta data
       });
     });
   }

@@ -1,12 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { TagGroup } from './tag-group.interface';
+import { TagGroup } from './interfaces/tag-group.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class TagGroupLoaderService {
+export class TagGroupService {
   private PATH : string = "./assets/maps/";
   private FILE_NAME : string = "tag_group";
   private FILE_EXTENSION=".json";

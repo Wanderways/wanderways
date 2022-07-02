@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MapSvgLoaderService } from './map-svg-loader.service';
+import { MapDataService } from './map-data.service';
 
-describe('MapLoaderService', () => {
-  let service: MapSvgLoaderService;
+describe('MapDataService', () => {
+  let service: MapDataService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MapSvgLoaderService);
+    service = TestBed.inject(MapDataService);
   });
 
   it('should be created', () => {

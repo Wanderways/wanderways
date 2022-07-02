@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MapTagsLoaderService } from './map-tags-loader.service';
+import { TagGroupService } from './tag-group.service';
 
-describe('MapTagsLoaderService', () => {
-  let service: MapTagsLoaderService;
+describe('TagGroupService', () => {
+  let service: TagGroupService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MapTagsLoaderService);
+    service = TestBed.inject(TagGroupService);
   });
 
   it('should be created', () => {

@@ -1,5 +1,6 @@
-<div class="thumbnail-container" [routerLink]="['/sightseeing']" [queryParams]="{'map':mapGroup.mapIdentifier}">
-    <img class="svg-current-color" src="./assets/maps/map_thumbnail/{{mapGroup.mapIdentifier}}.png" alt="Map thumbnail">
+<div class="thumbnail-container" [routerLink]="['/sightseeing']" [queryParams]="{'map':mapGroup.
+mapGroupidentifier}">
+    <img class="svg-current-color" src="./assets/maps/map_thumbnail/{{mapGroup.mapGroupidentifier}}.png" alt="Map thumbnail">
 </div>
 <span class="current-color">{{mapGroup.mapDisplayName | i18n}}</span>
 <ng-container *ngIf="!available">

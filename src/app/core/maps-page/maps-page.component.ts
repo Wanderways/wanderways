@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { TagGroup } from 'src/app/shared/maps/services/tag-group-loader/tag-group.interface';
-import { TagGroupLoaderService } from 'src/app/shared/maps/services/tag-group-loader/tag-group-loader.service';
-import { MapTagsLoaderService } from 'src/app/shared/maps/services/map-tags-loader/map-tags-loader.service';
-import { Tag } from 'src/app/shared/maps/services/map-tags-loader/tag.interface';
-import { MapGroupLoaderService } from 'src/app/shared/maps/services/map-group-loader/map-group-loader.service';
-import { MapGroup } from 'src/app/shared/maps/services/map-group-loader/interfaces/map-group.interface';
+import { TagGroup } from 'src/app/shared/maps/services/tag-group/interfaces/tag-group.interface';
+import { TagGroupService } from 'src/app/shared/maps/services/tag-group/tag-group.service';
+import { MapTagsService } from 'src/app/shared/maps/services/map-tags/map-tags.service';
+import { Tag } from 'src/app/shared/maps/services/map-tags/interfaces/tag.interface';
+import { MapGroupService } from 'src/app/shared/maps/services/map-group/map-group.service';
+import { MapGroup } from 'src/app/shared/maps/services/map-group/interfaces/map-group.interface';
 
 @Component({
   selector: 'app-maps-page',
@@ -22,17 +22,17 @@ export class MapsPageComponent implements OnInit {
   displayFilter : boolean = false;
   tagFilterList : Tag[]=[];
 
-  constructor(private mapGroupLoaderService : MapGroupLoaderService,
-              public mapTagsLoaderService : MapTagsLoaderService,
-              private TagGroupLoaderService : TagGroupLoaderService) {}
+  constructor(private mapGroupService : MapGroupService,
+              public mapTagsService : MapTagsService,
+              private TagGroupService : TagGroupService) {}
 
   /**
    * On component init
    */
   ngOnInit(): void {
-    this.mapGroupLoaderService.loadIndex().subscribe((e:MapGroup[])=>this.mapGroupList = e);
-    this.TagGroupLoaderService.loadTagGroup().subscribe((e : TagGroup[])=>this.onTagGroupsLoaded(e));
-    this.mapTagsLoaderService.loadTags().subscribe((e : Tag[])=>this.onMapTagsLoaded(e));
+    this.mapGroupService.loadIndex().subscribe((e:MapGroup[])=>this.mapGroupList = e);
+    this.TagGroupService.loadTagGroup().subscribe((e : TagGroup[])=>this.onTagGroupsLoaded(e));
+    this.mapTagsService.loadTags().subscribe((e : Tag[])=>this.onMapTagsLoaded(e));
   }
   /**
    * When map index are loaded, affect them to component index

@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { MapSvg } from './maps_svg.interface';
+import { MapSvg } from './interfaces/maps_svg.interface';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class MapSvgLoaderService {
+export class MapSvgService {
 
   private PATH : string = "./assets/maps/maps_svg/svg/";
   private FILE_EXTENSION=".svg.json";

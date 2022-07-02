@@ -5,7 +5,7 @@ import { AreaCommons } from './interfaces/areaCommons.interface';
 @Injectable({
   providedIn: 'root'
 })
-export class MapDataLoaderService {
+export class MapDataService {
   private PATH : string = "./assets/maps/data/";
   private FILE_EXTENSION=".json";
   
