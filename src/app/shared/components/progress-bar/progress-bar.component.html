@@ -1,0 +1,9 @@
+<div class="progress-bar">
+    <img src="./assets/icons/flag.svg" alt="Flag icon"  class="self-start mr-2">
+    <span class="text-lg font-medium">{{currentFound}}</span>
+    <span class="text-base">/</span>
+    <span class="text-sm font-thin">{{objective}}</span>
+</div>
+<div class="progress-bar-container rounded">
+ <div class="current-progress-bar {{currentStage}}" [style.width]="(currentFound/objective)*100+'%'"></div>
+</div>

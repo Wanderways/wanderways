@@ -8,13 +8,15 @@ import { TagDisplayerComponent } from './tag-displayer/tag-displayer.component';
 import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
 import { RouterModule } from '@angular/router';
 import { DialogsModule } from './dialogs/dialogs.module';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 const components : any[] = [
   LanguageSelectorComponent,
   MapTileComponent,
   SideMenuComponent,
   TagDisplayerComponent,
-  ThemeSelectorComponent
+  ThemeSelectorComponent,
+  ProgressBarComponent
 ]
 
 @NgModule({

@@ -1,0 +1,40 @@
+:host {
+    margin-bottom: 0.5rem;
+
+    .progress-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        img {
+            filter: brightness(25);
+        }
+    }
+
+    .progress-bar-container {
+        position: relative;
+        background-color: #FFFFFF1A;
+        width: 200px;
+        overflow: hidden;
+        height: 6px;
+
+        .current-progress-bar {
+            position: absolute;
+            left: 0;
+            height: 100%;
+            transition: width .2s ease-in;
+        }
+    }
+}
+
+.high {
+    background-color: green;
+}
+
+.medium {
+    background-color: orange;
+}
+
+.low {
+    background-color: red;
+}
