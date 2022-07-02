@@ -14,16 +14,28 @@ export const GameIndex : GameIndexEntry[] = [
         iconUrl: "./assets/icons/keyboard.svg"
     },
     {
-        identifier: "inputVsTim",
+        identifier: "flag",
         displayName : {
-            en_US:["Input vs time"],
-            fr_FR:["Saisie clavier - Contre la montre"],
-            de_DE:["Tastatureingabe - Gegen die Zeit"],
-            es_ES:["Teclado - Contrarreloj"],
-            pt_PT:["Teclado - Time trial"]
+            en_US:["Flag"],
+            fr_FR:["Drapeau"],
+            de_DE:["Flagge"],
+            es_ES:["Bandera"],
+            pt_PT:["Bandeira"]
         },
-        gameUrl : "/input-vs-time",
-        iconUrl: "./assets/icons/keyboard.svg"
+        gameUrl : "/flag",
+        iconUrl: "./assets/icons/flag.svg"
+    },
+    {
+        identifier: "custom",
+        displayName : {
+            en_US:["Custom"],
+            fr_FR:["Customisé"],
+            de_DE:["Benutzerdefinierte"],
+            es_ES:["Personalizado"],
+            pt_PT:["Personalizado"]
+        },
+        gameUrl : "/custom",
+        iconUrl: "./assets/icons/custom.svg"
     }
 ]
 

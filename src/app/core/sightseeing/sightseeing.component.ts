@@ -72,6 +72,7 @@ export class SightseeingComponent implements OnInit {
 
   openDialog(): void {
     this.dialog.open(SelectGamemodeDialogComponent, {
+      minWidth:'50vw',
       data: { selectedMap: this.selectedMap, mapGroup: this.mapGroup }
     }).afterClosed().subscribe((data?: { mapIdentifier: string, gameIdentifier: string }) => {
       if (data) {

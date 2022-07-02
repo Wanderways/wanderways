@@ -13,9 +13,9 @@
     </mat-error>
     <mat-label class="text-xs opacity-60">Select game mode</mat-label>
     <div class="gap-2" class="game-mode-container gap-2">
-      <div matRipple  *ngFor="let gameMode of gameIndex" [class.selected]="gameMode.identifier === selectedGameIdentifier.value" class="game-mode-tile rounded gap-2 px-2" (click)="setSelectedMode(gameMode.identifier)">
+      <div matRipple class="game-mode-tile rounded gap-2 px-2 pt-2 " *ngFor="let gameMode of gameIndex" [class.selected]="gameMode.identifier === selectedGameIdentifier.value" (click)="setSelectedMode(gameMode.identifier)">
         <img class="w-20" src="{{gameMode.iconUrl}}" alt="Icon of {{gameMode.displayName | i18n}}">
-        <span >{{gameMode.displayName | i18n}}</span>
+        <span>{{gameMode.displayName | i18n}}</span>
       </div>
     </div>
   </form>
