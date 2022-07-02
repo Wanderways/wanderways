@@ -1,27 +1,51 @@
-form{
-   .game-mode-container{
+form {
+   .game-mode-container {
       display: flex;
       flex-wrap: wrap;
-      .game-mode-tile{
-         cursor: pointer;
+
+      .game-mode-tile {
+         -webkit-user-select: none;
+         user-select: none;
          display: flex;
+         position: relative;
          flex-direction: column;
          align-items: center;
-         flex : 1 1 0;
+         flex: 1 1 0;
          min-width: 40px;
          max-width: 100px;
-         img{
+
+         &:not(.disabled) {
+            cursor: pointer;
+         }
+
+         img {
             max-height: 3rem;
          }
-         span{
+
+         span {
             text-align: center;
          }
-       &:not(.selected) img{
-          filter: brightness(25);
-       }
-       &.selected{
-         background-color: var(--light-background) !important;
-       }
+
+         &:not(.selected) img {
+            filter: brightness(25);
+         }
+
+         &.selected {
+            background-color: var(--light-background) !important;
+         }
+
+         .game-mode-tile-not-available {
+            @apply text-sm;
+            background: #000000df;
+            top: 0;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            text-align: center;
+         }
       }
    }
 }

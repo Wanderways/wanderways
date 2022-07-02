@@ -11,7 +11,8 @@ export const GameIndex : GameIndexEntry[] = [
             pt_PT:["Time trial"]
         },
         gameUrl : "/against-the-clock",
-        iconUrl: "./assets/icons/keyboard.svg"
+        iconUrl: "./assets/icons/keyboard.svg",
+        available:true
     },
     {
         identifier: "flag",
@@ -23,7 +24,8 @@ export const GameIndex : GameIndexEntry[] = [
             pt_PT:["Bandeira"]
         },
         gameUrl : "/flag",
-        iconUrl: "./assets/icons/flag.svg"
+        iconUrl: "./assets/icons/flag.svg",
+        available:false
     },
     {
         identifier: "custom",
@@ -35,7 +37,8 @@ export const GameIndex : GameIndexEntry[] = [
             pt_PT:["Personalizado"]
         },
         gameUrl : "/custom",
-        iconUrl: "./assets/icons/custom.svg"
+        iconUrl: "./assets/icons/custom.svg",
+        available:false
     }
 ]
 
@@ -43,5 +46,6 @@ export interface GameIndexEntry{
     identifier : string,
     displayName : Locale_I18n,
     gameUrl : string,
-    iconUrl : string
+    iconUrl : string,
+    available:boolean
 }
