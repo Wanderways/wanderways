@@ -203,6 +203,7 @@ img {
 
 .land {
   fill: var(--map-land);
+  background-color:  var(--map-land);
 }
 .land,
 .zone {
@@ -211,11 +212,13 @@ img {
 }
 .found {
   fill: var(--map-land-found);
+  background-color:  var(--map-land-found);
 }
 .selected {
   &,
   .land {
     fill: var(--map-land-selected);
+    background-color:  var(--map-land-selected);
   }
   .zone {
     stroke-width: calc(var(--land-stroke) * 5);
@@ -225,6 +228,7 @@ img {
   &,
   .land {
     fill: var(--map-group-selected);
+    background-color:  var(--map-land-selected);
   }
   .zone {
     stroke-width: calc(var(--land-stroke) * 3);
@@ -232,9 +236,11 @@ img {
 }
 .error {
   fill: var(--map-land-error);
+  background-color:  var(--map-error);
 }
 .won {
   fill: var(--map-land-won);
+  background-color:  var(--map-won);
 }
 
 .separator {
