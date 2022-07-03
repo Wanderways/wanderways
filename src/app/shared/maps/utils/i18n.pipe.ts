@@ -9,7 +9,8 @@ export class I18nPipe implements PipeTransform {
 
   constructor(private i18n : I18nService){}
 
-  transform(value: Locale_I18n, ...args: never[]): string {
+  transform(value: Locale_I18n | undefined, ...args: never[]): string {
+    if(!value)return "";
     return this.i18n.getCurrentLocal(value)[0];
   }
 
