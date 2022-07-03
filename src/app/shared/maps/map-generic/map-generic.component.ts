@@ -21,6 +21,8 @@ export class MapGenericComponent implements OnInit {
 
   @Input('mapIdentifier') mapIdentifier : string = ""; 
 
+  @Input('visibleBorder') visibleBorder : boolean = true;
+
   loadedMap: MapSvg | undefined = undefined;
   loadedData: AreaCommons[] | undefined = undefined;
 

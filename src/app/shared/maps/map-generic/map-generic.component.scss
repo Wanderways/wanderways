@@ -33,9 +33,6 @@
         max-height: 95vh;
         margin: 0 auto;
         touch-action: none;
-        -moz-box-shadow:    inset 0 0 10px #00000088;
-        -webkit-box-shadow: inset 0 0 10px #00000088;
-        box-shadow:         inset 0 0 10px #00000088;
         border-radius: 0.25rem;
         &.panning{
             cursor: move;
@@ -44,6 +41,11 @@
             .land,g{
                 cursor: pointer;
             }
+        }
+        &.visible-border{
+            -moz-box-shadow:    inset 0 0 10px #00000088;
+            -webkit-box-shadow: inset 0 0 10px #00000088;
+            box-shadow:         inset 0 0 10px #00000088;
         }
     }
 }
