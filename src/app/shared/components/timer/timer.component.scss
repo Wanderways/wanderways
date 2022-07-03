@@ -1,0 +1,16 @@
+:host{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    #svg {
+        display: block;
+        position: relative;
+        width: auto;
+        height: 100%;
+        max-height: 60px;
+        circle {
+            transition: stroke-dashoffset .2s linear;
+            stroke-width: 22px;
+        }
+    }
+}

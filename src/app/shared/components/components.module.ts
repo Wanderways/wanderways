@@ -9,6 +9,7 @@ import { ThemeSelectorComponent } from './theme-selector/theme-selector.componen
 import { RouterModule } from '@angular/router';
 import { DialogsModule } from './dialogs/dialogs.module';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { TimerComponent } from './timer/timer.component';
 
 const components : any[] = [
   LanguageSelectorComponent,
@@ -16,7 +17,8 @@ const components : any[] = [
   SideMenuComponent,
   TagDisplayerComponent,
   ThemeSelectorComponent,
-  ProgressBarComponent
+  ProgressBarComponent,
+  TimerComponent
 ]
 
 @NgModule({
