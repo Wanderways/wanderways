@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AreaCommons } from 'src/app/shared/maps/services/map-data/interfaces/areaCommons.interface';
-import { MapGroup } from 'src/app/shared/maps/services/map-group/interfaces/map-group.interface';
-import { MapGroupService } from 'src/app/shared/maps/services/map-group/map-group.service';
-import { Map } from 'src/app/shared/maps/services/map/interfaces/Map.interface';
-import { MapService } from 'src/app/shared/maps/services/map/map.service';
 
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
 import { AreaCommons } from 'src/app/shared/interfaces/areaCommons.interface';
@@ -23,6 +18,8 @@ export class AgainstTheClockComponent implements OnInit {
   areaSelected: AreaCommons | undefined = undefined;
   currentMap: Map | undefined;
 
+  foundNumber = 20;
+
   constructor(public dialog: MatDialog,
     private mapGroupService: MapGroupService,
     private mapService: MapService,
@@ -30,7 +27,7 @@ export class AgainstTheClockComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router) { }
 
-    
+
   ngOnInit(): void {
     setTimeout(() => this.headerDisplayService.setPosition("relative"));
 
@@ -43,11 +40,11 @@ export class AgainstTheClockComponent implements OnInit {
     this.headerDisplayService.setPosition("sticky");
   }
 
-    /**
+  /**
    * When an area is selected, get its data an display informations
    * @param areaCommons An area data
    */
-     onAreaSelected(areaCommons: AreaCommons) {
-      this.areaSelected = areaCommons;
-    }
+  onAreaSelected(areaCommons: AreaCommons) {
+    this.areaSelected = areaCommons;
+  }
 }

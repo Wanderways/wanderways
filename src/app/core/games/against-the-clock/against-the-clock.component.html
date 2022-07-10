@@ -1,1 +1,31 @@
-<app-map-generic *ngIf="currentMap" class="z-0" [mapIdentifier]="currentMap.identifier" (areaSelected)="onAreaSelected($event)"></app-map-generic>
+<!-- <div class="flex items-center justify-between mb-4 px-4">
+    <div class="flex flex-col gap-1">
+        <span class="text-xl font-extralight">{{currentMap?.displayName | i18n}}</span>
+        <span class="text-base font-thin">Against the clock</span>
+    </div>
+</div>
+<div class="flex items-center justify-between mb-4 px-4">
+    <app-progress-bar [currentFound]="foundNumber" [objective]="101"></app-progress-bar>
+    <app-timer></app-timer>
+</div>
+<div class="map-container px-4">
+    <input title="input" label="input" name="input" class="input bottom-4 bg-dark px-4 py-2 mx-2 rounded" type="text" />
+    <app-map-generic class="map flex-grow" *ngIf="currentMap" [visibleBorder]="false" [mapIdentifier]="currentMap.identifier" (areaSelected)="onAreaSelected($event)"></app-map-generic>
+</div> -->
+
+<div class="title-tile">
+    <div class="flex flex-col gap-1 flex-wrap">
+        <span class="text-xl font-extralight">{{currentMap?.displayName | i18n}}</span>
+        <span class="text-base font-thin">Against the clock</span>
+    </div>
+</div>
+<div class="controls-tile"></div>
+<div class="status-tile flex flex-col grow gap-2">
+    <app-progress-bar [currentFound]="foundNumber" [objective]="101"></app-progress-bar>
+    <app-timer class="h-full w-full"></app-timer>
+</div>
+<div class="data-tile"></div>
+<div class="map-tile">
+    <app-map-generic class="map flex-grow h-full" *ngIf="currentMap" [visibleBorder]="true" [mapIdentifier]="currentMap.identifier" (areaSelected)="onAreaSelected($event)"></app-map-generic>
+    <input autofocus type="text" class="absolute bottom-4 mx-auto">
+</div>
