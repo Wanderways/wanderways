@@ -1,4 +1,4 @@
-import { Locale_I18n } from "../maps/utils/locale_i18n.interface";
+import { Locale_I18n } from "../interfaces/locale_i18n.interface";
 
 export const GameIndex : GameIndexEntry[] = [
     {

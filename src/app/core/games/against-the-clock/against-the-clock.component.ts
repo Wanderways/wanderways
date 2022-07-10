@@ -8,6 +8,10 @@ import { Map } from 'src/app/shared/maps/services/map/interfaces/Map.interface';
 import { MapService } from 'src/app/shared/maps/services/map/map.service';
 
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
+import { AreaCommons } from 'src/app/shared/interfaces/areaCommons.interface';
+import { MapGroupService } from 'src/app/shared/services/map-group/map-group.service';
+import { Map } from 'src/app/shared/interfaces/Map.interface';
+import { MapService } from 'src/app/shared/services/map/map.service';
 
 @Component({
   selector: 'app-against-the-clock',

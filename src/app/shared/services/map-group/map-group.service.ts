@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { MapGroup } from './interfaces/map-group.interface';
+import { MapGroup } from '../../interfaces/map-group.interface';
 
 @Injectable({
   providedIn: 'root'

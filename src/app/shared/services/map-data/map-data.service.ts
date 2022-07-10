@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AreaCommons } from './interfaces/areaCommons.interface';
+import { AreaCommons } from '../../interfaces/areaCommons.interface';
 @Injectable({
   providedIn: 'root'
 })

@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { I18nService } from './i18n.service';
-import { Locale_I18n } from './locale_i18n.interface';
+import { Locale_I18n } from '../interfaces/locale_i18n.interface';
+import { I18nService } from '../services/i18n/i18n.service';
 
 @Pipe({
   name: 'i18n'

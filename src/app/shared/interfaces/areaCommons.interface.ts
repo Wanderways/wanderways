@@ -1,4 +1,5 @@
-import { Locale_I18n } from "../../../utils/locale_i18n.interface";
+import { Locale_I18n } from "src/app/shared/interfaces/locale_i18n.interface";
+
 
 export interface AreaCommons{
     identifier : string,

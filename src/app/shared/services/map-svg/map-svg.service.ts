@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { MapSvg } from './interfaces/maps_svg.interface';
+import { MapSvg } from '../../interfaces/maps_svg.interface';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

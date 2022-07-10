@@ -2,13 +2,13 @@ import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SelectGamemodeDialogComponent } from 'src/app/shared/components/dialogs/select-gamemode-dialog/select-gamemode-dialog.component';
-import { AreaCommons } from 'src/app/shared/maps/services/map-data/interfaces/areaCommons.interface';
-import { MapGroup } from 'src/app/shared/maps/services/map-group/interfaces/map-group.interface';
-import { MapGroupService } from 'src/app/shared/maps/services/map-group/map-group.service';
-import { Map } from 'src/app/shared/maps/services/map/interfaces/Map.interface';
-import { MapService } from 'src/app/shared/maps/services/map/map.service';
 
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
+import { AreaCommons } from 'src/app/shared/interfaces/areaCommons.interface';
+import { MapGroup } from 'src/app/shared/interfaces/map-group.interface';
+import { MapGroupService } from 'src/app/shared/services/map-group/map-group.service';
+import { Map } from 'src/app/shared/interfaces/Map.interface';
+import { MapService } from 'src/app/shared/services/map/map.service';
 
 @Component({
   selector: 'app-sightseeing',

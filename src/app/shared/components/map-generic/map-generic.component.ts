@@ -1,8 +1,9 @@
 import { Component, ElementRef, Input, OnInit, Output, EventEmitter, ViewChild, SimpleChanges } from '@angular/core';
-import { AreaCommons } from '../services/map-data/interfaces/areaCommons.interface';
-import { MapDataService } from '../services/map-data/map-data.service';
-import { MapSvgService } from '../services/map-svg/map-svg.service';
-import { MapSvg } from '../services/map-svg/interfaces/maps_svg.interface';
+import { AreaCommons } from '../../interfaces/areaCommons.interface';
+import { MapSvg } from '../../interfaces/maps_svg.interface';
+import { MapDataService } from '../../services/map-data/map-data.service';
+import { MapSvgService } from '../../services/map-svg/map-svg.service';
+
 import { pan, zoom, resetTransform, Coordinates } from './utils/index';
 
 @Component({

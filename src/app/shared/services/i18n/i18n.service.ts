@@ -1,5 +1,5 @@
 import { Inject, Injectable, LOCALE_ID } from '@angular/core';
-import { Locale_I18n } from './locale_i18n.interface';
+import { Locale_I18n } from '../../interfaces/locale_i18n.interface';
 
 @Injectable({
   providedIn: 'root'

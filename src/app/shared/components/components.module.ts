@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MapsModule } from '../maps/maps.module';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { MapTileComponent } from './map-tile/map-tile.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
@@ -10,6 +9,8 @@ import { RouterModule } from '@angular/router';
 import { DialogsModule } from './dialogs/dialogs.module';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TimerComponent } from './timer/timer.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { MapGenericComponent } from './map-generic/map-generic.component';
 
 const components : any[] = [
   LanguageSelectorComponent,
@@ -18,7 +19,8 @@ const components : any[] = [
   TagDisplayerComponent,
   ThemeSelectorComponent,
   ProgressBarComponent,
-  TimerComponent
+  TimerComponent,
+  MapGenericComponent
 ]
 
 @NgModule({
@@ -26,8 +28,8 @@ const components : any[] = [
     ...components
   ],
   imports: [
+    PipesModule,
     CommonModule,
-    MapsModule,
     RouterModule,
     DialogsModule
   ],

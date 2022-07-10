@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Tag } from './interfaces/tag.interface';
+import { Tag } from '../../interfaces/tag.interface';
 
 @Injectable({
   providedIn: 'root'
