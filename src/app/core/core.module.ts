@@ -10,6 +10,7 @@ import { SightseeingComponent } from './sightseeing/sightseeing.component';
 import { ComponentsModule } from '../shared/components/components.module';
 import { AgainstTheClockComponent } from './games/against-the-clock/against-the-clock.component';
 import { PipesModule } from '../shared/pipes/pipes.module';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 let components : any[] = [
   HomeComponent,
@@ -30,6 +31,7 @@ let matModules : any[]=[
     CommonModule,
     RouterModule,
     ComponentsModule,
+    MatExpansionModule,
     ...matModules
   ]
 })

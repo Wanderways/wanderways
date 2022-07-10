@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Label</th>
+  </tr>
+</table>
+<div class="data-container custom-scrollbar" [style.maxHeight]="maxHeight">
+  <table>
+    <tr *ngFor="let d of data">
+      <td>{{d.identifier}}</td>
+      <td>{{d.name| i18n}}</td>
+    </tr>
+  </table>
+</div>

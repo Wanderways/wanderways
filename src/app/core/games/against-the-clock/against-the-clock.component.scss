@@ -43,16 +43,8 @@
         grid-area: title-tile;
     }
 
-    .controls-tile {
-        grid-area: controls-tile;
-    }
-
-    .status-tile {
-        grid-area: status-tile;
-    }
-
-    .data-tile {
-        grid-area: data-tile;
+    .miscellaneous-tile {
+        grid-area: miscellaneous-tile;
     }
 
     .map-tile {
@@ -94,13 +86,9 @@
     @media screen and (min-width: 1024px) {
         gap: 1rem;
         grid-template-columns: 2rem 4fr 1fr 2rem;
-        grid-template-rows: auto 1fr auto auto;
+        grid-template-rows: auto 1fr;
         grid-template-areas:
             ". map-tile title-tile ."
-            ". map-tile status-tile ."
-            ". map-tile controls-tile ."
-            ". map-tile data-tile .";
+            ". map-tile miscellaneous-tile .";
     }
-
-
 }

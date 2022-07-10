@@ -11,6 +11,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TimerComponent } from './timer/timer.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { MapGenericComponent } from './map-generic/map-generic.component';
+import { DataListComponent } from './data-list/data-list.component';
 
 const components : any[] = [
   LanguageSelectorComponent,
@@ -20,12 +21,13 @@ const components : any[] = [
   ThemeSelectorComponent,
   ProgressBarComponent,
   TimerComponent,
-  MapGenericComponent
+  MapGenericComponent,
+  DataListComponent
 ]
 
 @NgModule({
   declarations: [
-    ...components
+    ...components,
   ],
   imports: [
     PipesModule,

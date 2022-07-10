@@ -14,18 +14,37 @@
 </div> -->
 
 <div class="title-tile">
-    <div class="flex flex-col gap-1 flex-wrap">
-        <span class="text-xl font-extralight">{{currentMap?.displayName | i18n}}</span>
-        <span class="text-base font-thin">Against the clock</span>
-    </div>
+  <div class="flex flex-col gap-1 flex-wrap">
+    <span class="text-xl font-extralight">{{
+      currentMap?.displayName | i18n
+    }}</span>
+    <span class="text-base font-thin">Against the clock</span>
+  </div>
 </div>
-<div class="controls-tile"></div>
-<div class="status-tile flex flex-col grow gap-2">
-    <app-progress-bar [currentFound]="foundNumber" [objective]="101"></app-progress-bar>
-    <app-timer class="h-full w-full"></app-timer>
-</div>
-<div class="data-tile"></div>
 <div class="map-tile">
-    <app-map-generic class="map flex-grow h-full" *ngIf="currentMap" [visibleBorder]="true" [mapIdentifier]="currentMap.identifier" (areaSelected)="onAreaSelected($event)"></app-map-generic>
-    <input autofocus type="text" class="absolute bottom-4 mx-auto">
+  <app-map-generic
+    class="map flex-grow h-full"
+    *ngIf="currentMap"
+    [visibleBorder]="true"
+    [mapIdentifier]="currentMap.identifier"
+    (areaSelected)="onAreaSelected($event)"
+  ></app-map-generic>
+  <input title="response" autofocus type="text" class="absolute bottom-4 mx-auto" />
+</div>
+
+<div class="miscellaneous-tile">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Résultat </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <app-data-list [mapIdentifier]="currentMap?.identifier" [maxHeight]="'6rem'"></app-data-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <app-progress-bar
+    [currentFound]="foundNumber"
+    [objective]="101"
+  ></app-progress-bar>
+  <app-timer class="h-full w-full"></app-timer>
 </div>
