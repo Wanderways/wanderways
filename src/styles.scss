@@ -278,3 +278,5 @@ mat-dialog-container,
 
 
 @include customMixins.scrollbar('.mat-select-panel', true);
+
+@include customMixins.scrollbar('.custom-scrollbar', true);
