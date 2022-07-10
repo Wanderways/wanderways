@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnInit, Output, EventEmitter, ViewChild, SimpleChanges } from '@angular/core';
-import { AreaCommons } from '../../interfaces/areaCommons.interface';
+import { MapData } from '../../interfaces/MapData.interface';
 import { MapSvg } from '../../interfaces/maps_svg.interface';
 import { MapDataService } from '../../services/map-data/map-data.service';
 import { MapSvgService } from '../../services/map-svg/map-svg.service';
@@ -13,7 +13,7 @@ import { pan, zoom, resetTransform, Coordinates } from './utils/index';
 })
 export class MapGenericComponent implements OnInit {
 
-  @Output('areaSelected') areaSelected: EventEmitter<AreaCommons> = new EventEmitter<AreaCommons>();
+  @Output('areaSelected') areaSelected: EventEmitter<MapData> = new EventEmitter<MapData>();
 
   @Input('colorGroup') colorGroup: boolean = false;
 
@@ -25,9 +25,9 @@ export class MapGenericComponent implements OnInit {
   @Input('visibleBorder') visibleBorder : boolean = true;
 
   loadedMap: MapSvg | undefined = undefined;
-  loadedData: AreaCommons[] | undefined = undefined;
+  loadedData: MapData[] | undefined = undefined;
 
-  currentSelected: AreaCommons | undefined = undefined;
+  currentSelected: MapData | undefined = undefined;
 
   mouseStates: MouseStates = {
     isPanned: false,
@@ -88,7 +88,7 @@ export class MapGenericComponent implements OnInit {
     });
   }
   private loadMapData(mapIdentifier: string) {
-    this.mapDataService.getMapMetaData(mapIdentifier).subscribe(data => {
+    this.mapDataService.getMapData(mapIdentifier).subscribe(data => {
       this.loadedData = data;
     });
   }

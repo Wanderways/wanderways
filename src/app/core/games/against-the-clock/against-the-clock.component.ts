@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
-import { AreaCommons } from 'src/app/shared/interfaces/areaCommons.interface';
+import { MapData } from 'src/app/shared/interfaces/MapData.interface';
 import { MapGroupService } from 'src/app/shared/services/map-group/map-group.service';
 import { Map } from 'src/app/shared/interfaces/Map.interface';
 import { MapService } from 'src/app/shared/services/map/map.service';
@@ -15,7 +15,7 @@ import { MapService } from 'src/app/shared/services/map/map.service';
 })
 export class AgainstTheClockComponent implements OnInit {
 
-  areaSelected: AreaCommons | undefined = undefined;
+  areaSelected: MapData | undefined = undefined;
   currentMap: Map | undefined;
 
   foundNumber = 20;
@@ -44,7 +44,7 @@ export class AgainstTheClockComponent implements OnInit {
    * When an area is selected, get its data an display informations
    * @param areaCommons An area data
    */
-  onAreaSelected(areaCommons: AreaCommons) {
+  onAreaSelected(areaCommons: MapData) {
     this.areaSelected = areaCommons;
   }
 }

@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { SelectGamemodeDialogComponent } from 'src/app/shared/components/dialogs/select-gamemode-dialog/select-gamemode-dialog.component';
 
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
-import { AreaCommons } from 'src/app/shared/interfaces/areaCommons.interface';
+import { MapData } from 'src/app/shared/interfaces/MapData.interface';
 import { MapGroup } from 'src/app/shared/interfaces/map-group.interface';
 import { MapGroupService } from 'src/app/shared/services/map-group/map-group.service';
 import { Map } from 'src/app/shared/interfaces/Map.interface';
@@ -19,7 +19,7 @@ export class SightseeingComponent implements OnInit {
 
   mapGroup: MapGroup | undefined = undefined;
   maps: Map[] = [];
-  areaSelected: AreaCommons | undefined = undefined;
+  areaSelected: MapData | undefined = undefined;
 
   selectedMap: Map | undefined;
 
@@ -68,7 +68,7 @@ export class SightseeingComponent implements OnInit {
    * When an area is selected, get its data an display informations
    * @param areaCommons An area data
    */
-  onAreaSelected(areaCommons: AreaCommons) {
+  onAreaSelected(areaCommons: MapData) {
     this.areaSelected = areaCommons;
   }
 
