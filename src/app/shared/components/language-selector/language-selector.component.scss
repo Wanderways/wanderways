@@ -1,20 +1,27 @@
 :host{
-    @apply relative;
-    @apply cursor-pointer;
-    @apply select-none;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select:none;
+    user-select: none;
     flex-grow : 1;
     .proposition-line{
-        @apply  flex gap-2 p-2 items-center rounded;
-        @apply rounded;
+        @apply  gap-2 p-2 rounded;
+        display: flex;
+        align-items: center;
         span{
-            @apply uppercase;
+            text-transform: uppercase;
         }
         &.selected{
             @apply text-white;
         }
     }
     #proposition-container{
-        @apply absolute flex flex-col rounded w-full;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        bottom: 100%;
         background-color: var(--dark-background);
+        @apply rounded;
     }
 }

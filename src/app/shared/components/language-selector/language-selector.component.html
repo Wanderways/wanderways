@@ -1,3 +1,4 @@
+<div *ngIf="displayLanguageSelector" (click)="displayLanguageSelector = false" class="fixed w-screen h-screen top-0 left-0 cursor-default"></div>
 <div matRipple  class="proposition-line" [ngClass]="{'bg-violetta-theme selected': displayLanguageSelector }" (click)="displayLanguageSelector = !displayLanguageSelector" >
   <img
     src="https://flagcdn.com/w20/{{currentLanguage.iso3166}}.png"

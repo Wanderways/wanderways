@@ -17,8 +17,13 @@
         }
     }
     #proposition-container{
+        @apply rounded;
         overflow-y: auto;
-        @apply absolute flex flex-col rounded w-full;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        bottom: 100%;
         background-color: var(--dark-background);
     }
 }
