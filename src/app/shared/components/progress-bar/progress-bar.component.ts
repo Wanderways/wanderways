@@ -40,6 +40,7 @@ export class ProgressBarComponent {
   }
 
   getAsPercentage(): number {
+    if(this.objective === 0 ) return 0;
     return (this.currentFound / this.objective) * 100;
   }
 }
