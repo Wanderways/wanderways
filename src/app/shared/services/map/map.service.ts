@@ -40,11 +40,10 @@ export class MapService {
     return new Promise(
       resolve =>{
       this.getMaps().subscribe((loadedIndex : Map[]) =>{
-        console.log(loadedIndex.filter(map =>map.mapGroupIdentifier === mapGroupIdentifier));
         resolve(loadedIndex.filter(map =>map.mapGroupIdentifier === mapGroupIdentifier));
       });
     });
   }
 
-  
+
 }
