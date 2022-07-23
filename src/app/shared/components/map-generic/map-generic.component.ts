@@ -100,33 +100,10 @@ export class MapGenericComponent implements OnInit {
   areaClick(event: MouseEvent, areaId: string): void {
     this.removeLandsColoration()
     this.currentSelected = this.loadedData!.find(e => e.identifier === areaId);
-    if (!this.currentSelected) return;
-    document.getElementById(areaId)!.classList.add('selected');
-    this.colorAreas(this.currentSelected!.group);
     this.areaSelected.emit(this.currentSelected);
-  }
-
-  removeLandsColoration() {
-    Array.from(document.getElementsByClassName("selected")).forEach(e => {
-      (<HTMLElement>e).classList.remove('selected');
-    });
-
-    Array.from(document.getElementsByClassName("group-selected")).forEach(e => {
-      (<HTMLElement>e).classList.remove('group-selected');
-    });
-  }
-
-  /**
-   * Color selected group, but not the selected area
-   * @param className The group to color
-   */
-  private colorAreas(className: string) {
-    let elements: HTMLCollectionOf<Element> = document.getElementsByClassName(className);
-    Array.from(elements).forEach(e => {
-      if (this.currentSelected!.identifier !== (<HTMLElement>e).id) {
-        (<HTMLElement>e).classList.add("group-selected");
-      }
-    })
+    if (!this.currentSelected) return;
+    colorArea(areaId, AreaStatus.SELECTED);
+    colorAreas(this.currentSelected!.identifier, this.currentSelected!.group);
   }
 
   /**
