@@ -1,18 +1,3 @@
-<!-- <div class="flex items-center justify-between mb-4 px-4">
-    <div class="flex flex-col gap-1">
-        <span class="text-xl font-extralight">{{currentMap?.displayName | i18n}}</span>
-        <span class="text-base font-thin">Against the clock</span>
-    </div>
-</div>
-<div class="flex items-center justify-between mb-4 px-4">
-    <app-progress-bar [currentFound]="foundNumber" [objective]="101"></app-progress-bar>
-    <app-timer></app-timer>
-</div>
-<div class="map-container px-4">
-    <input title="input" label="input" name="input" class="input bottom-4 bg-dark px-4 py-2 mx-2 rounded" type="text" />
-    <app-map-generic class="map flex-grow" *ngIf="currentMap" [visibleBorder]="false" [mapIdentifier]="currentMap.identifier" (areaSelected)="onAreaSelected($event)"></app-map-generic>
-</div> -->
-
 <div class="title-tile">
   <div class="flex flex-col gap-1 flex-wrap">
     <span class="text-xl font-extralight">{{
@@ -27,24 +12,30 @@
     *ngIf="currentMap"
     [visibleBorder]="true"
     [mapIdentifier]="currentMap.identifier"
+    [currentSelected]="currentSelected"
+    [inGame]="true"
+    [foundList]="foundList"
     (areaSelected)="onAreaSelected($event)"
   ></app-map-generic>
-  <input title="response" autofocus type="text" class="absolute bottom-4 mx-auto" />
+  <input title="response" [formControl]="userInput" (keyup)="onInputChange()" autofocus type="text" class="absolute bottom-4 mx-auto" />
 </div>
 
 <div class="miscellaneous-tile">
+  <div class="flex gap-2 justify-between px-4">
+    <app-progress-bar
+    [currentFound]="foundList.length"
+    [objective]="originList.length"
+  ></app-progress-bar>
+  <app-timer [timerDuration]="originList.length*10"></app-timer>
+  </div>
+
   <mat-accordion>
-    <mat-expansion-panel>
+    <mat-expansion-panel [expanded]="true">
       <mat-expansion-panel-header>
-        <mat-panel-title> Résultat </mat-panel-title>
+        <mat-panel-title><img src="assets/icons/datalist.svg" class="mr-2" style="height: 0.75rem; filter: brightness(25);" alt=""> Résultat </mat-panel-title>
       </mat-expansion-panel-header>
 
-      <app-data-list [mapIdentifier]="currentMap?.identifier" [maxHeight]="'6rem'"></app-data-list>
+      <app-data-list [originList]="originList" [foundList]="foundList" [currentSelected]="currentSelected" [inGame]="true" [maxHeight]="'10rem'" (onSelectedRow)="onSelectedRow($event)"></app-data-list>
     </mat-expansion-panel>
   </mat-accordion>
-  <app-progress-bar
-    [currentFound]="foundNumber"
-    [objective]="101"
-  ></app-progress-bar>
-  <app-timer class="h-full w-full"></app-timer>
 </div>

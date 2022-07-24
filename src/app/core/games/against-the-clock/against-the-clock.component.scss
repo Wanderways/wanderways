@@ -45,6 +45,18 @@
 
     .miscellaneous-tile {
         grid-area: miscellaneous-tile;
+        display: flex;
+        flex-direction: column;
+        @apply gap-2;
+
+        mat-expansion-panel-header {
+            height: 2rem;
+
+            &:hover,
+            &.mat-expanded {
+                background-color: #ffffff11;
+            }
+        }
     }
 
     .map-tile {
@@ -60,7 +72,7 @@
             width: 100%;
             padding: 0.5rem 1rem;
             max-width: 30rem;
-            -webkit-box-shadow: 0px 3px 5px -1px #000000; 
+            -webkit-box-shadow: 0px 3px 5px -1px #000000;
             box-shadow: 0px 3px 5px -1px #000000;
         }
     }
@@ -70,8 +82,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             ". title-tile title-tile ."
-            ". status-tile status-tile ."
-            ". map-tile map-tile ."
+            ". map-tile miscellaneous-tile ."
     }
 
     @media screen and (min-width: 768px) {
@@ -79,8 +90,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             ". title-tile title-tile ."
-            ". status-tile status-tile ."
-            ". map-tile map-tile ."
+            ". map-tile miscellaneous-tile ."
     }
 
     @media screen and (min-width: 1024px) {
