@@ -2,12 +2,16 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    #map-control-box{
-        -webkit-user-select : none;
+    #map-control-box {
+        @apply gap-2;
+        @apply mb-4 mr-4;
+        -webkit-user-select: none;
         user-select: none;
-        @apply flex flex-col gap-2 absolute;
-        @apply bottom-0 right-0 mb-4 mr-4 ;
-        div{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        right: 0;
             position: relative;
             @apply flex flex-col bg-white rounded ;
             hr{
