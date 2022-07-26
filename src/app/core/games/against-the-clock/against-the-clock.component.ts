@@ -79,7 +79,7 @@ export class AgainstTheClockComponent implements OnInit {
 
   onInputChange() {
     const currentInput = replaceSpecialChars(this.userInput.value)
-    const result = this.originList.find(e => this.getLocaleFromI18n(e.name)?.find(el => replaceSpecialChars(el) === currentInput))
+    const result = this.originList.find(e => this.getLocaleFromI18n(e.name)?.find(el => replaceSpecialChars(el) === currentInput));
     if (result) {
       if (!this.foundList.find(el => el.identifier === result?.identifier) || this.foundList.find(el => el.identifier === result?.identifier) && this.extendedNameExist(currentInput, result! || result)) {
         this.foundList.push(result!);
@@ -105,7 +105,7 @@ export class AgainstTheClockComponent implements OnInit {
   }
 
   getLocaleFromI18n(data: Locale_I18n): string[] {
-    return data[this.currentLanguage];
+    return data[this.currentLanguage] ? data[this.currentLanguage] : data['en_US'];
   }
   clearInput() {
     this.userInput.reset("");
