@@ -1,3 +1,33 @@
-.data-container{
-    min-height: 5rem;
+.data-container {
+  min-height: 5rem;
+  scroll-behavior: smooth;
+}
+
+.col-id {
+  width: 4rem;
+  height: 2rem;
+}
+
+table {
+  width: 100%;
+
+  tr {
+
+    th,
+    td {
+      text-align: left;
+      padding-left: 0.25rem;
+    }
+  }
+
+  .data-row {
+    &.displayed-row:hover {
+      cursor: pointer;
+      background-color: #ffffff11;
+    }
+    &:not(.displayed-row){
+      -webkit-user-select:none;
+      user-select: none;
+    }
+  }
 }

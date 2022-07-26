@@ -1,14 +1,14 @@
 <table>
-  <tr>
-    <th>Id</th>
-    <th>Label</th>
+  <tr class="table-header">
+    <th class="col-id">Id</th>
+    <th class="col-name">Label</th>
   </tr>
 </table>
-<div class="data-container custom-scrollbar" [style.maxHeight]="maxHeight">
-  <table>
-    <tr *ngFor="let d of data">
-      <td>{{d.identifier}}</td>
-      <td>{{d.name| i18n}}</td>
+<div #dataContainer class="data-container custom-scrollbar" [style.maxHeight]="maxHeight">
+  <table #dataTable>
+    <tr id="data-list-row-{{d.identifier}}" class="data-row {{isRowDisplayable(d)?'displayed-row':''}}" *ngFor="let d of originList" (click)="isRowDisplayable(d) && onSelectedRow(d)" matRipple>
+      <td class="col-id" >{{isRowDisplayable(d) ? d.identifier : '--'}}</td>
+      <td class="col-name">{{isRowDisplayable(d) ? (d.name | i18n) : '--'}}</td>
     </tr>
   </table>
 </div>
