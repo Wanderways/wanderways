@@ -1,13 +1,13 @@
 <ng-container *ngIf="loadedMap !== undefined; else loading">
-  
+
   <svg #mapRef id="map-container" [class.visible-border]="visibleBorder" [attr.xlmns]="loadedMap.xlmns" attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
   [class.panning]="mouseStates.isPanned"
   (wheel)="wheelEvent($event)" (pointerdown)="panningBegin($event)" (pointerup)="panningEnd($event)" (pointerleave)="pointerMove($event)"  (pointermove)="pointerMove($event)">
     <g #groupRef id="scaled-map-container" >
-      <path *ngFor="let path of loadedMap.contentPath" id="{{ path.id }}" (click)="areaClick($event, path.id)"
+      <path *ngFor="let path of loadedMap.contentPath" id="{{ path.id }}" (click)="areaClick(path.id)"
         class="{{ path.class }}" [attr.d]="path.d" />
-      <g *ngFor="let groupe of loadedMap.contentGroup" id="{{ groupe.id }}"  class="{{ groupe.class }}" (click)="areaClick($event, groupe.id)">
-        <path *ngFor="let groupePath of groupe.contentPath" id="{{ groupePath.id }}" 
+      <g *ngFor="let groupe of loadedMap.contentGroup" id="{{ groupe.id }}"  class="{{ groupe.class }}" (click)="areaClick(groupe.id)">
+        <path *ngFor="let groupePath of groupe.contentPath" id="{{ groupePath.id }}"
           class="{{ groupePath.class }}" [attr.d]="groupePath.d" />
       </g>
     </g>
@@ -29,14 +29,12 @@
     </div>
   </div>
 </ng-container>
-<div class="consultation absolute z-0 p-3 m-3 bg-dark rounded" style="min-width: 168px; display:grid;  grid-gap:0.25rem 1rem; grid-template-columns: auto 1fr; grid-template-rows: 2rem; align-items: center;" *ngIf="currentSelected">
-
+<div class="consultation  bg-dark {{consultationSide}}" *ngIf="canCurrentSelectedBeDisplayed(currentSelected)" (mouseenter)="mouseEnterConsultation()">
     <div class="font-thin text-xs">Prefecture</div>
-    <div class="font-medium">{{ currentSelected.name | i18n}}</div>
+    <div class="font-medium">{{ currentSelected!.name | i18n}}</div>
     <hr style="grid-column: 1/3;">
     <div class="font-thin text-xs">Flag</div>
-    <img style="max-height: 3rem;" src="{{ currentSelected.flag_url }}" alt="Flag of {{ currentSelected.name | i18n}}">
-    
+    <img style="max-height: 3rem;" src="{{ currentSelected!.flag_url }}" alt="Flag of {{ currentSelected!.name | i18n}}">
 </div>
 
 <ng-template #loading>

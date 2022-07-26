@@ -1,7 +1,8 @@
-:host{
+:host {
     display: flex;
     position: relative;
     flex-direction: column;
+
     #map-control-box {
         @apply gap-2;
         @apply mb-4 mr-4;
@@ -12,17 +13,23 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        div {
+            @apply bg-white rounded;
             position: relative;
-            @apply flex flex-col bg-white rounded ;
-            hr{
+            display: flex;
+            flex-direction: column;
+
+            hr {
                 background-color: #88888888;
                 height: 2.5px;
                 margin: 0 0.5rem;
             }
-            button{
+
+            button {
                 padding: 0.25rem;
                 position: relative;
-                img{
+
+                img {
                     margin: 0.25rem;
                     width: 1rem;
                     height: 1rem;
@@ -31,24 +38,49 @@
             }
         }
     }
-    #map-container{
+
+    #map-container {
         width: 100%;
         height: 100%;
         margin: 0 auto;
         touch-action: none;
         border-radius: 0.25rem;
-        &.panning{
+
+        &.panning {
             cursor: move;
         }
-        &:not(.panning){
-            .land,g{
+
+        &:not(.panning) {
+
+            .land,
+            g {
                 cursor: pointer;
             }
         }
-        &.visible-border{
-            -moz-box-shadow:    inset 0 0 10px #00000088;
+
+        &.visible-border {
+            -moz-box-shadow: inset 0 0 10px #00000088;
             -webkit-box-shadow: inset 0 0 10px #00000088;
-            box-shadow:         inset 0 0 10px #00000088;
+            box-shadow: inset 0 0 10px #00000088;
+        }
+    }
+
+    .consultation {
+        @apply rounded;
+        @apply p-3 m-3;
+        position: absolute;
+        min-width: 168px;
+        z-index: 0;
+        display: grid;
+        grid-gap: 0.25rem 1rem;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 2rem;
+        align-items: center;
+        &.left{
+            left: 0;
+        }
+        &.right{
+            right: 0;
         }
     }
 }
