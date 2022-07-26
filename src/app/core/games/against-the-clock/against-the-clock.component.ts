@@ -1,4 +1,4 @@
-import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -29,7 +29,8 @@ export class AgainstTheClockComponent implements OnInit {
   foundList: MapData[] = [];
   originList: MapData[] = [];
   currentLanguage = 'fr_FR'//this.locale.replace(/-/, '_');
-
+  displaySideMenu: boolean = false;
+  mobileDisplay: boolean | undefined = (window.innerWidth < 1024 ? true : undefined);
 
   constructor(public dialog: MatDialog,
     private mapGroupService: MapGroupService,
@@ -57,6 +58,14 @@ export class AgainstTheClockComponent implements OnInit {
   }
 
   /**
+ * On scroll, if not top page, then blur header
+ */
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.mobileDisplay = window.innerWidth < 1024;
+  }
+
+  /**
    * When an area is selected, get its data an display informations
    * @param areaCommons An area data
    */
@@ -65,16 +74,16 @@ export class AgainstTheClockComponent implements OnInit {
   }
   onSelectedRow(mapData: MapData) {
     this.currentSelected = undefined;
-    setTimeout(()=>this.currentSelected = mapData); // force change detection
+    setTimeout(() => this.currentSelected = mapData); // force change detection
   }
 
   onInputChange() {
     const currentInput = replaceSpecialChars(this.userInput.value)
     const result = this.originList.find(e => this.getLocaleFromI18n(e.name)?.find(el => replaceSpecialChars(el) === currentInput))
-    if(result){
-      if(!this.foundList.find(el=>el.identifier === result?.identifier) || this.foundList.find(el=>el.identifier === result?.identifier) && this.extendedNameExist(currentInput,result! || result )) {
+    if (result) {
+      if (!this.foundList.find(el => el.identifier === result?.identifier) || this.foundList.find(el => el.identifier === result?.identifier) && this.extendedNameExist(currentInput, result! || result)) {
         this.foundList.push(result!);
-        this.toFindList.filter(e=>e.identifier !== result!.identifier);
+        this.toFindList.filter(e => e.identifier !== result!.identifier);
         this.currentSelected = result;
         colorArea(result.identifier, AreaStatus.FOUND);
         this.clearInput();
@@ -88,10 +97,10 @@ export class AgainstTheClockComponent implements OnInit {
      * @param name : A name, of anything
      * @returns True if one or more exists
      */
-  public extendedNameExist(name: string, found : MapData): MapData | undefined {
+  public extendedNameExist(name: string, found: MapData): MapData | undefined {
     var regex = new RegExp('^' + replaceSpecialChars(name) + '.+');
     return this.toFindList.find(e => {
-      return found.identifier !== e.identifier && replaceSpecialChars(this.getLocaleFromI18n(e.name).find(el => replaceSpecialChars(el) ===name) || "").match(regex);
+      return found.identifier !== e.identifier && replaceSpecialChars(this.getLocaleFromI18n(e.name).find(el => replaceSpecialChars(el) === name) || "").match(regex);
     });
   }
 

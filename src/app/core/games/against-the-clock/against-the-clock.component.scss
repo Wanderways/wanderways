@@ -1,104 +1,91 @@
-// :host {
-//     position: relative;
-//     width: 100%;
-//     // height: 100%;
-//     max-width: min(1392px, 100vw);
-//     display: flex;
-//     flex-direction: column;
-//     flex: 1 0 auto;
-//     margin-left: auto;
-//     margin-right: auto;
-//     z-index: 1;
-
-//     .map-container {
-//         position: relative;
-//         display: flex;
-//         justify-content: center;
-//         .input{
-//             position: absolute;
-//             width: 100%;
-//             max-width: 25rem;
-//             opacity: 0.9;
-//             z-index: 10;
-//             box-shadow: 0 3px 3px 1px #0000004a;
-//             &:active,
-//             &:focus{
-//                 outline: red;
-//                 border-color: red;
-//                 -webkit-box-shadow: red;
-//                 box-shadow: red;
-//             }
-//         }
-//         .map {
-//             max-height: 80vh;
-//         }
-//     }
-// }
-
 :host {
-    display: grid;
-    max-height: 90vh;
+  display: grid;
+  max-height: 90vh;
+  height: 100%;
+  max-width: min(1392px, 100vw);
 
-    .title-tile {
-        grid-area: title-tile;
+  margin: 0 auto;
+
+  .title-tile {
+    grid-area: title-tile;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .progress-tile {
+    grid-area: progress-tile;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+  .miscellaneous-tile {
+    grid-area: miscellaneous-tile;
+    display: flex;
+    flex-direction: column;
+    @apply gap-2;
+
+    mat-expansion-panel-header {
+      height: 2rem;
+
+      &:hover,
+      &.mat-expanded {
+        background-color: #ffffff11;
+      }
     }
+  }
 
-    .miscellaneous-tile {
-        grid-area: miscellaneous-tile;
-        display: flex;
-        flex-direction: column;
-        @apply gap-2;
+  .map-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: map-tile;
 
-        mat-expansion-panel-header {
-            height: 2rem;
+    input[type="text"] {
+      width: 100%;
+      max-width: 30rem;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      background-color: #99999955;
+      -webkit-box-shadow: 0px 3px 5px -1px #000000;
+      box-shadow: 0px 3px 5px -1px #000000;
 
-            &:hover,
-            &.mat-expanded {
-                background-color: #ffffff11;
-            }
-        }
+      &.inside {
+        position: absolute;
+        bottom: 1rem;
+      }
+
+      &.outside {
+        margin: 1rem auto;
+      }
     }
+  }
 
-    .map-tile {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        grid-area: map-tile;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 2rem 1fr 1fr 2rem;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      ". title-tile title-tile ."
+      ". progress-tile progress-tile ."
+      ". map-tile map-tile ."
+  }
 
-        input[type="text"] {
-            position: absolute;
-            border-radius: 0.25rem;
-            background-color: #99999955;
-            width: 100%;
-            padding: 0.5rem 1rem;
-            max-width: 30rem;
-            -webkit-box-shadow: 0px 3px 5px -1px #000000;
-            box-shadow: 0px 3px 5px -1px #000000;
-        }
+  @media screen and (min-width: 1024px) {
+    gap: 1rem;
+    grid-template-columns: 2rem 4fr 1fr 2rem;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      ". map-tile title-tile ."
+      ". map-tile progress-tile ."
+      ". map-tile miscellaneous-tile .";
+
+    .progress-tile {
+      div{
+        align-items: center;
+      }
     }
-
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 2rem 1fr 1fr 2rem;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            ". title-tile title-tile ."
-            ". map-tile miscellaneous-tile ."
-    }
-
-    @media screen and (min-width: 768px) {
-        grid-template-columns: 2rem 1fr 1fr 2rem;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            ". title-tile title-tile ."
-            ". map-tile miscellaneous-tile ."
-    }
-
-    @media screen and (min-width: 1024px) {
-        gap: 1rem;
-        grid-template-columns: 2rem 4fr 1fr 2rem;
-        grid-template-rows: auto 1fr;
-        grid-template-areas:
-            ". map-tile title-tile ."
-            ". map-tile miscellaneous-tile .";
-    }
+  }
 }
