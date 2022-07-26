@@ -11,6 +11,7 @@ import { ComponentsModule } from '../shared/components/components.module';
 import { AgainstTheClockComponent } from './games/against-the-clock/against-the-clock.component';
 import { PipesModule } from '../shared/pipes/pipes.module';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ReactiveFormsModule } from '@angular/forms';
 
 let components : any[] = [
   HomeComponent,
@@ -32,6 +33,7 @@ let matModules : any[]=[
     RouterModule,
     ComponentsModule,
     MatExpansionModule,
+    ReactiveFormsModule,
     ...matModules
   ]
 })
