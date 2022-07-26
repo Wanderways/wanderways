@@ -9,6 +9,7 @@ export class ProgressBarComponent {
 
   @Input("currentFound") currentFound: number = 0;
   @Input("objective") objective: number = 0;
+  @Input('progressBarWidth') progressBarWidth : string = "100px"
   currentStage: string = "";
   stages = [
     {
