@@ -9,14 +9,7 @@ $app-primary: mat.define-palette(mat.$indigo-palette);
 $app-accent: mat.define-palette(mat.$pink-palette);
 
 // Use your own "app" define-light-theme function instead of "mat" one.
-$app-theme: app.define-light-theme(
-  (
-    color: (
-      primary: $app-primary,
-      accent: $app-accent,
-    )
-  )
-);
+$app-theme: app.define-light-theme((color: (primary: $app-primary, accent: $app-accent)));
 
 @tailwind base;
 @tailwind components;
@@ -28,6 +21,7 @@ $svg-invert-white: 1;
 $svg-invert-white: 1;
 $svg-invert-white: 1;
 $svg-invert-white: 1;
+
 @layer base {
   .default {
     --color-scheme: dark;
@@ -52,6 +46,7 @@ $svg-invert-white: 1;
     --map-land-error: #be2d0dff;
     --map-land-won: #fccb1aff;
   }
+
   .dark {
     --color-scheme: dark;
     --light-background: var(--theme-dark-background-light);
@@ -76,54 +71,50 @@ $svg-invert-white: 1;
     --map-land-won: #fccb1aff;
   }
 }
+
 @layer utilities {
   .current-bg-color {
-    background-image: linear-gradient(
-      180deg,
-      var(--dark-background) 0%,
-      var(--light-background) 100%
-    );
+    background-image: linear-gradient(180deg,
+        var(--dark-background) 0%,
+        var(--light-background) 100%);
     background-color: var(--light-background);
   }
+
   .bg-default-theme {
-    background-image: linear-gradient(
-      180deg,
-      var(--theme-default-background-dark) 0%,
-      var(--theme-default-background-light) 100%
-    );
+    background-image: linear-gradient(180deg,
+        var(--theme-default-background-dark) 0%,
+        var(--theme-default-background-light) 100%);
   }
+
   .bg-dark-theme {
-    background-image: linear-gradient(
-      180deg,
-      var(--theme-dark-background-dark) 0%,
-      var(--theme-dark-background-light) 100%
-    );
+    background-image: linear-gradient(180deg,
+        var(--theme-dark-background-dark) 0%,
+        var(--theme-dark-background-light) 100%);
   }
+
   .bg-candy-theme,
   .bg-candy-theme-text {
-    background-image: linear-gradient(
-      225deg,
-      var(--candy-primary) 0%,
-      var(--candy-secondary) 100%
-    );
+    background-image: linear-gradient(225deg,
+        var(--candy-primary) 0%,
+        var(--candy-secondary) 100%);
   }
+
   .bg-violetta-theme,
   .bg-violetta-theme-text {
-    background-image: linear-gradient(
-      45deg,
-      var(--violetta-primary) 0%,
-      var(--violetta-secondary) 100%
-    );
+    background-image: linear-gradient(45deg,
+        var(--violetta-primary) 0%,
+        var(--violetta-secondary) 100%);
   }
 
   .bg-candy-theme-text,
-  .bg-violetta-theme-text{
+  .bg-violetta-theme-text {
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   }
 
   .bg-dark {
     background-color: var(--dark-background);
   }
+
   .bg-light {
     background-color: var(--light-background);
   }
@@ -138,6 +129,7 @@ $svg-invert-white: 1;
     -webkit-background-clip: text;
     background-clip: text;
   }
+
   .violetta-text-color {
     @apply bg-violetta-theme;
     -webkit-background-clip: text;
@@ -169,16 +161,19 @@ body {
   height: 100vh;
   max-height: -webkit-fill-available;
 }
+
 html {
   @apply text-current-color;
   color-scheme: var(--color-scheme);
+
   body {
     @apply flex flex-col;
     @apply m-0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
   }
 }
-#app-background{
+
+#app-background {
   @apply current-bg-color;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -203,50 +198,60 @@ img {
 
 .land {
   fill: var(--map-land);
-  background-color:  var(--map-land);
+  background-color: var(--map-land);
 }
+
 .land,
 .zone {
   stroke: white;
   stroke-width: var(--land-stroke);
 }
+
 .found {
   fill: var(--map-land-found);
-  background-color:  var(--map-land-found);
+  background-color: var(--map-land-found);
 }
+
 .selected {
+
   &,
   .land {
     fill: var(--map-land-selected);
-    background-color:  var(--map-land-selected);
+    background-color: var(--map-land-selected);
   }
+
   .zone {
     stroke-width: calc(var(--land-stroke) * 5);
   }
 }
+
 .group-selected {
   &,
   .land {
     fill: var(--map-group-selected);
     background-color:  var(--map-land-selected);
   }
-  .zone {
+
+  &.zone {
     stroke-width: calc(var(--land-stroke) * 3);
   }
 }
+
 .error {
   fill: var(--map-land-error);
-  background-color:  var(--map-error);
+  background-color: var(--map-error);
 }
+
 .won {
   fill: var(--map-land-won);
-  background-color:  var(--map-won);
+  background-color: var(--map-won);
 }
 
 .separator {
   fill: none;
   stroke: white;
 }
+
 .zone {
   fill: transparent;
   stroke-dasharray: 3px;
@@ -257,7 +262,8 @@ mat-dialog-container {
   background-color: var(--dark-background) !important;
 }
 
-mat-option, mat-optgroup span {
+mat-option,
+mat-optgroup span {
   background-color: var(--dark-background) !important;
 }
 
@@ -268,11 +274,11 @@ mat-select {
 }
 
 mat-dialog-container,
-.mat-select-panel{
+.mat-select-panel {
   box-shadow: 0 0 5px 1px #AAAAAA61;
 }
 
-.mat-ripple-element{
+.mat-ripple-element {
   background-color: #FFFFFF60;
 }
 
