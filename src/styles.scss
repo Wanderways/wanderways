@@ -226,10 +226,13 @@ img {
 }
 
 .group-selected {
-  &,
-  .land {
+  &.land {
+    stroke-width: calc(var(--land-stroke) * 3);
+  }
+
+  &.land:not(.found) {
     fill: var(--map-group-selected);
-    background-color:  var(--map-land-selected);
+    background-color: var(--map-land-selected);
   }
 
   &.zone {
@@ -296,5 +299,4 @@ mat-dialog-container,
 }
 
 @include customMixins.scrollbar('.mat-select-panel', true);
-
 @include customMixins.scrollbar('.custom-scrollbar', true);
