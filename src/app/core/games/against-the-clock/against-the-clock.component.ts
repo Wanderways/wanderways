@@ -28,7 +28,7 @@ export class AgainstTheClockComponent implements OnInit {
   toFindList: MapData[] = [];
   foundList: MapData[] = [];
   originList: MapData[] = [];
-  currentLanguage = 'fr_FR'//this.locale.replace(/-/, '_');
+  currentLanguage = this.locale.replace(/-/, '_');
   displaySideMenu: boolean = false;
   mobileDisplay: boolean | undefined = (window.innerWidth < 1024 ? true : undefined);
 
