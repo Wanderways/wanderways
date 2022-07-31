@@ -1,6 +1,6 @@
 [
     {
-      "mapGroupidentifier": "world",
+      "mapGroupId": "world",
       "mapFlagUrl":"./assets/maps/flags/world-un.svg",
       "tagIdList":["world"],
       "available":true,
@@ -13,7 +13,7 @@
       }
     },
     {
-      "mapGroupidentifier": "europe",
+      "mapGroupId": "europe",
       "mapFlagUrl":"",
       "tagIdList":["cont_eu"],
       "available":false,
@@ -26,7 +26,7 @@
       }
     },
     {
-      "mapGroupidentifier": "asia",
+      "mapGroupId": "asia",
       "mapFlagUrl":"",
       "tagIdList":["cont_as"],
       "available":false,
@@ -39,7 +39,7 @@
       }
     },
     {
-      "mapGroupidentifier": "north_america",
+      "mapGroupId": "north_america",
       "mapFlagUrl":"",
       "tagIdList":["cont_na"],
       "available":false,
@@ -52,7 +52,7 @@
       }
     },
     {
-      "mapGroupidentifier": "south_america",
+      "mapGroupId": "south_america",
       "mapFlagUrl":"",
       "tagIdList":["cont_sa"],
       "available":false,
@@ -65,7 +65,7 @@
       }
     },
     {
-      "mapGroupidentifier": "africa",
+      "mapGroupId": "africa",
       "mapFlagUrl":"",
       "tagIdList":["cont_af"],
       "available":false,
@@ -78,7 +78,7 @@
       }
     },
     {
-      "mapGroupidentifier": "oceania",
+      "mapGroupId": "oceania",
       "mapFlagUrl":"",
       "tagIdList":["cont_oc"],
       "available":false,
@@ -91,7 +91,7 @@
       }
     },
     {
-      "mapGroupidentifier": "france",
+      "mapGroupId": "france",
       "mapFlagUrl":"./assets/maps/flags/world-countries/flag_FR.svg",
       "tagIdList":["cont_eu","coun_fr"],
       "available":true,
@@ -104,7 +104,7 @@
       }
     },
     {
-      "mapGroupidentifier": "japan",
+      "mapGroupId": "japan",
       "mapFlagUrl":"./assets/maps/flags/world-countries/flag_JP.svg",
       "tagIdList":["cont_as","coun_jp"],
       "available":true,

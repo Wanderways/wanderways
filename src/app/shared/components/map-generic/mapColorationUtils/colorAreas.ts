@@ -1,12 +1,12 @@
   /**
    * Color selected group, but not the selected area
-   * @param identifier The land identifier to colour
+   * @param id The land id to colour
    * @param className The group to color
    */
-export function colorAreas(identifier :string, className: string) {
+export function colorAreas(id :string, className: string) {
   let elements: HTMLCollectionOf<Element> = document.getElementsByClassName(className);
   Array.from(elements).forEach(e => {
-    if (identifier !== (<HTMLElement>e).id) {
+    if (id !== (<HTMLElement>e).id) {
       (<HTMLElement>e).classList.add("group-selected");
     }
   })

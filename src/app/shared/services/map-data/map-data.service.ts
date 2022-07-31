@@ -11,7 +11,7 @@ export class MapDataService {
   
   constructor(private http: HttpClient) { }
 
-  getMapData(map_identifier : string): Observable<MapData[]>{
-    return this.http.get<MapData[]>(this.PATH+map_identifier+this.FILE_EXTENSION);
+  getMapData(map_id : string): Observable<MapData[]>{
+    return this.http.get<MapData[]>(this.PATH+map_id+this.FILE_EXTENSION);
   }
 }

@@ -33,10 +33,10 @@ export class DataListComponent implements OnInit {
   }
 
   isDataFound(mapData: MapData): boolean {
-    return !!this.foundList.find(e => e.identifier === mapData.identifier);
+    return !!this.foundList.find(e => e.id === mapData.id);
   }
   scrollToRow(mapData: MapData) {
-    this.dataContainer.nativeElement.scrollTo(0, document.getElementById('data-list-row-' + mapData.identifier)?.offsetTop);
+    this.dataContainer.nativeElement.scrollTo(0, document.getElementById('data-list-row-' + mapData.id)?.offsetTop);
   }
 
   isRowDisplayable(mapData: MapData): boolean {
