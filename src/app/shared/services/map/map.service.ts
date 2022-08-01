@@ -13,14 +13,14 @@ export class MapService {
 
   constructor(private http: HttpClient) { }
   /**
-   * Check if a map corresponds to a given identifier
-   * @param identifier The map identifier
+   * Check if a map corresponds to a given id
+   * @param id The map id
    * @returns The corresponding map
    */
-   getMap(identifier : string) : Promise<Map | undefined>{
+   getMap(id : string) : Promise<Map | undefined>{
     return new Promise(resolve =>{
       this.getMaps().subscribe((loadedIndex : Map[]) =>{
-        resolve(loadedIndex.find(map =>map.identifier === identifier));
+        resolve(loadedIndex.find(map =>map.id === id));
       });
     });
   }
@@ -36,11 +36,11 @@ export class MapService {
    * Allows to get the full list of declared maps
    * @returns The full list of declared maps
    */
-   getMapsFromGroup(mapGroupIdentifier : string) : Promise<Map[]>{
+   getMapsFromGroup(mapGroupId : string) : Promise<Map[]>{
     return new Promise(
       resolve =>{
       this.getMaps().subscribe((loadedIndex : Map[]) =>{
-        resolve(loadedIndex.filter(map =>map.mapGroupIdentifier === mapGroupIdentifier));
+        resolve(loadedIndex.filter(map =>map.mapGroupId === mapGroupId));
       });
     });
   }

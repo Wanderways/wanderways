@@ -6,8 +6,8 @@
 </table>
 <div #dataContainer class="data-container custom-scrollbar" [style.maxHeight]="maxHeight">
   <table #dataTable>
-    <tr id="data-list-row-{{d.identifier}}" class="data-row {{isRowDisplayable(d)?'displayed-row':''}}" *ngFor="let d of originList" (click)="isRowDisplayable(d) && onSelectedRow(d)" matRipple>
-      <td class="col-id" >{{isRowDisplayable(d) ? d.identifier : '--'}}</td>
+    <tr id="data-list-row-{{d.id}}" class="data-row {{isRowDisplayable(d)?'displayed-row':''}}" *ngFor="let d of originList" (click)="isRowDisplayable(d) && onSelectedRow(d)" matRipple>
+      <td class="col-id" >{{isRowDisplayable(d) ? d.id : '--'}}</td>
       <td class="col-name">{{isRowDisplayable(d) ? (d.name | i18n) : '--'}}</td>
     </tr>
   </table>

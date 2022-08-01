@@ -2,7 +2,7 @@ import { Locale_I18n } from "../interfaces/locale_i18n.interface";
 
 export const GameIndex : GameIndexEntry[] = [
     {
-        identifier: "against-the-clock",
+        id: "against-the-clock",
         displayName : {
             en_US:["Against the clock"],
             fr_FR:["Contre la montre"],
@@ -15,7 +15,7 @@ export const GameIndex : GameIndexEntry[] = [
         available:true
     },
     {
-        identifier: "flag",
+        id: "flag",
         displayName : {
             en_US:["Flag"],
             fr_FR:["Drapeau"],
@@ -28,7 +28,7 @@ export const GameIndex : GameIndexEntry[] = [
         available:false
     },
     {
-        identifier: "custom",
+        id: "custom",
         displayName : {
             en_US:["Custom"],
             fr_FR:["Customisé"],
@@ -43,7 +43,7 @@ export const GameIndex : GameIndexEntry[] = [
 ]
 
 export interface GameIndexEntry{
-    identifier : string,
+    id : string,
     displayName : Locale_I18n,
     gameUrl : string,
     iconUrl : string,

@@ -1,7 +1,7 @@
 [
   {
-    "identifier": "world-country-iso",
-    "mapGroupIdentifier":"world",
+    "id": "world-country-iso",
+    "mapGroupId":"world",
     "displayName": {
       "en_US": ["Country - ISO"],
       "fr_FR": ["Pays - ISO"],
@@ -12,8 +12,8 @@
     "wiki_url": "https://en.wikipedia.org/wiki/ISO_3166-1"
   },
   {
-    "identifier": "world-country-un",
-    "mapGroupIdentifier":"world",
+    "id": "world-country-un",
+    "mapGroupId":"world",
     "displayName": {
       "en_US": ["Country - UN"],
       "fr_FR": ["Pays - ONU"],
@@ -24,8 +24,8 @@
     "wiki_url": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
   },
   {
-    "identifier": "europe-countries",
-    "mapGroupIdentifier":"europe",
+    "id": "europe-countries",
+    "mapGroupId":"europe",
     "displayName": {
       "en_US": ["Country"],
       "fr_FR": ["Pays"],
@@ -37,8 +37,8 @@
   },
 
   {
-    "identifier": "asia-countries",
-    "mapGroupIdentifier":"asia",
+    "id": "asia-countries",
+    "mapGroupId":"asia",
     "displayName": {
       "en_US": ["Country"],
       "fr_FR": ["Pays"],
@@ -49,8 +49,8 @@
     "wiki_url": "https://en.wikipedia.org/wiki/Asia"
   },
   {
-    "identifier": "north-america-countries",
-    "mapGroupIdentifier":"north_america",
+    "id": "north-america-countries",
+    "mapGroupId":"north_america",
     "displayName": {
       "en_US": ["Country"],
       "fr_FR": ["Pays"],
@@ -61,8 +61,8 @@
     "wiki_url": "https://en.wikipedia.org/wiki/North_America"
   },
   {
-    "identifier": "south-america-countries",
-    "mapGroupIdentifier":"south_america",
+    "id": "south-america-countries",
+    "mapGroupId":"south_america",
     "displayName": {
       "en_US": ["Country"],
       "fr_FR": ["Pays"],
@@ -73,8 +73,8 @@
     "wiki_url": "https://en.wikipedia.org/wiki/South_America"
   },
   {
-    "identifier": "africa-countries",
-    "mapGroupIdentifier":"africa",
+    "id": "africa-countries",
+    "mapGroupId":"africa",
     "displayName": {
       "en_US": ["Country"],
       "fr_FR": ["Pays"],
@@ -85,8 +85,8 @@
     "wiki_url": "https://en.wikipedia.org/wiki/Africa"
   },
   {
-    "identifier": "oceania-countries",
-    "mapGroupIdentifier":"oceania",
+    "id": "oceania-countries",
+    "mapGroupId":"oceania",
     "displayName": {
       "en_US": ["Country"],
       "fr_FR": ["Pays"],
@@ -97,8 +97,8 @@
     "wiki_url": "https://en.wikipedia.org/wiki/Oceania"
   },
   {
-    "identifier": "france-departments",
-    "mapGroupIdentifier":"france",
+    "id": "france-departments",
+    "mapGroupId":"france",
     "displayName": {
       "en_US": ["Departments"],
       "fr_FR": ["Départements"],
@@ -109,8 +109,8 @@
     "wiki_url": "https://en.wikipedia.org/wiki/Departments_of_France"
   },
   {
-    "identifier": "japan-prefectures",
-    "mapGroupIdentifier":"japan",
+    "id": "japan-prefectures",
+    "mapGroupId":"japan",
     "displayName": {
       "en_US": ["Prefectures"],
       "fr_FR": ["Préfectures"],
