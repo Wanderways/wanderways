@@ -18,9 +18,10 @@
       ],
       "de_DE": [
         "Afghanistan",
-        " Islamische Republik Afghanistan",
-        " Islamisches Emirat Afghanistan"
-      ]
+        "Islamische Republik Afghanistan",
+        "Islamisches Emirat Afghanistan"
+      ],
+      "pt_PT": ["Afeganistão", "Emirado Islâmico do Afeganistão"]
     },
     "identifier": "AF",
     "flag_url": "./assets/maps/flags/world-countries/flag_AF.svg",
@@ -35,7 +36,8 @@
       "en_US": ["Åland", "Åland Islands"],
       "fr_FR": ["Åland"],
       "es_ES": ["Åland"],
-      "de_DE": ["Åland", "Landskapet Åland"]
+      "de_DE": ["Åland", "Landskapet Åland"],
+      "pt_PT": ["Ilhas Åland", "Aland", "Alanda"]
     },
     "identifier": "AX",
     "flag_url": "./assets/maps/flags/world-countries/flag_AX.svg",
@@ -50,7 +52,8 @@
       "en_US": ["Albania", "Republic of Albania"],
       "fr_FR": ["Albanie", "République d'Albanie"],
       "es_ES": ["Albania", "República de Albania"],
-      "de_DE": ["Albanien", "Republika e Shqipërisë"]
+      "de_DE": ["Albanien", "Republika e Shqipërisë"],
+      "pt_PT": ["Albânia", "República da Albânia"]
     },
     "identifier": "AL",
     "flag_url": "./assets/maps/flags/world-countries/flag_AL.svg",
@@ -65,7 +68,8 @@
       "en_US": ["Algeria", "People's Democratic Republic of Algeria"],
       "fr_FR": ["Algérie"],
       "es_ES": ["Argelia", "República Argelina Democrática y Popular"],
-      "de_DE": ["Algerien", "Demokratische Volksrepublik Algerien"]
+      "de_DE": ["Algerien", "Demokratische Volksrepublik Algerien"],
+      "pt_PT": ["Argélia", "República Argelina Democrática e Popular"]
     },
     "identifier": "DZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_DZ.svg",
@@ -80,7 +84,8 @@
       "en_US": ["American Samoa"],
       "fr_FR": ["Samoa Américaines"],
       "es_ES": ["Samoa Americana"],
-      "de_DE": ["Amerikanisch-Samoa"]
+      "de_DE": ["Amerikanisch-Samoa"],
+      "pt_PT": ["Samoa Americana"]
     },
     "identifier": "AS",
     "flag_url": "./assets/maps/flags/world-countries/flag_AS.svg",
@@ -95,7 +100,12 @@
       "en_US": ["Andorra"],
       "fr_FR": ["Andorre"],
       "es_ES": ["Andorra"],
-      "de_DE": ["Andorra"]
+      "de_DE": ["Andorra"],
+      "pt_PT": [
+        "Andorra",
+        "Principado de Andorra",
+        "Principado dos Vales de Andorra"
+      ]
     },
     "identifier": "AD",
     "flag_url": "./assets/maps/flags/world-countries/flag_AD.svg",
@@ -110,7 +120,8 @@
       "en_US": ["Angola"],
       "fr_FR": ["Angola"],
       "es_ES": ["Angola"],
-      "de_DE": ["Angola"]
+      "de_DE": ["Angola"],
+      "pt_PT": ["Angola", "República de Angola"]
     },
     "identifier": "AO",
     "flag_url": "./assets/maps/flags/world-countries/flag_AO.svg",
@@ -125,7 +136,8 @@
       "en_US": ["Anguilla"],
       "fr_FR": ["Anguilla"],
       "es_ES": ["Anguila"],
-      "de_DE": ["Anguilla"]
+      "de_DE": ["Anguilla"],
+      "pt_PT": ["Anguila"]
     },
     "identifier": "AI",
     "flag_url": "./assets/maps/flags/world-countries/flag_AI.svg",
@@ -140,7 +152,8 @@
       "en_US": ["Antarctica"],
       "fr_FR": ["Antarctique"],
       "es_ES": ["Antártida"],
-      "de_DE": ["Antarktis"]
+      "de_DE": ["Antarktis"],
+      "pt_PT": ["Antártida", "Antártica"]
     },
     "identifier": "AQ",
     "flag_url": "./assets/maps/flags/world-countries/flag_AQ.svg",
@@ -155,7 +168,8 @@
       "en_US": ["Antigua and Barbuda"],
       "fr_FR": ["Antigua-et-Barbuda"],
       "es_ES": ["Antigua y Barbuda"],
-      "de_DE": ["Antigua und Barbuda"]
+      "de_DE": ["Antigua und Barbuda"],
+      "pt_PT": ["Antígua e Barbuda"]
     },
     "identifier": "AG",
     "flag_url": "./assets/maps/flags/world-countries/flag_AG.svg",
@@ -170,7 +184,8 @@
       "en_US": ["Argentina"],
       "fr_FR": ["Argentine"],
       "es_ES": ["Argentina"],
-      "de_DE": ["Argentinien"]
+      "de_DE": ["Argentinien"],
+      "pt_PT": ["República Argentina", "Argentina"]
     },
     "identifier": "AR",
     "flag_url": "./assets/maps/flags/world-countries/flag_AR.svg",
@@ -185,7 +200,8 @@
       "en_US": ["Armenia"],
       "fr_FR": ["Arménie"],
       "es_ES": ["Armenia"],
-      "de_DE": ["Armenien"]
+      "de_DE": ["Armenien"],
+      "pt_PT": ["República da Arménia", "Armênia"]
     },
     "identifier": "AM",
     "flag_url": "./assets/maps/flags/world-countries/flag_AM.svg",
@@ -200,7 +216,8 @@
       "en_US": ["Aruba"],
       "fr_FR": ["Aruba"],
       "es_ES": ["Aruba"],
-      "de_DE": ["Aruba"]
+      "de_DE": ["Aruba"],
+      "pt_PT": ["Aruba"]
     },
     "identifier": "AW",
     "flag_url": "./assets/maps/flags/world-countries/flag_AW.svg",
@@ -215,7 +232,8 @@
       "en_US": ["Australia"],
       "fr_FR": ["Australie"],
       "es_ES": ["Australia"],
-      "de_DE": ["Australien"]
+      "de_DE": ["Australien"],
+      "pt_PT": ["Comunidade da Austrália", "Austrália"]
     },
     "identifier": "AU",
     "flag_url": "./assets/maps/flags/world-countries/flag_AU.svg",
@@ -230,7 +248,8 @@
       "en_US": ["Austria"],
       "fr_FR": ["Autriche"],
       "es_ES": ["Austria"],
-      "de_DE": ["Österreich"]
+      "de_DE": ["Österreich"],
+      "pt_PT": ["República da Áustria", "Áustria"]
     },
     "identifier": "AT",
     "flag_url": "./assets/maps/flags/world-countries/flag_AT.svg",
@@ -245,7 +264,8 @@
       "en_US": ["Azerbaijan"],
       "fr_FR": ["Azerbaïdjan"],
       "es_ES": ["Azerbaiyán"],
-      "de_DE": ["Aserbaidschan"]
+      "de_DE": ["Aserbaidschan"],
+      "pt_PT": ["República do Azerbaijão", "Azerbaijão"]
     },
     "identifier": "AZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_AZ.svg",
@@ -260,7 +280,8 @@
       "en_US": ["Bahamas"],
       "fr_FR": ["Bahamas"],
       "es_ES": ["Bahamas"],
-      "de_DE": ["Bahamas"]
+      "de_DE": ["Bahamas"],
+      "pt_PT": ["Comunidade das Bahamas", "Bahamas", "Baamas"]
     },
     "identifier": "BS",
     "flag_url": "./assets/maps/flags/world-countries/flag_BS.svg",
@@ -275,7 +296,8 @@
       "en_US": ["Bahrain"],
       "fr_FR": ["Bahrain"],
       "es_ES": ["Baréin"],
-      "de_DE": ["Bahrain"]
+      "de_DE": ["Bahrain"],
+      "pt_PT": ["Reino do Barém", "Barém", "Bahrein", "Barein", "Bareine"]
     },
     "identifier": "BH",
     "flag_url": "./assets/maps/flags/world-countries/flag_BH.svg",
@@ -290,7 +312,8 @@
       "en_US": ["Bangladesh"],
       "fr_FR": ["Bangladesh"],
       "es_ES": ["Bangladés"],
-      "de_DE": ["Bangladesch"]
+      "de_DE": ["Bangladesch"],
+      "pt_PT": ["República Popular do Bangladexe", "Bangladexe", "Bangladesh"]
     },
     "identifier": "BD",
     "flag_url": "./assets/maps/flags/world-countries/flag_BD.svg",
@@ -305,7 +328,8 @@
       "en_US": ["Barbados"],
       "fr_FR": ["Barbade"],
       "es_ES": ["Barbados"],
-      "de_DE": ["Barbados"]
+      "de_DE": ["Barbados"],
+      "pt_PT": ["Barbados"]
     },
     "identifier": "BB",
     "flag_url": "./assets/maps/flags/world-countries/flag_BB.svg",
@@ -320,7 +344,13 @@
       "en_US": ["Belarus"],
       "fr_FR": ["Biélorussie", "Bélarus"],
       "es_ES": ["Bielorrusia"],
-      "de_DE": ["Belarus", "Republik Belarus"]
+      "de_DE": ["Belarus", "Republik Belarus"],
+      "pt_PT": [
+        "República de Belarus",
+        "República da Bielorrússia",
+        "Bielorrússia",
+        "Belarus"
+      ]
     },
     "identifier": "BY",
     "flag_url": "./assets/maps/flags/world-countries/flag_BY.svg",
@@ -335,7 +365,8 @@
       "en_US": ["Belgium"],
       "fr_FR": ["Belgique"],
       "es_ES": ["Bélgica"],
-      "de_DE": ["Belgien"]
+      "de_DE": ["Belgien"],
+      "pt_PT": ["Reino da Bélgica", "Bélgica"]
     },
     "identifier": "BE",
     "flag_url": "./assets/maps/flags/world-countries/flag_BE.svg",
@@ -350,7 +381,8 @@
       "en_US": ["Belize"],
       "fr_FR": ["Belize"],
       "es_ES": ["Belice"],
-      "de_DE": ["Belize"]
+      "de_DE": ["Belize"],
+      "pt_PT": ["Belize"]
     },
     "identifier": "BZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_BZ.svg",
@@ -365,7 +397,8 @@
       "en_US": ["Benin"],
       "fr_FR": ["Bénin"],
       "es_ES": ["Benín"],
-      "de_DE": ["Benin"]
+      "de_DE": ["Benin"],
+      "pt_PT": ["República do Benim", "Benim"]
     },
     "identifier": "BJ",
     "flag_url": "./assets/maps/flags/world-countries/flag_BJ.svg",
@@ -380,7 +413,8 @@
       "en_US": ["Bermuda"],
       "fr_FR": ["Bermudes"],
       "es_ES": ["Bermudas"],
-      "de_DE": ["Bermuda"]
+      "de_DE": ["Bermuda"],
+      "pt_PT": ["Bermudas"]
     },
     "identifier": "BM",
     "flag_url": "./assets/maps/flags/world-countries/flag_BM.svg",
@@ -395,7 +429,8 @@
       "en_US": ["Bhutan"],
       "fr_FR": ["Bhoutan"],
       "es_ES": ["Bután"],
-      "de_DE": ["Bhutan"]
+      "de_DE": ["Bhutan"],
+      "pt_PT": ["Reino do Butão", "Butão"]
     },
     "identifier": "BT",
     "flag_url": "./assets/maps/flags/world-countries/flag_BT.svg",
@@ -410,7 +445,8 @@
       "en_US": ["Bolivia", "Plurinational State of Bolivia"],
       "fr_FR": ["Bolivie"],
       "es_ES": ["Bolivia"],
-      "de_DE": ["Bolivien"]
+      "de_DE": ["Bolivien"],
+      "pt_PT": ["Bolívia", "Estado Plurinacional da Bolívia"]
     },
     "identifier": "BO",
     "flag_url": "./assets/maps/flags/world-countries/flag_BO.svg",
@@ -429,7 +465,8 @@
       ],
       "fr_FR": ["Bonaire, Saint-Eustache et Saba", "Bonaire"],
       "es_ES": ["Bonaire, San Eustaquio y Saba"],
-      "de_DE": ["Bonaire, Saba, Sint Eustatius", "Bonaire"]
+      "de_DE": ["Bonaire, Saba, Sint Eustatius", "Bonaire"],
+      "pt_PT": ["Bonaire, Santo Eustáquio e Saba"]
     },
     "identifier": "BQ",
     "flag_url": "./assets/maps/flags/world-countries/flag_BQ.svg",
@@ -444,7 +481,8 @@
       "en_US": ["Bosnia and Herzegovina"],
       "fr_FR": ["Bosnie-Herzégovine"],
       "es_ES": ["Bosnia y Herzegovina"],
-      "de_DE": ["Bosnien und Herzegowina"]
+      "de_DE": ["Bosnien und Herzegowina"],
+      "pt_PT": ["Bósnia e Herzegovina"]
     },
     "identifier": "BA",
     "flag_url": "./assets/maps/flags/world-countries/flag_BA.svg",
@@ -459,7 +497,13 @@
       "en_US": ["Botswana"],
       "fr_FR": ["Botswana"],
       "es_ES": ["Botsuana"],
-      "de_DE": ["Botswana"]
+      "de_DE": ["Botswana"],
+      "pt_PT": [
+        "República do Botsuana",
+        "República do Botswana",
+        "Botsuana",
+        "Botswana"
+      ]
     },
     "identifier": "BW",
     "flag_url": "./assets/maps/flags/world-countries/flag_BW.svg",
@@ -474,7 +518,8 @@
       "en_US": ["Bouvet Island", "Bouvet"],
       "fr_FR": ["Île Bouvet", "Bouvet"],
       "es_ES": ["Isla Bouvet", "Bouvet"],
-      "de_DE": ["Bouvetinsel"]
+      "de_DE": ["Bouvetinsel"],
+      "pt_PT": ["Ilha Bouvet"]
     },
     "identifier": "BV",
     "flag_url": "./assets/maps/flags/world-countries/flag_BV.svg",
@@ -489,7 +534,8 @@
       "en_US": ["Brazil"],
       "fr_FR": ["Brésil"],
       "es_ES": ["Brasil"],
-      "de_DE": ["Brasilien"]
+      "de_DE": ["Brasilien"],
+      "pt_PT": ["República Federativa do Brasil", "Brasil"]
     },
     "identifier": "BR",
     "flag_url": "./assets/maps/flags/world-countries/flag_BR.svg",
@@ -504,7 +550,8 @@
       "en_US": ["British Indian Ocean Territory"],
       "fr_FR": ["Territoire britannique de l'océan Indien"],
       "es_ES": ["Territorio Británico del Océano Índico"],
-      "de_DE": ["Britisches Territorium im Indischen Ozean"]
+      "de_DE": ["Britisches Territorium im Indischen Ozean"],
+      "pt_PT": ["Território Britânico do Oceano Índico"]
     },
     "identifier": "IO",
     "flag_url": "./assets/maps/flags/world-countries/flag_IO.svg",
@@ -519,7 +566,13 @@
       "en_US": ["Brunei", "Brunei Darussalam"],
       "fr_FR": ["Brunei", "Brunei Darussalam"],
       "es_ES": ["Brunéi", "Estado de Brunéi Darussalam"],
-      "de_DE": ["Brunei", "Brunei Darussalam"]
+      "de_DE": ["Brunei", "Brunei Darussalam"],
+      "pt_PT": [
+        "Nação de Brunei, a Morada da Paz",
+        "Brunei",
+        "Estado de Brunei Darussalam",
+        "Darussalã"
+      ]
     },
     "identifier": "BN",
     "flag_url": "./assets/maps/flags/world-countries/flag_BN.svg",
@@ -534,7 +587,8 @@
       "en_US": ["Bulgaria"],
       "fr_FR": ["Bulgarie"],
       "es_ES": ["Bulgaria"],
-      "de_DE": ["Bulgarien"]
+      "de_DE": ["Bulgarien"],
+      "pt_PT": ["República da Bulgária", "Bulgária"]
     },
     "identifier": "BG",
     "flag_url": "./assets/maps/flags/world-countries/flag_BG.svg",
@@ -549,7 +603,8 @@
       "en_US": ["Burkina Faso"],
       "fr_FR": ["Burkina Faso"],
       "es_ES": ["Burkina Faso"],
-      "de_DE": ["Burkina Faso"]
+      "de_DE": ["Burkina Faso"],
+      "pt_PT": ["Burquina Fasso", "Burquina Faso"]
     },
     "identifier": "BF",
     "flag_url": "./assets/maps/flags/world-countries/flag_BF.svg",
@@ -564,7 +619,8 @@
       "en_US": ["Burundi"],
       "fr_FR": ["Burundi"],
       "es_ES": ["Burundi"],
-      "de_DE": ["Burundi"]
+      "de_DE": ["Burundi"],
+      "pt_PT": ["Burundi", "República do Burúndi"]
     },
     "identifier": "BI",
     "flag_url": "./assets/maps/flags/world-countries/flag_BI.svg",
@@ -579,7 +635,8 @@
       "en_US": ["Cabo Verde", "Cape Verde"],
       "fr_FR": ["Cap-Vert"],
       "es_ES": ["Cabo Verde"],
-      "de_DE": ["Kap Verde", "Cabo Verde"]
+      "de_DE": ["Kap Verde", "Cabo Verde"],
+      "pt_PT": ["Cabo Verde", "República de Cabo Verde"]
     },
     "identifier": "CV",
     "flag_url": "./assets/maps/flags/world-countries/flag_CV.svg",
@@ -594,7 +651,8 @@
       "en_US": ["Cambodia"],
       "fr_FR": ["Cambodge"],
       "es_ES": ["Camboya"],
-      "de_DE": ["Kambodscha"]
+      "de_DE": ["Kambodscha"],
+      "pt_PT": ["Reino do Camboja", "Camboja", "Cambodja"]
     },
     "identifier": "KH",
     "flag_url": "./assets/maps/flags/world-countries/flag_KH.svg",
@@ -609,7 +667,8 @@
       "en_US": ["Cameroon"],
       "fr_FR": ["Cameroun"],
       "es_ES": ["Camerún"],
-      "de_DE": ["Kamerun"]
+      "de_DE": ["Kamerun"],
+      "pt_PT": ["República dos Camarões", "Camarões"]
     },
     "identifier": "CM",
     "flag_url": "./assets/maps/flags/world-countries/flag_CM.svg",
@@ -624,7 +683,8 @@
       "en_US": ["Canada"],
       "fr_FR": ["Canada"],
       "es_ES": ["Canadá"],
-      "de_DE": ["Kanada"]
+      "de_DE": ["Kanada"],
+      "pt_PT": ["Canadá"]
     },
     "identifier": "CA",
     "flag_url": "./assets/maps/flags/world-countries/flag_CA.svg",
@@ -639,7 +699,8 @@
       "en_US": ["Cayman Islands"],
       "fr_FR": ["Îles Cayman"],
       "es_ES": ["Islas Caimán"],
-      "de_DE": ["Cayman Islands", "Kaimaninseln"]
+      "de_DE": ["Cayman Islands", "Kaimaninseln"],
+      "pt_PT": ["ilhas Caimã", "Ilhas Caimão", "Ilhas Cayman"]
     },
     "identifier": "KY",
     "flag_url": "./assets/maps/flags/world-countries/flag_KY.svg",
@@ -654,7 +715,11 @@
       "en_US": ["Central African Republic"],
       "fr_FR": ["République Centrafricaine"],
       "es_ES": ["República Centroafricana"],
-      "de_DE": ["Zentralafrikanische Republik"]
+      "de_DE": ["Zentralafrikanische Republik"],
+      "pt_PT": [
+        "República Centro-Africana",
+        "República da África-Central e Centráfrica"
+      ]
     },
     "identifier": "CF",
     "flag_url": "./assets/maps/flags/world-countries/flag_CF.svg",
@@ -669,7 +734,8 @@
       "en_US": ["Chad"],
       "fr_FR": ["Tchad"],
       "es_ES": ["Chad"],
-      "de_DE": ["Tschad"]
+      "de_DE": ["Tschad"],
+      "pt_PT": ["Chade"]
     },
     "identifier": "TD",
     "flag_url": "./assets/maps/flags/world-countries/flag_TD.svg",
@@ -684,7 +750,8 @@
       "en_US": ["Chile"],
       "fr_FR": ["Chili"],
       "es_ES": ["Chile"],
-      "de_DE": ["Chile"]
+      "de_DE": ["Chile"],
+      "pt_PT": ["República do Chile", "Chile"]
     },
     "identifier": "CL",
     "flag_url": "./assets/maps/flags/world-countries/flag_CL.svg",
@@ -699,7 +766,8 @@
       "en_US": ["China"],
       "fr_FR": ["Chine"],
       "es_ES": ["China"],
-      "de_DE": ["Volksrepublik China"]
+      "de_DE": ["Volksrepublik China"],
+      "pt_PT": ["República Popular da China", "China"]
     },
     "identifier": "CN",
     "flag_url": "./assets/maps/flags/world-countries/flag_CN.svg",
@@ -714,7 +782,13 @@
       "en_US": ["Christmas Island"],
       "fr_FR": ["Ïle Christmas"],
       "es_ES": ["Isla de Navidad"],
-      "de_DE": ["Weihnachtsinsel"]
+      "de_DE": ["Weihnachtsinsel"],
+      "pt_PT": [
+        "Território da Ilha Christmas",
+        "Território da Ilha do Natal",
+        "Ilha Christmas",
+        "Ilha do Nata"
+      ]
     },
     "identifier": "CX",
     "flag_url": "./assets/maps/flags/world-countries/flag_CX.svg",
@@ -729,7 +803,13 @@
       "en_US": ["Cocos Islands", "Keeling Islands"],
       "fr_FR": ["Îles Cocos", "îles Keeling"],
       "es_ES": ["Islas Cocos", "Islas Keeling"],
-      "de_DE": ["Kokosinseln", "Keelinginseln"]
+      "de_DE": ["Kokosinseln", "Keelinginseln"],
+      "pt_PT": [
+        "Território das Ilhas Cocos",
+        "Ilhas Cocos",
+        "Ilhas dos Cocos",
+        "Ilhas Keeling"
+      ]
     },
     "identifier": "CC",
     "flag_url": "./assets/maps/flags/world-countries/flag_CC.svg",
@@ -744,7 +824,8 @@
       "en_US": ["Colombia"],
       "fr_FR": ["Colombie"],
       "es_ES": ["Colombia"],
-      "de_DE": ["Kolumbien"]
+      "de_DE": ["Kolumbien"],
+      "pt_PT": ["República da Colômbia", "Colômbia"]
     },
     "identifier": "CO",
     "flag_url": "./assets/maps/flags/world-countries/flag_CO.svg",
@@ -759,7 +840,8 @@
       "en_US": ["Comoros"],
       "fr_FR": ["Comores"],
       "es_ES": ["Comoras"],
-      "de_DE": ["Komoren"]
+      "de_DE": ["Komoren"],
+      "pt_PT": ["União das Comores", "Comores"]
     },
     "identifier": "KM",
     "flag_url": "./assets/maps/flags/world-countries/flag_KM.svg",
@@ -774,7 +856,8 @@
       "en_US": ["Republic of the Congo", "Congo"],
       "fr_FR": ["République du Congo", "Congo"],
       "es_ES": ["República del Congo", "Congo"],
-      "de_DE": ["Republik Kongo"]
+      "de_DE": ["Republik Kongo"],
+      "pt_PT": ["República do Congo", "Congo-Brazavile", "Congo-Brazzaville"]
     },
     "identifier": "CG",
     "flag_url": "./assets/maps/flags/world-countries/flag_CG.svg",
@@ -798,6 +881,11 @@
         "Demokratische Republik Kongo",
         "Kongo-Kinshasa",
         "Congo-Léopoldville"
+      ],
+      "pt_PT": [
+        "República Democrática do Congo",
+        "Congo-Quinxassa",
+        "Congo-Kinshasa"
       ]
     },
     "identifier": "CD",
@@ -813,7 +901,8 @@
       "en_US": ["Cook Islands"],
       "fr_FR": ["Ïles Cook"],
       "es_ES": ["Islas Cook"],
-      "de_DE": ["Cookinseln"]
+      "de_DE": ["Cookinseln"],
+      "pt_PT": ["Ilhas Cook"]
     },
     "identifier": "CK",
     "flag_url": "./assets/maps/flags/world-countries/flag_CK.svg",
@@ -828,7 +917,8 @@
       "en_US": ["Costa Rica"],
       "fr_FR": ["Costa Rica"],
       "es_ES": ["Costa Rica"],
-      "de_DE": ["Costa Rica"]
+      "de_DE": ["Costa Rica"],
+      "pt_PT": ["República da Costa Rica", "Costa Rica"]
     },
     "identifier": "CR",
     "flag_url": "./assets/maps/flags/world-countries/flag_CR.svg",
@@ -843,7 +933,8 @@
       "en_US": ["Côte d'Ivoire"],
       "fr_FR": ["Côte d'Ivoire"],
       "es_ES": ["Costa de Marfil"],
-      "de_DE": ["Elfenbeinküste"]
+      "de_DE": ["Elfenbeinküste"],
+      "pt_PT": ["República da Costa do Marfim", "Costa do Marfim"]
     },
     "identifier": "CI",
     "flag_url": "./assets/maps/flags/world-countries/flag_CI.svg",
@@ -858,7 +949,8 @@
       "en_US": ["Croatia"],
       "fr_FR": ["Croatie", "République de Croatie"],
       "es_ES": ["Croacia"],
-      "de_DE": ["Kroatien", "Republik Kroatien"]
+      "de_DE": ["Kroatien", "Republik Kroatien"],
+      "pt_PT": ["República da Croácia", "Croácia"]
     },
     "identifier": "HR",
     "flag_url": "./assets/maps/flags/world-countries/flag_HR.svg",
@@ -873,7 +965,8 @@
       "en_US": ["Cuba"],
       "fr_FR": ["Cuba", "République de Cuba"],
       "es_ES": ["Cuba", "República de Cuba"],
-      "de_DE": ["Kuba", "República de Cuba"]
+      "de_DE": ["Kuba", "República de Cuba"],
+      "pt_PT": ["República de Cuba", "Cuba"]
     },
     "identifier": "CU",
     "flag_url": "./assets/maps/flags/world-countries/flag_CU.svg",
@@ -888,7 +981,8 @@
       "en_US": ["Curaçao"],
       "fr_FR": ["Curaçao"],
       "es_ES": ["Curazao"],
-      "de_DE": ["Curaçao"]
+      "de_DE": ["Curaçao"],
+      "pt_PT": ["Curaçau"]
     },
     "identifier": "CW",
     "flag_url": "./assets/maps/flags/world-countries/flag_CW.svg",
@@ -903,7 +997,8 @@
       "en_US": ["Cyprus"],
       "fr_FR": ["Chypre"],
       "es_ES": ["Chipre"],
-      "de_DE": ["Zypern"]
+      "de_DE": ["Zypern"],
+      "pt_PT": ["República de Chipre", "Chipre"]
     },
     "identifier": "CY",
     "flag_url": "./assets/maps/flags/world-countries/flag_CY.svg",
@@ -918,7 +1013,8 @@
       "en_US": ["Czechia"],
       "fr_FR": ["République tchèque", "Tchéquie"],
       "es_ES": ["República Checa"],
-      "de_DE": ["Tschechien", "Tschechische Republik"]
+      "de_DE": ["Tschechien", "Tschechische Republik"],
+      "pt_PT": ["República Checa", "República Tcheca", "Chéquia", "Tchéquia"]
     },
     "identifier": "CZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_CZ.svg",
@@ -933,7 +1029,8 @@
       "en_US": ["Denmark"],
       "fr_FR": ["Danemark"],
       "es_ES": ["Dinamarca"],
-      "de_DE": ["Dänemark"]
+      "de_DE": ["Dänemark"],
+      "pt_PT": ["Reino da Dinamarca", "Dinamarca"]
     },
     "identifier": "DK",
     "flag_url": "./assets/maps/flags/world-countries/flag_DK.svg",
@@ -948,7 +1045,8 @@
       "en_US": ["Djibouti"],
       "fr_FR": ["Djibouti"],
       "es_ES": ["Yibuti"],
-      "de_DE": ["Dschibuti"]
+      "de_DE": ["Dschibuti"],
+      "pt_PT": ["República do Djibuti", "Djibuti", "Jibuti"]
     },
     "identifier": "DJ",
     "flag_url": "./assets/maps/flags/world-countries/flag_DJ.svg",
@@ -963,7 +1061,8 @@
       "en_US": ["Dominica"],
       "fr_FR": ["Dominique"],
       "es_ES": ["Dominica"],
-      "de_DE": ["Dominica"]
+      "de_DE": ["Dominica"],
+      "pt_PT": ["Comunidade da Dominica", "Dominica"]
     },
     "identifier": "DM",
     "flag_url": "./assets/maps/flags/world-countries/flag_DM.svg",
@@ -978,7 +1077,8 @@
       "en_US": ["Dominican Republic"],
       "fr_FR": ["République Dominicaine"],
       "es_ES": ["República Dominicana"],
-      "de_DE": ["Dominikanische Republik"]
+      "de_DE": ["Dominikanische Republik"],
+      "pt_PT": ["República Dominicana"]
     },
     "identifier": "DO",
     "flag_url": "./assets/maps/flags/world-countries/flag_DO.svg",
@@ -993,7 +1093,8 @@
       "en_US": ["Ecuador"],
       "fr_FR": ["Équateur"],
       "es_ES": ["Ecuador"],
-      "de_DE": ["Ecuador"]
+      "de_DE": ["Ecuador"],
+      "pt_PT": ["República do Equador", "Equador"]
     },
     "identifier": "EC",
     "flag_url": "./assets/maps/flags/world-countries/flag_EC.svg",
@@ -1008,7 +1109,8 @@
       "en_US": ["Egypt"],
       "fr_FR": ["Égypte"],
       "es_ES": ["Egipto"],
-      "de_DE": ["Ägypten"]
+      "de_DE": ["Ägypten"],
+      "pt_PT": ["República Árabe do Egito", "Egito"]
     },
     "identifier": "EG",
     "flag_url": "./assets/maps/flags/world-countries/flag_EG.svg",
@@ -1023,7 +1125,13 @@
       "en_US": ["El Salvador"],
       "fr_FR": ["Salvador", "El Salvardor"],
       "es_ES": ["El Salvador"],
-      "de_DE": ["El Salvador"]
+      "de_DE": ["El Salvador"],
+      "pt_PT": [
+        "República de El Salvador",
+        "República do Salvador",
+        "Salvador",
+        "El Salvador"
+      ]
     },
     "identifier": "SV",
     "flag_url": "./assets/maps/flags/world-countries/flag_SV.svg",
@@ -1038,7 +1146,8 @@
       "en_US": ["Equatorial Guinea"],
       "fr_FR": ["Guinée Équatoriale"],
       "es_ES": ["Guinea Ecuatorial"],
-      "de_DE": ["Äquatorialguinea"]
+      "de_DE": ["Äquatorialguinea"],
+      "pt_PT": ["República da Guiné Equatorial", "Guiné Equatorial"]
     },
     "identifier": "GQ",
     "flag_url": "./assets/maps/flags/world-countries/flag_GQ.svg",
@@ -1053,7 +1162,8 @@
       "en_US": ["Eritrea"],
       "fr_FR": ["Érythrée"],
       "es_ES": ["Eritrea"],
-      "de_DE": ["Eritrea"]
+      "de_DE": ["Eritrea"],
+      "pt_PT": ["Estado da Eritreia", "Eritreia"]
     },
     "identifier": "ER",
     "flag_url": "./assets/maps/flags/world-countries/flag_ER.svg",
@@ -1068,7 +1178,8 @@
       "en_US": ["Estonia"],
       "fr_FR": ["Estonie"],
       "es_ES": ["Estonia"],
-      "de_DE": ["Estland"]
+      "de_DE": ["Estland"],
+      "pt_PT": ["República da Estónia", "Estónia"]
     },
     "identifier": "EE",
     "flag_url": "./assets/maps/flags/world-countries/flag_EE.svg",
@@ -1089,7 +1200,8 @@
         "Reino de Suazilandia",
         "Reino de Esuatini"
       ],
-      "de_DE": ["Eswatini", "Königreich Eswatini"]
+      "de_DE": ["Eswatini", "Königreich Eswatini"],
+      "pt_PT": ["Reino de Essuatíni", "Essuatíni"]
     },
     "identifier": "SZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_SZ.svg",
@@ -1104,7 +1216,8 @@
       "en_US": ["Ethiopia"],
       "fr_FR": ["Éthiopie"],
       "es_ES": ["Etiopía"],
-      "de_DE": ["Äthiopien"]
+      "de_DE": ["Äthiopien"],
+      "pt_PT": ["República Democrática Federal da Etiópia", "Etiópia"]
     },
     "identifier": "ET",
     "flag_url": "./assets/maps/flags/world-countries/flag_ET.svg",
@@ -1119,7 +1232,8 @@
       "en_US": ["Falkland Islands", "Malvinas"],
       "fr_FR": ["Îles Falkland", "Îles Malouines"],
       "es_ES": ["Islas Malvinas"],
-      "de_DE": ["Falklandinseln", "Malwinen"]
+      "de_DE": ["Falklandinseln", "Malwinen"],
+      "pt_PT": ["Ilhas Malvinas", "Ilhas Falkland", "Falklands"]
     },
     "identifier": "FK",
     "flag_url": "./assets/maps/flags/world-countries/flag_FK.svg",
@@ -1134,7 +1248,8 @@
       "en_US": ["Faroe Islands"],
       "fr_FR": ["Îles Féroé"],
       "es_ES": ["Islas Feroe"],
-      "de_DE": ["Färöer"]
+      "de_DE": ["Färöer"],
+      "pt_PT": ["Ilhas Feroé", "Ilhas Féroe"]
     },
     "identifier": "FO",
     "flag_url": "./assets/maps/flags/world-countries/flag_FO.svg",
@@ -1149,7 +1264,8 @@
       "en_US": ["Fiji"],
       "fr_FR": ["Fidji"],
       "es_ES": ["Fiyi"],
-      "de_DE": ["Fidschi"]
+      "de_DE": ["Fidschi"],
+      "pt_PT": ["República das Fíji", "Fiji"]
     },
     "identifier": "FJ",
     "flag_url": "./assets/maps/flags/world-countries/flag_FJ.svg",
@@ -1164,7 +1280,8 @@
       "en_US": ["Finland"],
       "fr_FR": ["Finlande"],
       "es_ES": ["Finlandia"],
-      "de_DE": ["Finnland", "Republik Finnland"]
+      "de_DE": ["Finnland", "Republik Finnland"],
+      "pt_PT": ["República da Finlândia", "Finlândia"]
     },
     "identifier": "FI",
     "flag_url": "./assets/maps/flags/world-countries/flag_FI.svg",
@@ -1179,7 +1296,8 @@
       "en_US": ["France"],
       "fr_FR": ["France"],
       "es_ES": ["Francia"],
-      "de_DE": ["Frankreich"]
+      "de_DE": ["Frankreich"],
+      "pt_PT": ["República Francesa", "França"]
     },
     "identifier": "FR",
     "flag_url": "./assets/maps/flags/world-countries/flag_FR.svg",
@@ -1194,7 +1312,8 @@
       "en_US": ["French Guiana"],
       "fr_FR": ["Guinée française"],
       "es_ES": ["Guayana Francesa"],
-      "de_DE": ["Französisch-Guayana"]
+      "de_DE": ["Französisch-Guayana"],
+      "pt_PT": ["Guiana Francesa"]
     },
     "identifier": "GF",
     "flag_url": "./assets/maps/flags/world-countries/flag_GF.svg",
@@ -1209,7 +1328,8 @@
       "en_US": ["French Polynesia"],
       "fr_FR": ["Polynésie française"],
       "es_ES": ["Polinesia Francesa"],
-      "de_DE": ["Französisch-Polynesien"]
+      "de_DE": ["Französisch-Polynesien"],
+      "pt_PT": ["Polinésia Francesa"]
     },
     "identifier": "PF",
     "flag_url": "./assets/maps/flags/world-countries/flag_PF.svg",
@@ -1224,7 +1344,11 @@
       "en_US": ["French Southern Territories"],
       "fr_FR": ["Terres australes et antarctiques"],
       "es_ES": ["Tierras Australes y Antárticas Francesas"],
-      "de_DE": ["Französische Süd- und Antarktisgebiete"]
+      "de_DE": ["Französische Süd- und Antarktisgebiete"],
+      "pt_PT": [
+        "Território das Terras Austrais e Antárcticas Francesas",
+        "Terras Austrais e Antárticas Francesas"
+      ]
     },
     "identifier": "TF",
     "flag_url": "./assets/maps/flags/world-countries/flag_TF.svg",
@@ -1239,7 +1363,8 @@
       "en_US": ["Gabon"],
       "fr_FR": ["Gabon"],
       "es_ES": ["Gabón"],
-      "de_DE": ["Gabun"]
+      "de_DE": ["Gabun"],
+      "pt_PT": ["República Gabonesa", "Gabão"]
     },
     "identifier": "GA",
     "flag_url": "./assets/maps/flags/world-countries/flag_GA.svg",
@@ -1254,7 +1379,8 @@
       "en_US": ["Gambia"],
       "fr_FR": ["Gambie"],
       "es_ES": ["Gambia"],
-      "de_DE": ["Gambia"]
+      "de_DE": ["Gambia"],
+      "pt_PT": ["República da Gâmbia", "Gâmbia"]
     },
     "identifier": "GM",
     "flag_url": "./assets/maps/flags/world-countries/flag_GM.svg",
@@ -1269,7 +1395,8 @@
       "en_US": ["Georgia"],
       "fr_FR": ["Géorgie"],
       "es_ES": ["Georgia"],
-      "de_DE": ["Georgien"]
+      "de_DE": ["Georgien"],
+      "pt_PT": ["Geórgia"]
     },
     "identifier": "GE",
     "flag_url": "./assets/maps/flags/world-countries/flag_GE.svg",
@@ -1284,7 +1411,8 @@
       "en_US": ["Germany"],
       "fr_FR": ["Allemagne"],
       "es_ES": ["Alemania"],
-      "de_DE": ["Deutschland"]
+      "de_DE": ["Deutschland"],
+      "pt_PT": ["República Federal da Alemanha", "Alemanha"]
     },
     "identifier": "DE",
     "flag_url": "./assets/maps/flags/world-countries/flag_DE.svg",
@@ -1299,7 +1427,8 @@
       "en_US": ["Ghana"],
       "fr_FR": ["Ghana"],
       "es_ES": ["Ghana"],
-      "de_DE": ["Ghana"]
+      "de_DE": ["Ghana"],
+      "pt_PT": ["República do Gana", "Gana"]
     },
     "identifier": "GH",
     "flag_url": "./assets/maps/flags/world-countries/flag_GH.svg",
@@ -1314,7 +1443,8 @@
       "en_US": ["Gibraltar"],
       "fr_FR": ["Gibraltar"],
       "es_ES": ["Gibraltar"],
-      "de_DE": ["Gibraltar"]
+      "de_DE": ["Gibraltar"],
+      "pt_PT": ["Gibraltar"]
     },
     "identifier": "GI",
     "flag_url": "./assets/maps/flags/world-countries/flag_GI.svg",
@@ -1329,7 +1459,8 @@
       "en_US": ["Greece"],
       "fr_FR": ["Grèce"],
       "es_ES": ["Grecia"],
-      "de_DE": ["Griechenland"]
+      "de_DE": ["Griechenland"],
+      "pt_PT": ["República Helênica", "Grécia"]
     },
     "identifier": "GR",
     "flag_url": "./assets/maps/flags/world-countries/flag_GR.svg",
@@ -1344,7 +1475,8 @@
       "en_US": ["Greenland"],
       "fr_FR": ["Groenland"],
       "es_ES": ["Groenlandia"],
-      "de_DE": ["Grönland"]
+      "de_DE": ["Grönland"],
+      "pt_PT": ["Groenlândia", "Gronelândia", "Groelândia"]
     },
     "identifier": "GL",
     "flag_url": "./assets/maps/flags/world-countries/flag_GL.svg",
@@ -1359,7 +1491,8 @@
       "en_US": ["Grenada"],
       "fr_FR": ["Grenade"],
       "es_ES": ["Granada"],
-      "de_DE": ["Grenada"]
+      "de_DE": ["Grenada"],
+      "pt_PT": ["Granada"]
     },
     "identifier": "GD",
     "flag_url": "./assets/maps/flags/world-countries/flag_GD.svg",
@@ -1374,7 +1507,8 @@
       "en_US": ["Guadeloupe"],
       "fr_FR": ["Guadeloupe"],
       "es_ES": ["Guadalupe"],
-      "de_DE": ["Guadeloupe"]
+      "de_DE": ["Guadeloupe"],
+      "pt_PT": ["Guadalupe"]
     },
     "identifier": "GP",
     "flag_url": "./assets/maps/flags/world-countries/flag_GP.svg",
@@ -1389,7 +1523,8 @@
       "en_US": ["Guam"],
       "fr_FR": ["Guam"],
       "es_ES": ["Guam"],
-      "de_DE": ["Guam"]
+      "de_DE": ["Guam"],
+      "pt_PT": ["Guam", "Guão", "Guame"]
     },
     "identifier": "GU",
     "flag_url": "./assets/maps/flags/world-countries/flag_GU.svg",
@@ -1404,7 +1539,8 @@
       "en_US": ["Guatemala"],
       "fr_FR": ["Guatemala"],
       "es_ES": ["Guatemala"],
-      "de_DE": ["Guatemala"]
+      "de_DE": ["Guatemala"],
+      "pt_PT": ["República da Guatemala", "Guatemala"]
     },
     "identifier": "GT",
     "flag_url": "./assets/maps/flags/world-countries/flag_GT.svg",
@@ -1419,7 +1555,14 @@
       "en_US": ["Guernsey"],
       "fr_FR": ["Guernesey"],
       "es_ES": ["Guernsey"],
-      "de_DE": ["Guernsey", "Kanalinsel"]
+      "de_DE": ["Guernsey", "Kanalinsel"],
+      "pt_PT": [
+        "Bailiado de Guernsey",
+        "Bailiado de Guernesey",
+        "Guernsey",
+        "Guernesey",
+        "Guernesei"
+      ]
     },
     "identifier": "GG",
     "flag_url": "./assets/maps/flags/world-countries/flag_GG.svg",
@@ -1434,7 +1577,8 @@
       "en_US": ["Guinea"],
       "fr_FR": ["Guinée"],
       "es_ES": ["Guinea"],
-      "de_DE": ["Guinea"]
+      "de_DE": ["Guinea"],
+      "pt_PT": ["República da Guiné", "Guiné-Conacri"]
     },
     "identifier": "GN",
     "flag_url": "./assets/maps/flags/world-countries/flag_GN.svg",
@@ -1449,7 +1593,8 @@
       "en_US": ["Guinea-Bissau"],
       "fr_FR": ["Guinée-Bissau"],
       "es_ES": ["Guinea-Bisáu"],
-      "de_DE": ["Guinea-Bissau"]
+      "de_DE": ["Guinea-Bissau"],
+      "pt_PT": ["República da Guiné-Bissau", "Guiné-Bissau"]
     },
     "identifier": "GW",
     "flag_url": "./assets/maps/flags/world-countries/flag_GW.svg",
@@ -1464,7 +1609,8 @@
       "en_US": ["Guyana"],
       "fr_FR": ["Guyane"],
       "es_ES": ["Guyana"],
-      "de_DE": ["Guyana"]
+      "de_DE": ["Guyana"],
+      "pt_PT": ["República Cooperativa da Guiana", "Guiana", "Guyana"]
     },
     "identifier": "GY",
     "flag_url": "./assets/maps/flags/world-countries/flag_GY.svg",
@@ -1479,7 +1625,8 @@
       "en_US": ["Haiti"],
       "fr_FR": ["Haïti"],
       "es_ES": ["Haití"],
-      "de_DE": ["Haiti"]
+      "de_DE": ["Haiti"],
+      "pt_PT": ["República do Haiti", "Haiti"]
     },
     "identifier": "HT",
     "flag_url": "./assets/maps/flags/world-countries/flag_HT.svg",
@@ -1494,7 +1641,11 @@
       "en_US": ["Heard Island and McDonald Islands"],
       "fr_FR": ["Ïles Heard-et-MacDonald"],
       "es_ES": ["Islas Heard y McDonald"],
-      "de_DE": ["Heard und McDonaldinseln"]
+      "de_DE": ["Heard und McDonaldinseln"],
+      "pt_PT": [
+        "Território das Ilhas Heard e McDonald",
+        "Ilha Heard e Ilhas McDonald"
+      ]
     },
     "identifier": "HM",
     "flag_url": "./assets/maps/flags/world-countries/flag_HM.svg",
@@ -1509,7 +1660,12 @@
       "en_US": ["Vatican", "Holy See"],
       "fr_FR": ["Vatican"],
       "es_ES": ["Ciudad del Vaticano"],
-      "de_DE": ["Vatikanstadt"]
+      "de_DE": ["Vatikanstadt"],
+      "pt_PT": [
+        "Estado da Cidade do Vaticano",
+        "Vaticano",
+        "Cidade do Vaticano"
+      ]
     },
     "identifier": "VA",
     "flag_url": "./assets/maps/flags/world-countries/flag_VA.svg",
@@ -1524,7 +1680,8 @@
       "en_US": ["Honduras"],
       "fr_FR": ["Honduras"],
       "es_ES": ["Honduras"],
-      "de_DE": ["Honduras"]
+      "de_DE": ["Honduras"],
+      "pt_PT": ["República das Honduras", "República de Honduras", "Honduras"]
     },
     "identifier": "HN",
     "flag_url": "./assets/maps/flags/world-countries/flag_HN.svg",
@@ -1539,7 +1696,8 @@
       "en_US": ["Hong Kong"],
       "fr_FR": ["Hong Kong"],
       "es_ES": ["Hong Kong"],
-      "de_DE": ["Hongkong"]
+      "de_DE": ["Hongkong"],
+      "pt_PT": ["Hong Kong"]
     },
     "identifier": "HK",
     "flag_url": "./assets/maps/flags/world-countries/flag_HK.svg",
@@ -1554,7 +1712,8 @@
       "en_US": ["Hungary"],
       "fr_FR": ["Hongrie"],
       "es_ES": ["Hungría"],
-      "de_DE": ["Ungarn"]
+      "de_DE": ["Ungarn"],
+      "pt_PT": ["Hungria"]
     },
     "identifier": "HU",
     "flag_url": "./assets/maps/flags/world-countries/flag_HU.svg",
@@ -1569,7 +1728,8 @@
       "en_US": ["Iceland"],
       "fr_FR": ["Islande"],
       "es_ES": ["Islandia"],
-      "de_DE": ["Island"]
+      "de_DE": ["Island"],
+      "pt_PT": ["Islândia"]
     },
     "identifier": "IS",
     "flag_url": "./assets/maps/flags/world-countries/flag_IS.svg",
@@ -1584,7 +1744,8 @@
       "en_US": ["India"],
       "fr_FR": ["Inde"],
       "es_ES": ["India"],
-      "de_DE": ["Indien"]
+      "de_DE": ["Indien"],
+      "pt_PT": ["República da Índia", "Índia"]
     },
     "identifier": "IN",
     "flag_url": "./assets/maps/flags/world-countries/flag_IN.svg",
@@ -1599,7 +1760,8 @@
       "en_US": ["Indonesia"],
       "fr_FR": ["Indonésie"],
       "es_ES": ["Indonesia"],
-      "de_DE": ["Indonesien"]
+      "de_DE": ["Indonesien"],
+      "pt_PT": ["República da Indonésia", "Indonésia"]
     },
     "identifier": "ID",
     "flag_url": "./assets/maps/flags/world-countries/flag_ID.svg",
@@ -1611,10 +1773,16 @@
   },
   {
     "name": {
-      "en_US": ["Iran", "Islamic Republic of Iran"],
-      "fr_FR": ["Iran", "République islamique d'Iran"],
-      "es_ES": ["Irán", "República Islámica de Irán"],
-      "de_DE": ["Iran", "Islamische Republik Iran"]
+      "en_US": ["Islamic Republic of Iran", "Iran"],
+      "fr_FR": ["République islamique d'Iran", "Iran"],
+      "es_ES": ["República Islámica de Irán", "Irán"],
+      "de_DE": ["Islamische Republik Iran", "Iran"],
+      "pt_PT": [
+        "República Islâmica do Irã",
+        "República Islâmica do Irão",
+        "Irã",
+        "Irão"
+      ]
     },
     "identifier": "IR",
     "flag_url": "./assets/maps/flags/world-countries/flag_IR.svg",
@@ -1627,9 +1795,10 @@
   {
     "name": {
       "en_US": ["Iraq"],
-      "fr_FR": ["Irak", "République d'Irak"],
+      "fr_FR": ["République d'Irak", "Irak"],
       "es_ES": ["Irak"],
-      "de_DE": ["Irak", "Republik Irak"]
+      "de_DE": ["Republik Irak", "Irak"],
+      "pt_PT": ["República do Iraque", "Iraque"]
     },
     "identifier": "IQ",
     "flag_url": "./assets/maps/flags/world-countries/flag_IQ.svg",
@@ -1644,7 +1813,8 @@
       "en_US": ["Ireland"],
       "fr_FR": ["Irlande"],
       "es_ES": ["Irlanda"],
-      "de_DE": ["Irland"]
+      "de_DE": ["Irland"],
+      "pt_PT": ["República da Irlanda", "Irlanda"]
     },
     "identifier": "IE",
     "flag_url": "./assets/maps/flags/world-countries/flag_IE.svg",
@@ -1659,7 +1829,8 @@
       "en_US": ["Isle of Man"],
       "fr_FR": ["Ïle de Man"],
       "es_ES": ["Isla de Man"],
-      "de_DE": ["Isle of Man"]
+      "de_DE": ["Isle of Man"],
+      "pt_PT": ["Ilha de Man"]
     },
     "identifier": "IM",
     "flag_url": "./assets/maps/flags/world-countries/flag_IM.svg",
@@ -1674,7 +1845,8 @@
       "en_US": ["Israel"],
       "fr_FR": ["Israël"],
       "es_ES": ["Israel"],
-      "de_DE": ["Israel"]
+      "de_DE": ["Israel"],
+      "pt_PT": ["Estado de Israel", "Israel"]
     },
     "identifier": "IL",
     "flag_url": "./assets/maps/flags/world-countries/flag_IL.svg",
@@ -1689,7 +1861,8 @@
       "en_US": ["Italy"],
       "fr_FR": ["italie"],
       "es_ES": ["Italia"],
-      "de_DE": ["Italien"]
+      "de_DE": ["Italien"],
+      "pt_PT": ["República Italiana", "Itália"]
     },
     "identifier": "IT",
     "flag_url": "./assets/maps/flags/world-countries/flag_IT.svg",
@@ -1704,7 +1877,8 @@
       "en_US": ["Jamaica"],
       "fr_FR": ["Jamaïque"],
       "es_ES": ["Jamaica"],
-      "de_DE": ["Jamaika"]
+      "de_DE": ["Jamaika"],
+      "pt_PT": ["Jamaica"]
     },
     "identifier": "JM",
     "flag_url": "./assets/maps/flags/world-countries/flag_JM.svg",
@@ -1719,7 +1893,8 @@
       "en_US": ["Japan"],
       "fr_FR": ["Japon"],
       "es_ES": ["Japón"],
-      "de_DE": ["Japan"]
+      "de_DE": ["Japan"],
+      "pt_PT": ["Japão"]
     },
     "identifier": "JP",
     "flag_url": "./assets/maps/flags/world-countries/flag_JP.svg",
@@ -1734,7 +1909,8 @@
       "en_US": ["Jersey"],
       "fr_FR": ["Jersey"],
       "es_ES": ["Jersey"],
-      "de_DE": ["Jersey (Kanalinsel)"]
+      "de_DE": ["Jersey"],
+      "pt_PT": ["Bailiado de Jersey", "Jersey"]
     },
     "identifier": "JE",
     "flag_url": "./assets/maps/flags/world-countries/flag_JE.svg",
@@ -1749,7 +1925,8 @@
       "en_US": ["Jordan"],
       "fr_FR": ["Jordanie"],
       "es_ES": ["Jordania"],
-      "de_DE": ["Jordanien"]
+      "de_DE": ["Jordanien"],
+      "pt_PT": ["Reino Haxemita da Jordânia", "Jordânia"]
     },
     "identifier": "JO",
     "flag_url": "./assets/maps/flags/world-countries/flag_JO.svg",
@@ -1764,7 +1941,8 @@
       "en_US": ["Kazakhstan"],
       "fr_FR": ["Kazakhstan"],
       "es_ES": ["Kazajistán"],
-      "de_DE": ["Kasachstan"]
+      "de_DE": ["Kasachstan"],
+      "pt_PT": ["República do Cazaquistão", "Cazaquistão"]
     },
     "identifier": "KZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_KZ.svg",
@@ -1779,7 +1957,8 @@
       "en_US": ["Kenya"],
       "fr_FR": ["Kenya"],
       "es_ES": ["Kenia"],
-      "de_DE": ["Kenia"]
+      "de_DE": ["Kenia"],
+      "pt_PT": ["República do Quênia", "Quênia"]
     },
     "identifier": "KE",
     "flag_url": "./assets/maps/flags/world-countries/flag_KE.svg",
@@ -1794,7 +1973,8 @@
       "en_US": ["Kiribati"],
       "fr_FR": ["Kiribati"],
       "es_ES": ["Kiribati"],
-      "de_DE": ["Kiribati"]
+      "de_DE": ["Kiribati"],
+      "pt_PT": ["República de Kiribati", "Quiribáti", "Kiribati"]
     },
     "identifier": "KI",
     "flag_url": "./assets/maps/flags/world-countries/flag_KI.svg",
@@ -1809,7 +1989,8 @@
       "en_US": ["North Korea", "Democratic People's Republic of Korea"],
       "fr_FR": ["Corée du Nord"],
       "es_ES": ["Corea del Norte", "República Popular Democrática de Corea"],
-      "de_DE": ["Nordkorea", "Demokratische Volksrepublik Korea"]
+      "de_DE": ["Nordkorea", "Demokratische Volksrepublik Korea"],
+      "pt_PT": ["República Popular Democrática da Coreia", "Coreia do Norte"]
     },
     "identifier": "KP",
     "flag_url": "./assets/maps/flags/world-countries/flag_KP.svg",
@@ -1824,7 +2005,8 @@
       "en_US": ["South Korea"],
       "fr_FR": ["Corée du sud"],
       "es_ES": ["Corea del Sur"],
-      "de_DE": ["Südkorea"]
+      "de_DE": ["Südkorea"],
+      "pt_PT": ["República da Coreia", "Coreia do Sul"]
     },
     "identifier": "KR",
     "flag_url": "./assets/maps/flags/world-countries/flag_KR.svg",
@@ -1839,7 +2021,8 @@
       "en_US": ["Kosovo"],
       "fr_FR": ["Kosovo"],
       "es_ES": ["Kósovo", "República de Kosovo"],
-      "de_DE": ["Kosovo"]
+      "de_DE": ["Kosovo"],
+      "pt_PT": ["República do Kosovo", "Kosovo", "Kossovo", "Cossovo", "Cosovo"]
     },
     "identifier": "XK",
     "flag_url": "./assets/maps/flags/world-countries/flag_XK.svg",
@@ -1854,7 +2037,8 @@
       "en_US": ["Kuwait"],
       "fr_FR": ["Koweït"],
       "es_ES": ["Kuwait"],
-      "de_DE": ["Kuwait"]
+      "de_DE": ["Kuwait"],
+      "pt_PT": ["Estado do Kuwait", "Kuwait"]
     },
     "identifier": "KW",
     "flag_url": "./assets/maps/flags/world-countries/flag_KW.svg",
@@ -1869,7 +2053,13 @@
       "en_US": ["Kyrgyzstan"],
       "fr_FR": ["Kirghizistan"],
       "es_ES": ["Kirguistán"],
-      "de_DE": ["Kirgisistan"]
+      "de_DE": ["Kirgisistan"],
+      "pt_PT": [
+        "República Quirguiz",
+        "Quirguistão",
+        "Quirguizistão",
+        "Quirguízia"
+      ]
     },
     "identifier": "KG",
     "flag_url": "./assets/maps/flags/world-countries/flag_KG.svg",
@@ -1884,7 +2074,8 @@
       "en_US": ["Laos", "Lao People's Democratic Republic"],
       "fr_FR": ["Laos"],
       "es_ES": ["Laos", "República Democrática Popular Lao"],
-      "de_DE": ["Laos", "Demokratische Volksrepublik Laos"]
+      "de_DE": ["Laos", "Demokratische Volksrepublik Laos"],
+      "pt_PT": ["República Democrática Popular do Laos", "Laos"]
     },
     "identifier": "LA",
     "flag_url": "./assets/maps/flags/world-countries/flag_LA.svg",
@@ -1899,7 +2090,8 @@
       "en_US": ["Latvia"],
       "fr_FR": ["Lettonie"],
       "es_ES": ["Letonia"],
-      "de_DE": ["Lettland"]
+      "de_DE": ["Lettland"],
+      "pt_PT": ["República da Letônia", "Letônia"]
     },
     "identifier": "LV",
     "flag_url": "./assets/maps/flags/world-countries/flag_LV.svg",
@@ -1914,7 +2106,8 @@
       "en_US": ["Lebanon"],
       "fr_FR": ["Liban"],
       "es_ES": ["Líbano"],
-      "de_DE": ["Libanon"]
+      "de_DE": ["Libanon"],
+      "pt_PT": ["República do Líbano", "Líbano"]
     },
     "identifier": "LB",
     "flag_url": "./assets/maps/flags/world-countries/flag_LB.svg",
@@ -1929,7 +2122,8 @@
       "en_US": ["Lesotho"],
       "fr_FR": ["Lesotho"],
       "es_ES": ["Lesoto"],
-      "de_DE": ["Lesotho"]
+      "de_DE": ["Lesotho"],
+      "pt_PT": ["Reino do Lesoto", "Lesoto", "Lessoto"]
     },
     "identifier": "LS",
     "flag_url": "./assets/maps/flags/world-countries/flag_LS.svg",
@@ -1944,7 +2138,8 @@
       "en_US": ["Liberia"],
       "fr_FR": ["Libéria"],
       "es_ES": ["Liberia"],
-      "de_DE": ["Liberia"]
+      "de_DE": ["Liberia"],
+      "pt_PT": ["República da Libéria", "Libéria"]
     },
     "identifier": "LR",
     "flag_url": "./assets/maps/flags/world-countries/flag_LR.svg",
@@ -1959,7 +2154,8 @@
       "en_US": ["Libya"],
       "fr_FR": ["Libye"],
       "es_ES": ["Libia"],
-      "de_DE": ["Libyen"]
+      "de_DE": ["Libyen"],
+      "pt_PT": ["Estado da Líbia", "Líbia"]
     },
     "identifier": "LY",
     "flag_url": "./assets/maps/flags/world-countries/flag_LY.svg",
@@ -1974,7 +2170,8 @@
       "en_US": ["Liechtenstein"],
       "fr_FR": ["Liechtenstein"],
       "es_ES": ["Liechtenstein"],
-      "de_DE": ["Liechtenstein"]
+      "de_DE": ["Liechtenstein"],
+      "pt_PT": ["Principado de Liechtenstein", "Listenstaine", "Liechtenstein"]
     },
     "identifier": "LI",
     "flag_url": "./assets/maps/flags/world-countries/flag_LI.svg",
@@ -1989,7 +2186,8 @@
       "en_US": ["Lithuania"],
       "fr_FR": ["Lituanie"],
       "es_ES": ["Lituania"],
-      "de_DE": ["Litauen"]
+      "de_DE": ["Litauen"],
+      "pt_PT": ["República da Lituânia", "Lituânia"]
     },
     "identifier": "LT",
     "flag_url": "./assets/maps/flags/world-countries/flag_LT.svg",
@@ -2004,7 +2202,8 @@
       "en_US": ["Luxembourg"],
       "fr_FR": ["Luxembourg"],
       "es_ES": ["Luxemburgo"],
-      "de_DE": ["Luxemburg"]
+      "de_DE": ["Luxemburg"],
+      "pt_PT": ["Grão-Ducado do Luxemburgo", "Luxemburgo"]
     },
     "identifier": "LU",
     "flag_url": "./assets/maps/flags/world-countries/flag_LU.svg",
@@ -2019,7 +2218,8 @@
       "en_US": ["Macao"],
       "fr_FR": ["Macao"],
       "es_ES": ["Macao"],
-      "de_DE": ["Macau"]
+      "de_DE": ["Macau"],
+      "pt_PT": ["Macau"]
     },
     "identifier": "MO",
     "flag_url": "./assets/maps/flags/world-countries/flag_MO.svg",
@@ -2034,7 +2234,8 @@
       "en_US": ["Madagascar"],
       "fr_FR": ["Madagascar"],
       "es_ES": ["Madagascar"],
-      "de_DE": ["Madagaskar"]
+      "de_DE": ["Madagaskar"],
+      "pt_PT": ["República de Madagáscar", "Madagáscar"]
     },
     "identifier": "MG",
     "flag_url": "./assets/maps/flags/world-countries/flag_MG.svg",
@@ -2049,7 +2250,8 @@
       "en_US": ["Malawi"],
       "fr_FR": ["Malawi"],
       "es_ES": ["Malaui"],
-      "de_DE": ["Malawi"]
+      "de_DE": ["Malawi"],
+      "pt_PT": ["República do Malawi", "Maláui", "Malawi"]
     },
     "identifier": "MW",
     "flag_url": "./assets/maps/flags/world-countries/flag_MW.svg",
@@ -2064,7 +2266,8 @@
       "en_US": ["Malaysia"],
       "fr_FR": ["Malaisie"],
       "es_ES": ["Malasia"],
-      "de_DE": ["Malaysia"]
+      "de_DE": ["Malaysia"],
+      "pt_PT": ["Malásia"]
     },
     "identifier": "MY",
     "flag_url": "./assets/maps/flags/world-countries/flag_MY.svg",
@@ -2079,7 +2282,8 @@
       "en_US": ["Maldives"],
       "fr_FR": ["Maldives"],
       "es_ES": ["Maldivas"],
-      "de_DE": ["Malediven"]
+      "de_DE": ["Malediven"],
+      "pt_PT": ["República das Maldivas", "Maldivas"]
     },
     "identifier": "MV",
     "flag_url": "./assets/maps/flags/world-countries/flag_MV.svg",
@@ -2094,7 +2298,8 @@
       "en_US": ["Mali"],
       "fr_FR": ["Mali"],
       "es_ES": ["Malí"],
-      "de_DE": ["Mali"]
+      "de_DE": ["Mali"],
+      "pt_PT": ["República do Mali", "Mali"]
     },
     "identifier": "ML",
     "flag_url": "./assets/maps/flags/world-countries/flag_ML.svg",
@@ -2109,7 +2314,8 @@
       "en_US": ["Malta"],
       "fr_FR": ["Malte"],
       "es_ES": ["Malta"],
-      "de_DE": ["Malta"]
+      "de_DE": ["Malta"],
+      "pt_PT": ["República de Malta", "Malta"]
     },
     "identifier": "MT",
     "flag_url": "./assets/maps/flags/world-countries/flag_MT.svg",
@@ -2124,7 +2330,8 @@
       "en_US": ["Marshall Islands"],
       "fr_FR": ["Ïles Marshall"],
       "es_ES": ["Islas Marshall"],
-      "de_DE": ["Marshallinseln"]
+      "de_DE": ["Marshallinseln"],
+      "pt_PT": ["República das Ilhas Marshall", "Ilhas Marshall"]
     },
     "identifier": "MH",
     "flag_url": "./assets/maps/flags/world-countries/flag_MH.svg",
@@ -2139,7 +2346,8 @@
       "en_US": ["Martinique"],
       "fr_FR": ["Martinique"],
       "es_ES": ["Martinica"],
-      "de_DE": ["Martinique"]
+      "de_DE": ["Martinique"],
+      "pt_PT": ["Martinica"]
     },
     "identifier": "MQ",
     "flag_url": "./assets/maps/flags/world-countries/flag_MQ.svg",
@@ -2154,7 +2362,8 @@
       "en_US": ["Mauritania"],
       "fr_FR": ["Mauritanie"],
       "es_ES": ["Mauritania"],
-      "de_DE": ["Mauretanien"]
+      "de_DE": ["Mauretanien"],
+      "pt_PT": ["República Islâmica da Mauritânia", "Mauritânia"]
     },
     "identifier": "MR",
     "flag_url": "./assets/maps/flags/world-countries/flag_MR.svg",
@@ -2169,7 +2378,13 @@
       "en_US": ["Mauritius"],
       "fr_FR": ["Maurice"],
       "es_ES": ["Mauricio"],
-      "de_DE": ["Mauritius"]
+      "de_DE": ["Mauritius"],
+      "pt_PT": [
+        "República da Maurícia",
+        "República de Maurício",
+        "Maurícia",
+        "Maurício "
+      ]
     },
     "identifier": "MU",
     "flag_url": "./assets/maps/flags/world-countries/flag_MU.svg",
@@ -2184,7 +2399,8 @@
       "en_US": ["Mayotte"],
       "fr_FR": ["Mayotte"],
       "es_ES": ["Mayotte"],
-      "de_DE": ["Mayotte"]
+      "de_DE": ["Mayotte"],
+      "pt_PT": ["Departamento de Maiote", "Maiote"]
     },
     "identifier": "YT",
     "flag_url": "./assets/maps/flags/world-countries/flag_YT.svg",
@@ -2199,7 +2415,8 @@
       "en_US": ["Mexico"],
       "fr_FR": ["Mexique"],
       "es_ES": ["México"],
-      "de_DE": ["Mexiko"]
+      "de_DE": ["Mexiko"],
+      "pt_PT": ["Estados Unidos Mexicanos", "México"]
     },
     "identifier": "MX",
     "flag_url": "./assets/maps/flags/world-countries/flag_MX.svg",
@@ -2214,7 +2431,8 @@
       "en_US": ["Micronesia", "Federated States of Micronesia"],
       "fr_FR": ["Micronésie"],
       "es_ES": ["Micronesia"],
-      "de_DE": ["Mikronesien"]
+      "de_DE": ["Mikronesien"],
+      "pt_PT": ["Estados Federados da Micronésia"]
     },
     "identifier": "FM",
     "flag_url": "./assets/maps/flags/world-countries/flag_FM.svg",
@@ -2229,7 +2447,8 @@
       "en_US": ["Moldova", "Republic of Moldova"],
       "fr_FR": ["Moldavie"],
       "es_ES": ["Moldavia", "República de Moldavia"],
-      "de_DE": ["Moldau", "Moldawien"]
+      "de_DE": ["Moldau", "Moldawien"],
+      "pt_PT": ["República da Moldávia", "Moldávia", "Moldova"]
     },
     "identifier": "MD",
     "flag_url": "./assets/maps/flags/world-countries/flag_MD.svg",
@@ -2244,7 +2463,8 @@
       "en_US": ["Monaco"],
       "fr_FR": ["Monaco"],
       "es_ES": ["Mónaco"],
-      "de_DE": ["Monaco"]
+      "de_DE": ["Monaco"],
+      "pt_PT": ["Principado do Mónaco", "Mônaco"]
     },
     "identifier": "MC",
     "flag_url": "./assets/maps/flags/world-countries/flag_MC.svg",
@@ -2259,7 +2479,8 @@
       "en_US": ["Mongolia"],
       "fr_FR": ["Mongolie"],
       "es_ES": ["Mongolia"],
-      "de_DE": ["Mongolei"]
+      "de_DE": ["Mongolei"],
+      "pt_PT": ["Mongólia"]
     },
     "identifier": "MN",
     "flag_url": "./assets/maps/flags/world-countries/flag_MN.svg",
@@ -2274,7 +2495,8 @@
       "en_US": ["Montenegro"],
       "fr_FR": ["Monténégro"],
       "es_ES": ["Montenegro"],
-      "de_DE": ["Montenegro"]
+      "de_DE": ["Montenegro"],
+      "pt_PT": ["Montenegro"]
     },
     "identifier": "ME",
     "flag_url": "./assets/maps/flags/world-countries/flag_ME.svg",
@@ -2289,7 +2511,8 @@
       "en_US": ["Montserrat"],
       "fr_FR": ["Montserrat"],
       "es_ES": ["Montserrat"],
-      "de_DE": ["Montserrat"]
+      "de_DE": ["Montserrat"],
+      "pt_PT": ["Monserrate"]
     },
     "identifier": "MS",
     "flag_url": "./assets/maps/flags/world-countries/flag_MS.svg",
@@ -2304,7 +2527,8 @@
       "en_US": ["Morocco"],
       "fr_FR": ["Maroc"],
       "es_ES": ["Marruecos"],
-      "de_DE": ["Marokko"]
+      "de_DE": ["Marokko"],
+      "pt_PT": ["Reino de Marrocos", "Marrocos"]
     },
     "identifier": "MA",
     "flag_url": "./assets/maps/flags/world-countries/flag_MA.svg",
@@ -2319,7 +2543,8 @@
       "en_US": ["Mozambique"],
       "fr_FR": ["Mozambique"],
       "es_ES": ["Mozambique"],
-      "de_DE": ["Mosambik"]
+      "de_DE": ["Mosambik"],
+      "pt_PT": ["República de Moçambique", "Moçambique"]
     },
     "identifier": "MZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_MZ.svg",
@@ -2334,7 +2559,8 @@
       "en_US": ["Myanmar"],
       "fr_FR": ["Myanmar", "Birmanie"],
       "es_ES": ["Birmania", "Myanmar", "República de la Unión de Myanmar"],
-      "de_DE": ["Myanmar", "Burma"]
+      "de_DE": ["Myanmar", "Burma"],
+      "pt_PT": ["República da União de Myanmar", "Mianmar", "Birmânia"]
     },
     "identifier": "MM",
     "flag_url": "./assets/maps/flags/world-countries/flag_MM.svg",
@@ -2349,7 +2575,8 @@
       "en_US": ["Namibia"],
       "fr_FR": ["Namibie"],
       "es_ES": ["Namibia"],
-      "de_DE": ["Namibia"]
+      "de_DE": ["Namibia"],
+      "pt_PT": ["República da Namíbia", "Namíbia"]
     },
     "identifier": "NA",
     "flag_url": "./assets/maps/flags/world-countries/flag_NA.svg",
@@ -2364,7 +2591,8 @@
       "en_US": ["Nauru"],
       "fr_FR": ["Nauru"],
       "es_ES": ["Nauru"],
-      "de_DE": ["Nauru"]
+      "de_DE": ["Nauru"],
+      "pt_PT": ["República de Nauru", "Nauru"]
     },
     "identifier": "NR",
     "flag_url": "./assets/maps/flags/world-countries/flag_NR.svg",
@@ -2379,7 +2607,8 @@
       "en_US": ["Nepal"],
       "fr_FR": ["Népal"],
       "es_ES": ["Nepal"],
-      "de_DE": ["Nepal"]
+      "de_DE": ["Nepal"],
+      "pt_PT": ["República Democrática Federal do Nepal", "Nepal"]
     },
     "identifier": "NP",
     "flag_url": "./assets/maps/flags/world-countries/flag_NP.svg",
@@ -2394,7 +2623,8 @@
       "en_US": ["Netherlands"],
       "fr_FR": ["Pays-Bas"],
       "es_ES": ["Países Bajos"],
-      "de_DE": ["Niederlande"]
+      "de_DE": ["Niederlande"],
+      "pt_PT": ["Países Baixos"]
     },
     "identifier": "NL",
     "flag_url": "./assets/maps/flags/world-countries/flag_NL.svg",
@@ -2409,7 +2639,8 @@
       "en_US": ["New Caledonia"],
       "fr_FR": ["Nouvelle-Calédonie"],
       "es_ES": ["Nueva Caledonia"],
-      "de_DE": ["Neukaledonien"]
+      "de_DE": ["Neukaledonien"],
+      "pt_PT": ["Nova Caledônia"]
     },
     "identifier": "NC",
     "flag_url": "./assets/maps/flags/world-countries/flag_NC.svg",
@@ -2424,7 +2655,8 @@
       "en_US": ["New Zealand"],
       "fr_FR": ["Nouvelle-Zélande"],
       "es_ES": ["Nueva Zelanda"],
-      "de_DE": ["Neuseeland"]
+      "de_DE": ["Neuseeland"],
+      "pt_PT": ["Nova Zelândia"]
     },
     "identifier": "NZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_NZ.svg",
@@ -2439,7 +2671,8 @@
       "en_US": ["Nicaragua"],
       "fr_FR": ["Nicaragua"],
       "es_ES": ["Nicaragua"],
-      "de_DE": ["Nicaragua"]
+      "de_DE": ["Nicaragua"],
+      "pt_PT": ["República da Nicarágua", "Nicarágua"]
     },
     "identifier": "NI",
     "flag_url": "./assets/maps/flags/world-countries/flag_NI.svg",
@@ -2454,7 +2687,8 @@
       "en_US": ["Niger"],
       "fr_FR": ["Niger"],
       "es_ES": ["Níger"],
-      "de_DE": ["Niger"]
+      "de_DE": ["Niger"],
+      "pt_PT": ["República do Níger", "Níger"]
     },
     "identifier": "NE",
     "flag_url": "./assets/maps/flags/world-countries/flag_NE.svg",
@@ -2469,7 +2703,8 @@
       "en_US": ["Nigeria"],
       "fr_FR": ["Nigéria"],
       "es_ES": ["Nigeria"],
-      "de_DE": ["Nigeria"]
+      "de_DE": ["Nigeria"],
+      "pt_PT": ["República Federal da Nigéria", "Nigéria"]
     },
     "identifier": "NG",
     "flag_url": "./assets/maps/flags/world-countries/flag_NG.svg",
@@ -2484,7 +2719,8 @@
       "en_US": ["Niue"],
       "fr_FR": ["Niue"],
       "es_ES": ["Niue"],
-      "de_DE": ["Niue"]
+      "de_DE": ["Niue"],
+      "pt_PT": ["Niue"]
     },
     "identifier": "NU",
     "flag_url": "./assets/maps/flags/world-countries/flag_NU.svg",
@@ -2499,7 +2735,8 @@
       "en_US": ["Norfolk Island"],
       "fr_FR": ["Île Norfolk"],
       "es_ES": ["Isla Norfolk"],
-      "de_DE": ["Norfolkinsel"]
+      "de_DE": ["Norfolkinsel"],
+      "pt_PT": ["Território da Ilha Norfolk", "Ilha Norfolque", "Ilha Norfolk"]
     },
     "identifier": "NF",
     "flag_url": "./assets/maps/flags/world-countries/flag_NF.svg",
@@ -2514,7 +2751,8 @@
       "en_US": ["North Macedonia"],
       "fr_FR": ["Macédoine du Nord"],
       "es_ES": ["Macedonia del Norte"],
-      "de_DE": ["Nordmazedonien"]
+      "de_DE": ["Nordmazedonien"],
+      "pt_PT": ["Macedônia do Norte"]
     },
     "identifier": "MK",
     "flag_url": "./assets/maps/flags/world-countries/flag_MK.svg",
@@ -2529,7 +2767,12 @@
       "en_US": ["Northern Mariana Islands"],
       "fr_FR": ["Îles Mariannes du Nord"],
       "es_ES": ["Islas Marianas del Norte"],
-      "de_DE": ["Nördliche Marianen"]
+      "de_DE": ["Nördliche Marianen"],
+      "pt_PT": [
+        "Comunidade das Ilhas Marianas do Norte",
+        "Ilhas Marianas Setentrionais",
+        "Ilhas Marianas do Norte"
+      ]
     },
     "identifier": "MP",
     "flag_url": "./assets/maps/flags/world-countries/flag_MP.svg",
@@ -2544,7 +2787,8 @@
       "en_US": ["Norway"],
       "fr_FR": ["Norvège"],
       "es_ES": ["Noruega"],
-      "de_DE": ["Norwegen"]
+      "de_DE": ["Norwegen"],
+      "pt_PT": ["Reino da Noruega", "Noruega"]
     },
     "identifier": "NO",
     "flag_url": "./assets/maps/flags/world-countries/flag_NO.svg",
@@ -2559,7 +2803,8 @@
       "en_US": ["Oman"],
       "fr_FR": ["Oman"],
       "es_ES": ["Omán"],
-      "de_DE": ["Oman"]
+      "de_DE": ["Oman"],
+      "pt_PT": ["Sultanato de Omã", "Omã"]
     },
     "identifier": "OM",
     "flag_url": "./assets/maps/flags/world-countries/flag_OM.svg",
@@ -2574,7 +2819,8 @@
       "en_US": ["Pakistan"],
       "fr_FR": ["Pakistan"],
       "es_ES": ["Pakistán"],
-      "de_DE": ["Pakistan"]
+      "de_DE": ["Pakistan"],
+      "pt_PT": ["República Islâmica do Paquistão", "Paquistão"]
     },
     "identifier": "PK",
     "flag_url": "./assets/maps/flags/world-countries/flag_PK.svg",
@@ -2589,7 +2835,8 @@
       "en_US": ["Palau"],
       "fr_FR": ["Palau"],
       "es_ES": ["Palaos"],
-      "de_DE": ["Palau"]
+      "de_DE": ["Palau"],
+      "pt_PT": ["República de Palau", "Palau"]
     },
     "identifier": "PW",
     "flag_url": "./assets/maps/flags/world-countries/flag_PW.svg",
@@ -2604,7 +2851,8 @@
       "en_US": ["Palestine", "State of Palestine"],
       "fr_FR": ["Palestine"],
       "es_ES": ["Palestina"],
-      "de_DE": ["Palästina"]
+      "de_DE": ["Palästina"],
+      "pt_PT": ["Palestina"]
     },
     "identifier": "PS",
     "flag_url": "./assets/maps/flags/world-countries/flag_PS.svg",
@@ -2619,7 +2867,8 @@
       "en_US": ["Panama"],
       "fr_FR": ["Panama"],
       "es_ES": ["Panamá"],
-      "de_DE": ["Panama"]
+      "de_DE": ["Panama"],
+      "pt_PT": ["República do Panamá", "Panamá"]
     },
     "identifier": "PA",
     "flag_url": "./assets/maps/flags/world-countries/flag_PA.svg",
@@ -2634,7 +2883,12 @@
       "en_US": ["Papua New Guinea"],
       "fr_FR": ["Papouasie-Nouvelle-Guinée"],
       "es_ES": ["Papúa Nueva Guinea"],
-      "de_DE": ["Papua-Neuguinea"]
+      "de_DE": ["Papua-Neuguinea"],
+      "pt_PT": [
+        "Estado Independente da Papua-Nova Guiné",
+        "Papua-Nova Guiné",
+        "Papuásia-Nova Guiné"
+      ]
     },
     "identifier": "PG",
     "flag_url": "./assets/maps/flags/world-countries/flag_PG.svg",
@@ -2649,7 +2903,8 @@
       "en_US": ["Paraguay"],
       "fr_FR": ["Paraguay"],
       "es_ES": ["Paraguay"],
-      "de_DE": ["Paraguay"]
+      "de_DE": ["Paraguay"],
+      "pt_PT": ["República do Paraguai", "Paraguai"]
     },
     "identifier": "PY",
     "flag_url": "./assets/maps/flags/world-countries/flag_PY.svg",
@@ -2664,7 +2919,8 @@
       "en_US": ["Peru"],
       "fr_FR": ["Pérou"],
       "es_ES": ["Perú"],
-      "de_DE": ["Peru"]
+      "de_DE": ["Peru"],
+      "pt_PT": ["República do Peru", "Peru"]
     },
     "identifier": "PE",
     "flag_url": "./assets/maps/flags/world-countries/flag_PE.svg",
@@ -2679,7 +2935,8 @@
       "en_US": ["Philippines"],
       "fr_FR": ["Philippines"],
       "es_ES": ["Filipinas"],
-      "de_DE": ["Philippinen"]
+      "de_DE": ["Philippinen"],
+      "pt_PT": ["República das Filipinas", "Filipinas"]
     },
     "identifier": "PH",
     "flag_url": "./assets/maps/flags/world-countries/flag_PH.svg",
@@ -2694,7 +2951,13 @@
       "en_US": ["Pitcairn"],
       "fr_FR": ["Pitcairn"],
       "es_ES": ["Islas Pitcairn"],
-      "de_DE": ["Pitcairninseln"]
+      "de_DE": ["Pitcairninseln"],
+      "pt_PT": [
+        "Ilhas Pitcairn, Henderson, Ducie e Oeno",
+        "Grupo de Ilhas Pitcairn",
+        "Ilhas Pitcairn",
+        "Ilhas Picárnia"
+      ]
     },
     "identifier": "PN",
     "flag_url": "./assets/maps/flags/world-countries/flag_PN.svg",
@@ -2709,7 +2972,8 @@
       "en_US": ["Poland"],
       "fr_FR": ["Pologne"],
       "es_ES": ["Polonia"],
-      "de_DE": ["Polen"]
+      "de_DE": ["Polen"],
+      "pt_PT": ["República da Polónia", "Polônia"]
     },
     "identifier": "PL",
     "flag_url": "./assets/maps/flags/world-countries/flag_PL.svg",
@@ -2724,7 +2988,8 @@
       "en_US": ["Portugal"],
       "fr_FR": ["Portugal"],
       "es_ES": ["Portugal"],
-      "de_DE": ["Portugal"]
+      "de_DE": ["Portugal"],
+      "pt_PT": ["República Portuguesa", "Portugal"]
     },
     "identifier": "PT",
     "flag_url": "./assets/maps/flags/world-countries/flag_PT.svg",
@@ -2739,7 +3004,8 @@
       "en_US": ["Puerto Rico"],
       "fr_FR": ["Porto Rico", "Puerto Rico"],
       "es_ES": ["Puerto Rico"],
-      "de_DE": ["Puerto Rico"]
+      "de_DE": ["Puerto Rico"],
+      "pt_PT": ["Estado Livre Associado de Porto Rico", "Porto Rico"]
     },
     "identifier": "PR",
     "flag_url": "./assets/maps/flags/world-countries/flag_PR.svg",
@@ -2754,7 +3020,8 @@
       "en_US": ["Qatar"],
       "fr_FR": ["Qatar"],
       "es_ES": ["Catar"],
-      "de_DE": ["Katar"]
+      "de_DE": ["Katar"],
+      "pt_PT": ["Estado do Catar", "Catar", "Qatar"]
     },
     "identifier": "QA",
     "flag_url": "./assets/maps/flags/world-countries/flag_QA.svg",
@@ -2769,7 +3036,8 @@
       "en_US": ["Réunion"],
       "fr_FR": ["Réunion"],
       "es_ES": ["Reunión"],
-      "de_DE": ["Réunion"]
+      "de_DE": ["Réunion"],
+      "pt_PT": ["Reunião"]
     },
     "identifier": "RE",
     "flag_url": "./assets/maps/flags/world-countries/flag_RE.svg",
@@ -2784,7 +3052,8 @@
       "en_US": ["Romania"],
       "fr_FR": ["Roumanie"],
       "es_ES": ["Rumania"],
-      "de_DE": ["Rumänien"]
+      "de_DE": ["Rumänien"],
+      "pt_PT": ["Romênia"]
     },
     "identifier": "RO",
     "flag_url": "./assets/maps/flags/world-countries/flag_RO.svg",
@@ -2799,7 +3068,8 @@
       "en_US": ["Russia", "Russian Federation"],
       "fr_FR": ["Russie"],
       "es_ES": ["Rusia"],
-      "de_DE": ["Russland"]
+      "de_DE": ["Russland"],
+      "pt_PT": ["Federação da Rússia", "Rússia"]
     },
     "identifier": "RU",
     "flag_url": "./assets/maps/flags/world-countries/flag_RU.svg",
@@ -2814,7 +3084,8 @@
       "en_US": ["Rwanda"],
       "fr_FR": ["Rwanda"],
       "es_ES": ["Ruanda"],
-      "de_DE": ["Ruanda"]
+      "de_DE": ["Ruanda"],
+      "pt_PT": ["República de Ruanda", "República do Ruanda", "Ruanda"]
     },
     "identifier": "RW",
     "flag_url": "./assets/maps/flags/world-countries/flag_RW.svg",
@@ -2829,7 +3100,8 @@
       "en_US": ["Saint Barthélemy"],
       "fr_FR": ["Saint-Barthélémy"],
       "es_ES": ["San Bartolomé"],
-      "de_DE": ["Saint-Barthélemy"]
+      "de_DE": ["Saint-Barthélemy"],
+      "pt_PT": ["Coletividade de São Bartolomeu", "São Bartolomeu"]
     },
     "identifier": "BL",
     "flag_url": "./assets/maps/flags/world-countries/flag_BL.svg",
@@ -2844,7 +3116,8 @@
       "en_US": ["Saint Helena, Ascension and Tristan da Cunha"],
       "fr_FR": ["Sainte-Hélène, Ascension et Tristan da Cunha"],
       "es_ES": ["Santa Elena, Ascensión y Tristán de Acuña"],
-      "de_DE": ["St. Helena, Ascension und Tristan da Cunha"]
+      "de_DE": ["St. Helena, Ascension und Tristan da Cunha"],
+      "pt_PT": ["Santa Helena, Ascensão e Tristão da Cunha", "Santa Helena"]
     },
     "identifier": "SH",
     "flag_url": "./assets/maps/flags/world-countries/flag_SH.svg",
@@ -2859,7 +3132,12 @@
       "en_US": ["Saint Kitts and Nevis"],
       "fr_FR": ["Saint-Kitts-et-Nevis"],
       "es_ES": ["San Cristóbal y Nieves"],
-      "de_DE": ["Saint Kitts und Nevis"]
+      "de_DE": ["Saint Kitts und Nevis"],
+      "pt_PT": [
+        "Federação de São Cristóvão e Neves",
+        "São Cristóvão e Neves",
+        "São Cristóvão e Névis"
+      ]
     },
     "identifier": "KN",
     "flag_url": "./assets/maps/flags/world-countries/flag_KN.svg",
@@ -2874,7 +3152,8 @@
       "en_US": ["Saint Lucia"],
       "fr_FR": ["Sainte-Lucie"],
       "es_ES": ["Santa Lucía"],
-      "de_DE": ["Saint Lucia"]
+      "de_DE": ["Saint Lucia"],
+      "pt_PT": ["Santa Lúcia"]
     },
     "identifier": "LC",
     "flag_url": "./assets/maps/flags/world-countries/flag_LC.svg",
@@ -2889,7 +3168,8 @@
       "en_US": ["Saint Martin"],
       "fr_FR": ["Saint Martin - Partie française", "Saint Martin - France"],
       "es_ES": ["San Martín"],
-      "de_DE": ["Saint-Martin"]
+      "de_DE": ["Saint-Martin"],
+      "pt_PT": ["Coletividade de São Martinho", "São Martinho"]
     },
     "identifier": "MF",
     "flag_url": "./assets/maps/flags/world-countries/flag_MF.svg",
@@ -2904,7 +3184,12 @@
       "en_US": ["Saint Pierre and Miquelon"],
       "fr_FR": ["Saint-Pierre-et-Miquelon"],
       "es_ES": ["San Pedro y Miquelón"],
-      "de_DE": ["Saint-Pierre und Miquelon"]
+      "de_DE": ["Saint-Pierre und Miquelon"],
+      "pt_PT": [
+        "São Pedro e Miquelão",
+        "Saint-Pierre e Miquelon",
+        "Coletividade de Ultramar de São Pedro e Miquelão"
+      ]
     },
     "identifier": "PM",
     "flag_url": "./assets/maps/flags/world-countries/flag_PM.svg",
@@ -2919,7 +3204,8 @@
       "en_US": ["Saint Vincent and the Grenadines"],
       "fr_FR": ["Saint-Vincent-et-les Grenadines"],
       "es_ES": ["San Vicente y las Granadinas"],
-      "de_DE": ["San Vincent und die Grenadinen"]
+      "de_DE": ["San Vincent und die Grenadinen"],
+      "pt_PT": ["São Vicente e Granadinas"]
     },
     "identifier": "VC",
     "flag_url": "./assets/maps/flags/world-countries/flag_VC.svg",
@@ -2934,7 +3220,8 @@
       "en_US": ["Samoa"],
       "fr_FR": ["Samoa"],
       "es_ES": ["Samoa"],
-      "de_DE": ["Samoa"]
+      "de_DE": ["Samoa"],
+      "pt_PT": ["Estado Independente de Samoa", "Samoa"]
     },
     "identifier": "WS",
     "flag_url": "./assets/maps/flags/world-countries/flag_WS.svg",
@@ -2949,7 +3236,13 @@
       "en_US": ["San Marino"],
       "fr_FR": ["Saint-Marin"],
       "es_ES": ["San Marino"],
-      "de_DE": ["San Marino"]
+      "de_DE": ["San Marino"],
+      "pt_PT": [
+        "República de San Marino",
+        "São Marino",
+        "São Marinho",
+        "Sereníssima República de San Marino"
+      ]
     },
     "identifier": "SM",
     "flag_url": "./assets/maps/flags/world-countries/flag_SM.svg",
@@ -2964,7 +3257,11 @@
       "en_US": ["Sao Tome and Principe"],
       "fr_FR": ["Sao Tomé-et-Principe"],
       "es_ES": ["Santo Tomé y Príncipe"],
-      "de_DE": ["São Tomé und Príncipe"]
+      "de_DE": ["São Tomé und Príncipe"],
+      "pt_PT": [
+        "República Democrática de São Tomé e Príncipe",
+        "São Tomé e Príncipe"
+      ]
     },
     "identifier": "ST",
     "flag_url": "./assets/maps/flags/world-countries/flag_ST.svg",
@@ -2979,7 +3276,8 @@
       "en_US": ["Saudi Arabia"],
       "fr_FR": ["Arabie Saoudite"],
       "es_ES": ["Arabia Saudita"],
-      "de_DE": ["Saudi-Arabien"]
+      "de_DE": ["Saudi-Arabien"],
+      "pt_PT": ["Reino da Arábia Saudita", "Arábia Saudita"]
     },
     "identifier": "SA",
     "flag_url": "./assets/maps/flags/world-countries/flag_SA.svg",
@@ -2994,7 +3292,8 @@
       "en_US": ["Senegal"],
       "fr_FR": ["Sénégal"],
       "es_ES": ["Senegal"],
-      "de_DE": ["Senegal"]
+      "de_DE": ["Senegal"],
+      "pt_PT": ["República do Senegal", "Senegal"]
     },
     "identifier": "SN",
     "flag_url": "./assets/maps/flags/world-countries/flag_SN.svg",
@@ -3009,7 +3308,8 @@
       "en_US": ["Serbia"],
       "fr_FR": ["Serbie"],
       "es_ES": ["Serbia"],
-      "de_DE": ["Serbien"]
+      "de_DE": ["Serbien"],
+      "pt_PT": ["República da Sérvia", "Sérvia"]
     },
     "identifier": "RS",
     "flag_url": "./assets/maps/flags/world-countries/flag_RS.svg",
@@ -3024,7 +3324,13 @@
       "en_US": ["Seychelles"],
       "fr_FR": ["Seychelles"],
       "es_ES": ["Seychelles"],
-      "de_DE": ["Seychellen"]
+      "de_DE": ["Seychellen"],
+      "pt_PT": [
+        "República das Seicheles",
+        "República das Seychelles",
+        "Seicheles",
+        "Seychelles"
+      ]
     },
     "identifier": "SC",
     "flag_url": "./assets/maps/flags/world-countries/flag_SC.svg",
@@ -3039,7 +3345,8 @@
       "en_US": ["Sierra Leone"],
       "fr_FR": ["Sierra Leone"],
       "es_ES": ["Sierra Leona"],
-      "de_DE": ["Sierra Leone"]
+      "de_DE": ["Sierra Leone"],
+      "pt_PT": ["República da Serra Leoa", "Serra Leoa"]
     },
     "identifier": "SL",
     "flag_url": "./assets/maps/flags/world-countries/flag_SL.svg",
@@ -3054,7 +3361,8 @@
       "en_US": ["Singapore"],
       "fr_FR": ["Singapour"],
       "es_ES": ["Singapur"],
-      "de_DE": ["Singapur"]
+      "de_DE": ["Singapur"],
+      "pt_PT": ["República de Singapura", "Singapura"]
     },
     "identifier": "SG",
     "flag_url": "./assets/maps/flags/world-countries/flag_SG.svg",
@@ -3069,7 +3377,8 @@
       "en_US": ["Sint Maarten"],
       "fr_FR": ["Saint Martin - Pays-Bas"],
       "es_ES": ["San Martín"],
-      "de_DE": ["Sint Maarten"]
+      "de_DE": ["Sint Maarten"],
+      "pt_PT": ["São Martinho"]
     },
     "identifier": "SX",
     "flag_url": "./assets/maps/flags/world-countries/flag_SX.svg",
@@ -3084,7 +3393,8 @@
       "en_US": ["Slovakia"],
       "fr_FR": ["Slovaquie"],
       "es_ES": ["Eslovaquia"],
-      "de_DE": ["Slowakei"]
+      "de_DE": ["Slowakei"],
+      "pt_PT": ["República Eslovaca", "Eslováquia"]
     },
     "identifier": "SK",
     "flag_url": "./assets/maps/flags/world-countries/flag_SK.svg",
@@ -3099,7 +3409,8 @@
       "en_US": ["Slovenia"],
       "fr_FR": ["Slovénie"],
       "es_ES": ["Eslovenia"],
-      "de_DE": ["Slowenien"]
+      "de_DE": ["Slowenien"],
+      "pt_PT": ["República da Eslovénia", "Eslovênia"]
     },
     "identifier": "SI",
     "flag_url": "./assets/maps/flags/world-countries/flag_SI.svg",
@@ -3114,7 +3425,8 @@
       "en_US": ["Solomon Islands"],
       "fr_FR": ["Îles Salomons"],
       "es_ES": ["Islas Salomón"],
-      "de_DE": ["Salomonen"]
+      "de_DE": ["Salomonen"],
+      "pt_PT": ["Ilhas Salomão"]
     },
     "identifier": "SB",
     "flag_url": "./assets/maps/flags/world-countries/flag_SB.svg",
@@ -3129,7 +3441,8 @@
       "en_US": ["Somalia"],
       "fr_FR": ["Somalie"],
       "es_ES": ["Somalia"],
-      "de_DE": ["Somalia"]
+      "de_DE": ["Somalia"],
+      "pt_PT": ["República Federal da Somália", "Somália"]
     },
     "identifier": "SO",
     "flag_url": "./assets/maps/flags/world-countries/flag_SO.svg",
@@ -3144,7 +3457,8 @@
       "en_US": ["South Africa"],
       "fr_FR": ["Afrique du Sud"],
       "es_ES": ["Sudáfrica"],
-      "de_DE": ["Südafrika"]
+      "de_DE": ["Südafrika"],
+      "pt_PT": ["República da África do Sul", "África do Sul"]
     },
     "identifier": "ZA",
     "flag_url": "./assets/maps/flags/world-countries/flag_ZA.svg",
@@ -3159,7 +3473,12 @@
       "en_US": ["South Georgia and the South Sandwich Islands"],
       "fr_FR": ["Géorgie du Sud et les îles Sandwich du Sud"],
       "es_ES": ["Islas Georgias del Sur y Sandwich del Sur"],
-      "de_DE": ["Südgeorgien und die Südlichen Sandwichinseln"]
+      "de_DE": ["Südgeorgien und die Südlichen Sandwichinseln"],
+      "pt_PT": [
+        "Ilhas Geórgia do Sul e Sandwich do Sul",
+        "Ilhas Geórgias do Sul e Sandwich do Sul",
+        "Ilhas Geórgia do Sul e Sanduíche do Sul"
+      ]
     },
     "identifier": "GS",
     "flag_url": "./assets/maps/flags/world-countries/flag_GS.svg",
@@ -3174,7 +3493,8 @@
       "en_US": ["South Sudan"],
       "fr_FR": ["Soudan du sud"],
       "es_ES": ["Sudán del Sur"],
-      "de_DE": ["Südsudan"]
+      "de_DE": ["Südsudan"],
+      "pt_PT": ["República do Sudão do Sul", "Sudão do Sul", "Sudão Meridional"]
     },
     "identifier": "SS",
     "flag_url": "./assets/maps/flags/world-countries/flag_SS.svg",
@@ -3189,7 +3509,8 @@
       "en_US": ["Spain"],
       "fr_FR": ["Espagne"],
       "es_ES": ["España"],
-      "de_DE": ["Spanien"]
+      "de_DE": ["Spanien"],
+      "pt_PT": ["Reino de Espanha", "Espanha"]
     },
     "identifier": "ES",
     "flag_url": "./assets/maps/flags/world-countries/flag_ES.svg",
@@ -3204,7 +3525,13 @@
       "en_US": ["Sri Lanka"],
       "fr_FR": ["Sri Lanka"],
       "es_ES": ["Sri Lanka"],
-      "de_DE": ["Sri Lanka"]
+      "de_DE": ["Sri Lanka"],
+      "pt_PT": [
+        "República Democrática Socialista do Sri Lanka",
+        "Sri Lanka",
+        "Sri Lanca",
+        "Seri Lanca"
+      ]
     },
     "identifier": "LK",
     "flag_url": "./assets/maps/flags/world-countries/flag_LK.svg",
@@ -3219,7 +3546,8 @@
       "en_US": ["Sudan"],
       "fr_FR": ["Soudan"],
       "es_ES": ["Sudán"],
-      "de_DE": ["Sudan"]
+      "de_DE": ["Sudan"],
+      "pt_PT": ["República do Sudão", "Sudão"]
     },
     "identifier": "SD",
     "flag_url": "./assets/maps/flags/world-countries/flag_SD.svg",
@@ -3234,7 +3562,8 @@
       "en_US": ["Suriname"],
       "fr_FR": ["Suriname"],
       "es_ES": ["Surinam"],
-      "de_DE": ["Suriname"]
+      "de_DE": ["Suriname"],
+      "pt_PT": ["República do Suriname", "Suriname"]
     },
     "identifier": "SR",
     "flag_url": "./assets/maps/flags/world-countries/flag_SR.svg",
@@ -3249,7 +3578,8 @@
       "en_US": ["Svalbard and Jan Mayen"],
       "fr_FR": ["Svalbard and Jan Mayen"],
       "es_ES": ["Svalbard y Jan Mayen"],
-      "de_DE": ["Spitzbergen und Jan Mayen"]
+      "de_DE": ["Spitzbergen und Jan Mayen"],
+      "pt_PT": ["Esvalbarde e Jan Mayen"]
     },
     "identifier": "SJ",
     "flag_url": "./assets/maps/flags/world-countries/flag_SJ.svg",
@@ -3264,7 +3594,8 @@
       "en_US": ["Sweden"],
       "fr_FR": ["Suède"],
       "es_ES": ["Suecia"],
-      "de_DE": ["Schweden"]
+      "de_DE": ["Schweden"],
+      "pt_PT": ["Reino da Suécia", "Suécia"]
     },
     "identifier": "SE",
     "flag_url": "./assets/maps/flags/world-countries/flag_SE.svg",
@@ -3279,7 +3610,8 @@
       "en_US": ["Switzerland"],
       "fr_FR": ["Suisse"],
       "es_ES": ["Suiza"],
-      "de_DE": ["Schweiz"]
+      "de_DE": ["Schweiz"],
+      "pt_PT": ["Confederação Suíça", "Suíça"]
     },
     "identifier": "CH",
     "flag_url": "./assets/maps/flags/world-countries/flag_CH.svg",
@@ -3294,7 +3626,8 @@
       "en_US": ["Syria", "Syrian Arab Republic"],
       "fr_FR": ["Syrie"],
       "es_ES": ["Siria", "República Árabe Siria"],
-      "de_DE": ["Syrien", "Syrische Arabische Republik"]
+      "de_DE": ["Syrien", "Syrische Arabische Republik"],
+      "pt_PT": ["República Árabe Síria", "Síria"]
     },
     "identifier": "SY",
     "flag_url": "./assets/maps/flags/world-countries/flag_SY.svg",
@@ -3309,7 +3642,8 @@
       "en_US": ["Taiwan", "Taiwan Province of China"],
       "fr_FR": ["Taiwan"],
       "es_ES": ["Taiwán"],
-      "de_DE": ["Taiwan"]
+      "de_DE": ["Taiwan"],
+      "pt_PT": ["República da China", "Taiwan"]
     },
     "identifier": "TW",
     "flag_url": "./assets/maps/flags/world-countries/flag_TW.svg",
@@ -3324,7 +3658,8 @@
       "en_US": ["Tajikistan"],
       "fr_FR": ["Tadjikistan"],
       "es_ES": ["Tayikistán"],
-      "de_DE": ["Tadschikistan"]
+      "de_DE": ["Tadschikistan"],
+      "pt_PT": ["República do Tajiquistão", "Tajiquistão", "Tadjiquistão"]
     },
     "identifier": "TJ",
     "flag_url": "./assets/maps/flags/world-countries/flag_TJ.svg",
@@ -3339,7 +3674,8 @@
       "en_US": ["Tanzania", "United Republic of Tanzania"],
       "fr_FR": ["Tanzanie"],
       "es_ES": ["Tanzania"],
-      "de_DE": ["Tansania", "Vereinigte Republik Tansania"]
+      "de_DE": ["Tansania", "Vereinigte Republik Tansania"],
+      "pt_PT": ["República Unida da Tanzânia", "Tanzânia"]
     },
     "identifier": "TZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_TZ.svg",
@@ -3354,7 +3690,8 @@
       "en_US": ["Thailand"],
       "fr_FR": ["Thaïland"],
       "es_ES": ["Tailandia"],
-      "de_DE": ["Thailand"]
+      "de_DE": ["Thailand"],
+      "pt_PT": ["Reino da Tailândia", "Tailândia"]
     },
     "identifier": "TH",
     "flag_url": "./assets/maps/flags/world-countries/flag_TH.svg",
@@ -3369,7 +3706,8 @@
       "en_US": ["Timor-Leste"],
       "fr_FR": ["Timor-Leste"],
       "es_ES": ["Timor Oriental"],
-      "de_DE": ["Osttimor", "Demokratische Republik Timor-Leste"]
+      "de_DE": ["Osttimor", "Demokratische Republik Timor-Leste"],
+      "pt_PT": ["República Democrática de Timor-Leste", "Timor-Leste"]
     },
     "identifier": "TL",
     "flag_url": "./assets/maps/flags/world-countries/flag_TL.svg",
@@ -3384,7 +3722,8 @@
       "en_US": ["Togo"],
       "fr_FR": ["Togo"],
       "es_ES": ["Togo"],
-      "de_DE": ["Togo"]
+      "de_DE": ["Togo"],
+      "pt_PT": ["República Togolesa", "Togo"]
     },
     "identifier": "TG",
     "flag_url": "./assets/maps/flags/world-countries/flag_TG.svg",
@@ -3399,7 +3738,8 @@
       "en_US": ["Tokelau"],
       "fr_FR": ["Tokelau"],
       "es_ES": ["Tokelau"],
-      "de_DE": ["Tokelau"]
+      "de_DE": ["Tokelau"],
+      "pt_PT": ["Toquelau"]
     },
     "identifier": "TK",
     "flag_url": "./assets/maps/flags/world-countries/flag_TK.svg",
@@ -3414,7 +3754,8 @@
       "en_US": ["Tonga"],
       "fr_FR": ["Tonga"],
       "es_ES": ["Tonga"],
-      "de_DE": ["Tonga"]
+      "de_DE": ["Tonga"],
+      "pt_PT": ["Reino de Tonga", "Tonga"]
     },
     "identifier": "TO",
     "flag_url": "./assets/maps/flags/world-countries/flag_TO.svg",
@@ -3429,7 +3770,8 @@
       "en_US": ["Trinidad and Tobago"],
       "fr_FR": ["Trinité-et-Tobago"],
       "es_ES": ["Trinidad y Tobago"],
-      "de_DE": ["Trinidad und Tobago"]
+      "de_DE": ["Trinidad und Tobago"],
+      "pt_PT": ["República de Trindade e Tobago", "Trindade e Tobago"]
     },
     "identifier": "TT",
     "flag_url": "./assets/maps/flags/world-countries/flag_TT.svg",
@@ -3444,7 +3786,8 @@
       "en_US": ["Tunisia"],
       "fr_FR": ["Tunisie"],
       "es_ES": ["Túnez"],
-      "de_DE": ["Tunesien"]
+      "de_DE": ["Tunesien"],
+      "pt_PT": ["República Tunisina", "Tunísia"]
     },
     "identifier": "TN",
     "flag_url": "./assets/maps/flags/world-countries/flag_TN.svg",
@@ -3459,7 +3802,8 @@
       "en_US": ["Turkey"],
       "fr_FR": ["Turquie"],
       "es_ES": ["Turquía"],
-      "de_DE": ["Türkei"]
+      "de_DE": ["Türkei"],
+      "pt_PT": ["República da Turquia", "Turquia"]
     },
     "identifier": "TR",
     "flag_url": "./assets/maps/flags/world-countries/flag_TR.svg",
@@ -3474,7 +3818,13 @@
       "en_US": ["Turkmenistan"],
       "fr_FR": ["Turkménistan"],
       "es_ES": ["Turkmenistán"],
-      "de_DE": ["Turkmenistan"]
+      "de_DE": ["Turkmenistan"],
+      "pt_PT": [
+        "República do Turquemenistão",
+        "República do Turcomenistão",
+        "Turcomenistão",
+        "Turquemenistão"
+      ]
     },
     "identifier": "TM",
     "flag_url": "./assets/maps/flags/world-countries/flag_TM.svg",
@@ -3489,7 +3839,8 @@
       "en_US": ["Turks and Caicos Islands"],
       "fr_FR": ["Îles Turques-et-Caïques"],
       "es_ES": ["Islas Turcas y Caicos"],
-      "de_DE": ["Turks- und Caicosinseln"]
+      "de_DE": ["Turks- und Caicosinseln"],
+      "pt_PT": ["Turcas e Caicos"]
     },
     "identifier": "TC",
     "flag_url": "./assets/maps/flags/world-countries/flag_TC.svg",
@@ -3504,7 +3855,8 @@
       "en_US": ["Tuvalu"],
       "fr_FR": ["Tuvalu"],
       "es_ES": ["Tuvalu"],
-      "de_DE": ["Tuvalu"]
+      "de_DE": ["Tuvalu"],
+      "pt_PT": ["Tuvalu"]
     },
     "identifier": "TV",
     "flag_url": "./assets/maps/flags/world-countries/flag_TV.svg",
@@ -3519,7 +3871,8 @@
       "en_US": ["Uganda"],
       "fr_FR": ["Ouganda"],
       "es_ES": ["Uganda"],
-      "de_DE": ["Uganda"]
+      "de_DE": ["Uganda"],
+      "pt_PT": ["República de Uganda", "Uganda"]
     },
     "identifier": "UG",
     "flag_url": "./assets/maps/flags/world-countries/flag_UG.svg",
@@ -3534,7 +3887,8 @@
       "en_US": ["Ukraine"],
       "fr_FR": ["Ukraine"],
       "es_ES": ["Ucrania"],
-      "de_DE": ["Ukraine"]
+      "de_DE": ["Ukraine"],
+      "pt_PT": ["Ucrânia"]
     },
     "identifier": "UA",
     "flag_url": "./assets/maps/flags/world-countries/flag_UA.svg",
@@ -3549,7 +3903,8 @@
       "en_US": ["United Arab Emirates"],
       "fr_FR": ["Émirats Arabes Unis"],
       "es_ES": ["Emiratos Árabes Unidos"],
-      "de_DE": ["Vereinigte Arabische Emirate"]
+      "de_DE": ["Vereinigte Arabische Emirate"],
+      "pt_PT": ["Emirados Árabes Unidos"]
     },
     "identifier": "AE",
     "flag_url": "./assets/maps/flags/world-countries/flag_AE.svg",
@@ -3576,7 +3931,8 @@
       "de_DE": [
         "Vereinigtes Königreich",
         "Vereinigtes Königreich von Großbritannien und Irland"
-      ]
+      ],
+      "pt_PT": ["Reino Unido da Grã-Bretanha e Irlanda do Norte", "Reino Unido"]
     },
     "identifier": "GB",
     "flag_url": "./assets/maps/flags/world-countries/flag_GB.svg",
@@ -3591,7 +3947,8 @@
       "en_US": ["United States of America", "USA", "United-States"],
       "fr_FR": ["États-Unis d'Amérique", "USA", "États-Unis"],
       "es_ES": ["Estados Unidos de América", "Estados Unidos"],
-      "de_DE": ["Vereinigte Staaten von Amerika", "Vereinigte Staaten"]
+      "de_DE": ["Vereinigte Staaten von Amerika", "Vereinigte Staaten"],
+      "pt_PT": ["Estados Unidos da América", "Estados Unidos"]
     },
     "identifier": "US",
     "flag_url": "./assets/maps/flags/world-countries/flag_US.svg",
@@ -3606,7 +3963,11 @@
       "en_US": ["United States Minor Outlying Islands"],
       "fr_FR": ["Îles mineures éloignées des États-Unis"],
       "es_ES": ["Islas Ultramarinas Menores de los Estados Unidos"],
-      "de_DE": ["United States Minor Outlying Islands"]
+      "de_DE": ["United States Minor Outlying Islands"],
+      "pt_PT": [
+        "Ilhas Menores Distantes dos Estados Unidos",
+        "Ilhas Menores Afastadas dos Estados Unidos"
+      ]
     },
     "identifier": "UM",
     "flag_url": "./assets/maps/flags/world-countries/flag_UM.svg",
@@ -3621,7 +3982,8 @@
       "en_US": ["Uruguay"],
       "fr_FR": ["Uruguay"],
       "es_ES": ["Uruguay"],
-      "de_DE": ["Uruguay"]
+      "de_DE": ["Uruguay"],
+      "pt_PT": ["República Oriental do Uruguai", "Uruguai"]
     },
     "identifier": "UY",
     "flag_url": "./assets/maps/flags/world-countries/flag_UY.svg",
@@ -3636,7 +3998,8 @@
       "en_US": ["Uzbekistan"],
       "fr_FR": ["Ouzbékistan"],
       "es_ES": ["Uzbekistán"],
-      "de_DE": ["Usbekistan"]
+      "de_DE": ["Usbekistan"],
+      "pt_PT": ["República do Uzbequistão", "Uzbequistão", "Usbequistão"]
     },
     "identifier": "UZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_UZ.svg",
@@ -3651,7 +4014,8 @@
       "en_US": ["Vanuatu"],
       "fr_FR": ["Vanuatu"],
       "es_ES": ["Vanuatu"],
-      "de_DE": ["Vanuatu"]
+      "de_DE": ["Vanuatu"],
+      "pt_PT": ["República de Vanuatu", "Vanuatu"]
     },
     "identifier": "VU",
     "flag_url": "./assets/maps/flags/world-countries/flag_VU.svg",
@@ -3666,7 +4030,8 @@
       "en_US": ["Venezuela", "Bolivarian Republic of Venezuela"],
       "fr_FR": ["Vénézuéla", "Venezuela"],
       "es_ES": ["Venezuela", "República Bolivariana de Venezuela"],
-      "de_DE": ["Venezuela", "Bolivarische Republik Venezuela"]
+      "de_DE": ["Venezuela", "Bolivarische Republik Venezuela"],
+      "pt_PT": ["República Bolivariana da Venezuela", "Venezuela"]
     },
     "identifier": "VE",
     "flag_url": "./assets/maps/flags/world-countries/flag_VE.svg",
@@ -3681,7 +4046,13 @@
       "en_US": ["Vietnam", "Viet Nam"],
       "fr_FR": ["Viêt Nam", "Vietnam"],
       "es_ES": ["Vietnam", "República Socialista de Vietnam"],
-      "de_DE": ["Vietnam", "Sozialistische Republik Vietnam"]
+      "de_DE": ["Vietnam", "Sozialistische Republik Vietnam"],
+      "pt_PT": [
+        "República Socialista do Vietname",
+        "República Socialista do Vietnã",
+        "Vietnã",
+        "Vietname"
+      ]
     },
     "identifier": "VN",
     "flag_url": "./assets/maps/flags/world-countries/flag_VN.svg",
@@ -3696,7 +4067,8 @@
       "en_US": ["British Virgin Islands", "Virgin Islands"],
       "fr_FR": ["Îles Vierges Britanniques"],
       "es_ES": ["Islas Vírgenes Británicas"],
-      "de_DE": ["Britische Jungferninseln"]
+      "de_DE": ["Britische Jungferninseln"],
+      "pt_PT": ["Ilhas Virgens Britânicas"]
     },
     "identifier": "VG",
     "flag_url": "./assets/maps/flags/world-countries/flag_VG.svg",
@@ -3711,7 +4083,8 @@
       "en_US": ["U.S. Virgin Islands", "Virgin Islands U.S."],
       "fr_FR": ["Îles Vierges des États-Unis"],
       "es_ES": ["Islas Vírgenes de los Estados Unidos"],
-      "de_DE": ["Amerikanische Jungferninseln"]
+      "de_DE": ["Amerikanische Jungferninseln"],
+      "pt_PT": ["Ilhas Virgens dos Estados Unidos", "Ilhas Virgens Americanas"]
     },
     "identifier": "VI",
     "flag_url": "./assets/maps/flags/world-countries/flag_VI.svg",
@@ -3726,7 +4099,8 @@
       "en_US": ["Wallis and Futuna"],
       "fr_FR": ["Wallis-et-Futuna"],
       "es_ES": ["Wallis y Futuna"],
-      "de_DE": ["Wallis und Futuna"]
+      "de_DE": ["Wallis und Futuna"],
+      "pt_PT": ["Território das Ilhas Wallis e Futuna", "Wallis e Futuna"]
     },
     "identifier": "WF",
     "flag_url": "./assets/maps/flags/world-countries/flag_WF.svg",
@@ -3741,7 +4115,8 @@
       "en_US": ["Western Sahara"],
       "fr_FR": ["Sahara Occidental"],
       "es_ES": ["República Árabe Saharaui Democrática"],
-      "de_DE": ["Westsahara"]
+      "de_DE": ["Westsahara"],
+      "pt_PT": ["Saara Ocidental", "Sara Ocidental"]
     },
     "identifier": "EH",
     "flag_url": "./assets/maps/flags/world-countries/flag_EH.svg",
@@ -3756,7 +4131,8 @@
       "en_US": ["Yemen"],
       "fr_FR": ["Yémen"],
       "es_ES": ["Yemen"],
-      "de_DE": ["Jemen"]
+      "de_DE": ["Jemen"],
+      "pt_PT": ["República do Iémen", "Iémen"]
     },
     "identifier": "YE",
     "flag_url": "./assets/maps/flags/world-countries/flag_YE.svg",
@@ -3771,7 +4147,8 @@
       "en_US": ["Zambia"],
       "fr_FR": ["Zambie"],
       "es_ES": ["Zambia"],
-      "de_DE": ["Sambia"]
+      "de_DE": ["Sambia"],
+      "pt_PT": ["República da Zâmbia", "Zâmbia"]
     },
     "identifier": "ZM",
     "flag_url": "./assets/maps/flags/world-countries/flag_ZM.svg",
@@ -3786,7 +4163,8 @@
       "en_US": ["Zimbabwe"],
       "fr_FR": ["Zimbabwe"],
       "es_ES": ["Zimbabue"],
-      "de_DE": ["Simbabwe"]
+      "de_DE": ["Simbabwe"],
+      "pt_PT": ["República do Zimbabwe", "Zimbábue", "Zimbaué", "Zimbabwe"]
     },
     "identifier": "ZW",
     "flag_url": "./assets/maps/flags/world-countries/flag_ZW.svg",
