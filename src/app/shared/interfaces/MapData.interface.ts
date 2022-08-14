@@ -5,6 +5,6 @@ export interface MapData{
     numeric_code:string,
     name: Locale_I18n,
     group:string,
-    capital:string,
+    capital:Locale_I18n,
     flag_url:string
 }

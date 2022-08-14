@@ -109,6 +109,8 @@ export class MapGenericComponent implements OnInit {
     this.currentSelected = this.loadedData!.find(e => e.identifier === areaId);
     this.areaSelected.emit(this.currentSelected);
     if (!this.currentSelected) return;
+    console.log(this.currentSelected);
+
     colorArea(areaId, AreaStatus.SELECTED);
     colorAreas(this.currentSelected!.identifier, this.currentSelected!.group);
   }
