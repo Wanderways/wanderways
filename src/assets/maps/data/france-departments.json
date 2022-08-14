@@ -7,7 +7,7 @@
     "identifier": "FR-01",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-01.svg",
     "group": "FR-ARA",
-    "capital": "Bourg-en-Bresse",
+    "capital": { "en_US": ["Bourg-en-Bresse"], "fr_FR": ["Bourg-en-Bresse"] },
     "numeric_code": "01"
   },
   {
@@ -18,7 +18,7 @@
     "identifier": "FR-02",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-02.svg",
     "group": "FR-HDF",
-    "capital": "Laon",
+    "capital": { "en_US": ["Laon"], "fr_FR": ["Laon"] },
     "numeric_code": "02"
   },
   {
@@ -29,7 +29,7 @@
     "identifier": "FR-03",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-03.svg",
     "group": "FR-ARA",
-    "capital": "Moulins",
+    "capital": { "en_US": ["Moulins"], "fr_FR": ["Moulins"] },
     "numeric_code": "03"
   },
   {
@@ -40,7 +40,7 @@
     "identifier": "FR-04",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-04.svg",
     "group": "FR-PAC",
-    "capital": "Digne-les-Bains",
+    "capital": { "en_US": ["Digne-les-Bains"], "fr_FR": ["Digne-les-Bains"] },
     "numeric_code": "04"
   },
   {
@@ -51,7 +51,7 @@
     "identifier": "FR-06",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-06.svg",
     "group": "FR-PAC",
-    "capital": "Nice",
+    "capital": { "en_US": ["Nice"], "fr_FR": ["Nice"] },
     "numeric_code": "06"
   },
   {
@@ -62,7 +62,7 @@
     "identifier": "FR-07",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-07.svg",
     "group": "FR-ARA",
-    "capital": "Privas",
+    "capital": { "en_US": ["Privas"], "fr_FR": ["Privas"] },
     "numeric_code": "07"
   },
   {
@@ -73,7 +73,10 @@
     "identifier": "FR-08",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-08.svg",
     "group": "FR-GES",
-    "capital": "Charleville-Mézières",
+    "capital": {
+      "en_US": ["Charleville-Mézières"],
+      "fr_FR": ["Charleville-Mézières"]
+    },
     "numeric_code": "08"
   },
   {
@@ -84,7 +87,7 @@
     "identifier": "FR-09",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-09.svg",
     "group": "FR-OCC",
-    "capital": "Foix",
+    "capital": { "en_US": ["Foix"], "fr_FR": ["Foix"] },
     "numeric_code": "09"
   },
   {
@@ -95,7 +98,7 @@
     "identifier": "FR-10",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-10.svg",
     "group": "FR-GES",
-    "capital": "Troyes",
+    "capital": { "en_US": ["Troyes"], "fr_FR": ["Troyes"] },
     "numeric_code": "10"
   },
   {
@@ -106,7 +109,7 @@
     "identifier": "FR-11",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-11.svg",
     "group": "FR-OCC",
-    "capital": "Carcassonne",
+    "capital": { "en_US": ["Carcassonne"], "fr_FR": ["Carcassonne"] },
     "numeric_code": "11"
   },
   {
@@ -117,7 +120,7 @@
     "identifier": "FR-12",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-12.svg",
     "group": "FR-OCC",
-    "capital": "Rodez",
+    "capital": { "en_US": ["Rodez"], "fr_FR": ["Rodez"] },
     "numeric_code": "12"
   },
   {
@@ -128,7 +131,7 @@
     "identifier": "FR-13",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-13.svg",
     "group": "FR-PAC",
-    "capital": "Marseille",
+    "capital": { "en_US": ["Marseille"], "fr_FR": ["Marseille"] },
     "numeric_code": "13"
   },
   {
@@ -139,7 +142,7 @@
     "identifier": "FR-14",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-14.svg",
     "group": "FR-NOR",
-    "capital": "Caen",
+    "capital": { "en_US": ["Caen"], "fr_FR": ["Caen"] },
     "numeric_code": "14"
   },
   {
@@ -150,7 +153,7 @@
     "identifier": "FR-15",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-15.svg",
     "group": "FR-ARA",
-    "capital": "Aurillac",
+    "capital": { "en_US": ["Aurillac"], "fr_FR": ["Aurillac"] },
     "numeric_code": "15"
   },
   {
@@ -161,7 +164,7 @@
     "identifier": "FR-16",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-16.svg",
     "group": "FR-NAQ",
-    "capital": "Angoulême",
+    "capital": { "en_US": ["Angoulême"], "fr_FR": ["Angoulême"] },
     "numeric_code": "16"
   },
   {
@@ -172,7 +175,7 @@
     "identifier": "FR-17",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-17.svg",
     "group": "FR-NAQ",
-    "capital": "La Rochelle",
+    "capital": { "en_US": ["La Rochelle"], "fr_FR": ["La Rochelle"] },
     "numeric_code": "17"
   },
   {
@@ -183,7 +186,7 @@
     "identifier": "FR-18",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-18.svg",
     "group": "FR-CVL",
-    "capital": "Bourges",
+    "capital": { "en_US": ["Bourges"], "fr_FR": ["Bourges"] },
     "numeric_code": "18"
   },
   {
@@ -194,7 +197,7 @@
     "identifier": "FR-19",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-19.svg",
     "group": "FR-NAQ",
-    "capital": "Tulle",
+    "capital": { "en_US": ["Tulle"], "fr_FR": ["Tulle"] },
     "numeric_code": "19"
   },
   {
@@ -205,7 +208,7 @@
     "identifier": "FR-2A",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-2A.svg",
     "group": "FR-20R",
-    "capital": "Ajaccio",
+    "capital": { "en_US": ["Ajaccio"], "fr_FR": ["Ajaccio"] },
     "numeric_code": "2A"
   },
   {
@@ -216,7 +219,7 @@
     "identifier": "FR-21",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-21.svg",
     "group": "FR-BFC",
-    "capital": "Dijon",
+    "capital": { "en_US": ["Dijon"], "fr_FR": ["Dijon"] },
     "numeric_code": "21"
   },
   {
@@ -227,7 +230,7 @@
     "identifier": "FR-22",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-22.svg",
     "group": "FR-BRE",
-    "capital": "St-Brieuc",
+    "capital": { "en_US": ["St-Brieuc"], "fr_FR": ["St-Brieuc"] },
     "numeric_code": "22"
   },
   {
@@ -238,7 +241,7 @@
     "identifier": "FR-23",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-23.svg",
     "group": "FR-NAQ",
-    "capital": "Guéret",
+    "capital": { "en_US": ["Guéret"], "fr_FR": ["Guéret"] },
     "numeric_code": "23"
   },
   {
@@ -249,7 +252,7 @@
     "identifier": "FR-79",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-79.svg",
     "group": "FR-NAQ",
-    "capital": "Niort",
+    "capital": { "en_US": ["Niort"], "fr_FR": ["Niort"] },
     "numeric_code": "79"
   },
   {
@@ -260,7 +263,7 @@
     "identifier": "FR-24",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-24.svg",
     "group": "FR-NAQ",
-    "capital": "Périgueux",
+    "capital": { "en_US": ["Périgueux"], "fr_FR": ["Périgueux"] },
     "numeric_code": "24"
   },
   {
@@ -271,7 +274,7 @@
     "identifier": "FR-25",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-25.svg",
     "group": "FR-BFC",
-    "capital": "Besançon",
+    "capital": { "en_US": ["Besançon"], "fr_FR": ["Besançon"] },
     "numeric_code": "25"
   },
   {
@@ -282,7 +285,7 @@
     "identifier": "FR-26",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-26.svg",
     "group": "FR-ARA",
-    "capital": "Valence",
+    "capital": { "en_US": ["Valence"], "fr_FR": ["Valence"] },
     "numeric_code": "26"
   },
   {
@@ -293,7 +296,7 @@
     "identifier": "FR-91",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-91.svg",
     "group": "FR-IDF",
-    "capital": "Évry",
+    "capital": { "en_US": ["Évry"], "fr_FR": ["Évry"] },
     "numeric_code": "91"
   },
   {
@@ -304,7 +307,7 @@
     "identifier": "FR-27",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-27.svg",
     "group": "FR-NOR",
-    "capital": "Évreux",
+    "capital": { "en_US": ["Évreux"], "fr_FR": ["Évreux"] },
     "numeric_code": "27"
   },
   {
@@ -315,7 +318,7 @@
     "identifier": "FR-28",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-28.svg",
     "group": "FR-CVL",
-    "capital": "Chartres",
+    "capital": { "en_US": ["Chartres"], "fr_FR": ["Chartres"] },
     "numeric_code": "28"
   },
   {
@@ -326,7 +329,7 @@
     "identifier": "FR-29",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-29.svg",
     "group": "FR-BRE",
-    "capital": "Quimper",
+    "capital": { "en_US": ["Quimper"], "fr_FR": ["Quimper"] },
     "numeric_code": "29"
   },
   {
@@ -338,7 +341,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-973.svg",
     "group": "",
     "numeric_code": "973",
-    "capital": "Cayenne"
+    "capital": { "en_US": ["Cayenne"], "fr_FR": ["Cayenne"] }
   },
   {
     "name": {
@@ -349,7 +352,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-30.svg",
     "group": "FR-OCC",
     "numeric_code": "30",
-    "capital": "Nîmes"
+    "capital": { "en_US": ["Nîmes"], "fr_FR": ["Nîmes"] }
   },
   {
     "name": {
@@ -360,7 +363,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-32.svg",
     "group": "FR-OCC",
     "numeric_code": "32",
-    "capital": "Auch"
+    "capital": { "en_US": ["Auch"], "fr_FR": ["Auch"] }
   },
   {
     "name": {
@@ -371,7 +374,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-33.svg",
     "group": "FR-NAQ",
     "numeric_code": "33",
-    "capital": "Bordeaux"
+    "capital": { "en_US": ["Bordeaux"], "fr_FR": ["Bordeaux"] }
   },
   {
     "name": {
@@ -382,7 +385,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-971.svg",
     "group": "",
     "numeric_code": "971",
-    "capital": "Basse-Terre"
+    "capital": { "en_US": ["Basse-Terre"], "fr_FR": ["Basse-Terre"] }
   },
   {
     "name": {
@@ -393,7 +396,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-2B.svg",
     "group": "FR-20R",
     "numeric_code": "2B",
-    "capital": "Bastia"
+    "capital": { "en_US": ["Bastia"], "fr_FR": ["Bastia"] }
   },
   {
     "name": {
@@ -404,7 +407,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-31.svg",
     "group": "FR-OCC",
     "numeric_code": "31",
-    "capital": "Toulouse"
+    "capital": { "en_US": ["Toulouse"], "fr_FR": ["Toulouse"] }
   },
   {
     "name": {
@@ -415,7 +418,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-43.svg",
     "group": "FR-ARA",
     "numeric_code": "43",
-    "capital": "Le Puy-en-Velay"
+    "capital": { "en_US": ["Le Puy-en-Velay"], "fr_FR": ["Le Puy-en-Velay"] }
   },
   {
     "name": {
@@ -426,7 +429,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-52.svg",
     "group": "FR-GES",
     "numeric_code": "52",
-    "capital": "Chaumont"
+    "capital": { "en_US": ["Chaumont"], "fr_FR": ["Chaumont"] }
   },
   {
     "name": {
@@ -437,7 +440,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-05.svg",
     "group": "FR-PAC",
     "numeric_code": "05",
-    "capital": "Gap"
+    "capital": { "en_US": ["Gap"], "fr_FR": ["Gap"] }
   },
   {
     "name": {
@@ -448,7 +451,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-70.svg",
     "group": "FR-BFC",
     "numeric_code": "70",
-    "capital": "Vesoul"
+    "capital": { "en_US": ["Vesoul"], "fr_FR": ["Vesoul"] }
   },
   {
     "name": {
@@ -459,7 +462,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-74.svg",
     "group": "FR-ARA",
     "numeric_code": "74",
-    "capital": "Annecy"
+    "capital": { "en_US": ["Annecy"], "fr_FR": ["Annecy"] }
   },
   {
     "name": {
@@ -470,7 +473,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-65.svg",
     "group": "FR-OCC",
     "numeric_code": "65",
-    "capital": "Tarbes"
+    "capital": { "en_US": ["Tarbes"], "fr_FR": ["Tarbes"] }
   },
   {
     "name": {
@@ -481,7 +484,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-87.svg",
     "group": "FR-NAQ",
     "numeric_code": "87",
-    "capital": "Limoges"
+    "capital": { "en_US": ["Limoges"], "fr_FR": ["Limoges"] }
   },
   {
     "name": {
@@ -492,7 +495,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-92.svg",
     "group": "FR-IDF",
     "numeric_code": "92",
-    "capital": "Nanterre"
+    "capital": { "en_US": ["Nanterre"], "fr_FR": ["Nanterre"] }
   },
   {
     "name": {
@@ -503,7 +506,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-34.svg",
     "group": "FR-OCC",
     "numeric_code": "34",
-    "capital": "Montpellier"
+    "capital": { "en_US": ["Montpellier"], "fr_FR": ["Montpellier"] }
   },
   {
     "name": {
@@ -514,7 +517,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-35.svg",
     "group": "FR-BRE",
     "numeric_code": "35",
-    "capital": "Rennes"
+    "capital": { "en_US": ["Rennes"], "fr_FR": ["Rennes"] }
   },
   {
     "name": {
@@ -525,7 +528,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-36.svg",
     "group": "FR-CVL",
     "numeric_code": "36",
-    "capital": "Châteauroux"
+    "capital": { "en_US": ["Châteauroux"], "fr_FR": ["Châteauroux"] }
   },
   {
     "name": {
@@ -536,7 +539,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-37.svg",
     "group": "FR-CVL",
     "numeric_code": "37",
-    "capital": "Tours"
+    "capital": { "en_US": ["Tours"], "fr_FR": ["Tours"] }
   },
   {
     "name": {
@@ -547,7 +550,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-38.svg",
     "group": "FR-ARA",
     "numeric_code": "38",
-    "capital": "Grenoble"
+    "capital": { "en_US": ["Grenoble"], "fr_FR": ["Grenoble"] }
   },
   {
     "name": {
@@ -558,7 +561,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-39.svg",
     "group": "FR-BFC",
     "numeric_code": "39",
-    "capital": "Lons-le-Saunier"
+    "capital": { "en_US": ["Lons-le-Saunier"], "fr_FR": ["Lons-le-Saunier"] }
   },
   {
     "name": {
@@ -569,7 +572,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-40.svg",
     "group": "FR-NAQ",
     "numeric_code": "40",
-    "capital": "Mont-de-Marsan"
+    "capital": { "en_US": ["Mont-de-Marsan"], "fr_FR": ["Mont-de-Marsan"] }
   },
   {
     "name": {
@@ -580,7 +583,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-42.svg",
     "group": "FR-ARA",
     "numeric_code": "42",
-    "capital": "Saint-Étienne"
+    "capital": { "en_US": ["Saint-Étienne"], "fr_FR": ["Saint-Étienne"] }
   },
   {
     "name": {
@@ -591,7 +594,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-44.svg",
     "group": "FR-PDL",
     "numeric_code": "44",
-    "capital": "Nantes"
+    "capital": { "en_US": ["Nantes"], "fr_FR": ["Nantes"] }
   },
   {
     "name": {
@@ -602,7 +605,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-45.svg",
     "group": "FR-CVL",
     "numeric_code": "45",
-    "capital": "Orléans"
+    "capital": { "en_US": ["Orléans"], "fr_FR": ["Orléans"] }
   },
   {
     "name": {
@@ -613,7 +616,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-41.svg",
     "group": "FR-CVL",
     "numeric_code": "41",
-    "capital": "Blois"
+    "capital": { "en_US": ["Blois"], "fr_FR": ["Blois"] }
   },
   {
     "name": {
@@ -624,7 +627,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-46.svg",
     "group": "FR-OCC",
     "numeric_code": "46",
-    "capital": "Cahors"
+    "capital": { "en_US": ["Cahors"], "fr_FR": ["Cahors"] }
   },
   {
     "name": {
@@ -635,7 +638,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-47.svg",
     "group": "FR-NAQ",
     "numeric_code": "47",
-    "capital": "Agen"
+    "capital": { "en_US": ["Agen"], "fr_FR": ["Agen"] }
   },
   {
     "name": {
@@ -646,7 +649,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-48.svg",
     "group": "FR-OCC",
     "numeric_code": "48",
-    "capital": "Mende"
+    "capital": { "en_US": ["Mende"], "fr_FR": ["Mende"] }
   },
   {
     "name": {
@@ -657,7 +660,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-49.svg",
     "group": "FR-PDL",
     "numeric_code": "49",
-    "capital": "Angers"
+    "capital": { "en_US": ["Angers"], "fr_FR": ["Angers"] }
   },
   {
     "name": {
@@ -668,7 +671,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-50.svg",
     "group": "FR-NOR",
     "numeric_code": "50",
-    "capital": "Saint-Lô"
+    "capital": { "en_US": ["Saint-Lô"], "fr_FR": ["Saint-Lô"] }
   },
   {
     "name": {
@@ -679,7 +682,10 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-51.svg",
     "group": "FR-GES",
     "numeric_code": "51",
-    "capital": "Châlons-en-Champagne"
+    "capital": {
+      "en_US": ["Châlons-en-Champagne"],
+      "fr_FR": ["Châlons-en-Champagne"]
+    }
   },
   {
     "name": {
@@ -690,7 +696,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-972.svg",
     "group": "",
     "numeric_code": "972",
-    "capital": "Fort-de-France"
+    "capital": { "en_US": ["Fort-de-France"], "fr_FR": ["Fort-de-France"] }
   },
   {
     "name": {
@@ -701,7 +707,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-75.svg",
     "group": "FR-IDF",
     "numeric_code": "75",
-    "capital": "Paris"
+    "capital": { "en_US": ["Paris"], "fr_FR": ["Paris"] }
   },
   {
     "name": {
@@ -712,7 +718,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-53.svg",
     "group": "FR-PDL",
     "numeric_code": "53",
-    "capital": "Laval"
+    "capital": { "en_US": ["Laval"], "fr_FR": ["Laval"] }
   },
   {
     "name": {
@@ -723,7 +729,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-976.svg",
     "group": "",
     "numeric_code": "976",
-    "capital": "Dzaoudzi"
+    "capital": { "en_US": ["Dzaoudzi"], "fr_FR": ["Dzaoudzi"] }
   },
   {
     "name": {
@@ -734,7 +740,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-54.svg",
     "group": "FR-GES",
     "numeric_code": "54",
-    "capital": "Nancy"
+    "capital": { "en_US": ["Nancy"], "fr_FR": ["Nancy"] }
   },
   {
     "name": {
@@ -745,7 +751,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-55.svg",
     "group": "FR-GES",
     "numeric_code": "55",
-    "capital": "Bar-le-Duc"
+    "capital": { "en_US": ["Bar-le-Duc"], "fr_FR": ["Bar-le-Duc"] }
   },
   {
     "name": {
@@ -756,7 +762,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-56.svg",
     "group": "FR-BRE",
     "numeric_code": "56",
-    "capital": "Vannes"
+    "capital": { "en_US": ["Vannes"], "fr_FR": ["Vannes"] }
   },
   {
     "name": {
@@ -767,7 +773,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-57.svg",
     "group": "FR-GES",
     "numeric_code": "57",
-    "capital": "Metz"
+    "capital": { "en_US": ["Metz"], "fr_FR": ["Metz"] }
   },
   {
     "name": {
@@ -778,7 +784,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-58.svg",
     "group": "FR-BFC",
     "numeric_code": "58",
-    "capital": "Nevers"
+    "capital": { "en_US": ["Nevers"], "fr_FR": ["Nevers"] }
   },
   {
     "name": {
@@ -789,7 +795,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-59.svg",
     "group": "FR-HDF",
     "numeric_code": "59",
-    "capital": "Lille"
+    "capital": { "en_US": ["Lille"], "fr_FR": ["Lille"] }
   },
   {
     "name": {
@@ -800,7 +806,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-60.svg",
     "group": "FR-HDF",
     "numeric_code": "60",
-    "capital": "Beauvais"
+    "capital": { "en_US": ["Beauvais"], "fr_FR": ["Beauvais"] }
   },
   {
     "name": {
@@ -811,7 +817,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-61.svg",
     "group": "FR-NOR",
     "numeric_code": "61",
-    "capital": "Alençon"
+    "capital": { "en_US": ["Alençon"], "fr_FR": ["Alençon"] }
   },
   {
     "name": {
@@ -822,7 +828,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-62.svg",
     "group": "FR-HDF",
     "numeric_code": "62",
-    "capital": "Arras"
+    "capital": { "en_US": ["Arras"], "fr_FR": ["Arras"] }
   },
   {
     "name": {
@@ -833,7 +839,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-63.svg",
     "group": "FR-ARA",
     "numeric_code": "63",
-    "capital": "Clermont-Ferrand"
+    "capital": { "en_US": ["Clermont-Ferrand"], "fr_FR": ["Clermont-Ferrand"] }
   },
   {
     "name": {
@@ -844,7 +850,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-64.svg",
     "group": "FR-NAQ",
     "numeric_code": "64",
-    "capital": "Pau"
+    "capital": { "en_US": ["Pau"], "fr_FR": ["Pau"] }
   },
   {
     "name": {
@@ -855,7 +861,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-66.svg",
     "group": "FR-OCC",
     "numeric_code": "66",
-    "capital": "Perpignan"
+    "capital": { "en_US": ["Perpignan"], "fr_FR": ["Perpignan"] }
   },
   {
     "name": {
@@ -866,7 +872,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-67.svg",
     "group": "FR-GES",
     "numeric_code": "67",
-    "capital": "Strasbourg"
+    "capital": { "en_US": ["Strasbourg"], "fr_FR": ["Strasbourg"] }
   },
   {
     "name": {
@@ -877,7 +883,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-68.svg",
     "group": "FR-GES",
     "numeric_code": "68",
-    "capital": "Colmar"
+    "capital": { "en_US": ["Colmar"], "fr_FR": ["Colmar"] }
   },
   {
     "name": {
@@ -888,7 +894,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-974.svg",
     "group": "",
     "numeric_code": "974",
-    "capital": "Saint-Denis"
+    "capital": { "en_US": ["Saint-Denis"], "fr_FR": ["Saint-Denis"] }
   },
   {
     "name": {
@@ -899,7 +905,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-69.svg",
     "group": "FR-ARA",
     "numeric_code": "69",
-    "capital": "Lyon"
+    "capital": { "en_US": ["Lyon"], "fr_FR": ["Lyon"] }
   },
   {
     "name": {
@@ -910,7 +916,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-71.svg",
     "group": "FR-BFC",
     "numeric_code": "71",
-    "capital": "Mâcon"
+    "capital": { "en_US": ["Mâcon"], "fr_FR": ["Mâcon"] }
   },
   {
     "name": {
@@ -921,7 +927,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-72.svg",
     "group": "FR-PDL",
     "numeric_code": "72",
-    "capital": "Le Mans"
+    "capital": { "en_US": ["Le Mans"], "fr_FR": ["Le Mans"] }
   },
   {
     "name": {
@@ -932,7 +938,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-73.svg",
     "group": "FR-ARA",
     "numeric_code": "73",
-    "capital": "Chambéry"
+    "capital": { "en_US": ["Chambéry"], "fr_FR": ["Chambéry"] }
   },
   {
     "name": {
@@ -943,7 +949,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-77.svg",
     "group": "FR-IDF",
     "numeric_code": "77",
-    "capital": "Melun"
+    "capital": { "en_US": ["Melun"], "fr_FR": ["Melun"] }
   },
   {
     "name": {
@@ -954,7 +960,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-76.svg",
     "group": "FR-NOR",
     "numeric_code": "76",
-    "capital": "Rouen"
+    "capital": { "en_US": ["Rouen"], "fr_FR": ["Rouen"] }
   },
   {
     "name": {
@@ -965,7 +971,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-93.svg",
     "group": "FR-IDF",
     "numeric_code": "93",
-    "capital": "Bobigny"
+    "capital": { "en_US": ["Bobigny"], "fr_FR": ["Bobigny"] }
   },
   {
     "name": {
@@ -976,7 +982,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-80.svg",
     "group": "FR-HDF",
     "numeric_code": "80",
-    "capital": "Amiens"
+    "capital": { "en_US": ["Amiens"], "fr_FR": ["Amiens"] }
   },
   {
     "name": {
@@ -987,7 +993,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-81.svg",
     "group": "FR-OCC",
     "numeric_code": "81",
-    "capital": "Albi"
+    "capital": { "en_US": ["Albi"], "fr_FR": ["Albi"] }
   },
   {
     "name": {
@@ -998,7 +1004,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-82.svg",
     "group": "FR-OCC",
     "numeric_code": "82",
-    "capital": "Montauban"
+    "capital": { "en_US": ["Montauban"], "fr_FR": ["Montauban"] }
   },
   {
     "name": {
@@ -1009,7 +1015,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-90.svg",
     "group": "FR-BFC",
     "numeric_code": "90",
-    "capital": "Belfort"
+    "capital": { "en_US": ["Belfort"], "fr_FR": ["Belfort"] }
   },
   {
     "name": {
@@ -1020,7 +1026,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-94.svg",
     "group": "FR-IDF",
     "numeric_code": "94",
-    "capital": "Créteil"
+    "capital": { "en_US": ["Créteil"], "fr_FR": ["Créteil"] }
   },
   {
     "name": {
@@ -1031,7 +1037,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-95.svg",
     "group": "FR-IDF",
     "numeric_code": "95",
-    "capital": "Pontoise"
+    "capital": { "en_US": ["Pontoise"], "fr_FR": ["Pontoise"] }
   },
   {
     "name": {
@@ -1042,7 +1048,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-83.svg",
     "group": "FR-PAC",
     "numeric_code": "83",
-    "capital": "Toulon"
+    "capital": { "en_US": ["Toulon"], "fr_FR": ["Toulon"] }
   },
   {
     "name": {
@@ -1053,7 +1059,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-84.svg",
     "group": "FR-PAC",
     "numeric_code": "84",
-    "capital": "Avignon"
+    "capital": { "en_US": ["Avignon"], "fr_FR": ["Avignon"] }
   },
   {
     "name": {
@@ -1064,7 +1070,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-85.svg",
     "group": "FR-PDL",
     "numeric_code": "85",
-    "capital": "La Roche-sur-Yon"
+    "capital": { "en_US": ["La Roche-sur-Yon"], "fr_FR": ["La Roche-sur-Yon"] }
   },
   {
     "name": {
@@ -1075,7 +1081,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-86.svg",
     "group": "FR-NAQ",
     "numeric_code": "86",
-    "capital": "Poitiers"
+    "capital": { "en_US": ["Poitiers"], "fr_FR": ["Poitiers"] }
   },
   {
     "name": {
@@ -1086,7 +1092,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-88.svg",
     "group": "FR-GES",
     "numeric_code": "88",
-    "capital": "Épinal"
+    "capital": { "en_US": ["Épinal"], "fr_FR": ["Épinal"] }
   },
   {
     "name": {
@@ -1097,7 +1103,7 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-89.svg",
     "group": "FR-BFC",
     "numeric_code": "89",
-    "capital": "Auxerre"
+    "capital": { "en_US": ["Auxerre"], "fr_FR": ["Auxerre"] }
   },
   {
     "name": {
@@ -1108,6 +1114,6 @@
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-78.svg",
     "group": "FR-IDF",
     "numeric_code": "78",
-    "capital": "Versailles"
+    "capital": { "en_US": ["Versailles"], "fr_FR": ["Versailles"] }
   }
 ]

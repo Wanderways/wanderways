@@ -5,7 +5,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-23.svg",
     "numeric_code": "23",
     "group": "JP-CHB",
-    "capital": "Nagoya"
+    "capital": {"en_US":["Nagoya"],"fr_FR":["Nagoya"]}
   },
   {
     "name": { "en_US": [" Akita"] },
@@ -13,7 +13,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-05.svg",
     "numeric_code": "05",
     "group": "JP-TOH",
-    "capital": "Akita"
+    "capital": {"en_US":["Akita"],"fr_FR":["Akita"]}
   },
   {
     "name": { "en_US": [" Aomori"] },
@@ -21,7 +21,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-02.svg",
     "numeric_code": "02",
     "group": "JP-TOH",
-    "capital": "Aomori"
+    "capital": {"en_US":["Aomori"],"fr_FR":["Aomori"]}
   },
   {
     "name": { "en_US": [" Chiba"] },
@@ -29,7 +29,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-12.svg",
     "numeric_code": "12",
     "group": "JP-KNT",
-    "capital": "Chiba"
+    "capital": {"en_US":["Chiba"],"fr_FR":["Chiba"]}
   },
   {
     "name": { "en_US": [" Ehime"] },
@@ -37,7 +37,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-38.svg",
     "numeric_code": "38",
     "group": "JP-SHI",
-    "capital": "Matsuyama"
+    "capital": {"en_US":["Matsuyama"],"fr_FR":["Matsuyama"]}
   },
   {
     "name": { "en_US": [" Fukui"] },
@@ -45,7 +45,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-18.svg",
     "numeric_code": "18",
     "group": "JP-CHB",
-    "capital": "Fukui"
+    "capital": {"en_US":["Fukui"],"fr_FR":["Fukui"]}
   },
   {
     "name": { "en_US": [" Fukuoka"] },
@@ -53,7 +53,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-40.svg",
     "numeric_code": "40",
     "group": "JP-KYU",
-    "capital": "Fukuoka"
+    "capital": {"en_US":["Fukuoka"],"fr_FR":["Fukuoka"]}
   },
   {
     "name": { "en_US": [" Fukushima"] },
@@ -61,7 +61,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-07.svg",
     "numeric_code": "07",
     "group": "JP-TOH",
-    "capital": "Fukushima"
+    "capital": {"en_US":["Fukushima"],"fr_FR":["Fukushima"]}
   },
   {
     "name": { "en_US": [" Gifu"] },
@@ -69,7 +69,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-21.svg",
     "numeric_code": "21",
     "group": "JP-CHB",
-    "capital": "Gifu"
+    "capital": {"en_US":["Gifu"],"fr_FR":["Gifu"]}
   },
   {
     "name": { "en_US": [" Gunma"] },
@@ -77,7 +77,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-10.svg",
     "numeric_code": "10",
     "group": "JP-KNT",
-    "capital": "Maebashi"
+    "capital": {"en_US":["Maebashi"],"fr_FR":["Maebashi"]}
   },
   {
     "name": { "en_US": [" Hiroshima"] },
@@ -85,7 +85,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-34.svg",
     "numeric_code": "34",
     "group": "JP-CHU",
-    "capital": "Hiroshima"
+    "capital": {"en_US":["Hiroshima"],"fr_FR":["Hiroshima"]}
   },
   {
     "name": { "en_US": [" Hokkaido"] },
@@ -93,7 +93,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-01.svg",
     "numeric_code": "01",
     "group": "JP-HOK",
-    "capital": "Sapporo"
+    "capital": {"en_US":["Sapporo"],"fr_FR":["Sapporo"]}
   },
   {
     "name": { "en_US": [" Hyōgo"] },
@@ -101,7 +101,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-28.svg",
     "numeric_code": "28",
     "group": "JP-KAN",
-    "capital": "Kōbe"
+    "capital": {"en_US":["Kōbe"],"fr_FR":["Kōbe"]}
   },
   {
     "name": { "en_US": [" Ibaraki"] },
@@ -109,7 +109,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-08.svg",
     "numeric_code": "08",
     "group": "JP-KNT",
-    "capital": "Mito"
+    "capital": {"en_US":["Mito"],"fr_FR":["Mito"]}
   },
   {
     "name": { "en_US": [" Ishikawa"] },
@@ -117,7 +117,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-17.svg",
     "numeric_code": "17",
     "group": "JP-CHB",
-    "capital": "Kanazawa"
+    "capital": {"en_US":["Kanazawa"],"fr_FR":["Kanazawa"]}
   },
   {
     "name": { "en_US": [" Iwate"] },
@@ -125,7 +125,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-03.svg",
     "numeric_code": "03",
     "group": "JP-TOH",
-    "capital": "Morioka"
+    "capital": {"en_US":["Morioka"],"fr_FR":["Morioka"]}
   },
   {
     "name": { "en_US": [" Kagawa"] },
@@ -133,7 +133,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-37.svg",
     "numeric_code": "37",
     "group": "JP-SHI",
-    "capital": "Takamatsu"
+    "capital": {"en_US":["Takamatsu"],"fr_FR":["Takamatsu"]}
   },
   {
     "name": { "en_US": [" Kagoshima"] },
@@ -141,7 +141,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-46.svg",
     "numeric_code": "46",
     "group": "JP-KYU",
-    "capital": "Kagoshima"
+    "capital": {"en_US":["Kagoshima"],"fr_FR":["Kagoshima"]}
   },
   {
     "name": { "en_US": [" Kanagawa"] },
@@ -149,7 +149,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-14.svg",
     "numeric_code": "14",
     "group": "JP-KNT",
-    "capital": "Yokohama"
+    "capital": {"en_US":["Yokohama"],"fr_FR":["Yokohama"]}
   },
   {
     "name": { "en_US": [" Kōchi"] },
@@ -157,7 +157,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-39.svg",
     "numeric_code": "39",
     "group": "JP-SHI",
-    "capital": "Kōchi"
+    "capital": {"en_US":["Kōchi"],"fr_FR":["Kōchi"]}
   },
   {
     "name": { "en_US": [" Kumamoto"] },
@@ -165,7 +165,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-43.svg",
     "numeric_code": "43",
     "group": "JP-KYU",
-    "capital": "Kumamoto"
+    "capital": {"en_US":["Kumamoto"],"fr_FR":["Kumamoto"]}
   },
   {
     "name": { "en_US": [" Kyoto"] },
@@ -173,7 +173,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-26.svg",
     "numeric_code": "26",
     "group": "JP-KAN",
-    "capital": "Kyoto"
+    "capital": {"en_US":["Kyoto"],"fr_FR":["Kyoto"]}
   },
   {
     "name": { "en_US": [" Mie"] },
@@ -181,7 +181,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-24.svg",
     "numeric_code": "24",
     "group": "JP-KAN",
-    "capital": "Tsu"
+    "capital": {"en_US":["Tsu"],"fr_FR":["Tsu"]}
   },
   {
     "name": { "en_US": [" Miyagi"] },
@@ -189,7 +189,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-04.svg",
     "numeric_code": "04",
     "group": "JP-TOH",
-    "capital": "Sendai"
+    "capital": {"en_US":["Sendai"],"fr_FR":["Sendai"]}
   },
   {
     "name": { "en_US": [" Miyazaki"] },
@@ -197,7 +197,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-45.svg",
     "numeric_code": "45",
     "group": "JP-KYU",
-    "capital": "Miyazaki"
+    "capital": {"en_US":["Miyazaki"],"fr_FR":["Miyazaki"]}
   },
   {
     "name": { "en_US": [" Nagano"] },
@@ -205,7 +205,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-20.svg",
     "numeric_code": "20",
     "group": "JP-CHB",
-    "capital": "Nagano"
+    "capital": {"en_US":["Nagano"],"fr_FR":["Nagano"]}
   },
   {
     "name": { "en_US": [" Nagasaki"] },
@@ -213,7 +213,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-42.svg",
     "numeric_code": "42",
     "group": "JP-KYU",
-    "capital": "Nagasaki"
+    "capital": {"en_US":["Nagasaki"],"fr_FR":["Nagasaki"]}
   },
   {
     "name": { "en_US": [" Nara"] },
@@ -221,7 +221,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-29.svg",
     "numeric_code": "29",
     "group": "JP-KAN",
-    "capital": "Nara"
+    "capital": {"en_US":["Nara"],"fr_FR":["Nara"]}
   },
   {
     "name": { "en_US": [" Niigata"] },
@@ -229,7 +229,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-15.svg",
     "numeric_code": "15",
     "group": "JP-CHB",
-    "capital": "Niigata"
+    "capital": {"en_US":["Niigata"],"fr_FR":["Niigata"]}
   },
   {
     "name": { "en_US": [" Ōita"] },
@@ -237,7 +237,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-44.svg",
     "numeric_code": "44",
     "group": "JP-KYU",
-    "capital": "Ōita"
+    "capital": {"en_US":["Ōita"],"fr_FR":["Ōita"]}
   },
   {
     "name": { "en_US": [" Okayama"] },
@@ -245,7 +245,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-33.svg",
     "numeric_code": "33",
     "group": "JP-CHU",
-    "capital": "Okayama"
+    "capital": {"en_US":["Okayama"],"fr_FR":["Okayama"]}
   },
   {
     "name": { "en_US": [" Okinawa"] },
@@ -253,7 +253,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-47.svg",
     "numeric_code": "47",
     "group": "JP-KYU",
-    "capital": "Naha"
+    "capital": {"en_US":["Naha"],"fr_FR":["Naha"]}
   },
   {
     "name": { "en_US": [" Osaka"] },
@@ -261,7 +261,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-27.svg",
     "numeric_code": "27",
     "group": "JP-KAN",
-    "capital": "Ōsaka"
+    "capital": {"en_US":["Ōsaka"],"fr_FR":["Ōsaka"]}
   },
   {
     "name": { "en_US": [" Saga"] },
@@ -269,7 +269,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-41.svg",
     "numeric_code": "41",
     "group": "JP-KYU",
-    "capital": "Saga"
+    "capital": {"en_US":["Saga"],"fr_FR":["Saga"]}
   },
   {
     "name": { "en_US": [" Saitama"] },
@@ -277,7 +277,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-11.svg",
     "numeric_code": "11",
     "group": "JP-KNT",
-    "capital": "Saitama"
+    "capital": {"en_US":["Saitama"],"fr_FR":["Saitama"]}
   },
   {
     "name": { "en_US": [" Shiga"] },
@@ -285,7 +285,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-25.svg",
     "numeric_code": "25",
     "group": "JP-KAN",
-    "capital": "Ōtsu"
+    "capital": {"en_US":["Ōtsu"],"fr_FR":["Ōtsu"]}
   },
   {
     "name": { "en_US": [" Shimane"] },
@@ -293,7 +293,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-32.svg",
     "numeric_code": "32",
     "group": "JP-CHU",
-    "capital": "Matsue"
+    "capital": {"en_US":["Matsue"],"fr_FR":["Matsue"]}
   },
   {
     "name": { "en_US": [" Shizuoka"] },
@@ -301,7 +301,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-22.svg",
     "numeric_code": "22",
     "group": "JP-CHB",
-    "capital": "Shizuoka"
+    "capital": {"en_US":["Shizuoka"],"fr_FR":["Shizuoka"]}
   },
   {
     "name": { "en_US": [" Tochigi"] },
@@ -309,7 +309,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-09.svg",
     "numeric_code": "09",
     "group": "JP-KNT",
-    "capital": "Utsunomiya"
+    "capital": {"en_US":["Utsunomiya"],"fr_FR":["Utsunomiya"]}
   },
   {
     "name": { "en_US": [" Tokushima"] },
@@ -317,7 +317,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-36.svg",
     "numeric_code": "36",
     "group": "JP-SHI",
-    "capital": "Tokushima"
+    "capital": {"en_US":["Tokushima"],"fr_FR":["Tokushima"]}
   },
   {
     "name": { "en_US": [" Tokyo"] },
@@ -325,7 +325,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-13.svg",
     "numeric_code": "13",
     "group": "JP-KNT",
-    "capital": "Tokyo"
+    "capital": {"en_US":["Tokyo"],"fr_FR":["Tokyo"]}
   },
   {
     "name": { "en_US": [" Tottori"] },
@@ -333,7 +333,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-31.svg",
     "numeric_code": "31",
     "group": "JP-CHU",
-    "capital": "Tottori"
+    "capital": {"en_US":["Tottori"],"fr_FR":["Tottori"]}
   },
   {
     "name": { "en_US": [" Toyama"] },
@@ -341,7 +341,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-16.svg",
     "numeric_code": "16",
     "group": "JP-CHB",
-    "capital": "Toyama"
+    "capital": {"en_US":["Toyama"],"fr_FR":["Toyama"]}
   },
   {
     "name": { "en_US": [" Wakayama"] },
@@ -349,7 +349,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-30.svg",
     "numeric_code": "30",
     "group": "JP-KAN",
-    "capital": "Wakayama"
+    "capital": {"en_US":["Wakayama"],"fr_FR":["Wakayama"]}
   },
   {
     "name": { "en_US": [" Yamagata"] },
@@ -357,7 +357,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-06.svg",
     "numeric_code": "06",
     "group": "JP-TOH",
-    "capital": "Yamagata"
+    "capital": {"en_US":["Yamagata"],"fr_FR":["Yamagata"]}
   },
   {
     "name": { "en_US": [" Yamaguchi"] },
@@ -365,7 +365,7 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-35.svg",
     "numeric_code": "35",
     "group": "JP-CHU",
-    "capital": "Yamaguchi"
+    "capital": {"en_US":["Yamaguchi"],"fr_FR":["Yamaguchi"]}
   },
   {
     "name": { "en_US": [" Yamanashi"] },
@@ -373,6 +373,6 @@
     "flag_url": "./assets/maps/flags/japan-prefectures/flag_JP-19.svg",
     "numeric_code": "19",
     "group": "JP-CHB",
-    "capital": "Kōfu"
+    "capital": {"en_US":["Kōfu"],"fr_FR":["Kōfu"]}
   }
 ]

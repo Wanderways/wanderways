@@ -18,7 +18,8 @@
     "alpha_3": "AFG",
     "group": "as",
     "numeric_code": "004",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -31,7 +32,8 @@
     "alpha_3": "ALA",
     "group": "eu",
     "numeric_code": "248",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -44,7 +46,8 @@
     "alpha_3": "ALB",
     "group": "eu",
     "numeric_code": "008",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -57,7 +60,8 @@
     "alpha_3": "DZA",
     "group": "af",
     "numeric_code": "012",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -70,7 +74,8 @@
     "alpha_3": "ASM",
     "group": "oc",
     "numeric_code": "016",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -83,7 +88,8 @@
     "alpha_3": "AND",
     "group": "eu",
     "numeric_code": "020",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -96,7 +102,8 @@
     "alpha_3": "AGO",
     "group": "af",
     "numeric_code": "024",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -109,7 +116,8 @@
     "alpha_3": "AIA",
     "group": "na",
     "numeric_code": "660",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -122,7 +130,8 @@
     "alpha_3": "ATA",
     "group": "an",
     "numeric_code": "010",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -135,7 +144,8 @@
     "alpha_3": "ATG",
     "group": "na",
     "numeric_code": "028",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -148,7 +158,8 @@
     "alpha_3": "ARG",
     "group": "sa",
     "numeric_code": "032",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -161,7 +172,8 @@
     "alpha_3": "ARM",
     "group": "as",
     "numeric_code": "051",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -174,7 +186,8 @@
     "alpha_3": "ABW",
     "group": "na",
     "numeric_code": "533",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -187,7 +200,8 @@
     "alpha_3": "AUS",
     "group": "oc",
     "numeric_code": "036",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -200,7 +214,8 @@
     "alpha_3": "AUT",
     "group": "eu",
     "numeric_code": "040",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -213,7 +228,8 @@
     "alpha_3": "AZE",
     "group": "as",
     "numeric_code": "031",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -226,7 +242,8 @@
     "alpha_3": "BHS",
     "group": "na",
     "numeric_code": "044",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -239,7 +256,8 @@
     "alpha_3": "BHR",
     "group": "as",
     "numeric_code": "048",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -252,7 +270,8 @@
     "alpha_3": "BGD",
     "group": "as",
     "numeric_code": "050",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -265,7 +284,8 @@
     "alpha_3": "BRB",
     "group": "na",
     "numeric_code": "052",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -278,7 +298,8 @@
     "alpha_3": "BLR",
     "group": "eu",
     "numeric_code": "112",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -291,7 +312,8 @@
     "alpha_3": "BEL",
     "group": "eu",
     "numeric_code": "056",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -304,7 +326,8 @@
     "alpha_3": "BLZ",
     "group": "na",
     "numeric_code": "084",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -317,7 +340,8 @@
     "alpha_3": "BEN",
     "group": "af",
     "numeric_code": "204",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -330,7 +354,8 @@
     "alpha_3": "BMU",
     "group": "na",
     "numeric_code": "060",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -343,11 +368,12 @@
     "alpha_3": "BTN",
     "group": "as",
     "numeric_code": "064",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
-      "en_US": ["Bolivia","Plurinational State of Bolivia"],
+      "en_US": ["Bolivia", "Plurinational State of Bolivia"],
       "fr_FR": ["Bolivie"]
     },
     "identifier": "BO",
@@ -356,11 +382,16 @@
     "alpha_3": "BOL",
     "group": "sa",
     "numeric_code": "068",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
-      "en_US": ["Bonaire, Sint Eustatius and Saba", "Caribbean Netherlands", "Bonaire"],
+      "en_US": [
+        "Bonaire, Sint Eustatius and Saba",
+        "Caribbean Netherlands",
+        "Bonaire"
+      ],
       "fr_FR": ["Bonaire", "Bonaire, Saint-Eustache et Saba"]
     },
     "identifier": "BQ",
@@ -369,7 +400,8 @@
     "alpha_3": "BES",
     "group": "na",
     "numeric_code": "535",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -382,7 +414,8 @@
     "alpha_3": "BIH",
     "group": "eu",
     "numeric_code": "070",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -395,7 +428,8 @@
     "alpha_3": "BWA",
     "group": "af",
     "numeric_code": "072",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -408,7 +442,8 @@
     "alpha_3": "BVT",
     "group": "an",
     "numeric_code": "074",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -421,7 +456,8 @@
     "alpha_3": "BRA",
     "group": "sa",
     "numeric_code": "076",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -434,12 +470,13 @@
     "alpha_3": "IOT",
     "group": "as",
     "numeric_code": "086",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
-      "en_US": ["Brunei","Brunei Darussalam"],
-      "fr_FR": ["Brunei","Brunei Darussalam"]
+      "en_US": ["Brunei", "Brunei Darussalam"],
+      "fr_FR": ["Brunei", "Brunei Darussalam"]
     },
     "identifier": "BN",
     "flag_url": "./assets/maps/flags/world-countries/flag_BN.svg",
@@ -447,7 +484,8 @@
     "alpha_3": "BRN",
     "group": "as",
     "numeric_code": "096",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -460,7 +498,8 @@
     "alpha_3": "BGR",
     "group": "eu",
     "numeric_code": "100",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -473,7 +512,8 @@
     "alpha_3": "BFA",
     "group": "af",
     "numeric_code": "854",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -486,7 +526,8 @@
     "alpha_3": "BDI",
     "group": "af",
     "numeric_code": "108",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -499,7 +540,8 @@
     "alpha_3": "CPV",
     "group": "af",
     "numeric_code": "132",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -512,7 +554,8 @@
     "alpha_3": "KHM",
     "group": "as",
     "numeric_code": "116",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -525,7 +568,8 @@
     "alpha_3": "CMR",
     "group": "af",
     "numeric_code": "120",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -538,7 +582,8 @@
     "alpha_3": "CAN",
     "group": "na",
     "numeric_code": "124",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -551,7 +596,8 @@
     "alpha_3": "CYM",
     "group": "na",
     "numeric_code": "136",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -564,7 +610,8 @@
     "alpha_3": "CAF",
     "group": "af",
     "numeric_code": "140",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -577,7 +624,8 @@
     "alpha_3": "TCD",
     "group": "af",
     "numeric_code": "148",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -590,7 +638,8 @@
     "alpha_3": "CHL",
     "group": "sa",
     "numeric_code": "152",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -603,7 +652,8 @@
     "alpha_3": "CHN",
     "group": "as",
     "numeric_code": "156",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -616,7 +666,8 @@
     "alpha_3": "CXR",
     "group": "as",
     "numeric_code": "162",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -629,7 +680,8 @@
     "alpha_3": "CCK",
     "group": "as",
     "numeric_code": "166",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -642,7 +694,8 @@
     "alpha_3": "COL",
     "group": "sa",
     "numeric_code": "170",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -655,12 +708,13 @@
     "alpha_3": "COM",
     "group": "af",
     "numeric_code": "174",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
-      "en_US": ["Republic of the Congo","Congo"],
-      "fr_FR": ["République du Congo","Congo"]
+      "en_US": ["Republic of the Congo", "Congo"],
+      "fr_FR": ["République du Congo", "Congo"]
     },
     "identifier": "CG",
     "flag_url": "./assets/maps/flags/world-countries/flag_CG.svg",
@@ -668,7 +722,8 @@
     "alpha_3": "COG",
     "group": "af",
     "numeric_code": "178",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -681,7 +736,8 @@
     "alpha_3": "COD",
     "group": "af",
     "numeric_code": "180",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -694,7 +750,8 @@
     "alpha_3": "COK",
     "group": "oc",
     "numeric_code": "184",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -707,7 +764,8 @@
     "alpha_3": "CRI",
     "group": "na",
     "numeric_code": "188",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -720,7 +778,8 @@
     "alpha_3": "CIV",
     "group": "af",
     "numeric_code": "384",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -733,7 +792,8 @@
     "alpha_3": "HRV",
     "group": "eu",
     "numeric_code": "191",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -746,7 +806,8 @@
     "alpha_3": "CUB",
     "group": "na",
     "numeric_code": "192",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -759,7 +820,8 @@
     "alpha_3": "CUW",
     "group": "na",
     "numeric_code": "531",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -772,7 +834,8 @@
     "alpha_3": "CYP",
     "group": "as",
     "numeric_code": "196",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -785,7 +848,8 @@
     "alpha_3": "CZE",
     "group": "eu",
     "numeric_code": "203",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -798,7 +862,8 @@
     "alpha_3": "DNK",
     "group": "eu",
     "numeric_code": "208",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -811,7 +876,8 @@
     "alpha_3": "DJI",
     "group": "af",
     "numeric_code": "262",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -824,7 +890,8 @@
     "alpha_3": "DMA",
     "group": "na",
     "numeric_code": "212",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -837,7 +904,8 @@
     "alpha_3": "DOM",
     "group": "na",
     "numeric_code": "214",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -850,7 +918,8 @@
     "alpha_3": "ECU",
     "group": "na",
     "numeric_code": "218",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -863,7 +932,8 @@
     "alpha_3": "EGY",
     "group": "af",
     "numeric_code": "818",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -876,7 +946,8 @@
     "alpha_3": "SLV",
     "group": "na",
     "numeric_code": "222",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -889,7 +960,8 @@
     "alpha_3": "GNQ",
     "group": "af",
     "numeric_code": "226",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -902,7 +974,8 @@
     "alpha_3": "ERI",
     "group": "af",
     "numeric_code": "232",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -915,7 +988,8 @@
     "alpha_3": "EST",
     "group": "eu",
     "numeric_code": "233",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -928,7 +1002,8 @@
     "alpha_3": "SWZ",
     "group": "af",
     "numeric_code": "748",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -941,12 +1016,13 @@
     "alpha_3": "ETH",
     "group": "af",
     "numeric_code": "231",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
       "en_US": ["Falkland Islands", "Malvinas"],
-      "fr_FR": ["Îles Falkland","Îles Malouines"]
+      "fr_FR": ["Îles Falkland", "Îles Malouines"]
     },
     "identifier": "FK",
     "flag_url": "./assets/maps/flags/world-countries/flag_FK.svg",
@@ -954,7 +1030,8 @@
     "alpha_3": "FLK",
     "group": "sa",
     "numeric_code": "238",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -967,7 +1044,8 @@
     "alpha_3": "FRO",
     "group": "eu",
     "numeric_code": "234",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -980,7 +1058,8 @@
     "alpha_3": "FJI",
     "group": "oc",
     "numeric_code": "242",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -993,7 +1072,8 @@
     "alpha_3": "FIN",
     "group": "eu",
     "numeric_code": "246",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1006,7 +1086,8 @@
     "alpha_3": "FRA",
     "group": "eu",
     "numeric_code": "250",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1019,7 +1100,8 @@
     "alpha_3": "GUF",
     "group": "sa",
     "numeric_code": "254",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1032,7 +1114,8 @@
     "alpha_3": "PYF",
     "group": "oc",
     "numeric_code": "258",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1045,7 +1128,8 @@
     "alpha_3": "ATF",
     "group": "an",
     "numeric_code": "260",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1058,7 +1142,8 @@
     "alpha_3": "GAB",
     "group": "af",
     "numeric_code": "266",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1071,7 +1156,8 @@
     "alpha_3": "GMB",
     "group": "af",
     "numeric_code": "270",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1084,7 +1170,8 @@
     "alpha_3": "GEO",
     "group": "as",
     "numeric_code": "268",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1097,7 +1184,8 @@
     "alpha_3": "DEU",
     "group": "eu",
     "numeric_code": "276",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1110,7 +1198,8 @@
     "alpha_3": "GHA",
     "group": "af",
     "numeric_code": "288",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1123,7 +1212,8 @@
     "alpha_3": "GIB",
     "group": "eu",
     "numeric_code": "292",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1136,7 +1226,8 @@
     "alpha_3": "GRC",
     "group": "eu",
     "numeric_code": "300",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1149,7 +1240,8 @@
     "alpha_3": "GRL",
     "group": "na",
     "numeric_code": "304",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1162,7 +1254,8 @@
     "alpha_3": "GRD",
     "group": "na",
     "numeric_code": "308",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1175,7 +1268,8 @@
     "alpha_3": "GLP",
     "group": "na",
     "numeric_code": "312",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1188,7 +1282,8 @@
     "alpha_3": "GUM",
     "group": "oc",
     "numeric_code": "316",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1201,7 +1296,8 @@
     "alpha_3": "GTM",
     "group": "na",
     "numeric_code": "320",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1214,7 +1310,8 @@
     "alpha_3": "GGY",
     "group": "eu",
     "numeric_code": "831",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1227,7 +1324,8 @@
     "alpha_3": "GIN",
     "group": "af",
     "numeric_code": "324",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1240,7 +1338,8 @@
     "alpha_3": "GNB",
     "group": "af",
     "numeric_code": "624",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1253,7 +1352,8 @@
     "alpha_3": "GUY",
     "group": "sa",
     "numeric_code": "328",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1266,7 +1366,8 @@
     "alpha_3": "HTI",
     "group": "na",
     "numeric_code": "332",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1279,7 +1380,8 @@
     "alpha_3": "HMD",
     "group": "an",
     "numeric_code": "334",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1292,7 +1394,8 @@
     "alpha_3": "VAT",
     "group": "eu",
     "numeric_code": "336",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1305,7 +1408,8 @@
     "alpha_3": "HND",
     "group": "na",
     "numeric_code": "340",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1318,7 +1422,8 @@
     "alpha_3": "HKG",
     "group": "as",
     "numeric_code": "344",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1331,7 +1436,8 @@
     "alpha_3": "HUN",
     "group": "eu",
     "numeric_code": "348",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1344,7 +1450,8 @@
     "alpha_3": "ISL",
     "group": "eu",
     "numeric_code": "352",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1357,7 +1464,8 @@
     "alpha_3": "IND",
     "group": "as",
     "numeric_code": "356",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1370,11 +1478,12 @@
     "alpha_3": "IDN",
     "group": "as",
     "numeric_code": "360",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
-      "en_US": ["Iran","Islamic Republic of Iran"],
+      "en_US": ["Iran", "Islamic Republic of Iran"],
       "fr_FR": ["Iran", "République islamique d'Iran"]
     },
     "identifier": "IR",
@@ -1383,7 +1492,8 @@
     "alpha_3": "IRN",
     "group": "as",
     "numeric_code": "364",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1396,7 +1506,8 @@
     "alpha_3": "IRQ",
     "group": "as",
     "numeric_code": "368",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1409,7 +1520,8 @@
     "alpha_3": "IRL",
     "group": "eu",
     "numeric_code": "372",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1422,7 +1534,8 @@
     "alpha_3": "IMN",
     "group": "eu",
     "numeric_code": "833",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1435,7 +1548,8 @@
     "alpha_3": "ISR",
     "group": "as",
     "numeric_code": "376",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1448,7 +1562,8 @@
     "alpha_3": "ITA",
     "group": "eu",
     "numeric_code": "380",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1461,7 +1576,8 @@
     "alpha_3": "JAM",
     "group": "na",
     "numeric_code": "388",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1474,7 +1590,8 @@
     "alpha_3": "JPN",
     "group": "as",
     "numeric_code": "392",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1487,7 +1604,8 @@
     "alpha_3": "JEY",
     "group": "eu",
     "numeric_code": "832",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1500,7 +1618,8 @@
     "alpha_3": "JOR",
     "group": "as",
     "numeric_code": "400",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1513,7 +1632,8 @@
     "alpha_3": "KAZ",
     "group": "as",
     "numeric_code": "398",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1526,7 +1646,8 @@
     "alpha_3": "KEN",
     "group": "af",
     "numeric_code": "404",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1539,7 +1660,8 @@
     "alpha_3": "KIR",
     "group": "oc",
     "numeric_code": "296",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1552,7 +1674,8 @@
     "alpha_3": "PRK",
     "group": "as",
     "numeric_code": "408",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1565,7 +1688,8 @@
     "alpha_3": "KOR",
     "group": "as",
     "numeric_code": "410",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1578,7 +1702,8 @@
     "alpha_3": "XXK",
     "group": "eu",
     "numeric_code": "926",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1591,7 +1716,8 @@
     "alpha_3": "KWT",
     "group": "as",
     "numeric_code": "414",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1604,7 +1730,8 @@
     "alpha_3": "KGZ",
     "group": "as",
     "numeric_code": "417",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1617,7 +1744,8 @@
     "alpha_3": "LAO",
     "group": "as",
     "numeric_code": "418",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1630,7 +1758,8 @@
     "alpha_3": "LVA",
     "group": "eu",
     "numeric_code": "428",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1643,7 +1772,8 @@
     "alpha_3": "LBN",
     "group": "as",
     "numeric_code": "422",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1656,7 +1786,8 @@
     "alpha_3": "LSO",
     "group": "af",
     "numeric_code": "426",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1669,7 +1800,8 @@
     "alpha_3": "LBR",
     "group": "af",
     "numeric_code": "430",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1682,7 +1814,8 @@
     "alpha_3": "LBY",
     "group": "af",
     "numeric_code": "434",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1695,7 +1828,8 @@
     "alpha_3": "LIE",
     "group": "eu",
     "numeric_code": "438",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1708,7 +1842,8 @@
     "alpha_3": "LTU",
     "group": "eu",
     "numeric_code": "440",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1721,7 +1856,8 @@
     "alpha_3": "LUX",
     "group": "eu",
     "numeric_code": "442",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1734,7 +1870,8 @@
     "alpha_3": "MAC",
     "group": "as",
     "numeric_code": "446",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1747,7 +1884,8 @@
     "alpha_3": "MDG",
     "group": "af",
     "numeric_code": "450",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1760,7 +1898,8 @@
     "alpha_3": "MWI",
     "group": "af",
     "numeric_code": "454",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1773,7 +1912,8 @@
     "alpha_3": "MYS",
     "group": "as",
     "numeric_code": "458",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1786,7 +1926,8 @@
     "alpha_3": "MDV",
     "group": "as",
     "numeric_code": "462",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1799,7 +1940,8 @@
     "alpha_3": "MLI",
     "group": "af",
     "numeric_code": "466",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1812,7 +1954,8 @@
     "alpha_3": "MLT",
     "group": "eu",
     "numeric_code": "470",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1825,7 +1968,8 @@
     "alpha_3": "MHL",
     "group": "oc",
     "numeric_code": "584",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1838,7 +1982,8 @@
     "alpha_3": "MTQ",
     "group": "na",
     "numeric_code": "474",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1851,7 +1996,8 @@
     "alpha_3": "MRT",
     "group": "af",
     "numeric_code": "478",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1864,7 +2010,8 @@
     "alpha_3": "MUS",
     "group": "af",
     "numeric_code": "480",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1877,7 +2024,8 @@
     "alpha_3": "MYT",
     "group": "af",
     "numeric_code": "175",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1890,7 +2038,8 @@
     "alpha_3": "MEX",
     "group": "na",
     "numeric_code": "484",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1903,7 +2052,8 @@
     "alpha_3": "FSM",
     "group": "oc",
     "numeric_code": "583",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1916,7 +2066,8 @@
     "alpha_3": "MDA",
     "group": "as",
     "numeric_code": "498",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1929,7 +2080,8 @@
     "alpha_3": "MCO",
     "group": "eu",
     "numeric_code": "492",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1942,7 +2094,8 @@
     "alpha_3": "MNG",
     "group": "as",
     "numeric_code": "496",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1955,7 +2108,8 @@
     "alpha_3": "MNE",
     "group": "eu",
     "numeric_code": "499",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1968,7 +2122,8 @@
     "alpha_3": "MSR",
     "group": "na",
     "numeric_code": "500",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1981,7 +2136,8 @@
     "alpha_3": "MAR",
     "group": "af",
     "numeric_code": "504",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -1994,7 +2150,8 @@
     "alpha_3": "MOZ",
     "group": "af",
     "numeric_code": "508",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2007,7 +2164,8 @@
     "alpha_3": "MMR",
     "group": "as",
     "numeric_code": "104",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2020,7 +2178,8 @@
     "alpha_3": "NAM",
     "group": "af",
     "numeric_code": "516",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2033,7 +2192,8 @@
     "alpha_3": "NRU",
     "group": "oc",
     "numeric_code": "520",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2046,7 +2206,8 @@
     "alpha_3": "NPL",
     "group": "as",
     "numeric_code": "524",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2059,7 +2220,8 @@
     "alpha_3": "NLD",
     "group": "eu",
     "numeric_code": "528",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2072,7 +2234,8 @@
     "alpha_3": "NCL",
     "group": "oc",
     "numeric_code": "540",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2085,7 +2248,8 @@
     "alpha_3": "NZL",
     "group": "oc",
     "numeric_code": "554",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2098,7 +2262,8 @@
     "alpha_3": "NIC",
     "group": "na",
     "numeric_code": "558",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2111,7 +2276,8 @@
     "alpha_3": "NER",
     "group": "af",
     "numeric_code": "562",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2124,7 +2290,8 @@
     "alpha_3": "NGA",
     "group": "af",
     "numeric_code": "566",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2137,7 +2304,8 @@
     "alpha_3": "NIU",
     "group": "oc",
     "numeric_code": "570",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2150,7 +2318,8 @@
     "alpha_3": "NFK",
     "group": "oc",
     "numeric_code": "574",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2163,7 +2332,8 @@
     "alpha_3": "MKD",
     "group": "eu",
     "numeric_code": "807",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2176,7 +2346,8 @@
     "alpha_3": "MNP",
     "group": "oc",
     "numeric_code": "580",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2189,7 +2360,8 @@
     "alpha_3": "NOR",
     "group": "eu",
     "numeric_code": "578",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2202,7 +2374,8 @@
     "alpha_3": "OMN",
     "group": "as",
     "numeric_code": "512",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2215,7 +2388,8 @@
     "alpha_3": "PAK",
     "group": "as",
     "numeric_code": "586",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2228,7 +2402,8 @@
     "alpha_3": "PLW",
     "group": "oc",
     "numeric_code": "585",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2241,7 +2416,8 @@
     "alpha_3": "PSE",
     "group": "as",
     "numeric_code": "275",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2254,7 +2430,8 @@
     "alpha_3": "PAN",
     "group": "na",
     "numeric_code": "591",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2267,7 +2444,8 @@
     "alpha_3": "PNG",
     "group": "oc",
     "numeric_code": "598",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2280,7 +2458,8 @@
     "alpha_3": "PRY",
     "group": "sa",
     "numeric_code": "600",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2293,7 +2472,8 @@
     "alpha_3": "PER",
     "group": "sa",
     "numeric_code": "604",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2306,7 +2486,8 @@
     "alpha_3": "PHL",
     "group": "as",
     "numeric_code": "608",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2319,7 +2500,8 @@
     "alpha_3": "PCN",
     "group": "oc",
     "numeric_code": "612",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2332,7 +2514,8 @@
     "alpha_3": "POL",
     "group": "eu",
     "numeric_code": "616",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2345,12 +2528,13 @@
     "alpha_3": "PRT",
     "group": "eu",
     "numeric_code": "620",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
       "en_US": ["Puerto Rico"],
-      "fr_FR": ["Porto Rico","Puerto Rico"]
+      "fr_FR": ["Porto Rico", "Puerto Rico"]
     },
     "identifier": "PR",
     "flag_url": "./assets/maps/flags/world-countries/flag_PR.svg",
@@ -2358,7 +2542,8 @@
     "alpha_3": "PRI",
     "group": "na",
     "numeric_code": "630",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2371,7 +2556,8 @@
     "alpha_3": "QAT",
     "group": "as",
     "numeric_code": "634",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2384,7 +2570,8 @@
     "alpha_3": "REU",
     "group": "af",
     "numeric_code": "638",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2397,7 +2584,8 @@
     "alpha_3": "ROU",
     "group": "eu",
     "numeric_code": "642",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2410,7 +2598,8 @@
     "alpha_3": "RUS",
     "group": "as",
     "numeric_code": "643",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2423,7 +2612,8 @@
     "alpha_3": "RWA",
     "group": "af",
     "numeric_code": "646",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2436,7 +2626,8 @@
     "alpha_3": "BLM",
     "group": "na",
     "numeric_code": "652",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2449,7 +2640,8 @@
     "alpha_3": "SHN",
     "group": "af",
     "numeric_code": "654",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2462,7 +2654,8 @@
     "alpha_3": "KNA",
     "group": "na",
     "numeric_code": "659",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2475,12 +2668,13 @@
     "alpha_3": "LCA",
     "group": "na",
     "numeric_code": "662",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
       "en_US": ["Saint Martin"],
-      "fr_FR": ["Saint Martin - Partie française","Saint Martin - France"]
+      "fr_FR": ["Saint Martin - Partie française", "Saint Martin - France"]
     },
     "identifier": "MF",
     "flag_url": "./assets/maps/flags/world-countries/flag_MF.svg",
@@ -2488,7 +2682,8 @@
     "alpha_3": "MAF",
     "group": "na",
     "numeric_code": "663",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2501,7 +2696,8 @@
     "alpha_3": "SPM",
     "group": "na",
     "numeric_code": "666",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2514,7 +2710,8 @@
     "alpha_3": "VCT",
     "group": "na",
     "numeric_code": "670",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2527,7 +2724,8 @@
     "alpha_3": "WSM",
     "group": "oc",
     "numeric_code": "882",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2540,7 +2738,8 @@
     "alpha_3": "SMR",
     "group": "eu",
     "numeric_code": "674",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2553,7 +2752,8 @@
     "alpha_3": "STP",
     "group": "af",
     "numeric_code": "678",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2566,7 +2766,8 @@
     "alpha_3": "SAU",
     "group": "as",
     "numeric_code": "682",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2579,7 +2780,8 @@
     "alpha_3": "SEN",
     "group": "af",
     "numeric_code": "686",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2592,7 +2794,8 @@
     "alpha_3": "SRB",
     "group": "eu",
     "numeric_code": "688",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2605,7 +2808,8 @@
     "alpha_3": "SYC",
     "group": "af",
     "numeric_code": "690",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2618,7 +2822,8 @@
     "alpha_3": "SLE",
     "group": "af",
     "numeric_code": "694",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2631,7 +2836,8 @@
     "alpha_3": "SGP",
     "group": "as",
     "numeric_code": "702",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2644,7 +2850,8 @@
     "alpha_3": "SXM",
     "group": "na",
     "numeric_code": "534",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2657,7 +2864,8 @@
     "alpha_3": "SVK",
     "group": "eu",
     "numeric_code": "703",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2670,7 +2878,8 @@
     "alpha_3": "SVN",
     "group": "eu",
     "numeric_code": "705",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2683,7 +2892,8 @@
     "alpha_3": "SLB",
     "group": "oc",
     "numeric_code": "090",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2696,7 +2906,8 @@
     "alpha_3": "SOM",
     "group": "af",
     "numeric_code": "706",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2709,7 +2920,8 @@
     "alpha_3": "ZAF",
     "group": "af",
     "numeric_code": "710",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2722,7 +2934,8 @@
     "alpha_3": "SGS",
     "group": "an",
     "numeric_code": "239",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2735,7 +2948,8 @@
     "alpha_3": "SSD",
     "group": "af",
     "numeric_code": "728",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2748,7 +2962,8 @@
     "alpha_3": "ESP",
     "group": "eu",
     "numeric_code": "724",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2761,7 +2976,8 @@
     "alpha_3": "LKA",
     "group": "as",
     "numeric_code": "144",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2774,7 +2990,8 @@
     "alpha_3": "SDN",
     "group": "af",
     "numeric_code": "729",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2787,7 +3004,8 @@
     "alpha_3": "SUR",
     "group": "sa",
     "numeric_code": "740",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2800,7 +3018,8 @@
     "alpha_3": "SJM",
     "group": "eu",
     "numeric_code": "744",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2813,7 +3032,8 @@
     "alpha_3": "SWE",
     "group": "eu",
     "numeric_code": "752",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2826,7 +3046,8 @@
     "alpha_3": "CHE",
     "group": "eu",
     "numeric_code": "756",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2839,7 +3060,8 @@
     "alpha_3": "SYR",
     "group": "as",
     "numeric_code": "760",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2852,7 +3074,8 @@
     "alpha_3": "TWN",
     "group": "as",
     "numeric_code": "158",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2865,7 +3088,8 @@
     "alpha_3": "TJK",
     "group": "as",
     "numeric_code": "762",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2878,7 +3102,8 @@
     "alpha_3": "TZA",
     "group": "af",
     "numeric_code": "834",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2891,7 +3116,8 @@
     "alpha_3": "THA",
     "group": "as",
     "numeric_code": "764",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2904,7 +3130,8 @@
     "alpha_3": "TLS",
     "group": "as",
     "numeric_code": "626",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2917,7 +3144,8 @@
     "alpha_3": "TGO",
     "group": "af",
     "numeric_code": "768",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2930,7 +3158,8 @@
     "alpha_3": "TKL",
     "group": "oc",
     "numeric_code": "772",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2943,7 +3172,8 @@
     "alpha_3": "TON",
     "group": "oc",
     "numeric_code": "776",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2956,7 +3186,8 @@
     "alpha_3": "TTO",
     "group": "na",
     "numeric_code": "780",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2969,7 +3200,8 @@
     "alpha_3": "TUN",
     "group": "af",
     "numeric_code": "788",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2982,7 +3214,8 @@
     "alpha_3": "TUR",
     "group": "as",
     "numeric_code": "792",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -2995,7 +3228,8 @@
     "alpha_3": "TKM",
     "group": "as",
     "numeric_code": "795",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3008,7 +3242,8 @@
     "alpha_3": "TCA",
     "group": "na",
     "numeric_code": "796",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3021,7 +3256,8 @@
     "alpha_3": "TUV",
     "group": "oc",
     "numeric_code": "798",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3034,7 +3270,8 @@
     "alpha_3": "UGA",
     "group": "af",
     "numeric_code": "800",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3047,7 +3284,8 @@
     "alpha_3": "UKR",
     "group": "eu",
     "numeric_code": "804",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3060,7 +3298,8 @@
     "alpha_3": "ARE",
     "group": "as",
     "numeric_code": "784",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3068,7 +3307,10 @@
         "United Kingdom",
         "United Kingdom of Great Britain and Northern Ireland"
       ],
-      "fr_FR": ["Royaume-Unis", "Royaume-Unis de Grande Bretagne et d'Irlande du Nord"]
+      "fr_FR": [
+        "Royaume-Unis",
+        "Royaume-Unis de Grande Bretagne et d'Irlande du Nord"
+      ]
     },
     "identifier": "GB",
     "flag_url": "./assets/maps/flags/world-countries/flag_GB.svg",
@@ -3076,12 +3318,13 @@
     "alpha_3": "GBR",
     "group": "eu",
     "numeric_code": "826",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
       "en_US": ["USA", "United States of America", "United-States"],
-      "fr_FR": ["États-Unis","USA","États-Unis d'Amérique"]
+      "fr_FR": ["États-Unis", "USA", "États-Unis d'Amérique"]
     },
     "identifier": "US",
     "flag_url": "./assets/maps/flags/world-countries/flag_US.svg",
@@ -3089,7 +3332,8 @@
     "alpha_3": "USA",
     "group": "na",
     "numeric_code": "840",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3102,7 +3346,8 @@
     "alpha_3": "UMI",
     "group": "oc",
     "numeric_code": "581",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3115,7 +3360,8 @@
     "alpha_3": "URY",
     "group": "sa",
     "numeric_code": "858",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3128,7 +3374,8 @@
     "alpha_3": "UZB",
     "group": "as",
     "numeric_code": "860",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3141,12 +3388,13 @@
     "alpha_3": "VUT",
     "group": "oc",
     "numeric_code": "548",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
       "en_US": ["Venezuela", "Bolivarian Republic of Venezuela"],
-      "fr_FR": ["Vénézuéla","Venezuela"]
+      "fr_FR": ["Vénézuéla", "Venezuela"]
     },
     "identifier": "VE",
     "flag_url": "./assets/maps/flags/world-countries/flag_VE.svg",
@@ -3154,12 +3402,13 @@
     "alpha_3": "VEN",
     "group": "sa",
     "numeric_code": "862",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
       "en_US": ["Vietnam", "Viet Nam"],
-      "fr_FR": ["Viêt Nam","Vietnam"]
+      "fr_FR": ["Viêt Nam", "Vietnam"]
     },
     "identifier": "VN",
     "flag_url": "./assets/maps/flags/world-countries/flag_VN.svg",
@@ -3167,7 +3416,8 @@
     "alpha_3": "VNM",
     "group": "as",
     "numeric_code": "704",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3180,11 +3430,12 @@
     "alpha_3": "VGB",
     "group": "na",
     "numeric_code": "092",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
-      "en_US": ["U.S. Virgin Islands","Virgin Islands U.S."],
+      "en_US": ["U.S. Virgin Islands", "Virgin Islands U.S."],
       "fr_FR": ["Îles Vierges des États-Unis"]
     },
     "identifier": "VI",
@@ -3193,7 +3444,8 @@
     "alpha_3": "VIR",
     "group": "na",
     "numeric_code": "850",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3206,7 +3458,8 @@
     "alpha_3": "WLF",
     "group": "oc",
     "numeric_code": "876",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3219,7 +3472,8 @@
     "alpha_3": "ESH",
     "group": "af",
     "numeric_code": "732",
-    "independant": false
+    "independant": false,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3232,7 +3486,8 @@
     "alpha_3": "YEM",
     "group": "as",
     "numeric_code": "887",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3245,7 +3500,8 @@
     "alpha_3": "ZMB",
     "group": "af",
     "numeric_code": "894",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   },
   {
     "name": {
@@ -3258,6 +3514,7 @@
     "alpha_3": "ZWE",
     "group": "af",
     "numeric_code": "716",
-    "independant": true
+    "independant": true,
+    "capital": { "en_US": [], "fr_FR": [] }
   }
 ]
