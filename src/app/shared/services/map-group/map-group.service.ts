@@ -22,14 +22,14 @@ export class MapGroupService {
   }
 
   /**
-   * Check if a map corresponds to a given identifier
-   * @param mapGroupidentifier The map group identifier
+   * Check if a map corresponds to a given id
+   * @param mapGroupId The map group id
    * @returns The corresponding map if exists, else undefined
    */
-  async getEntryIfExists(mapGroupidentifier : string) : Promise<MapGroup | undefined>{
+  async getEntryIfExists(mapGroupId : string) : Promise<MapGroup | undefined>{
     return new Promise(resolve =>{
       this.loadIndex().subscribe((loadedIndex : MapGroup[]) =>{
-        resolve(loadedIndex.find(mapGroup =>mapGroup.mapGroupidentifier === mapGroupidentifier)); // Check the map identifier exists, if so then gets meta data
+        resolve(loadedIndex.find(mapGroup =>mapGroup.mapGroupId === mapGroupId)); // Check the map id exists, if so then gets meta data
       });
     });
   }

@@ -23,6 +23,10 @@ let matModules: any[] = [
   MatSelectModule
 ]
 
+const firebase = environment.production? [provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics()),
+    providePerformance(() => getPerformance())]:[];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,9 +40,7 @@ let matModules: any[] = [
     HttpClientModule,
     ReactiveFormsModule,
     ...matModules,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAnalytics(() => getAnalytics()),
-    providePerformance(() => getPerformance())
+    ...firebase
   ],
   providers: [
     ScreenTrackingService

@@ -45,9 +45,9 @@ export class TimeTrialComponent implements OnInit {
     setTimeout(() => this.headerDisplayService.setPosition("relative"));
     this.route.queryParams.subscribe(queryParameter => {
       if (!queryParameter) return; // If there is no value then skip
-      const mapIdentifier = queryParameter["mapIdentifier"];
-      this.mapService.getMap(mapIdentifier).then((map: Map | undefined) => this.currentMap = map);
-      this.mapDataService.getMapData(mapIdentifier).subscribe(e => {
+      const mapId = queryParameter["mapId"];
+      this.mapService.getMap(mapId).then((map: Map | undefined) => this.currentMap = map);
+      this.mapDataService.getMapData(mapId).subscribe(e => {
         this.originList = e;
         this.toFindList = e;
       })
@@ -81,11 +81,11 @@ export class TimeTrialComponent implements OnInit {
     const currentInput = replaceSpecialChars(this.userInput.value)
     const result = this.originList.find(e => this.getLocaleFromI18n(e.name)?.find(el => replaceSpecialChars(el) === currentInput));
     if (result) {
-      if (!this.foundList.find(el => el.identifier === result?.identifier) || this.foundList.find(el => el.identifier === result?.identifier) && this.extendedNameExist(currentInput, result! || result)) {
+      if (!this.foundList.find(el => el.id === result?.id) || this.foundList.find(el => el.id === result?.id) && this.extendedNameExist(currentInput, result! || result)) {
         this.foundList.push(result!);
-        this.toFindList.filter(e => e.identifier !== result!.identifier);
+        this.toFindList.filter(e => e.id !== result!.id);
         this.currentSelected = result;
-        colorArea(result.identifier, AreaStatus.FOUND);
+        colorArea(result.id, AreaStatus.FOUND);
         this.clearInput();
       }
     }
@@ -100,7 +100,7 @@ export class TimeTrialComponent implements OnInit {
   public extendedNameExist(name: string, found: MapData): MapData | undefined {
     var regex = new RegExp('^' + replaceSpecialChars(name) + '.+');
     return this.toFindList.find(e => {
-      return found.identifier !== e.identifier && replaceSpecialChars(this.getLocaleFromI18n(e.name).find(el => replaceSpecialChars(el) === name) || "").match(regex);
+      return found.id !== e.id && replaceSpecialChars(this.getLocaleFromI18n(e.name).find(el => replaceSpecialChars(el) === name) || "").match(regex);
     });
   }
 

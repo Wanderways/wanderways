@@ -2,18 +2,18 @@
 <div mat-dialog-content>
   <form [formGroup]="startPlayingForm" class="flex flex-col gap-2">
     <mat-label class="text-xs opacity-60">Selected map</mat-label>
-    <mat-select [formControl]="selectedMapIdentifier" class="px-4 py-2 rounded">
+    <mat-select [formControl]="selectedMapId" class="px-4 py-2 rounded">
       <mat-option value="">--</mat-option>
       <mat-optgroup *ngFor="let group of availableMaps" label="{{group.mapDisplayName | i18n}} :">
-        <mat-option *ngFor="let map of group.maps" [value]="map.identifier">{{group.mapDisplayName | i18n}} - {{map.displayName | i18n}}</mat-option>
+        <mat-option *ngFor="let map of group.maps" [value]="map.id">{{group.mapDisplayName | i18n}} - {{map.displayName | i18n}}</mat-option>
       </mat-optgroup>
     </mat-select>
-    <mat-error *ngIf="selectedMapIdentifier.invalid" class="text-xs text-red">
+    <mat-error *ngIf="selectedMapId.invalid" class="text-xs text-red">
       A value must be set
     </mat-error>
     <mat-label class="text-xs opacity-60">Select game mode</mat-label>
     <div class="gap-2" class="game-mode-container gap-2">
-      <div matRipple [matRippleDisabled]="!gameMode.available" [class.disabled]="!gameMode.available" class="game-mode-tile rounded gap-2 px-2 pt-2 " *ngFor="let gameMode of gameIndex" [class.selected]="gameMode.identifier === selectedGameIdentifier.value" (click)="gameMode.available && setSelectedMode(gameMode.identifier)">
+      <div matRipple [matRippleDisabled]="!gameMode.available" [class.disabled]="!gameMode.available" class="game-mode-tile rounded gap-2 px-2 pt-2 " *ngFor="let gameMode of gameIndex" [class.selected]="gameMode.id === selectedGameId.value" (click)="gameMode.available && setSelectedMode(gameMode.id)">
         <img class="w-20" src="{{gameMode.iconUrl}}" alt="Icon of {{gameMode.displayName | i18n}}">
         <span>{{gameMode.displayName | i18n}}</span>
         <ng-container *ngIf="!gameMode.available">

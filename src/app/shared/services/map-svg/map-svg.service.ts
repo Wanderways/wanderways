@@ -14,11 +14,11 @@ export class MapSvgService {
   constructor(private http: HttpClient) { }
 
   /**
-   * Loads the svg corresponding to the given map identifier
-   * @param map_identifier The map id
+   * Loads the svg corresponding to the given map id
+   * @param map_id The map id
    * @returns The data to build an svg representation of the map from
    */
-  getMapSvg(map_identifier : string): Observable<MapSvg>{
-    return this.http.get<MapSvg>(this.PATH+map_identifier+this.FILE_EXTENSION);
+  getMapSvg(map_id : string): Observable<MapSvg>{
+    return this.http.get<MapSvg>(this.PATH+map_id+this.FILE_EXTENSION);
   }
 }

@@ -40,7 +40,7 @@ export class SightseeingComponent implements OnInit {
       this.mapGroupService.getEntryIfExists(queryParameter["map"]).then((mapGroup: MapGroup | undefined) => {
         if (!mapGroup) return; // If no data found then skip
         this.mapGroup = mapGroup;
-        this.mapService.getMapsFromGroup(this.mapGroup.mapGroupidentifier).then(e=> {
+        this.mapService.getMapsFromGroup(this.mapGroup.mapGroupId).then(e=> {
           this.maps = e;
           this.selectedMap = this.maps[0];
         });
@@ -48,8 +48,8 @@ export class SightseeingComponent implements OnInit {
     })
   }
 
-  setSelectedMap(mapIdentifier: string) {
-    this.selectedMap = this.maps.find(e => e.identifier === mapIdentifier);
+  setSelectedMap(mapId: string) {
+    this.selectedMap = this.maps.find(e => e.id === mapId);
   }
 
   ngOnDestroy(): void {
@@ -81,9 +81,9 @@ export class SightseeingComponent implements OnInit {
     this.dialog.open(SelectGamemodeDialogComponent, {
       minWidth:'50vw',
       data: { selectedMap: this.selectedMap, mapGroup: this.mapGroup }
-    }).afterClosed().subscribe((data?: { mapIdentifier: string, gameIdentifier: string }) => {
+    }).afterClosed().subscribe((data?: { mapId: string, gameId: string }) => {
       if (data) {
-        this.router.navigate(["/game/" + data.gameIdentifier], { queryParams: { mapIdentifier: data.mapIdentifier } })
+        this.router.navigate(["/game/" + data.gameId], { queryParams: { mapId: data.mapId } })
       }
     });
   }
