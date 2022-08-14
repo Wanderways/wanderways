@@ -30,13 +30,13 @@
   </div>
 </ng-container>
 <div class="consultation  bg-dark {{consultationSide}}" *ngIf="canCurrentSelectedBeDisplayed(currentSelected)" (mouseenter)="mouseEnterConsultation()">
-    <div class="font-thin text-xs">Name</div>
+    <div class="font-thin text-xs" i18n="@@name">Name</div>
     <div class="font-medium">{{ currentSelected!.name | i18n}}</div>
     <hr style="grid-column: 1/3;">
-    <div class="font-thin text-xs">Flag</div>
+    <div class="font-thin text-xs" i18n="@@flag">Flag</div>
     <img style="max-height: 3rem;" src="{{ currentSelected!.flag_url }}" alt="Flag of {{ currentSelected!.name | i18n}}">
     <hr style="grid-column: 1/3;">
-    <div class="font-thin text-xs">Main city</div>
+    <div class="font-thin text-xs" i18n="@@main-city">Main city</div>
     <div class="font-medium">{{ currentSelected!.capital | i18n}}</div>
 
 </div>

@@ -1,6 +1,10 @@
 {
   "locale": "en-US",
   "translations": {
+    "name":"Name",
+    "flag":"Flag",
+    "main-city":"Main city",
+    "results":"Results",
     "home-welcome-to": "Welcome to",
     "home-view-maps": "See maps",
     "theme-selector-label": "Theme",
@@ -10,6 +14,7 @@
     "map-no-map-for-tag":"No map for tag :",
     "map-save-filter":"Save filter ?",
     "map-filter":"Filter",
+    "game-time-trial":"Time trial",
     "sidenav-home":"Home",
     "sidenav-maps":"Maps",
     "sidenav-all-maps":"All maps",

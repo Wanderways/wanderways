@@ -2,15 +2,15 @@ import { Locale_I18n } from "../interfaces/locale_i18n.interface";
 
 export const GameIndex : GameIndexEntry[] = [
     {
-        identifier: "against-the-clock",
+        identifier: "time-trial",
         displayName : {
-            en_US:["Against the clock"],
+            en_US:["Time trial"],
             fr_FR:["Contre la montre"],
-            de_DE:["Gegen die Zeit"],
+            de_DE:["Zeitfahren"],
             es_ES:["Contrarreloj"],
-            pt_PT:["Time trial"]
+            pt_PT:["Contra-relógio"]
         },
-        gameUrl : "/against-the-clock",
+        gameUrl : "/time-trial",
         iconUrl: "./assets/icons/keyboard.svg",
         available:true
     },

@@ -15,11 +15,11 @@ import { colorArea } from 'src/app/shared/components/map-generic/mapColorationUt
 import { AreaStatus } from 'src/app/shared/components/map-generic/mapColorationUtils/AreaStatus.enum';
 
 @Component({
-  selector: 'app-against-the-clock',
-  templateUrl: './against-the-clock.component.html',
-  styleUrls: ['./against-the-clock.component.scss']
+  selector: 'app-time-trial',
+  templateUrl: './time-trial.component.html',
+  styleUrls: ['./time-trial.component.scss']
 })
-export class AgainstTheClockComponent implements OnInit {
+export class TimeTrialComponent implements OnInit {
 
   areaSelected: MapData | undefined = undefined;
   currentMap: Map | undefined;

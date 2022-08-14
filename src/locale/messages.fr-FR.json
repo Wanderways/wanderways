@@ -1,6 +1,10 @@
 {
   "locale": "fr-FR",
   "translations": {
+    "name":"Nom",
+    "flag":"Drapeau",
+    "main-city":"Ville principale",
+    "results":"Résultats",
     "home-welcome-to": "Bienvenue sur",
     "home-view-maps": "Voir les cartes",
     "theme-selector-label": "Thème",
@@ -10,6 +14,7 @@
     "map-no-map-for-tag":"Pas de carte pour le tag :",
     "map-save-filter":"Sauvegarder le filte ?",
     "map-filter":"Filtre",
+    "game-time-trial":"Contre-la-montre",
     "sidenav-home":"Home",
     "sidenav-maps":"Cartes",
     "sidenav-all-maps":"Toutes les cartes",

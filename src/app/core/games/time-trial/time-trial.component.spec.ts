@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgainstTheClockComponent } from './against-the-clock.component';
+import { TimeTrialComponent } from './time-trial.component';
 
-describe('AgainstTheClockComponent', () => {
-  let component: AgainstTheClockComponent;
-  let fixture: ComponentFixture<AgainstTheClockComponent>;
+describe('TimeTrialComponent', () => {
+  let component: TimeTrialComponent;
+  let fixture: ComponentFixture<TimeTrialComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AgainstTheClockComponent ]
+      declarations: [ TimeTrialComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AgainstTheClockComponent);
+    fixture = TestBed.createComponent(TimeTrialComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

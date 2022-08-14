@@ -3,7 +3,7 @@
     <span class="text-xl font-extralight">{{
       currentMap?.displayName | i18n
     }}</span>
-    <span class="text-base font-thin">Against the clock</span>
+    <span class="text-base font-thin" i18n="@@game-time-trial">Time trial</span>
   </div>
     <img *ngIf="mobileDisplay" (click)="displaySideMenu=true" src="assets/icons/open-sidemenu.svg" alt="Open sidemenu"  class="cursor-pointer">
 </div>
@@ -36,7 +36,7 @@
 <mat-accordion *ngIf="!mobileDisplay" class="miscellaneous-tile">
   <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header>
-      <mat-panel-title><img src="assets/icons/datalist.svg" class="mr-2" style="height: 0.75rem; filter: brightness(25);" alt=""> Résultat </mat-panel-title>
+      <mat-panel-title><img src="assets/icons/datalist.svg" class="mr-2" style="height: 0.75rem; filter: brightness(25);" alt="" i18n="@@results"> Results </mat-panel-title>
     </mat-expansion-panel-header>
 
     <app-data-list [originList]="originList" [foundList]="foundList" [currentSelected]="currentSelected" [inGame]="true" [maxHeight]="'10rem'" (onSelectedRow)="onSelectedRow($event)"></app-data-list>
@@ -51,7 +51,7 @@
     <mat-accordion class="w-full">
       <mat-expansion-panel [expanded]="true">
         <mat-expansion-panel-header>
-          <mat-panel-title><img src="assets/icons/datalist.svg" class="mr-2" style="height: 0.75rem; filter: brightness(25);" alt=""> Résultat </mat-panel-title>
+          <mat-panel-title><img src="assets/icons/datalist.svg" class="mr-2" style="height: 0.75rem; filter: brightness(25);" alt="" i18n="@@results"> Results </mat-panel-title>
         </mat-expansion-panel-header>
 
         <app-data-list [originList]="originList" [foundList]="foundList" [currentSelected]="currentSelected" [inGame]="true" [maxHeight]="'10rem'" (onSelectedRow)="onSelectedRow($event)"></app-data-list>

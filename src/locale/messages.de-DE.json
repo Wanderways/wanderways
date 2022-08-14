@@ -1,6 +1,10 @@
 {
   "locale": "de-DE",
   "translations": {
+    "name":"Name",
+    "flag":"Flagge",
+    "main-city":"Wichtigste Stadt",
+    "results":"Ergebnisse",
     "home-welcome-to": "Willkommen zu",
     "home-view-maps": "Siehe Karten",
     "theme-selector-label": "Thema",
@@ -10,6 +14,7 @@
     "map-no-map-for-tag":"Keine Karte für Tag:",
     "map-save-filter":"Filter speichern?",
     "map-filter":"Filter",
+    "game-time-trial":"Zeitfahren",
     "sidenav-home":"Home",
     "sidenav-maps":"Karten",
     "sidenav-all-maps":"Alle Karten",

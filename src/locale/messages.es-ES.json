@@ -1,6 +1,10 @@
 {
   "locale": "es-ES",
   "translations": {
+    "name":"Nombre",
+    "flag":"Bandera",
+    "main-city":"Ciudad principal",
+    "results":"Resultados",
     "home-welcome-to": "Bienvenido a",
     "home-view-maps": "ver mapas",
     "theme-selector-label": "Tema",
@@ -10,6 +14,7 @@
     "map-no-map-for-tag":"No hay mapa para la etiqueta:",
     "map-save-filter":"¿Guardar filtro?",
     "map-filter":"Filtro",
+    "game-time-trial":"Contrarreloj",
     "sidenav-home":"Home",
     "sidenav-maps":"Mapas",
     "sidenav-all-maps":"Todos los mapas",

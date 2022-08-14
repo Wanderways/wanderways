@@ -37,7 +37,7 @@ export class SightseeingComponent implements OnInit {
     this.route.queryParams.subscribe(queryParameter => {
       if (!queryParameter) return; // If there is no value then skip
 
-      this.mapGroupService.getEntryIfExists(queryParameter["map"]).then((mapGroup: MapGroup | undefined) => {        
+      this.mapGroupService.getEntryIfExists(queryParameter["map"]).then((mapGroup: MapGroup | undefined) => {
         if (!mapGroup) return; // If no data found then skip
         this.mapGroup = mapGroup;
         this.mapService.getMapsFromGroup(this.mapGroup.mapGroupidentifier).then(e=> {
