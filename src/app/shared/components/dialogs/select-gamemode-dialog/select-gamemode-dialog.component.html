@@ -1,17 +1,17 @@
 <h1 mat-dialog-title class="text-xl mb-2">Last checkups</h1>
 <div mat-dialog-content>
   <form [formGroup]="startPlayingForm" class="flex flex-col gap-2">
-    <mat-label class="text-xs opacity-60">Selected map</mat-label>
+    <mat-label class="text-xs opacity-60" i18n="@@selected-map">Selected map</mat-label>
     <mat-select [formControl]="selectedMapId" class="px-4 py-2 rounded">
       <mat-option value="">--</mat-option>
       <mat-optgroup *ngFor="let group of availableMaps" label="{{group.mapDisplayName | i18n}} :">
         <mat-option *ngFor="let map of group.maps" [value]="map.id">{{group.mapDisplayName | i18n}} - {{map.displayName | i18n}}</mat-option>
       </mat-optgroup>
     </mat-select>
-    <mat-error *ngIf="selectedMapId.invalid" class="text-xs text-red">
+    <mat-error *ngIf="selectedMapId.invalid" class="text-xs text-red" i18n="error-required">
       A value must be set
     </mat-error>
-    <mat-label class="text-xs opacity-60">Select game mode</mat-label>
+    <mat-label class="text-xs opacity-60" i18n="@@select-game-mod">Select game mod</mat-label>
     <div class="gap-2" class="game-mode-container gap-2">
       <div matRipple [matRippleDisabled]="!gameMode.available" [class.disabled]="!gameMode.available" class="game-mode-tile rounded gap-2 px-2 pt-2 " *ngFor="let gameMode of gameIndex" [class.selected]="gameMode.id === selectedGameId.value" (click)="gameMode.available && setSelectedMode(gameMode.id)">
         <img class="w-20" src="{{gameMode.iconUrl}}" alt="Icon of {{gameMode.displayName | i18n}}">
@@ -19,13 +19,13 @@
         <ng-container *ngIf="!gameMode.available">
           <div class="game-mode-tile-not-available" i18n="@@map-tile-not-available">Not <br>available <br>yet !</div>
         </ng-container>
-      
+
       </div>
     </div>
   </form>
-  
+
 </div>
 <div mat-dialog-actions class="flex justify-end gap-2 mt-2">
-  <button matRipple (click)="close()" class="px-4 py-2 rounded hover:bg-white/25 ">Cancel</button>
-  <button matRipple [matRippleDisabled]="!startPlayingForm.valid" mat-dialog-close [ngClass]="{'bg-candy-theme-text':startPlayingForm.valid, 'bg-white/25':!startPlayingForm.valid}" class="px-4 py-2 rounded " (click)="startPlayingForm.valid && play()" cdkFocusInitial>LET'S GO</button>
+  <button matRipple (click)="close()" i18n="@@cancel" class="px-4 py-2 rounded hover:bg-white/25 ">Cancel</button>
+  <button matRipple [matRippleDisabled]="!startPlayingForm.valid" mat-dialog-close [ngClass]="{'bg-candy-theme-text':startPlayingForm.valid, 'bg-white/25':!startPlayingForm.valid}" class="px-4 py-2 rounded uppercase" (click)="startPlayingForm.valid && play()" cdkFocusInitial i18n="@@lets-go">let's go</button>
 </div>

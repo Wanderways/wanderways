@@ -5,11 +5,14 @@
     "flag":"Flagge",
     "main-city":"Wichtigste Stadt",
     "results":"Ergebnisse",
+    "lets-go": "Lass uns gehen",
+    "selected-map":"Ausgewählte Karte",
+    "cancel":"Kündigen",
+    "play":"Spielen",
     "home-welcome-to": "Willkommen zu",
     "home-view-maps": "Siehe Karten",
     "theme-selector-label": "Thema",
     "home-catch-phrase": "Karten auf spielerische Art lernen",
-    "button-access-maps": "Lass uns gehen",
     "map-tile-not-available": "Zurzeit nicht verfügbar !",
     "map-no-map-for-tag":"Keine Karte für Tag:",
     "map-save-filter":"Filter speichern?",
@@ -26,6 +29,6 @@
     "sidenav-last-news":"Letzte Nachrichten",
     "sidenav-roadmap":"Roadmap",
     "sidenav-learn-more":"Mehr erfahren",
-    "sidenav-announces":"Kündigt  an"
+    "sidenav-announces":"Kündigt an"
   }
 }
