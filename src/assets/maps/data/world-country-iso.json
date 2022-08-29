@@ -30,7 +30,13 @@
     "group": "as",
     "numeric_code": "004",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": ["Kabul", "Pashto", "Dari"],
+      "fr_FR": ["Kaboul", "Pachtou", "Dari"],
+      "es_ES": ["Kabul"],
+      "de_DE": ["Kabul"],
+      "pt_PT": ["Cabul", "Kabul"]
+    }
   },
   {
     "name": {
@@ -47,7 +53,13 @@
     "group": "eu",
     "numeric_code": "248",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": ["Mariehamn"],
+      "fr_FR": ["Mariehamn", "Maarianhamina"],
+      "es_ES": ["Mariehamn", "Maarianhamina"],
+      "de_DE": ["Mariehamns", "Maarianhamina"],
+      "pt_PT": ["Mariehamn", "Maarianhamina "]
+    }
   },
   {
     "name": {
@@ -64,12 +76,18 @@
     "group": "eu",
     "numeric_code": "008",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": ["Tirana"],
+      "fr_FR": ["Tirana", "Tiranë"],
+      "es_ES": ["Tirana", "La Tirana"],
+      "de_DE": ["Tirana", "Tiranë"],
+      "pt_PT": ["Tirana", "Tiranë", "Tirona"]
+    }
   },
   {
     "name": {
       "en_US": ["Algeria", "People's Democratic Republic of Algeria"],
-      "fr_FR": ["Algérie"],
+      "fr_FR": ["Algérie", "République algérienne démocratique et populaire"],
       "es_ES": ["Argelia", "República Argelina Democrática y Popular"],
       "de_DE": ["Algerien", "Demokratische Volksrepublik Algerien"],
       "pt_PT": ["Argélia", "República Argelina Democrática e Popular"]
@@ -81,7 +99,13 @@
     "group": "af",
     "numeric_code": "012",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": ["Algiers", "Dzayer", "Alger"],
+      "fr_FR": ["Alger", "Ldzayer"],
+      "es_ES": ["Argel", "Dzayer", "Alger"],
+      "de_DE": ["Algier", "Dzayer"],
+      "pt_PT": ["Argel", "Dzayer"]
+    }
   },
   {
     "name": {
@@ -98,7 +122,13 @@
     "group": "oc",
     "numeric_code": "016",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -119,7 +149,13 @@
     "group": "eu",
     "numeric_code": "020",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -136,7 +172,13 @@
     "group": "af",
     "numeric_code": "024",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -153,7 +195,13 @@
     "group": "na",
     "numeric_code": "660",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -170,7 +218,13 @@
     "group": "an",
     "numeric_code": "010",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -187,7 +241,13 @@
     "group": "na",
     "numeric_code": "028",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -204,7 +264,13 @@
     "group": "sa",
     "numeric_code": "032",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -221,7 +287,13 @@
     "group": "as",
     "numeric_code": "051",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -238,7 +310,13 @@
     "group": "na",
     "numeric_code": "533",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -255,7 +333,13 @@
     "group": "oc",
     "numeric_code": "036",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -272,7 +356,13 @@
     "group": "eu",
     "numeric_code": "040",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -289,7 +379,13 @@
     "group": "as",
     "numeric_code": "031",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -306,7 +402,13 @@
     "group": "na",
     "numeric_code": "044",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -323,7 +425,13 @@
     "group": "as",
     "numeric_code": "048",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -340,7 +448,13 @@
     "group": "as",
     "numeric_code": "050",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -357,7 +471,13 @@
     "group": "na",
     "numeric_code": "052",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -379,7 +499,13 @@
     "group": "eu",
     "numeric_code": "112",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -396,7 +522,13 @@
     "group": "eu",
     "numeric_code": "056",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -413,7 +545,13 @@
     "group": "na",
     "numeric_code": "084",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -430,7 +568,13 @@
     "group": "af",
     "numeric_code": "204",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -447,7 +591,13 @@
     "group": "na",
     "numeric_code": "060",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -464,7 +614,13 @@
     "group": "as",
     "numeric_code": "064",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -481,7 +637,13 @@
     "group": "sa",
     "numeric_code": "068",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -502,7 +664,13 @@
     "group": "na",
     "numeric_code": "535",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -519,7 +687,13 @@
     "group": "eu",
     "numeric_code": "070",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -541,7 +715,13 @@
     "group": "af",
     "numeric_code": "072",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -558,7 +738,13 @@
     "group": "an",
     "numeric_code": "074",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -575,7 +761,13 @@
     "group": "sa",
     "numeric_code": "076",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -592,7 +784,13 @@
     "group": "as",
     "numeric_code": "086",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -614,7 +812,13 @@
     "group": "as",
     "numeric_code": "096",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -631,7 +835,13 @@
     "group": "eu",
     "numeric_code": "100",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -648,7 +858,13 @@
     "group": "af",
     "numeric_code": "854",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -665,7 +881,13 @@
     "group": "af",
     "numeric_code": "108",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -682,7 +904,13 @@
     "group": "af",
     "numeric_code": "132",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -699,7 +927,13 @@
     "group": "as",
     "numeric_code": "116",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -716,7 +950,13 @@
     "group": "af",
     "numeric_code": "120",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -733,7 +973,13 @@
     "group": "na",
     "numeric_code": "124",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -750,7 +996,13 @@
     "group": "na",
     "numeric_code": "136",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -770,7 +1022,13 @@
     "group": "af",
     "numeric_code": "140",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -787,7 +1045,13 @@
     "group": "af",
     "numeric_code": "148",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -804,7 +1068,13 @@
     "group": "sa",
     "numeric_code": "152",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -821,7 +1091,13 @@
     "group": "as",
     "numeric_code": "156",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -843,7 +1119,13 @@
     "group": "as",
     "numeric_code": "162",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -865,7 +1147,13 @@
     "group": "as",
     "numeric_code": "166",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -882,7 +1170,13 @@
     "group": "sa",
     "numeric_code": "170",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -899,7 +1193,13 @@
     "group": "af",
     "numeric_code": "174",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -916,7 +1216,13 @@
     "group": "af",
     "numeric_code": "178",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -946,7 +1252,13 @@
     "group": "af",
     "numeric_code": "180",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -963,7 +1275,13 @@
     "group": "oc",
     "numeric_code": "184",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -980,7 +1298,13 @@
     "group": "na",
     "numeric_code": "188",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -997,7 +1321,13 @@
     "group": "af",
     "numeric_code": "384",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1014,7 +1344,13 @@
     "group": "eu",
     "numeric_code": "191",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1031,7 +1367,13 @@
     "group": "na",
     "numeric_code": "192",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1048,7 +1390,13 @@
     "group": "na",
     "numeric_code": "531",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1065,7 +1413,13 @@
     "group": "as",
     "numeric_code": "196",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1082,7 +1436,13 @@
     "group": "eu",
     "numeric_code": "203",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1099,7 +1459,13 @@
     "group": "eu",
     "numeric_code": "208",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1116,7 +1482,13 @@
     "group": "af",
     "numeric_code": "262",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1133,7 +1505,13 @@
     "group": "na",
     "numeric_code": "212",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1150,7 +1528,13 @@
     "group": "na",
     "numeric_code": "214",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1167,7 +1551,13 @@
     "group": "na",
     "numeric_code": "218",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1184,7 +1574,13 @@
     "group": "af",
     "numeric_code": "818",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1206,7 +1602,13 @@
     "group": "na",
     "numeric_code": "222",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1223,7 +1625,13 @@
     "group": "af",
     "numeric_code": "226",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1240,7 +1648,13 @@
     "group": "af",
     "numeric_code": "232",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1257,7 +1671,13 @@
     "group": "eu",
     "numeric_code": "233",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1280,7 +1700,13 @@
     "group": "af",
     "numeric_code": "748",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1297,7 +1723,13 @@
     "group": "af",
     "numeric_code": "231",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1314,7 +1746,13 @@
     "group": "sa",
     "numeric_code": "238",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1331,7 +1769,13 @@
     "group": "eu",
     "numeric_code": "234",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1348,7 +1792,13 @@
     "group": "oc",
     "numeric_code": "242",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1365,7 +1815,13 @@
     "group": "eu",
     "numeric_code": "246",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1382,7 +1838,13 @@
     "group": "eu",
     "numeric_code": "250",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1399,7 +1861,13 @@
     "group": "sa",
     "numeric_code": "254",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1416,7 +1884,13 @@
     "group": "oc",
     "numeric_code": "258",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1436,7 +1910,13 @@
     "group": "an",
     "numeric_code": "260",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1453,7 +1933,13 @@
     "group": "af",
     "numeric_code": "266",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1470,7 +1956,13 @@
     "group": "af",
     "numeric_code": "270",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1487,7 +1979,13 @@
     "group": "as",
     "numeric_code": "268",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1504,7 +2002,13 @@
     "group": "eu",
     "numeric_code": "276",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1521,7 +2025,13 @@
     "group": "af",
     "numeric_code": "288",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1538,7 +2048,13 @@
     "group": "eu",
     "numeric_code": "292",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1555,7 +2071,13 @@
     "group": "eu",
     "numeric_code": "300",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1572,7 +2094,13 @@
     "group": "na",
     "numeric_code": "304",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1589,7 +2117,13 @@
     "group": "na",
     "numeric_code": "308",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1606,7 +2140,13 @@
     "group": "na",
     "numeric_code": "312",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1623,7 +2163,13 @@
     "group": "oc",
     "numeric_code": "316",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1640,7 +2186,13 @@
     "group": "na",
     "numeric_code": "320",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1663,7 +2215,13 @@
     "group": "eu",
     "numeric_code": "831",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1680,7 +2238,13 @@
     "group": "af",
     "numeric_code": "324",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1697,7 +2261,13 @@
     "group": "af",
     "numeric_code": "624",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1714,7 +2284,13 @@
     "group": "sa",
     "numeric_code": "328",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1731,7 +2307,13 @@
     "group": "na",
     "numeric_code": "332",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1751,7 +2333,13 @@
     "group": "an",
     "numeric_code": "334",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1772,7 +2360,13 @@
     "group": "eu",
     "numeric_code": "336",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1789,7 +2383,13 @@
     "group": "na",
     "numeric_code": "340",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1806,7 +2406,13 @@
     "group": "as",
     "numeric_code": "344",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1823,7 +2429,13 @@
     "group": "eu",
     "numeric_code": "348",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1840,7 +2452,13 @@
     "group": "eu",
     "numeric_code": "352",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1857,7 +2475,13 @@
     "group": "as",
     "numeric_code": "356",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1874,7 +2498,13 @@
     "group": "as",
     "numeric_code": "360",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1896,7 +2526,13 @@
     "group": "as",
     "numeric_code": "364",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1913,7 +2549,13 @@
     "group": "as",
     "numeric_code": "368",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1930,7 +2572,13 @@
     "group": "eu",
     "numeric_code": "372",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1947,7 +2595,13 @@
     "group": "eu",
     "numeric_code": "833",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1964,7 +2618,13 @@
     "group": "as",
     "numeric_code": "376",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1981,7 +2641,13 @@
     "group": "eu",
     "numeric_code": "380",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -1998,7 +2664,13 @@
     "group": "na",
     "numeric_code": "388",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2015,7 +2687,13 @@
     "group": "as",
     "numeric_code": "392",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2032,7 +2710,13 @@
     "group": "eu",
     "numeric_code": "832",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2049,7 +2733,13 @@
     "group": "as",
     "numeric_code": "400",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2066,7 +2756,13 @@
     "group": "as",
     "numeric_code": "398",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2083,7 +2779,13 @@
     "group": "af",
     "numeric_code": "404",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2100,7 +2802,13 @@
     "group": "oc",
     "numeric_code": "296",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2117,7 +2825,13 @@
     "group": "as",
     "numeric_code": "408",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2134,7 +2848,13 @@
     "group": "as",
     "numeric_code": "410",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2151,7 +2871,13 @@
     "group": "eu",
     "numeric_code": "926",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2168,7 +2894,13 @@
     "group": "as",
     "numeric_code": "414",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2190,7 +2922,13 @@
     "group": "as",
     "numeric_code": "417",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2207,7 +2945,13 @@
     "group": "as",
     "numeric_code": "418",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2224,7 +2968,13 @@
     "group": "eu",
     "numeric_code": "428",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2241,7 +2991,13 @@
     "group": "as",
     "numeric_code": "422",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2258,7 +3014,13 @@
     "group": "af",
     "numeric_code": "426",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2275,7 +3037,13 @@
     "group": "af",
     "numeric_code": "430",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2292,7 +3060,13 @@
     "group": "af",
     "numeric_code": "434",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2309,7 +3083,13 @@
     "group": "eu",
     "numeric_code": "438",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2326,7 +3106,13 @@
     "group": "eu",
     "numeric_code": "440",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2343,7 +3129,13 @@
     "group": "eu",
     "numeric_code": "442",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2360,7 +3152,13 @@
     "group": "as",
     "numeric_code": "446",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2377,7 +3175,13 @@
     "group": "af",
     "numeric_code": "450",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2394,7 +3198,13 @@
     "group": "af",
     "numeric_code": "454",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2411,7 +3221,13 @@
     "group": "as",
     "numeric_code": "458",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2428,7 +3244,13 @@
     "group": "as",
     "numeric_code": "462",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2445,7 +3267,13 @@
     "group": "af",
     "numeric_code": "466",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2462,7 +3290,13 @@
     "group": "eu",
     "numeric_code": "470",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2479,7 +3313,13 @@
     "group": "oc",
     "numeric_code": "584",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2496,7 +3336,13 @@
     "group": "na",
     "numeric_code": "474",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2513,7 +3359,13 @@
     "group": "af",
     "numeric_code": "478",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2535,7 +3387,13 @@
     "group": "af",
     "numeric_code": "480",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2552,7 +3410,13 @@
     "group": "af",
     "numeric_code": "175",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2569,7 +3433,13 @@
     "group": "na",
     "numeric_code": "484",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2586,7 +3456,13 @@
     "group": "oc",
     "numeric_code": "583",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2603,7 +3479,13 @@
     "group": "as",
     "numeric_code": "498",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2620,7 +3502,13 @@
     "group": "eu",
     "numeric_code": "492",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2637,7 +3525,13 @@
     "group": "as",
     "numeric_code": "496",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2654,7 +3548,13 @@
     "group": "eu",
     "numeric_code": "499",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2671,7 +3571,13 @@
     "group": "na",
     "numeric_code": "500",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2688,7 +3594,13 @@
     "group": "af",
     "numeric_code": "504",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2705,7 +3617,13 @@
     "group": "af",
     "numeric_code": "508",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2722,7 +3640,13 @@
     "group": "as",
     "numeric_code": "104",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2739,7 +3663,13 @@
     "group": "af",
     "numeric_code": "516",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2756,7 +3686,13 @@
     "group": "oc",
     "numeric_code": "520",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2773,7 +3709,13 @@
     "group": "as",
     "numeric_code": "524",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2790,7 +3732,13 @@
     "group": "eu",
     "numeric_code": "528",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2807,7 +3755,13 @@
     "group": "oc",
     "numeric_code": "540",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2824,7 +3778,13 @@
     "group": "oc",
     "numeric_code": "554",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2841,7 +3801,13 @@
     "group": "na",
     "numeric_code": "558",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2858,7 +3824,13 @@
     "group": "af",
     "numeric_code": "562",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2875,7 +3847,13 @@
     "group": "af",
     "numeric_code": "566",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2892,7 +3870,13 @@
     "group": "oc",
     "numeric_code": "570",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2909,7 +3893,13 @@
     "group": "oc",
     "numeric_code": "574",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2926,7 +3916,13 @@
     "group": "eu",
     "numeric_code": "807",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2947,7 +3943,13 @@
     "group": "oc",
     "numeric_code": "580",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2964,7 +3966,13 @@
     "group": "eu",
     "numeric_code": "578",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2981,7 +3989,13 @@
     "group": "as",
     "numeric_code": "512",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -2998,7 +4012,13 @@
     "group": "as",
     "numeric_code": "586",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3015,7 +4035,13 @@
     "group": "oc",
     "numeric_code": "585",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3032,7 +4058,13 @@
     "group": "as",
     "numeric_code": "275",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3049,7 +4081,13 @@
     "group": "na",
     "numeric_code": "591",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3070,7 +4108,13 @@
     "group": "oc",
     "numeric_code": "598",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3087,7 +4131,13 @@
     "group": "sa",
     "numeric_code": "600",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3104,7 +4154,13 @@
     "group": "sa",
     "numeric_code": "604",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3121,7 +4177,13 @@
     "group": "as",
     "numeric_code": "608",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3143,7 +4205,13 @@
     "group": "oc",
     "numeric_code": "612",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3160,7 +4228,13 @@
     "group": "eu",
     "numeric_code": "616",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3177,7 +4251,13 @@
     "group": "eu",
     "numeric_code": "620",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3194,7 +4274,13 @@
     "group": "na",
     "numeric_code": "630",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3211,7 +4297,13 @@
     "group": "as",
     "numeric_code": "634",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3228,7 +4320,13 @@
     "group": "af",
     "numeric_code": "638",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3245,7 +4343,13 @@
     "group": "eu",
     "numeric_code": "642",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3262,7 +4366,13 @@
     "group": "as",
     "numeric_code": "643",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3279,7 +4389,13 @@
     "group": "af",
     "numeric_code": "646",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3296,7 +4412,13 @@
     "group": "na",
     "numeric_code": "652",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3313,7 +4435,13 @@
     "group": "af",
     "numeric_code": "654",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3334,7 +4462,13 @@
     "group": "na",
     "numeric_code": "659",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3351,7 +4485,13 @@
     "group": "na",
     "numeric_code": "662",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3368,7 +4508,13 @@
     "group": "na",
     "numeric_code": "663",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3389,7 +4535,13 @@
     "group": "na",
     "numeric_code": "666",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3406,7 +4558,13 @@
     "group": "na",
     "numeric_code": "670",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3423,7 +4581,13 @@
     "group": "oc",
     "numeric_code": "882",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3445,7 +4609,13 @@
     "group": "eu",
     "numeric_code": "674",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3465,7 +4635,13 @@
     "group": "af",
     "numeric_code": "678",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3482,7 +4658,13 @@
     "group": "as",
     "numeric_code": "682",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3499,7 +4681,13 @@
     "group": "af",
     "numeric_code": "686",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3516,7 +4704,13 @@
     "group": "eu",
     "numeric_code": "688",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3538,7 +4732,13 @@
     "group": "af",
     "numeric_code": "690",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3555,7 +4755,13 @@
     "group": "af",
     "numeric_code": "694",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3572,7 +4778,13 @@
     "group": "as",
     "numeric_code": "702",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3589,7 +4801,13 @@
     "group": "na",
     "numeric_code": "534",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3606,7 +4824,13 @@
     "group": "eu",
     "numeric_code": "703",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3623,7 +4847,13 @@
     "group": "eu",
     "numeric_code": "705",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3640,7 +4870,13 @@
     "group": "oc",
     "numeric_code": "090",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3657,7 +4893,13 @@
     "group": "af",
     "numeric_code": "706",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3674,7 +4916,13 @@
     "group": "af",
     "numeric_code": "710",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3695,7 +4943,13 @@
     "group": "an",
     "numeric_code": "239",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3712,7 +4966,13 @@
     "group": "af",
     "numeric_code": "728",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3729,7 +4989,13 @@
     "group": "eu",
     "numeric_code": "724",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3751,7 +5017,13 @@
     "group": "as",
     "numeric_code": "144",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3768,7 +5040,13 @@
     "group": "af",
     "numeric_code": "729",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3785,7 +5063,13 @@
     "group": "sa",
     "numeric_code": "740",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3802,7 +5086,13 @@
     "group": "eu",
     "numeric_code": "744",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3819,7 +5109,13 @@
     "group": "eu",
     "numeric_code": "752",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3836,7 +5132,13 @@
     "group": "eu",
     "numeric_code": "756",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3853,7 +5155,13 @@
     "group": "as",
     "numeric_code": "760",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3870,7 +5178,13 @@
     "group": "as",
     "numeric_code": "158",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3887,7 +5201,13 @@
     "group": "as",
     "numeric_code": "762",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3904,7 +5224,13 @@
     "group": "af",
     "numeric_code": "834",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3921,7 +5247,13 @@
     "group": "as",
     "numeric_code": "764",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3938,7 +5270,13 @@
     "group": "as",
     "numeric_code": "626",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3955,7 +5293,13 @@
     "group": "af",
     "numeric_code": "768",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3972,7 +5316,13 @@
     "group": "oc",
     "numeric_code": "772",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -3989,7 +5339,13 @@
     "group": "oc",
     "numeric_code": "776",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4006,7 +5362,13 @@
     "group": "na",
     "numeric_code": "780",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4023,7 +5385,13 @@
     "group": "af",
     "numeric_code": "788",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4040,7 +5408,13 @@
     "group": "as",
     "numeric_code": "792",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4062,7 +5436,13 @@
     "group": "as",
     "numeric_code": "795",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4079,7 +5459,13 @@
     "group": "na",
     "numeric_code": "796",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4096,7 +5482,13 @@
     "group": "oc",
     "numeric_code": "798",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4113,7 +5505,13 @@
     "group": "af",
     "numeric_code": "800",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4130,7 +5528,13 @@
     "group": "eu",
     "numeric_code": "804",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4147,7 +5551,13 @@
     "group": "as",
     "numeric_code": "784",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4176,7 +5586,13 @@
     "group": "eu",
     "numeric_code": "826",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4193,7 +5609,13 @@
     "group": "na",
     "numeric_code": "840",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4213,7 +5635,13 @@
     "group": "oc",
     "numeric_code": "581",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4230,7 +5658,13 @@
     "group": "sa",
     "numeric_code": "858",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4247,7 +5681,13 @@
     "group": "as",
     "numeric_code": "860",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4264,7 +5704,13 @@
     "group": "oc",
     "numeric_code": "548",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4281,7 +5727,13 @@
     "group": "sa",
     "numeric_code": "862",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4303,7 +5755,13 @@
     "group": "as",
     "numeric_code": "704",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4320,7 +5778,13 @@
     "group": "na",
     "numeric_code": "092",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4337,7 +5801,13 @@
     "group": "na",
     "numeric_code": "850",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4354,7 +5824,13 @@
     "group": "oc",
     "numeric_code": "876",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4371,7 +5847,13 @@
     "group": "af",
     "numeric_code": "732",
     "independant": false,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4388,7 +5870,13 @@
     "group": "as",
     "numeric_code": "887",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4405,7 +5893,13 @@
     "group": "af",
     "numeric_code": "894",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   },
   {
     "name": {
@@ -4422,6 +5916,12 @@
     "group": "af",
     "numeric_code": "716",
     "independant": true,
-    "capital": { "en_US": [], "fr_FR": [] }
+    "capital": {
+      "en_US": [""],
+      "fr_FR": [""],
+      "es_ES": [""],
+      "de_DE": [""],
+      "pt_PT": [""]
+    }
   }
 ]
