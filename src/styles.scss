@@ -163,6 +163,10 @@ body {
 }
 
 html {
+  &.cdk-global-scrollblock{
+    position: static;
+    overflow-y: hidden;
+  }
   @apply text-current-color;
   color-scheme: var(--color-scheme);
 
