@@ -33,29 +33,23 @@
   </div>
 </div>
 
-<mat-accordion *ngIf="!mobileDisplay" class="miscellaneous-tile">
-  <mat-expansion-panel [expanded]="true">
-    <mat-expansion-panel-header>
-      <mat-panel-title i18n="@@results"><img src="assets/icons/datalist.svg" class="mr-2" style="height: 0.75rem; filter: brightness(25);" alt=""> Results </mat-panel-title>
-    </mat-expansion-panel-header>
-
-    <app-data-list [originList]="originList" [foundList]="foundList" [currentSelected]="currentSelected" [inGame]="true" [maxHeight]="'10rem'" (onSelectedRow)="onSelectedRow($event)"></app-data-list>
-  </mat-expansion-panel>
-</mat-accordion>
-
-
+<ng-container *ngIf="!mobileDisplay then datalist"></ng-container>
 
 <app-side-menu #app_side_menu id="sidemenu" *ngIf="mobileDisplay" [displaySideMenu]="displaySideMenu"
   (displaySideMenuChange)="displaySideMenu = !displaySideMenu" [behavior]="'fixed'" [direction]="'right'">
   <div main class="nav-container flex flex-co mt-2">
-    <mat-accordion class="w-full">
-      <mat-expansion-panel [expanded]="true">
-        <mat-expansion-panel-header>
-          <mat-panel-title  i18n="@@results"><img src="assets/icons/datalist.svg" class="mr-2" style="height: 0.75rem; filter: brightness(25);" alt=""> Results </mat-panel-title>
-        </mat-expansion-panel-header>
-
-        <app-data-list [originList]="originList" [foundList]="foundList" [currentSelected]="currentSelected" [inGame]="true" [maxHeight]="'10rem'" (onSelectedRow)="onSelectedRow($event)"></app-data-list>
-      </mat-expansion-panel>
-    </mat-accordion>
+    <ng-container *ngIf="mobileDisplay then datalist"></ng-container>
   </div>
 </app-side-menu>
+
+<ng-template #datalist>
+  <mat-accordion class="miscellaneous-tile {{mobileDisplay?'w-full':''}}">
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title i18n="@@results"><img src="assets/icons/datalist.svg" class="mr-2" style="height: 0.75rem; filter: brightness(25);" alt=""> Results </mat-panel-title>
+      </mat-expansion-panel-header>
+      <app-data-list [originList]="originList" [foundList]="foundList" [currentSelected]="currentSelected" [inGame]="true" [maxHeight]="'10rem'" (onSelectedRow)="onSelectedRow($event)"></app-data-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</ng-template>
