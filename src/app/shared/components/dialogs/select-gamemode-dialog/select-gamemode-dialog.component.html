@@ -1,4 +1,4 @@
-<h1 mat-dialog-title class="text-xl mb-2">Last checkups</h1>
+<h1 mat-dialog-title class="text-xl mb-2" i18n="@@select-game-mod-last-checkups">Last checkups</h1>
 <div mat-dialog-content>
   <form [formGroup]="startPlayingForm" class="flex flex-col gap-2">
     <mat-label class="text-xs opacity-60" i18n="@@selected-map">Selected map</mat-label>
@@ -8,7 +8,7 @@
         <mat-option *ngFor="let map of group.maps" [value]="map.id">{{group.mapDisplayName | i18n}} - {{map.displayName | i18n}}</mat-option>
       </mat-optgroup>
     </mat-select>
-    <mat-error *ngIf="selectedMapId.invalid" class="text-xs text-red" i18n="error-required">
+    <mat-error *ngIf="selectedMapId.invalid" class="text-xs text-red" i18n="@@error-required">
       A value must be set
     </mat-error>
     <mat-label class="text-xs opacity-60" i18n="@@select-game-mod">Select game mod</mat-label>
