@@ -123,11 +123,11 @@
     "numeric_code": "016",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Pago Pago"],
+      "fr_FR": ["Pago Pago"],
+      "es_ES": ["Pago Pago"],
+      "de_DE": ["Pago Pago"],
+      "pt_PT": ["Pago Pago"]
     }
   },
   {
@@ -150,11 +150,11 @@
     "numeric_code": "020",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Andorra la Vella"],
+      "fr_FR": ["Andorre-la-Vieille"],
+      "es_ES": ["Andorra la Vieja"],
+      "de_DE": ["Andorra la Vella"],
+      "pt_PT": ["Andorra-a-Velha"]
     }
   },
   {
@@ -173,11 +173,11 @@
     "numeric_code": "024",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Luanda"],
+      "fr_FR": ["Luanda", "Louanda", "São Paulo da Assunção de Loanda"],
+      "es_ES": ["Luanda"],
+      "de_DE": ["Luanda", "Loanda", "São Paulo da Assunção de Loanda"],
+      "pt_PT": ["Luanda"]
     }
   },
   {
@@ -196,11 +196,11 @@
     "numeric_code": "660",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["The Valley"],
+      "fr_FR": ["The Valley"],
+      "es_ES": ["The Valley"],
+      "de_DE": ["The Valley"],
+      "pt_PT": ["The Valley"]
     }
   },
   {
@@ -219,11 +219,23 @@
     "numeric_code": "010",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": [
+        "McMurdo Station (biggest station, not formal capital)",
+        "McMurdo"
+      ],
+      "fr_FR": ["Base antarctique McMurdo", "McMurdo"],
+      "es_ES": [
+        "Base McMurdo (la mayor estación, no la capital formal)",
+        "McMurdo"
+      ],
+      "de_DE": [
+        "McMurdo-Station (größter Bahnhof, nicht formale Hauptstadt)",
+        "McMurdo"
+      ],
+      "pt_PT": [
+        "Estação McMurdo (maior estação, não capital formal)",
+        "McMurdo"
+      ]
     }
   },
   {
@@ -242,11 +254,11 @@
     "numeric_code": "028",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Saint John's", "St. John's"],
+      "fr_FR": ["Saint John's", "St. John's"],
+      "es_ES": ["Saint John"],
+      "de_DE": ["Saint John's"],
+      "pt_PT": ["São João"]
     }
   },
   {
@@ -265,11 +277,11 @@
     "numeric_code": "032",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Buenos Aires"],
+      "fr_FR": ["Buenos Aires"],
+      "es_ES": ["Buenos Aires"],
+      "de_DE": ["Buenos Aires"],
+      "pt_PT": ["Buenos Aires"]
     }
   },
   {
@@ -288,11 +300,11 @@
     "numeric_code": "051",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Yerevan", "Erevan"],
+      "fr_FR": ["Erevan", "Yerevan"],
+      "es_ES": ["Ereván"],
+      "de_DE": ["Jerewan", "Eriwan", "Erewan"],
+      "pt_PT": ["Erevã", "Erevan", "Ierevan", "Ierevã"]
     }
   },
   {
@@ -311,11 +323,11 @@
     "numeric_code": "533",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Oranjestad"],
+      "fr_FR": ["Oranjestad", "Ville d'Orange", "Orangeville"],
+      "es_ES": ["Oranjestad", "Ciudad naranja"],
+      "de_DE": ["Oranjestad"],
+      "pt_PT": ["Oranjestad"]
     }
   },
   {
@@ -334,11 +346,11 @@
     "numeric_code": "036",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Canberra"],
+      "fr_FR": ["Canberra"],
+      "es_ES": ["Canberra"],
+      "de_DE": ["Canberra"],
+      "pt_PT": ["Camberra", "Canberra"]
     }
   },
   {
@@ -357,11 +369,11 @@
     "numeric_code": "040",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Vienna", "Wien"],
+      "fr_FR": ["Vienne", "Wien"],
+      "es_ES": ["Viena", "Wien"],
+      "de_DE": ["Wien"],
+      "pt_PT": ["Viena", "Wien"]
     }
   },
   {
@@ -380,11 +392,11 @@
     "numeric_code": "031",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Baku", "Bakı"],
+      "fr_FR": ["Bakou", "Bakı"],
+      "es_ES": ["Bakú", "Bakı"],
+      "de_DE": ["Baku", "Bakı"],
+      "pt_PT": ["Bacu", "Baku", "Bakı"]
     }
   },
   {
@@ -403,11 +415,11 @@
     "numeric_code": "044",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Nassau", "Charles Town"],
+      "fr_FR": ["Nassau", "Charles Town"],
+      "es_ES": ["Nasáu", "Charles Town"],
+      "de_DE": ["Nassau", "Charles Town"],
+      "pt_PT": ["Nassau", "Charles Town"]
     }
   },
   {
@@ -426,11 +438,11 @@
     "numeric_code": "048",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Manama"],
+      "fr_FR": ["Manama"],
+      "es_ES": ["Manama"],
+      "de_DE": ["Manama"],
+      "pt_PT": ["Manama"]
     }
   },
   {
@@ -449,11 +461,11 @@
     "numeric_code": "050",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Dhaka"],
+      "fr_FR": ["Dacca", "Dhaka"],
+      "es_ES": ["Daca", "Dhaka"],
+      "de_DE": ["Dhaka"],
+      "pt_PT": ["Daca", "Dhaka"]
     }
   },
   {
@@ -472,11 +484,11 @@
     "numeric_code": "052",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bridgetown"],
+      "fr_FR": ["Bridgetown"],
+      "es_ES": ["Bridgetown"],
+      "de_DE": ["Bridgetown"],
+      "pt_PT": ["Bridgetown"]
     }
   },
   {
@@ -500,11 +512,11 @@
     "numeric_code": "112",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Minsk"],
+      "fr_FR": ["Minsk"],
+      "es_ES": ["Minsk"],
+      "de_DE": ["Minsk"],
+      "pt_PT": ["Minsk"]
     }
   },
   {
@@ -523,11 +535,11 @@
     "numeric_code": "056",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Brussels", "City of Brussels"],
+      "fr_FR": ["Bruxelles", "Ville de Bruxelles"],
+      "es_ES": ["Bruselas"],
+      "de_DE": ["Brüssel", "Stadt Brüssel"],
+      "pt_PT": ["Bruxelas", "Cidade de Bruxelas"]
     }
   },
   {
@@ -546,11 +558,11 @@
     "numeric_code": "084",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Belmopan"],
+      "fr_FR": ["Belmopan", "Belmopán"],
+      "es_ES": ["Belmopan"],
+      "de_DE": ["Belmopan"],
+      "pt_PT": ["Belmopan"]
     }
   },
   {
@@ -559,7 +571,7 @@
       "fr_FR": ["Bénin"],
       "es_ES": ["Benín"],
       "de_DE": ["Benin"],
-      "pt_PT": ["República do Benim", "Benim"]
+      "pt_PT": ["Benim", "República do Benim"]
     },
     "id": "BJ",
     "flag_url": "./assets/maps/flags/world-countries/flag_BJ.svg",
@@ -569,11 +581,11 @@
     "numeric_code": "204",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Porto-Novo (political) and Cotonou (economic)"],
+      "fr_FR": ["Porto-Novo (politique) et Cotonou (économique)"],
+      "es_ES": ["Porto-Novo (político) y Cotonú (económico)"],
+      "de_DE": ["Porto-Novo (politisch) und Cotonou (wirtschaftlich)"],
+      "pt_PT": ["Porto-Novo (político) e Cotonou (económico)"]
     }
   },
   {
@@ -592,11 +604,11 @@
     "numeric_code": "060",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Hamilton"],
+      "fr_FR": ["Hamilton"],
+      "es_ES": ["Hamilton"],
+      "de_DE": ["Hamilton"],
+      "pt_PT": ["Hamilton"]
     }
   },
   {
@@ -615,11 +627,11 @@
     "numeric_code": "064",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Thimphu"],
+      "fr_FR": ["Thimphou"],
+      "es_ES": ["Timbu", "Timbú"],
+      "de_DE": ["Thimphu"],
+      "pt_PT": ["Thimbu", "Timbu", "Timpu"]
     }
   },
   {
@@ -638,11 +650,31 @@
     "numeric_code": "068",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": [
+        "Sucre (constitutional and judicial) and La Paz (executive and legislative)",
+        "Sucre",
+        "La Paz"
+      ],
+      "fr_FR": [
+        "Sucre (constitutionnelle et judiciaire) et La Paz (administrative)",
+        "Sucre",
+        "La Paz"
+      ],
+      "es_ES": [
+        "Sucre (constitucional y judicial) y La Paz (ejecutivo y legislativo)",
+        "Sucre",
+        "La Paz"
+      ],
+      "de_DE": [
+        "Sucre (Hauptstadt) und La Paz (Regierungssitz)",
+        "Sucre",
+        "La Paz"
+      ],
+      "pt_PT": [
+        "Sucre (constitucional e judicial) e La Paz (executivo e legislativo)",
+        "Sucre",
+        "La Paz"
+      ]
     }
   },
   {
@@ -652,10 +684,18 @@
         "Caribbean Netherlands",
         "Bonaire"
       ],
-      "fr_FR": ["Bonaire, Saint-Eustache et Saba", "Bonaire"],
-      "es_ES": ["Bonaire, San Eustaquio y Saba"],
-      "de_DE": ["Bonaire, Saba, Sint Eustatius", "Bonaire"],
-      "pt_PT": ["Bonaire, Santo Eustáquio e Saba"]
+      "fr_FR": [
+        "Bonaire, Saint-Eustache et Saba",
+        "Bonaire",
+        "Pays-Bas caribéens"
+      ],
+      "es_ES": ["Bonaire, San Eustaquio y Saba", "Caribe Neerlandés"],
+      "de_DE": [
+        "Bonaire, Saba, Sint Eustatius",
+        "Bonaire",
+        "Karibische Niederlande"
+      ],
+      "pt_PT": ["Bonaire, Santo Eustáquio e Saba", "Países Baixos Caribenhos"]
     },
     "id": "BQ",
     "flag_url": "./assets/maps/flags/world-countries/flag_BQ.svg",
@@ -665,11 +705,36 @@
     "numeric_code": "535",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": [
+        "Kralendijk, Oranjestad and The Bottom (main city of each island)",
+        "Kralendijk",
+        "Oranjestad",
+        "Bottom"
+      ],
+      "fr_FR": [
+        "Kralendijk, Oranjestad et The Bottom (ville principale de chaque île)",
+        "Kralendijk",
+        "Oranjestad",
+        "Bottom"
+      ],
+      "es_ES": [
+        "Kralendijk, Oranjestad y The Bottom (ciudad principal de cada isla)",
+        "Kralendijk",
+        "Oranjestad",
+        "Bottom"
+      ],
+      "de_DE": [
+        "Kralendijk, Oranjestad und The Bottom (Hauptort der jeweiligen Insel)",
+        "Kralendijk",
+        "Oranjestad",
+        "Bottom"
+      ],
+      "pt_PT": [
+        "Kralendijk, Oranjestad e The Bottom (principal cidade de cada ilha)",
+        "Kralendijk",
+        "Oranjestad",
+        "Bottom"
+      ]
     }
   },
   {
@@ -688,11 +753,11 @@
     "numeric_code": "070",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Sarajevo"],
+      "fr_FR": ["Sarajevo"],
+      "es_ES": ["Sarajevo"],
+      "de_DE": ["Sarajevo"],
+      "pt_PT": ["Sarajevo"]
     }
   },
   {
@@ -716,11 +781,11 @@
     "numeric_code": "072",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Gaborone"],
+      "fr_FR": ["Gaborone"],
+      "es_ES": ["Gaborone"],
+      "de_DE": ["Gaborone"],
+      "pt_PT": ["Gaborone"]
     }
   },
   {
@@ -739,11 +804,11 @@
     "numeric_code": "074",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bouvet (no city)"],
+      "fr_FR": ["Bouvet (aucune ville)"],
+      "es_ES": ["Bouvet (ninguna ciudad)"],
+      "de_DE": ["Bouvet (aucune ville)"],
+      "pt_PT": ["Bouvet (nenhuma cidade)"]
     }
   },
   {
@@ -752,7 +817,7 @@
       "fr_FR": ["Brésil"],
       "es_ES": ["Brasil"],
       "de_DE": ["Brasilien"],
-      "pt_PT": ["República Federativa do Brasil", "Brasil"]
+      "pt_PT": ["Brasil", "República Federativa do Brasil"]
     },
     "id": "BR",
     "flag_url": "./assets/maps/flags/world-countries/flag_BR.svg",
@@ -762,11 +827,11 @@
     "numeric_code": "076",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Brasília"],
+      "fr_FR": ["Brasilia"],
+      "es_ES": ["Brasilia"],
+      "de_DE": ["Brasília"],
+      "pt_PT": ["Brasília"]
     }
   },
   {
@@ -785,11 +850,26 @@
     "numeric_code": "086",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": [
+        "Camp Thunder Cove (U.S military camp, no other inhabitants)",
+        "Camp Thunder Cove"
+      ],
+      "fr_FR": [
+        "Camp Thunder Cove (Camp militaire américain, pas d'autres habitants)",
+        "Camp Thunder Cove"
+      ],
+      "es_ES": [
+        "Camp Thunder Cove (Campo militar estadounidense, sin otros habitantes)",
+        "Camp Thunder Cove"
+      ],
+      "de_DE": [
+        "Camp Thunder Cove (U.S.-Militärlager, keine anderen Bewohner)",
+        "Camp Thunder Cove"
+      ],
+      "pt_PT": [
+        "Camp Thunder Cove (Campo militar dos E.U.A., sem outros habitantes)",
+        "Camp Thunder Cove"
+      ]
     }
   },
   {
@@ -799,8 +879,8 @@
       "es_ES": ["Brunéi", "Estado de Brunéi Darussalam"],
       "de_DE": ["Brunei", "Brunei Darussalam"],
       "pt_PT": [
-        "Nação de Brunei, a Morada da Paz",
         "Brunei",
+        "Nação de Brunei, a Morada da Paz",
         "Estado de Brunei Darussalam",
         "Darussalã"
       ]
@@ -813,11 +893,11 @@
     "numeric_code": "096",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bandar Seri Begawan"],
+      "fr_FR": ["Bandar Seri Begawan"],
+      "es_ES": ["Bandar Seri Begawan"],
+      "de_DE": ["Bandar Seri Begawan"],
+      "pt_PT": ["Bandar Seri Begawan"]
     }
   },
   {
@@ -826,7 +906,7 @@
       "fr_FR": ["Bulgarie"],
       "es_ES": ["Bulgaria"],
       "de_DE": ["Bulgarien"],
-      "pt_PT": ["República da Bulgária", "Bulgária"]
+      "pt_PT": ["Bulgária", "República da Bulgária"]
     },
     "id": "BG",
     "flag_url": "./assets/maps/flags/world-countries/flag_BG.svg",
@@ -836,11 +916,11 @@
     "numeric_code": "100",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Sofia"],
+      "fr_FR": ["Sofia"],
+      "es_ES": ["Sofía"],
+      "de_DE": ["Sofia"],
+      "pt_PT": ["Sofía"]
     }
   },
   {
@@ -859,11 +939,11 @@
     "numeric_code": "854",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Ouagadougou"],
+      "fr_FR": ["Ouagadougou"],
+      "es_ES": ["Uagadugú"],
+      "de_DE": ["Ouagadougou"],
+      "pt_PT": ["Uagadugu"]
     }
   },
   {
@@ -882,11 +962,31 @@
     "numeric_code": "108",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": [
+        "Gitega (political) and Bujumbura (economic)",
+        "Gitega",
+        "Bujumbura"
+      ],
+      "fr_FR": [
+        "Gitega (politique) et Bujumbura (économique)",
+        "Gitega",
+        "Bujumbura"
+      ],
+      "es_ES": [
+        "Gitega (político) y Bujumbura (económico)",
+        "Gitega",
+        "Bujumbura"
+      ],
+      "de_DE": [
+        "Gitega (politique) et Bujumbura (économique)",
+        "Gitega",
+        "Bujumbura"
+      ],
+      "pt_PT": [
+        "Gitega (político) e Bujumbura (económico)",
+        "Gitega",
+        "Bujumbura"
+      ]
     }
   },
   {
@@ -905,11 +1005,11 @@
     "numeric_code": "132",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Praia"],
+      "fr_FR": ["Praia"],
+      "es_ES": ["Praia"],
+      "de_DE": ["Praia"],
+      "pt_PT": ["Praia"]
     }
   },
   {
@@ -928,11 +1028,11 @@
     "numeric_code": "116",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Phnom Penh"],
+      "fr_FR": ["Phnom Penh"],
+      "es_ES": ["Nom Pen"],
+      "de_DE": ["Phnom Penh"],
+      "pt_PT": ["Phnom Penh"]
     }
   },
   {
@@ -951,11 +1051,11 @@
     "numeric_code": "120",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Yaoundé"],
+      "fr_FR": ["Yaoundé"],
+      "es_ES": ["Yaundé"],
+      "de_DE": ["Yaoundé"],
+      "pt_PT": ["Iaundé"]
     }
   },
   {
@@ -974,11 +1074,11 @@
     "numeric_code": "124",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Ottawa"],
+      "fr_FR": ["Ottawa"],
+      "es_ES": ["Ottawa"],
+      "de_DE": ["Ottawa"],
+      "pt_PT": ["Ottawa"]
     }
   },
   {
@@ -997,11 +1097,11 @@
     "numeric_code": "136",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["George Town"],
+      "fr_FR": ["George Town"],
+      "es_ES": ["George Town"],
+      "de_DE": ["George Town"],
+      "pt_PT": ["Grande Caimão"]
     }
   },
   {
@@ -1023,11 +1123,11 @@
     "numeric_code": "140",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bangui"],
+      "fr_FR": ["Bangui"],
+      "es_ES": ["Bangui"],
+      "de_DE": ["Bangui"],
+      "pt_PT": ["Bangui"]
     }
   },
   {
@@ -1046,11 +1146,11 @@
     "numeric_code": "148",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["N'Djaména"],
+      "fr_FR": ["N'Djaména"],
+      "es_ES": ["Yamena"],
+      "de_DE": ["N'Djaména"],
+      "pt_PT": ["Jamena"]
     }
   },
   {
@@ -1069,20 +1169,20 @@
     "numeric_code": "152",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Santiago", "Santiago de Chile"],
+      "fr_FR": ["Santiago", "Santiago du Chili"],
+      "es_ES": ["Santiago", "Santiago de Chile"],
+      "de_DE": ["Santiago", "Santiago de Chile"],
+      "pt_PT": ["Santiago", "Santiago do Chile"]
     }
   },
   {
     "name": {
       "en_US": ["China"],
-      "fr_FR": ["Chine"],
+      "fr_FR": ["Chine", "République populaire de Chine"],
       "es_ES": ["China"],
-      "de_DE": ["Volksrepublik China"],
-      "pt_PT": ["República Popular da China", "China"]
+      "de_DE": ["China", "Volksrepublik China"],
+      "pt_PT": ["China", "República Popular da China"]
     },
     "id": "CN",
     "flag_url": "./assets/maps/flags/world-countries/flag_CN.svg",
@@ -1092,11 +1192,11 @@
     "numeric_code": "156",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Beijing", "Peking"],
+      "fr_FR": ["Pékin", "Beijing"],
+      "es_ES": ["Pekín", "Beijing"],
+      "de_DE": ["Peking", "Beijing"],
+      "pt_PT": ["Pequim", "Beijing"]
     }
   },
   {
@@ -1106,9 +1206,9 @@
       "es_ES": ["Isla de Navidad"],
       "de_DE": ["Weihnachtsinsel"],
       "pt_PT": [
+        "Ilha Christmas",
         "Território da Ilha Christmas",
         "Território da Ilha do Natal",
-        "Ilha Christmas",
         "Ilha do Nata"
       ]
     },
@@ -1120,11 +1220,11 @@
     "numeric_code": "162",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Flying Fish Cove"],
+      "fr_FR": ["Flying Fish Cove"],
+      "es_ES": ["Flying Fish Cove"],
+      "de_DE": ["Flying Fish Cove"],
+      "pt_PT": ["Flying Fish Cove"]
     }
   },
   {
@@ -1148,11 +1248,11 @@
     "numeric_code": "166",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["West Island"],
+      "fr_FR": ["West Island"],
+      "es_ES": ["West Island"],
+      "de_DE": ["West Island"],
+      "pt_PT": ["Ilha Ocidental"]
     }
   },
   {
@@ -1171,11 +1271,11 @@
     "numeric_code": "170",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bogotá"],
+      "fr_FR": ["Bogota"],
+      "es_ES": ["Bogotá"],
+      "de_DE": ["Bogotá"],
+      "pt_PT": ["Bogotá"]
     }
   },
   {
@@ -1194,11 +1294,11 @@
     "numeric_code": "174",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Moroni"],
+      "fr_FR": ["Moroni"],
+      "es_ES": ["Moroni"],
+      "de_DE": ["Moroni"],
+      "pt_PT": ["Moroni"]
     }
   },
   {
@@ -1217,11 +1317,11 @@
     "numeric_code": "178",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Brazzaville (political) and Pointe-Noire (economic)"],
+      "fr_FR": ["Brazzaville (politique) et Pointe-Noire (économique)"],
+      "es_ES": ["Brazzaville (político) y Pointe-Noire (económico)"],
+      "de_DE": ["Brazzaville (politisch) und Pointe-Noire (wirtschaftlich)"],
+      "pt_PT": ["Brazzaville (político) e Pointe-Noire (económico)"]
     }
   },
   {
@@ -1253,11 +1353,11 @@
     "numeric_code": "180",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kinshasa"],
+      "fr_FR": ["Kinshasa"],
+      "es_ES": ["Kinsasa", "Kinshasa"],
+      "de_DE": ["Kinshasa"],
+      "pt_PT": ["Quinxassa", "Quinxasa", "Kinshasa"]
     }
   },
   {
@@ -1276,11 +1376,11 @@
     "numeric_code": "184",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Avarua"],
+      "fr_FR": ["Avarua"],
+      "es_ES": ["Avarua"],
+      "de_DE": ["Avarua"],
+      "pt_PT": ["Avarua"]
     }
   },
   {
@@ -1299,11 +1399,11 @@
     "numeric_code": "188",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["San José"],
+      "fr_FR": ["San José"],
+      "es_ES": ["San José"],
+      "de_DE": ["San José"],
+      "pt_PT": ["San José", "São José"]
     }
   },
   {
@@ -1322,11 +1422,31 @@
     "numeric_code": "384",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": [
+        "Yamoussoukro (political) and Abidjan (economic)",
+        "Yamoussoukro",
+        "Abidjan"
+      ],
+      "fr_FR": [
+        "Yamoussoukro (politique) et Abidjan (économique)",
+        "Yamoussoukro",
+        "Abidjan"
+      ],
+      "es_ES": [
+        "Yamusukro (político) y Abiyán (económico)",
+        "Yamoussoukro",
+        "Abidjan"
+      ],
+      "de_DE": [
+        "Yamoussoukro (politisch) und Abidjan (wirtschaftlich)",
+        "Yamoussoukro",
+        "Abidjan"
+      ],
+      "pt_PT": [
+        "Yamoussoukro (político) e Abidjan (económico)",
+        "Yamoussoukro",
+        "Abidjan"
+      ]
     }
   },
   {
@@ -1345,11 +1465,11 @@
     "numeric_code": "191",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Zagreb"],
+      "fr_FR": ["Zagreb"],
+      "es_ES": ["Zagreb"],
+      "de_DE": ["Zagreb"],
+      "pt_PT": ["Zagreb"]
     }
   },
   {
@@ -1368,11 +1488,11 @@
     "numeric_code": "192",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Havana"],
+      "fr_FR": ["La Havane"],
+      "es_ES": ["La Habana"],
+      "de_DE": ["Havanna"],
+      "pt_PT": ["Havana"]
     }
   },
   {
@@ -1391,11 +1511,11 @@
     "numeric_code": "531",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Willemstad"],
+      "fr_FR": ["Willemstad"],
+      "es_ES": ["Willemstad"],
+      "de_DE": ["Willemstad"],
+      "pt_PT": ["Willemstad"]
     }
   },
   {
@@ -1414,11 +1534,11 @@
     "numeric_code": "196",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Nicosia"],
+      "fr_FR": ["Nicosie"],
+      "es_ES": ["Nicosia"],
+      "de_DE": ["Nikosia"],
+      "pt_PT": ["Nicósia"]
     }
   },
   {
@@ -1437,11 +1557,11 @@
     "numeric_code": "203",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Prague"],
+      "fr_FR": ["Prague"],
+      "es_ES": ["Praga"],
+      "de_DE": ["Prag"],
+      "pt_PT": ["Praga"]
     }
   },
   {
@@ -1460,11 +1580,11 @@
     "numeric_code": "208",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Copenhagen"],
+      "fr_FR": ["Copenhague"],
+      "es_ES": ["Copenhague"],
+      "de_DE": ["Kopenhagen"],
+      "pt_PT": ["Copenhaga"]
     }
   },
   {
@@ -1483,11 +1603,11 @@
     "numeric_code": "262",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Djibouti "],
+      "fr_FR": ["Djibouti"],
+      "es_ES": ["Yibuti"],
+      "de_DE": ["Dschibuti"],
+      "pt_PT": ["Djibouti"]
     }
   },
   {
@@ -1506,11 +1626,11 @@
     "numeric_code": "212",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Roseau"],
+      "fr_FR": ["Roseau"],
+      "es_ES": ["Roseau"],
+      "de_DE": ["Roseau"],
+      "pt_PT": ["Roseau"]
     }
   },
   {
@@ -1529,11 +1649,11 @@
     "numeric_code": "214",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Santo Domingo"],
+      "fr_FR": ["Saint-Domingue"],
+      "es_ES": ["Santo Domingo"],
+      "de_DE": ["Santo Domingo"],
+      "pt_PT": ["São Domingos"]
     }
   },
   {
@@ -1552,11 +1672,11 @@
     "numeric_code": "218",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Quito"],
+      "fr_FR": ["Quito"],
+      "es_ES": ["Quito"],
+      "de_DE": ["Quito"],
+      "pt_PT": ["Quito"]
     }
   },
   {
@@ -1565,7 +1685,7 @@
       "fr_FR": ["Égypte"],
       "es_ES": ["Egipto"],
       "de_DE": ["Ägypten"],
-      "pt_PT": ["República Árabe do Egito", "Egito"]
+      "pt_PT": ["Egito","República Árabe do Egito"]
     },
     "id": "EG",
     "flag_url": "./assets/maps/flags/world-countries/flag_EG.svg",
@@ -1575,25 +1695,20 @@
     "numeric_code": "818",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Cairo"],
+      "fr_FR": ["Le Caire"],
+      "es_ES": ["El Cairo"],
+      "de_DE": ["Kairo"],
+      "pt_PT": ["Cairo"]
     }
   },
   {
     "name": {
       "en_US": ["El Salvador"],
-      "fr_FR": ["Salvador", "El Salvardor"],
+      "fr_FR": ["El Salvardor","Salvador"],
       "es_ES": ["El Salvador"],
       "de_DE": ["El Salvador"],
-      "pt_PT": [
-        "República de El Salvador",
-        "República do Salvador",
-        "Salvador",
-        "El Salvador"
-      ]
+      "pt_PT": ["El Salvador","República de El Salvador","República do Salvador","Salvador"]
     },
     "id": "SV",
     "flag_url": "./assets/maps/flags/world-countries/flag_SV.svg",
@@ -1603,11 +1718,11 @@
     "numeric_code": "222",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["San Salvador"],
+      "fr_FR": ["San Salvador"],
+      "es_ES": ["San Salvador"],
+      "de_DE": ["San Salvador"],
+      "pt_PT": ["San Salvador"]
     }
   },
   {
@@ -1626,11 +1741,11 @@
     "numeric_code": "226",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Malabo"],
+      "fr_FR": ["Malabo"],
+      "es_ES": ["Malabo"],
+      "de_DE": ["Malabo"],
+      "pt_PT": ["Malabo"]
     }
   },
   {
@@ -1649,11 +1764,11 @@
     "numeric_code": "232",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Asmara"],
+      "fr_FR": ["Asmara"],
+      "es_ES": ["Asmara"],
+      "de_DE": ["Asmara"],
+      "pt_PT": ["Asmara"]
     }
   },
   {
@@ -1672,26 +1787,20 @@
     "numeric_code": "233",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Tallinn"],
+      "fr_FR": ["Tallinn"],
+      "es_ES": ["Tallin"],
+      "de_DE": ["Tallinn"],
+      "pt_PT": ["Tallinn"]
     }
   },
   {
     "name": {
       "en_US": ["Eswatini", "Swaziland"],
       "fr_FR": ["Eswatini", "Royaume d'Eswatini", "Swaziland"],
-      "es_ES": [
-        "Suazilandia",
-        "Esuatini",
-        "Eswatini",
-        "Reino de Suazilandia",
-        "Reino de Esuatini"
-      ],
+      "es_ES": ["Esuatini","Suazilandia","Eswatini","Reino de Suazilandia","Reino de Esuatini"],
       "de_DE": ["Eswatini", "Königreich Eswatini"],
-      "pt_PT": ["Reino de Essuatíni", "Essuatíni"]
+      "pt_PT": ["Essuatíni","Reino de Essuatíni"]
     },
     "id": "SZ",
     "flag_url": "./assets/maps/flags/world-countries/flag_SZ.svg",
@@ -1701,11 +1810,11 @@
     "numeric_code": "748",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Mbabane (administrative and judicial) and Lobamba (royal and legislative)","Mbabane","Lobamba"],
+      "fr_FR": ["Mbabane (administrative et judiciaire) et Lobamba (royale et législative)","Mbabane","Lobamba"],
+      "es_ES": ["Mbabane (administrativo y judicial) y Lobamba (real y legislativo)","Mbabane","Lobamba"],
+      "de_DE": ["Mbabane (Verwaltungs- und Gerichtsbezirk) und Lobamba (königlicher und gesetzgebender Bezirk)","Mbabane","Lobamba"],
+      "pt_PT": ["Mbabane (administrativo e judicial) e Lobamba (real e legislativo)","Mbabane","Lobamba"]
     }
   },
   {
@@ -1724,11 +1833,11 @@
     "numeric_code": "231",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Addis Ababa"],
+      "fr_FR": ["Addis-Abeba"],
+      "es_ES": ["Adís Abeba"],
+      "de_DE": ["Addis Abeba"],
+      "pt_PT": ["Adis Abeba"]
     }
   },
   {
@@ -1747,11 +1856,11 @@
     "numeric_code": "238",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Stanley"],
+      "fr_FR": ["Stanley"],
+      "es_ES": ["Puerto Stanley","Puerto Argentino"],
+      "de_DE": ["Stanley"],
+      "pt_PT": ["Porto Stanley"]
     }
   },
   {
@@ -1770,11 +1879,11 @@
     "numeric_code": "234",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Torshavn"],
+      "fr_FR": ["Tórshavn"],
+      "es_ES": ["Tórshavn"],
+      "de_DE": ["Tórshavn"],
+      "pt_PT": ["Tórshavn"]
     }
   },
   {
@@ -1793,11 +1902,11 @@
     "numeric_code": "242",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Suva"],
+      "fr_FR": ["Suva"],
+      "es_ES": ["Suva"],
+      "de_DE": ["Suva"],
+      "pt_PT": ["Suva"]
     }
   },
   {
@@ -1816,11 +1925,11 @@
     "numeric_code": "246",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Helsinki"],
+      "fr_FR": ["Helsinki"],
+      "es_ES": ["Helsinki"],
+      "de_DE": ["Helsinki"],
+      "pt_PT": ["Helsínquia"]
     }
   },
   {
@@ -1839,17 +1948,17 @@
     "numeric_code": "250",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Paris"],
+      "fr_FR": ["Paris"],
+      "es_ES": ["París"],
+      "de_DE": ["Paris"],
+      "pt_PT": ["Paris"]
     }
   },
   {
     "name": {
       "en_US": ["French Guiana"],
-      "fr_FR": ["Guinée française"],
+      "fr_FR": ["Guyane"],
       "es_ES": ["Guayana Francesa"],
       "de_DE": ["Französisch-Guayana"],
       "pt_PT": ["Guiana Francesa"]
@@ -1862,11 +1971,11 @@
     "numeric_code": "254",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Cayenne"],
+      "fr_FR": ["Cayenne"],
+      "es_ES": ["Cayenne"],
+      "de_DE": ["Cayenne"],
+      "pt_PT": ["Caiena"]
     }
   },
   {
@@ -1885,23 +1994,20 @@
     "numeric_code": "258",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Papeete"],
+      "fr_FR": ["Papeete"],
+      "es_ES": ["Papeete"],
+      "de_DE": ["Papeete"],
+      "pt_PT": ["Papeete"]
     }
   },
   {
     "name": {
       "en_US": ["French Southern Territories"],
-      "fr_FR": ["Terres australes et antarctiques"],
+      "fr_FR": ["Terres australes et antarctiques françaises","Terres australes et antarctiques"],
       "es_ES": ["Tierras Australes y Antárticas Francesas"],
       "de_DE": ["Französische Süd- und Antarktisgebiete"],
-      "pt_PT": [
-        "Território das Terras Austrais e Antárcticas Francesas",
-        "Terras Austrais e Antárticas Francesas"
-      ]
+      "pt_PT": ["Território das Terras Austrais e Antárcticas Francesas","Terras Austrais e Antárticas Francesas"]
     },
     "id": "TF",
     "flag_url": "./assets/maps/flags/world-countries/flag_TF.svg",
@@ -1911,11 +2017,11 @@
     "numeric_code": "260",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Port-aux-Francais"],
+      "fr_FR": ["Port-aux-Français"],
+      "es_ES": ["Port-aux-Français"],
+      "de_DE": ["Port-aux-Français"],
+      "pt_PT": ["Port-aux-Français"]
     }
   },
   {
@@ -1934,11 +2040,11 @@
     "numeric_code": "266",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Libreville"],
+      "fr_FR": ["Libreville"],
+      "es_ES": ["Libreville"],
+      "de_DE": ["Libreville"],
+      "pt_PT": ["Libreville"]
     }
   },
   {
@@ -1957,11 +2063,11 @@
     "numeric_code": "270",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Banjul"],
+      "fr_FR": ["Banjul"],
+      "es_ES": ["Banjul"],
+      "de_DE": ["Banjul"],
+      "pt_PT": ["Banjul"]
     }
   },
   {
@@ -1980,11 +2086,11 @@
     "numeric_code": "268",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Tbilisi"],
+      "fr_FR": ["Tbilissi"],
+      "es_ES": ["Tbilissi"],
+      "de_DE": ["Tbilissi"],
+      "pt_PT": ["Tbilissi"]
     }
   },
   {
@@ -2003,11 +2109,11 @@
     "numeric_code": "276",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Berlin"],
+      "fr_FR": ["Berlin"],
+      "es_ES": ["Berlín"],
+      "de_DE": ["Berlin"],
+      "pt_PT": ["Berlim"]
     }
   },
   {
@@ -2016,7 +2122,7 @@
       "fr_FR": ["Ghana"],
       "es_ES": ["Ghana"],
       "de_DE": ["Ghana"],
-      "pt_PT": ["República do Gana", "Gana"]
+      "pt_PT": ["Gana","República do Gana"]
     },
     "id": "GH",
     "flag_url": "./assets/maps/flags/world-countries/flag_GH.svg",
@@ -2026,11 +2132,11 @@
     "numeric_code": "288",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Accra"],
+      "fr_FR": ["Accra"],
+      "es_ES": ["Acra"],
+      "de_DE": ["Accra"],
+      "pt_PT": ["Acra"]
     }
   },
   {
@@ -2049,11 +2155,11 @@
     "numeric_code": "292",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Gibraltar"],
+      "fr_FR": ["Gibraltar"],
+      "es_ES": ["Gibraltar"],
+      "de_DE": ["Gibraltar"],
+      "pt_PT": ["Gibraltar"]
     }
   },
   {
@@ -2072,11 +2178,11 @@
     "numeric_code": "300",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Athens"],
+      "fr_FR": ["Athènes"],
+      "es_ES": ["Atenas"],
+      "de_DE": ["Athen"],
+      "pt_PT": ["Atenas"]
     }
   },
   {
@@ -2095,11 +2201,11 @@
     "numeric_code": "304",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Nuuk"],
+      "fr_FR": ["Nuuk"],
+      "es_ES": ["Nuuk"],
+      "de_DE": ["Nuuk"],
+      "pt_PT": ["Nuuk"]
     }
   },
   {
@@ -2118,11 +2224,11 @@
     "numeric_code": "308",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["St. George's","Saint George's"],
+      "fr_FR": ["Saint-Georges"],
+      "es_ES": ["Saint George"],
+      "de_DE": ["St. George’s","Sankt George's"],
+      "pt_PT": ["São Jorge"]
     }
   },
   {
@@ -2141,11 +2247,11 @@
     "numeric_code": "312",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Basse-Terre"],
+      "fr_FR": ["Basse-Terre"],
+      "es_ES": ["Basse-Terre"],
+      "de_DE": ["Basse-Terre"],
+      "pt_PT": ["Basse-Terre"]
     }
   },
   {
@@ -2164,11 +2270,11 @@
     "numeric_code": "316",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Hagatna"],
+      "fr_FR": ["Hagåtña","Agana","Agaña"],
+      "es_ES": ["Agaña"],
+      "de_DE": ["Hagåtña"],
+      "pt_PT": ["Aganha"]
     }
   },
   {
@@ -2177,7 +2283,7 @@
       "fr_FR": ["Guatemala"],
       "es_ES": ["Guatemala"],
       "de_DE": ["Guatemala"],
-      "pt_PT": ["República da Guatemala", "Guatemala"]
+      "pt_PT": ["Guatemala","República da Guatemala"]
     },
     "id": "GT",
     "flag_url": "./assets/maps/flags/world-countries/flag_GT.svg",
@@ -2187,11 +2293,11 @@
     "numeric_code": "320",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Guatemala City"],
+      "fr_FR": ["Guatemala "],
+      "es_ES": ["Ciudad de Guatemala"],
+      "de_DE": ["Guatemala-Stadt"],
+      "pt_PT": ["Cidade da Guatemala"]
     }
   },
   {
@@ -2200,13 +2306,7 @@
       "fr_FR": ["Guernesey"],
       "es_ES": ["Guernsey"],
       "de_DE": ["Guernsey", "Kanalinsel"],
-      "pt_PT": [
-        "Bailiado de Guernsey",
-        "Bailiado de Guernesey",
-        "Guernsey",
-        "Guernesey",
-        "Guernesei"
-      ]
+      "pt_PT": ["Guernsey","Guernesey","Bailiado de Guernsey","Bailiado de Guernesey","Guernesei"]
     },
     "id": "GG",
     "flag_url": "./assets/maps/flags/world-countries/flag_GG.svg",
@@ -2216,11 +2316,11 @@
     "numeric_code": "831",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["St Peter Port"],
+      "fr_FR": ["Saint-Pierre-Port"],
+      "es_ES": ["Saint Peter Port"],
+      "de_DE": ["Saint Peter Port"],
+      "pt_PT": ["Porto de São Pedro"]
     }
   },
   {
@@ -2229,7 +2329,7 @@
       "fr_FR": ["Guinée"],
       "es_ES": ["Guinea"],
       "de_DE": ["Guinea"],
-      "pt_PT": ["República da Guiné", "Guiné-Conacri"]
+      "pt_PT": ["Guiné-Conacri","República da Guiné"]
     },
     "id": "GN",
     "flag_url": "./assets/maps/flags/world-countries/flag_GN.svg",
@@ -2239,11 +2339,11 @@
     "numeric_code": "324",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Conakry"],
+      "fr_FR": ["Conakry"],
+      "es_ES": ["Conakri"],
+      "de_DE": ["Conakry"],
+      "pt_PT": ["Conacri"]
     }
   },
   {
@@ -2252,7 +2352,7 @@
       "fr_FR": ["Guinée-Bissau"],
       "es_ES": ["Guinea-Bisáu"],
       "de_DE": ["Guinea-Bissau"],
-      "pt_PT": ["República da Guiné-Bissau", "Guiné-Bissau"]
+      "pt_PT": [ "Guiné-Bissau","República da Guiné-Bissau"]
     },
     "id": "GW",
     "flag_url": "./assets/maps/flags/world-countries/flag_GW.svg",
@@ -2262,11 +2362,11 @@
     "numeric_code": "624",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bissau"],
+      "fr_FR": ["Bissau"],
+      "es_ES": ["Bisáu"],
+      "de_DE": ["Bissau"],
+      "pt_PT": ["Bissau"]
     }
   },
   {
@@ -2275,7 +2375,7 @@
       "fr_FR": ["Guyane"],
       "es_ES": ["Guyana"],
       "de_DE": ["Guyana"],
-      "pt_PT": ["República Cooperativa da Guiana", "Guiana", "Guyana"]
+      "pt_PT": ["Guyana","República Cooperativa da Guiana", "Guiana"]
     },
     "id": "GY",
     "flag_url": "./assets/maps/flags/world-countries/flag_GY.svg",
@@ -2285,11 +2385,11 @@
     "numeric_code": "328",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Georgetown"],
+      "fr_FR": ["Georgetown "],
+      "es_ES": ["Georgetown "],
+      "de_DE": ["Georgetown "],
+      "pt_PT": ["Georgetown "]
     }
   },
   {
@@ -2298,7 +2398,7 @@
       "fr_FR": ["Haïti"],
       "es_ES": ["Haití"],
       "de_DE": ["Haiti"],
-      "pt_PT": ["República do Haiti", "Haiti"]
+      "pt_PT": ["Haiti","República do Haiti"]
     },
     "id": "HT",
     "flag_url": "./assets/maps/flags/world-countries/flag_HT.svg",
@@ -2308,11 +2408,11 @@
     "numeric_code": "332",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Port-au-Prince"],
+      "fr_FR": ["Port-au-Prince"],
+      "es_ES": ["Puerto Príncipe"],
+      "de_DE": ["Port-au-Prince"],
+      "pt_PT": ["Porto Príncipe"]
     }
   },
   {
@@ -2321,10 +2421,7 @@
       "fr_FR": ["Ïles Heard-et-MacDonald"],
       "es_ES": ["Islas Heard y McDonald"],
       "de_DE": ["Heard und McDonaldinseln"],
-      "pt_PT": [
-        "Território das Ilhas Heard e McDonald",
-        "Ilha Heard e Ilhas McDonald"
-      ]
+      "pt_PT": ["Ilha Heard e Ilhas McDonald","Território das Ilhas Heard e McDonald"]
     },
     "id": "HM",
     "flag_url": "./assets/maps/flags/world-countries/flag_HM.svg",
@@ -2334,11 +2431,11 @@
     "numeric_code": "334",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Heard (arbitrary name, no cities, uninhabited)"],
+      "fr_FR": ["Heard (nom arbitraire, pas de villes, inhabité)","Heard"],
+      "es_ES": ["Heard (nombre arbitrario, sin pueblos, deshabitado)"],
+      "de_DE": ["Heard (willkürlicher Name, keine Städte, unbewohnt)","Heard"],
+      "pt_PT": ["Heard (nome arbitrário, sem cidades, desabitado)"]
     }
   },
   {
@@ -2347,11 +2444,7 @@
       "fr_FR": ["Vatican"],
       "es_ES": ["Ciudad del Vaticano"],
       "de_DE": ["Vatikanstadt"],
-      "pt_PT": [
-        "Estado da Cidade do Vaticano",
-        "Vaticano",
-        "Cidade do Vaticano"
-      ]
+      "pt_PT": ["Vaticano","Estado da Cidade do Vaticano","Cidade do Vaticano"]
     },
     "id": "VA",
     "flag_url": "./assets/maps/flags/world-countries/flag_VA.svg",
@@ -2361,11 +2454,11 @@
     "numeric_code": "336",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Vatican City"],
+      "fr_FR": ["Cité du Vatican"],
+      "es_ES": ["Cidade do Vaticano"],
+      "de_DE": ["Vatikanstadt","Città del Vaticano"],
+      "pt_PT": ["Cidade do Vaticano"]
     }
   },
   {
@@ -2374,7 +2467,7 @@
       "fr_FR": ["Honduras"],
       "es_ES": ["Honduras"],
       "de_DE": ["Honduras"],
-      "pt_PT": ["República das Honduras", "República de Honduras", "Honduras"]
+      "pt_PT": ["Honduras","República das Honduras", "República de Honduras"]
     },
     "id": "HN",
     "flag_url": "./assets/maps/flags/world-countries/flag_HN.svg",
@@ -2384,11 +2477,11 @@
     "numeric_code": "340",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Tegucigalpa"],
+      "fr_FR": ["Tegucigalpa"],
+      "es_ES": ["Tegucigalpa"],
+      "de_DE": ["Tegucigalpa"],
+      "pt_PT": ["Tegucigalpa"]
     }
   },
   {
@@ -2407,11 +2500,11 @@
     "numeric_code": "344",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Hong Kong"],
+      "fr_FR": ["Hong Kong"],
+      "es_ES": ["Hong Kong"],
+      "de_DE": ["Hong Kong"],
+      "pt_PT": ["Hong Kong"]
     }
   },
   {
@@ -2430,11 +2523,11 @@
     "numeric_code": "348",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Budapest"],
+      "fr_FR": ["Budapest"],
+      "es_ES": ["Budapest"],
+      "de_DE": ["Budapest"],
+      "pt_PT": ["Budapeste"]
     }
   },
   {
@@ -2453,11 +2546,11 @@
     "numeric_code": "352",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Reykjavik"],
+      "fr_FR": ["Reykjavik"],
+      "es_ES": ["Reikiavik"],
+      "de_DE": ["Reykjavík"],
+      "pt_PT": ["Reiquiavique"]
     }
   },
   {
@@ -2476,11 +2569,11 @@
     "numeric_code": "356",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["New Delhi"],
+      "fr_FR": ["New Delhi"],
+      "es_ES": ["Nueva Delhi"],
+      "de_DE": ["Neu-Delhi"],
+      "pt_PT": ["Nova Deli"]
     }
   },
   {
@@ -2499,25 +2592,20 @@
     "numeric_code": "360",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Jakarta"],
+      "fr_FR": ["Jakarta"],
+      "es_ES": ["Yakarta"],
+      "de_DE": ["Jakarta"],
+      "pt_PT": ["Jacarta"]
     }
   },
   {
     "name": {
-      "en_US": ["Islamic Republic of Iran", "Iran"],
-      "fr_FR": ["République islamique d'Iran", "Iran"],
-      "es_ES": ["República Islámica de Irán", "Irán"],
-      "de_DE": ["Islamische Republik Iran", "Iran"],
-      "pt_PT": [
-        "República Islâmica do Irã",
-        "República Islâmica do Irão",
-        "Irã",
-        "Irão"
-      ]
+      "en_US": ["Iran","Islamic Republic of Iran" ],
+      "fr_FR": ["Iran","République islamique d'Iran"],
+      "es_ES": ["Irán","República Islámica de Irán"],
+      "de_DE": ["Iran","Islamische Republik Iran"],
+      "pt_PT": ["Irã","República Islâmica do Irã","República Islâmica do Irão","Irão"]
     },
     "id": "IR",
     "flag_url": "./assets/maps/flags/world-countries/flag_IR.svg",
@@ -2527,20 +2615,20 @@
     "numeric_code": "364",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Tehran"],
+      "fr_FR": ["Téhéran"],
+      "es_ES": ["Teherán"],
+      "de_DE": ["Teheran"],
+      "pt_PT": ["Teerã"]
     }
   },
   {
     "name": {
       "en_US": ["Iraq"],
-      "fr_FR": ["République d'Irak", "Irak"],
+      "fr_FR": ["Irak","République d'Irak"],
       "es_ES": ["Irak"],
-      "de_DE": ["Republik Irak", "Irak"],
-      "pt_PT": ["República do Iraque", "Iraque"]
+      "de_DE": ["Irak","Republik Irak"],
+      "pt_PT": ["Iraque","República do Iraque"]
     },
     "id": "IQ",
     "flag_url": "./assets/maps/flags/world-countries/flag_IQ.svg",
@@ -2550,11 +2638,11 @@
     "numeric_code": "368",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Baghdad"],
+      "fr_FR": ["Bagdad"],
+      "es_ES": ["Bagdad"],
+      "de_DE": ["Bagdad"],
+      "pt_PT": ["Bagdá"]
     }
   },
   {
@@ -2563,7 +2651,7 @@
       "fr_FR": ["Irlande"],
       "es_ES": ["Irlanda"],
       "de_DE": ["Irland"],
-      "pt_PT": ["República da Irlanda", "Irlanda"]
+      "pt_PT": ["Irlanda","República da Irlanda"]
     },
     "id": "IE",
     "flag_url": "./assets/maps/flags/world-countries/flag_IE.svg",
@@ -2573,17 +2661,17 @@
     "numeric_code": "372",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Dublin"],
+      "fr_FR": ["Dublin"],
+      "es_ES": ["Dublín"],
+      "de_DE": ["Dublin"],
+      "pt_PT": ["Dublin"]
     }
   },
   {
     "name": {
       "en_US": ["Isle of Man"],
-      "fr_FR": ["Ïle de Man"],
+      "fr_FR": ["Île de Man"],
       "es_ES": ["Isla de Man"],
       "de_DE": ["Isle of Man"],
       "pt_PT": ["Ilha de Man"]
@@ -2596,11 +2684,11 @@
     "numeric_code": "833",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Douglas"],
+      "fr_FR": ["Douglas"],
+      "es_ES": ["Douglas"],
+      "de_DE": ["Douglas"],
+      "pt_PT": ["Douglas"]
     }
   },
   {
@@ -2609,7 +2697,7 @@
       "fr_FR": ["Israël"],
       "es_ES": ["Israel"],
       "de_DE": ["Israel"],
-      "pt_PT": ["Estado de Israel", "Israel"]
+      "pt_PT": ["Israel","Estado de Israel"]
     },
     "id": "IL",
     "flag_url": "./assets/maps/flags/world-countries/flag_IL.svg",
@@ -2619,17 +2707,17 @@
     "numeric_code": "376",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Jerusalem"],
+      "fr_FR": ["Jérusalem"],
+      "es_ES": ["Jerusalén"],
+      "de_DE": ["Jerusalem"],
+      "pt_PT": ["Jerusalém"]
     }
   },
   {
     "name": {
       "en_US": ["Italy"],
-      "fr_FR": ["italie"],
+      "fr_FR": ["Italie"],
       "es_ES": ["Italia"],
       "de_DE": ["Italien"],
       "pt_PT": ["República Italiana", "Itália"]
@@ -2642,11 +2730,11 @@
     "numeric_code": "380",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Rome"],
+      "fr_FR": ["Rome"],
+      "es_ES": ["Roma"],
+      "de_DE": ["Rom"],
+      "pt_PT": ["Roma"]
     }
   },
   {
@@ -2665,11 +2753,11 @@
     "numeric_code": "388",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kingston"],
+      "fr_FR": ["Kingston"],
+      "es_ES": ["Kingston"],
+      "de_DE": ["Kingston"],
+      "pt_PT": ["Kingston"]
     }
   },
   {
@@ -2688,11 +2776,11 @@
     "numeric_code": "392",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Tokyo","Tokyo Metropolis"],
+      "fr_FR": ["Tokyo","Métropole de Tokyo"],
+      "es_ES": ["Tokio","Metrópolis de Tokio"],
+      "de_DE": ["Tokyo", "Tokyo Metropolis"],
+      "pt_PT": ["Tóquio","Metrópole de Tóquio"]
     }
   },
   {
@@ -2711,11 +2799,11 @@
     "numeric_code": "832",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Saint Helier"],
+      "fr_FR": ["Saint-Hélier"],
+      "es_ES": ["Saint Helier"],
+      "de_DE": ["Saint Helier"],
+      "pt_PT": ["Santo Helério"]
     }
   },
   {
@@ -2734,11 +2822,11 @@
     "numeric_code": "400",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Amman"],
+      "fr_FR": ["Amman"],
+      "es_ES": ["Amman"],
+      "de_DE": ["Amán"],
+      "pt_PT": ["Amã"]
     }
   },
   {
@@ -2757,11 +2845,11 @@
     "numeric_code": "398",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Nur-Sultan","Astana"],
+      "fr_FR": ["Nour-Soultan"],
+      "es_ES": ["Nursultán"],
+      "de_DE": ["Nur-Sultan"],
+      "pt_PT": ["Nur-Sultã"]
     }
   },
   {
@@ -2780,11 +2868,11 @@
     "numeric_code": "404",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Nairobi"],
+      "fr_FR": ["Nairobi"],
+      "es_ES": ["Nairobi"],
+      "de_DE": ["Nairobi"],
+      "pt_PT": ["Nairóbi"]
     }
   },
   {
@@ -2803,11 +2891,11 @@
     "numeric_code": "296",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["South Tarawa"],
+      "fr_FR": ["Tarawa-Sud"],
+      "es_ES": ["Tarawa Sur"],
+      "de_DE": ["South Tarawa"],
+      "pt_PT": ["Taraua do Sul"]
     }
   },
   {
@@ -2826,11 +2914,11 @@
     "numeric_code": "408",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Pyongyang"],
+      "fr_FR": ["Pyongyang"],
+      "es_ES": ["Pionyang"],
+      "de_DE": ["Pjöngjang"],
+      "pt_PT": ["Pyongyang"]
     }
   },
   {
@@ -2849,11 +2937,11 @@
     "numeric_code": "410",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Seoul"],
+      "fr_FR": ["Séoul"],
+      "es_ES": ["Seúl"],
+      "de_DE": ["Seoul"],
+      "pt_PT": ["Seul"]
     }
   },
   {
@@ -2872,11 +2960,11 @@
     "numeric_code": "926",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Pristina"],
+      "fr_FR": ["Pristina"],
+      "es_ES": ["Pristina"],
+      "de_DE": ["Pristina"],
+      "pt_PT": ["Pristina"]
     }
   },
   {
@@ -2885,7 +2973,7 @@
       "fr_FR": ["Koweït"],
       "es_ES": ["Kuwait"],
       "de_DE": ["Kuwait"],
-      "pt_PT": ["Estado do Kuwait", "Kuwait"]
+      "pt_PT": ["Kuwait","Estado do Kuwait"]
     },
     "id": "KW",
     "flag_url": "./assets/maps/flags/world-countries/flag_KW.svg",
@@ -2895,11 +2983,11 @@
     "numeric_code": "414",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kuwait"],
+      "fr_FR": ["Koweït"],
+      "es_ES": ["Kuwait"],
+      "de_DE": ["Kuwait"],
+      "pt_PT": ["Kuwait"]
     }
   },
   {
@@ -2908,12 +2996,7 @@
       "fr_FR": ["Kirghizistan"],
       "es_ES": ["Kirguistán"],
       "de_DE": ["Kirgisistan"],
-      "pt_PT": [
-        "República Quirguiz",
-        "Quirguistão",
-        "Quirguizistão",
-        "Quirguízia"
-      ]
+      "pt_PT": ["Quirguízia","República Quirguiz","Quirguistão","Quirguizistão"]
     },
     "id": "KG",
     "flag_url": "./assets/maps/flags/world-countries/flag_KG.svg",
@@ -2923,11 +3006,11 @@
     "numeric_code": "417",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bishkek"],
+      "fr_FR": ["Bichkek"],
+      "es_ES": ["Biskek"],
+      "de_DE": ["Bischkek"],
+      "pt_PT": ["Bisqueque"]
     }
   },
   {
@@ -2936,7 +3019,7 @@
       "fr_FR": ["Laos"],
       "es_ES": ["Laos", "República Democrática Popular Lao"],
       "de_DE": ["Laos", "Demokratische Volksrepublik Laos"],
-      "pt_PT": ["República Democrática Popular do Laos", "Laos"]
+      "pt_PT": ["Laos","República Democrática Popular do Laos"]
     },
     "id": "LA",
     "flag_url": "./assets/maps/flags/world-countries/flag_LA.svg",
@@ -2946,11 +3029,11 @@
     "numeric_code": "418",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Vientiane"],
+      "fr_FR": ["Vientiane"],
+      "es_ES": ["Vientián"],
+      "de_DE": ["Vientiane"],
+      "pt_PT": ["Vientiane"]
     }
   },
   {
@@ -2969,11 +3052,11 @@
     "numeric_code": "428",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Riga"],
+      "fr_FR": ["Riga"],
+      "es_ES": ["Riga"],
+      "de_DE": ["Riga"],
+      "pt_PT": ["Riga"]
     }
   },
   {
@@ -2992,11 +3075,11 @@
     "numeric_code": "422",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Beirut"],
+      "fr_FR": ["Beyrouth"],
+      "es_ES": ["Beirut"],
+      "de_DE": ["Beirut"],
+      "pt_PT": ["Beirute"]
     }
   },
   {
@@ -3015,11 +3098,11 @@
     "numeric_code": "426",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Maseru"],
+      "fr_FR": ["Maseru"],
+      "es_ES": ["Maseru"],
+      "de_DE": ["Maseru"],
+      "pt_PT": ["Maseru"]
     }
   },
   {
@@ -3028,7 +3111,7 @@
       "fr_FR": ["Libéria"],
       "es_ES": ["Liberia"],
       "de_DE": ["Liberia"],
-      "pt_PT": ["República da Libéria", "Libéria"]
+      "pt_PT": ["Libéria","República da Libéria"]
     },
     "id": "LR",
     "flag_url": "./assets/maps/flags/world-countries/flag_LR.svg",
@@ -3038,11 +3121,11 @@
     "numeric_code": "430",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Monrovia"],
+      "fr_FR": ["Monrovia"],
+      "es_ES": ["Monrovia"],
+      "de_DE": ["Monrovia"],
+      "pt_PT": ["Monróvia"]
     }
   },
   {
@@ -3061,11 +3144,11 @@
     "numeric_code": "434",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Tripolis"],
+      "fr_FR": ["Tripoli"],
+      "es_ES": ["Trípoli"],
+      "de_DE": ["Tripolis"],
+      "pt_PT": ["Trípoli"]
     }
   },
   {
@@ -3084,11 +3167,11 @@
     "numeric_code": "438",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Vaduz"],
+      "fr_FR": ["Vaduz"],
+      "es_ES": ["Vaduz"],
+      "de_DE": ["Vaduz"],
+      "pt_PT": ["Vaduz"]
     }
   },
   {
@@ -3107,11 +3190,11 @@
     "numeric_code": "440",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Vilnius"],
+      "fr_FR": ["Vilnius"],
+      "es_ES": ["Vilna"],
+      "de_DE": ["Vilnius"],
+      "pt_PT": ["Vilnius"]
     }
   },
   {
@@ -3120,7 +3203,7 @@
       "fr_FR": ["Luxembourg"],
       "es_ES": ["Luxemburgo"],
       "de_DE": ["Luxemburg"],
-      "pt_PT": ["Grão-Ducado do Luxemburgo", "Luxemburgo"]
+      "pt_PT": ["Luxemburgo","Grão-Ducado do Luxemburgo"]
     },
     "id": "LU",
     "flag_url": "./assets/maps/flags/world-countries/flag_LU.svg",
@@ -3130,11 +3213,11 @@
     "numeric_code": "442",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Luxembourg"],
+      "fr_FR": ["Luxembourg"],
+      "es_ES": ["Luxembourg"],
+      "de_DE": ["Luxembourg"],
+      "pt_PT": ["Luxembourg"]
     }
   },
   {
@@ -3153,11 +3236,11 @@
     "numeric_code": "446",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Macao"],
+      "fr_FR": ["Macao"],
+      "es_ES": ["Macao"],
+      "de_DE": ["Macau"],
+      "pt_PT": ["Macau"]
     }
   },
   {
@@ -3166,7 +3249,7 @@
       "fr_FR": ["Madagascar"],
       "es_ES": ["Madagascar"],
       "de_DE": ["Madagaskar"],
-      "pt_PT": ["República de Madagáscar", "Madagáscar"]
+      "pt_PT": ["Madagáscar","República de Madagáscar"]
     },
     "id": "MG",
     "flag_url": "./assets/maps/flags/world-countries/flag_MG.svg",
@@ -3176,11 +3259,11 @@
     "numeric_code": "450",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Antananarivo"],
+      "fr_FR": ["Antananarivo"],
+      "es_ES": ["Antananarivo"],
+      "de_DE": ["Antananarivo"],
+      "pt_PT": ["Antananarivo"]
     }
   },
   {
@@ -3199,11 +3282,11 @@
     "numeric_code": "454",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Lilongwe"],
+      "fr_FR": ["Lilongwe"],
+      "es_ES": ["Lilongüe"],
+      "de_DE": ["Lilongwe"],
+      "pt_PT": ["Lilongué"]
     }
   },
   {
@@ -3222,11 +3305,11 @@
     "numeric_code": "458",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kuala Lumpur and Putrajaya (administrative capitals)"],
+      "fr_FR": ["Kuala Lumpur et Putrajaya (capitales administratives)"],
+      "es_ES": ["Kuala Lumpur y Putrajaya (capitales administrativas)"],
+      "de_DE": ["Kuala Lumpur und Putrajaya (Verwaltungshauptstädte)"],
+      "pt_PT": ["Kuala Lumpur e Putrajaya (capitais administrativas)"]
     }
   },
   {
@@ -3245,11 +3328,11 @@
     "numeric_code": "462",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Male"],
+      "fr_FR": ["Malé"],
+      "es_ES": ["Malé"],
+      "de_DE": ["Malé"],
+      "pt_PT": ["Malé"]
     }
   },
   {
@@ -3268,11 +3351,11 @@
     "numeric_code": "466",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bamako"],
+      "fr_FR": ["Bamako"],
+      "es_ES": ["Bamako"],
+      "de_DE": ["Bamako"],
+      "pt_PT": ["Bamaco"]
     }
   },
   {
@@ -3291,17 +3374,17 @@
     "numeric_code": "470",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Valletta"],
+      "fr_FR": ["La Valette"],
+      "es_ES": ["La Valeta"],
+      "de_DE": ["Valletta"],
+      "pt_PT": ["Valeta"]
     }
   },
   {
     "name": {
       "en_US": ["Marshall Islands"],
-      "fr_FR": ["Ïles Marshall"],
+      "fr_FR": ["Îles  Marshall"],
       "es_ES": ["Islas Marshall"],
       "de_DE": ["Marshallinseln"],
       "pt_PT": ["República das Ilhas Marshall", "Ilhas Marshall"]
@@ -3314,11 +3397,11 @@
     "numeric_code": "584",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Majuro"],
+      "fr_FR": ["Majuro"],
+      "es_ES": ["Majuro"],
+      "de_DE": ["Majuro"],
+      "pt_PT": ["Majuro"]
     }
   },
   {
@@ -3337,11 +3420,11 @@
     "numeric_code": "474",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Fort-de-France"],
+      "fr_FR": ["Fort-de-France"],
+      "es_ES": ["Fort-de-France"],
+      "de_DE": ["Fort-de-France"],
+      "pt_PT": ["Forte da França"]
     }
   },
   {
@@ -3360,11 +3443,11 @@
     "numeric_code": "478",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Nouakchott"],
+      "fr_FR": ["Nouakchott"],
+      "es_ES": ["Nuakchot"],
+      "de_DE": ["Nouakchott"],
+      "pt_PT": ["Nuaquexote"]
     }
   },
   {
@@ -3373,12 +3456,7 @@
       "fr_FR": ["Maurice"],
       "es_ES": ["Mauricio"],
       "de_DE": ["Mauritius"],
-      "pt_PT": [
-        "República da Maurícia",
-        "República de Maurício",
-        "Maurícia",
-        "Maurício "
-      ]
+      "pt_PT": ["Maurícia","República da Maurícia","República de Maurício","Maurício "]
     },
     "id": "MU",
     "flag_url": "./assets/maps/flags/world-countries/flag_MU.svg",
@@ -3388,11 +3466,11 @@
     "numeric_code": "480",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Port Louis"],
+      "fr_FR": ["Port-Louis"],
+      "es_ES": ["Port-Louis"],
+      "de_DE": ["Port-Louis"],
+      "pt_PT": ["Porto Luís"]
     }
   },
   {
@@ -3411,11 +3489,11 @@
     "numeric_code": "175",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Mamoudzou"],
+      "fr_FR": ["Dzaoudzi (de jure) et Mamoudzou (de facto)","Dzaoudzi","Mamoudzou"],
+      "es_ES": ["Mamoudzou"],
+      "de_DE": ["Mamoudzou"],
+      "pt_PT": ["Mamoudzou"]
     }
   },
   {
@@ -3434,11 +3512,11 @@
     "numeric_code": "484",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Mexico","Mexico City"],
+      "fr_FR": ["Mexico","Ville de Mexico"],
+      "es_ES": ["Ciudad de México"],
+      "de_DE": ["Mexiko-Stadt"],
+      "pt_PT": ["Cidade do México"]
     }
   },
   {
@@ -3447,7 +3525,7 @@
       "fr_FR": ["Micronésie"],
       "es_ES": ["Micronesia"],
       "de_DE": ["Mikronesien"],
-      "pt_PT": ["Estados Federados da Micronésia"]
+      "pt_PT": ["Micronésia","Estados Federados da Micronésia"]
     },
     "id": "FM",
     "flag_url": "./assets/maps/flags/world-countries/flag_FM.svg",
@@ -3457,11 +3535,11 @@
     "numeric_code": "583",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Palikir"],
+      "fr_FR": ["Palikir"],
+      "es_ES": ["Palikir"],
+      "de_DE": ["Palikir"],
+      "pt_PT": ["Paliquir"]
     }
   },
   {
@@ -3480,11 +3558,11 @@
     "numeric_code": "498",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Chisinau"],
+      "fr_FR": ["Chișinău"],
+      "es_ES": ["Chisináu"],
+      "de_DE": ["Chișinău"],
+      "pt_PT": ["Quixinau"]
     }
   },
   {
@@ -3503,11 +3581,11 @@
     "numeric_code": "492",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Monaco"],
+      "fr_FR": ["Monaco"],
+      "es_ES": ["Mónaco"],
+      "de_DE": ["Monaco"],
+      "pt_PT": ["Mónaco"]
     }
   },
   {
@@ -3526,11 +3604,11 @@
     "numeric_code": "496",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Ulan Bator"],
+      "fr_FR": ["Oulan-Bator"],
+      "es_ES": ["Ulán Bator"],
+      "de_DE": ["Ulaanbaatar"],
+      "pt_PT": ["Ulã Bator"]
     }
   },
   {
@@ -3549,11 +3627,11 @@
     "numeric_code": "499",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Podgorica"],
+      "fr_FR": ["Podgorica"],
+      "es_ES": ["Podgorica"],
+      "de_DE": ["Podgorica"],
+      "pt_PT": ["Podgoritza"]
     }
   },
   {
@@ -3572,11 +3650,11 @@
     "numeric_code": "500",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Plymouth (de jure) and Brades (de facto)","Plymouth","Brades"],
+      "fr_FR": ["Plymouth (de jure) et Brades (de facto)","Plymouth","Brades"],
+      "es_ES": ["Plymouth (de jure) y Brades (de facto)","Plymouth","Brades"],
+      "de_DE": ["Plymouth (de jure) und Brades (de facto)","Plymouth","Brades"],
+      "pt_PT": ["Plymouth (de jure) e Brades (de facto)","Plymouth","Brades"]
     }
   },
   {
@@ -3595,11 +3673,11 @@
     "numeric_code": "504",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Rabat"],
+      "fr_FR": ["Rabat"],
+      "es_ES": ["Rabat"],
+      "de_DE": ["Rabat"],
+      "pt_PT": ["Rabat"]
     }
   },
   {
@@ -3618,11 +3696,11 @@
     "numeric_code": "508",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Maputo"],
+      "fr_FR": ["Maputo"],
+      "es_ES": ["Maputo"],
+      "de_DE": ["Maputo"],
+      "pt_PT": ["Maputo"]
     }
   },
   {
@@ -3631,7 +3709,7 @@
       "fr_FR": ["Myanmar", "Birmanie"],
       "es_ES": ["Birmania", "Myanmar", "República de la Unión de Myanmar"],
       "de_DE": ["Myanmar", "Burma"],
-      "pt_PT": ["República da União de Myanmar", "Mianmar", "Birmânia"]
+      "pt_PT": ["Mianmar", "Birmânia","República da União de Myanmar"]
     },
     "id": "MM",
     "flag_url": "./assets/maps/flags/world-countries/flag_MM.svg",
@@ -3641,11 +3719,11 @@
     "numeric_code": "104",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Nay Pyi Taw"],
+      "fr_FR": ["Naypyidaw"],
+      "es_ES": ["Naipyidó"],
+      "de_DE": ["Naypyidaw"],
+      "pt_PT": ["Nepiedó"]
     }
   },
   {
@@ -3664,11 +3742,11 @@
     "numeric_code": "516",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Windhoek"],
+      "fr_FR": ["Windhoek"],
+      "es_ES": ["Windhoek"],
+      "de_DE": ["Windhoek"],
+      "pt_PT": ["Vinduque"]
     }
   },
   {
@@ -3687,11 +3765,11 @@
     "numeric_code": "520",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Yaren"],
+      "fr_FR": ["Yaren"],
+      "es_ES": ["Yaren"],
+      "de_DE": ["Yaren"],
+      "pt_PT": ["Yaren"]
     }
   },
   {
@@ -3710,11 +3788,11 @@
     "numeric_code": "524",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kathmandu"],
+      "fr_FR": ["Katmandou"],
+      "es_ES": ["Katmandú"],
+      "de_DE": ["Kathmandu"],
+      "pt_PT": ["Catmandu"]
     }
   },
   {
@@ -3733,11 +3811,11 @@
     "numeric_code": "528",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Amsterdam (capital) and The Hague (seat of government)","Amsterdam","The Hague"],
+      "fr_FR": ["Amsterdam (capitale) et La Haye (siège du gouvernement)","Amsterdam","La Haye"],
+      "es_ES": ["Ámsterdam (capital) y La Haya (sede del gobierno)","Ámsterdam","La Haya"],
+      "de_DE": ["Amsterdam (Hauptstadt) und Den Haag (Regierungssitz)","Amsterdam","Den Haag"],
+      "pt_PT": ["Amesterdão (capital) e Haia (sede do governo)","Amesterdão","Haia"]
     }
   },
   {
@@ -3756,11 +3834,11 @@
     "numeric_code": "540",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Noumea"],
+      "fr_FR": ["Nouméa"],
+      "es_ES": ["Numea"],
+      "de_DE": ["Nouméa"],
+      "pt_PT": ["Numeá"]
     }
   },
   {
@@ -3779,11 +3857,11 @@
     "numeric_code": "554",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Wellington"],
+      "fr_FR": ["Wellington"],
+      "es_ES": ["Wellington"],
+      "de_DE": ["Wellington"],
+      "pt_PT": ["Wellington"]
     }
   },
   {
@@ -3802,11 +3880,11 @@
     "numeric_code": "558",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Managua"],
+      "fr_FR": ["Managua"],
+      "es_ES": ["Managua"],
+      "de_DE": ["Managua"],
+      "pt_PT": ["Manágua"]
     }
   },
   {
@@ -3825,11 +3903,11 @@
     "numeric_code": "562",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Niamey"],
+      "fr_FR": ["Niamey"],
+      "es_ES": ["Niamey"],
+      "de_DE": ["Niamey"],
+      "pt_PT": ["Niamei"]
     }
   },
   {
@@ -3848,11 +3926,11 @@
     "numeric_code": "566",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Abuja"],
+      "fr_FR": ["Abuja"],
+      "es_ES": ["Abuya"],
+      "de_DE": ["Abuja"],
+      "pt_PT": ["Abuja"]
     }
   },
   {
@@ -3871,11 +3949,11 @@
     "numeric_code": "570",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Alofi"],
+      "fr_FR": ["Alofi"],
+      "es_ES": ["Alofi"],
+      "de_DE": ["Alofi"],
+      "pt_PT": ["Alofi"]
     }
   },
   {
@@ -3894,11 +3972,11 @@
     "numeric_code": "574",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kingston"],
+      "fr_FR": ["Kingston "],
+      "es_ES": ["Kingston "],
+      "de_DE": ["Kingston "],
+      "pt_PT": ["Kingston "]
     }
   },
   {
@@ -3917,11 +3995,11 @@
     "numeric_code": "807",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Skopje"],
+      "fr_FR": ["Skopje"],
+      "es_ES": ["Skopie"],
+      "de_DE": ["Skopje"],
+      "pt_PT": ["Escópia"]
     }
   },
   {
@@ -3930,11 +4008,7 @@
       "fr_FR": ["Îles Mariannes du Nord"],
       "es_ES": ["Islas Marianas del Norte"],
       "de_DE": ["Nördliche Marianen"],
-      "pt_PT": [
-        "Comunidade das Ilhas Marianas do Norte",
-        "Ilhas Marianas Setentrionais",
-        "Ilhas Marianas do Norte"
-      ]
+      "pt_PT": ["Ilhas Marianas do Norte","Comunidade das Ilhas Marianas do Norte","Ilhas Marianas Setentrionais"]
     },
     "id": "MP",
     "flag_url": "./assets/maps/flags/world-countries/flag_MP.svg",
@@ -3944,11 +4018,11 @@
     "numeric_code": "580",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Saipan"],
+      "fr_FR": ["Saipan"],
+      "es_ES": ["Saipan"],
+      "de_DE": ["Saipán"],
+      "pt_PT": ["Saipã"]
     }
   },
   {
@@ -3967,11 +4041,11 @@
     "numeric_code": "578",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Oslo"],
+      "fr_FR": ["Oslo"],
+      "es_ES": ["Oslo"],
+      "de_DE": ["Oslo"],
+      "pt_PT": ["Oslo"]
     }
   },
   {
@@ -3980,7 +4054,7 @@
       "fr_FR": ["Oman"],
       "es_ES": ["Omán"],
       "de_DE": ["Oman"],
-      "pt_PT": ["Sultanato de Omã", "Omã"]
+      "pt_PT": ["Omã","Sultanato de Omã"]
     },
     "id": "OM",
     "flag_url": "./assets/maps/flags/world-countries/flag_OM.svg",
@@ -3990,11 +4064,11 @@
     "numeric_code": "512",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
+      "en_US": ["Muscat"],
+      "fr_FR": ["Mascate"],
       "es_ES": [""],
       "de_DE": [""],
-      "pt_PT": [""]
+      "pt_PT": ["Mascate"]
     }
   },
   {
@@ -4013,11 +4087,11 @@
     "numeric_code": "586",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Islamabad"],
+      "fr_FR": ["Mascate"],
+      "es_ES": ["Mascate"],
+      "de_DE": ["Maskat"],
+      "pt_PT": ["Mascate"]
     }
   },
   {
@@ -4036,11 +4110,11 @@
     "numeric_code": "585",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Melekeok"],
+      "fr_FR": ["Melekeok "],
+      "es_ES": ["Melekeok "],
+      "de_DE": ["Melekeok "],
+      "pt_PT": ["Melequeoque "]
     }
   },
   {
@@ -4059,11 +4133,11 @@
     "numeric_code": "275",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["East Jerusalem (proclaimed) and Ramallah (de facto)", "East Jerusalem", "Ramallah"],
+      "fr_FR": ["Jérusalem-Est (proclamée) et Ramallah (de facto)","Jérusalem-Est","Ramallah"],
+      "es_ES": ["Jerusalén Este (proclamada) y Ramallah (de facto)","Jerusalén Este","Ramallah"],
+      "de_DE": ["Ost-Jerusalem (proklamiert) und Ramallah (de facto)","Ost-Jerusalem","Ramallah"],
+      "pt_PT": ["Jerusalém Oriental (proclamada) e Ramallah (de facto)","Jerusalém Oriental","Ramallah"]
     }
   },
   {
@@ -4082,11 +4156,11 @@
     "numeric_code": "591",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Panama City"],
+      "fr_FR": ["Panama"],
+      "es_ES": ["Ciudad de Panamá"],
+      "de_DE": ["Panama-Stadt"],
+      "pt_PT": ["Cidade do Panamá"]
     }
   },
   {
@@ -4095,11 +4169,7 @@
       "fr_FR": ["Papouasie-Nouvelle-Guinée"],
       "es_ES": ["Papúa Nueva Guinea"],
       "de_DE": ["Papua-Neuguinea"],
-      "pt_PT": [
-        "Estado Independente da Papua-Nova Guiné",
-        "Papua-Nova Guiné",
-        "Papuásia-Nova Guiné"
-      ]
+      "pt_PT": ["Papuásia-Nova Guiné","Estado Independente da Papua-Nova Guiné","Papua-Nova Guiné"]
     },
     "id": "PG",
     "flag_url": "./assets/maps/flags/world-countries/flag_PG.svg",
@@ -4109,11 +4179,11 @@
     "numeric_code": "598",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Port Moresby"],
+      "fr_FR": ["Port Moresby"],
+      "es_ES": ["Puerto Moresby"],
+      "de_DE": ["Port Moresby"],
+      "pt_PT": ["Porto Moresby"]
     }
   },
   {
@@ -4132,11 +4202,11 @@
     "numeric_code": "600",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Asuncion"],
+      "fr_FR": ["Asuncion"],
+      "es_ES": ["Asunción"],
+      "de_DE": ["Asunción"],
+      "pt_PT": ["Assunção"]
     }
   },
   {
@@ -4155,11 +4225,11 @@
     "numeric_code": "604",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Lima"],
+      "fr_FR": ["Lima"],
+      "es_ES": ["Lima"],
+      "de_DE": ["Lima"],
+      "pt_PT": ["Lima"]
     }
   },
   {
@@ -4178,11 +4248,11 @@
     "numeric_code": "608",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Manila"],
+      "fr_FR": ["Manille"],
+      "es_ES": ["Manila"],
+      "de_DE": ["Manila"],
+      "pt_PT": ["Manila"]
     }
   },
   {
@@ -4191,12 +4261,7 @@
       "fr_FR": ["Pitcairn"],
       "es_ES": ["Islas Pitcairn"],
       "de_DE": ["Pitcairninseln"],
-      "pt_PT": [
-        "Ilhas Pitcairn, Henderson, Ducie e Oeno",
-        "Grupo de Ilhas Pitcairn",
-        "Ilhas Pitcairn",
-        "Ilhas Picárnia"
-      ]
+      "pt_PT": ["Ilhas Picárnia","Ilhas Pitcairn, Henderson, Ducie e Oeno","Grupo de Ilhas Pitcairn","Ilhas Pitcairn"]
     },
     "id": "PN",
     "flag_url": "./assets/maps/flags/world-countries/flag_PN.svg",
@@ -4206,11 +4271,11 @@
     "numeric_code": "612",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Adamstown"],
+      "fr_FR": ["Adamstown"],
+      "es_ES": ["Adamstown"],
+      "de_DE": ["Adamstown"],
+      "pt_PT": ["Adamstown"]
     }
   },
   {
@@ -4229,11 +4294,11 @@
     "numeric_code": "616",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Warsaw"],
+      "fr_FR": ["Varsovie"],
+      "es_ES": ["Varsovia"],
+      "de_DE": ["Warschau"],
+      "pt_PT": ["Varsóvia"]
     }
   },
   {
@@ -4252,11 +4317,11 @@
     "numeric_code": "620",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Lisbon"],
+      "fr_FR": ["Lisbonne"],
+      "es_ES": ["Lisboa"],
+      "de_DE": ["Lissabon"],
+      "pt_PT": ["Lisboa"]
     }
   },
   {
@@ -4275,11 +4340,11 @@
     "numeric_code": "630",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["San Juan"],
+      "fr_FR": ["San Juan"],
+      "es_ES": ["San Juan"],
+      "de_DE": ["San Juan"],
+      "pt_PT": ["San Juan"]
     }
   },
   {
@@ -4298,11 +4363,11 @@
     "numeric_code": "634",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Doha"],
+      "fr_FR": ["Doha"],
+      "es_ES": ["Doha"],
+      "de_DE": ["Doha"],
+      "pt_PT": ["Doha"]
     }
   },
   {
@@ -4321,11 +4386,11 @@
     "numeric_code": "638",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Saint-Denis"],
+      "fr_FR": ["Saint-Denis"],
+      "es_ES": ["Saint-Denis"],
+      "de_DE": ["Saint-Denis"],
+      "pt_PT": ["São Dinis"]
     }
   },
   {
@@ -4344,11 +4409,11 @@
     "numeric_code": "642",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bucharest"],
+      "fr_FR": ["Bucarest"],
+      "es_ES": ["Bucarest"],
+      "de_DE": ["Bukarest"],
+      "pt_PT": ["Bucareste"]
     }
   },
   {
@@ -4367,11 +4432,11 @@
     "numeric_code": "643",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Moscow"],
+      "fr_FR": ["Moscou"],
+      "es_ES": ["Moscú"],
+      "de_DE": ["Moskau"],
+      "pt_PT": ["Moscovo"]
     }
   },
   {
@@ -4380,7 +4445,7 @@
       "fr_FR": ["Rwanda"],
       "es_ES": ["Ruanda"],
       "de_DE": ["Ruanda"],
-      "pt_PT": ["República de Ruanda", "República do Ruanda", "Ruanda"]
+      "pt_PT": ["Ruanda","República de Ruanda", "República do Ruanda"]
     },
     "id": "RW",
     "flag_url": "./assets/maps/flags/world-countries/flag_RW.svg",
@@ -4390,11 +4455,11 @@
     "numeric_code": "646",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kigali"],
+      "fr_FR": ["Kigali"],
+      "es_ES": ["Kigali"],
+      "de_DE": ["Kigali"],
+      "pt_PT": ["Quigali"]
     }
   },
   {
@@ -4413,20 +4478,20 @@
     "numeric_code": "652",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Gustavia"],
+      "fr_FR": ["Gustavia"],
+      "es_ES": ["Gustavia"],
+      "de_DE": ["Gustavia"],
+      "pt_PT": ["Gustávia"]
     }
   },
   {
     "name": {
-      "en_US": ["Saint Helena, Ascension and Tristan da Cunha"],
-      "fr_FR": ["Sainte-Hélène, Ascension et Tristan da Cunha"],
-      "es_ES": ["Santa Elena, Ascensión y Tristán de Acuña"],
-      "de_DE": ["St. Helena, Ascension und Tristan da Cunha"],
-      "pt_PT": ["Santa Helena, Ascensão e Tristão da Cunha", "Santa Helena"]
+      "en_US": ["Saint Helena, Ascension and Tristan da Cunha","Saint Helena","Ascension","Tristan da Cunha"],
+      "fr_FR": ["Sainte-Hélène, Ascension et Tristan da Cunha","Sainte-Hélène","Ascension", "Tristan da Cunha"],
+      "es_ES": ["Santa Elena, Ascensión y Tristán de Acuña","Santa Elena","Ascensión","Tristán de Acuña"],
+      "de_DE": ["Sankt Helena, Ascension und Tristan da Cunha","St. Helena, Ascension und Tristan da Cunha","Sankt Helena","St. Helena","Ascension","Tristan da Cunha"],
+      "pt_PT": ["Santa Helena, Ascensão e Tristão da Cunha", "Santa Helena","Ascensão","Tristão da Cunha"]
     },
     "id": "SH",
     "flag_url": "./assets/maps/flags/world-countries/flag_SH.svg",
@@ -4436,24 +4501,20 @@
     "numeric_code": "654",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Jamestown"],
+      "fr_FR": ["Jamestown"],
+      "es_ES": ["Jamestown"],
+      "de_DE": ["Jamestown"],
+      "pt_PT": ["Jamestown"]
     }
   },
   {
     "name": {
       "en_US": ["Saint Kitts and Nevis"],
-      "fr_FR": ["Saint-Kitts-et-Nevis"],
+      "fr_FR": ["Saint-Kitts-et-Nevis","Saint-Christophe-et-Nevis","Saint-Kitts-et-Nevis","Fédération de Saint-Christophe-et-Niévès"],
       "es_ES": ["San Cristóbal y Nieves"],
-      "de_DE": ["Saint Kitts und Nevis"],
-      "pt_PT": [
-        "Federação de São Cristóvão e Neves",
-        "São Cristóvão e Neves",
-        "São Cristóvão e Névis"
-      ]
+      "de_DE": ["Saint Kitts und Nevis","Sankt Christopher und Nevis"],
+      "pt_PT": ["São Cristóvão e Névis","Federação de São Cristóvão e Neves","São Cristóvão e Neves"]
     },
     "id": "KN",
     "flag_url": "./assets/maps/flags/world-countries/flag_KN.svg",
@@ -4463,11 +4524,11 @@
     "numeric_code": "659",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Basseterre"],
+      "fr_FR": ["Basseterre"],
+      "es_ES": ["Basseterre"],
+      "de_DE": ["Basseterre"],
+      "pt_PT": ["Basseterre"]
     }
   },
   {
@@ -4486,11 +4547,11 @@
     "numeric_code": "662",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Castries"],
+      "fr_FR": ["Castries"],
+      "es_ES": ["Castries"],
+      "de_DE": ["Castries"],
+      "pt_PT": ["Castries"]
     }
   },
   {
@@ -4509,11 +4570,11 @@
     "numeric_code": "663",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Marigot"],
+      "fr_FR": ["Marigot"],
+      "es_ES": ["Marigot"],
+      "de_DE": ["Marigot"],
+      "pt_PT": ["Marigot"]
     }
   },
   {
@@ -4522,11 +4583,7 @@
       "fr_FR": ["Saint-Pierre-et-Miquelon"],
       "es_ES": ["San Pedro y Miquelón"],
       "de_DE": ["Saint-Pierre und Miquelon"],
-      "pt_PT": [
-        "São Pedro e Miquelão",
-        "Saint-Pierre e Miquelon",
-        "Coletividade de Ultramar de São Pedro e Miquelão"
-      ]
+      "pt_PT": ["Saint-Pierre e Miquelon","São Pedro e Miquelão","Coletividade de Ultramar de São Pedro e Miquelão"]
     },
     "id": "PM",
     "flag_url": "./assets/maps/flags/world-countries/flag_PM.svg",
@@ -4536,11 +4593,11 @@
     "numeric_code": "666",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Saint-Pierre"],
+      "fr_FR": ["Saint-Pierre"],
+      "es_ES": ["San Pedro"],
+      "de_DE": ["Saint-Pierre"],
+      "pt_PT": ["São Pedro"]
     }
   },
   {
@@ -4559,11 +4616,11 @@
     "numeric_code": "670",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kingstown"],
+      "fr_FR": ["Kingstown"],
+      "es_ES": ["Kingstown"],
+      "de_DE": ["Kingstown"],
+      "pt_PT": ["Kingstown"]
     }
   },
   {
@@ -4572,7 +4629,7 @@
       "fr_FR": ["Samoa"],
       "es_ES": ["Samoa"],
       "de_DE": ["Samoa"],
-      "pt_PT": ["Estado Independente de Samoa", "Samoa"]
+      "pt_PT": ["Samoa","Estado Independente de Samoa"]
     },
     "id": "WS",
     "flag_url": "./assets/maps/flags/world-countries/flag_WS.svg",
@@ -4582,11 +4639,11 @@
     "numeric_code": "882",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Apia"],
+      "fr_FR": ["Apia"],
+      "es_ES": ["Apia"],
+      "de_DE": ["Apia"],
+      "pt_PT": ["Apia"]
     }
   },
   {
@@ -4595,12 +4652,7 @@
       "fr_FR": ["Saint-Marin"],
       "es_ES": ["San Marino"],
       "de_DE": ["San Marino"],
-      "pt_PT": [
-        "República de San Marino",
-        "São Marino",
-        "São Marinho",
-        "Sereníssima República de San Marino"
-      ]
+      "pt_PT": ["São Marino","República de San Marino","São Marinho","Sereníssima República de San Marino","São Marino","República de San Marino","São Marinho","Sereníssima República de San Marino"]
     },
     "id": "SM",
     "flag_url": "./assets/maps/flags/world-countries/flag_SM.svg",
@@ -4610,11 +4662,11 @@
     "numeric_code": "674",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["San Marino"],
+      "fr_FR": ["Ville de Saint-Marin"],
+      "es_ES": ["Ciudad de San Marino","San Marino"],
+      "de_DE": ["Stadt San Marino","San Marino"],
+      "pt_PT": ["São Marino","República de San Marino","São Marinho","Sereníssima República de San Marino"]
     }
   },
   {
@@ -4623,10 +4675,7 @@
       "fr_FR": ["Sao Tomé-et-Principe"],
       "es_ES": ["Santo Tomé y Príncipe"],
       "de_DE": ["São Tomé und Príncipe"],
-      "pt_PT": [
-        "República Democrática de São Tomé e Príncipe",
-        "São Tomé e Príncipe"
-      ]
+      "pt_PT": ["São Tomé e Príncipe","República Democrática de São Tomé e Príncipe"]
     },
     "id": "ST",
     "flag_url": "./assets/maps/flags/world-countries/flag_ST.svg",
@@ -4636,11 +4685,11 @@
     "numeric_code": "678",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Sao Tome"],
+      "fr_FR": ["São Tomé"],
+      "es_ES": ["Santo Tomé"],
+      "de_DE": ["São Tomé"],
+      "pt_PT": ["São Tomé"]
     }
   },
   {
@@ -4659,11 +4708,11 @@
     "numeric_code": "682",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Riyadh"],
+      "fr_FR": ["Riyad"],
+      "es_ES": ["Riad"],
+      "de_DE": ["Riad"],
+      "pt_PT": ["Riade"]
     }
   },
   {
@@ -4682,11 +4731,11 @@
     "numeric_code": "686",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Dakar"],
+      "fr_FR": ["Dakar"],
+      "es_ES": ["Dakar"],
+      "de_DE": ["Dakar"],
+      "pt_PT": ["Dacar"]
     }
   },
   {
@@ -4705,11 +4754,11 @@
     "numeric_code": "688",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Belgrade"],
+      "fr_FR": ["Belgrade"],
+      "es_ES": ["Belgrado"],
+      "de_DE": ["Belgrad"],
+      "pt_PT": ["Belgrado"]
     }
   },
   {
@@ -4718,12 +4767,7 @@
       "fr_FR": ["Seychelles"],
       "es_ES": ["Seychelles"],
       "de_DE": ["Seychellen"],
-      "pt_PT": [
-        "República das Seicheles",
-        "República das Seychelles",
-        "Seicheles",
-        "Seychelles"
-      ]
+      "pt_PT": ["Seychelles","República das Seicheles","República das Seychelles","Seicheles"]
     },
     "id": "SC",
     "flag_url": "./assets/maps/flags/world-countries/flag_SC.svg",
@@ -4733,11 +4777,11 @@
     "numeric_code": "690",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Victoria"],
+      "fr_FR": ["Victoria"],
+      "es_ES": ["Victoria"],
+      "de_DE": ["Victoria"],
+      "pt_PT": ["Vitória"]
     }
   },
   {
@@ -4756,11 +4800,11 @@
     "numeric_code": "694",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Freetown"],
+      "fr_FR": ["Freetown"],
+      "es_ES": ["Freetown"],
+      "de_DE": ["Freetown"],
+      "pt_PT": ["Freetown"]
     }
   },
   {
@@ -4769,7 +4813,7 @@
       "fr_FR": ["Singapour"],
       "es_ES": ["Singapur"],
       "de_DE": ["Singapur"],
-      "pt_PT": ["República de Singapura", "Singapura"]
+      "pt_PT": ["Singapura","República de Singapura"]
     },
     "id": "SG",
     "flag_url": "./assets/maps/flags/world-countries/flag_SG.svg",
@@ -4779,11 +4823,11 @@
     "numeric_code": "702",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Singapur"],
+      "fr_FR": ["Singapour"],
+      "es_ES": ["Singapur"],
+      "de_DE": ["Singapur"],
+      "pt_PT": ["Singapura"]
     }
   },
   {
@@ -4802,11 +4846,11 @@
     "numeric_code": "534",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Philipsburg"],
+      "fr_FR": ["Philipsburg "],
+      "es_ES": ["Philipsburg"],
+      "de_DE": ["Philipsburg"],
+      "pt_PT": ["Philipsburg"]
     }
   },
   {
@@ -4825,11 +4869,11 @@
     "numeric_code": "703",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bratislava"],
+      "fr_FR": ["Bratislava"],
+      "es_ES": ["Bratislava"],
+      "de_DE": ["Bratislava"],
+      "pt_PT": ["Bratislava"]
     }
   },
   {
@@ -4848,17 +4892,17 @@
     "numeric_code": "705",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Ljubljana"],
+      "fr_FR": ["Ljubljana"],
+      "es_ES": ["Liubliana"],
+      "de_DE": ["Ljubljana"],
+      "pt_PT": ["Liubliana"]
     }
   },
   {
     "name": {
       "en_US": ["Solomon Islands"],
-      "fr_FR": ["Îles Salomons"],
+      "fr_FR": ["Îles Salomon"],
       "es_ES": ["Islas Salomón"],
       "de_DE": ["Salomonen"],
       "pt_PT": ["Ilhas Salomão"]
@@ -4871,11 +4915,11 @@
     "numeric_code": "090",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Honiara"],
+      "fr_FR": ["Honiara"],
+      "es_ES": ["Honiara"],
+      "de_DE": ["Honiara"],
+      "pt_PT": ["Honiara"]
     }
   },
   {
@@ -4894,7 +4938,7 @@
     "numeric_code": "706",
     "independant": true,
     "capital": {
-      "en_US": [""],
+      "en_US": ["Mogadishu"],
       "fr_FR": [""],
       "es_ES": [""],
       "de_DE": [""],
@@ -4917,24 +4961,20 @@
     "numeric_code": "710",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Pretoria"],
+      "fr_FR": ["Mogadiscio"],
+      "es_ES": ["Mogadiscio"],
+      "de_DE": ["Mogadischu"],
+      "pt_PT": ["Mogadíscio"]
     }
   },
   {
     "name": {
       "en_US": ["South Georgia and the South Sandwich Islands"],
-      "fr_FR": ["Géorgie du Sud et les îles Sandwich du Sud"],
+      "fr_FR": ["Géorgie du Sud et les îles Sandwich du Sud","Géorgie du Sud","Îles Sandwich du Sud"],
       "es_ES": ["Islas Georgias del Sur y Sandwich del Sur"],
       "de_DE": ["Südgeorgien und die Südlichen Sandwichinseln"],
-      "pt_PT": [
-        "Ilhas Geórgia do Sul e Sandwich do Sul",
-        "Ilhas Geórgias do Sul e Sandwich do Sul",
-        "Ilhas Geórgia do Sul e Sanduíche do Sul"
-      ]
+      "pt_PT": ["Ilhas Geórgia do Sul e Sandwich do Sul","Ilhas Geórgias do Sul e Sandwich do Sul","Ilhas Geórgia do Sul e Sanduíche do Sul"]
     },
     "id": "GS",
     "flag_url": "./assets/maps/flags/world-countries/flag_GS.svg",
@@ -4944,11 +4984,11 @@
     "numeric_code": "239",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["King Edward Point"],
+      "fr_FR": ["King Edward Point"],
+      "es_ES": ["Base King Edward Point"],
+      "de_DE": ["King Edward Point"],
+      "pt_PT": ["Cabo Rei Eduardo"]
     }
   },
   {
@@ -4967,11 +5007,11 @@
     "numeric_code": "728",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Juba"],
+      "fr_FR": ["Djouba"],
+      "es_ES": ["Yuba"],
+      "de_DE": ["Juba"],
+      "pt_PT": ["Juba"]
     }
   },
   {
@@ -4990,11 +5030,11 @@
     "numeric_code": "724",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Madrid"],
+      "fr_FR": ["Madrid"],
+      "es_ES": ["Madrid"],
+      "de_DE": ["Madrid"],
+      "pt_PT": ["Madrid"]
     }
   },
   {
@@ -5003,12 +5043,7 @@
       "fr_FR": ["Sri Lanka"],
       "es_ES": ["Sri Lanka"],
       "de_DE": ["Sri Lanka"],
-      "pt_PT": [
-        "República Democrática Socialista do Sri Lanka",
-        "Sri Lanka",
-        "Sri Lanca",
-        "Seri Lanca"
-      ]
+      "pt_PT": ["Sri Lanka","República Democrática Socialista do Sri Lanka","Sri Lanca","Seri Lanca"]
     },
     "id": "LK",
     "flag_url": "./assets/maps/flags/world-countries/flag_LK.svg",
@@ -5018,11 +5053,11 @@
     "numeric_code": "144",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Sri Jayawardenapura Kotte (political and administrative) and Colombo (economic)","Sri Jayawardenapura Kotte","Colombo"],
+      "fr_FR": ["Sri Jayawardenapura Kotte (politique et administrative) et Colombo (économique)","Sri Jayawardenapura Kotte","Colombo"],
+      "es_ES": ["Sri Jayawardenapura Kotte (político y administrativo) y Colombo (económico)","Sri Jayawardenapura Kotte","Colombo"],
+      "de_DE": ["Sri Jayawardenapura Kotte (Politik und Verwaltung) und Colombo (Wirtschaft)","Sri Jayawardenapura Kotte","Colombo"],
+      "pt_PT": ["Sri Jayawardenapura Kotte (político e administrativo) e Colombo (económico)","Sri Jayawardenapura Kotte","Colombo"]
     }
   },
   {
@@ -5041,11 +5076,11 @@
     "numeric_code": "729",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Khartoum"],
+      "fr_FR": ["Khartoum"],
+      "es_ES": ["Jartum"],
+      "de_DE": ["Khartum"],
+      "pt_PT": ["Cartum"]
     }
   },
   {
@@ -5064,11 +5099,11 @@
     "numeric_code": "740",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Paramaribo"],
+      "fr_FR": ["Paramaribo"],
+      "es_ES": ["Paramaribo"],
+      "de_DE": ["Paramaribo"],
+      "pt_PT": ["Paramaribo"]
     }
   },
   {
@@ -5087,11 +5122,11 @@
     "numeric_code": "744",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Longyearbyen"],
+      "fr_FR": ["Longyearbyen"],
+      "es_ES": ["Longyearbyen"],
+      "de_DE": ["Longyearbyen"],
+      "pt_PT": ["Longyearbyen"]
     }
   },
   {
@@ -5110,7 +5145,7 @@
     "numeric_code": "752",
     "independant": true,
     "capital": {
-      "en_US": [""],
+      "en_US": ["Stockholm"],
       "fr_FR": [""],
       "es_ES": [""],
       "de_DE": [""],
@@ -5133,11 +5168,11 @@
     "numeric_code": "756",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Berne"],
+      "fr_FR": ["Stockholm"],
+      "es_ES": ["Estocolmo"],
+      "de_DE": ["Stockholm"],
+      "pt_PT": ["Estocolmo"]
     }
   },
   {
@@ -5146,7 +5181,7 @@
       "fr_FR": ["Syrie"],
       "es_ES": ["Siria", "República Árabe Siria"],
       "de_DE": ["Syrien", "Syrische Arabische Republik"],
-      "pt_PT": ["República Árabe Síria", "Síria"]
+      "pt_PT": ["Síria","República Árabe Síria"]
     },
     "id": "SY",
     "flag_url": "./assets/maps/flags/world-countries/flag_SY.svg",
@@ -5156,11 +5191,11 @@
     "numeric_code": "760",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Damascus"],
+      "fr_FR": ["Damas"],
+      "es_ES": ["Damasco"],
+      "de_DE": ["Damaskus"],
+      "pt_PT": ["Damasco"]
     }
   },
   {
@@ -5179,11 +5214,11 @@
     "numeric_code": "158",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Taipei"],
+      "fr_FR": ["Taipei"],
+      "es_ES": ["Taipéi"],
+      "de_DE": ["Taipeh"],
+      "pt_PT": ["Taipé"]
     }
   },
   {
@@ -5202,11 +5237,11 @@
     "numeric_code": "762",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Dushanbe"],
+      "fr_FR": ["Douchanbé"],
+      "es_ES": ["Dusambé"],
+      "de_DE": ["Duschanbe"],
+      "pt_PT": ["Duxambé"]
     }
   },
   {
@@ -5225,11 +5260,11 @@
     "numeric_code": "834",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Dodoma"],
+      "fr_FR": ["Dodoma"],
+      "es_ES": ["Dodoma"],
+      "de_DE": ["Dodoma"],
+      "pt_PT": ["Dodoma"]
     }
   },
   {
@@ -5248,11 +5283,11 @@
     "numeric_code": "764",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Bangkok"],
+      "fr_FR": ["Bangkok"],
+      "es_ES": ["Bangkok"],
+      "de_DE": ["Bangkok"],
+      "pt_PT": ["Banguecoque"]
     }
   },
   {
@@ -5271,11 +5306,11 @@
     "numeric_code": "626",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Dili"],
+      "fr_FR": ["Dili"],
+      "es_ES": ["Dili"],
+      "de_DE": ["Dili"],
+      "pt_PT": ["Díli"]
     }
   },
   {
@@ -5284,7 +5319,7 @@
       "fr_FR": ["Togo"],
       "es_ES": ["Togo"],
       "de_DE": ["Togo"],
-      "pt_PT": ["República Togolesa", "Togo"]
+      "pt_PT": ["Togo","República Togolesa"]
     },
     "id": "TG",
     "flag_url": "./assets/maps/flags/world-countries/flag_TG.svg",
@@ -5294,11 +5329,11 @@
     "numeric_code": "768",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Lome"],
+      "fr_FR": ["Lomé"],
+      "es_ES": ["Lomé"],
+      "de_DE": ["Lomé"],
+      "pt_PT": ["Lomé"]
     }
   },
   {
@@ -5317,11 +5352,11 @@
     "numeric_code": "772",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["None. Each of the three atolls (Atafu, Nukunonu and Fakaofo) has its own administrative center","Atafu","Nukunonu","Fakaofo"],
+      "fr_FR": ["Aucune. Chacun des trois atolls (Atafu, Nukunonu et Fakaofo) possède son propre centre administratif","Atafu","Nukunonu","Fakaofo"],
+      "es_ES": ["Ninguna. Cada uno de los tres atolones (Atafu, Nukunonu y Fakaofo) tiene su propio centro administrativo","Atafu","Nukunonu","Fakaofo"],
+      "de_DE": ["Keine. Jedes der drei Atolle (Atafu, Nukunonu und Fakaofo) hat sein eigenes Verwaltungszentrum","Atafu","Nukunonu","Fakaofo"],
+      "pt_PT": ["Nenhuma. Cada um dos três atóis (Atafu, Nukunonu e Fakaofo) tem o seu próprio centro administrativo","Atafu","Nukunonu","Fakaofo"]
     }
   },
   {
@@ -5340,11 +5375,11 @@
     "numeric_code": "776",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Nuku'alofa"],
+      "fr_FR": ["Nukuʻalofa"],
+      "es_ES": ["Nukualofa"],
+      "de_DE": ["Nukuʻalofa"],
+      "pt_PT": ["Nucualofa"]
     }
   },
   {
@@ -5363,11 +5398,11 @@
     "numeric_code": "780",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Port of Spain"],
+      "fr_FR": ["Port-d'Espagne","Port of Spain"],
+      "es_ES": ["Puerto España"],
+      "de_DE": ["Port of Spain"],
+      "pt_PT": ["Port of Spain"]
     }
   },
   {
@@ -5386,11 +5421,11 @@
     "numeric_code": "788",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Tunis"],
+      "fr_FR": ["Tunis"],
+      "es_ES": ["Túnez "],
+      "de_DE": ["Tunis"],
+      "pt_PT": ["Tunes"]
     }
   },
   {
@@ -5409,11 +5444,11 @@
     "numeric_code": "792",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Ankara"],
+      "fr_FR": ["Ankara"],
+      "es_ES": ["Ankara"],
+      "de_DE": ["Ankara"],
+      "pt_PT": ["Ancara"]
     }
   },
   {
@@ -5422,12 +5457,7 @@
       "fr_FR": ["Turkménistan"],
       "es_ES": ["Turkmenistán"],
       "de_DE": ["Turkmenistan"],
-      "pt_PT": [
-        "República do Turquemenistão",
-        "República do Turcomenistão",
-        "Turcomenistão",
-        "Turquemenistão"
-      ]
+      "pt_PT": ["Turcomenistão","República do Turquemenistão","República do Turcomenistão","Turquemenistão"]
     },
     "id": "TM",
     "flag_url": "./assets/maps/flags/world-countries/flag_TM.svg",
@@ -5437,11 +5467,11 @@
     "numeric_code": "795",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Ashgabat"],
+      "fr_FR": ["Achgabat"],
+      "es_ES": ["Asjabad"],
+      "de_DE": ["Aşgabat"],
+      "pt_PT": ["Asgabade"]
     }
   },
   {
@@ -5460,11 +5490,11 @@
     "numeric_code": "796",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Cockburn Town"],
+      "fr_FR": ["Cockburn Town"],
+      "es_ES": ["Cockburn Town"],
+      "de_DE": ["Cockburn Town"],
+      "pt_PT": ["Cockburn Town"]
     }
   },
   {
@@ -5483,11 +5513,11 @@
     "numeric_code": "798",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Funafuti"],
+      "fr_FR": ["Funafuti"],
+      "es_ES": ["Funafuti"],
+      "de_DE": ["Funafuti"],
+      "pt_PT": ["Funafuti"]
     }
   },
   {
@@ -5506,11 +5536,11 @@
     "numeric_code": "800",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kampala"],
+      "fr_FR": ["Kampala"],
+      "es_ES": ["Kampala"],
+      "de_DE": ["Kampala"],
+      "pt_PT": ["Campala"]
     }
   },
   {
@@ -5529,11 +5559,11 @@
     "numeric_code": "804",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Kyiv ","Kiev"],
+      "fr_FR": ["Kyiv ","Kiev","Kyjiw","Kyïv"],
+      "es_ES": ["Kyiv ","Kiev"],
+      "de_DE": ["Kyiv ","Kiev"],
+      "pt_PT": ["Kyiv ","Kiev","Quieve"]
     }
   },
   {
@@ -5552,31 +5582,19 @@
     "numeric_code": "784",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Abu Dhabi"],
+      "fr_FR": ["Abou Dabi","Abu Dhabi","Abou Dhabi","Aboû Dabî"],
+      "es_ES": ["Abu Dabi"],
+      "de_DE": ["Abu Dhabi"],
+      "pt_PT": ["Abu Dhabi"]
     }
   },
   {
     "name": {
-      "en_US": [
-        "United Kingdom",
-        "United Kingdom of Great Britain and Northern Ireland"
-      ],
-      "fr_FR": [
-        "Royaume-Unis",
-        "Royaume-Unis de Grande Bretagne et d'Irlande du Nord"
-      ],
-      "es_ES": [
-        "Reino Unido",
-        "Reino Unido de Gran Bretaña e Irlanda del Norte"
-      ],
-      "de_DE": [
-        "Vereinigtes Königreich",
-        "Vereinigtes Königreich von Großbritannien und Irland"
-      ],
+      "en_US": ["United Kingdom","United Kingdom of Great Britain and Northern Ireland"],
+      "fr_FR": ["Royaume-Unis","Royaume-Unis de Grande Bretagne et d'Irlande du Nord"],
+      "es_ES": ["Reino Unido","Reino Unido de Gran Bretaña e Irlanda del Norte"],
+      "de_DE": ["Vereinigtes Königreich","Vereinigtes Königreich von Großbritannien und Irland"],
       "pt_PT": ["Reino Unido da Grã-Bretanha e Irlanda do Norte", "Reino Unido"]
     },
     "id": "GB",
@@ -5587,11 +5605,11 @@
     "numeric_code": "826",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["London"],
+      "fr_FR": ["Londres"],
+      "es_ES": ["Londres"],
+      "de_DE": ["London"],
+      "pt_PT": ["Londres"]
     }
   },
   {
@@ -5610,11 +5628,11 @@
     "numeric_code": "840",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Washington D.C.","Washington"],
+      "fr_FR": ["Washington D.C.","Washington"],
+      "es_ES": ["Washington D.C.","Washington"],
+      "de_DE": ["Washington D.C.","Washington"],
+      "pt_PT": ["Washington D.C.","Washington"]
     }
   },
   {
@@ -5623,10 +5641,7 @@
       "fr_FR": ["Îles mineures éloignées des États-Unis"],
       "es_ES": ["Islas Ultramarinas Menores de los Estados Unidos"],
       "de_DE": ["United States Minor Outlying Islands"],
-      "pt_PT": [
-        "Ilhas Menores Distantes dos Estados Unidos",
-        "Ilhas Menores Afastadas dos Estados Unidos"
-      ]
+      "pt_PT": ["Ilhas Menores Distantes dos Estados Unidos","Ilhas Menores Afastadas dos Estados Unidos"]
     },
     "id": "UM",
     "flag_url": "./assets/maps/flags/world-countries/flag_UM.svg",
@@ -5636,11 +5651,11 @@
     "numeric_code": "581",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Johnston Atoll (only inhabited island)","Johnston Atoll"],
+      "fr_FR": ["Atoll Johnston (seule ile habitée)","Atoll Johnston"],
+      "es_ES": ["Atolón Johnston (única isla habitada)","Atolón Johnston"],
+      "de_DE": ["Johnston-Atoll (einzige bewohnte Insel)","Johnston-Atoll"],
+      "pt_PT": ["Johnston Atoll (apenas ilha habitada)","Atol Johnston"]
     }
   },
   {
@@ -5659,11 +5674,11 @@
     "numeric_code": "858",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Montevideo"],
+      "fr_FR": ["Montevideo"],
+      "es_ES": ["Montevideo"],
+      "de_DE": ["Montevideo"],
+      "pt_PT": ["Montevidéu"]
     }
   },
   {
@@ -5682,11 +5697,11 @@
     "numeric_code": "860",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Tashkent"],
+      "fr_FR": ["Ouzbékistan"],
+      "es_ES": ["Uzbekistán"],
+      "de_DE": ["Usbekistan"],
+      "pt_PT": ["Uzbequistão"]
     }
   },
   {
@@ -5695,7 +5710,7 @@
       "fr_FR": ["Vanuatu"],
       "es_ES": ["Vanuatu"],
       "de_DE": ["Vanuatu"],
-      "pt_PT": ["República de Vanuatu", "Vanuatu"]
+      "pt_PT": ["Vanuatu","República de Vanuatu"]
     },
     "id": "VU",
     "flag_url": "./assets/maps/flags/world-countries/flag_VU.svg",
@@ -5705,11 +5720,11 @@
     "numeric_code": "548",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Port Vila"],
+      "fr_FR": ["Port-Vila"],
+      "es_ES": ["Port Vila"],
+      "de_DE": ["Port Vila"],
+      "pt_PT": ["Porto Vila"]
     }
   },
   {
@@ -5728,11 +5743,11 @@
     "numeric_code": "862",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Caracas"],
+      "fr_FR": ["Caracas"],
+      "es_ES": ["Caracas"],
+      "de_DE": ["Caracas"],
+      "pt_PT": ["Caracas"]
     }
   },
   {
@@ -5741,12 +5756,7 @@
       "fr_FR": ["Viêt Nam", "Vietnam"],
       "es_ES": ["Vietnam", "República Socialista de Vietnam"],
       "de_DE": ["Vietnam", "Sozialistische Republik Vietnam"],
-      "pt_PT": [
-        "República Socialista do Vietname",
-        "República Socialista do Vietnã",
-        "Vietnã",
-        "Vietname"
-      ]
+      "pt_PT": ["Vietname","República Socialista do Vietname","República Socialista do Vietnã","Vietnã"]
     },
     "id": "VN",
     "flag_url": "./assets/maps/flags/world-countries/flag_VN.svg",
@@ -5756,11 +5766,11 @@
     "numeric_code": "704",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Hanoi"],
+      "fr_FR": ["Hanoï"],
+      "es_ES": ["Hanói"],
+      "de_DE": ["Hanoi"],
+      "pt_PT": ["Hanói"]
     }
   },
   {
@@ -5779,11 +5789,11 @@
     "numeric_code": "092",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Road Town"],
+      "fr_FR": ["Road Town"],
+      "es_ES": ["Road Town"],
+      "de_DE": ["Road Town"],
+      "pt_PT": ["Road Town"]
     }
   },
   {
@@ -5802,11 +5812,11 @@
     "numeric_code": "850",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Charlotte Amalie"],
+      "fr_FR": ["Charlotte-Amélie"],
+      "es_ES": ["Charlotte Amalie","Carlota Amalia"],
+      "de_DE": ["Charlotte Amalie"],
+      "pt_PT": ["Charlotte Amalie","Carlota Amália)"]
     }
   },
   {
@@ -5825,11 +5835,11 @@
     "numeric_code": "876",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Mata Utu"],
+      "fr_FR": ["Mata Utu"],
+      "es_ES": ["Mata Utu"],
+      "de_DE": ["Mata Utu"],
+      "pt_PT": ["Mata Utu"]
     }
   },
   {
@@ -5848,11 +5858,11 @@
     "numeric_code": "732",
     "independant": false,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["El-Aaiun","Laâyoune"],
+      "fr_FR": ["Laâyoune"],
+      "es_ES": ["El Aaiún","Laâyoune"],
+      "de_DE": ["El Aaiún","Laâyoune"],
+      "pt_PT": ["El Aiune","Laâyoune"]
     }
   },
   {
@@ -5861,7 +5871,7 @@
       "fr_FR": ["Yémen"],
       "es_ES": ["Yemen"],
       "de_DE": ["Jemen"],
-      "pt_PT": ["República do Iémen", "Iémen"]
+      "pt_PT": ["Iémen","República do Iémen"]
     },
     "id": "YE",
     "flag_url": "./assets/maps/flags/world-countries/flag_YE.svg",
@@ -5871,11 +5881,11 @@
     "numeric_code": "887",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Sana'a (Houthi government) and Aden (internationally recognized government)","Sana'a","Aden"],
+      "fr_FR": ["Sanaa (gouvernement houthi) et Aden (gouvernement internationalement reconnu)","Sanaa","Aden"],
+      "es_ES": ["Sana'a (gobierno Houthi) y Aden (gobierno reconocido internacionalmente)","Sana'a","Aden"],
+      "de_DE": ["Sanaa (Huthi-Regierung) und Aden (international anerkannte Regierung)","Sanaa","Aden"],
+      "pt_PT": ["Sana'a (governo de Houthi) e Aden (governo internacionalmente reconhecido)","Sana'a","Aden"]
     }
   },
   {
@@ -5894,11 +5904,11 @@
     "numeric_code": "894",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Lusaka"],
+      "fr_FR": ["Lusaka"],
+      "es_ES": ["Lusaka"],
+      "de_DE": ["Lusaka"],
+      "pt_PT": ["Lusaca"]
     }
   },
   {
@@ -5917,11 +5927,11 @@
     "numeric_code": "716",
     "independant": true,
     "capital": {
-      "en_US": [""],
-      "fr_FR": [""],
-      "es_ES": [""],
-      "de_DE": [""],
-      "pt_PT": [""]
+      "en_US": ["Harare"],
+      "fr_FR": ["Harare"],
+      "es_ES": ["Harare"],
+      "de_DE": ["Harare"],
+      "pt_PT": ["Harare"]
     }
   }
 ]
