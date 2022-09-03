@@ -16,11 +16,13 @@ import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentsModule } from './shared/components/components.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 let matModules: any[] = [
   MatRippleModule,
   MatDialogModule,
-  MatSelectModule
+  MatSelectModule,
+  MatSnackBarModule
 ]
 
 const firebase = environment.production? [provideFirebaseApp(() => initializeApp(environment.firebase)),

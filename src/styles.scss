@@ -163,10 +163,11 @@ body {
 }
 
 html {
-  &.cdk-global-scrollblock{
+  &.cdk-global-scrollblock {
     position: static;
     overflow-y: hidden;
   }
+
   @apply text-current-color;
   color-scheme: var(--color-scheme);
 
@@ -300,6 +301,15 @@ mat-dialog-container,
 .mat-expansion-panel-header {
   border-end-end-radius: 0 !important;
   border-end-start-radius: 0 !important;
+}
+
+
+.mat-snack-bar-container {
+  background-color: var(--light-background) !important;
+
+  &.error {
+    background-color: var(--map-land-error) !important;
+  }
 }
 
 @include customMixins.scrollbar('.mat-select-panel', true);
