@@ -32,7 +32,7 @@ export class SightseeingComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
-    setTimeout(() => this.headerDisplayService.setPosition("relative"));
+    setTimeout(() => this.headerDisplayService.setPosition("fixed"));
 
     this.route.queryParams.subscribe(queryParameter => {
       if (!queryParameter) return; // If there is no value then skip
