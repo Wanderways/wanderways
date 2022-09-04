@@ -32,6 +32,7 @@
     "sidenav-last-news":"Dernières nouvelles",
     "sidenav-roadmap":"Roadmap",
     "sidenav-learn-more":"En savoir plus",
-    "sidenav-announces":"Annonces"
+    "sidenav-announces":"Annonces",
+    "time-trial-area-already-found":"Vous avez déjà trouvé '{$PH}'."
   }
 }

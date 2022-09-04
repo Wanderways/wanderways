@@ -32,6 +32,7 @@
     "sidenav-last-news":"Last news",
     "sidenav-roadmap":"Roadmap",
     "sidenav-learn-more":"Learn more",
-    "sidenav-announces":"Announces"
+    "sidenav-announces":"Announces",
+    "time-trial-area-already-found":"You've already found '{$PH}'"
   }
 }
