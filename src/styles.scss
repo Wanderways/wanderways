@@ -201,6 +201,43 @@ img {
   user-drag: none;
 }
 
+
+.error,
+.won,
+.found,
+.selected {
+  .zone {
+    stroke-width: calc(var(--land-stroke) * 5);
+  }
+}
+
+
+.error {
+  fill: var(--map-land-error);
+  background-color: var(--map-error);
+  .zone {
+    stroke: var(--map-land-error);
+  }
+}
+
+.won {
+  fill: var(--map-land-won);
+  background-color: var(--map-won);
+  .zone {
+    stroke: var(--map-land-won);
+  }
+}
+
+.separator {
+  fill: none;
+  stroke: white;
+}
+
+.zone {
+  fill: transparent;
+  stroke-dasharray: 3px;
+}
+
 .land {
   fill: var(--map-land);
   background-color: var(--map-land);
@@ -213,22 +250,28 @@ img {
 }
 
 .found {
-  fill: var(--map-land-found);
-  background-color: var(--map-land-found);
+  &,
+  .land {
+    fill: var(--map-land-found);
+    background-color: var(--map-land-found);
+  }
+
+  .zone {
+    stroke: var(--map-land-found);
+  }
 }
-
-.selected {
-
+.selected{
   &,
   .land {
     fill: var(--map-land-selected);
     background-color: var(--map-land-selected);
   }
-
   .zone {
-    stroke-width: calc(var(--land-stroke) * 5);
+    stroke: var(--map-land-selected);
   }
 }
+
+
 
 .group-selected {
   &.land {
@@ -245,25 +288,6 @@ img {
   }
 }
 
-.error {
-  fill: var(--map-land-error);
-  background-color: var(--map-error);
-}
-
-.won {
-  fill: var(--map-land-won);
-  background-color: var(--map-won);
-}
-
-.separator {
-  fill: none;
-  stroke: white;
-}
-
-.zone {
-  fill: transparent;
-  stroke-dasharray: 3px;
-}
 
 // Material overrides
 mat-dialog-container {
