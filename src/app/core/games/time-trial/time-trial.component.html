@@ -50,6 +50,11 @@
       </mat-expansion-panel-header>
       <app-data-list [originList]="originList" [foundList]="foundList" [currentSelected]="currentSelected" [inGame]="true" [maxHeight]="'10rem'" (onSelectedRow)="onSelectedRow($event)"></app-data-list>
     </mat-expansion-panel>
+    <!-- TEST START -->
+    <button (click)="testAdd(1)">Test 1</button>
+    <button (click)="testAdd(10)">Test 10</button>
+    <!-- TEST END -->
   </mat-accordion>
 
 </ng-template>
+

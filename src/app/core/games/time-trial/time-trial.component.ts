@@ -90,7 +90,7 @@ export class TimeTrialComponent implements OnInit {
       return this.addFoundResult(result);
 
     // If an extanded name exists then stops
-    if (this.extendedNameExist(currentInput, result))return;
+    if (this.extendedNameExist(currentInput, result)) return;
 
     // If already found then error message
     this.snackbarService.addMessage({ message: $localize`:@@time-trial-area-already-found:You've already found '${this.i18nService.getCurrentLocal(result.name)[0]}'`, acceptButton: "Okay", options: { panelClass: ["error"], duration: 2000 } })
@@ -101,7 +101,7 @@ export class TimeTrialComponent implements OnInit {
 
   private addFoundResult(result: MapData): void {
     this.foundList.push(result!);
-    this.toFindList.filter(e => e.id !== result!.id);
+    this.toFindList=this.toFindList.filter(e => e.id !== result!.id);
     this.currentSelected = result;
     colorArea(result.id, AreaStatus.FOUND);
     this.clearInput();
@@ -129,4 +129,19 @@ export class TimeTrialComponent implements OnInit {
   clearInput() {
     this.userInput.reset("");
   }
+
+  /**
+   * TEST PURPOSE START
+   */
+  testAdd(max : number) {
+    let index = 0;
+    if(!this.toFindList[0])return;
+    do {
+      this.addFoundResult(this.toFindList[0]);
+      index++;
+    } while (index < max && this.toFindList[1]);
+  }
+  /**
+   * TEST PURPOSE STOP
+   */
 }

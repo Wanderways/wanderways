@@ -88,4 +88,8 @@ export class TimerComponent implements OnInit {
     if (this.timerDuration === 0) return 100;
     return (this.currentValue / this.timerDuration) * 100;
   }
+
+  test(){
+    this.currentValue-=60;
+  }
 }
