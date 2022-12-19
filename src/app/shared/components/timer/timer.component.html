@@ -1,10 +1,24 @@
-<div class="relative m-0" (click)="test()">
-    <span class="absolute h-full w-full flex justify-center items-center text-xs">{{currentReadableValue}}</span>
-    <svg id="svg" viewBox="0 0 200 200" width="200px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <circle #timerCircle id="bar" [attr.r]="RAYON" cx="100" cy="100" fill="transparent"
-        transform="rotate(-90) translate(-200 0)"
-        [style.stroke]="currentStage"
-        [style.stroke-dasharray]="CIRCUMFERENCE"
-        [style.stroke-dashoffset]="((100-currentValueAsPercentage)/100)*CIRCUMFERENCE"></circle>
-    </svg>
-</div>
+<span>{{ currentReadableValue }}</span>
+<svg
+  id="svg"
+  viewBox="0 0 200 200"
+  width="200px"
+  height="200px"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle
+    #timerCircle
+    id="bar"
+    [attr.r]="RAYON"
+    cx="100"
+    cy="100"
+    fill="transparent"
+    transform="rotate(-90) translate(-200 0)"
+    [style.stroke]="currentStage"
+    [style.stroke-dasharray]="CIRCUMFERENCE"
+    [style.stroke-dashoffset]="
+      ((100 - currentValueAsPercentage) / 100) * CIRCUMFERENCE
+    "
+  ></circle>
+</svg>

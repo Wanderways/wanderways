@@ -1,18 +1,33 @@
-:host{
+:host {
+  display: flex;
+  position: relative;
+  margin: 0;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    width: -moz-fit-content;
-    width: fit-content;
-    #svg {
-        display: block;
-        position: relative;
-        width: auto;
-        height: 100%;
-        max-height: 60px;
-        circle {
-            transition: stroke-dashoffset .2s linear;
-            stroke-width: 22px;
-        }
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  #svg {
+    display: block;
+    position: relative;
+    width: auto;
+    height: 100%;
+    max-height: 60px;
+
+    circle {
+      transition: stroke-dashoffset .2s linear;
+      stroke-width: 22px;
     }
+  }
 }

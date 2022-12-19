@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, HostListener, Input, OnInit, Output, SimpleChanges } from '@angular/core';
 import { AdjustingInterval } from '../../utils/AdjustingInterval';
 @Component({
   selector: 'app-timer',
@@ -6,6 +6,10 @@ import { AdjustingInterval } from '../../utils/AdjustingInterval';
   styleUrls: ['./timer.component.scss']
 })
 export class TimerComponent implements OnInit {
+  @HostListener("click")
+  onClick() {
+    this.test()
+  }
   @Input('timerDuration') timerDuration: number = 300;
   @Output('onCurrentValueChanges') currentValue: number = 0
   currentReadableValue: string = "";
@@ -89,7 +93,7 @@ export class TimerComponent implements OnInit {
     return (this.currentValue / this.timerDuration) * 100;
   }
 
-  test(){
-    this.currentValue-=60;
+  test() {
+    this.currentValue -= 60;
   }
 }
