@@ -1,28 +1,34 @@
-:host{
-    position: relative;
-    cursor: pointer;
-    -webkit-user-select:none;
-    user-select: none;
-    flex-grow : 1;
-    .proposition-line{
-        gap: 0.5rem;
-        padding: 0.5rem;
-        border-radius: 0.25rem;
-        display: flex;
-        align-items: center;
-        span{
-            text-transform: uppercase;
-        }
-        &.selected{color: #FFFFFF;;
-        }
+:host {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  flex-grow: 1;
+
+  .proposition-line {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+
+    span {
+      text-transform: uppercase;
     }
-    #proposition-container{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        bottom: 100%;
-        background-color: var(--dark-background);
-        border-radius: 0.25rem;
+
+    &.selected {
+      color: #FFFFFF;
+      ;
     }
+  }
+
+  #proposition-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 100%;
+    background-color: var(--dark-background);
+    border-radius: 0.25rem;
+  }
 }

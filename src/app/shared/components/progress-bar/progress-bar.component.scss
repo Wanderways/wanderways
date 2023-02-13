@@ -1,37 +1,50 @@
 :host {
-    .progress-bar {
-        display: flex;
-        align-items: center;
-        gap: 0.25rem;
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
 
-        img {
-            filter: brightness(25);
-        }
+    img {
+      filter: brightness(25);
     }
 
-    .progress-bar-container {
-        position: relative;
-        background-color: #FFFFFF1A;
-        overflow: hidden;
-        height: 6px;
-
-        .current-progress-bar {
-            position: absolute;
-            left: 0;
-            height: 100%;
-            transition: width .2s ease-in;
-        }
+    #current-found {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 500;
     }
+
+    #objective {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 100;
+    }
+  }
+
+  .progress-bar-container {
+    position: relative;
+    background-color: #FFFFFF1A;
+    overflow: hidden;
+    height: 6px;
+    border-radius: 0.25rem;
+
+    .current-progress-bar {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      transition: width .2s ease-in;
+    }
+  }
 }
 
 .high {
-    background-color: green;
+  background-color: green;
 }
 
 .medium {
-    background-color: orange;
+  background-color: orange;
 }
 
 .low {
-    background-color: red;
+  background-color: red;
 }
