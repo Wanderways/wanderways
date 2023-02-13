@@ -3,12 +3,12 @@
   (displaySideMenuChange)="displaySideNav = !displaySideNav" [behavior]="'reactive'" [direction]="'left'">
   <div id="sidenav-header" header>
     <ng-container *ngTemplateOutlet="header_content"></ng-container>
-    <div id="close-sidenav-button" matRipple  class="rounded cursor-pointer select-none"
+    <div id="close-sidenav-button" matRipple
       (click)="displaySideNav = !displaySideNav">
       <img id="close-button" src="./assets/icons/close.svg" alt="close button icon" class="svg-current-color mx-0" />
     </div>
   </div>
-  <div main class="nav-container flex flex-col">
+  <div main class="nav-container">
     <ng-container [ngTemplateOutlet]="nav_links" [ngTemplateOutletContext]="{links:navLinks}"></ng-container>
   </div>
   <ng-container footer>
