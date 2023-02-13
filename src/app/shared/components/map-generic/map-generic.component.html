@@ -1,43 +1,49 @@
 <ng-container *ngIf="loadedMap !== undefined; else loading">
 
-  <svg #mapRef id="map-container" [class.visible-border]="visibleBorder" [attr.xlmns]="loadedMap.xlmns" attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
-  [class.panning]="mouseStates.isPanned"
-  (wheel)="wheelEvent($event)" (pointerdown)="panningBegin($event)" (pointerup)="panningEnd($event)" (pointerleave)="pointerMove($event)"  (pointermove)="pointerMove($event)">
-    <g #groupRef id="scaled-map-container" >
+  <svg #mapRef id="map-container" [class.visible-border]="visibleBorder" [attr.xlmns]="loadedMap.xlmns"
+    attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
+    [class.panning]="mouseStates.isPanned" (wheel)="wheelEvent($event)" (pointerdown)="panningBegin($event)"
+    (pointerup)="panningEnd($event)" (pointerleave)="pointerMove($event)" (pointermove)="pointerMove($event)">
+    <g #groupRef id="scaled-map-container">
       <path *ngFor="let path of loadedMap.contentPath" id="{{ path.id }}" (click)="areaClick(path.id)"
         class="{{ path.class }}" [attr.d]="path.d" />
-      <g *ngFor="let groupe of loadedMap.contentGroup" id="{{ groupe.id }}"  class="{{ groupe.class }}" (click)="areaClick(groupe.id)">
-        <path *ngFor="let groupePath of groupe.contentPath" id="{{ groupePath.id }}"
-          class="{{ groupePath.class }}" [attr.d]="groupePath.d" />
+      <g *ngFor="let groupe of loadedMap.contentGroup" id="{{ groupe.id }}" class="{{ groupe.class }}"
+        (click)="areaClick(groupe.id)">
+        <path *ngFor="let groupePath of groupe.contentPath" id="{{ groupePath.id }}" class="{{ groupePath.class }}"
+          [attr.d]="groupePath.d" />
       </g>
     </g>
   </svg>
-  <div id="map-control-box">
-    <div>
-      <button id="zoom-in" class="rounded-t" (pointerdown)="scaleClick(true)" (pointerup)="zoomStop()" (pointerleave)="zoomStop()">
-        <img id="zoom-in-icon" src="./assets/icons/plus.svg" alt="zoom in button" class="mx-0">
+  <div id="map-control-container">
+    <div class="map-control-box">
+      <button id="zoom-in" class="map-control-button" (pointerdown)="scaleClick(true)" (pointerup)="zoomStop()"
+        (pointerleave)="zoomStop()">
+        <img id="zoom-in-icon" class="map-control-button-icon" src="./assets/icons/plus.svg" alt="zoom in button">
       </button>
       <hr>
-      <button id="zoom-out" class="rounded-b" (pointerdown)="scaleClick(false)" (pointerup)="zoomStop()" (pointerleave)="zoomStop()">
-        <img id="zoom-out-icon" src="./assets/icons/minus.svg" alt="zoom out button" class="mx-0">
+      <button id="zoom-out" class="map-control-button" (pointerdown)="scaleClick(false)" (pointerup)="zoomStop()"
+        (pointerleave)="zoomStop()">
+        <img id="zoom-out-icon" class="map-control-button-icon" src="./assets/icons/minus.svg" alt="zoom out button">
       </button>
     </div>
-    <div  >
-      <button id="reset-transform" (click)="resetTransform()">
-        <img id="reset-transform-icon" src="./assets/icons/current_location.svg" alt="reset transform button" class="mx-0">
+    <div class="map-control-box">
+      <button id="reset-transform" class="map-control-button" (click)="resetTransform()">
+        <img id="reset-transform-icon" class="map-control-button-icon" src="./assets/icons/current_location.svg"
+          alt="reset transform button">
       </button>
     </div>
   </div>
 </ng-container>
-<div class="consultation  bg-dark {{consultationSide}}" *ngIf="canCurrentSelectedBeDisplayed(currentSelected)" (mouseenter)="mouseEnterConsultation()">
-    <div class="font-thin text-xs" i18n="@@name">Name</div>
-    <div class="font-medium">{{ currentSelected!.name | i18n}}</div>
-    <hr style="grid-column: 1/3;">
-    <div class="font-thin text-xs" i18n="@@flag">Flag</div>
-    <img style="max-height: 3rem;" src="{{ currentSelected!.flag_url }}" alt="Flag of {{ currentSelected!.name | i18n}}">
-    <hr style="grid-column: 1/3;">
-    <div class="font-thin text-xs" i18n="@@main-city">Main city</div>
-    <div class="font-medium">{{ currentSelected!.capital | i18n}}</div>
+<div class="consultation  bg-dark {{consultationSide}}" *ngIf="canCurrentSelectedBeDisplayed(currentSelected)"
+  (mouseenter)="mouseEnterConsultation()">
+  <div class="label" i18n="@@name">Name</div>
+  <div class="value">{{ currentSelected!.name | i18n}}</div>
+  <hr>
+  <div class="label" i18n="@@flag">Flag</div>
+  <img class="flag" src="{{ currentSelected!.flag_url }}" alt="Flag of {{ currentSelected!.name | i18n}}">
+  <hr>
+  <div class="label" i18n="@@main-city">Main city</div>
+  <div class="value">{{ currentSelected!.capital | i18n}}</div>
 
 </div>
 
