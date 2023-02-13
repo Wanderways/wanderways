@@ -22,126 +22,9 @@ $svg-invert-white: 1;
 $svg-invert-white: 1;
 $svg-invert-white: 1;
 
-@layer base {
-  .default {
-    --color-scheme: dark;
-    --light-background: var(--theme-default-background-light);
-    --dark-background: var(--theme-default-background-dark);
-    --current-color: var(--theme-default-text-color);
-
-    /* SVG related */
-    --svg-invert: 100%;
-    --svg-sepia: 64%;
-    --svg-saturate: 2%;
-    --svg-hue-rotate: 3deg;
-    --svg-brightness: 104%;
-    --svg-contrast: 101%;
-
-    /* Map related */
-    --map-land: #08080833;
-    --map-land-stroke: #ffffffff;
-    --map-land-found: #347b98ff;
-    --map-group-selected: #fdfdfd4f;
-    --map-land-selected: #fdfdfdff;
-    --map-land-error: #be2d0dff;
-    --map-land-won: #fccb1aff;
-  }
-
-  .dark {
-    --color-scheme: dark;
-    --light-background: var(--theme-dark-background-light);
-    --dark-background: var(--theme-dark-background-dark);
-    --current-color: var(--theme-dark-text-color);
-
-    /* SVG related */
-    --svg-invert: 100%;
-    --svg-sepia: 64%;
-    --svg-saturate: 2%;
-    --svg-hue-rotate: 3deg;
-    --svg-brightness: 104%;
-    --svg-contrast: 101%;
-
-    /* Map related */
-    --map-land: #80808033;
-    --map-land-stroke: #ffffffff;
-    --map-land-found: #347b98ff;
-    --map-land-selected: #fdfdfdff;
-    --map-group-selected: #fdfdfd4f;
-    --map-land-error: #be2d0dff;
-    --map-land-won: #fccb1aff;
-  }
-}
-
-@layer utilities {
-  .current-bg-color {
-    background-image: linear-gradient(180deg,
-        var(--dark-background) 0%,
-        var(--light-background) 100%);
-    background-color: var(--light-background);
-  }
-
-  .bg-default-theme {
-    background-image: linear-gradient(180deg,
-        var(--theme-default-background-dark) 0%,
-        var(--theme-default-background-light) 100%);
-  }
-
-  .bg-dark-theme {
-    background-image: linear-gradient(180deg,
-        var(--theme-dark-background-dark) 0%,
-        var(--theme-dark-background-light) 100%);
-  }
-
-  .bg-candy-theme,
-  .bg-candy-theme-text {
-    background-image: linear-gradient(225deg,
-        var(--candy-primary) 0%,
-        var(--candy-secondary) 100%);
-  }
-
-  .bg-violetta-theme,
-  .bg-violetta-theme-text {
-    background-image: linear-gradient(45deg,
-        var(--violetta-primary) 0%,
-        var(--violetta-secondary) 100%);
-  }
-
-  .bg-candy-theme-text,
-  .bg-violetta-theme-text {
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-  }
-
-  .bg-dark {
-    background-color: var(--dark-background);
-  }
-
-  .bg-light {
-    background-color: var(--light-background);
-  }
-
-  .candy-text-color,
-  .violetta-text-color {
-    -webkit-text-fill-color: transparent;
-  }
-
-  .candy-text-color {
-    @apply bg-candy-theme;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-
-  .violetta-text-color {
-    @apply bg-violetta-theme;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-}
 
 :root {
   pointer-events: all;
-  --theme-default-background-light: #c4e0e5;
-  --theme-default-background-dark: #4ca1af;
-  --theme-default-text-color: #ffffff;
 
   --theme-dark-background-light: #243b55;
   --theme-dark-background-dark: #141e30;
@@ -154,7 +37,31 @@ $svg-invert-white: 1;
   --candy-secondary: #fccb1a;
 
   --land-stroke: 0.4px;
+
+
+  --color-scheme: dark;
+  --light-background: var(--theme-dark-background-light);
+  --dark-background: var(--theme-dark-background-dark);
+  --current-color: var(--theme-dark-text-color);
+
+  /* SVG related */
+  --svg-invert: 100%;
+  --svg-sepia: 64%;
+  --svg-saturate: 2%;
+  --svg-hue-rotate: 3deg;
+  --svg-brightness: 104%;
+  --svg-contrast: 101%;
+
+  /* Map related */
+  --map-land: #80808033;
+  --map-land-stroke: #ffffffff;
+  --map-land-found: #347b98ff;
+  --map-land-selected: #fdfdfdff;
+  --map-group-selected: #fdfdfd4f;
+  --map-land-error: #be2d0dff;
+  --map-land-won: #fccb1aff;
 }
+
 
 html,
 body {
@@ -168,18 +75,78 @@ html {
     overflow-y: hidden;
   }
 
-  @apply text-current-color;
+  color: var(--current-color);
   color-scheme: var(--color-scheme);
 
   body {
-    @apply flex flex-col;
-    @apply m-0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
   }
 }
 
+.current-bg-color {
+  background-image: linear-gradient(180deg,
+      var(--dark-background) 0%,
+      var(--light-background) 100%);
+  background-color: var(--light-background);
+}
+
+.bg-dark-theme {
+  background-image: linear-gradient(180deg,
+      var(--theme-dark-background-dark) 0%,
+      var(--theme-dark-background-light) 100%);
+}
+
+.bg-candy-theme,
+.bg-candy-theme-text {
+  background-image: linear-gradient(225deg,
+      var(--candy-primary) 0%,
+      var(--candy-secondary) 100%);
+}
+
+.bg-violetta-theme,
+.bg-violetta-theme-text {
+  background-image: linear-gradient(45deg,
+      var(--violetta-primary) 0%,
+      var(--violetta-secondary) 100%);
+}
+
+.bg-candy-theme-text,
+.bg-violetta-theme-text {
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.bg-dark {
+  background-color: var(--dark-background);
+}
+
+.bg-light {
+  background-color: var(--light-background);
+}
+
+.candy-text-color,
+.violetta-text-color {
+  -webkit-text-fill-color: transparent;
+}
+
+.candy-text-color {
+  @apply bg-candy-theme;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.violetta-text-color {
+  @apply bg-violetta-theme;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 #app-background {
-  @apply current-bg-color;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -215,6 +182,7 @@ img {
 .error {
   fill: var(--map-land-error);
   background-color: var(--map-error);
+
   .zone {
     stroke: var(--map-land-error);
   }
@@ -223,6 +191,7 @@ img {
 .won {
   fill: var(--map-land-won);
   background-color: var(--map-won);
+
   .zone {
     stroke: var(--map-land-won);
   }
@@ -250,6 +219,7 @@ img {
 }
 
 .found {
+
   &,
   .land {
     fill: var(--map-land-found);
@@ -260,12 +230,15 @@ img {
     stroke: var(--map-land-found);
   }
 }
-.selected{
+
+.selected {
+
   &,
   .land {
     fill: var(--map-land-selected);
     background-color: var(--map-land-selected);
   }
+
   .zone {
     stroke: var(--map-land-selected);
   }

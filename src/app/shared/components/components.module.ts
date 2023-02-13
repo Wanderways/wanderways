@@ -4,7 +4,6 @@ import { LanguageSelectorComponent } from './language-selector/language-selector
 import { MapTileComponent } from './map-tile/map-tile.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TagDisplayerComponent } from './tag-displayer/tag-displayer.component';
-import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
 import { RouterModule } from '@angular/router';
 import { DialogsModule } from './dialogs/dialogs.module';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
@@ -18,7 +17,6 @@ const components : any[] = [
   MapTileComponent,
   SideMenuComponent,
   TagDisplayerComponent,
-  ThemeSelectorComponent,
   ProgressBarComponent,
   TimerComponent,
   MapGenericComponent,
