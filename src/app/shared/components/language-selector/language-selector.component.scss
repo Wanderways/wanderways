@@ -5,14 +5,15 @@
     user-select: none;
     flex-grow : 1;
     .proposition-line{
-        @apply  gap-2 p-2 rounded;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
         display: flex;
         align-items: center;
         span{
             text-transform: uppercase;
         }
-        &.selected{
-            @apply text-white;
+        &.selected{color: #FFFFFF;;
         }
     }
     #proposition-container{
@@ -22,6 +23,6 @@
         width: 100%;
         bottom: 100%;
         background-color: var(--dark-background);
-        @apply rounded;
+        border-radius: 0.25rem;
     }
 }
