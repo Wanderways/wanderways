@@ -1,27 +1,53 @@
-# LeMondePasDiplomatique
+# WanderWays
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+Wanderways is a project who's purpose is to enable geography passionates to learn maps in a fun way.
 
-## Development server
+## Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Frontend
 
-## Code scaffolding
+Languages :
+- TypeScript
+- SCSS
+- Graphql
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+|Technology/Framework|Versions|Usage|
+|-|-|-|
+|[Angular](https://angular.io/docs)|13|General frontend|
+|[Apollo](https://www.apollographql.com/)||
 
-## Build
+### Backend
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Languages :
+- Rust
 
-## Running unit tests
+|Technology|Versions|Usage|
+|-|-|-|
+|[Juniper]()||Graphql backend server|
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Infrastructure
+|Technology|Versions|Usage|
+|-|-|-|
+|[Google domain](https://angular.io/docs)||Domain name registration and maintenance|
+|[Firebase](https://angular.io/docs)||Online host for the frontend|
 
-## Running end-to-end tests
+## Organization
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Team
 
-## Further help
+The team is made up of 3 people :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Development pole :
+- Arno Bidet
+- Arthur Manneville
+
+UX/UI pole:
+- Chloé Bidet
+
+## Decisions
+
+### Why we didn't use leaflet
+
+- Specific Geojson for our needs are hard to find
+- I18n
+- Legacy
