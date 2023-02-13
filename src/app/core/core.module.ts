@@ -12,6 +12,7 @@ import { TimeTrialComponent } from './games/time-trial/time-trial.component';
 import { PipesModule } from '../shared/pipes/pipes.module';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EndGameComponent } from './games/end-game/end-game.component';
 
 let components : any[] = [
   HomeComponent,
@@ -25,7 +26,8 @@ let matModules : any[]=[
 ]
 @NgModule({
   declarations: [
-    ...components
+    ...components,
+    EndGameComponent
   ],
   imports: [
     PipesModule,
