@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
 interface NavLink {
   isLink: boolean,
   link: string,
-  icon: string,
+  icon?: string,
   label: string,
   isDisabled: boolean,
   catLink: {
@@ -120,22 +120,18 @@ const navLink: NavLink[] = [
       }
     ]
   }];
-const footerLinks: NavLink[] = [{
-  isLink: false,
-  link: "",
-  icon: "./assets/icons/logo.svg",
-  label: "Learn your maps",
-  isDisabled: false,
-  catLink: [
-    {
-      link: "/learn-more",
-      label: $localize`:@@sidenav-learn-more:Learn more`,
-      isDisabled: true
-    },
-    {
-      link: "/announces",
-      label: $localize`:@@sidenav-announces:Announces`,
-      isDisabled: true
-    }
-  ]
-}];
+const footerLinks: NavLink[] = [
+  {
+    isLink: true,
+    link: "/learn-more",
+    label: $localize`:@@sidenav-learn-more:Learn more`,
+    isDisabled: true,
+    catLink: []
+  },
+  {
+    isLink: true,
+    link: "/announces",
+    label: $localize`:@@sidenav-announces:Announces`,
+    isDisabled: true,
+    catLink: []
+  }];
