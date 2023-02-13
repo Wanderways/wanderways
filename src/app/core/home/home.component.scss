@@ -1,60 +1,76 @@
-:host{
+:host {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: min(1392px, 100vw);
+  z-index: 1;
+
+  #home-rotating-maps-container {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+
+    #home-rotating-maps {
+      display: flex;
+      width: 200vw;
+      transform: rotate(20deg) translateY(-20px);
+      -webkit-mask-image: radial-gradient(circle at 100% 0%, #000000, transparent 90%);
+      mask-image: radial-gradient(circle at 100% 0%, #000000, transparent 90%);
+
+      img {
+        image-rendering: pixelated;
+        animation: move-left 20s infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+
+  #home-presentation-text {
+    letter-spacing: 0.1em;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    flex : 1 0 auto;
-    width: 100%;
-    max-width: min(1392px, 100vw);
+    align-items: flex-start;
+    margin-top: 25vh;
+    padding: 0 1rem;
     z-index: 1;
-    #home-rotating-maps-container{
-        position: absolute;
-        pointer-events: none;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        overflow: hidden;
-        -webkit-user-select: none;
-        user-select: none;
-        #home-rotating-maps{
-            display: flex;
-            width: 200vw;
-            transform: rotate(20deg) translateY(-20px);
-            -webkit-mask-image: radial-gradient(circle at 100% 0%,#000000, transparent 90%);
-            mask-image: radial-gradient(circle at 100% 0%,#000000, transparent 90%);
-            img{
-                image-rendering: pixelated;
-                animation: move-left 20s infinite;
-                animation-timing-function : linear;
-            }
-        }
+
+    #home-welcome {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      text-transform: uppercase;
     }
-    #home-presentation-text{
-        @apply tracking-widest;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 25vh;
-        padding: 0 1rem;
-        z-index: 1;
-        #home-welcome{
-            @apply text-xl;
-            text-transform: uppercase;
-        }
-        #home-title{
-            @apply text-5xl font-semibold;
-            text-transform: uppercase;
-        }
-        #home-button-see-maps{
-            @apply px-4 py-3 rounded-lg;
-            @apply text-white;
-            align-self: flex-end;
-            text-transform: uppercase;
-        }
+
+    #home-title {
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 600;
+      text-transform: uppercase;
     }
+
+    #home-button-see-maps {
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      color: #FFFFFF;
+      align-self: flex-end;
+      text-transform: uppercase;
+    }
+  }
 
 }
 
 @keyframes move-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
   }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

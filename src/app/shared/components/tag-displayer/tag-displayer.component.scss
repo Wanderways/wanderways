@@ -1,37 +1,71 @@
 :host {
-  @apply flex flex-col self-end;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+
   .tag-groups-container {
-    @apply my-2 flex flex-col gap-1;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
     span {
-      @apply font-light capitalize text-xs;
+      font-weight: 300;
+      text-transform: capitalize;
+      font-size: 0.75rem;
+      line-height: 1rem;
+
     }
+
     .tag-group {
-      @apply flex gap-4 flex-wrap self-stretch justify-end;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-self: stretch;
+      justify-content: flex-end;
+
       label {
-        @apply flex gap-1 items-center cursor-pointer;
+        display: flex;
+        gap:0.25rem;
+        align-items: center;
+        cursor: pointer;
       }
 
       .tag {
-        @apply flex gap-1 items-center cursor-pointer p-2 rounded;
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+
         &.bg-violetta-theme {
           color: white;
         }
       }
     }
   }
+
   .save-filter-button {
-    @apply flex gap-1 items-center cursor-pointer self-end;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    cursor: pointer;
+    align-self: flex-end;
   }
+
   &.rtl {
     .tag-groups-container {
       align-items: flex-end;
     }
+
     .save-filter-button {
       display: flex;
       justify-content: flex-end;
     }
   }
-  &.displayed{
+
+  &.displayed {
     padding: 0.5rem;
     border: 1px solid #8888880f;
     border-radius: 1rem 0 1rem 1rem;

@@ -23,7 +23,7 @@
     grid-area: miscellaneous-tile;
     display: flex;
     flex-direction: column;
-    @apply gap-2;
+    gap: 0.5rem;
 
     mat-expansion-panel-header {
       height: 2rem;

@@ -3,7 +3,7 @@
         overflow-y: auto;
         scrollbar-color: auto ;
         &::-webkit-scrollbar {
-            @apply w-3;
+            width: 0.75rem;
         }
 
         &::-webkit-scrollbar-track {

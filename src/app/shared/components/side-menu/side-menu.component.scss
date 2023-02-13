@@ -35,7 +35,7 @@
   @include customMixins.scrollbar('.side-menu-container', false);
 
   .side-menu-container {
-    @apply px-6;
+    padding: 0 1.5rem 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     position: sticky;
