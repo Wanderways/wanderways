@@ -1,5 +1,5 @@
 {
-  "name": "learn-your-maps",
+  "name": "wanderways",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,7 @@
     "es": "ng serve --configuration=es-ES --port 4203",
     "pt": "ng serve --configuration=pt-PT --port 4204",
     "test": "ng test",
-    "fb-t": "ng build --localize && firebase hosting:channel:deploy learn-your-maps-test",
+    "fb-t": "ng build --localize && firebase hosting:channel:deploy wanderways-test",
     "fb-d": "ng build --localize && firebase deploy"
   },
   "private": true,

@@ -1,14 +1,14 @@
 {
   "targets": {
-    "learn-your-maps": {
+    "wanderways": {
       "hosting": {
-        "learn-your-maps": [
-          "learn-your-maps"
+        "wanderways": [
+          "wanderways"
         ]
       }
     }
   },
   "projects": {
-    "default": "learn-your-maps"
+    "default": "wanderways"
   }
 }
