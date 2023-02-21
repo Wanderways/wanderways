@@ -29,7 +29,6 @@
     "alpha_3": "AFG",
     "group": "as",
     "numeric_code": "004",
-    "independant": true,
     "capital": {
       "en_US": ["Kabul", "Pashto", "Dari"],
       "fr_FR": ["Kaboul", "Pachtou", "Dari"],
@@ -52,7 +51,6 @@
     "alpha_3": "ALA",
     "group": "eu",
     "numeric_code": "248",
-    "independant": false,
     "capital": {
       "en_US": ["Mariehamn"],
       "fr_FR": ["Mariehamn", "Maarianhamina"],
@@ -75,7 +73,6 @@
     "alpha_3": "ALB",
     "group": "eu",
     "numeric_code": "008",
-    "independant": true,
     "capital": {
       "en_US": ["Tirana"],
       "fr_FR": ["Tirana", "Tiranë"],
@@ -98,7 +95,6 @@
     "alpha_3": "DZA",
     "group": "af",
     "numeric_code": "012",
-    "independant": true,
     "capital": {
       "en_US": ["Algiers", "Dzayer", "Alger"],
       "fr_FR": ["Alger", "Ldzayer"],
@@ -121,7 +117,6 @@
     "alpha_3": "ASM",
     "group": "oc",
     "numeric_code": "016",
-    "independant": false,
     "capital": {
       "en_US": ["Pago Pago"],
       "fr_FR": ["Pago Pago"],
@@ -148,7 +143,6 @@
     "alpha_3": "AND",
     "group": "eu",
     "numeric_code": "020",
-    "independant": true,
     "capital": {
       "en_US": ["Andorra la Vella"],
       "fr_FR": ["Andorre-la-Vieille"],
@@ -171,7 +165,6 @@
     "alpha_3": "AGO",
     "group": "af",
     "numeric_code": "024",
-    "independant": true,
     "capital": {
       "en_US": ["Luanda"],
       "fr_FR": ["Luanda", "Louanda", "São Paulo da Assunção de Loanda"],
@@ -194,7 +187,6 @@
     "alpha_3": "AIA",
     "group": "na",
     "numeric_code": "660",
-    "independant": false,
     "capital": {
       "en_US": ["The Valley"],
       "fr_FR": ["The Valley"],
@@ -217,7 +209,6 @@
     "alpha_3": "ATA",
     "group": "an",
     "numeric_code": "010",
-    "independant": false,
     "capital": {
       "en_US": [
         "McMurdo Station (biggest station, not formal capital)",
@@ -252,7 +243,6 @@
     "alpha_3": "ATG",
     "group": "na",
     "numeric_code": "028",
-    "independant": true,
     "capital": {
       "en_US": ["Saint John's", "St. John's"],
       "fr_FR": ["Saint John's", "St. John's"],
@@ -275,7 +265,6 @@
     "alpha_3": "ARG",
     "group": "sa",
     "numeric_code": "032",
-    "independant": true,
     "capital": {
       "en_US": ["Buenos Aires"],
       "fr_FR": ["Buenos Aires"],
@@ -298,7 +287,6 @@
     "alpha_3": "ARM",
     "group": "as",
     "numeric_code": "051",
-    "independant": true,
     "capital": {
       "en_US": ["Yerevan", "Erevan"],
       "fr_FR": ["Erevan", "Yerevan"],
@@ -321,7 +309,6 @@
     "alpha_3": "ABW",
     "group": "na",
     "numeric_code": "533",
-    "independant": false,
     "capital": {
       "en_US": ["Oranjestad"],
       "fr_FR": ["Oranjestad", "Ville d'Orange", "Orangeville"],
@@ -344,7 +331,6 @@
     "alpha_3": "AUS",
     "group": "oc",
     "numeric_code": "036",
-    "independant": true,
     "capital": {
       "en_US": ["Canberra"],
       "fr_FR": ["Canberra"],
@@ -367,7 +353,6 @@
     "alpha_3": "AUT",
     "group": "eu",
     "numeric_code": "040",
-    "independant": true,
     "capital": {
       "en_US": ["Vienna", "Wien"],
       "fr_FR": ["Vienne", "Wien"],
@@ -390,7 +375,6 @@
     "alpha_3": "AZE",
     "group": "as",
     "numeric_code": "031",
-    "independant": true,
     "capital": {
       "en_US": ["Baku", "Bakı"],
       "fr_FR": ["Bakou", "Bakı"],
@@ -413,7 +397,6 @@
     "alpha_3": "BHS",
     "group": "na",
     "numeric_code": "044",
-    "independant": true,
     "capital": {
       "en_US": ["Nassau", "Charles Town"],
       "fr_FR": ["Nassau", "Charles Town"],
@@ -436,7 +419,6 @@
     "alpha_3": "BHR",
     "group": "as",
     "numeric_code": "048",
-    "independant": true,
     "capital": {
       "en_US": ["Manama"],
       "fr_FR": ["Manama"],
@@ -459,7 +441,6 @@
     "alpha_3": "BGD",
     "group": "as",
     "numeric_code": "050",
-    "independant": true,
     "capital": {
       "en_US": ["Dhaka"],
       "fr_FR": ["Dacca", "Dhaka"],
@@ -482,7 +463,6 @@
     "alpha_3": "BRB",
     "group": "na",
     "numeric_code": "052",
-    "independant": true,
     "capital": {
       "en_US": ["Bridgetown"],
       "fr_FR": ["Bridgetown"],
@@ -510,7 +490,6 @@
     "alpha_3": "BLR",
     "group": "eu",
     "numeric_code": "112",
-    "independant": true,
     "capital": {
       "en_US": ["Minsk"],
       "fr_FR": ["Minsk"],
@@ -533,7 +512,6 @@
     "alpha_3": "BEL",
     "group": "eu",
     "numeric_code": "056",
-    "independant": true,
     "capital": {
       "en_US": ["Brussels", "City of Brussels"],
       "fr_FR": ["Bruxelles", "Ville de Bruxelles"],
@@ -556,7 +534,6 @@
     "alpha_3": "BLZ",
     "group": "na",
     "numeric_code": "084",
-    "independant": true,
     "capital": {
       "en_US": ["Belmopan"],
       "fr_FR": ["Belmopan", "Belmopán"],
@@ -579,7 +556,6 @@
     "alpha_3": "BEN",
     "group": "af",
     "numeric_code": "204",
-    "independant": true,
     "capital": {
       "en_US": ["Porto-Novo (political) and Cotonou (economic)"],
       "fr_FR": ["Porto-Novo (politique) et Cotonou (économique)"],
@@ -602,7 +578,6 @@
     "alpha_3": "BMU",
     "group": "na",
     "numeric_code": "060",
-    "independant": false,
     "capital": {
       "en_US": ["Hamilton"],
       "fr_FR": ["Hamilton"],
@@ -625,7 +600,6 @@
     "alpha_3": "BTN",
     "group": "as",
     "numeric_code": "064",
-    "independant": true,
     "capital": {
       "en_US": ["Thimphu"],
       "fr_FR": ["Thimphou"],
@@ -648,7 +622,6 @@
     "alpha_3": "BOL",
     "group": "sa",
     "numeric_code": "068",
-    "independant": true,
     "capital": {
       "en_US": [
         "Sucre (constitutional and judicial) and La Paz (executive and legislative)",
@@ -703,7 +676,6 @@
     "alpha_3": "BES",
     "group": "na",
     "numeric_code": "535",
-    "independant": false,
     "capital": {
       "en_US": [
         "Kralendijk, Oranjestad and The Bottom (main city of each island)",
@@ -751,7 +723,6 @@
     "alpha_3": "BIH",
     "group": "eu",
     "numeric_code": "070",
-    "independant": true,
     "capital": {
       "en_US": ["Sarajevo"],
       "fr_FR": ["Sarajevo"],
@@ -779,7 +750,6 @@
     "alpha_3": "BWA",
     "group": "af",
     "numeric_code": "072",
-    "independant": true,
     "capital": {
       "en_US": ["Gaborone"],
       "fr_FR": ["Gaborone"],
@@ -802,7 +772,6 @@
     "alpha_3": "BVT",
     "group": "an",
     "numeric_code": "074",
-    "independant": false,
     "capital": {
       "en_US": ["Bouvet (no city)"],
       "fr_FR": ["Bouvet (aucune ville)"],
@@ -825,7 +794,6 @@
     "alpha_3": "BRA",
     "group": "sa",
     "numeric_code": "076",
-    "independant": true,
     "capital": {
       "en_US": ["Brasília"],
       "fr_FR": ["Brasilia"],
@@ -848,7 +816,6 @@
     "alpha_3": "IOT",
     "group": "as",
     "numeric_code": "086",
-    "independant": false,
     "capital": {
       "en_US": [
         "Camp Thunder Cove (U.S military camp, no other inhabitants)",
@@ -891,7 +858,6 @@
     "alpha_3": "BRN",
     "group": "as",
     "numeric_code": "096",
-    "independant": true,
     "capital": {
       "en_US": ["Bandar Seri Begawan"],
       "fr_FR": ["Bandar Seri Begawan"],
@@ -914,7 +880,6 @@
     "alpha_3": "BGR",
     "group": "eu",
     "numeric_code": "100",
-    "independant": true,
     "capital": {
       "en_US": ["Sofia"],
       "fr_FR": ["Sofia"],
@@ -937,7 +902,6 @@
     "alpha_3": "BFA",
     "group": "af",
     "numeric_code": "854",
-    "independant": true,
     "capital": {
       "en_US": ["Ouagadougou"],
       "fr_FR": ["Ouagadougou"],
@@ -960,7 +924,6 @@
     "alpha_3": "BDI",
     "group": "af",
     "numeric_code": "108",
-    "independant": true,
     "capital": {
       "en_US": [
         "Gitega (political) and Bujumbura (economic)",
@@ -1003,7 +966,6 @@
     "alpha_3": "CPV",
     "group": "af",
     "numeric_code": "132",
-    "independant": true,
     "capital": {
       "en_US": ["Praia"],
       "fr_FR": ["Praia"],
@@ -1026,7 +988,6 @@
     "alpha_3": "KHM",
     "group": "as",
     "numeric_code": "116",
-    "independant": true,
     "capital": {
       "en_US": ["Phnom Penh"],
       "fr_FR": ["Phnom Penh"],
@@ -1049,7 +1010,6 @@
     "alpha_3": "CMR",
     "group": "af",
     "numeric_code": "120",
-    "independant": true,
     "capital": {
       "en_US": ["Yaoundé"],
       "fr_FR": ["Yaoundé"],
@@ -1072,7 +1032,6 @@
     "alpha_3": "CAN",
     "group": "na",
     "numeric_code": "124",
-    "independant": true,
     "capital": {
       "en_US": ["Ottawa"],
       "fr_FR": ["Ottawa"],
@@ -1095,7 +1054,6 @@
     "alpha_3": "CYM",
     "group": "na",
     "numeric_code": "136",
-    "independant": false,
     "capital": {
       "en_US": ["George Town"],
       "fr_FR": ["George Town"],
@@ -1121,7 +1079,6 @@
     "alpha_3": "CAF",
     "group": "af",
     "numeric_code": "140",
-    "independant": true,
     "capital": {
       "en_US": ["Bangui"],
       "fr_FR": ["Bangui"],
@@ -1144,7 +1101,6 @@
     "alpha_3": "TCD",
     "group": "af",
     "numeric_code": "148",
-    "independant": true,
     "capital": {
       "en_US": ["N'Djaména"],
       "fr_FR": ["N'Djaména"],
@@ -1167,7 +1123,6 @@
     "alpha_3": "CHL",
     "group": "sa",
     "numeric_code": "152",
-    "independant": true,
     "capital": {
       "en_US": ["Santiago", "Santiago de Chile"],
       "fr_FR": ["Santiago", "Santiago du Chili"],
@@ -1190,7 +1145,6 @@
     "alpha_3": "CHN",
     "group": "as",
     "numeric_code": "156",
-    "independant": true,
     "capital": {
       "en_US": ["Beijing", "Peking"],
       "fr_FR": ["Pékin", "Beijing"],
@@ -1218,7 +1172,6 @@
     "alpha_3": "CXR",
     "group": "as",
     "numeric_code": "162",
-    "independant": false,
     "capital": {
       "en_US": ["Flying Fish Cove"],
       "fr_FR": ["Flying Fish Cove"],
@@ -1246,7 +1199,6 @@
     "alpha_3": "CCK",
     "group": "as",
     "numeric_code": "166",
-    "independant": false,
     "capital": {
       "en_US": ["West Island"],
       "fr_FR": ["West Island"],
@@ -1269,7 +1221,6 @@
     "alpha_3": "COL",
     "group": "sa",
     "numeric_code": "170",
-    "independant": true,
     "capital": {
       "en_US": ["Bogotá"],
       "fr_FR": ["Bogota"],
@@ -1292,7 +1243,6 @@
     "alpha_3": "COM",
     "group": "af",
     "numeric_code": "174",
-    "independant": true,
     "capital": {
       "en_US": ["Moroni"],
       "fr_FR": ["Moroni"],
@@ -1315,7 +1265,6 @@
     "alpha_3": "COG",
     "group": "af",
     "numeric_code": "178",
-    "independant": true,
     "capital": {
       "en_US": ["Brazzaville (political) and Pointe-Noire (economic)"],
       "fr_FR": ["Brazzaville (politique) et Pointe-Noire (économique)"],
@@ -1351,7 +1300,6 @@
     "alpha_3": "COD",
     "group": "af",
     "numeric_code": "180",
-    "independant": true,
     "capital": {
       "en_US": ["Kinshasa"],
       "fr_FR": ["Kinshasa"],
@@ -1374,7 +1322,6 @@
     "alpha_3": "COK",
     "group": "oc",
     "numeric_code": "184",
-    "independant": false,
     "capital": {
       "en_US": ["Avarua"],
       "fr_FR": ["Avarua"],
@@ -1397,7 +1344,6 @@
     "alpha_3": "CRI",
     "group": "na",
     "numeric_code": "188",
-    "independant": true,
     "capital": {
       "en_US": ["San José"],
       "fr_FR": ["San José"],
@@ -1420,7 +1366,6 @@
     "alpha_3": "CIV",
     "group": "af",
     "numeric_code": "384",
-    "independant": true,
     "capital": {
       "en_US": [
         "Yamoussoukro (political) and Abidjan (economic)",
@@ -1463,7 +1408,6 @@
     "alpha_3": "HRV",
     "group": "eu",
     "numeric_code": "191",
-    "independant": true,
     "capital": {
       "en_US": ["Zagreb"],
       "fr_FR": ["Zagreb"],
@@ -1486,7 +1430,6 @@
     "alpha_3": "CUB",
     "group": "na",
     "numeric_code": "192",
-    "independant": true,
     "capital": {
       "en_US": ["Havana"],
       "fr_FR": ["La Havane"],
@@ -1509,7 +1452,6 @@
     "alpha_3": "CUW",
     "group": "na",
     "numeric_code": "531",
-    "independant": false,
     "capital": {
       "en_US": ["Willemstad"],
       "fr_FR": ["Willemstad"],
@@ -1532,7 +1474,6 @@
     "alpha_3": "CYP",
     "group": "as",
     "numeric_code": "196",
-    "independant": true,
     "capital": {
       "en_US": ["Nicosia"],
       "fr_FR": ["Nicosie"],
@@ -1555,7 +1496,6 @@
     "alpha_3": "CZE",
     "group": "eu",
     "numeric_code": "203",
-    "independant": true,
     "capital": {
       "en_US": ["Prague"],
       "fr_FR": ["Prague"],
@@ -1578,7 +1518,6 @@
     "alpha_3": "DNK",
     "group": "eu",
     "numeric_code": "208",
-    "independant": true,
     "capital": {
       "en_US": ["Copenhagen"],
       "fr_FR": ["Copenhague"],
@@ -1601,7 +1540,6 @@
     "alpha_3": "DJI",
     "group": "af",
     "numeric_code": "262",
-    "independant": true,
     "capital": {
       "en_US": ["Djibouti "],
       "fr_FR": ["Djibouti"],
@@ -1624,7 +1562,6 @@
     "alpha_3": "DMA",
     "group": "na",
     "numeric_code": "212",
-    "independant": true,
     "capital": {
       "en_US": ["Roseau"],
       "fr_FR": ["Roseau"],
@@ -1647,7 +1584,6 @@
     "alpha_3": "DOM",
     "group": "na",
     "numeric_code": "214",
-    "independant": true,
     "capital": {
       "en_US": ["Santo Domingo"],
       "fr_FR": ["Saint-Domingue"],
@@ -1670,7 +1606,6 @@
     "alpha_3": "ECU",
     "group": "na",
     "numeric_code": "218",
-    "independant": true,
     "capital": {
       "en_US": ["Quito"],
       "fr_FR": ["Quito"],
@@ -1693,7 +1628,6 @@
     "alpha_3": "EGY",
     "group": "af",
     "numeric_code": "818",
-    "independant": true,
     "capital": {
       "en_US": ["Cairo"],
       "fr_FR": ["Le Caire"],
@@ -1716,7 +1650,6 @@
     "alpha_3": "SLV",
     "group": "na",
     "numeric_code": "222",
-    "independant": true,
     "capital": {
       "en_US": ["San Salvador"],
       "fr_FR": ["San Salvador"],
@@ -1739,7 +1672,6 @@
     "alpha_3": "GNQ",
     "group": "af",
     "numeric_code": "226",
-    "independant": true,
     "capital": {
       "en_US": ["Malabo"],
       "fr_FR": ["Malabo"],
@@ -1762,7 +1694,6 @@
     "alpha_3": "ERI",
     "group": "af",
     "numeric_code": "232",
-    "independant": true,
     "capital": {
       "en_US": ["Asmara"],
       "fr_FR": ["Asmara"],
@@ -1785,7 +1716,6 @@
     "alpha_3": "EST",
     "group": "eu",
     "numeric_code": "233",
-    "independant": true,
     "capital": {
       "en_US": ["Tallinn"],
       "fr_FR": ["Tallinn"],
@@ -1808,7 +1738,6 @@
     "alpha_3": "SWZ",
     "group": "af",
     "numeric_code": "748",
-    "independant": true,
     "capital": {
       "en_US": ["Mbabane (administrative and judicial) and Lobamba (royal and legislative)","Mbabane","Lobamba"],
       "fr_FR": ["Mbabane (administrative et judiciaire) et Lobamba (royale et législative)","Mbabane","Lobamba"],
@@ -1831,7 +1760,6 @@
     "alpha_3": "ETH",
     "group": "af",
     "numeric_code": "231",
-    "independant": true,
     "capital": {
       "en_US": ["Addis Ababa"],
       "fr_FR": ["Addis-Abeba"],
@@ -1854,7 +1782,6 @@
     "alpha_3": "FLK",
     "group": "sa",
     "numeric_code": "238",
-    "independant": false,
     "capital": {
       "en_US": ["Stanley"],
       "fr_FR": ["Stanley"],
@@ -1877,7 +1804,6 @@
     "alpha_3": "FRO",
     "group": "eu",
     "numeric_code": "234",
-    "independant": false,
     "capital": {
       "en_US": ["Torshavn"],
       "fr_FR": ["Tórshavn"],
@@ -1900,7 +1826,6 @@
     "alpha_3": "FJI",
     "group": "oc",
     "numeric_code": "242",
-    "independant": true,
     "capital": {
       "en_US": ["Suva"],
       "fr_FR": ["Suva"],
@@ -1923,7 +1848,6 @@
     "alpha_3": "FIN",
     "group": "eu",
     "numeric_code": "246",
-    "independant": true,
     "capital": {
       "en_US": ["Helsinki"],
       "fr_FR": ["Helsinki"],
@@ -1946,7 +1870,6 @@
     "alpha_3": "FRA",
     "group": "eu",
     "numeric_code": "250",
-    "independant": true,
     "capital": {
       "en_US": ["Paris"],
       "fr_FR": ["Paris"],
@@ -1969,7 +1892,6 @@
     "alpha_3": "GUF",
     "group": "sa",
     "numeric_code": "254",
-    "independant": false,
     "capital": {
       "en_US": ["Cayenne"],
       "fr_FR": ["Cayenne"],
@@ -1992,7 +1914,6 @@
     "alpha_3": "PYF",
     "group": "oc",
     "numeric_code": "258",
-    "independant": false,
     "capital": {
       "en_US": ["Papeete"],
       "fr_FR": ["Papeete"],
@@ -2015,7 +1936,6 @@
     "alpha_3": "ATF",
     "group": "an",
     "numeric_code": "260",
-    "independant": false,
     "capital": {
       "en_US": ["Port-aux-Francais"],
       "fr_FR": ["Port-aux-Français"],
@@ -2038,7 +1958,6 @@
     "alpha_3": "GAB",
     "group": "af",
     "numeric_code": "266",
-    "independant": true,
     "capital": {
       "en_US": ["Libreville"],
       "fr_FR": ["Libreville"],
@@ -2061,7 +1980,6 @@
     "alpha_3": "GMB",
     "group": "af",
     "numeric_code": "270",
-    "independant": true,
     "capital": {
       "en_US": ["Banjul"],
       "fr_FR": ["Banjul"],
@@ -2084,7 +2002,6 @@
     "alpha_3": "GEO",
     "group": "as",
     "numeric_code": "268",
-    "independant": true,
     "capital": {
       "en_US": ["Tbilisi"],
       "fr_FR": ["Tbilissi"],
@@ -2107,7 +2024,6 @@
     "alpha_3": "DEU",
     "group": "eu",
     "numeric_code": "276",
-    "independant": true,
     "capital": {
       "en_US": ["Berlin"],
       "fr_FR": ["Berlin"],
@@ -2130,7 +2046,6 @@
     "alpha_3": "GHA",
     "group": "af",
     "numeric_code": "288",
-    "independant": true,
     "capital": {
       "en_US": ["Accra"],
       "fr_FR": ["Accra"],
@@ -2153,7 +2068,6 @@
     "alpha_3": "GIB",
     "group": "eu",
     "numeric_code": "292",
-    "independant": false,
     "capital": {
       "en_US": ["Gibraltar"],
       "fr_FR": ["Gibraltar"],
@@ -2176,7 +2090,6 @@
     "alpha_3": "GRC",
     "group": "eu",
     "numeric_code": "300",
-    "independant": true,
     "capital": {
       "en_US": ["Athens"],
       "fr_FR": ["Athènes"],
@@ -2199,7 +2112,6 @@
     "alpha_3": "GRL",
     "group": "na",
     "numeric_code": "304",
-    "independant": false,
     "capital": {
       "en_US": ["Nuuk"],
       "fr_FR": ["Nuuk"],
@@ -2222,7 +2134,6 @@
     "alpha_3": "GRD",
     "group": "na",
     "numeric_code": "308",
-    "independant": true,
     "capital": {
       "en_US": ["St. George's","Saint George's"],
       "fr_FR": ["Saint-Georges"],
@@ -2245,7 +2156,6 @@
     "alpha_3": "GLP",
     "group": "na",
     "numeric_code": "312",
-    "independant": false,
     "capital": {
       "en_US": ["Basse-Terre"],
       "fr_FR": ["Basse-Terre"],
@@ -2268,7 +2178,6 @@
     "alpha_3": "GUM",
     "group": "oc",
     "numeric_code": "316",
-    "independant": false,
     "capital": {
       "en_US": ["Hagatna"],
       "fr_FR": ["Hagåtña","Agana","Agaña"],
@@ -2291,7 +2200,6 @@
     "alpha_3": "GTM",
     "group": "na",
     "numeric_code": "320",
-    "independant": true,
     "capital": {
       "en_US": ["Guatemala City"],
       "fr_FR": ["Guatemala "],
@@ -2314,7 +2222,6 @@
     "alpha_3": "GGY",
     "group": "eu",
     "numeric_code": "831",
-    "independant": false,
     "capital": {
       "en_US": ["St Peter Port"],
       "fr_FR": ["Saint-Pierre-Port"],
@@ -2337,7 +2244,6 @@
     "alpha_3": "GIN",
     "group": "af",
     "numeric_code": "324",
-    "independant": true,
     "capital": {
       "en_US": ["Conakry"],
       "fr_FR": ["Conakry"],
@@ -2360,7 +2266,6 @@
     "alpha_3": "GNB",
     "group": "af",
     "numeric_code": "624",
-    "independant": true,
     "capital": {
       "en_US": ["Bissau"],
       "fr_FR": ["Bissau"],
@@ -2383,7 +2288,6 @@
     "alpha_3": "GUY",
     "group": "sa",
     "numeric_code": "328",
-    "independant": true,
     "capital": {
       "en_US": ["Georgetown"],
       "fr_FR": ["Georgetown "],
@@ -2406,7 +2310,6 @@
     "alpha_3": "HTI",
     "group": "na",
     "numeric_code": "332",
-    "independant": true,
     "capital": {
       "en_US": ["Port-au-Prince"],
       "fr_FR": ["Port-au-Prince"],
@@ -2429,7 +2332,6 @@
     "alpha_3": "HMD",
     "group": "an",
     "numeric_code": "334",
-    "independant": false,
     "capital": {
       "en_US": ["Heard (arbitrary name, no cities, uninhabited)"],
       "fr_FR": ["Heard (nom arbitraire, pas de villes, inhabité)","Heard"],
@@ -2452,7 +2354,6 @@
     "alpha_3": "VAT",
     "group": "eu",
     "numeric_code": "336",
-    "independant": true,
     "capital": {
       "en_US": ["Vatican City"],
       "fr_FR": ["Cité du Vatican"],
@@ -2475,7 +2376,6 @@
     "alpha_3": "HND",
     "group": "na",
     "numeric_code": "340",
-    "independant": true,
     "capital": {
       "en_US": ["Tegucigalpa"],
       "fr_FR": ["Tegucigalpa"],
@@ -2498,7 +2398,6 @@
     "alpha_3": "HKG",
     "group": "as",
     "numeric_code": "344",
-    "independant": false,
     "capital": {
       "en_US": ["Hong Kong"],
       "fr_FR": ["Hong Kong"],
@@ -2521,7 +2420,6 @@
     "alpha_3": "HUN",
     "group": "eu",
     "numeric_code": "348",
-    "independant": true,
     "capital": {
       "en_US": ["Budapest"],
       "fr_FR": ["Budapest"],
@@ -2544,7 +2442,6 @@
     "alpha_3": "ISL",
     "group": "eu",
     "numeric_code": "352",
-    "independant": true,
     "capital": {
       "en_US": ["Reykjavik"],
       "fr_FR": ["Reykjavik"],
@@ -2567,7 +2464,6 @@
     "alpha_3": "IND",
     "group": "as",
     "numeric_code": "356",
-    "independant": true,
     "capital": {
       "en_US": ["New Delhi"],
       "fr_FR": ["New Delhi"],
@@ -2590,7 +2486,6 @@
     "alpha_3": "IDN",
     "group": "as",
     "numeric_code": "360",
-    "independant": true,
     "capital": {
       "en_US": ["Jakarta"],
       "fr_FR": ["Jakarta"],
@@ -2613,7 +2508,6 @@
     "alpha_3": "IRN",
     "group": "as",
     "numeric_code": "364",
-    "independant": true,
     "capital": {
       "en_US": ["Tehran"],
       "fr_FR": ["Téhéran"],
@@ -2636,7 +2530,6 @@
     "alpha_3": "IRQ",
     "group": "as",
     "numeric_code": "368",
-    "independant": true,
     "capital": {
       "en_US": ["Baghdad"],
       "fr_FR": ["Bagdad"],
@@ -2659,7 +2552,6 @@
     "alpha_3": "IRL",
     "group": "eu",
     "numeric_code": "372",
-    "independant": true,
     "capital": {
       "en_US": ["Dublin"],
       "fr_FR": ["Dublin"],
@@ -2682,7 +2574,6 @@
     "alpha_3": "IMN",
     "group": "eu",
     "numeric_code": "833",
-    "independant": false,
     "capital": {
       "en_US": ["Douglas"],
       "fr_FR": ["Douglas"],
@@ -2705,7 +2596,6 @@
     "alpha_3": "ISR",
     "group": "as",
     "numeric_code": "376",
-    "independant": true,
     "capital": {
       "en_US": ["Jerusalem"],
       "fr_FR": ["Jérusalem"],
@@ -2728,7 +2618,6 @@
     "alpha_3": "ITA",
     "group": "eu",
     "numeric_code": "380",
-    "independant": true,
     "capital": {
       "en_US": ["Rome"],
       "fr_FR": ["Rome"],
@@ -2751,7 +2640,6 @@
     "alpha_3": "JAM",
     "group": "na",
     "numeric_code": "388",
-    "independant": true,
     "capital": {
       "en_US": ["Kingston"],
       "fr_FR": ["Kingston"],
@@ -2774,7 +2662,6 @@
     "alpha_3": "JPN",
     "group": "as",
     "numeric_code": "392",
-    "independant": true,
     "capital": {
       "en_US": ["Tokyo","Tokyo Metropolis"],
       "fr_FR": ["Tokyo","Métropole de Tokyo"],
@@ -2797,7 +2684,6 @@
     "alpha_3": "JEY",
     "group": "eu",
     "numeric_code": "832",
-    "independant": false,
     "capital": {
       "en_US": ["Saint Helier"],
       "fr_FR": ["Saint-Hélier"],
@@ -2820,7 +2706,6 @@
     "alpha_3": "JOR",
     "group": "as",
     "numeric_code": "400",
-    "independant": true,
     "capital": {
       "en_US": ["Amman"],
       "fr_FR": ["Amman"],
@@ -2843,7 +2728,6 @@
     "alpha_3": "KAZ",
     "group": "as",
     "numeric_code": "398",
-    "independant": true,
     "capital": {
       "en_US": ["Nur-Sultan","Astana"],
       "fr_FR": ["Nour-Soultan"],
@@ -2866,7 +2750,6 @@
     "alpha_3": "KEN",
     "group": "af",
     "numeric_code": "404",
-    "independant": true,
     "capital": {
       "en_US": ["Nairobi"],
       "fr_FR": ["Nairobi"],
@@ -2889,7 +2772,6 @@
     "alpha_3": "KIR",
     "group": "oc",
     "numeric_code": "296",
-    "independant": true,
     "capital": {
       "en_US": ["South Tarawa"],
       "fr_FR": ["Tarawa-Sud"],
@@ -2912,7 +2794,6 @@
     "alpha_3": "PRK",
     "group": "as",
     "numeric_code": "408",
-    "independant": true,
     "capital": {
       "en_US": ["Pyongyang"],
       "fr_FR": ["Pyongyang"],
@@ -2935,7 +2816,6 @@
     "alpha_3": "KOR",
     "group": "as",
     "numeric_code": "410",
-    "independant": true,
     "capital": {
       "en_US": ["Seoul"],
       "fr_FR": ["Séoul"],
@@ -2958,7 +2838,6 @@
     "alpha_3": "XXK",
     "group": "eu",
     "numeric_code": "926",
-    "independant": true,
     "capital": {
       "en_US": ["Pristina"],
       "fr_FR": ["Pristina"],
@@ -2981,7 +2860,6 @@
     "alpha_3": "KWT",
     "group": "as",
     "numeric_code": "414",
-    "independant": true,
     "capital": {
       "en_US": ["Kuwait"],
       "fr_FR": ["Koweït"],
@@ -3004,7 +2882,6 @@
     "alpha_3": "KGZ",
     "group": "as",
     "numeric_code": "417",
-    "independant": true,
     "capital": {
       "en_US": ["Bishkek"],
       "fr_FR": ["Bichkek"],
@@ -3027,7 +2904,6 @@
     "alpha_3": "LAO",
     "group": "as",
     "numeric_code": "418",
-    "independant": true,
     "capital": {
       "en_US": ["Vientiane"],
       "fr_FR": ["Vientiane"],
@@ -3050,7 +2926,6 @@
     "alpha_3": "LVA",
     "group": "eu",
     "numeric_code": "428",
-    "independant": true,
     "capital": {
       "en_US": ["Riga"],
       "fr_FR": ["Riga"],
@@ -3073,7 +2948,6 @@
     "alpha_3": "LBN",
     "group": "as",
     "numeric_code": "422",
-    "independant": true,
     "capital": {
       "en_US": ["Beirut"],
       "fr_FR": ["Beyrouth"],
@@ -3096,7 +2970,6 @@
     "alpha_3": "LSO",
     "group": "af",
     "numeric_code": "426",
-    "independant": true,
     "capital": {
       "en_US": ["Maseru"],
       "fr_FR": ["Maseru"],
@@ -3119,7 +2992,6 @@
     "alpha_3": "LBR",
     "group": "af",
     "numeric_code": "430",
-    "independant": true,
     "capital": {
       "en_US": ["Monrovia"],
       "fr_FR": ["Monrovia"],
@@ -3142,7 +3014,6 @@
     "alpha_3": "LBY",
     "group": "af",
     "numeric_code": "434",
-    "independant": true,
     "capital": {
       "en_US": ["Tripolis"],
       "fr_FR": ["Tripoli"],
@@ -3165,7 +3036,6 @@
     "alpha_3": "LIE",
     "group": "eu",
     "numeric_code": "438",
-    "independant": true,
     "capital": {
       "en_US": ["Vaduz"],
       "fr_FR": ["Vaduz"],
@@ -3188,7 +3058,6 @@
     "alpha_3": "LTU",
     "group": "eu",
     "numeric_code": "440",
-    "independant": true,
     "capital": {
       "en_US": ["Vilnius"],
       "fr_FR": ["Vilnius"],
@@ -3211,7 +3080,6 @@
     "alpha_3": "LUX",
     "group": "eu",
     "numeric_code": "442",
-    "independant": true,
     "capital": {
       "en_US": ["Luxembourg"],
       "fr_FR": ["Luxembourg"],
@@ -3234,7 +3102,6 @@
     "alpha_3": "MAC",
     "group": "as",
     "numeric_code": "446",
-    "independant": false,
     "capital": {
       "en_US": ["Macao"],
       "fr_FR": ["Macao"],
@@ -3257,7 +3124,6 @@
     "alpha_3": "MDG",
     "group": "af",
     "numeric_code": "450",
-    "independant": true,
     "capital": {
       "en_US": ["Antananarivo"],
       "fr_FR": ["Antananarivo"],
@@ -3280,7 +3146,6 @@
     "alpha_3": "MWI",
     "group": "af",
     "numeric_code": "454",
-    "independant": true,
     "capital": {
       "en_US": ["Lilongwe"],
       "fr_FR": ["Lilongwe"],
@@ -3303,7 +3168,6 @@
     "alpha_3": "MYS",
     "group": "as",
     "numeric_code": "458",
-    "independant": true,
     "capital": {
       "en_US": ["Kuala Lumpur and Putrajaya (administrative capitals)"],
       "fr_FR": ["Kuala Lumpur et Putrajaya (capitales administratives)"],
@@ -3326,7 +3190,6 @@
     "alpha_3": "MDV",
     "group": "as",
     "numeric_code": "462",
-    "independant": true,
     "capital": {
       "en_US": ["Male"],
       "fr_FR": ["Malé"],
@@ -3349,7 +3212,6 @@
     "alpha_3": "MLI",
     "group": "af",
     "numeric_code": "466",
-    "independant": true,
     "capital": {
       "en_US": ["Bamako"],
       "fr_FR": ["Bamako"],
@@ -3372,7 +3234,6 @@
     "alpha_3": "MLT",
     "group": "eu",
     "numeric_code": "470",
-    "independant": true,
     "capital": {
       "en_US": ["Valletta"],
       "fr_FR": ["La Valette"],
@@ -3395,7 +3256,6 @@
     "alpha_3": "MHL",
     "group": "oc",
     "numeric_code": "584",
-    "independant": true,
     "capital": {
       "en_US": ["Majuro"],
       "fr_FR": ["Majuro"],
@@ -3418,7 +3278,6 @@
     "alpha_3": "MTQ",
     "group": "na",
     "numeric_code": "474",
-    "independant": false,
     "capital": {
       "en_US": ["Fort-de-France"],
       "fr_FR": ["Fort-de-France"],
@@ -3441,7 +3300,6 @@
     "alpha_3": "MRT",
     "group": "af",
     "numeric_code": "478",
-    "independant": true,
     "capital": {
       "en_US": ["Nouakchott"],
       "fr_FR": ["Nouakchott"],
@@ -3464,7 +3322,6 @@
     "alpha_3": "MUS",
     "group": "af",
     "numeric_code": "480",
-    "independant": true,
     "capital": {
       "en_US": ["Port Louis"],
       "fr_FR": ["Port-Louis"],
@@ -3487,7 +3344,6 @@
     "alpha_3": "MYT",
     "group": "af",
     "numeric_code": "175",
-    "independant": false,
     "capital": {
       "en_US": ["Mamoudzou"],
       "fr_FR": ["Dzaoudzi (de jure) et Mamoudzou (de facto)","Dzaoudzi","Mamoudzou"],
@@ -3510,7 +3366,6 @@
     "alpha_3": "MEX",
     "group": "na",
     "numeric_code": "484",
-    "independant": true,
     "capital": {
       "en_US": ["Mexico","Mexico City"],
       "fr_FR": ["Mexico","Ville de Mexico"],
@@ -3533,7 +3388,6 @@
     "alpha_3": "FSM",
     "group": "oc",
     "numeric_code": "583",
-    "independant": true,
     "capital": {
       "en_US": ["Palikir"],
       "fr_FR": ["Palikir"],
@@ -3556,7 +3410,6 @@
     "alpha_3": "MDA",
     "group": "as",
     "numeric_code": "498",
-    "independant": true,
     "capital": {
       "en_US": ["Chisinau"],
       "fr_FR": ["Chișinău"],
@@ -3579,7 +3432,6 @@
     "alpha_3": "MCO",
     "group": "eu",
     "numeric_code": "492",
-    "independant": true,
     "capital": {
       "en_US": ["Monaco"],
       "fr_FR": ["Monaco"],
@@ -3602,7 +3454,6 @@
     "alpha_3": "MNG",
     "group": "as",
     "numeric_code": "496",
-    "independant": true,
     "capital": {
       "en_US": ["Ulan Bator"],
       "fr_FR": ["Oulan-Bator"],
@@ -3625,7 +3476,6 @@
     "alpha_3": "MNE",
     "group": "eu",
     "numeric_code": "499",
-    "independant": true,
     "capital": {
       "en_US": ["Podgorica"],
       "fr_FR": ["Podgorica"],
@@ -3648,7 +3498,6 @@
     "alpha_3": "MSR",
     "group": "na",
     "numeric_code": "500",
-    "independant": false,
     "capital": {
       "en_US": ["Plymouth (de jure) and Brades (de facto)","Plymouth","Brades"],
       "fr_FR": ["Plymouth (de jure) et Brades (de facto)","Plymouth","Brades"],
@@ -3671,7 +3520,6 @@
     "alpha_3": "MAR",
     "group": "af",
     "numeric_code": "504",
-    "independant": true,
     "capital": {
       "en_US": ["Rabat"],
       "fr_FR": ["Rabat"],
@@ -3694,7 +3542,6 @@
     "alpha_3": "MOZ",
     "group": "af",
     "numeric_code": "508",
-    "independant": true,
     "capital": {
       "en_US": ["Maputo"],
       "fr_FR": ["Maputo"],
@@ -3717,7 +3564,6 @@
     "alpha_3": "MMR",
     "group": "as",
     "numeric_code": "104",
-    "independant": true,
     "capital": {
       "en_US": ["Nay Pyi Taw"],
       "fr_FR": ["Naypyidaw"],
@@ -3740,7 +3586,6 @@
     "alpha_3": "NAM",
     "group": "af",
     "numeric_code": "516",
-    "independant": true,
     "capital": {
       "en_US": ["Windhoek"],
       "fr_FR": ["Windhoek"],
@@ -3763,7 +3608,6 @@
     "alpha_3": "NRU",
     "group": "oc",
     "numeric_code": "520",
-    "independant": true,
     "capital": {
       "en_US": ["Yaren"],
       "fr_FR": ["Yaren"],
@@ -3786,7 +3630,6 @@
     "alpha_3": "NPL",
     "group": "as",
     "numeric_code": "524",
-    "independant": true,
     "capital": {
       "en_US": ["Kathmandu"],
       "fr_FR": ["Katmandou"],
@@ -3809,7 +3652,6 @@
     "alpha_3": "NLD",
     "group": "eu",
     "numeric_code": "528",
-    "independant": true,
     "capital": {
       "en_US": ["Amsterdam (capital) and The Hague (seat of government)","Amsterdam","The Hague"],
       "fr_FR": ["Amsterdam (capitale) et La Haye (siège du gouvernement)","Amsterdam","La Haye"],
@@ -3832,7 +3674,6 @@
     "alpha_3": "NCL",
     "group": "oc",
     "numeric_code": "540",
-    "independant": false,
     "capital": {
       "en_US": ["Noumea"],
       "fr_FR": ["Nouméa"],
@@ -3855,7 +3696,6 @@
     "alpha_3": "NZL",
     "group": "oc",
     "numeric_code": "554",
-    "independant": true,
     "capital": {
       "en_US": ["Wellington"],
       "fr_FR": ["Wellington"],
@@ -3878,7 +3718,6 @@
     "alpha_3": "NIC",
     "group": "na",
     "numeric_code": "558",
-    "independant": true,
     "capital": {
       "en_US": ["Managua"],
       "fr_FR": ["Managua"],
@@ -3901,7 +3740,6 @@
     "alpha_3": "NER",
     "group": "af",
     "numeric_code": "562",
-    "independant": true,
     "capital": {
       "en_US": ["Niamey"],
       "fr_FR": ["Niamey"],
@@ -3924,7 +3762,6 @@
     "alpha_3": "NGA",
     "group": "af",
     "numeric_code": "566",
-    "independant": true,
     "capital": {
       "en_US": ["Abuja"],
       "fr_FR": ["Abuja"],
@@ -3947,7 +3784,6 @@
     "alpha_3": "NIU",
     "group": "oc",
     "numeric_code": "570",
-    "independant": false,
     "capital": {
       "en_US": ["Alofi"],
       "fr_FR": ["Alofi"],
@@ -3970,7 +3806,6 @@
     "alpha_3": "NFK",
     "group": "oc",
     "numeric_code": "574",
-    "independant": false,
     "capital": {
       "en_US": ["Kingston"],
       "fr_FR": ["Kingston "],
@@ -3993,7 +3828,6 @@
     "alpha_3": "MKD",
     "group": "eu",
     "numeric_code": "807",
-    "independant": true,
     "capital": {
       "en_US": ["Skopje"],
       "fr_FR": ["Skopje"],
@@ -4016,7 +3850,6 @@
     "alpha_3": "MNP",
     "group": "oc",
     "numeric_code": "580",
-    "independant": false,
     "capital": {
       "en_US": ["Saipan"],
       "fr_FR": ["Saipan"],
@@ -4039,7 +3872,6 @@
     "alpha_3": "NOR",
     "group": "eu",
     "numeric_code": "578",
-    "independant": true,
     "capital": {
       "en_US": ["Oslo"],
       "fr_FR": ["Oslo"],
@@ -4062,7 +3894,6 @@
     "alpha_3": "OMN",
     "group": "as",
     "numeric_code": "512",
-    "independant": true,
     "capital": {
       "en_US": ["Muscat"],
       "fr_FR": ["Mascate"],
@@ -4085,7 +3916,6 @@
     "alpha_3": "PAK",
     "group": "as",
     "numeric_code": "586",
-    "independant": true,
     "capital": {
       "en_US": ["Islamabad"],
       "fr_FR": ["Mascate"],
@@ -4108,7 +3938,6 @@
     "alpha_3": "PLW",
     "group": "oc",
     "numeric_code": "585",
-    "independant": true,
     "capital": {
       "en_US": ["Melekeok"],
       "fr_FR": ["Melekeok "],
@@ -4131,7 +3960,6 @@
     "alpha_3": "PSE",
     "group": "as",
     "numeric_code": "275",
-    "independant": false,
     "capital": {
       "en_US": ["East Jerusalem (proclaimed) and Ramallah (de facto)", "East Jerusalem", "Ramallah"],
       "fr_FR": ["Jérusalem-Est (proclamée) et Ramallah (de facto)","Jérusalem-Est","Ramallah"],
@@ -4154,7 +3982,6 @@
     "alpha_3": "PAN",
     "group": "na",
     "numeric_code": "591",
-    "independant": true,
     "capital": {
       "en_US": ["Panama City"],
       "fr_FR": ["Panama"],
@@ -4177,7 +4004,6 @@
     "alpha_3": "PNG",
     "group": "oc",
     "numeric_code": "598",
-    "independant": true,
     "capital": {
       "en_US": ["Port Moresby"],
       "fr_FR": ["Port Moresby"],
@@ -4200,7 +4026,6 @@
     "alpha_3": "PRY",
     "group": "sa",
     "numeric_code": "600",
-    "independant": true,
     "capital": {
       "en_US": ["Asuncion"],
       "fr_FR": ["Asuncion"],
@@ -4223,7 +4048,6 @@
     "alpha_3": "PER",
     "group": "sa",
     "numeric_code": "604",
-    "independant": true,
     "capital": {
       "en_US": ["Lima"],
       "fr_FR": ["Lima"],
@@ -4246,7 +4070,6 @@
     "alpha_3": "PHL",
     "group": "as",
     "numeric_code": "608",
-    "independant": true,
     "capital": {
       "en_US": ["Manila"],
       "fr_FR": ["Manille"],
@@ -4269,7 +4092,6 @@
     "alpha_3": "PCN",
     "group": "oc",
     "numeric_code": "612",
-    "independant": false,
     "capital": {
       "en_US": ["Adamstown"],
       "fr_FR": ["Adamstown"],
@@ -4292,7 +4114,6 @@
     "alpha_3": "POL",
     "group": "eu",
     "numeric_code": "616",
-    "independant": true,
     "capital": {
       "en_US": ["Warsaw"],
       "fr_FR": ["Varsovie"],
@@ -4315,7 +4136,6 @@
     "alpha_3": "PRT",
     "group": "eu",
     "numeric_code": "620",
-    "independant": true,
     "capital": {
       "en_US": ["Lisbon"],
       "fr_FR": ["Lisbonne"],
@@ -4338,7 +4158,6 @@
     "alpha_3": "PRI",
     "group": "na",
     "numeric_code": "630",
-    "independant": false,
     "capital": {
       "en_US": ["San Juan"],
       "fr_FR": ["San Juan"],
@@ -4361,7 +4180,6 @@
     "alpha_3": "QAT",
     "group": "as",
     "numeric_code": "634",
-    "independant": true,
     "capital": {
       "en_US": ["Doha"],
       "fr_FR": ["Doha"],
@@ -4384,7 +4202,6 @@
     "alpha_3": "REU",
     "group": "af",
     "numeric_code": "638",
-    "independant": false,
     "capital": {
       "en_US": ["Saint-Denis"],
       "fr_FR": ["Saint-Denis"],
@@ -4407,7 +4224,6 @@
     "alpha_3": "ROU",
     "group": "eu",
     "numeric_code": "642",
-    "independant": true,
     "capital": {
       "en_US": ["Bucharest"],
       "fr_FR": ["Bucarest"],
@@ -4430,7 +4246,6 @@
     "alpha_3": "RUS",
     "group": "as",
     "numeric_code": "643",
-    "independant": true,
     "capital": {
       "en_US": ["Moscow"],
       "fr_FR": ["Moscou"],
@@ -4453,7 +4268,6 @@
     "alpha_3": "RWA",
     "group": "af",
     "numeric_code": "646",
-    "independant": true,
     "capital": {
       "en_US": ["Kigali"],
       "fr_FR": ["Kigali"],
@@ -4476,7 +4290,6 @@
     "alpha_3": "BLM",
     "group": "na",
     "numeric_code": "652",
-    "independant": false,
     "capital": {
       "en_US": ["Gustavia"],
       "fr_FR": ["Gustavia"],
@@ -4499,7 +4312,6 @@
     "alpha_3": "SHN",
     "group": "af",
     "numeric_code": "654",
-    "independant": false,
     "capital": {
       "en_US": ["Jamestown"],
       "fr_FR": ["Jamestown"],
@@ -4522,7 +4334,6 @@
     "alpha_3": "KNA",
     "group": "na",
     "numeric_code": "659",
-    "independant": true,
     "capital": {
       "en_US": ["Basseterre"],
       "fr_FR": ["Basseterre"],
@@ -4545,7 +4356,6 @@
     "alpha_3": "LCA",
     "group": "na",
     "numeric_code": "662",
-    "independant": true,
     "capital": {
       "en_US": ["Castries"],
       "fr_FR": ["Castries"],
@@ -4568,7 +4378,6 @@
     "alpha_3": "MAF",
     "group": "na",
     "numeric_code": "663",
-    "independant": false,
     "capital": {
       "en_US": ["Marigot"],
       "fr_FR": ["Marigot"],
@@ -4591,7 +4400,6 @@
     "alpha_3": "SPM",
     "group": "na",
     "numeric_code": "666",
-    "independant": false,
     "capital": {
       "en_US": ["Saint-Pierre"],
       "fr_FR": ["Saint-Pierre"],
@@ -4614,7 +4422,6 @@
     "alpha_3": "VCT",
     "group": "na",
     "numeric_code": "670",
-    "independant": true,
     "capital": {
       "en_US": ["Kingstown"],
       "fr_FR": ["Kingstown"],
@@ -4637,7 +4444,6 @@
     "alpha_3": "WSM",
     "group": "oc",
     "numeric_code": "882",
-    "independant": true,
     "capital": {
       "en_US": ["Apia"],
       "fr_FR": ["Apia"],
@@ -4660,7 +4466,6 @@
     "alpha_3": "SMR",
     "group": "eu",
     "numeric_code": "674",
-    "independant": true,
     "capital": {
       "en_US": ["San Marino"],
       "fr_FR": ["Ville de Saint-Marin"],
@@ -4683,7 +4488,6 @@
     "alpha_3": "STP",
     "group": "af",
     "numeric_code": "678",
-    "independant": true,
     "capital": {
       "en_US": ["Sao Tome"],
       "fr_FR": ["São Tomé"],
@@ -4706,7 +4510,6 @@
     "alpha_3": "SAU",
     "group": "as",
     "numeric_code": "682",
-    "independant": true,
     "capital": {
       "en_US": ["Riyadh"],
       "fr_FR": ["Riyad"],
@@ -4729,7 +4532,6 @@
     "alpha_3": "SEN",
     "group": "af",
     "numeric_code": "686",
-    "independant": true,
     "capital": {
       "en_US": ["Dakar"],
       "fr_FR": ["Dakar"],
@@ -4752,7 +4554,6 @@
     "alpha_3": "SRB",
     "group": "eu",
     "numeric_code": "688",
-    "independant": true,
     "capital": {
       "en_US": ["Belgrade"],
       "fr_FR": ["Belgrade"],
@@ -4775,7 +4576,6 @@
     "alpha_3": "SYC",
     "group": "af",
     "numeric_code": "690",
-    "independant": true,
     "capital": {
       "en_US": ["Victoria"],
       "fr_FR": ["Victoria"],
@@ -4798,7 +4598,6 @@
     "alpha_3": "SLE",
     "group": "af",
     "numeric_code": "694",
-    "independant": true,
     "capital": {
       "en_US": ["Freetown"],
       "fr_FR": ["Freetown"],
@@ -4821,7 +4620,6 @@
     "alpha_3": "SGP",
     "group": "as",
     "numeric_code": "702",
-    "independant": true,
     "capital": {
       "en_US": ["Singapur"],
       "fr_FR": ["Singapour"],
@@ -4844,7 +4642,6 @@
     "alpha_3": "SXM",
     "group": "na",
     "numeric_code": "534",
-    "independant": false,
     "capital": {
       "en_US": ["Philipsburg"],
       "fr_FR": ["Philipsburg "],
@@ -4867,7 +4664,6 @@
     "alpha_3": "SVK",
     "group": "eu",
     "numeric_code": "703",
-    "independant": true,
     "capital": {
       "en_US": ["Bratislava"],
       "fr_FR": ["Bratislava"],
@@ -4890,7 +4686,6 @@
     "alpha_3": "SVN",
     "group": "eu",
     "numeric_code": "705",
-    "independant": true,
     "capital": {
       "en_US": ["Ljubljana"],
       "fr_FR": ["Ljubljana"],
@@ -4913,7 +4708,6 @@
     "alpha_3": "SLB",
     "group": "oc",
     "numeric_code": "090",
-    "independant": true,
     "capital": {
       "en_US": ["Honiara"],
       "fr_FR": ["Honiara"],
@@ -4936,7 +4730,6 @@
     "alpha_3": "SOM",
     "group": "af",
     "numeric_code": "706",
-    "independant": true,
     "capital": {
       "en_US": ["Mogadishu"],
       "fr_FR": [""],
@@ -4959,7 +4752,6 @@
     "alpha_3": "ZAF",
     "group": "af",
     "numeric_code": "710",
-    "independant": true,
     "capital": {
       "en_US": ["Pretoria"],
       "fr_FR": ["Mogadiscio"],
@@ -4982,7 +4774,6 @@
     "alpha_3": "SGS",
     "group": "an",
     "numeric_code": "239",
-    "independant": false,
     "capital": {
       "en_US": ["King Edward Point"],
       "fr_FR": ["King Edward Point"],
@@ -5005,7 +4796,6 @@
     "alpha_3": "SSD",
     "group": "af",
     "numeric_code": "728",
-    "independant": true,
     "capital": {
       "en_US": ["Juba"],
       "fr_FR": ["Djouba"],
@@ -5028,7 +4818,6 @@
     "alpha_3": "ESP",
     "group": "eu",
     "numeric_code": "724",
-    "independant": true,
     "capital": {
       "en_US": ["Madrid"],
       "fr_FR": ["Madrid"],
@@ -5051,7 +4840,6 @@
     "alpha_3": "LKA",
     "group": "as",
     "numeric_code": "144",
-    "independant": true,
     "capital": {
       "en_US": ["Sri Jayawardenapura Kotte (political and administrative) and Colombo (economic)","Sri Jayawardenapura Kotte","Colombo"],
       "fr_FR": ["Sri Jayawardenapura Kotte (politique et administrative) et Colombo (économique)","Sri Jayawardenapura Kotte","Colombo"],
@@ -5074,7 +4862,6 @@
     "alpha_3": "SDN",
     "group": "af",
     "numeric_code": "729",
-    "independant": true,
     "capital": {
       "en_US": ["Khartoum"],
       "fr_FR": ["Khartoum"],
@@ -5097,7 +4884,6 @@
     "alpha_3": "SUR",
     "group": "sa",
     "numeric_code": "740",
-    "independant": true,
     "capital": {
       "en_US": ["Paramaribo"],
       "fr_FR": ["Paramaribo"],
@@ -5120,7 +4906,6 @@
     "alpha_3": "SJM",
     "group": "eu",
     "numeric_code": "744",
-    "independant": false,
     "capital": {
       "en_US": ["Longyearbyen"],
       "fr_FR": ["Longyearbyen"],
@@ -5143,7 +4928,6 @@
     "alpha_3": "SWE",
     "group": "eu",
     "numeric_code": "752",
-    "independant": true,
     "capital": {
       "en_US": ["Stockholm"],
       "fr_FR": [""],
@@ -5166,7 +4950,6 @@
     "alpha_3": "CHE",
     "group": "eu",
     "numeric_code": "756",
-    "independant": true,
     "capital": {
       "en_US": ["Berne"],
       "fr_FR": ["Stockholm"],
@@ -5189,7 +4972,6 @@
     "alpha_3": "SYR",
     "group": "as",
     "numeric_code": "760",
-    "independant": true,
     "capital": {
       "en_US": ["Damascus"],
       "fr_FR": ["Damas"],
@@ -5212,7 +4994,6 @@
     "alpha_3": "TWN",
     "group": "as",
     "numeric_code": "158",
-    "independant": false,
     "capital": {
       "en_US": ["Taipei"],
       "fr_FR": ["Taipei"],
@@ -5235,7 +5016,6 @@
     "alpha_3": "TJK",
     "group": "as",
     "numeric_code": "762",
-    "independant": true,
     "capital": {
       "en_US": ["Dushanbe"],
       "fr_FR": ["Douchanbé"],
@@ -5258,7 +5038,6 @@
     "alpha_3": "TZA",
     "group": "af",
     "numeric_code": "834",
-    "independant": true,
     "capital": {
       "en_US": ["Dodoma"],
       "fr_FR": ["Dodoma"],
@@ -5281,7 +5060,6 @@
     "alpha_3": "THA",
     "group": "as",
     "numeric_code": "764",
-    "independant": true,
     "capital": {
       "en_US": ["Bangkok"],
       "fr_FR": ["Bangkok"],
@@ -5304,7 +5082,6 @@
     "alpha_3": "TLS",
     "group": "as",
     "numeric_code": "626",
-    "independant": true,
     "capital": {
       "en_US": ["Dili"],
       "fr_FR": ["Dili"],
@@ -5327,7 +5104,6 @@
     "alpha_3": "TGO",
     "group": "af",
     "numeric_code": "768",
-    "independant": true,
     "capital": {
       "en_US": ["Lome"],
       "fr_FR": ["Lomé"],
@@ -5350,7 +5126,6 @@
     "alpha_3": "TKL",
     "group": "oc",
     "numeric_code": "772",
-    "independant": false,
     "capital": {
       "en_US": ["None. Each of the three atolls (Atafu, Nukunonu and Fakaofo) has its own administrative center","Atafu","Nukunonu","Fakaofo"],
       "fr_FR": ["Aucune. Chacun des trois atolls (Atafu, Nukunonu et Fakaofo) possède son propre centre administratif","Atafu","Nukunonu","Fakaofo"],
@@ -5373,7 +5148,6 @@
     "alpha_3": "TON",
     "group": "oc",
     "numeric_code": "776",
-    "independant": true,
     "capital": {
       "en_US": ["Nuku'alofa"],
       "fr_FR": ["Nukuʻalofa"],
@@ -5396,7 +5170,6 @@
     "alpha_3": "TTO",
     "group": "na",
     "numeric_code": "780",
-    "independant": true,
     "capital": {
       "en_US": ["Port of Spain"],
       "fr_FR": ["Port-d'Espagne","Port of Spain"],
@@ -5419,7 +5192,6 @@
     "alpha_3": "TUN",
     "group": "af",
     "numeric_code": "788",
-    "independant": true,
     "capital": {
       "en_US": ["Tunis"],
       "fr_FR": ["Tunis"],
@@ -5442,7 +5214,6 @@
     "alpha_3": "TUR",
     "group": "as",
     "numeric_code": "792",
-    "independant": true,
     "capital": {
       "en_US": ["Ankara"],
       "fr_FR": ["Ankara"],
@@ -5465,7 +5236,6 @@
     "alpha_3": "TKM",
     "group": "as",
     "numeric_code": "795",
-    "independant": true,
     "capital": {
       "en_US": ["Ashgabat"],
       "fr_FR": ["Achgabat"],
@@ -5488,7 +5258,6 @@
     "alpha_3": "TCA",
     "group": "na",
     "numeric_code": "796",
-    "independant": false,
     "capital": {
       "en_US": ["Cockburn Town"],
       "fr_FR": ["Cockburn Town"],
@@ -5511,7 +5280,6 @@
     "alpha_3": "TUV",
     "group": "oc",
     "numeric_code": "798",
-    "independant": true,
     "capital": {
       "en_US": ["Funafuti"],
       "fr_FR": ["Funafuti"],
@@ -5534,7 +5302,6 @@
     "alpha_3": "UGA",
     "group": "af",
     "numeric_code": "800",
-    "independant": true,
     "capital": {
       "en_US": ["Kampala"],
       "fr_FR": ["Kampala"],
@@ -5557,7 +5324,6 @@
     "alpha_3": "UKR",
     "group": "eu",
     "numeric_code": "804",
-    "independant": true,
     "capital": {
       "en_US": ["Kyiv ","Kiev"],
       "fr_FR": ["Kyiv ","Kiev","Kyjiw","Kyïv"],
@@ -5580,7 +5346,6 @@
     "alpha_3": "ARE",
     "group": "as",
     "numeric_code": "784",
-    "independant": true,
     "capital": {
       "en_US": ["Abu Dhabi"],
       "fr_FR": ["Abou Dabi","Abu Dhabi","Abou Dhabi","Aboû Dabî"],
@@ -5603,7 +5368,6 @@
     "alpha_3": "GBR",
     "group": "eu",
     "numeric_code": "826",
-    "independant": true,
     "capital": {
       "en_US": ["London"],
       "fr_FR": ["Londres"],
@@ -5626,7 +5390,6 @@
     "alpha_3": "USA",
     "group": "na",
     "numeric_code": "840",
-    "independant": true,
     "capital": {
       "en_US": ["Washington D.C.","Washington"],
       "fr_FR": ["Washington D.C.","Washington"],
@@ -5649,7 +5412,6 @@
     "alpha_3": "UMI",
     "group": "oc",
     "numeric_code": "581",
-    "independant": false,
     "capital": {
       "en_US": ["Johnston Atoll (only inhabited island)","Johnston Atoll"],
       "fr_FR": ["Atoll Johnston (seule ile habitée)","Atoll Johnston"],
@@ -5672,7 +5434,6 @@
     "alpha_3": "URY",
     "group": "sa",
     "numeric_code": "858",
-    "independant": true,
     "capital": {
       "en_US": ["Montevideo"],
       "fr_FR": ["Montevideo"],
@@ -5695,7 +5456,6 @@
     "alpha_3": "UZB",
     "group": "as",
     "numeric_code": "860",
-    "independant": true,
     "capital": {
       "en_US": ["Tashkent"],
       "fr_FR": ["Ouzbékistan"],
@@ -5718,7 +5478,6 @@
     "alpha_3": "VUT",
     "group": "oc",
     "numeric_code": "548",
-    "independant": true,
     "capital": {
       "en_US": ["Port Vila"],
       "fr_FR": ["Port-Vila"],
@@ -5741,7 +5500,6 @@
     "alpha_3": "VEN",
     "group": "sa",
     "numeric_code": "862",
-    "independant": true,
     "capital": {
       "en_US": ["Caracas"],
       "fr_FR": ["Caracas"],
@@ -5764,7 +5522,6 @@
     "alpha_3": "VNM",
     "group": "as",
     "numeric_code": "704",
-    "independant": true,
     "capital": {
       "en_US": ["Hanoi"],
       "fr_FR": ["Hanoï"],
@@ -5787,7 +5544,6 @@
     "alpha_3": "VGB",
     "group": "na",
     "numeric_code": "092",
-    "independant": false,
     "capital": {
       "en_US": ["Road Town"],
       "fr_FR": ["Road Town"],
@@ -5810,7 +5566,6 @@
     "alpha_3": "VIR",
     "group": "na",
     "numeric_code": "850",
-    "independant": false,
     "capital": {
       "en_US": ["Charlotte Amalie"],
       "fr_FR": ["Charlotte-Amélie"],
@@ -5833,7 +5588,6 @@
     "alpha_3": "WLF",
     "group": "oc",
     "numeric_code": "876",
-    "independant": false,
     "capital": {
       "en_US": ["Mata Utu"],
       "fr_FR": ["Mata Utu"],
@@ -5856,7 +5610,6 @@
     "alpha_3": "ESH",
     "group": "af",
     "numeric_code": "732",
-    "independant": false,
     "capital": {
       "en_US": ["El-Aaiun","Laâyoune"],
       "fr_FR": ["Laâyoune"],
@@ -5879,7 +5632,6 @@
     "alpha_3": "YEM",
     "group": "as",
     "numeric_code": "887",
-    "independant": true,
     "capital": {
       "en_US": ["Sana'a (Houthi government) and Aden (internationally recognized government)","Sana'a","Aden"],
       "fr_FR": ["Sanaa (gouvernement houthi) et Aden (gouvernement internationalement reconnu)","Sanaa","Aden"],
@@ -5902,7 +5654,6 @@
     "alpha_3": "ZMB",
     "group": "af",
     "numeric_code": "894",
-    "independant": true,
     "capital": {
       "en_US": ["Lusaka"],
       "fr_FR": ["Lusaka"],
@@ -5925,7 +5676,6 @@
     "alpha_3": "ZWE",
     "group": "af",
     "numeric_code": "716",
-    "independant": true,
     "capital": {
       "en_US": ["Harare"],
       "fr_FR": ["Harare"],
