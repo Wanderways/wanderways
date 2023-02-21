@@ -316,3 +316,22 @@ mat-dialog-container,
 
 @include customMixins.scrollbar('.mat-select-panel', true);
 @include customMixins.scrollbar('.custom-scrollbar', true);
+
+// generic template logo and title
+.logo-and-title {
+  padding: 0.25rem;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  img {
+    height: 30px;
+  }
+}
