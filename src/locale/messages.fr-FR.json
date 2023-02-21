@@ -1,6 +1,7 @@
 {
   "locale": "fr-FR",
   "translations": {
+    "home-welcome":"Bienvenue sur Wanderways",
     "name":"Nom",
     "flag":"Drapeau",
     "main-city":"Ville principale",

@@ -1,6 +1,7 @@
 {
   "locale": "en-US",
   "translations": {
+    "home-welcome":"Welcome to Wanderways",
     "name":"Name",
     "flag":"Flag",
     "main-city":"Main city",
