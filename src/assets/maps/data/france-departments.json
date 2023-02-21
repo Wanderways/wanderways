@@ -10,7 +10,10 @@
     "id": "FR-01",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-01.svg",
     "group": "FR-ARA",
-    "capital": { "en_US": ["Bourg-en-Bresse"], "fr_FR": ["Bourg-en-Bresse"] },
+    "capital": {
+      "en_US": ["Bourg-en-Bresse"],
+      "fr_FR": ["Bourg-en-Bresse"]
+    },
     "numeric_code": "01"
   },
   {
@@ -88,7 +91,7 @@
       "en_US": ["Ardennes"],
       "fr_FR": ["Ardennes"],
       "es_ES": ["Ardenas"],
-      "de_DE": ["Ardennes"],
+      "de_DE": ["Ardennen"],
       "pt_PT": ["Ardenas"]
     },
     "id": "FR-08",
