@@ -15,6 +15,11 @@ $app-theme: app.define-light-theme((color: (primary: $app-primary, accent: $app-
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Outfit';
+  src: url('assets/fonts/Outfit-Medium.ttf');
+}
+
 $svg-invert-white: 1;
 $svg-sepia-white: 0.64;
 $svg-invert-white: 1;
