@@ -14,7 +14,7 @@ import { PipesModule } from '../../pipes/pipes.module';
   imports: [
     PipesModule,
     CommonModule,
-    MatSelectModule, 
+    MatSelectModule,
     MatRippleModule,
     ReactiveFormsModule
   ],
