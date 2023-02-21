@@ -1,77 +1,8 @@
-<!-- SIDE-NAV -->
-<app-side-menu #app_side_menu id="sidenav" [displaySideMenu]="displaySideNav"
-  (displaySideMenuChange)="displaySideNav = !displaySideNav" [behavior]="'reactive'" [direction]="'left'">
-  <div id="sidenav-header" header>
-    <ng-container *ngTemplateOutlet="header_content"></ng-container>
-    <div id="close-sidenav-button" matRipple
-      (click)="displaySideNav = !displaySideNav">
-      <img id="close-button" src="./assets/icons/close.svg" alt="close button icon" class="svg-current-color mx-0" />
-    </div>
-  </div>
-  <div main class="nav-container">
-    <ng-container [ngTemplateOutlet]="nav_links" [ngTemplateOutletContext]="{links:navLinks}"></ng-container>
-  </div>
-  <ng-container footer>
-    <hr class="mt-auto" />
-    <ng-container [ngTemplateOutlet]="nav_links" [ngTemplateOutletContext]="{links:footerLinks}"></ng-container>
-    <!-- @TODO when available, use svh unit -->
-    <div class="flex justify-around gap-1 mb-2">
-      <app-language-selector></app-language-selector>
-    </div>
-    <span class="text-xs">© Learn Your Maps 2022</span>
-  </ng-container>
-</app-side-menu>
+<app-sidenav></app-sidenav>
+
 <!-- MAIN CONTENT -->
 <div id="main-content">
   <!-- HEADER -->
-  <header id="header" #nav [style.position]="position" [class]="position" [class.isScrolled]="isScrolled">
-    <div id="header-content">
-      <div matRipple  class="header-button mx-3 my-2 rounded cursor-pointer select-none"
-        (click)="displaySideNav = !displaySideNav" [style.visibility]="displaySideNav ? 'hidden' : ''">
-        <img src="./assets/icons/menu.svg" alt="menu button icon" class="svg-current-color mx-1" />
-      </div>
-      <ng-container *ngTemplateOutlet=" header_content; context: { $implicit: displaySideNav } "></ng-container>
-    </div>
-  </header>
+  <app-header></app-header>
   <router-outlet></router-outlet>
 </div>
-
-<!-- TEMPLATES -->
-<ng-template #header_content let-isVisible>
-  <div matRipple  id="logo-and-title" class="header-button" [routerLink]="['/']"
-    [style.visibility]="isVisible ? 'hidden' : ''">
-    <img src="./assets/brand/logo_with_brand.svg" alt="menu button icon" />
-  </div>
-</ng-template>
-
-<ng-template #sidenavbutton let-link="link" let-label="label" let-isDisabled="isDisabled" let-icon="icon">
-  <!-- Style set in template for background-url, else fails at build time -->
-  <button mat-button matRipple  [routerLink]="[link]" routerLinkActive="active-link"
-    [routerLinkActiveOptions]="{ exact: true }" [disabled]="isDisabled" class="menu-button" style="background-image: url('./assets/icons/candy-button.svg');">
-    <div *ngIf="icon" class="cat-icon-container">
-      <img class="nav-icon gap-2 mx-1" src="{{ icon }}" alt="{{ label }} icon" />
-    </div>
-    <span class="candy-text-color text-base font-medium {{ isDisabled ? 'opacity-20' : '' }}">{{ label }}</span>
-  </button>
-</ng-template>
-
-<ng-template #nav_links let-links="links" >
-  <ng-container *ngFor="let link of links">
-    <ng-container *ngIf="link.isLink; else subcat">
-      <ng-container [ngTemplateOutlet]="sidenavbutton" [ngTemplateOutletContext]="{ link: link.link, label: link.label, isDisabled: link.isDisabled, icon: link.icon }"></ng-container>
-    </ng-container>
-    <ng-template #subcat>
-      <div class="subcat-nav">
-        <div class="subcat-title">
-          <div class="cat-icon-container">
-            <img src="{{ link.icon }}" alt="{{ link.label }} icon" class="nav-icon gap-2 mx-1" />
-          </div>
-          <span class="candy-text-color text-base font-bold">{{ link.label }}</span>
-        </div>
-        <ng-container *ngFor="let subLink of link.catLink">
-          <ng-container [ngTemplateOutlet]="sidenavbutton" [ngTemplateOutletContext]="{ link: subLink.link, label: subLink.label, isDisabled: subLink.isDisabled }"></ng-container>
-        </ng-container>
-      </div>
-    </ng-template>
-  </ng-container>
-</ng-template>

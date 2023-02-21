@@ -1,0 +1,92 @@
+ul {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    padding-left: 0.75rem;
+
+    gap: 0.5rem;
+    -webkit-user-select: none;
+    user-select: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 6px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+
+    filter: brightness(10);
+    text-align: left;
+
+    &.active-link {
+      filter: brightness(1);
+
+      &:not(.category).link {
+        font-weight: 700;
+      }
+
+      span,
+      img {
+        filter: drop-shadow(1px 1px 1px #333);
+      }
+    }
+
+    &.category {
+
+      &.link.active-link,
+      &:not(.link):has(~ .active-link):not(:has(~ .category ~ .active-link)) {
+        filter: brightness(1);
+        background-image: url('../../../../../assets/icons/candy-button.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100.5% 103%;
+      }
+    }
+
+    &.disabled span {
+      opacity: 0.2;
+    }
+
+    &.category {
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      font-weight: 500;
+
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      img {
+        width: 1.5rem;
+        max-width: 1.5rem;
+        max-height: 24px;
+
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+      }
+    }
+
+    &:not(.category):not(.active-link) {
+      span {
+        opacity: 0.7;
+      }
+    }
+
+    &.link {
+      &:not(.disabled) {
+        cursor: pointer;
+      }
+
+      &:hover {
+        background-color: #FFFFFF3d;
+      }
+    }
+  }
+}

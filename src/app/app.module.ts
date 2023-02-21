@@ -14,9 +14,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
-import { ComponentsModule } from './shared/components/components.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { LayoutModule } from './shared/layout/layout.module';
 
 let matModules: any[] = [
   MatRippleModule,
@@ -34,7 +34,7 @@ const firebase = environment.production? [provideFirebaseApp(() => initializeApp
     AppComponent,
   ],
   imports: [
-    ComponentsModule,
+    LayoutModule,
     CoreModule,
     BrowserModule,
     BrowserAnimationsModule,

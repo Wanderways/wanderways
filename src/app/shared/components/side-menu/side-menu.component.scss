@@ -27,6 +27,7 @@
 @include bs(sidemenu, 1px, 0px, 10px, 3px, #00000080);
 
 :host {
+  --sidenav-width : 244px;
   flex: 0 0 auto;
   z-index: 1000;
   top: 0;
@@ -35,12 +36,12 @@
   @include customMixins.scrollbar('.side-menu-container', false);
 
   .side-menu-container {
-    padding: 0 1.5rem 1rem 1.5rem;
+    padding: 40px 22px 1rem 22px;
     display: flex;
     flex-direction: column;
     position: sticky;
     height: 100%;
-    width: 244px;
+    width: var(--sidenav-width);
     flex: 0 0 auto;
   }
 
@@ -58,8 +59,8 @@
     #mobile-responsive-sidemenu {
       height: 100%;
       top: 0;
-      left: 244px;
-      width: calc(100vw - 244px);
+      left: var(--sidenav-width);
+      width: calc(100vw - var(--sidenav-width));
       opacity: 0.6;
       background-color: #000000;
       position: fixed;
@@ -85,13 +86,13 @@
     }
 
     .slide-sidemenu-show {
-      @include slide(sidemenu-show-left, left, -244px, 0px);
+      @include slide(sidemenu-show-left, left, calc(-1 * var(--sidenav-width)), 0px);
       animation: slide-sidemenu-show-left 0.2s ease-in-out forwards,
         sidemenu-bs 0.2s ease-in-out forwards;
     }
 
     .slide-sidemenu-hide {
-      @include slide(sidemenu-hide-left, left, 0px, -244px);
+      @include slide(sidemenu-hide-left, left, 0px, calc(-1 * var(--sidenav-width)));
       animation: slide-sidemenu-hide-left 0.2s ease-in-out forwards;
     }
   }
@@ -100,20 +101,20 @@
     right: 0 !important;
 
     .backdrop-show {
-      right: 244px !important;
+      right: var(--sidenav-width) !important;
       left: unset !important;
       @include slide(backdrop-show-right, right, 75vw, 0);
       animation: slide-backdrop-show-right 0.2s ease-in-out forwards,
     }
 
     .slide-sidemenu-show {
-      @include slide(sidemenu-show-right, right, -244px, 0px);
+      @include slide(sidemenu-show-right, right, calc(-1 * var(--sidenav-width)), 0px);
       animation: slide-sidemenu-show-right 0.2s ease-in-out forwards,
         sidemenu-bs 0.2s ease-in-out forwards;
     }
 
     .slide-sidemenu-hide {
-      @include slide(sidemenu-hide-right, right, 0px, -244px);
+      @include slide(sidemenu-hide-right, right, 0px, calc(-1 * var(--sidenav-width)));
       animation: slide-sidemenu-hide-right 0.2s ease-in-out forwards;
     }
   }
@@ -133,5 +134,11 @@
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   :host {
     background-color: var(--dark-background);
+  }
+}
+
+@media  screen and (min-width: 600px){
+  :host {
+    --sidenav-width : 324px;
   }
 }

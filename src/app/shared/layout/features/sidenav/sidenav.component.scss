@@ -1,0 +1,43 @@
+app-side-menu {
+  background-color: rgba($color: #263D59, $alpha: 0.8);
+
+  #sidenav-header {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    #close-sidenav-button {
+      border-radius: 0.25rem;
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none;
+      padding: 0.5rem;
+
+      #close-button {
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  nav.sidenav-content {
+    display: flex;
+    flex-direction: column;
+
+    hr {
+      margin: 40px 0;
+      opacity: 0.2;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #close-sidenav-button {
+    display: none;
+  }
+}

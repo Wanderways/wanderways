@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let link of linkList" class="menu-category" [attr.matRipple]="!link.disabled"
+    [routerLink]="link.link && !link.disabled ? link.link : null" routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }" [class.disabled]="link.disabled" [class.link]="link.link"
+    [class.category]="link.icon">
+    <img *ngIf="link.icon" src="{{ link.icon }}" alt="{{ link.label }} icon" />
+    <span [class.candy-text-color]="link.icon">{{ link.label }}</span>
+  </li>
+</ul>

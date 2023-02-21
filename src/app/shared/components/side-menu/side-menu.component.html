@@ -1,6 +1,4 @@
 <div *ngIf="displaySideMenu && (isSmallDevice || behavior === 'fixed' )" id="mobile-responsive-sidemenu" [class.backdrop-show]="displaySideMenu" (click)="displaySideMenuEvent()"></div>
 <div *ngIf="displaySideMenu!==undefined" class="side-menu-container {{direction}} slide-sidemenu-{{displaySideMenu ? 'show':'hide' }}" >
-    <ng-content select="[header]"></ng-content>
-    <ng-content select="[main]"></ng-content>
-    <ng-content select="[footer]"></ng-content>
+    <ng-content></ng-content>
 </div>
