@@ -25,7 +25,7 @@ export class TimeTrialComponent implements OnInit {
   areaSelected: MapData | undefined = undefined;
   currentMap: Map | undefined;
   currentSelected: MapData | undefined = undefined;
-  userInput: FormControl = new FormControl();
+  userInput: FormControl<string | null> = new FormControl<string>("");
   toFindList: MapData[] = [];
   foundList: MapData[] = [];
   originList: MapData[] = [];
@@ -79,7 +79,7 @@ export class TimeTrialComponent implements OnInit {
   }
 
   onInputChange() {
-    const currentInput = replaceSpecialChars(this.userInput.value)
+    const currentInput = replaceSpecialChars(this.userInput.value ?? "")
     const result = this.originList.find(e => this.getLocaleFromI18n(e.name)?.find(el => replaceSpecialChars(el) === currentInput));
 
     // if no corresponding element in origin list then nothing happens

@@ -9,22 +9,19 @@ import { MapGroupService } from 'src/app/shared/services/map-group/map-group.ser
 import { Map } from 'src/app/shared/interfaces/Map.interface';
 
 @Component({
-  selector: 'app-select-gamemode-dialog[mapGroup][selectedMapId]',
+  selector: 'app-select-gamemode-dialog[mapGroup][startPlayingForm.controls.selectedMapId]',
   templateUrl: './select-gamemode-dialog.component.html',
   styleUrls: ['./select-gamemode-dialog.component.scss']
 })
 export class SelectGamemodeDialogComponent implements OnInit {
 
-  availableMaps: (MapGroup & {maps?:Map[]})[] = [];
-
-  selectedMapId = new FormControl('', Validators.required);
-  selectedGameId = new FormControl('');
+  availableMaps: (MapGroup & { maps?: Map[] })[] = [];
 
   gameIndex = GameIndex;
 
   startPlayingForm = new FormGroup({
-    selectedMapId: this.selectedMapId,
-    selectedGameId: this.selectedGameId,
+    selectedMapId: new FormControl<string>('', Validators.required),
+    selectedGameId: new FormControl<string>(''),
   });
 
   constructor(public dialogRef: MatDialogRef<SelectGamemodeDialogComponent>,
@@ -35,32 +32,32 @@ export class SelectGamemodeDialogComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadMapIndex();
-    this.selectedMapId.setValue(this.data.selectedMap.id);
-    this.selectedGameId.setValue(this.gameIndex[0].id)
+    this.startPlayingForm.controls.selectedMapId.setValue(this.data.selectedMap.id);
+    this.startPlayingForm.controls.selectedGameId.setValue(this.gameIndex[0].id)
   }
 
   loadMapIndex() {
     this.mapGroupService.loadIndex().subscribe(e => {
       this.availableMaps = e;
-      this.availableMaps.forEach(el=>{
+      this.availableMaps.forEach(el => {
         this.getMapsFromGroup(el.mapGroupId).then(maps => el.maps = maps);
       })
     })
   }
 
   setSelectedMode(mapIndexId: string) {
-    this.selectedGameId.setValue(mapIndexId);
+    this.startPlayingForm.controls.selectedGameId.setValue(mapIndexId);
   }
 
-  close(data? : { mapId : string, gameId:string}) {
+  close(data?: { mapId: string, gameId: string }) {
     this.dialogRef.close(data);
   }
 
-  play(){
-    this.close({mapId : this.selectedMapId.value, gameId : this.selectedGameId.value})
+  play() {
+    this.close({ mapId: this.startPlayingForm.controls.selectedMapId.value ?? "", gameId: this.startPlayingForm.controls.selectedGameId.value ?? "" })
   }
 
-  getMapsFromGroup(id : string){
+  getMapsFromGroup(id: string) {
     return this.mapService.getMapsFromGroup(id);
   }
 
