@@ -26,22 +26,22 @@ describe('AppComponent', () => {
 
 
   it('should render main-content div', () => {
-    const compiled = fixture.nativeElement as HTMLElement;
+    const compiled : HTMLElement = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('div#main-content')).toBeTruthy();
   });
 
   it('should render the sidenav component', () => {
-    const sidenavElement = fixture.debugElement.query(By.css('app-sidenav'));
-    expect(sidenavElement.nativeElement).toBeTruthy();
+    const sidenavElementDe = fixture.debugElement.query(By.css('app-sidenav'));
+    expect(sidenavElementDe.nativeElement).toBeTruthy();
   });
 
   it('should render the header component', () => {
-    const headerElement = fixture.debugElement.query(By.css('app-header'));
-    expect(headerElement.nativeElement).toBeTruthy();
+    const headerElementDe = fixture.debugElement.query(By.css('app-header'));
+    expect(headerElementDe.nativeElement).toBeTruthy();
   });
 
   it('should render the router outlet', () => {
-    const routerOutletElement = fixture.debugElement.query(By.css('router-outlet'));
-    expect(routerOutletElement.nativeElement).toBeTruthy();
+    const routerOutletElementDe = fixture.debugElement.query(By.css('router-outlet'));
+    expect(routerOutletElementDe.nativeElement).toBeTruthy();
   });
 });
