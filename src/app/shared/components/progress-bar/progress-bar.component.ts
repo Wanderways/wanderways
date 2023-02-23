@@ -7,41 +7,38 @@ import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 })
 export class ProgressBarComponent {
 
-  @Input("currentFound") currentFound: number = 0;
+  @Input("currentFound")
+  set currentFound(value: number) {
+    this.currentPercentage = this.getAsPercentage(value, this.objective);
+    this.currentStage = this.stages.find(e =>
+      e.range[0] <= this.currentPercentage && e.range[1] >= this.currentPercentage
+    )?.state ?? "error";
+  }
   @Input("objective") objective: number = 0;
-  @Input('progressBarWidth') progressBarWidth : string = "100px"
-  currentStage: string = "";
+  @Input('progressBarWidth') progressBarWidth: string = "100px"
+  currentPercentage : number = 0;
+  currentStage: string = "low";
   stages = [
     {
-      percentage: 30,
-      class: "low"
+      range: [0, 30],
+      state: "low"
     },
     {
-      percentage: 60,
-      class: "medium"
+      range: [31, 60],
+      state: "medium"
     },
     {
-      percentage: 100,
-      class: "found"
+      range: [61, 100],
+      state: "found"
     }
   ]
 
   constructor() { }
 
-  ngOnChanges(changes: SimpleChanges) {
-    if (changes.currentFound) this.onCurrentFoundChange();
-  }
+  private getAsPercentage(currentFound: number, objective: number): number {
+    if (objective < 0 || currentFound > objective) return -1;
+    if (objective === 0) return 0;
 
-  onCurrentFoundChange() {
-    this.setCurrentStage();
-  }
-
-  setCurrentStage() {
-    this.currentStage = this.stages.find(e => e.percentage >= this.getAsPercentage())!.class;
-  }
-
-  getAsPercentage(): number {
-    if(this.objective === 0 ) return 0;
-    return (this.currentFound / this.objective) * 100;
+    return Math.floor((currentFound / objective) * 100);
   }
 }

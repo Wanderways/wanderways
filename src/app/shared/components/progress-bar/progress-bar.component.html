@@ -5,5 +5,5 @@
     <span id="objective">{{objective}}</span>
 </div>
 <div class="progress-bar-container" [style.width]="progressBarWidth">
- <div class="current-progress-bar {{currentStage}}" [style.width]="(currentFound/objective)*100+'%'"></div>
+ <div class="current-progress-bar {{currentStage}}" [style.width]="currentPercentage+'%'"></div>
 </div>
