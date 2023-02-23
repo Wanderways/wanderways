@@ -82,10 +82,9 @@ ul {
     &.link {
       &:not(.disabled) {
         cursor: pointer;
-      }
-
-      &:hover {
-        background-color: #FFFFFF3d;
+        &:hover {
+          background-color: #FFFFFF3d;
+        }
       }
     }
   }
