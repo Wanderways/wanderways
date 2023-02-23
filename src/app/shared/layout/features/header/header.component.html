@@ -1,12 +1,10 @@
-<header id="header" #nav [style.position]="position" [class]="position" [class.isScrolled]="isScrolled">
-  <div id="header-content">
-    <div id="open-sidenav-button-container" matRipple>
-      <img id="open-sidenav-button" [style.visibility]="(sidenavService.isDisplayed$ | async) ? 'hidden' : ''"
-        (click)="sidenavService.toggleDisplayed()" src="./assets/icons/menu.svg" alt="menu button icon"
-        class="svg-current-color header-button" />
-    </div>
-    <div matRipple class="logo-and-title" [routerLink]="['/']" [style.visibility]="(sidenavService.isDisplayed$ | async) ? 'hidden' : ''">
-      <img id="logo-with-brand" src="./assets/brand/logo_with_brand.svg" alt="menu button icon" />
-    </div>
-  </div>
+<header id="header" #nav [style.position]="position" [class]="position" [class.is-scrolled]="isScrolled" [class.sidenav-open]="sidenavService.isDisplayed$ | async">
+  <button id="open-sidenav-button-container" matRipple (click)="sidenavService.toggleDisplayed()">
+    <img id="open-sidenav-button" [style.visibility]="(sidenavService.isDisplayed$ | async) ? 'hidden' : ''"
+      src="./assets/icons/menu.svg" alt="menu button icon" class="svg-current-color header-button" />
+  </button>
+  <button matRipple class="logo-and-title" [routerLink]="['/']"
+    [style.visibility]="(sidenavService.isDisplayed$ | async) ? 'hidden' : ''">
+    <img id="logo-with-brand" src="./assets/brand/logo_with_brand.svg" alt="menu button icon" />
+  </button>
 </header>
