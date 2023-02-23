@@ -13,7 +13,7 @@ Languages :
 
 |Technology/Framework|Versions|Usage|
 |-|-|-|
-|[Angular](https://angular.io/docs)|13|General frontend|
+|[Angular](https://angular.io/docs)|15|General frontend|
 |[Apollo](https://www.apollographql.com/)||
 
 ### Backend
