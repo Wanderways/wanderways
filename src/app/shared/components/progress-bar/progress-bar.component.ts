@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-progress-bar[currentFound][objective]',
@@ -16,7 +16,7 @@ export class ProgressBarComponent {
   }
   @Input("objective") objective: number = 0;
   @Input('progressBarWidth') progressBarWidth: string = "100px"
-  currentPercentage : number = 0;
+  currentPercentage: number = 0;
   currentStage: string = "low";
   stages = [
     {

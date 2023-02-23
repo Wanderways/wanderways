@@ -124,8 +124,8 @@
 /* if backdrop support: blurred */
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   :host {
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
   }
 
 }
