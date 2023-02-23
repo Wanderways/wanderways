@@ -1,4 +1,7 @@
-<div *ngIf="displaySideMenu && (isSmallDevice || behavior === 'fixed' )" id="mobile-responsive-sidemenu" [class.backdrop-show]="displaySideMenu" (click)="displaySideMenuEvent()"></div>
-<div *ngIf="displaySideMenu!==undefined" class="side-menu-container {{direction}} slide-sidemenu-{{displaySideMenu ? 'show':'hide' }}" >
-    <ng-content></ng-content>
+<!-- isSmallDevice is only computed when reactive behavior -->
+<div *ngIf="displaySideMenu && (isSmallDevice || behavior === 'fixed' )" id="side-menu-backdrop"
+  [class.backdrop-show]="displaySideMenu" (click)="displaySideMenuEvent()"></div>
+<div *ngIf="displaySideMenu!==undefined"
+  id="side-menu-container" class="{{direction}} slide-sidemenu-{{displaySideMenu ? 'show':'hide' }}">
+  <ng-content></ng-content>
 </div>

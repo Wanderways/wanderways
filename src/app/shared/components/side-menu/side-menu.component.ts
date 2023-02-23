@@ -1,5 +1,4 @@
 import { Component, EventEmitter, HostBinding, HostListener, Input, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-menu',
@@ -8,53 +7,47 @@ import { Router } from '@angular/router';
 })
 export class SideMenuComponent implements OnInit {
 
-  @Input() direction : ('left'|'right') = 'left';
-
-  
-  @Input() behavior : ('reactive'|'sticky'|'fixed') = 'sticky';
-  @HostBinding('class') class = 'sticky';
+  @Input() direction: ('left' | 'right') = 'left';
 
 
-  @Input() displaySideMenu : boolean | undefined = undefined;
-  @Output() displaySideMenuChange = new EventEmitter();
+  /**
+   * Explanations :
+   * - reactive : means that the class will change from sticky to fixed depending on screen width
+   * - sticky : on the same level as other stuff. Mean it will push away other content to take needed space
+   * - fixed : on top of content, will be accompagnied with a backdrop to darken the background
+   */
+  @Input() behavior: ('reactive' | 'sticky' | 'fixed') = 'sticky';
+  @HostBinding('class') private class = 'sticky';
 
-  isSmallDevice : boolean = false;
 
-  constructor(private router : Router){}
+  @Input() displaySideMenu: boolean | undefined = undefined;
+  @Output() displaySideMenuChange = new EventEmitter<never>();
+
+  isSmallDevice: boolean = false;
+
+  constructor() { }
 
   ngOnInit(): void {
-    if(this.behavior === 'reactive'){// Depends on size
-      this.onResize();
-    }else{// Depends on initialisation
-      this.class = this.behavior === 'fixed'?'fixed':'sticky';
-      this.class += ' '+ this.direction;
+    if (this.behavior === 'reactive') {// Depends on size
+      this.onWindowResize();
+    } else {// Depends on initialisation
+      this.class = this.behavior;
+      this.class += ' ' + this.direction;
     }
   }
 
   /**
    * Emits the event that the side menu is being toggled
    */
-  displaySideMenuEvent(){
+  displaySideMenuEvent() {
     this.displaySideMenuChange.emit();
   }
 
-  /**
-   * Deals with windows resize
-   */
   @HostListener('window:resize', ['$event'])
-  onResize(){
-    this.isSmallDevice = window.innerWidth<=1024;
-    if(this.behavior === 'reactive') // If depends on size
-      this.class = this.isSmallDevice ? 'fixed':'sticky';
-    this.class += ' '+ this.direction;
-  }
-  /**
-   * Navigate to the given path. If on mobile device, then also close sidemenu.
-   * @param path A string reprensing a valid path.
-   */
-   navigate(path : string){
-    this.router.navigate([path]);
-    if(this.isSmallDevice)this.displaySideMenuEvent();
-  }
+  private onWindowResize() {
+    this.isSmallDevice = window.innerWidth <= 1024;
+    this.class = this.isSmallDevice ? 'fixed' : 'sticky';
+    this.class += ' ' + this.direction;
 
+  }
 }

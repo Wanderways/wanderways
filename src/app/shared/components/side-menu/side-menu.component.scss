@@ -33,9 +33,9 @@
   top: 0;
   height: 100vh;
   background-color: var(--dark-background);
-  @include customMixins.scrollbar('.side-menu-container', false);
+  @include customMixins.scrollbar('#side-menu-container', false);
 
-  .side-menu-container {
+  #side-menu-container {
     padding: 40px 22px 1rem 22px;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@
       opacity: 1;
     }
 
-    #mobile-responsive-sidemenu {
+    #side-menu-backdrop {
       height: 100%;
       top: 0;
       left: var(--sidenav-width);
