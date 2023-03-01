@@ -1,4 +1,4 @@
-<header id="header" #nav [style.position]="position" [class]="position" [class.isScrolled]="isScrolled">
+<header id="header" #nav [style.position]="position$ | async" [class]="position$ | async" [class.isScrolled]="isScrolled">
   <div id="header-content">
     <div id="open-sidenav-button-container" matRipple>
       <img id="open-sidenav-button" [style.visibility]="(sidenavService.isDisplayed$ | async) ? 'hidden' : ''"

@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { HeaderDisplayService } from '../../../services/header-display.service';
 import { SidenavService } from '../../data-access/sidenav.service';
 
@@ -10,14 +11,14 @@ import { SidenavService } from '../../data-access/sidenav.service';
 export class HeaderComponent implements OnInit {
 
 
-  position: "sticky" | "relative" | "fixed" = "sticky";
+  position$ : Observable<"sticky" | "relative" | "fixed"> = of("sticky");
   isScrolled: boolean = false;
 
   constructor(private headerDisplayService: HeaderDisplayService,
     public sidenavService : SidenavService) { }
 
   ngOnInit(): void {
-    this.headerDisplayService.getPosition().subscribe(position => this.position = position);
+    this.position$ = this.headerDisplayService.getPosition();
   }
 
   /**

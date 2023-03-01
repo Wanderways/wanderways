@@ -1,3 +1,6 @@
+@import "/src/app/theming/breakpoints";
+@import "/src/app/theming/gradients";
+
 #header {
   display: flex;
   width: 100%;
@@ -5,10 +8,9 @@
 
   #header-content {
     height: 100%;
-    margin: 0 auto;
+    margin: 35px;
     display: flex;
     align-items: center;
-    margin: 35px;
 
     #open-sidenav-button-container {
       margin-right: 20px;
@@ -50,7 +52,7 @@
 
     &::after {
       content: "";
-      background: linear-gradient(45deg, var(--violetta-primary) 0%, var(--violetta-secondary) 100%);
+      background: $gradient-violeta;
       height: 1px;
       width: 100%;
       position: absolute;
@@ -99,3 +101,10 @@
 }
 
 
+@media screen and (max-width : $large-screen) {
+  #header{
+    #header-content {
+      margin: 15px 35px;
+    }
+  }
+}

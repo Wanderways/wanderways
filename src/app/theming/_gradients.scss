@@ -1,0 +1,11 @@
+$gradient-dark :linear-gradient(180deg,
+  var(--theme-dark-background-dark) 0%,
+  var(--theme-dark-background-light) 100%);
+
+$gradient-candy :linear-gradient(225deg,
+  var(--candy-primary) 0%,
+  var(--candy-secondary) 100%);
+
+$gradient-violeta :linear-gradient(45deg,
+  var(--violetta-primary) 0%,
+  var(--violetta-secondary) 100%);

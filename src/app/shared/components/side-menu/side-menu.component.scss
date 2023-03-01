@@ -1,4 +1,5 @@
 @use '../../../theming/customMixins' as customMixins;
+@import "/src/app/theming/breakpoints";
 
 @mixin slide($name, $dir, $ox, $tx) {
   @keyframes slide-#{$name} {
@@ -27,7 +28,7 @@
 @include bs(sidemenu, 1px, 0px, 10px, 3px, #00000080);
 
 :host {
-  --sidenav-width : 244px;
+  --sidenav-width: 244px;
   flex: 0 0 auto;
   z-index: 1000;
   top: 0;
@@ -137,8 +138,14 @@
   }
 }
 
-@media  screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
   :host {
-    --sidenav-width : 324px;
+    --sidenav-width: 324px;
+  }
+}
+
+@media screen and (max-width : $large-screen) {
+  #side-menu-container {
+    padding-top: 15px !important;
   }
 }
