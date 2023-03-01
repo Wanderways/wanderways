@@ -12,12 +12,12 @@ export class TagGroupService {
   private FILE_EXTENSION=".json";
 
   constructor(private http: HttpClient) { }
-  
+
   /**
    * Allows to load the list of area types
    * @returns The list of existing area types
    */
-  loadTagGroup() : Observable<TagGroup[]>{
+  getTagGroup$() : Observable<TagGroup[]>{
     return this.http.get<TagGroup[]>(this.PATH+this.FILE_NAME+this.FILE_EXTENSION);
   }
 }

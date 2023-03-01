@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { Component, OnInit } from '@angular/core';
+import { MatDialog as MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SelectGamemodeDialogComponent } from 'src/app/shared/components/dialogs/select-gamemode-dialog/select-gamemode-dialog.component';
 
@@ -9,6 +9,8 @@ import { MapGroup } from 'src/app/shared/interfaces/map-group.interface';
 import { MapGroupService } from 'src/app/shared/services/map-group/map-group.service';
 import { Map } from 'src/app/shared/interfaces/Map.interface';
 import { MapService } from 'src/app/shared/services/map/map.service';
+import { Observable, of, Subject } from 'rxjs';
+import { tap, switchMap, shareReplay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-sightseeing',
@@ -17,11 +19,12 @@ import { MapService } from 'src/app/shared/services/map/map.service';
 })
 export class SightseeingComponent implements OnInit {
 
-  mapGroup: MapGroup | undefined = undefined;
-  maps: Map[] = [];
+  mapGroup$: Observable<MapGroup | undefined> = of(undefined);
+  maps$: Observable<Map[]> = of([]);
+  selectedMap$: Subject<Map | undefined> = new Subject<Map | undefined>()
+
   areaSelected: MapData | undefined = undefined;
 
-  selectedMap: Map | undefined;
 
 
   constructor(public dialog: MatDialog,
@@ -33,35 +36,17 @@ export class SightseeingComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => this.headerDisplayService.setPosition("fixed"));
-
-    this.route.queryParams.subscribe(queryParameter => {
-      if (!queryParameter) return; // If there is no value then skip
-
-      this.mapGroupService.getEntryIfExists(queryParameter["map"]).then((mapGroup: MapGroup | undefined) => {
-        if (!mapGroup) return; // If no data found then skip
-        this.mapGroup = mapGroup;
-        this.mapService.getMapsFromGroup(this.mapGroup.mapGroupId).then(e=> {
-          this.maps = e;
-          this.selectedMap = this.maps[0];
-        });
-      });
-    })
-  }
-
-  setSelectedMap(mapId: string) {
-    this.selectedMap = this.maps.find(e => e.id === mapId);
+    this.mapGroup$ = this.route.queryParams.pipe(
+      switchMap(queryParameter => this.mapGroupService.getEntryIfExists(queryParameter["map"]))
+    );
+    this.maps$ = this.mapGroup$.pipe(
+      switchMap(el => this.mapService.getMapsFromGroup(el!.mapGroupId)),
+      tap(el => this.selectedMap$.next(el[0]))
+    );
   }
 
   ngOnDestroy(): void {
     this.headerDisplayService.setPosition("sticky");
-  }
-
-  /**
-   * When map is loaded, get its entry to display basic info
-   * @param mapGroup A map index entry
-   */
-  onMapGroup(mapGroup: MapGroup) {
-    this.mapGroup = mapGroup;
   }
 
   /**
@@ -72,15 +57,11 @@ export class SightseeingComponent implements OnInit {
     this.areaSelected = areaCommons;
   }
 
-  onPlay() {
-    this.openDialog();
 
-  }
-
-  openDialog(): void {
+  onPlay(selectedMap: Map | undefined, mapGroup: MapGroup | undefined): void {
     this.dialog.open(SelectGamemodeDialogComponent, {
-      minWidth:'50vw',
-      data: { selectedMap: this.selectedMap, mapGroup: this.mapGroup }
+      minWidth: '50vw',
+      data: { selectedMap: selectedMap, mapGroup: mapGroup }
     }).afterClosed().subscribe((data?: { mapId: string, gameId: string }) => {
       if (data) {
         this.router.navigate(["/game/" + data.gameId], { queryParams: { mapId: data.mapId } })

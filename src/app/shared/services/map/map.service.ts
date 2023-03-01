@@ -1,15 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { map, switchMap } from "rxjs/operators";
 import { Map } from '../../interfaces/Map.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MapService {
-  private PATH : string = "./assets/maps/";
-  private FILE_NAME : string = "maps";
-  private FILE_EXTENSION=".json";
+  private PATH: string = "./assets/maps/";
+  private FILE_NAME: string = "maps";
+  private FILE_EXTENSION = ".json";
 
   constructor(private http: HttpClient) { }
   /**
@@ -17,32 +18,27 @@ export class MapService {
    * @param id The map id
    * @returns The corresponding map
    */
-   getMap(id : string) : Promise<Map | undefined>{
-    return new Promise(resolve =>{
-      this.getMaps().subscribe((loadedIndex : Map[]) =>{
-        resolve(loadedIndex.find(map =>map.id === id));
-      });
-    });
+  getMap(id: string): Observable<Map | undefined> {
+    return this.getMaps().pipe(
+      map(el => el.find(map => map.id === id))
+    )
   }
   /**
    * Allows to get the full list of declared maps
    * @returns The full list of declared maps
    */
-  getMaps() : Observable<Map[]>{
-    return this.http.get<Map[]>(this.PATH+this.FILE_NAME+this.FILE_EXTENSION);
+  getMaps(): Observable<Map[]> {
+    return this.http.get<Map[]>(this.PATH + this.FILE_NAME + this.FILE_EXTENSION);
   }
 
   /**
    * Allows to get the full list of declared maps
    * @returns The full list of declared maps
    */
-   getMapsFromGroup(mapGroupId : string) : Promise<Map[]>{
-    return new Promise(
-      resolve =>{
-      this.getMaps().subscribe((loadedIndex : Map[]) =>{
-        resolve(loadedIndex.filter(map =>map.mapGroupId === mapGroupId));
-      });
-    });
+  getMapsFromGroup(mapGroupId: string): Observable<Map[]> {
+    return this.getMaps().pipe(
+      map(maps => maps.filter(map => map.mapGroupId === mapGroupId))
+    )
   }
 
 

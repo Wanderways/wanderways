@@ -5,6 +5,7 @@ import { Tag } from 'src/app/shared/interfaces/tag.interface';
 import { MapTagsService } from 'src/app/shared/services/map-tags/map-tags.service';
 import { TagGroup } from 'src/app/shared/interfaces/tag-group.interface';
 import { TagGroupService } from 'src/app/shared/services/tag-group/tag-group.service';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-maps-page',
@@ -13,47 +14,26 @@ import { TagGroupService } from 'src/app/shared/services/tag-group/tag-group.ser
 })
 export class MapsPageComponent implements OnInit {
 
-  tagGroupList : TagGroup[] = [];
+  tagGroupList$ : Observable<TagGroup[]> = of([]);
 
-  mapTagList : Tag[] = [];
+  mapTagList$ : Observable<Tag[]> = of([]);
 
-  mapGroupList : MapGroup[] = [];
+  mapGroupList$ : Observable<MapGroup[]> = of([]);
 
   displayFilter : boolean = false;
   tagFilterList : Tag[]=[];
 
   constructor(private mapGroupService : MapGroupService,
               public mapTagsService : MapTagsService,
-              private TagGroupService : TagGroupService) {}
+              private tagGroupService : TagGroupService) {}
 
   /**
    * On component init
    */
   ngOnInit(): void {
-    this.mapGroupService.loadIndex().subscribe((e:MapGroup[])=>this.mapGroupList = e);
-    this.TagGroupService.loadTagGroup().subscribe((e : TagGroup[])=>this.onTagGroupsLoaded(e));
-    this.mapTagsService.loadTags().subscribe((e : Tag[])=>this.onMapTagsLoaded(e));
-  }
-  /**
-   * When map index are loaded, affect them to component index
-   * @param mapGroupList The loaded index
-   */
-  onTagGroupsLoaded(tagGroupList : TagGroup[]){
-    this.tagGroupList = tagGroupList;
-  }
-  /**
-   * When map index are loaded, affect them to component index
-   * @param mapGroupList The loaded index
-   */
-  onMapIndexLoaded(mapGroupList : MapGroup[]){
-    this.mapGroupList = mapGroupList;
-  }
-  /**
-   * When map tags are loaded, affect them to component tags list
-   * @param mapGroupList The loaded tags list
-   */
-  onMapTagsLoaded(mapTagList : Tag[]){
-    this.mapTagList = mapTagList;
+    this.mapGroupList$ = this.mapGroupService.getMapGroup$();
+    this.tagGroupList$ = this.tagGroupService.getTagGroup$();
+    this.mapTagList$ = this.mapTagsService.getTags$();
   }
 
   /**

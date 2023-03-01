@@ -1,12 +1,13 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Locale_I18n } from '../../../interfaces/locale_i18n.interface';
 import { GameIndex } from 'src/app/shared/constants/game_index_constants';
 import { MapGroup } from 'src/app/shared/interfaces/map-group.interface';
 import { MapService } from 'src/app/shared/services/map/map.service';
 import { MapGroupService } from 'src/app/shared/services/map-group/map-group.service';
 import { Map } from 'src/app/shared/interfaces/Map.interface';
+import { Observable, of, zip } from "rxjs";
+import { switchMap, map } from "rxjs/operators";
 
 @Component({
   selector: 'app-select-gamemode-dialog[mapGroup][startPlayingForm.controls.selectedMapId]',
@@ -15,7 +16,7 @@ import { Map } from 'src/app/shared/interfaces/Map.interface';
 })
 export class SelectGamemodeDialogComponent implements OnInit {
 
-  availableMaps: (MapGroup & { maps?: Map[] })[] = [];
+  availableMaps$: Observable<CustomMapGroup[]> = of([]);
 
   gameIndex = GameIndex;
 
@@ -31,18 +32,23 @@ export class SelectGamemodeDialogComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loadMapIndex();
+    this.availableMaps$ = this.mapGroupService.getMapGroup$().pipe(
+      switchMap(mapGroups =>
+        zip(
+          mapGroups.map(mapGroup =>
+            this.getMapsFromGroup(mapGroup.mapGroupId).pipe(
+              map((maps): CustomMapGroup => {
+                let result = (mapGroup as CustomMapGroup)
+                result.maps = maps
+                return result
+              })
+            )
+          )
+        )
+      ),
+    )
     this.startPlayingForm.controls.selectedMapId.setValue(this.data.selectedMap.id);
     this.startPlayingForm.controls.selectedGameId.setValue(this.gameIndex[0].id)
-  }
-
-  loadMapIndex() {
-    this.mapGroupService.loadIndex().subscribe(e => {
-      this.availableMaps = e;
-      this.availableMaps.forEach(el => {
-        this.getMapsFromGroup(el.mapGroupId).then(maps => el.maps = maps);
-      })
-    })
   }
 
   setSelectedMode(mapIndexId: string) {
@@ -62,3 +68,6 @@ export class SelectGamemodeDialogComponent implements OnInit {
   }
 
 }
+
+
+type CustomMapGroup = MapGroup & { maps?: Map[] }

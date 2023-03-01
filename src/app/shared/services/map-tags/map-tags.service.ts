@@ -13,12 +13,12 @@ export class MapTagsService {
   private FILE_EXTENSION=".json";
 
   constructor(private http: HttpClient) { }
-  
+
   /**
    * Allows to get the full list of declared tags
    * @returns The full list of declared tags
    */
-  loadTags() : Observable<Tag[]>{
+  getTags$() : Observable<Tag[]>{
     return this.http.get<Tag[]>(this.PATH+this.FILE_NAME+this.FILE_EXTENSION);
   }
 }
