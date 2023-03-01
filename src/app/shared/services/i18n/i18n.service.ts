@@ -6,27 +6,17 @@ import { Locale_I18n } from '../../interfaces/locale_i18n.interface';
 })
 export class I18nService {
 
-  DEFAULT_LANG='en_US';
+  DEFAULT_LANG = 'en-US';
 
-  constructor(@Inject(LOCALE_ID) public locale: string) { }
+  constructor(@Inject(LOCALE_ID) public locale_id: string) { }
 
   /**
    * Allows to get the translation list corresponding to the current local
-   * @param locales The array list of available translation te retrieve the wanted one in
+   * @param locales The array list of available translation to retrieve the wanted one in
    * @returns The appropriate locale if exists, english by default
    */
-  getCurrentLocal(locales : Locale_I18n): string[] {
-    let result = getProperty(locales, this.locale.replace('-','_'))
-    return result.length?result:getProperty(locales, this.DEFAULT_LANG);
+  getCurrentLocal(locales: Locale_I18n): string[] {
+    let result = locales[this.locale_id]
+    return !!result.length ? result : locales[this.DEFAULT_LANG];
   }
-}
-
-/**
- * Allows to access I18n property dynamically
- * @param o The I18n object
- * @param propertyName The current language
- * @returns The array associated with the current language
- */
-function getProperty(o: any, propertyName: string): string[] {
-  return o[propertyName];
 }

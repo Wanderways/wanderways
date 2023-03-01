@@ -8,9 +8,9 @@ import { RouterModule } from '@angular/router';
 import { DialogsModule } from './dialogs/dialogs.module';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TimerComponent } from './timer/timer.component';
-import { PipesModule } from '../pipes/pipes.module';
 import { MapGenericComponent } from './map-generic/map-generic.component';
 import { DataListComponent } from './data-list/data-list.component';
+import { I18nPipe } from '../pipes/i18n.pipe';
 
 const components : any[] = [
   LanguageSelectorComponent,
@@ -28,7 +28,7 @@ const components : any[] = [
     ...components,
   ],
   imports: [
-    PipesModule,
+    I18nPipe,
     CommonModule,
     RouterModule,
     DialogsModule

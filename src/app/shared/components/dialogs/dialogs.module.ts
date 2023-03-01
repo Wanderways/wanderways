@@ -5,14 +5,14 @@ import { MatSelectModule } from '@angular/material/select';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatRippleModule } from '@angular/material/core';
-import { PipesModule } from '../../pipes/pipes.module';
+import { I18nPipe } from '../../pipes/i18n.pipe';
 
 @NgModule({
   declarations: [
     SelectGamemodeDialogComponent
   ],
   imports: [
-    PipesModule,
+    I18nPipe,
     CommonModule,
     MatSelectModule,
     MatRippleModule,

@@ -4,11 +4,11 @@ export const GameIndex: GameIndexEntry[] = [
   {
     id: "time-trial",
     displayName: {
-      en_US: ["Time trial"],
-      fr_FR: ["Contre la montre"],
-      de_DE: ["Zeitfahren"],
-      es_ES: ["Contrarreloj"],
-      pt_PT: ["Contra-relógio"]
+      "en-US": ["Time trial"],
+      "fr-FR": ["Contre la montre"],
+      "de-DE": ["Zeitfahren"],
+      "es-ES": ["Contrarreloj"],
+      "pt-PT": ["Contra-relógio"]
     },
     gameUrl: "/time-trial",
     iconUrl: "./assets/icons/keyboard.svg",
@@ -17,11 +17,11 @@ export const GameIndex: GameIndexEntry[] = [
   {
     id: "flag",
     displayName: {
-      en_US: ["Flag"],
-      fr_FR: ["Drapeau"],
-      de_DE: ["Flagge"],
-      es_ES: ["Bandera"],
-      pt_PT: ["Bandeira"]
+      "en-US": ["Flag"],
+      "fr-FR": ["Drapeau"],
+      "de-DE": ["Flagge"],
+      "es-ES": ["Bandera"],
+      "pt-PT": ["Bandeira"]
     },
     gameUrl: "/flag",
     iconUrl: "./assets/icons/flag.svg",
@@ -30,11 +30,11 @@ export const GameIndex: GameIndexEntry[] = [
   {
     id: "custom",
     displayName: {
-      en_US: ["Custom"],
-      fr_FR: ["Customisé"],
-      de_DE: ["Benutzerdefinierte"],
-      es_ES: ["Personalizado"],
-      pt_PT: ["Personalizado"]
+      "en-US": ["Custom"],
+      "fr-FR": ["Customisé"],
+      "de-DE": ["Benutzerdefinierte"],
+      "es-ES": ["Personalizado"],
+      "pt-PT": ["Personalizado"]
     },
     gameUrl: "/custom",
     iconUrl: "./assets/icons/custom.svg",
