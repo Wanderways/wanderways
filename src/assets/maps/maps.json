@@ -3,11 +3,11 @@
     "id": "world-country-iso",
     "mapGroupId":"world",
     "displayName": {
-      "en_US": ["Country - ISO"],
-      "fr_FR": ["Pays - ISO"],
-      "de_DE": ["Land - ISO"],
-      "es_ES": ["País - ISO"],
-      "pt_PT": ["País - ISO"]
+      "en-US": ["Country - ISO"],
+      "fr-FR": ["Pays - ISO"],
+      "de-DE": ["Land - ISO"],
+      "es-ES": ["País - ISO"],
+      "pt-PT": ["País - ISO"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/ISO_3166-1"
   },
@@ -15,11 +15,11 @@
     "id": "world-country-un",
     "mapGroupId":"world",
     "displayName": {
-      "en_US": ["Country - UN"],
-      "fr_FR": ["Pays - ONU"],
-      "de_DE": ["Land - UNO"],
-      "es_ES": ["País - ONU"],
-      "pt_PT": ["País - ONU"]
+      "en-US": ["Country - UN"],
+      "fr-FR": ["Pays - ONU"],
+      "de-DE": ["Land - UNO"],
+      "es-ES": ["País - ONU"],
+      "pt-PT": ["País - ONU"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
   },
@@ -27,11 +27,11 @@
     "id": "europe-countries",
     "mapGroupId":"europe",
     "displayName": {
-      "en_US": ["Country"],
-      "fr_FR": ["Pays"],
-      "de_DE": ["Land"],
-      "es_ES": ["País"],
-      "pt_PT": ["País"]
+      "en-US": ["Country"],
+      "fr-FR": ["Pays"],
+      "de-DE": ["Land"],
+      "es-ES": ["País"],
+      "pt-PT": ["País"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/Europe"
   },
@@ -40,11 +40,11 @@
     "id": "asia-countries",
     "mapGroupId":"asia",
     "displayName": {
-      "en_US": ["Country"],
-      "fr_FR": ["Pays"],
-      "de_DE": ["Land"],
-      "es_ES": ["País"],
-      "pt_PT": ["País"]
+      "en-US": ["Country"],
+      "fr-FR": ["Pays"],
+      "de-DE": ["Land"],
+      "es-ES": ["País"],
+      "pt-PT": ["País"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/Asia"
   },
@@ -52,11 +52,11 @@
     "id": "north-america-countries",
     "mapGroupId":"north_america",
     "displayName": {
-      "en_US": ["Country"],
-      "fr_FR": ["Pays"],
-      "de_DE": ["Land"],
-      "es_ES": ["País"],
-      "pt_PT": ["País"]
+      "en-US": ["Country"],
+      "fr-FR": ["Pays"],
+      "de-DE": ["Land"],
+      "es-ES": ["País"],
+      "pt-PT": ["País"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/North_America"
   },
@@ -64,11 +64,11 @@
     "id": "south-america-countries",
     "mapGroupId":"south_america",
     "displayName": {
-      "en_US": ["Country"],
-      "fr_FR": ["Pays"],
-      "de_DE": ["Land"],
-      "es_ES": ["País"],
-      "pt_PT": ["País"]
+      "en-US": ["Country"],
+      "fr-FR": ["Pays"],
+      "de-DE": ["Land"],
+      "es-ES": ["País"],
+      "pt-PT": ["País"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/South_America"
   },
@@ -76,11 +76,11 @@
     "id": "africa-countries",
     "mapGroupId":"africa",
     "displayName": {
-      "en_US": ["Country"],
-      "fr_FR": ["Pays"],
-      "de_DE": ["Land"],
-      "es_ES": ["País"],
-      "pt_PT": ["País"]
+      "en-US": ["Country"],
+      "fr-FR": ["Pays"],
+      "de-DE": ["Land"],
+      "es-ES": ["País"],
+      "pt-PT": ["País"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/Africa"
   },
@@ -88,11 +88,11 @@
     "id": "oceania-countries",
     "mapGroupId":"oceania",
     "displayName": {
-      "en_US": ["Country"],
-      "fr_FR": ["Pays"],
-      "de_DE": ["Land"],
-      "es_ES": ["País"],
-      "pt_PT": ["País"]
+      "en-US": ["Country"],
+      "fr-FR": ["Pays"],
+      "de-DE": ["Land"],
+      "es-ES": ["País"],
+      "pt-PT": ["País"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/Oceania"
   },
@@ -100,11 +100,11 @@
     "id": "france-departments",
     "mapGroupId":"france",
     "displayName": {
-      "en_US": ["Departments"],
-      "fr_FR": ["Départements"],
-      "de_DE": ["Abteilungen"],
-      "es_ES": ["Departamentos"],
-      "pt_PT": ["Departamentos"]
+      "en-US": ["Departments"],
+      "fr-FR": ["Départements"],
+      "de-DE": ["Abteilungen"],
+      "es-ES": ["Departamentos"],
+      "pt-PT": ["Departamentos"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/Departments_of_France"
   },
@@ -112,11 +112,11 @@
     "id": "japan-prefectures",
     "mapGroupId":"japan",
     "displayName": {
-      "en_US": ["Prefectures"],
-      "fr_FR": ["Préfectures"],
-      "de_DE": ["Präfekturen"],
-      "es_ES": ["Prefecturas"],
-      "pt_PT": ["Prefeituras"]
+      "en-US": ["Prefectures"],
+      "fr-FR": ["Préfectures"],
+      "de-DE": ["Präfekturen"],
+      "es-ES": ["Prefecturas"],
+      "pt-PT": ["Prefeituras"]
     },
     "wiki_url": "https://en.wikipedia.org/wiki/Prefectures_of_Japan"
   }

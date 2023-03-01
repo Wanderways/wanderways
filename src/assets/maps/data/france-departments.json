@@ -1,1425 +1,1425 @@
 [
   {
     "name": {
-      "en_US": ["Ain"],
-      "fr_FR": ["Ain"],
-      "es_ES": ["Ain"],
-      "de_DE": ["Ain"],
-      "pt_PT": ["Ain"]
+      "en-US": ["Ain"],
+      "fr-FR": ["Ain"],
+      "es-ES": ["Ain"],
+      "de-DE": ["Ain"],
+      "pt-PT": ["Ain"]
     },
     "id": "FR-01",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-01.svg",
     "group": "FR-ARA",
     "capital": {
-      "en_US": ["Bourg-en-Bresse"],
-      "fr_FR": ["Bourg-en-Bresse"]
+      "en-US": ["Bourg-en-Bresse"],
+      "fr-FR": ["Bourg-en-Bresse"]
     },
     "numeric_code": "01"
   },
   {
     "name": {
-      "en_US": ["Aisne"],
-      "fr_FR": ["Aisne"],
-      "es_ES": ["Aisne"],
-      "de_DE": ["Aisne"],
-      "pt_PT": ["Aisne"]
+      "en-US": ["Aisne"],
+      "fr-FR": ["Aisne"],
+      "es-ES": ["Aisne"],
+      "de-DE": ["Aisne"],
+      "pt-PT": ["Aisne"]
     },
     "id": "FR-02",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-02.svg",
     "group": "FR-HDF",
-    "capital": { "en_US": ["Laon"], "fr_FR": ["Laon"] },
+    "capital": { "en-US": ["Laon"], "fr-FR": ["Laon"] },
     "numeric_code": "02"
   },
   {
     "name": {
-      "en_US": ["Allier"],
-      "fr_FR": ["Allier"],
-      "es_ES": ["Allier"],
-      "de_DE": ["Allier"],
-      "pt_PT": ["Allier"]
+      "en-US": ["Allier"],
+      "fr-FR": ["Allier"],
+      "es-ES": ["Allier"],
+      "de-DE": ["Allier"],
+      "pt-PT": ["Allier"]
     },
     "id": "FR-03",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-03.svg",
     "group": "FR-ARA",
-    "capital": { "en_US": ["Moulins"], "fr_FR": ["Moulins"] },
+    "capital": { "en-US": ["Moulins"], "fr-FR": ["Moulins"] },
     "numeric_code": "03"
   },
   {
     "name": {
-      "en_US": ["Alpes-de-Haute-Provence"],
-      "fr_FR": ["Alpes-de-Haute-Provence"],
-      "es_ES": ["Alpes"],
-      "de_DE": ["Alpes-de-Haute-Provence"],
-      "pt_PT": ["Alpes da Alta Provença"]
+      "en-US": ["Alpes-de-Haute-Provence"],
+      "fr-FR": ["Alpes-de-Haute-Provence"],
+      "es-ES": ["Alpes"],
+      "de-DE": ["Alpes-de-Haute-Provence"],
+      "pt-PT": ["Alpes da Alta Provença"]
     },
     "id": "FR-04",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-04.svg",
     "group": "FR-PAC",
-    "capital": { "en_US": ["Digne-les-Bains"], "fr_FR": ["Digne-les-Bains"] },
+    "capital": { "en-US": ["Digne-les-Bains"], "fr-FR": ["Digne-les-Bains"] },
     "numeric_code": "04"
   },
   {
     "name": {
-      "en_US": ["Alpes-Maritimes"],
-      "fr_FR": ["Alpes-Maritimes"],
-      "es_ES": ["Alpes-Marítimos"],
-      "de_DE": ["Alpes-Maritimes"],
-      "pt_PT": ["Alpes Marítimos"]
+      "en-US": ["Alpes-Maritimes"],
+      "fr-FR": ["Alpes-Maritimes"],
+      "es-ES": ["Alpes-Marítimos"],
+      "de-DE": ["Alpes-Maritimes"],
+      "pt-PT": ["Alpes Marítimos"]
     },
     "id": "FR-06",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-06.svg",
     "group": "FR-PAC",
-    "capital": { "en_US": ["Nice"], "fr_FR": ["Nice"] },
+    "capital": { "en-US": ["Nice"], "fr-FR": ["Nice"] },
     "numeric_code": "06"
   },
   {
     "name": {
-      "en_US": ["Ardèche"],
-      "fr_FR": ["Ardèche"],
-      "es_ES": ["Ardèche"],
-      "de_DE": ["Ardèche"],
-      "pt_PT": ["Ardèche"]
+      "en-US": ["Ardèche"],
+      "fr-FR": ["Ardèche"],
+      "es-ES": ["Ardèche"],
+      "de-DE": ["Ardèche"],
+      "pt-PT": ["Ardèche"]
     },
     "id": "FR-07",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-07.svg",
     "group": "FR-ARA",
-    "capital": { "en_US": ["Privas"], "fr_FR": ["Privas"] },
+    "capital": { "en-US": ["Privas"], "fr-FR": ["Privas"] },
     "numeric_code": "07"
   },
   {
     "name": {
-      "en_US": ["Ardennes"],
-      "fr_FR": ["Ardennes"],
-      "es_ES": ["Ardenas"],
-      "de_DE": ["Ardennen"],
-      "pt_PT": ["Ardenas"]
+      "en-US": ["Ardennes"],
+      "fr-FR": ["Ardennes"],
+      "es-ES": ["Ardenas"],
+      "de-DE": ["Ardennen"],
+      "pt-PT": ["Ardenas"]
     },
     "id": "FR-08",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-08.svg",
     "group": "FR-GES",
     "capital": {
-      "en_US": ["Charleville-Mézières"],
-      "fr_FR": ["Charleville-Mézières"]
+      "en-US": ["Charleville-Mézières"],
+      "fr-FR": ["Charleville-Mézières"]
     },
     "numeric_code": "08"
   },
   {
     "name": {
-      "en_US": ["Ariège"],
-      "fr_FR": ["Ariège"],
-      "es_ES": ["Ariège"],
-      "de_DE": ["Ariège"],
-      "pt_PT": ["Ariège"]
+      "en-US": ["Ariège"],
+      "fr-FR": ["Ariège"],
+      "es-ES": ["Ariège"],
+      "de-DE": ["Ariège"],
+      "pt-PT": ["Ariège"]
     },
     "id": "FR-09",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-09.svg",
     "group": "FR-OCC",
-    "capital": { "en_US": ["Foix"], "fr_FR": ["Foix"] },
+    "capital": { "en-US": ["Foix"], "fr-FR": ["Foix"] },
     "numeric_code": "09"
   },
   {
     "name": {
-      "en_US": ["Aube"],
-      "fr_FR": ["Aube"],
-      "es_ES": ["Aube"],
-      "de_DE": ["Aube"],
-      "pt_PT": ["Aube"]
+      "en-US": ["Aube"],
+      "fr-FR": ["Aube"],
+      "es-ES": ["Aube"],
+      "de-DE": ["Aube"],
+      "pt-PT": ["Aube"]
     },
     "id": "FR-10",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-10.svg",
     "group": "FR-GES",
-    "capital": { "en_US": ["Troyes"], "fr_FR": ["Troyes"] },
+    "capital": { "en-US": ["Troyes"], "fr-FR": ["Troyes"] },
     "numeric_code": "10"
   },
   {
     "name": {
-      "en_US": ["Aude"],
-      "fr_FR": ["Aude"],
-      "es_ES": ["Aude"],
-      "de_DE": ["Aude"],
-      "pt_PT": ["Aude"]
+      "en-US": ["Aude"],
+      "fr-FR": ["Aude"],
+      "es-ES": ["Aude"],
+      "de-DE": ["Aude"],
+      "pt-PT": ["Aude"]
     },
     "id": "FR-11",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-11.svg",
     "group": "FR-OCC",
-    "capital": { "en_US": ["Carcassonne"], "fr_FR": ["Carcassonne"] },
+    "capital": { "en-US": ["Carcassonne"], "fr-FR": ["Carcassonne"] },
     "numeric_code": "11"
   },
   {
     "name": {
-      "en_US": ["Aveyron"],
-      "fr_FR": ["Aveyron"],
-      "es_ES": ["Aveyron"],
-      "de_DE": ["Aveyron"],
-      "pt_PT": ["Aveyron"]
+      "en-US": ["Aveyron"],
+      "fr-FR": ["Aveyron"],
+      "es-ES": ["Aveyron"],
+      "de-DE": ["Aveyron"],
+      "pt-PT": ["Aveyron"]
     },
     "id": "FR-12",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-12.svg",
     "group": "FR-OCC",
-    "capital": { "en_US": ["Rodez"], "fr_FR": ["Rodez"] },
+    "capital": { "en-US": ["Rodez"], "fr-FR": ["Rodez"] },
     "numeric_code": "12"
   },
   {
     "name": {
-      "en_US": ["Bouches-du-Rhône"],
-      "fr_FR": ["Bouches-du-Rhône"],
-      "es_ES": ["Bocas"],
-      "de_DE": ["Bouches-du-Rhône"],
-      "pt_PT": ["Bocas do Ródano"]
+      "en-US": ["Bouches-du-Rhône"],
+      "fr-FR": ["Bouches-du-Rhône"],
+      "es-ES": ["Bocas"],
+      "de-DE": ["Bouches-du-Rhône"],
+      "pt-PT": ["Bocas do Ródano"]
     },
     "id": "FR-13",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-13.svg",
     "group": "FR-PAC",
-    "capital": { "en_US": ["Marseille"], "fr_FR": ["Marseille"] },
+    "capital": { "en-US": ["Marseille"], "fr-FR": ["Marseille"] },
     "numeric_code": "13"
   },
   {
     "name": {
-      "en_US": ["Calvados"],
-      "fr_FR": ["Calvados"],
-      "es_ES": ["Calvados"],
-      "de_DE": ["Calvados"],
-      "pt_PT": ["Calvados"]
+      "en-US": ["Calvados"],
+      "fr-FR": ["Calvados"],
+      "es-ES": ["Calvados"],
+      "de-DE": ["Calvados"],
+      "pt-PT": ["Calvados"]
     },
     "id": "FR-14",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-14.svg",
     "group": "FR-NOR",
-    "capital": { "en_US": ["Caen"], "fr_FR": ["Caen"] },
+    "capital": { "en-US": ["Caen"], "fr-FR": ["Caen"] },
     "numeric_code": "14"
   },
   {
     "name": {
-      "en_US": ["Cantal"],
-      "fr_FR": ["Cantal"],
-      "es_ES": ["Cantal"],
-      "de_DE": ["Cantal"],
-      "pt_PT": ["Cantal"]
+      "en-US": ["Cantal"],
+      "fr-FR": ["Cantal"],
+      "es-ES": ["Cantal"],
+      "de-DE": ["Cantal"],
+      "pt-PT": ["Cantal"]
     },
     "id": "FR-15",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-15.svg",
     "group": "FR-ARA",
-    "capital": { "en_US": ["Aurillac"], "fr_FR": ["Aurillac"] },
+    "capital": { "en-US": ["Aurillac"], "fr-FR": ["Aurillac"] },
     "numeric_code": "15"
   },
   {
     "name": {
-      "en_US": ["Charente"],
-      "fr_FR": ["Charente"],
-      "es_ES": ["Charente"],
-      "de_DE": ["Charente"],
-      "pt_PT": ["Charente"]
+      "en-US": ["Charente"],
+      "fr-FR": ["Charente"],
+      "es-ES": ["Charente"],
+      "de-DE": ["Charente"],
+      "pt-PT": ["Charente"]
     },
     "id": "FR-16",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-16.svg",
     "group": "FR-NAQ",
-    "capital": { "en_US": ["Angoulême"], "fr_FR": ["Angoulême"] },
+    "capital": { "en-US": ["Angoulême"], "fr-FR": ["Angoulême"] },
     "numeric_code": "16"
   },
   {
     "name": {
-      "en_US": ["Charente-Maritime"],
-      "fr_FR": ["Charente-Maritime"],
-      "es_ES": ["Charente"],
-      "de_DE": ["Charente-Maritime"],
-      "pt_PT": ["Charente Marítimo"]
+      "en-US": ["Charente-Maritime"],
+      "fr-FR": ["Charente-Maritime"],
+      "es-ES": ["Charente"],
+      "de-DE": ["Charente-Maritime"],
+      "pt-PT": ["Charente Marítimo"]
     },
     "id": "FR-17",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-17.svg",
     "group": "FR-NAQ",
-    "capital": { "en_US": ["La Rochelle"], "fr_FR": ["La Rochelle"] },
+    "capital": { "en-US": ["La Rochelle"], "fr-FR": ["La Rochelle"] },
     "numeric_code": "17"
   },
   {
     "name": {
-      "en_US": ["Cher"],
-      "fr_FR": ["Cher"],
-      "es_ES": ["Cher"],
-      "de_DE": ["Cher"],
-      "pt_PT": ["Cher"]
+      "en-US": ["Cher"],
+      "fr-FR": ["Cher"],
+      "es-ES": ["Cher"],
+      "de-DE": ["Cher"],
+      "pt-PT": ["Cher"]
     },
     "id": "FR-18",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-18.svg",
     "group": "FR-CVL",
-    "capital": { "en_US": ["Bourges"], "fr_FR": ["Bourges"] },
+    "capital": { "en-US": ["Bourges"], "fr-FR": ["Bourges"] },
     "numeric_code": "18"
   },
   {
     "name": {
-      "en_US": ["Corrèze"],
-      "fr_FR": ["Corrèze"],
-      "es_ES": ["Corrèze"],
-      "de_DE": ["Corrèze"],
-      "pt_PT": ["Corrèze"]
+      "en-US": ["Corrèze"],
+      "fr-FR": ["Corrèze"],
+      "es-ES": ["Corrèze"],
+      "de-DE": ["Corrèze"],
+      "pt-PT": ["Corrèze"]
     },
     "id": "FR-19",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-19.svg",
     "group": "FR-NAQ",
-    "capital": { "en_US": ["Tulle"], "fr_FR": ["Tulle"] },
+    "capital": { "en-US": ["Tulle"], "fr-FR": ["Tulle"] },
     "numeric_code": "19"
   },
   {
     "name": {
-      "en_US": ["Corse-du-Sud"],
-      "fr_FR": ["Corse-du-Sud"],
-      "es_ES": ["Córcega"],
-      "de_DE": ["Corse-du-Sud"],
-      "pt_PT": ["Córsega do Sul"]
+      "en-US": ["Corse-du-Sud"],
+      "fr-FR": ["Corse-du-Sud"],
+      "es-ES": ["Córcega"],
+      "de-DE": ["Corse-du-Sud"],
+      "pt-PT": ["Córsega do Sul"]
     },
     "id": "FR-2A",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-2A.svg",
     "group": "FR-20R",
-    "capital": { "en_US": ["Ajaccio"], "fr_FR": ["Ajaccio"] },
+    "capital": { "en-US": ["Ajaccio"], "fr-FR": ["Ajaccio"] },
     "numeric_code": "2A"
   },
   {
     "name": {
-      "en_US": ["Côte-d'Or"],
-      "fr_FR": ["Côte-d'Or"],
-      "es_ES": ["Côte-d'Or"],
-      "de_DE": ["Côte-d'Or"],
-      "pt_PT": ["Côte-d'Or"]
+      "en-US": ["Côte-d'Or"],
+      "fr-FR": ["Côte-d'Or"],
+      "es-ES": ["Côte-d'Or"],
+      "de-DE": ["Côte-d'Or"],
+      "pt-PT": ["Côte-d'Or"]
     },
     "id": "FR-21",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-21.svg",
     "group": "FR-BFC",
-    "capital": { "en_US": ["Dijon"], "fr_FR": ["Dijon"] },
+    "capital": { "en-US": ["Dijon"], "fr-FR": ["Dijon"] },
     "numeric_code": "21"
   },
   {
     "name": {
-      "en_US": ["Côtes-d'Armor"],
-      "fr_FR": ["Côtes-d'Armor"],
-      "es_ES": ["Costas"],
-      "de_DE": ["Côtes-d'Armor"],
-      "pt_PT": ["Côtes-d'Armor"]
+      "en-US": ["Côtes-d'Armor"],
+      "fr-FR": ["Côtes-d'Armor"],
+      "es-ES": ["Costas"],
+      "de-DE": ["Côtes-d'Armor"],
+      "pt-PT": ["Côtes-d'Armor"]
     },
     "id": "FR-22",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-22.svg",
     "group": "FR-BRE",
-    "capital": { "en_US": ["St-Brieuc"], "fr_FR": ["St-Brieuc"] },
+    "capital": { "en-US": ["St-Brieuc"], "fr-FR": ["St-Brieuc"] },
     "numeric_code": "22"
   },
   {
     "name": {
-      "en_US": ["Creuse"],
-      "fr_FR": ["Creuse"],
-      "es_ES": ["Creuse"],
-      "de_DE": ["Creuse"],
-      "pt_PT": ["Creuse"]
+      "en-US": ["Creuse"],
+      "fr-FR": ["Creuse"],
+      "es-ES": ["Creuse"],
+      "de-DE": ["Creuse"],
+      "pt-PT": ["Creuse"]
     },
     "id": "FR-23",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-23.svg",
     "group": "FR-NAQ",
-    "capital": { "en_US": ["Guéret"], "fr_FR": ["Guéret"] },
+    "capital": { "en-US": ["Guéret"], "fr-FR": ["Guéret"] },
     "numeric_code": "23"
   },
   {
     "name": {
-      "en_US": ["Deux-Sèvres"],
-      "fr_FR": ["Deux-Sèvres"],
-      "es_ES": ["Deux-Sèvres"],
-      "de_DE": ["Deux-Sèvres"],
-      "pt_PT": ["Deux-Sèvres"]
+      "en-US": ["Deux-Sèvres"],
+      "fr-FR": ["Deux-Sèvres"],
+      "es-ES": ["Deux-Sèvres"],
+      "de-DE": ["Deux-Sèvres"],
+      "pt-PT": ["Deux-Sèvres"]
     },
     "id": "FR-79",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-79.svg",
     "group": "FR-NAQ",
-    "capital": { "en_US": ["Niort"], "fr_FR": ["Niort"] },
+    "capital": { "en-US": ["Niort"], "fr-FR": ["Niort"] },
     "numeric_code": "79"
   },
   {
     "name": {
-      "en_US": ["Dordogne"],
-      "fr_FR": ["Dordogne"],
-      "es_ES": ["Dordoña"],
-      "de_DE": ["Dordogne"],
-      "pt_PT": ["Dordonha"]
+      "en-US": ["Dordogne"],
+      "fr-FR": ["Dordogne"],
+      "es-ES": ["Dordoña"],
+      "de-DE": ["Dordogne"],
+      "pt-PT": ["Dordonha"]
     },
     "id": "FR-24",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-24.svg",
     "group": "FR-NAQ",
-    "capital": { "en_US": ["Périgueux"], "fr_FR": ["Périgueux"] },
+    "capital": { "en-US": ["Périgueux"], "fr-FR": ["Périgueux"] },
     "numeric_code": "24"
   },
   {
     "name": {
-      "en_US": ["Doubs"],
-      "fr_FR": ["Doubs"],
-      "es_ES": ["Doubs"],
-      "de_DE": ["Doubs"],
-      "pt_PT": ["Doubs"]
+      "en-US": ["Doubs"],
+      "fr-FR": ["Doubs"],
+      "es-ES": ["Doubs"],
+      "de-DE": ["Doubs"],
+      "pt-PT": ["Doubs"]
     },
     "id": "FR-25",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-25.svg",
     "group": "FR-BFC",
-    "capital": { "en_US": ["Besançon"], "fr_FR": ["Besançon"] },
+    "capital": { "en-US": ["Besançon"], "fr-FR": ["Besançon"] },
     "numeric_code": "25"
   },
   {
     "name": {
-      "en_US": ["Drôme"],
-      "fr_FR": ["Drôme"],
-      "es_ES": ["Drôme"],
-      "de_DE": ["Drôme"],
-      "pt_PT": ["Drôme"]
+      "en-US": ["Drôme"],
+      "fr-FR": ["Drôme"],
+      "es-ES": ["Drôme"],
+      "de-DE": ["Drôme"],
+      "pt-PT": ["Drôme"]
     },
     "id": "FR-26",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-26.svg",
     "group": "FR-ARA",
-    "capital": { "en_US": ["Valence"], "fr_FR": ["Valence"] },
+    "capital": { "en-US": ["Valence"], "fr-FR": ["Valence"] },
     "numeric_code": "26"
   },
   {
     "name": {
-      "en_US": ["Essonne"],
-      "fr_FR": ["Essonne"],
-      "es_ES": ["Essonne"],
-      "de_DE": ["Essonne"],
-      "pt_PT": ["Essonne"]
+      "en-US": ["Essonne"],
+      "fr-FR": ["Essonne"],
+      "es-ES": ["Essonne"],
+      "de-DE": ["Essonne"],
+      "pt-PT": ["Essonne"]
     },
     "id": "FR-91",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-91.svg",
     "group": "FR-IDF",
-    "capital": { "en_US": ["Évry"], "fr_FR": ["Évry"] },
+    "capital": { "en-US": ["Évry"], "fr-FR": ["Évry"] },
     "numeric_code": "91"
   },
   {
     "name": {
-      "en_US": ["Eure"],
-      "fr_FR": ["Eure"],
-      "es_ES": ["Eure"],
-      "de_DE": ["Eure"],
-      "pt_PT": ["Eure"]
+      "en-US": ["Eure"],
+      "fr-FR": ["Eure"],
+      "es-ES": ["Eure"],
+      "de-DE": ["Eure"],
+      "pt-PT": ["Eure"]
     },
     "id": "FR-27",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-27.svg",
     "group": "FR-NOR",
-    "capital": { "en_US": ["Évreux"], "fr_FR": ["Évreux"] },
+    "capital": { "en-US": ["Évreux"], "fr-FR": ["Évreux"] },
     "numeric_code": "27"
   },
   {
     "name": {
-      "en_US": ["Eure-et-Loir"],
-      "fr_FR": ["Eure-et-Loir"],
-      "es_ES": ["Eure"],
-      "de_DE": ["Eure-et-Loir"],
-      "pt_PT": ["Eure e Loir"]
+      "en-US": ["Eure-et-Loir"],
+      "fr-FR": ["Eure-et-Loir"],
+      "es-ES": ["Eure"],
+      "de-DE": ["Eure-et-Loir"],
+      "pt-PT": ["Eure e Loir"]
     },
     "id": "FR-28",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-28.svg",
     "group": "FR-CVL",
-    "capital": { "en_US": ["Chartres"], "fr_FR": ["Chartres"] },
+    "capital": { "en-US": ["Chartres"], "fr-FR": ["Chartres"] },
     "numeric_code": "28"
   },
   {
     "name": {
-      "en_US": ["Finistère"],
-      "fr_FR": ["Finistère"],
-      "es_ES": ["Finisterre"],
-      "de_DE": ["Finistère"],
-      "pt_PT": ["Finistère"]
+      "en-US": ["Finistère"],
+      "fr-FR": ["Finistère"],
+      "es-ES": ["Finisterre"],
+      "de-DE": ["Finistère"],
+      "pt-PT": ["Finistère"]
     },
     "id": "FR-29",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-29.svg",
     "group": "FR-BRE",
-    "capital": { "en_US": ["Quimper"], "fr_FR": ["Quimper"] },
+    "capital": { "en-US": ["Quimper"], "fr-FR": ["Quimper"] },
     "numeric_code": "29"
   },
   {
     "name": {
-      "en_US": ["Guyane"],
-      "fr_FR": ["Guyane"],
-      "es_ES": ["Guayana Francesa", "Guyana"],
-      "de_DE": ["Französisch-Guayana"],
-      "pt_PT": ["Guiana"]
+      "en-US": ["Guyane"],
+      "fr-FR": ["Guyane"],
+      "es-ES": ["Guayana Francesa", "Guyana"],
+      "de-DE": ["Französisch-Guayana"],
+      "pt-PT": ["Guiana"]
     },
     "id": "FR-973",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-973.svg",
     "group": "",
     "numeric_code": "973",
-    "capital": { "en_US": ["Cayenne"], "fr_FR": ["Cayenne"] }
+    "capital": { "en-US": ["Cayenne"], "fr-FR": ["Cayenne"] }
   },
   {
     "name": {
-      "en_US": ["Gard"],
-      "fr_FR": ["Gard"],
-      "es_ES": ["Gard"],
-      "de_DE": ["Gard"],
-      "pt_PT": ["Gard"]
+      "en-US": ["Gard"],
+      "fr-FR": ["Gard"],
+      "es-ES": ["Gard"],
+      "de-DE": ["Gard"],
+      "pt-PT": ["Gard"]
     },
     "id": "FR-30",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-30.svg",
     "group": "FR-OCC",
     "numeric_code": "30",
-    "capital": { "en_US": ["Nîmes"], "fr_FR": ["Nîmes"] }
+    "capital": { "en-US": ["Nîmes"], "fr-FR": ["Nîmes"] }
   },
   {
     "name": {
-      "en_US": ["Gers"],
-      "fr_FR": ["Gers"],
-      "es_ES": ["Gers"],
-      "de_DE": ["Gers"],
-      "pt_PT": ["Gers"]
+      "en-US": ["Gers"],
+      "fr-FR": ["Gers"],
+      "es-ES": ["Gers"],
+      "de-DE": ["Gers"],
+      "pt-PT": ["Gers"]
     },
     "id": "FR-32",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-32.svg",
     "group": "FR-OCC",
     "numeric_code": "32",
-    "capital": { "en_US": ["Auch"], "fr_FR": ["Auch"] }
+    "capital": { "en-US": ["Auch"], "fr-FR": ["Auch"] }
   },
   {
     "name": {
-      "en_US": ["Gironde"],
-      "fr_FR": ["Gironde"],
-      "es_ES": ["Gironda"],
-      "de_DE": ["Gironde"],
-      "pt_PT": ["Gironda"]
+      "en-US": ["Gironde"],
+      "fr-FR": ["Gironde"],
+      "es-ES": ["Gironda"],
+      "de-DE": ["Gironde"],
+      "pt-PT": ["Gironda"]
     },
     "id": "FR-33",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-33.svg",
     "group": "FR-NAQ",
     "numeric_code": "33",
-    "capital": { "en_US": ["Bordeaux"], "fr_FR": ["Bordeaux"] }
+    "capital": { "en-US": ["Bordeaux"], "fr-FR": ["Bordeaux"] }
   },
   {
     "name": {
-      "en_US": ["Guadeloupe"],
-      "fr_FR": ["Guadeloupe"],
-      "es_ES": ["Guadelupe"],
-      "de_DE": ["Guadeloupe"],
-      "pt_PT": ["Guadalupe"]
+      "en-US": ["Guadeloupe"],
+      "fr-FR": ["Guadeloupe"],
+      "es-ES": ["Guadelupe"],
+      "de-DE": ["Guadeloupe"],
+      "pt-PT": ["Guadalupe"]
     },
     "id": "FR-971",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-971.svg",
     "group": "",
     "numeric_code": "971",
-    "capital": { "en_US": ["Basse-Terre"], "fr_FR": ["Basse-Terre"] }
+    "capital": { "en-US": ["Basse-Terre"], "fr-FR": ["Basse-Terre"] }
   },
   {
     "name": {
-      "en_US": ["Haute-Corse"],
-      "fr_FR": ["Haute-Corse"],
-      "es_ES": ["Alta"],
-      "de_DE": ["Haute-Corse"],
-      "pt_PT": ["Alta Córsega"]
+      "en-US": ["Haute-Corse"],
+      "fr-FR": ["Haute-Corse"],
+      "es-ES": ["Alta"],
+      "de-DE": ["Haute-Corse"],
+      "pt-PT": ["Alta Córsega"]
     },
     "id": "FR-2B",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-2B.svg",
     "group": "FR-20R",
     "numeric_code": "2B",
-    "capital": { "en_US": ["Bastia"], "fr_FR": ["Bastia"] }
+    "capital": { "en-US": ["Bastia"], "fr-FR": ["Bastia"] }
   },
   {
     "name": {
-      "en_US": ["Haute-Garonne"],
-      "fr_FR": ["Haute-Garonne"],
-      "es_ES": ["Alto"],
-      "de_DE": ["Haute-Garonne"],
-      "pt_PT": ["Alto Garona"]
+      "en-US": ["Haute-Garonne"],
+      "fr-FR": ["Haute-Garonne"],
+      "es-ES": ["Alto"],
+      "de-DE": ["Haute-Garonne"],
+      "pt-PT": ["Alto Garona"]
     },
     "id": "FR-31",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-31.svg",
     "group": "FR-OCC",
     "numeric_code": "31",
-    "capital": { "en_US": ["Toulouse"], "fr_FR": ["Toulouse"] }
+    "capital": { "en-US": ["Toulouse"], "fr-FR": ["Toulouse"] }
   },
   {
     "name": {
-      "en_US": ["Haute-Loire"],
-      "fr_FR": ["Haute-Loire"],
-      "es_ES": ["Alto"],
-      "de_DE": ["Haute-Loire"],
-      "pt_PT": ["Alto Loire"]
+      "en-US": ["Haute-Loire"],
+      "fr-FR": ["Haute-Loire"],
+      "es-ES": ["Alto"],
+      "de-DE": ["Haute-Loire"],
+      "pt-PT": ["Alto Loire"]
     },
     "id": "FR-43",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-43.svg",
     "group": "FR-ARA",
     "numeric_code": "43",
-    "capital": { "en_US": ["Le Puy-en-Velay"], "fr_FR": ["Le Puy-en-Velay"] }
+    "capital": { "en-US": ["Le Puy-en-Velay"], "fr-FR": ["Le Puy-en-Velay"] }
   },
   {
     "name": {
-      "en_US": ["Haute-Marne"],
-      "fr_FR": ["Haute-Marne"],
-      "es_ES": ["Alto"],
-      "de_DE": ["Haute-Marne"],
-      "pt_PT": ["Alto Marne"]
+      "en-US": ["Haute-Marne"],
+      "fr-FR": ["Haute-Marne"],
+      "es-ES": ["Alto"],
+      "de-DE": ["Haute-Marne"],
+      "pt-PT": ["Alto Marne"]
     },
     "id": "FR-52",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-52.svg",
     "group": "FR-GES",
     "numeric_code": "52",
-    "capital": { "en_US": ["Chaumont"], "fr_FR": ["Chaumont"] }
+    "capital": { "en-US": ["Chaumont"], "fr-FR": ["Chaumont"] }
   },
   {
     "name": {
-      "en_US": ["Hautes-Alpes"],
-      "fr_FR": ["Hautes-Alpes"],
-      "es_ES": ["Altos"],
-      "de_DE": ["Hautes-Alpes"],
-      "pt_PT": ["Altos Alpes"]
+      "en-US": ["Hautes-Alpes"],
+      "fr-FR": ["Hautes-Alpes"],
+      "es-ES": ["Altos"],
+      "de-DE": ["Hautes-Alpes"],
+      "pt-PT": ["Altos Alpes"]
     },
     "id": "FR-05",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-05.svg",
     "group": "FR-PAC",
     "numeric_code": "05",
-    "capital": { "en_US": ["Gap"], "fr_FR": ["Gap"] }
+    "capital": { "en-US": ["Gap"], "fr-FR": ["Gap"] }
   },
   {
     "name": {
-      "en_US": ["Haute-Saône"],
-      "fr_FR": ["Haute-Saône"],
-      "es_ES": ["Alto"],
-      "de_DE": ["Haute-Saône"],
-      "pt_PT": ["Alto Sona"]
+      "en-US": ["Haute-Saône"],
+      "fr-FR": ["Haute-Saône"],
+      "es-ES": ["Alto"],
+      "de-DE": ["Haute-Saône"],
+      "pt-PT": ["Alto Sona"]
     },
     "id": "FR-70",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-70.svg",
     "group": "FR-BFC",
     "numeric_code": "70",
-    "capital": { "en_US": ["Vesoul"], "fr_FR": ["Vesoul"] }
+    "capital": { "en-US": ["Vesoul"], "fr-FR": ["Vesoul"] }
   },
   {
     "name": {
-      "en_US": ["Haute-Savoie"],
-      "fr_FR": ["Haute-Savoie"],
-      "es_ES": ["Alta"],
-      "de_DE": ["Haute-Savoie"],
-      "pt_PT": ["Alta Saboia"]
+      "en-US": ["Haute-Savoie"],
+      "fr-FR": ["Haute-Savoie"],
+      "es-ES": ["Alta"],
+      "de-DE": ["Haute-Savoie"],
+      "pt-PT": ["Alta Saboia"]
     },
     "id": "FR-74",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-74.svg",
     "group": "FR-ARA",
     "numeric_code": "74",
-    "capital": { "en_US": ["Annecy"], "fr_FR": ["Annecy"] }
+    "capital": { "en-US": ["Annecy"], "fr-FR": ["Annecy"] }
   },
   {
     "name": {
-      "en_US": ["Hautes-Pyrénées"],
-      "fr_FR": ["Hautes-Pyrénées"],
-      "es_ES": ["Altos"],
-      "de_DE": ["Hautes-Pyrénées"],
-      "pt_PT": ["Altos Pirenéus"]
+      "en-US": ["Hautes-Pyrénées"],
+      "fr-FR": ["Hautes-Pyrénées"],
+      "es-ES": ["Altos"],
+      "de-DE": ["Hautes-Pyrénées"],
+      "pt-PT": ["Altos Pirenéus"]
     },
     "id": "FR-65",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-65.svg",
     "group": "FR-OCC",
     "numeric_code": "65",
-    "capital": { "en_US": ["Tarbes"], "fr_FR": ["Tarbes"] }
+    "capital": { "en-US": ["Tarbes"], "fr-FR": ["Tarbes"] }
   },
   {
     "name": {
-      "en_US": ["Haute-Vienne"],
-      "fr_FR": ["Haute-Vienne"],
-      "es_ES": ["Alto"],
-      "de_DE": ["Haute-Vienne"],
-      "pt_PT": ["Alto Vienne"]
+      "en-US": ["Haute-Vienne"],
+      "fr-FR": ["Haute-Vienne"],
+      "es-ES": ["Alto"],
+      "de-DE": ["Haute-Vienne"],
+      "pt-PT": ["Alto Vienne"]
     },
     "id": "FR-87",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-87.svg",
     "group": "FR-NAQ",
     "numeric_code": "87",
-    "capital": { "en_US": ["Limoges"], "fr_FR": ["Limoges"] }
+    "capital": { "en-US": ["Limoges"], "fr-FR": ["Limoges"] }
   },
   {
     "name": {
-      "en_US": ["Hauts-de-Seine"],
-      "fr_FR": ["Hauts-de-Seine"],
-      "es_ES": ["Altos"],
-      "de_DE": ["Hauts-de-Seine"],
-      "pt_PT": ["Altos do Sena"]
+      "en-US": ["Hauts-de-Seine"],
+      "fr-FR": ["Hauts-de-Seine"],
+      "es-ES": ["Altos"],
+      "de-DE": ["Hauts-de-Seine"],
+      "pt-PT": ["Altos do Sena"]
     },
     "id": "FR-92",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-92.svg",
     "group": "FR-IDF",
     "numeric_code": "92",
-    "capital": { "en_US": ["Nanterre"], "fr_FR": ["Nanterre"] }
+    "capital": { "en-US": ["Nanterre"], "fr-FR": ["Nanterre"] }
   },
   {
     "name": {
-      "en_US": ["Hérault"],
-      "fr_FR": ["Hérault"],
-      "es_ES": ["Hérault"],
-      "de_DE": ["Hérault"],
-      "pt_PT": ["Hérault"]
+      "en-US": ["Hérault"],
+      "fr-FR": ["Hérault"],
+      "es-ES": ["Hérault"],
+      "de-DE": ["Hérault"],
+      "pt-PT": ["Hérault"]
     },
     "id": "FR-34",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-34.svg",
     "group": "FR-OCC",
     "numeric_code": "34",
-    "capital": { "en_US": ["Montpellier"], "fr_FR": ["Montpellier"] }
+    "capital": { "en-US": ["Montpellier"], "fr-FR": ["Montpellier"] }
   },
   {
     "name": {
-      "en_US": ["Ille-et-Vilaine"],
-      "fr_FR": ["Ille-et-Vilaine"],
-      "es_ES": ["Ille"],
-      "de_DE": ["Ille-et-Vilaine"],
-      "pt_PT": ["Ille e Vilaine"]
+      "en-US": ["Ille-et-Vilaine"],
+      "fr-FR": ["Ille-et-Vilaine"],
+      "es-ES": ["Ille"],
+      "de-DE": ["Ille-et-Vilaine"],
+      "pt-PT": ["Ille e Vilaine"]
     },
     "id": "FR-35",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-35.svg",
     "group": "FR-BRE",
     "numeric_code": "35",
-    "capital": { "en_US": ["Rennes"], "fr_FR": ["Rennes"] }
+    "capital": { "en-US": ["Rennes"], "fr-FR": ["Rennes"] }
   },
   {
     "name": {
-      "en_US": ["Indre"],
-      "fr_FR": ["Indre"],
-      "es_ES": ["Indre"],
-      "de_DE": ["Indre"],
-      "pt_PT": ["Indre"]
+      "en-US": ["Indre"],
+      "fr-FR": ["Indre"],
+      "es-ES": ["Indre"],
+      "de-DE": ["Indre"],
+      "pt-PT": ["Indre"]
     },
     "id": "FR-36",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-36.svg",
     "group": "FR-CVL",
     "numeric_code": "36",
-    "capital": { "en_US": ["Châteauroux"], "fr_FR": ["Châteauroux"] }
+    "capital": { "en-US": ["Châteauroux"], "fr-FR": ["Châteauroux"] }
   },
   {
     "name": {
-      "en_US": ["Indre-et-Loire"],
-      "fr_FR": ["Indre-et-Loire"],
-      "es_ES": ["Indre"],
-      "de_DE": ["Indre-et-Loire"],
-      "pt_PT": ["Indre e Loire"]
+      "en-US": ["Indre-et-Loire"],
+      "fr-FR": ["Indre-et-Loire"],
+      "es-ES": ["Indre"],
+      "de-DE": ["Indre-et-Loire"],
+      "pt-PT": ["Indre e Loire"]
     },
     "id": "FR-37",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-37.svg",
     "group": "FR-CVL",
     "numeric_code": "37",
-    "capital": { "en_US": ["Tours"], "fr_FR": ["Tours"] }
+    "capital": { "en-US": ["Tours"], "fr-FR": ["Tours"] }
   },
   {
     "name": {
-      "en_US": ["Isère"],
-      "fr_FR": ["Isère"],
-      "es_ES": ["Isère"],
-      "de_DE": ["Isère"],
-      "pt_PT": ["Isère"]
+      "en-US": ["Isère"],
+      "fr-FR": ["Isère"],
+      "es-ES": ["Isère"],
+      "de-DE": ["Isère"],
+      "pt-PT": ["Isère"]
     },
     "id": "FR-38",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-38.svg",
     "group": "FR-ARA",
     "numeric_code": "38",
-    "capital": { "en_US": ["Grenoble"], "fr_FR": ["Grenoble"] }
+    "capital": { "en-US": ["Grenoble"], "fr-FR": ["Grenoble"] }
   },
   {
     "name": {
-      "en_US": ["Jura"],
-      "fr_FR": ["Jura"],
-      "es_ES": ["Jura"],
-      "de_DE": ["Jura"],
-      "pt_PT": ["Jura"]
+      "en-US": ["Jura"],
+      "fr-FR": ["Jura"],
+      "es-ES": ["Jura"],
+      "de-DE": ["Jura"],
+      "pt-PT": ["Jura"]
     },
     "id": "FR-39",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-39.svg",
     "group": "FR-BFC",
     "numeric_code": "39",
-    "capital": { "en_US": ["Lons-le-Saunier"], "fr_FR": ["Lons-le-Saunier"] }
+    "capital": { "en-US": ["Lons-le-Saunier"], "fr-FR": ["Lons-le-Saunier"] }
   },
   {
     "name": {
-      "en_US": ["Landes"],
-      "fr_FR": ["Landes"],
-      "es_ES": ["Landas"],
-      "de_DE": ["Landes"],
-      "pt_PT": ["Landes"]
+      "en-US": ["Landes"],
+      "fr-FR": ["Landes"],
+      "es-ES": ["Landas"],
+      "de-DE": ["Landes"],
+      "pt-PT": ["Landes"]
     },
     "id": "FR-40",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-40.svg",
     "group": "FR-NAQ",
     "numeric_code": "40",
-    "capital": { "en_US": ["Mont-de-Marsan"], "fr_FR": ["Mont-de-Marsan"] }
+    "capital": { "en-US": ["Mont-de-Marsan"], "fr-FR": ["Mont-de-Marsan"] }
   },
   {
     "name": {
-      "en_US": ["Loire"],
-      "fr_FR": ["Loire"],
-      "es_ES": ["Loira"],
-      "de_DE": ["Loire"],
-      "pt_PT": ["Loire"]
+      "en-US": ["Loire"],
+      "fr-FR": ["Loire"],
+      "es-ES": ["Loira"],
+      "de-DE": ["Loire"],
+      "pt-PT": ["Loire"]
     },
     "id": "FR-42",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-42.svg",
     "group": "FR-ARA",
     "numeric_code": "42",
-    "capital": { "en_US": ["Saint-Étienne"], "fr_FR": ["Saint-Étienne"] }
+    "capital": { "en-US": ["Saint-Étienne"], "fr-FR": ["Saint-Étienne"] }
   },
   {
     "name": {
-      "en_US": ["Loire-Atlantique"],
-      "fr_FR": ["Loire-Atlantique"],
-      "es_ES": ["Loira"],
-      "de_DE": ["Loire-Atlantique"],
-      "pt_PT": ["Loire Atlântico"]
+      "en-US": ["Loire-Atlantique"],
+      "fr-FR": ["Loire-Atlantique"],
+      "es-ES": ["Loira"],
+      "de-DE": ["Loire-Atlantique"],
+      "pt-PT": ["Loire Atlântico"]
     },
     "id": "FR-44",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-44.svg",
     "group": "FR-PDL",
     "numeric_code": "44",
-    "capital": { "en_US": ["Nantes"], "fr_FR": ["Nantes"] }
+    "capital": { "en-US": ["Nantes"], "fr-FR": ["Nantes"] }
   },
   {
     "name": {
-      "en_US": ["Loiret"],
-      "fr_FR": ["Loiret"],
-      "es_ES": ["Loiret"],
-      "de_DE": ["Loiret"],
-      "pt_PT": ["Loiret"]
+      "en-US": ["Loiret"],
+      "fr-FR": ["Loiret"],
+      "es-ES": ["Loiret"],
+      "de-DE": ["Loiret"],
+      "pt-PT": ["Loiret"]
     },
     "id": "FR-45",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-45.svg",
     "group": "FR-CVL",
     "numeric_code": "45",
-    "capital": { "en_US": ["Orléans"], "fr_FR": ["Orléans"] }
+    "capital": { "en-US": ["Orléans"], "fr-FR": ["Orléans"] }
   },
   {
     "name": {
-      "en_US": ["Loir-et-Cher"],
-      "fr_FR": ["Loir-et-Cher"],
-      "es_ES": ["Loir"],
-      "de_DE": ["Loir-et-Cher"],
-      "pt_PT": ["Loir e Cher"]
+      "en-US": ["Loir-et-Cher"],
+      "fr-FR": ["Loir-et-Cher"],
+      "es-ES": ["Loir"],
+      "de-DE": ["Loir-et-Cher"],
+      "pt-PT": ["Loir e Cher"]
     },
     "id": "FR-41",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-41.svg",
     "group": "FR-CVL",
     "numeric_code": "41",
-    "capital": { "en_US": ["Blois"], "fr_FR": ["Blois"] }
+    "capital": { "en-US": ["Blois"], "fr-FR": ["Blois"] }
   },
   {
     "name": {
-      "en_US": ["Lot"],
-      "fr_FR": ["Lot"],
-      "es_ES": ["Lot"],
-      "de_DE": ["Lot"],
-      "pt_PT": ["Lot"]
+      "en-US": ["Lot"],
+      "fr-FR": ["Lot"],
+      "es-ES": ["Lot"],
+      "de-DE": ["Lot"],
+      "pt-PT": ["Lot"]
     },
     "id": "FR-46",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-46.svg",
     "group": "FR-OCC",
     "numeric_code": "46",
-    "capital": { "en_US": ["Cahors"], "fr_FR": ["Cahors"] }
+    "capital": { "en-US": ["Cahors"], "fr-FR": ["Cahors"] }
   },
   {
     "name": {
-      "en_US": ["Lot-et-Garonne"],
-      "fr_FR": ["Lot-et-Garonne"],
-      "es_ES": ["Lot"],
-      "de_DE": ["Lot-et-Garonne"],
-      "pt_PT": ["Lot e Garona"]
+      "en-US": ["Lot-et-Garonne"],
+      "fr-FR": ["Lot-et-Garonne"],
+      "es-ES": ["Lot"],
+      "de-DE": ["Lot-et-Garonne"],
+      "pt-PT": ["Lot e Garona"]
     },
     "id": "FR-47",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-47.svg",
     "group": "FR-NAQ",
     "numeric_code": "47",
-    "capital": { "en_US": ["Agen"], "fr_FR": ["Agen"] }
+    "capital": { "en-US": ["Agen"], "fr-FR": ["Agen"] }
   },
   {
     "name": {
-      "en_US": ["Lozère"],
-      "fr_FR": ["Lozère"],
-      "es_ES": ["Lozère"],
-      "de_DE": ["Lozère"],
-      "pt_PT": ["Lozère"]
+      "en-US": ["Lozère"],
+      "fr-FR": ["Lozère"],
+      "es-ES": ["Lozère"],
+      "de-DE": ["Lozère"],
+      "pt-PT": ["Lozère"]
     },
     "id": "FR-48",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-48.svg",
     "group": "FR-OCC",
     "numeric_code": "48",
-    "capital": { "en_US": ["Mende"], "fr_FR": ["Mende"] }
+    "capital": { "en-US": ["Mende"], "fr-FR": ["Mende"] }
   },
   {
     "name": {
-      "en_US": ["Maine-et-Loire"],
-      "fr_FR": ["Maine-et-Loire"],
-      "es_ES": ["Maine"],
-      "de_DE": ["Maine-et-Loire"],
-      "pt_PT": ["Maine e Loire"]
+      "en-US": ["Maine-et-Loire"],
+      "fr-FR": ["Maine-et-Loire"],
+      "es-ES": ["Maine"],
+      "de-DE": ["Maine-et-Loire"],
+      "pt-PT": ["Maine e Loire"]
     },
     "id": "FR-49",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-49.svg",
     "group": "FR-PDL",
     "numeric_code": "49",
-    "capital": { "en_US": ["Angers"], "fr_FR": ["Angers"] }
+    "capital": { "en-US": ["Angers"], "fr-FR": ["Angers"] }
   },
   {
     "name": {
-      "en_US": ["Manche"],
-      "fr_FR": ["Manche"],
-      "es_ES": ["Mancha"],
-      "de_DE": ["Manche"],
-      "pt_PT": ["Mancha"]
+      "en-US": ["Manche"],
+      "fr-FR": ["Manche"],
+      "es-ES": ["Mancha"],
+      "de-DE": ["Manche"],
+      "pt-PT": ["Mancha"]
     },
     "id": "FR-50",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-50.svg",
     "group": "FR-NOR",
     "numeric_code": "50",
-    "capital": { "en_US": ["Saint-Lô"], "fr_FR": ["Saint-Lô"] }
+    "capital": { "en-US": ["Saint-Lô"], "fr-FR": ["Saint-Lô"] }
   },
   {
     "name": {
-      "en_US": ["Marne"],
-      "fr_FR": ["Marne"],
-      "es_ES": ["Marne"],
-      "de_DE": ["Marne"],
-      "pt_PT": ["Marne"]
+      "en-US": ["Marne"],
+      "fr-FR": ["Marne"],
+      "es-ES": ["Marne"],
+      "de-DE": ["Marne"],
+      "pt-PT": ["Marne"]
     },
     "id": "FR-51",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-51.svg",
     "group": "FR-GES",
     "numeric_code": "51",
     "capital": {
-      "en_US": ["Châlons-en-Champagne"],
-      "fr_FR": ["Châlons-en-Champagne"]
+      "en-US": ["Châlons-en-Champagne"],
+      "fr-FR": ["Châlons-en-Champagne"]
     }
   },
   {
     "name": {
-      "en_US": ["Martinique"],
-      "fr_FR": ["Martinique"],
-      "es_ES": ["Martinica"],
-      "de_DE": ["Martinique"],
-      "pt_PT": ["Martinica"]
+      "en-US": ["Martinique"],
+      "fr-FR": ["Martinique"],
+      "es-ES": ["Martinica"],
+      "de-DE": ["Martinique"],
+      "pt-PT": ["Martinica"]
     },
     "id": "FR-972",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-972.svg",
     "group": "",
     "numeric_code": "972",
-    "capital": { "en_US": ["Fort-de-France"], "fr_FR": ["Fort-de-France"] }
+    "capital": { "en-US": ["Fort-de-France"], "fr-FR": ["Fort-de-France"] }
   },
   {
     "name": {
-      "en_US": ["Paris"],
-      "fr_FR": ["Paris"],
-      "es_ES": ["París"],
-      "de_DE": ["Paris"],
-      "pt_PT": ["Paris (coletividade com estatuto especial)"]
+      "en-US": ["Paris"],
+      "fr-FR": ["Paris"],
+      "es-ES": ["París"],
+      "de-DE": ["Paris"],
+      "pt-PT": ["Paris (coletividade com estatuto especial)"]
     },
     "id": "FR-75",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-75.svg",
     "group": "FR-IDF",
     "numeric_code": "75",
-    "capital": { "en_US": ["Paris"], "fr_FR": ["Paris"] }
+    "capital": { "en-US": ["Paris"], "fr-FR": ["Paris"] }
   },
   {
     "name": {
-      "en_US": ["Mayenne"],
-      "fr_FR": ["Mayenne"],
-      "es_ES": ["Mayenne"],
-      "de_DE": ["Mayenne"],
-      "pt_PT": ["Mayenne"]
+      "en-US": ["Mayenne"],
+      "fr-FR": ["Mayenne"],
+      "es-ES": ["Mayenne"],
+      "de-DE": ["Mayenne"],
+      "pt-PT": ["Mayenne"]
     },
     "id": "FR-53",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-53.svg",
     "group": "FR-PDL",
     "numeric_code": "53",
-    "capital": { "en_US": ["Laval"], "fr_FR": ["Laval"] }
+    "capital": { "en-US": ["Laval"], "fr-FR": ["Laval"] }
   },
   {
     "name": {
-      "en_US": ["Mayotte"],
-      "fr_FR": ["Mayotte"],
-      "es_ES": ["Mayotte"],
-      "de_DE": ["Mayotte"],
-      "pt_PT": ["Maiote"]
+      "en-US": ["Mayotte"],
+      "fr-FR": ["Mayotte"],
+      "es-ES": ["Mayotte"],
+      "de-DE": ["Mayotte"],
+      "pt-PT": ["Maiote"]
     },
     "id": "FR-976",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-976.svg",
     "group": "",
     "numeric_code": "976",
-    "capital": { "en_US": ["Dzaoudzi"], "fr_FR": ["Dzaoudzi"] }
+    "capital": { "en-US": ["Dzaoudzi"], "fr-FR": ["Dzaoudzi"] }
   },
   {
     "name": {
-      "en_US": ["Meurthe-et-Moselle"],
-      "fr_FR": ["Meurthe-et-Moselle"],
-      "es_ES": ["Meurthe"],
-      "de_DE": ["Meurthe-et-Moselle"],
-      "pt_PT": ["Meurthe e Mosela"]
+      "en-US": ["Meurthe-et-Moselle"],
+      "fr-FR": ["Meurthe-et-Moselle"],
+      "es-ES": ["Meurthe"],
+      "de-DE": ["Meurthe-et-Moselle"],
+      "pt-PT": ["Meurthe e Mosela"]
     },
     "id": "FR-54",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-54.svg",
     "group": "FR-GES",
     "numeric_code": "54",
-    "capital": { "en_US": ["Nancy"], "fr_FR": ["Nancy"] }
+    "capital": { "en-US": ["Nancy"], "fr-FR": ["Nancy"] }
   },
   {
     "name": {
-      "en_US": ["Meuse"],
-      "fr_FR": ["Meuse"],
-      "es_ES": ["Mosa"],
-      "de_DE": ["Meuse"],
-      "pt_PT": ["Mosa"]
+      "en-US": ["Meuse"],
+      "fr-FR": ["Meuse"],
+      "es-ES": ["Mosa"],
+      "de-DE": ["Meuse"],
+      "pt-PT": ["Mosa"]
     },
     "id": "FR-55",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-55.svg",
     "group": "FR-GES",
     "numeric_code": "55",
-    "capital": { "en_US": ["Bar-le-Duc"], "fr_FR": ["Bar-le-Duc"] }
+    "capital": { "en-US": ["Bar-le-Duc"], "fr-FR": ["Bar-le-Duc"] }
   },
   {
     "name": {
-      "en_US": ["Morbihan"],
-      "fr_FR": ["Morbihan"],
-      "es_ES": ["Morbihan"],
-      "de_DE": ["Morbihan"],
-      "pt_PT": ["Morbihan"]
+      "en-US": ["Morbihan"],
+      "fr-FR": ["Morbihan"],
+      "es-ES": ["Morbihan"],
+      "de-DE": ["Morbihan"],
+      "pt-PT": ["Morbihan"]
     },
     "id": "FR-56",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-56.svg",
     "group": "FR-BRE",
     "numeric_code": "56",
-    "capital": { "en_US": ["Vannes"], "fr_FR": ["Vannes"] }
+    "capital": { "en-US": ["Vannes"], "fr-FR": ["Vannes"] }
   },
   {
     "name": {
-      "en_US": ["Moselle"],
-      "fr_FR": ["Moselle"],
-      "es_ES": ["Mosela"],
-      "de_DE": ["Moselle"],
-      "pt_PT": ["Mosela"]
+      "en-US": ["Moselle"],
+      "fr-FR": ["Moselle"],
+      "es-ES": ["Mosela"],
+      "de-DE": ["Moselle"],
+      "pt-PT": ["Mosela"]
     },
     "id": "FR-57",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-57.svg",
     "group": "FR-GES",
     "numeric_code": "57",
-    "capital": { "en_US": ["Metz"], "fr_FR": ["Metz"] }
+    "capital": { "en-US": ["Metz"], "fr-FR": ["Metz"] }
   },
   {
     "name": {
-      "en_US": ["Nièvre"],
-      "fr_FR": ["Nièvre"],
-      "es_ES": ["Nièvre"],
-      "de_DE": ["Nièvre"],
-      "pt_PT": ["Nièvre"]
+      "en-US": ["Nièvre"],
+      "fr-FR": ["Nièvre"],
+      "es-ES": ["Nièvre"],
+      "de-DE": ["Nièvre"],
+      "pt-PT": ["Nièvre"]
     },
     "id": "FR-58",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-58.svg",
     "group": "FR-BFC",
     "numeric_code": "58",
-    "capital": { "en_US": ["Nevers"], "fr_FR": ["Nevers"] }
+    "capital": { "en-US": ["Nevers"], "fr-FR": ["Nevers"] }
   },
   {
     "name": {
-      "en_US": ["Nord"],
-      "fr_FR": ["Nord"],
-      "es_ES": ["Norte"],
-      "de_DE": ["Nord"],
-      "pt_PT": ["Norte"]
+      "en-US": ["Nord"],
+      "fr-FR": ["Nord"],
+      "es-ES": ["Norte"],
+      "de-DE": ["Nord"],
+      "pt-PT": ["Norte"]
     },
     "id": "FR-59",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-59.svg",
     "group": "FR-HDF",
     "numeric_code": "59",
-    "capital": { "en_US": ["Lille"], "fr_FR": ["Lille"] }
+    "capital": { "en-US": ["Lille"], "fr-FR": ["Lille"] }
   },
   {
     "name": {
-      "en_US": ["Oise"],
-      "fr_FR": ["Oise"],
-      "es_ES": ["Oise"],
-      "de_DE": ["Oise"],
-      "pt_PT": ["Oise"]
+      "en-US": ["Oise"],
+      "fr-FR": ["Oise"],
+      "es-ES": ["Oise"],
+      "de-DE": ["Oise"],
+      "pt-PT": ["Oise"]
     },
     "id": "FR-60",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-60.svg",
     "group": "FR-HDF",
     "numeric_code": "60",
-    "capital": { "en_US": ["Beauvais"], "fr_FR": ["Beauvais"] }
+    "capital": { "en-US": ["Beauvais"], "fr-FR": ["Beauvais"] }
   },
   {
     "name": {
-      "en_US": ["Orne"],
-      "fr_FR": ["Orne"],
-      "es_ES": ["Orne"],
-      "de_DE": ["Orne"],
-      "pt_PT": ["Orne"]
+      "en-US": ["Orne"],
+      "fr-FR": ["Orne"],
+      "es-ES": ["Orne"],
+      "de-DE": ["Orne"],
+      "pt-PT": ["Orne"]
     },
     "id": "FR-61",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-61.svg",
     "group": "FR-NOR",
     "numeric_code": "61",
-    "capital": { "en_US": ["Alençon"], "fr_FR": ["Alençon"] }
+    "capital": { "en-US": ["Alençon"], "fr-FR": ["Alençon"] }
   },
   {
     "name": {
-      "en_US": ["Pas-de-Calais"],
-      "fr_FR": ["Pas-de-Calais"],
-      "es_ES": ["Paso"],
-      "de_DE": ["Pas-de-Calais"],
-      "pt_PT": ["Pas-de-Calais"]
+      "en-US": ["Pas-de-Calais"],
+      "fr-FR": ["Pas-de-Calais"],
+      "es-ES": ["Paso"],
+      "de-DE": ["Pas-de-Calais"],
+      "pt-PT": ["Pas-de-Calais"]
     },
     "id": "FR-62",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-62.svg",
     "group": "FR-HDF",
     "numeric_code": "62",
-    "capital": { "en_US": ["Arras"], "fr_FR": ["Arras"] }
+    "capital": { "en-US": ["Arras"], "fr-FR": ["Arras"] }
   },
   {
     "name": {
-      "en_US": ["Puy-de-Dôme"],
-      "fr_FR": ["Puy-de-Dôme"],
-      "es_ES": ["Puy-de-Dôme"],
-      "de_DE": ["Puy-de-Dôme"],
-      "pt_PT": ["Puy-de-Dôme"]
+      "en-US": ["Puy-de-Dôme"],
+      "fr-FR": ["Puy-de-Dôme"],
+      "es-ES": ["Puy-de-Dôme"],
+      "de-DE": ["Puy-de-Dôme"],
+      "pt-PT": ["Puy-de-Dôme"]
     },
     "id": "FR-63",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-63.svg",
     "group": "FR-ARA",
     "numeric_code": "63",
-    "capital": { "en_US": ["Clermont-Ferrand"], "fr_FR": ["Clermont-Ferrand"] }
+    "capital": { "en-US": ["Clermont-Ferrand"], "fr-FR": ["Clermont-Ferrand"] }
   },
   {
     "name": {
-      "en_US": ["Pyrénées-Atlantiques"],
-      "fr_FR": ["Pyrénées-Atlantiques"],
-      "es_ES": ["Pirineos"],
-      "de_DE": ["Pyrénées-Atlantiques"],
-      "pt_PT": ["Pirenéus Atlânticos"]
+      "en-US": ["Pyrénées-Atlantiques"],
+      "fr-FR": ["Pyrénées-Atlantiques"],
+      "es-ES": ["Pirineos"],
+      "de-DE": ["Pyrénées-Atlantiques"],
+      "pt-PT": ["Pirenéus Atlânticos"]
     },
     "id": "FR-64",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-64.svg",
     "group": "FR-NAQ",
     "numeric_code": "64",
-    "capital": { "en_US": ["Pau"], "fr_FR": ["Pau"] }
+    "capital": { "en-US": ["Pau"], "fr-FR": ["Pau"] }
   },
   {
     "name": {
-      "en_US": ["Pyrénées-Orientales"],
-      "fr_FR": ["Pyrénées-Orientales"],
-      "es_ES": ["Pirineos"],
-      "de_DE": ["Pyrénées-Orientales"],
-      "pt_PT": ["Pirenéus Orientais"]
+      "en-US": ["Pyrénées-Orientales"],
+      "fr-FR": ["Pyrénées-Orientales"],
+      "es-ES": ["Pirineos"],
+      "de-DE": ["Pyrénées-Orientales"],
+      "pt-PT": ["Pirenéus Orientais"]
     },
     "id": "FR-66",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-66.svg",
     "group": "FR-OCC",
     "numeric_code": "66",
-    "capital": { "en_US": ["Perpignan"], "fr_FR": ["Perpignan"] }
+    "capital": { "en-US": ["Perpignan"], "fr-FR": ["Perpignan"] }
   },
   {
     "name": {
-      "en_US": ["Bas-Rhin"],
-      "fr_FR": ["Bas-Rhin"],
-      "es_ES": ["Bajo"],
-      "de_DE": ["Bas-Rhin"],
-      "pt_PT": ["Baixo Reno"]
+      "en-US": ["Bas-Rhin"],
+      "fr-FR": ["Bas-Rhin"],
+      "es-ES": ["Bajo"],
+      "de-DE": ["Bas-Rhin"],
+      "pt-PT": ["Baixo Reno"]
     },
     "id": "FR-67",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-67.svg",
     "group": "FR-GES",
     "numeric_code": "67",
-    "capital": { "en_US": ["Strasbourg"], "fr_FR": ["Strasbourg"] }
+    "capital": { "en-US": ["Strasbourg"], "fr-FR": ["Strasbourg"] }
   },
   {
     "name": {
-      "en_US": ["Haut-Rhin"],
-      "fr_FR": ["Haut-Rhin"],
-      "es_ES": ["Alto"],
-      "de_DE": ["Haut-Rhin"],
-      "pt_PT": ["Alto Reno"]
+      "en-US": ["Haut-Rhin"],
+      "fr-FR": ["Haut-Rhin"],
+      "es-ES": ["Alto"],
+      "de-DE": ["Haut-Rhin"],
+      "pt-PT": ["Alto Reno"]
     },
     "id": "FR-68",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-68.svg",
     "group": "FR-GES",
     "numeric_code": "68",
-    "capital": { "en_US": ["Colmar"], "fr_FR": ["Colmar"] }
+    "capital": { "en-US": ["Colmar"], "fr-FR": ["Colmar"] }
   },
   {
     "name": {
-      "en_US": ["La Réunion"],
-      "fr_FR": ["La Réunion"],
-      "es_ES": ["Reunión"],
-      "de_DE": ["Réunion"],
-      "pt_PT": ["Reunião"]
+      "en-US": ["La Réunion"],
+      "fr-FR": ["La Réunion"],
+      "es-ES": ["Reunión"],
+      "de-DE": ["Réunion"],
+      "pt-PT": ["Reunião"]
     },
     "id": "FR-974",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-974.svg",
     "group": "",
     "numeric_code": "974",
-    "capital": { "en_US": ["Saint-Denis"], "fr_FR": ["Saint-Denis"] }
+    "capital": { "en-US": ["Saint-Denis"], "fr-FR": ["Saint-Denis"] }
   },
   {
     "name": {
-      "en_US": ["Rhône"],
-      "fr_FR": ["Rhône"],
-      "es_ES": ["Ródano"],
-      "de_DE": ["Rhône"],
-      "pt_PT": ["Ródano"]
+      "en-US": ["Rhône"],
+      "fr-FR": ["Rhône"],
+      "es-ES": ["Ródano"],
+      "de-DE": ["Rhône"],
+      "pt-PT": ["Ródano"]
     },
     "id": "FR-69",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-69.svg",
     "group": "FR-ARA",
     "numeric_code": "69",
-    "capital": { "en_US": ["Lyon"], "fr_FR": ["Lyon"] }
+    "capital": { "en-US": ["Lyon"], "fr-FR": ["Lyon"] }
   },
   {
     "name": {
-      "en_US": ["Saône-et-Loire"],
-      "fr_FR": ["Saône-et-Loire"],
-      "es_ES": ["Saona"],
-      "de_DE": ["Saône-et-Loire"],
-      "pt_PT": ["Sona e Loire"]
+      "en-US": ["Saône-et-Loire"],
+      "fr-FR": ["Saône-et-Loire"],
+      "es-ES": ["Saona"],
+      "de-DE": ["Saône-et-Loire"],
+      "pt-PT": ["Sona e Loire"]
     },
     "id": "FR-71",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-71.svg",
     "group": "FR-BFC",
     "numeric_code": "71",
-    "capital": { "en_US": ["Mâcon"], "fr_FR": ["Mâcon"] }
+    "capital": { "en-US": ["Mâcon"], "fr-FR": ["Mâcon"] }
   },
   {
     "name": {
-      "en_US": ["Sarthe"],
-      "fr_FR": ["Sarthe"],
-      "es_ES": ["Sarthe"],
-      "de_DE": ["Sarthe"],
-      "pt_PT": ["Sarthe"]
+      "en-US": ["Sarthe"],
+      "fr-FR": ["Sarthe"],
+      "es-ES": ["Sarthe"],
+      "de-DE": ["Sarthe"],
+      "pt-PT": ["Sarthe"]
     },
     "id": "FR-72",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-72.svg",
     "group": "FR-PDL",
     "numeric_code": "72",
-    "capital": { "en_US": ["Le Mans"], "fr_FR": ["Le Mans"] }
+    "capital": { "en-US": ["Le Mans"], "fr-FR": ["Le Mans"] }
   },
   {
     "name": {
-      "en_US": ["Savoie"],
-      "fr_FR": ["Savoie"],
-      "es_ES": ["Saboya"],
-      "de_DE": ["Savoie"],
-      "pt_PT": ["Saboia"]
+      "en-US": ["Savoie"],
+      "fr-FR": ["Savoie"],
+      "es-ES": ["Saboya"],
+      "de-DE": ["Savoie"],
+      "pt-PT": ["Saboia"]
     },
     "id": "FR-73",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-73.svg",
     "group": "FR-ARA",
     "numeric_code": "73",
-    "capital": { "en_US": ["Chambéry"], "fr_FR": ["Chambéry"] }
+    "capital": { "en-US": ["Chambéry"], "fr-FR": ["Chambéry"] }
   },
   {
     "name": {
-      "en_US": ["Seine-et-Marne"],
-      "fr_FR": ["Seine-et-Marne"],
-      "es_ES": ["Sena"],
-      "de_DE": ["Seine-et-Marne"],
-      "pt_PT": ["Sena e Marne"]
+      "en-US": ["Seine-et-Marne"],
+      "fr-FR": ["Seine-et-Marne"],
+      "es-ES": ["Sena"],
+      "de-DE": ["Seine-et-Marne"],
+      "pt-PT": ["Sena e Marne"]
     },
     "id": "FR-77",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-77.svg",
     "group": "FR-IDF",
     "numeric_code": "77",
-    "capital": { "en_US": ["Melun"], "fr_FR": ["Melun"] }
+    "capital": { "en-US": ["Melun"], "fr-FR": ["Melun"] }
   },
   {
     "name": {
-      "en_US": ["Seine-Maritime"],
-      "fr_FR": ["Seine-Maritime"],
-      "es_ES": ["Sena"],
-      "de_DE": ["Seine-Maritime"],
-      "pt_PT": ["Sena Marítimo"]
+      "en-US": ["Seine-Maritime"],
+      "fr-FR": ["Seine-Maritime"],
+      "es-ES": ["Sena"],
+      "de-DE": ["Seine-Maritime"],
+      "pt-PT": ["Sena Marítimo"]
     },
     "id": "FR-76",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-76.svg",
     "group": "FR-NOR",
     "numeric_code": "76",
-    "capital": { "en_US": ["Rouen"], "fr_FR": ["Rouen"] }
+    "capital": { "en-US": ["Rouen"], "fr-FR": ["Rouen"] }
   },
   {
     "name": {
-      "en_US": ["Seine-Saint-Denis"],
-      "fr_FR": ["Seine-Saint-Denis"],
-      "es_ES": ["Sena-San"],
-      "de_DE": ["Seine-Saint-Denis"],
-      "pt_PT": ["Sena-Saint-Denis"]
+      "en-US": ["Seine-Saint-Denis"],
+      "fr-FR": ["Seine-Saint-Denis"],
+      "es-ES": ["Sena-San"],
+      "de-DE": ["Seine-Saint-Denis"],
+      "pt-PT": ["Sena-Saint-Denis"]
     },
     "id": "FR-93",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-93.svg",
     "group": "FR-IDF",
     "numeric_code": "93",
-    "capital": { "en_US": ["Bobigny"], "fr_FR": ["Bobigny"] }
+    "capital": { "en-US": ["Bobigny"], "fr-FR": ["Bobigny"] }
   },
   {
     "name": {
-      "en_US": ["Somme"],
-      "fr_FR": ["Somme"],
-      "es_ES": ["Somme"],
-      "de_DE": ["Somme"],
-      "pt_PT": ["Somme"]
+      "en-US": ["Somme"],
+      "fr-FR": ["Somme"],
+      "es-ES": ["Somme"],
+      "de-DE": ["Somme"],
+      "pt-PT": ["Somme"]
     },
     "id": "FR-80",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-80.svg",
     "group": "FR-HDF",
     "numeric_code": "80",
-    "capital": { "en_US": ["Amiens"], "fr_FR": ["Amiens"] }
+    "capital": { "en-US": ["Amiens"], "fr-FR": ["Amiens"] }
   },
   {
     "name": {
-      "en_US": ["Tarn"],
-      "fr_FR": ["Tarn"],
-      "es_ES": ["Tarn"],
-      "de_DE": ["Tarn"],
-      "pt_PT": ["Tarn"]
+      "en-US": ["Tarn"],
+      "fr-FR": ["Tarn"],
+      "es-ES": ["Tarn"],
+      "de-DE": ["Tarn"],
+      "pt-PT": ["Tarn"]
     },
     "id": "FR-81",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-81.svg",
     "group": "FR-OCC",
     "numeric_code": "81",
-    "capital": { "en_US": ["Albi"], "fr_FR": ["Albi"] }
+    "capital": { "en-US": ["Albi"], "fr-FR": ["Albi"] }
   },
   {
     "name": {
-      "en_US": ["Tarn-et-Garonne"],
-      "fr_FR": ["Tarn-et-Garonne"],
-      "es_ES": ["Tarn"],
-      "de_DE": ["Tarn-et-Garonne"],
-      "pt_PT": ["Tarn e Garona"]
+      "en-US": ["Tarn-et-Garonne"],
+      "fr-FR": ["Tarn-et-Garonne"],
+      "es-ES": ["Tarn"],
+      "de-DE": ["Tarn-et-Garonne"],
+      "pt-PT": ["Tarn e Garona"]
     },
     "id": "FR-82",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-82.svg",
     "group": "FR-OCC",
     "numeric_code": "82",
-    "capital": { "en_US": ["Montauban"], "fr_FR": ["Montauban"] }
+    "capital": { "en-US": ["Montauban"], "fr-FR": ["Montauban"] }
   },
   {
     "name": {
-      "en_US": ["Territoire de Belfort"],
-      "fr_FR": ["Territoire de Belfort"],
-      "es_ES": ["Territorio de Belfort"],
-      "de_DE": ["Territoire"],
-      "pt_PT": ["Território de Belfort"]
+      "en-US": ["Territoire de Belfort"],
+      "fr-FR": ["Territoire de Belfort"],
+      "es-ES": ["Territorio de Belfort"],
+      "de-DE": ["Territoire"],
+      "pt-PT": ["Território de Belfort"]
     },
     "id": "FR-90",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-90.svg",
     "group": "FR-BFC",
     "numeric_code": "90",
-    "capital": { "en_US": ["Belfort"], "fr_FR": ["Belfort"] }
+    "capital": { "en-US": ["Belfort"], "fr-FR": ["Belfort"] }
   },
   {
     "name": {
-      "en_US": ["Val-de-Marne"],
-      "fr_FR": ["Val-de-Marne"],
-      "es_ES": ["Valle"],
-      "de_DE": ["Val-de-Marne"],
-      "pt_PT": ["Vale do Marne"]
+      "en-US": ["Val-de-Marne"],
+      "fr-FR": ["Val-de-Marne"],
+      "es-ES": ["Valle"],
+      "de-DE": ["Val-de-Marne"],
+      "pt-PT": ["Vale do Marne"]
     },
     "id": "FR-94",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-94.svg",
     "group": "FR-IDF",
     "numeric_code": "94",
-    "capital": { "en_US": ["Créteil"], "fr_FR": ["Créteil"] }
+    "capital": { "en-US": ["Créteil"], "fr-FR": ["Créteil"] }
   },
   {
     "name": {
-      "en_US": ["Val-d'Oise"],
-      "fr_FR": ["Val-d'Oise"],
-      "es_ES": ["Valle"],
-      "de_DE": ["Val-d'Oise"],
-      "pt_PT": ["Val-d'Oise"]
+      "en-US": ["Val-d'Oise"],
+      "fr-FR": ["Val-d'Oise"],
+      "es-ES": ["Valle"],
+      "de-DE": ["Val-d'Oise"],
+      "pt-PT": ["Val-d'Oise"]
     },
     "id": "FR-95",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-95.svg",
     "group": "FR-IDF",
     "numeric_code": "95",
-    "capital": { "en_US": ["Pontoise"], "fr_FR": ["Pontoise"] }
+    "capital": { "en-US": ["Pontoise"], "fr-FR": ["Pontoise"] }
   },
   {
     "name": {
-      "en_US": ["Var"],
-      "fr_FR": ["Var"],
-      "es_ES": ["Var"],
-      "de_DE": ["Var"],
-      "pt_PT": ["Var"]
+      "en-US": ["Var"],
+      "fr-FR": ["Var"],
+      "es-ES": ["Var"],
+      "de-DE": ["Var"],
+      "pt-PT": ["Var"]
     },
     "id": "FR-83",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-83.svg",
     "group": "FR-PAC",
     "numeric_code": "83",
-    "capital": { "en_US": ["Toulon"], "fr_FR": ["Toulon"] }
+    "capital": { "en-US": ["Toulon"], "fr-FR": ["Toulon"] }
   },
   {
     "name": {
-      "en_US": ["Vaucluse"],
-      "fr_FR": ["Vaucluse"],
-      "es_ES": ["Vaucluse"],
-      "de_DE": ["Vaucluse"],
-      "pt_PT": ["Vaucluse"]
+      "en-US": ["Vaucluse"],
+      "fr-FR": ["Vaucluse"],
+      "es-ES": ["Vaucluse"],
+      "de-DE": ["Vaucluse"],
+      "pt-PT": ["Vaucluse"]
     },
     "id": "FR-84",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-84.svg",
     "group": "FR-PAC",
     "numeric_code": "84",
-    "capital": { "en_US": ["Avignon"], "fr_FR": ["Avignon"] }
+    "capital": { "en-US": ["Avignon"], "fr-FR": ["Avignon"] }
   },
   {
     "name": {
-      "en_US": ["Vendée"],
-      "fr_FR": ["Vendée"],
-      "es_ES": ["Vandea"],
-      "de_DE": ["Vendée"],
-      "pt_PT": ["Vendeia"]
+      "en-US": ["Vendée"],
+      "fr-FR": ["Vendée"],
+      "es-ES": ["Vandea"],
+      "de-DE": ["Vendée"],
+      "pt-PT": ["Vendeia"]
     },
     "id": "FR-85",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-85.svg",
     "group": "FR-PDL",
     "numeric_code": "85",
-    "capital": { "en_US": ["La Roche-sur-Yon"], "fr_FR": ["La Roche-sur-Yon"] }
+    "capital": { "en-US": ["La Roche-sur-Yon"], "fr-FR": ["La Roche-sur-Yon"] }
   },
   {
     "name": {
-      "en_US": ["Vienne"],
-      "fr_FR": ["Vienne"],
-      "es_ES": ["Vienne"],
-      "de_DE": ["Vienne"],
-      "pt_PT": ["Vienne"]
+      "en-US": ["Vienne"],
+      "fr-FR": ["Vienne"],
+      "es-ES": ["Vienne"],
+      "de-DE": ["Vienne"],
+      "pt-PT": ["Vienne"]
     },
     "id": "FR-86",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-86.svg",
     "group": "FR-NAQ",
     "numeric_code": "86",
-    "capital": { "en_US": ["Poitiers"], "fr_FR": ["Poitiers"] }
+    "capital": { "en-US": ["Poitiers"], "fr-FR": ["Poitiers"] }
   },
   {
     "name": {
-      "en_US": ["Vosges"],
-      "fr_FR": ["Vosges"],
-      "es_ES": ["Vosgos"],
-      "de_DE": ["Vosges"],
-      "pt_PT": ["Vosges"]
+      "en-US": ["Vosges"],
+      "fr-FR": ["Vosges"],
+      "es-ES": ["Vosgos"],
+      "de-DE": ["Vosges"],
+      "pt-PT": ["Vosges"]
     },
     "id": "FR-88",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-88.svg",
     "group": "FR-GES",
     "numeric_code": "88",
-    "capital": { "en_US": ["Épinal"], "fr_FR": ["Épinal"] }
+    "capital": { "en-US": ["Épinal"], "fr-FR": ["Épinal"] }
   },
   {
     "name": {
-      "en_US": ["Yonne"],
-      "fr_FR": ["Yonne"],
-      "es_ES": ["Yonne"],
-      "de_DE": ["Yonne"],
-      "pt_PT": ["Yonne"]
+      "en-US": ["Yonne"],
+      "fr-FR": ["Yonne"],
+      "es-ES": ["Yonne"],
+      "de-DE": ["Yonne"],
+      "pt-PT": ["Yonne"]
     },
     "id": "FR-89",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-89.svg",
     "group": "FR-BFC",
     "numeric_code": "89",
-    "capital": { "en_US": ["Auxerre"], "fr_FR": ["Auxerre"] }
+    "capital": { "en-US": ["Auxerre"], "fr-FR": ["Auxerre"] }
   },
   {
     "name": {
-      "en_US": ["Yvelines"],
-      "fr_FR": ["Yvelines"],
-      "es_ES": ["Yvelines"],
-      "de_DE": ["Yvelines"],
-      "pt_PT": ["Yvelines"]
+      "en-US": ["Yvelines"],
+      "fr-FR": ["Yvelines"],
+      "es-ES": ["Yvelines"],
+      "de-DE": ["Yvelines"],
+      "pt-PT": ["Yvelines"]
     },
     "id": "FR-78",
     "flag_url": "./assets/maps/flags/france-departments/flag_FR-78.svg",
     "group": "FR-IDF",
     "numeric_code": "78",
-    "capital": { "en_US": ["Versailles"], "fr_FR": ["Versailles"] }
+    "capital": { "en-US": ["Versailles"], "fr-FR": ["Versailles"] }
   }
 ]

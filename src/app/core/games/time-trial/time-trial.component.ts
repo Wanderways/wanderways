@@ -124,7 +124,7 @@ export class TimeTrialComponent implements OnInit {
   }
 
   getLocaleFromI18n(data: Locale_I18n): string[] {
-    return data[this.currentLanguage] ? data[this.currentLanguage] : data['en_US'];
+    return data[this.currentLanguage] ? data[this.currentLanguage] : data['en-US'];
   }
   clearInput() {
     this.userInput.reset("");

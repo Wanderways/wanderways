@@ -5,11 +5,11 @@
       "tagIdList":["world"],
       "available":true,
       "mapDisplayName": {
-          "en_US":["World"],
-          "fr_FR":["Monde"],
-          "de_DE":["Welt"],
-          "es_ES":["Mundo"],
-          "pt_PT":["Mundo"]
+          "en-US":["World"],
+          "fr-FR":["Monde"],
+          "de-DE":["Welt"],
+          "es-ES":["Mundo"],
+          "pt-PT":["Mundo"]
       }
     },
     {
@@ -18,11 +18,11 @@
       "tagIdList":["cont_eu"],
       "available":false,
       "mapDisplayName": {
-        "en_US":["Europe"],
-        "fr_FR":["Europe"],
-        "de_DE":["Europa"],
-        "es_ES":["Europa"],
-        "pt_PT":["Europa"]
+        "en-US":["Europe"],
+        "fr-FR":["Europe"],
+        "de-DE":["Europa"],
+        "es-ES":["Europa"],
+        "pt-PT":["Europa"]
       }
     },
     {
@@ -31,11 +31,11 @@
       "tagIdList":["cont_as"],
       "available":false,
       "mapDisplayName": {
-        "en_US":["Asia"],
-        "fr_FR":["Asie"],
-        "de_DE":["Asien"],
-        "es_ES":["Asia"],
-        "pt_PT":["Ásia"]
+        "en-US":["Asia"],
+        "fr-FR":["Asie"],
+        "de-DE":["Asien"],
+        "es-ES":["Asia"],
+        "pt-PT":["Ásia"]
       }
     },
     {
@@ -44,11 +44,11 @@
       "tagIdList":["cont_na"],
       "available":false,
       "mapDisplayName": {
-        "en_US":["North America"],
-        "fr_FR":["Amérique du nord"],
-        "de_DE":["Nordamerika"],
-        "es_ES":["Norteamérica"],
-        "pt_PT":["América do Norte"]
+        "en-US":["North America"],
+        "fr-FR":["Amérique du nord"],
+        "de-DE":["Nordamerika"],
+        "es-ES":["Norteamérica"],
+        "pt-PT":["América do Norte"]
       }
     },
     {
@@ -57,11 +57,11 @@
       "tagIdList":["cont_sa"],
       "available":false,
       "mapDisplayName": {
-        "en_US":["South America"],
-        "fr_FR":["Amérique du sud"],
-        "de_DE":["Südamerika"],
-        "es_ES":["América del Sur"],
-        "pt_PT":["América do Sul"]
+        "en-US":["South America"],
+        "fr-FR":["Amérique du sud"],
+        "de-DE":["Südamerika"],
+        "es-ES":["América del Sur"],
+        "pt-PT":["América do Sul"]
       }
     },
     {
@@ -70,11 +70,11 @@
       "tagIdList":["cont_af"],
       "available":false,
       "mapDisplayName": {
-        "en_US":["Africa"],
-        "fr_FR":["Afrique"],
-        "de_DE":["Afrika"],
-        "es_ES":["África"],
-        "pt_PT":["África"]
+        "en-US":["Africa"],
+        "fr-FR":["Afrique"],
+        "de-DE":["Afrika"],
+        "es-ES":["África"],
+        "pt-PT":["África"]
       }
     },
     {
@@ -83,11 +83,11 @@
       "tagIdList":["cont_oc"],
       "available":false,
       "mapDisplayName": {
-        "en_US":["Oceania"],
-        "fr_FR":["Océanie"],
-        "de_DE":["Ozeanien"],
-        "es_ES":["Oceania"],
-        "pt_PT":["Oceania"]
+        "en-US":["Oceania"],
+        "fr-FR":["Océanie"],
+        "de-DE":["Ozeanien"],
+        "es-ES":["Oceania"],
+        "pt-PT":["Oceania"]
       }
     },
     {
@@ -96,11 +96,11 @@
       "tagIdList":["cont_eu","coun_fr"],
       "available":true,
       "mapDisplayName": {
-        "en_US":["France "],
-        "fr_FR":["France"],
-        "de_DE":["Frankreich"],
-        "es_ES":["Francia"],
-        "pt_PT":["França"]
+        "en-US":["France "],
+        "fr-FR":["France"],
+        "de-DE":["Frankreich"],
+        "es-ES":["Francia"],
+        "pt-PT":["França"]
       }
     },
     {
@@ -109,11 +109,11 @@
       "tagIdList":["cont_as","coun_jp"],
       "available":true,
       "mapDisplayName": {
-        "en_US":["Japan"],
-        "fr_FR":["Japon"],
-        "de_DE":["Japan"],
-        "es_ES":["Japón"],
-        "pt_PT":["Japão"]
+        "en-US":["Japan"],
+        "fr-FR":["Japon"],
+        "de-DE":["Japan"],
+        "es-ES":["Japón"],
+        "pt-PT":["Japão"]
       }
     }
   ]
