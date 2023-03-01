@@ -1,0 +1,45 @@
+mat-dialog-container {
+  background-color: var(--dark-background) !important;
+}
+
+mat-option,
+mat-optgroup span {
+  background-color: var(--dark-background) !important;
+}
+
+mat-option:hover,
+mat-option span:hover,
+mat-select {
+  background-color: var(--light-background) !important;
+}
+
+mat-dialog-container,
+.mat-select-panel {
+  box-shadow: 0 0 5px 1px #AAAAAA61;
+}
+
+.mat-ripple-element {
+  background-color: #FFFFFF60;
+}
+
+.mat-expansion-panel-body {
+  padding: 0.25rem 0.5rem !important;
+  border-left: 1px #ffffff11 solid;
+  border-right: 1px #ffffff11 solid;
+  border-bottom: 1px #ffffff11 solid;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.mat-expansion-panel-header {
+  border-end-end-radius: 0 !important;
+  border-end-start-radius: 0 !important;
+}
+
+
+.mat-snack-bar-container {
+  background-color: var(--light-background) !important;
+
+  &.error {
+    background-color: var(--map-land-error) !important;
+  }
+}

@@ -1,7 +1,3 @@
-// background color that should be loaded whatever happens because lay be used dynamically, skipping tree shaking
-let bg_colors = ['current-bg-color','bg-default-theme','bg-dark-theme','bg-candy-theme','bg-violetta-theme'];
-let themes = ['dark','default'];
-
 module.exports = {
   darkMode: 'class',
   content: ['./src/**/*.{html,ts}', './assets/icons/*.svg'],
@@ -39,10 +35,6 @@ module.exports = {
     fontFamily: {
       'material':['Material Icons']
     }
-  },
-  safelist:[
-    ...bg_colors,
-    ...themes
-  ]
+  }
 }
 

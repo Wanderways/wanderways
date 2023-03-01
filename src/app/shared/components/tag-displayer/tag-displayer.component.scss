@@ -1,7 +1,10 @@
+@import "/src/app/theming/gradients";
+
 :host {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+  z-index: 1;
 
   .tag-groups-container {
     margin: 0.5rem 0;
@@ -26,7 +29,7 @@
 
       label {
         display: flex;
-        gap:0.25rem;
+        gap: 0.25rem;
         align-items: center;
         cursor: pointer;
       }
@@ -38,9 +41,8 @@
         cursor: pointer;
         padding: 0.5rem;
         border-radius: 0.25rem;
-
-        &.bg-violetta-theme {
-          color: white;
+        &.selected {
+          background-image: $gradient-violeta;
         }
       }
     }

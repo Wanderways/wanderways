@@ -19,14 +19,14 @@
         </div>
     </div>
     <div class="flex mt-2">
-        <button (click)="onPlay()" class="bg-candy-theme-text px-4 py-2 rounded" i18n="@@play" >Play</button>
+        <button (click)="onPlay()" id="play-button" class="px-4 py-2 rounded" i18n="@@play" >Play</button>
     </div>
     <form *ngIf="selectedMap" class="sub-maps gap-2 mt-2" style="z-index:2;">
         <p><span i18n="@@selected-map">Selected map</span> :</p>
         <div class="selectable-maps-container">
             <div *ngFor="let map of maps" class="button-select-map">
                 <input type="radio" id="{{map.id}}" name="selection" value="{{map.id}}" (click)="setSelectedMap(map.id)" [checked]="selectedMap.id === map.id">
-                <label for="{{map.id}}" [class.bg-violetta-theme-text]="selectedMap.id === map.id">{{map.displayName | i18n}}</label>
+                <label for="{{map.id}}" [class.selected]="selectedMap.id === map.id">{{map.displayName | i18n}}</label>
             </div>
         </div>
 

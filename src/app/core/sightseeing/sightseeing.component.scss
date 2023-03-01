@@ -1,3 +1,6 @@
+@import "/src/app/theming/breakpoints";
+@import "/src/app/theming/gradients";
+
 :host {
   position: relative;
 
@@ -55,6 +58,10 @@
       }
     }
 
+    #play-button{
+      background-image: $gradient-candy;
+    }
+
     .sub-maps {
       display: flex;
       flex-direction: column;
@@ -76,6 +83,9 @@
             border-left: 1px solid #CCC;
             cursor: pointer;
             z-index: 90;
+            &.selected{
+              background-image: $gradient-violeta;
+            }
           }
 
           label:hover {
@@ -102,7 +112,7 @@
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $large-screen) {
     .thumbnail-container {
       height: 7.5rem;
     }

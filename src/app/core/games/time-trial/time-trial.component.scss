@@ -1,3 +1,6 @@
+@import "/src/app/theming/breakpoints";
+
+
 :host {
   display: grid;
   max-height: 90vh;
@@ -64,7 +67,7 @@
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $large-screen) {
     grid-template-columns: 2rem 1fr 1fr 2rem;
     grid-template-rows: auto auto 1fr;
     grid-template-areas:
@@ -73,7 +76,7 @@
       "map-tile map-tile map-tile map-tile"
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $large-screen) {
     gap: 1rem;
     grid-template-columns: 2rem 4fr 1fr 2rem;
     grid-template-rows: auto auto 1fr;

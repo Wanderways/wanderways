@@ -1,7 +1,9 @@
+@import "/src/app/theming/breakpoints";
+@import "/src/app/theming/gradients";
+
 :host {
   display: flex;
   flex-direction: column;
-  padding: 0 90px;
   flex: 1 0 auto;
   width: 100%;
   z-index: 1;
@@ -31,7 +33,8 @@
     }
   }
 
-  #home-presentation-text {
+  section {
+    margin: 0 90px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -45,7 +48,12 @@
       font-size: 50px;
       line-height: 63px;
       text-transform: uppercase;
+      background-image: $gradient-candy;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
     #home-catch-phrase {
       font-family: 'Roboto';
       font-style: normal;
@@ -75,5 +83,15 @@
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width : $large-screen) {
+
+  #header {
+
+    #header-content {
+      margin: 15px 35px;
+    }
   }
 }

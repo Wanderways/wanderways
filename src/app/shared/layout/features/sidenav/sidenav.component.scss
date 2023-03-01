@@ -1,3 +1,5 @@
+@import "/src/app/theming/breakpoints";
+
 app-side-menu {
   background-color: rgba($color: #263D59, $alpha: 0.8);
 
@@ -36,7 +38,7 @@ app-side-menu {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $large-screen) {
   #close-sidenav-button {
     display: none;
   }

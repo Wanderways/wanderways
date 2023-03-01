@@ -1,3 +1,5 @@
+@import "/src/app/theming/gradients";
+
 :host {
   position: relative;
   cursor: pointer;
@@ -18,7 +20,7 @@
 
     &.selected {
       color: #FFFFFF;
-      ;
+      background-image: $gradient-candy;
     }
   }
 

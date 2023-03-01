@@ -1,3 +1,5 @@
+@import "/src/app/theming/gradients";
+
 form {
   .game-mode-container {
     display: flex;
@@ -47,6 +49,13 @@ form {
         position: absolute;
         text-align: center;
       }
+    }
+  }
+
+  button#start-button{
+    background-color: $gradient-candy;
+    &[disabled]{
+      background-color: rgb(255 255 255 / 0.25);
     }
   }
 }

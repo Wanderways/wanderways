@@ -3,6 +3,9 @@
 @use "sass:map";
 @use "app/theming/_customMixins" as customMixins;
 
+@import "/src/app/theming/gradients";
+@import "/src/app/theming/material-override";
+
 // TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
 //  The following line adds:
 //    1. Default typography styles for all components
@@ -54,8 +57,6 @@ $svg-invert-white: 1;
 
 
   --color-scheme: dark;
-  --light-background: var(--theme-dark-background-light);
-  --dark-background: var(--theme-dark-background-dark);
   --current-color: var(--theme-dark-text-color);
 
   /* SVG related */
@@ -100,62 +101,10 @@ html {
   }
 }
 
-.current-bg-color {
-  background-image: linear-gradient(180deg,
-      var(--dark-background) 0%,
-      var(--light-background) 100%);
-  background-color: var(--light-background);
-}
-
-.bg-dark-theme {
-  background-image: linear-gradient(180deg,
-      var(--theme-dark-background-dark) 0%,
-      var(--theme-dark-background-light) 100%);
-}
-
-.bg-candy-theme,
-.bg-candy-theme-text {
-  background-image: linear-gradient(225deg,
-      var(--candy-primary) 0%,
-      var(--candy-secondary) 100%);
-}
-
-.bg-violetta-theme,
-.bg-violetta-theme-text {
-  background-image: linear-gradient(45deg,
-      var(--violetta-primary) 0%,
-      var(--violetta-secondary) 100%);
-}
-
-.bg-candy-theme-text,
-.bg-violetta-theme-text {
-  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-}
-
 .bg-dark {
-  background-color: var(--dark-background);
+  background-color: var(--theme-dark-background-dark);
 }
 
-.bg-light {
-  background-color: var(--light-background);
-}
-
-.candy-text-color,
-.violetta-text-color {
-  -webkit-text-fill-color: transparent;
-}
-
-.candy-text-color {
-  @apply bg-candy-theme;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.violetta-text-color {
-  @apply bg-violetta-theme;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
 
 #app-background {
   position: fixed;
@@ -164,6 +113,8 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  background-image: $gradient-dark;
+  background-color: var(--light-background);
 }
 
 @include customMixins.scrollbar('custom-scrollbar', false);
@@ -276,52 +227,6 @@ img {
 }
 
 
-// Material overrides
-mat-dialog-container {
-  background-color: var(--dark-background) !important;
-}
-
-mat-option,
-mat-optgroup span {
-  background-color: var(--dark-background) !important;
-}
-
-mat-option:hover,
-mat-option span:hover,
-mat-select {
-  background-color: var(--light-background) !important;
-}
-
-mat-dialog-container,
-.mat-select-panel {
-  box-shadow: 0 0 5px 1px #AAAAAA61;
-}
-
-.mat-ripple-element {
-  background-color: #FFFFFF60;
-}
-
-.mat-expansion-panel-body {
-  padding: 0.25rem 0.5rem !important;
-  border-left: 1px #ffffff11 solid;
-  border-right: 1px #ffffff11 solid;
-  border-bottom: 1px #ffffff11 solid;
-  border-radius: 0 0 0.5rem 0.5rem;
-}
-
-.mat-expansion-panel-header {
-  border-end-end-radius: 0 !important;
-  border-end-start-radius: 0 !important;
-}
-
-
-.mat-snack-bar-container {
-  background-color: var(--light-background) !important;
-
-  &.error {
-    background-color: var(--map-land-error) !important;
-  }
-}
 
 @include customMixins.scrollbar('.mat-select-panel', true);
 @include customMixins.scrollbar('.custom-scrollbar', true);
