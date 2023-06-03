@@ -3,11 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import { provideAnalytics, getAnalytics, ScreenTrackingService } from '@angular/fire/analytics';
-import { providePerformance, getPerformance } from '@angular/fire/performance';
+import { ScreenTrackingService } from '@angular/fire/analytics';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatRippleModule } from '@angular/material/core';
 import { MatDialogModule as MatDialogModule } from '@angular/material/dialog';
@@ -25,9 +21,6 @@ let matModules: any[] = [
   MatSnackBarModule
 ]
 
-const firebase = environment.production? [provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAnalytics(() => getAnalytics()),
-    providePerformance(() => getPerformance())]:[];
 
 @NgModule({
   declarations: [
@@ -42,7 +35,6 @@ const firebase = environment.production? [provideFirebaseApp(() => initializeApp
     HttpClientModule,
     ReactiveFormsModule,
     ...matModules,
-    ...firebase
   ],
   providers: [
     ScreenTrackingService
