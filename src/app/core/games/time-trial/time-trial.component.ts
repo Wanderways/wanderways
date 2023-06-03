@@ -14,6 +14,7 @@ import { colorArea } from 'src/app/shared/components/map-generic/mapColorationUt
 import { AreaStatus } from 'src/app/shared/components/map-generic/mapColorationUtils/AreaStatus.enum';
 import { SnackbarService } from 'src/app/shared/services/snackbar.service';
 import { I18nService } from 'src/app/shared/services/i18n/i18n.service';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-time-trial',
@@ -23,7 +24,7 @@ import { I18nService } from 'src/app/shared/services/i18n/i18n.service';
 export class TimeTrialComponent implements OnInit {
 
   areaSelected: MapData | undefined = undefined;
-  currentMap: Map | undefined;
+  currentMap$: Observable<Map | undefined> = of(undefined);
   currentSelected: MapData | undefined = undefined;
   userInput: FormControl<string | null> = new FormControl<string>("");
   toFindList: MapData[] = [];
@@ -47,7 +48,7 @@ export class TimeTrialComponent implements OnInit {
     this.route.queryParams.subscribe(queryParameter => {
       if (!queryParameter) return; // If there is no value then skip
       const mapId = queryParameter["mapId"];
-      this.mapService.getMap(mapId).then((map: Map | undefined) => this.currentMap = map);
+      this.currentMap$ = this.mapService.getMap(mapId);
       this.mapDataService.getMapData(mapId).subscribe(e => {
         this.originList = e;
         this.toFindList = e;

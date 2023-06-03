@@ -1,7 +1,7 @@
 <div class="title-tile">
   <div class="flex flex-col gap-1 flex-wrap">
     <span class="text-xl font-extralight">{{
-      currentMap?.displayName | i18n
+      (currentMap$ | async)?.displayName | i18n
       }}</span>
     <span class="text-base font-thin" i18n="@@game-time-trial">Time trial</span>
   </div>
@@ -10,7 +10,7 @@
 </div>
 
 <div class="map-tile">
-  <app-map-generic class="map flex-grow h-full w-full" *ngIf="currentMap" [visibleBorder]="true" [mapId]="currentMap.id"
+  <app-map-generic class="map flex-grow h-full w-full" *ngIf="(currentMap$ | async)" [visibleBorder]="true" [mapId]="(currentMap$ | async)?.id ?? ''"
     [currentSelected]="currentSelected" [inGame]="true" [foundList]="foundList"
     (areaSelected)="onAreaSelected($event)"></app-map-generic>
   <input title="response" [formControl]="userInput" (keyup)="onInputChange()" autofocus type="text"
