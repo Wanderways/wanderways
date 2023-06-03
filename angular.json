@@ -151,8 +151,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "wanderways:build:production",
-            "firebaseProject": "learn-your-maps",
-            "firebaseHostingSite": "learn-your-maps"
+            "firebaseProject": "wanderways",
+            "firebaseHostingSite": "wanderways"
           }
         }
       }

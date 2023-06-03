@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "learn-your-maps",
+    "target": "wanderways",
     "public": "dist/wanderways",
     "ignore": [
       "firebase.json",
