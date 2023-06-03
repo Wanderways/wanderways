@@ -152,7 +152,7 @@
             "ssr": false,
             "browserTarget": "wanderways:build:production",
             "firebaseProject": "learn-your-maps",
-            "firebaseHostingSite": "wanderways"
+            "firebaseHostingSite": "learn-your-maps"
           }
         }
       }
