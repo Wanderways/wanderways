@@ -5,7 +5,21 @@
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
-  flex-grow: 1;
+
+  .backdrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    cursor: default;
+  }
+
+  .proposition-line,
+  #proposition-container {
+    text-transform: uppercase;
+    color: var(--current-color);
+  }
 
   .proposition-line {
     gap: 0.5rem;
@@ -30,7 +44,7 @@
     flex-direction: column;
     width: 100%;
     bottom: 100%;
-    background-color: var(--dark-background);
+    background-color: var(--theme-dark-background-dark);
     border-radius: 0.25rem;
   }
 }

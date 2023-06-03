@@ -1,22 +1,17 @@
-<div *ngIf="displayLanguageSelector" (click)="displayLanguageSelector = false" class="fixed w-screen h-screen top-0 left-0 cursor-default"></div>
-<div matRipple  class="proposition-line" [class.selected]="displayLanguageSelector" (click)="displayLanguageSelector = !displayLanguageSelector" >
-  <img
-    src="https://flagcdn.com/w20/{{currentLanguage.iso3166}}.png"
-    srcset="https://flagcdn.com/w40/{{currentLanguage.iso3166}}.png 2x"
-    width="20"
+<div *ngIf="displayLanguageSelector" (click)="displayLanguageSelector = false"
+  class="backdrop"></div>
+<div matRipple class="proposition-line" [class.selected]="displayLanguageSelector"
+  (click)="displayLanguageSelector = !displayLanguageSelector">
+  <img src="https://flagcdn.com/w20/{{currentLanguage.iso3166}}.png"
+    srcset="https://flagcdn.com/w40/{{currentLanguage.iso3166}}.png 2x" width="20"
     alt="{{currentLanguage.displayName}}">
-  <span class="uppercase">{{currentLanguage.iso3166}}</span>
+  {{currentLanguage.iso3166}}
 </div>
-<div id="proposition-container" class="custom-scrollbar">
-    <ng-container *ngFor="let language of supportedLanguages">
-      <ng-container *ngIf='displayLanguageSelector &&language.localeId != currentLanguage.localeId'>
-        <a matRipple  href="/{{language.localeId}}/{{getCurrentUrl()}}" class="proposition-line">
-          <img src="./assets/locale_flag/w20/{{language.iso3166}}.png"
-            srcset="./assets/locale_flag/w40/{{language.iso3166}}.png 2x"
-            width="20"
-            alt="{{language.displayName}}">
-          <span  mat-button class="current-color uppercase">{{language.iso3166}}</span>
-        </a>
-      </ng-container>
-    </ng-container>
+<div *ngIf="displayLanguageSelector" id="proposition-container" class="custom-scrollbar">
+  <a *ngFor="let language of supportedLanguages | filterLanguage:currentLanguage" matRipple
+    href="/{{language.localeId}}/{{getCurrentUrl()}}" class="proposition-line">
+    <img src="./assets/locale_flag/w20/{{language.iso3166}}.png"
+      srcset="./assets/locale_flag/w40/{{language.iso3166}}.png 2x" width="20" alt="{{language.displayName}}">
+    {{language.iso3166}}
+  </a>
 </div>

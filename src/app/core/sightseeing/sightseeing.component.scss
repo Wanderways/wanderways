@@ -41,33 +41,48 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 2.5rem;
+    gap: 0.5rem;
 
-    .map-header {
-      padding: 0 0.5rem;
+    header {
+      padding-bottom: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       height: 17.5rem;
       width: 100%;
       display: flex;
       width: 100%;
+      align-items: flex-end;
+      z-index: 30;
 
-      .flag {
-        max-height: 32px;
-      }
-
-      .map-name {
+      h1 {
         display: flex;
+        gap: 1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
         align-items: center;
+
+        img.flag {
+          max-height: 32px;
+        }
 
       }
     }
 
     #play-button {
       background-image: $gradient-candy;
+      align-self: flex-start;
+      padding : 0.5rem 1rem;
+      border-radius: 0.25rem;
     }
 
     .sub-maps {
       display: flex;
       flex-direction: column;
       height: 5rem;
+      gap: 0.5rem;;
 
       .selectable-maps-container {
         display: flex;
@@ -113,6 +128,7 @@
 
     app-map-generic {
       max-height: 90vh;
+      border-radius: 0.25rem
     }
   }
 

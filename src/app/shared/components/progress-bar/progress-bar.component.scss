@@ -6,6 +6,8 @@
 
     img {
       filter: brightness(25);
+      align-self: flex-start;
+      margin-right: 0.5rem;
     }
 
     #current-found {

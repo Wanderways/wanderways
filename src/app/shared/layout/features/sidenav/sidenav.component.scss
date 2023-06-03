@@ -3,7 +3,7 @@
 app-side-menu {
   background-color: rgba($color: #263D59, $alpha: 0.8);
 
-  #sidenav-header {
+  header {
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@ app-side-menu {
 
   }
 
-  nav.sidenav-content {
+  nav {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -41,6 +41,13 @@ app-side-menu {
       }
 
       opacity: 0.2;
+    }
+
+    img {
+      height: 25px;
+      align-self: flex-start;
+      margin-left: 8px;
+      margin-bottom: 14px;
     }
   }
 }

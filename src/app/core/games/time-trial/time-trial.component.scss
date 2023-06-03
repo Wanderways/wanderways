@@ -6,7 +6,6 @@
   max-height: 90vh;
   height: 100%;
   max-width: min(1392px, 100vw);
-
   margin: 0 auto;
 
   .title-tile {
@@ -14,12 +13,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
+
+    h1 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+
+      span {
+        &.map-name {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+          font-weight: 200;
+        }
+
+        &.game-name {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
   }
 
   .progress-tile {
     grid-area: progress-tile;
     align-items: center;
     margin: 0.5rem 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
   }
 
   .miscellaneous-tile {
@@ -45,6 +70,12 @@
     justify-content: center;
     align-items: center;
     grid-area: map-tile;
+
+    .map{
+      flex-grow: 1;
+      height: 100%;
+      width: 100%;
+    }
 
     input[type="text"] {
       width: 100%;
@@ -86,14 +117,14 @@
       ". map-tile miscellaneous-tile .";
 
     .progress-tile {
-      div{
+      div {
         align-items: center;
       }
     }
   }
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   flex-direction: column;
 }

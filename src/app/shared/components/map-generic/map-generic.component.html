@@ -34,7 +34,7 @@
     </div>
   </div>
 </ng-container>
-<div class="consultation  bg-dark {{consultationSide}}" *ngIf="canCurrentSelectedBeDisplayed(currentSelected)"
+<div class="consultation bg-dark {{consultationSide}}" *ngIf="canCurrentSelectedBeDisplayed(currentSelected)"
   (mouseenter)="mouseEnterConsultation()">
   <div class="label" i18n="@@name">Name</div>
   <div class="value">{{ currentSelected!.label}}</div>

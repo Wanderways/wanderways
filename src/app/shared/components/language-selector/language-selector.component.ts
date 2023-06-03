@@ -49,3 +49,15 @@ export class LanguageSelectorComponent implements OnInit {
     return this.router.url.replace(/\/[a-z]{2}-[A-Z]{2}\//,'');
   }
 }
+
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'filterLanguage',
+  standalone: true
+})
+export class FilterLanguagePipe implements PipeTransform {
+  transform( languages : Language[], language: Language): Language[] {
+    return  languages.filter(e=>e.localeId!= language.localeId)
+  }
+}

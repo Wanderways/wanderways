@@ -1,22 +1,19 @@
 <app-side-menu [displaySideMenu]="(sidenavService.isDisplayed$ | async) || false"
   (displaySideMenuChange)="sidenavService.toggleDisplayed()" [behavior]="'reactive'" [direction]="'left'">
-  <div id="sidenav-header">
+  <header>
     <div matRipple class="logo-and-title" [routerLink]="['/']">
       <img id="logo-with-brand" src="./assets/brand/logo_with_brand.svg" alt="menu button icon" />
     </div>
     <div id="close-sidenav-button" matRipple (click)="sidenavService.toggleDisplayed()">
       <img id="close-button" src="./assets/icons/close.svg" alt="close button icon" class="svg-current-color mx-0" />
     </div>
-  </div>
-  <nav class="sidenav-content">
+  </header>
+  <nav>
     <app-sidenav-link-list [linkList]="navLinks"></app-sidenav-link-list>
     <hr>
-    <img style="height:25px; align-self: flex-start; margin-left:8px; margin-bottom: 14px;" src="./assets/brand/logo_with_brand_white.svg"
-      alt="">
+    <img src="./assets/brand/logo_with_brand_white.svg" alt="">
     <app-sidenav-link-list [linkList]="footerLinks"></app-sidenav-link-list>
     <hr>
-    <div class="flex justify-around gap-1 mb-6">
-      <app-language-selector></app-language-selector>
-    </div>
+    <app-language-selector></app-language-selector>
   </nav>
 </app-side-menu>

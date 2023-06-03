@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LanguageSelectorComponent } from './language-selector/language-selector.component';
+import { LanguageSelectorComponent, FilterLanguagePipe } from './language-selector/language-selector.component';
 import { MapTileComponent } from './map-tile/map-tile.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TagDisplayerComponent } from './tag-displayer/tag-displayer.component';
@@ -10,7 +10,7 @@ import { TimerComponent } from './timer/timer.component';
 import { MapGenericComponent } from './map-generic/map-generic.component';
 import { DataListComponent } from './data-list/data-list.component';
 
-const components : any[] = [
+const components: any[] = [
   LanguageSelectorComponent,
   MapTileComponent,
   SideMenuComponent,
@@ -27,9 +27,10 @@ const components : any[] = [
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FilterLanguagePipe
   ],
-  exports:[
+  exports: [
     ...components
   ]
 })

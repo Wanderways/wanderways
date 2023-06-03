@@ -63,11 +63,11 @@
   }
 
   // @TODO verify
-  &:not(.relativeHeader) {
+  &:not(.relative) {
     position: sticky;
   }
 
-  &.relativeHeader {
+  &.relative {
     position: relative;
   }
 }

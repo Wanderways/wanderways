@@ -1,15 +1,15 @@
 <!-- Filter container -->
 <div id="filter-container">
-  <div class="flex gap-2">
+  <form>
     <!-- @TODO Future search bar -->
-    <input disabled type="test" label="searchMap" class="flex-grow bg-[#0000004f] pl-2 text-current-color"
+    <input disabled type="test" label="searchMap"
       placeholder="Search for a map">
     <!-- Open filter button -->
-    <div id="filter-button" matRipple (click)="displayFilter = !displayFilter">
+    <button type="button" id="filter-button" matRipple (click)="displayFilter = !displayFilter">
       <img src="./assets/icons/filter.svg" class="svg-current-color" alt="filter image">
       <span i18n="@@map-filter">Filter</span>
-    </div>
-  </div>
+    </button>
+  </form>
   <!-- Filters -->
   <app-tag-displayer [rtl]="true" [saveFilterId]="'mapFilter'" [displayed]="displayFilter"
     [tagList]="(mapTagList$ | async) ?? []" [tagGroupList]="(tagGroupList$ | async) ?? []"
@@ -17,11 +17,11 @@
 </div>
 
 <!-- Map tiles container -->
-<div id="map-tiles-container" class=" ">
+<div id="map-tiles-container">
   <ng-container *ngFor="let tag of mapTagList$ | async">
     <div *ngIf="isTagFiltered(tag)" class="map-tiles-category-container">
-      <span class="font-light capitalize text-xs">{{ tag.displayName }}</span>
-      <div *ngIf="tagHasMap(tag,(mapGroupList$ | async) ?? []) else noMapForTag" class="flex gap-2 flex-wrap">
+      <span>{{ tag.displayName }}</span>
+      <div *ngIf="tagHasMap(tag,(mapGroupList$ | async) ?? []) else noMapForTag" class="tag-group">
         <ng-container *ngFor="let entry of mapGroupList$ | async">
           <app-map-tile *ngIf="entryHasTag(entry,tag.id)" [mapGroup]="entry"
             [available]="entry.available"></app-map-tile>
