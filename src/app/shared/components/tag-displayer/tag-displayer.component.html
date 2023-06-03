@@ -3,13 +3,13 @@
   <ng-container *ngFor="let tagGroup of tagGroupList">
     <ng-container *ngIf="tagGroupHasTag(tagGroup.id)">
       <div class="tag-groups-container">
-        <span>{{tagGroup.displayName | i18n}}</span>
+        <span>{{tagGroup.displayName}}</span>
         <div class="tag-group">
           <!-- Go throug tag list -->
           <ng-container *ngFor="let tagObj of tagList">
             <ng-container *ngIf="tagObj.tagGroupId === tagGroup.id">
               <div class="tag" matRipple [class.selected]="isSelected(tagObj)" (click)="updateTag(tagObj)">
-                {{tagObj.displayName| i18n}}
+                {{tagObj.displayName}}
               </div>
             </ng-container>
           </ng-container>

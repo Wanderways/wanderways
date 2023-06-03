@@ -2,7 +2,7 @@
 mapGroupId}">
     <img class="svg-current-color" src="./assets/maps/map_thumbnail/{{mapGroup.mapGroupId}}.png" alt="Map thumbnail">
 </div>
-<span class="current-color">{{mapGroup.mapDisplayName | i18n}}</span>
+<span class="current-color">{{mapGroup.mapDisplayName}}</span>
 <ng-container *ngIf="!available">
     <div class="map-tile-not-available" i18n="@@map-tile-not-available">Not available yet !</div>
 </ng-container>

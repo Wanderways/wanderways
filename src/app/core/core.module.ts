@@ -12,7 +12,6 @@ import { TimeTrialComponent } from './games/time-trial/time-trial.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EndGameComponent } from './games/end-game/end-game.component';
-import { I18nPipe } from '../shared/pipes/i18n.pipe';
 
 let components : any[] = [
   HomeComponent,
@@ -30,7 +29,6 @@ let matModules : any[]=[
     EndGameComponent
   ],
   imports: [
-    I18nPipe,
     CommonModule,
     RouterModule,
     ComponentsModule,

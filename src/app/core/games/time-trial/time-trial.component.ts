@@ -8,12 +8,10 @@ import { Map } from 'src/app/shared/interfaces/Map.interface';
 import { MapService } from 'src/app/shared/services/map/map.service';
 import { FormControl } from '@angular/forms';
 import { MapDataService } from 'src/app/shared/services/map-data/map-data.service';
-import { Locale_I18n } from 'src/app/shared/interfaces/locale_i18n.interface';
 import { replaceSpecialChars } from 'src/app/shared/utils/string.factory';
 import { colorArea } from 'src/app/shared/components/map-generic/mapColorationUtils/colorArea';
 import { AreaStatus } from 'src/app/shared/components/map-generic/mapColorationUtils/AreaStatus.enum';
 import { SnackbarService } from 'src/app/shared/services/snackbar.service';
-import { I18nService } from 'src/app/shared/services/i18n/i18n.service';
 import { Observable, of } from 'rxjs';
 
 @Component({
@@ -40,7 +38,6 @@ export class TimeTrialComponent implements OnInit {
     private route: ActivatedRoute,
     private snackbarService: SnackbarService,
     private mapDataService: MapDataService,
-    private i18nService: I18nService,
     @Inject(LOCALE_ID) public locale: string) { }
 
   ngOnInit(): void {
@@ -81,7 +78,7 @@ export class TimeTrialComponent implements OnInit {
 
   onInputChange() {
     const currentInput = replaceSpecialChars(this.userInput.value ?? "")
-    const result = this.originList.find(e => this.getLocaleFromI18n(e.name)?.find(el => replaceSpecialChars(el) === currentInput));
+    const result = this.originList.find(e => e.label.find(el => replaceSpecialChars(el) === currentInput));
 
     // if no corresponding element in origin list then nothing happens
     if (!result) return;
@@ -94,7 +91,7 @@ export class TimeTrialComponent implements OnInit {
     if (this.extendedNameExist(currentInput, result)) return;
 
     // If already found then error message
-    this.snackbarService.addMessage({ message: $localize`:@@time-trial-area-already-found:You've already found '${this.i18nService.getCurrentLocal(result.name)[0]}'`, acceptButton: "Okay", options: { panelClass: ["error"], duration: 2000 } })
+    this.snackbarService.addMessage({ message: $localize`:@@time-trial-area-already-found:You've already found '${result.label[0]}'`, acceptButton: "Okay", options: { panelClass: ["error"], duration: 2000 } })
     this.clearInput();
 
   }
@@ -120,13 +117,10 @@ export class TimeTrialComponent implements OnInit {
     var regex = new RegExp('^' + sanitizedName + '.+');
     return this.toFindList.find(e => {
       if (found.id == e.id) return false; // if same line then skip. Cannot happen because supposedly remove fro toFindList
-      return this.getLocaleFromI18n(e.name).find(el => replaceSpecialChars(el).match(regex));
+      return e.label.find(el => replaceSpecialChars(el).match(regex));
     });
   }
 
-  getLocaleFromI18n(data: Locale_I18n): string[] {
-    return data[this.currentLanguage] ? data[this.currentLanguage] : data['en-US'];
-  }
   clearInput() {
     this.userInput.reset("");
   }

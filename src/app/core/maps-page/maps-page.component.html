@@ -20,7 +20,7 @@
 <div id="map-tiles-container" class=" ">
   <ng-container *ngFor="let tag of mapTagList$ | async">
     <div *ngIf="isTagFiltered(tag)" class="map-tiles-category-container">
-      <span class="font-light capitalize text-xs">{{ tag.displayName | i18n }}</span>
+      <span class="font-light capitalize text-xs">{{ tag.displayName }}</span>
       <div *ngIf="tagHasMap(tag,(mapGroupList$ | async) ?? []) else noMapForTag" class="flex gap-2 flex-wrap">
         <ng-container *ngFor="let entry of mapGroupList$ | async">
           <app-map-tile *ngIf="entryHasTag(entry,tag.id)" [mapGroup]="entry"
@@ -28,7 +28,7 @@
         </ng-container>
       </div>
       <ng-template #noMapForTag>
-        <span i18n="@@map-no-map-for-tag">No map for tag :</span><span>{{ tag.displayName | i18n }}</span>
+        <span i18n="@@map-no-map-for-tag">No map for tag :</span><span>{{ tag.displayName }}</span>
       </ng-template>
     </div>
   </ng-container>

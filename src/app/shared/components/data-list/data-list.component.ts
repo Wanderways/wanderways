@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, IterableDiffers, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 
 import { MapData } from '../../interfaces/MapData.interface';
 
@@ -16,7 +16,7 @@ export class DataListComponent implements OnInit {
   @Input('currentSelected') currentSelected: MapData | undefined = undefined;
   @Output('onSelectedRow') selectedRowEmmitter: EventEmitter<MapData> = new EventEmitter<MapData>();
 
-  constructor(private iterableDiffers: IterableDiffers) { }
+  constructor() { }
   ngOnInit(): void { }
 
   ngOnChanges(simpleChanges: SimpleChanges) {

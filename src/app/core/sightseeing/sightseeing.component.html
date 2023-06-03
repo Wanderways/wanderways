@@ -17,9 +17,9 @@
         <div class="flex items-end z-30 mb-4 ">
           <div class="flex items-center">
             <img class="flag" src="{{observables.mapGroup.mapFlagUrl}}"
-              alt="{{observables.mapGroup.mapDisplayName | i18n}} flag">
+              alt="{{observables.mapGroup.mapDisplayName}} flag">
             <h1 class="mx-4 gap-4 text-2xl">
-              {{observables.mapGroup.mapDisplayName | i18n}}
+              {{observables.mapGroup.mapDisplayName}}
             </h1>
             <svg class="mx-4 flex gap-4 items-center" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"
               fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,8 +31,8 @@
         </div>
       </div>
       <div class="flex mt-2">
-        <button (click)="onPlay(observables.selectedMap)" id="play-button"
-          class="px-4 py-2 rounded" i18n="@@play">Play</button>
+        <button (click)="onPlay(observables.selectedMap)" id="play-button" class="px-4 py-2 rounded"
+          i18n="@@play">Play</button>
       </div>
       <form class="sub-maps gap-2 mt-2" style="z-index:2;">
         <p><span i18n="@@selected-map">Selected map</span> :</p>
@@ -40,8 +40,7 @@
           <div *ngFor="let map of observables.maps" class="button-select-map">
             <input type="radio" id="{{map.id}}" name="selection" value="{{map.id}}" (click)="selectedMap$.next(map)"
               [checked]="observables.selectedMap.id === map.id">
-            <label for="{{map.id}}" [class.selected]="observables.selectedMap.id === map.id">{{map.displayName |
-              i18n}}</label>
+            <label for="{{map.id}}" [class.selected]="observables.selectedMap.id === map.id">{{map.displayName}}</label>
           </div>
         </div>
 

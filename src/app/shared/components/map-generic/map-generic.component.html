@@ -1,4 +1,4 @@
-<ng-container *ngIf="loadedMap !== undefined; else loading">
+<ng-container *ngIf="loadedMap; else loading">
 
   <svg #mapRef id="map-container" [class.visible-border]="visibleBorder" [attr.xlmns]="loadedMap.xlmns"
     attr.viewBox="{{ loadedMap.viewBox.x }} {{ loadedMap.viewBox.y }} {{loadedMap.viewBox.width}} {{ loadedMap.viewBox.height }}"
@@ -37,13 +37,13 @@
 <div class="consultation  bg-dark {{consultationSide}}" *ngIf="canCurrentSelectedBeDisplayed(currentSelected)"
   (mouseenter)="mouseEnterConsultation()">
   <div class="label" i18n="@@name">Name</div>
-  <div class="value">{{ currentSelected!.name | i18n}}</div>
+  <div class="value">{{ currentSelected!.label}}</div>
   <hr>
   <div class="label" i18n="@@flag">Flag</div>
-  <img class="flag" src="{{ currentSelected!.flag_url }}" alt="Flag of {{ currentSelected!.name | i18n}}">
+  <img class="flag" src="{{ currentSelected!.flag_url }}" alt="Flag of {{ currentSelected!.label}}">
   <hr>
   <div class="label" i18n="@@main-city">Main city</div>
-  <div class="value">{{ currentSelected!.capital | i18n}}</div>
+  <div class="value">{{ currentSelected!.capital}}</div>
 
 </div>
 

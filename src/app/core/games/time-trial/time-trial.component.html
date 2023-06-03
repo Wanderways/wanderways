@@ -1,8 +1,7 @@
 <div class="title-tile">
   <div class="flex flex-col gap-1 flex-wrap">
     <span class="text-xl font-extralight">{{
-      (currentMap$ | async)?.displayName | i18n
-      }}</span>
+      (currentMap$ | async)?.displayName }}</span>
     <span class="text-base font-thin" i18n="@@game-time-trial">Time trial</span>
   </div>
   <img *ngIf="mobileDisplay" (click)="displaySideMenu=true" src="assets/icons/open-sidemenu.svg" alt="Open sidemenu"
