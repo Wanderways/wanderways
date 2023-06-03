@@ -1,6 +1,6 @@
 {
   "name": "wanderways",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -51,6 +51,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "karma-viewport": "^1.0.9",
     "postcss": "^8.4.6",
-    "typescript": "~4.8.4"
+    "typescript": "~4.8.4",
+    "git-conventional-commits": "^2.6.5"
   }
 }
