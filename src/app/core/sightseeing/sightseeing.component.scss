@@ -20,6 +20,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center 20%;
+      background-attachment: fixed;
+
     }
 
     .thumbnail-filter {
@@ -58,7 +60,7 @@
       }
     }
 
-    #play-button{
+    #play-button {
       background-image: $gradient-candy;
     }
 
@@ -83,7 +85,8 @@
             border-left: 1px solid #CCC;
             cursor: pointer;
             z-index: 90;
-            &.selected{
+
+            &.selected {
               background-image: $gradient-violeta;
             }
           }
@@ -107,7 +110,8 @@
       }
 
     }
-    app-map-generic{
+
+    app-map-generic {
       max-height: 90vh;
     }
   }
