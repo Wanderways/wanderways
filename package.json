@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --localize",
     "watch": "ng build --watch --configuration development",
     "en": "ng serve --port 4200",
     "fr": "ng serve --configuration=fr-FR --port 4201",
