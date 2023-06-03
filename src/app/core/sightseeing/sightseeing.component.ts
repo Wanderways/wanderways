@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog as MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SelectGamemodeDialogComponent } from 'src/app/shared/components/dialogs/select-gamemode-dialog/select-gamemode-dialog.component';
 
 import { HeaderDisplayService } from 'src/app/shared/services/header-display.service';
 import { MapData } from 'src/app/shared/interfaces/MapData.interface';
@@ -10,7 +9,7 @@ import { MapGroupService } from 'src/app/shared/services/map-group/map-group.ser
 import { Map } from 'src/app/shared/interfaces/Map.interface';
 import { MapService } from 'src/app/shared/services/map/map.service';
 import { Observable, of, Subject } from 'rxjs';
-import { tap, switchMap, shareReplay } from 'rxjs/operators';
+import { tap, switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-sightseeing',
@@ -58,14 +57,7 @@ export class SightseeingComponent implements OnInit {
   }
 
 
-  onPlay(selectedMap: Map | undefined, mapGroup: MapGroup | undefined): void {
-    this.dialog.open(SelectGamemodeDialogComponent, {
-      minWidth: '50vw',
-      data: { selectedMap: selectedMap, mapGroup: mapGroup }
-    }).afterClosed().subscribe((data?: { mapId: string, gameId: string }) => {
-      if (data) {
-        this.router.navigate(["/game/" + data.gameId], { queryParams: { mapId: data.mapId } })
-      }
-    });
+  onPlay({ id }: Map): void {
+    this.router.navigate(["/game/time-trial"], { queryParams: { mapId: id } })
   }
 }

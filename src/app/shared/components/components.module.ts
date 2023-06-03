@@ -5,7 +5,6 @@ import { MapTileComponent } from './map-tile/map-tile.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TagDisplayerComponent } from './tag-displayer/tag-displayer.component';
 import { RouterModule } from '@angular/router';
-import { DialogsModule } from './dialogs/dialogs.module';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TimerComponent } from './timer/timer.component';
 import { MapGenericComponent } from './map-generic/map-generic.component';
@@ -30,12 +29,10 @@ const components : any[] = [
   imports: [
     I18nPipe,
     CommonModule,
-    RouterModule,
-    DialogsModule
+    RouterModule
   ],
   exports:[
-    ...components,
-    DialogsModule
+    ...components
   ]
 })
 export class ComponentsModule { }
