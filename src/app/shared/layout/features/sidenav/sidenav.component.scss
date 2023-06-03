@@ -30,9 +30,16 @@ app-side-menu {
   nav.sidenav-content {
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     hr {
-      margin: 40px 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      &:first-of-type {
+        margin-top: auto;
+      }
+
       opacity: 0.2;
     }
   }

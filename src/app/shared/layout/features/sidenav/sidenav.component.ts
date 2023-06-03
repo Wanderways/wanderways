@@ -28,49 +28,50 @@ const navLink: NavLink[] = [
   },
   {
     icon: "./assets/icons/binoculars.svg",
+    link: "/maps",
     label: $localize`:@@sidenav-maps:Maps`,
     disabled: false,
   },
-  {
-    link: "/maps",
-    label: $localize`:@@sidenav-all-maps:All maps`,
-    disabled: false
-  },
-  {
-    link: "/favorites-map",
-    label: $localize`:@@sidenav-favorites-map:Favorites`,
-    disabled: true
-  },
-  {
-    icon: "./assets/icons/flag.svg",
-    label: $localize`:@@sidenav-games:Games`,
-    disabled: false,
-  },
-  {
-    link: "/games",
-    label: $localize`:@@sidenav-all-games:All games`,
-    disabled: true
-  },
-  {
-    link: "/favorites-game",
-    label: $localize`:@@sidenav-favorites-game:Favorites`,
-    disabled: true
-  },
-  {
-    icon: "./assets/icons/bookmark.svg",
-    label: $localize`:@@sidenav-news-and-stuff:News and stuff`,
-    disabled: false,
-  },
-  {
-    link: "/last-news",
-    label: $localize`:@@sidenav-last-news:Last news`,
-    disabled: true
-  },
-  {
-    link: "/roadmap",
-    label: $localize`:@@sidenav-roadmap:Roadmap`,
-    disabled: true
-  }
+  // {
+  //   link: "/maps",
+  //   label: $localize`:@@sidenav-all-maps:All maps`,
+  //   disabled: false
+  // },
+  // {
+  //   link: "/favorites-map",
+  //   label: $localize`:@@sidenav-favorites-map:Favorites`,
+  //   disabled: true
+  // },
+  // {
+  //   icon: "./assets/icons/flag.svg",
+  //   label: $localize`:@@sidenav-games:Games`,
+  //   disabled: false,
+  // },
+  // {
+  //   link: "/games",
+  //   label: $localize`:@@sidenav-all-games:All games`,
+  //   disabled: true
+  // },
+  // {
+  //   link: "/favorites-game",
+  //   label: $localize`:@@sidenav-favorites-game:Favorites`,
+  //   disabled: true
+  // },
+  // {
+  //   icon: "./assets/icons/bookmark.svg",
+  //   label: $localize`:@@sidenav-news-and-stuff:News and stuff`,
+  //   disabled: false,
+  // },
+  // {
+  //   link: "/last-news",
+  //   label: $localize`:@@sidenav-last-news:Last news`,
+  //   disabled: true
+  // },
+  // {
+  //   link: "/roadmap",
+  //   label: $localize`:@@sidenav-roadmap:Roadmap`,
+  //   disabled: true
+  // }
 ];
 
 const footerLinks: NavLink[] = [
