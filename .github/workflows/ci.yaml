@@ -19,11 +19,12 @@ jobs:
     - name: Calculating current version
       id: version
       run: |
-        echo "::set-output name=new_version::$(npx git-conventional-commits version | tr -d '\n')"
+        new_version=$(npx git-conventional-commits version | tr -d '\n')
+        echo "new-version=$new_version" >> "$GITHUB_OUTPUT"
     - name: Putting version number in files
       run: |
-         sed -Ei "s/(\"version\": \").*(\")/\1${{ steps.version.outputs.new_version }}\2/g" package.json
-         sed -Ei "s/(version: \").*(\")/\1${{ steps.version.outputs.new_version }}\2/g" src/environments/environment.prod.ts
+         sed -Ei "s/(\"version\": \").*(\")/\1${{ steps.version.outputs.new-version }}\2/g" package.json
+         sed -Ei "s/(version: \").*(\")/\1${{ steps.version.outputs.new-version }}\2/g" src/environments/environment.prod.ts
     - name: Setting up git config
       env:
         GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
@@ -35,11 +36,12 @@ jobs:
       run: |
         git add src/environments/environment.prod.ts
         git add package.json
-        git commit -m "ci: Set to version ${{ steps.version.outputs.new_version }}"
+        git add package-lock.json
+        git commit -m "ci: Set to version ${{ steps.version.outputs.new-version }}"
         git push
     - name: Tagging version
       run: |
-        git tag "v${{ steps.version.outputs.new_version }}"
+        git tag "v${{ steps.version.outputs.new-version }}"
         git push --tags
   firebase-deploy:
     needs: setting-versionning

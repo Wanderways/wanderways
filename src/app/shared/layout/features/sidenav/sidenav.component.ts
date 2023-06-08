@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SidenavService } from '../../data-access/sidenav.service';
 import { NavLink } from '../../utils/NavLink.interface';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,7 +9,7 @@ import { NavLink } from '../../utils/NavLink.interface';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent implements OnInit {
-
+  current_version = environment.version;
   navLinks: NavLink[] = navLink;
   footerLinks: NavLink[] = footerLinks;
 
