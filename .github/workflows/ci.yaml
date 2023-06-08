@@ -34,7 +34,7 @@ jobs:
     - name: Commiting changes
       run: |
         git add src/environments/environment.prod.ts
-        git package.json
+        git add package.json
         git commit -m "ci: Set to version ${{ steps.version.outputs.new_version }}"
         git push
     - name: Tagging version
