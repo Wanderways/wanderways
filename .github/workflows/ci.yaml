@@ -6,10 +6,26 @@ on:
     - main
 
 jobs:
-  firebase-deploy:
-
+  setting-versionning:
+    if: "!contains(github.event.head_commit.message, 'Set to version')"
     runs-on: ubuntu-latest
-
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@master
+      with:
+        node-version: 18
+    - run: npm install
+    - run: |
+        new_version=$(npx git-conventional-commits version | tr -d '\n')
+        sed -Ei "s/(version: \").*(\")/\1$new_version\2/g" src/environments/environment.prod.ts
+        git add src/environments/environment.prod.ts
+        git commit -m "Set to version $new_version"
+        git tag "v$new_version"
+        git push --tags
+        git push
+  firebase-deploy:
+    needs: setting-versionning
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
