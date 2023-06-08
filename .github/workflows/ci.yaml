@@ -22,6 +22,7 @@ jobs:
         echo "::set-output name=new_version::$(npx git-conventional-commits version | tr -d '\n')"
     - name: Putting version number in files
       run: |
+         sed -Ei "s/(\"version\"": \").*(\")/\1${{ steps.version.outputs.new_version }}\2/g" package.json
          sed -Ei "s/(version: \").*(\")/\1${{ steps.version.outputs.new_version }}\2/g" src/environments/environment.prod.ts
     - name: Setting up git config
       env:
