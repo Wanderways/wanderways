@@ -24,7 +24,7 @@ jobs:
     - name: Setting up git config
       env:
         GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
-        GIT_USERNAME: ${{ secrets.GIT_EMAIL }}
+        GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
       run: |
         git config --global user.email "$GIT_EMAIL"
         git config --global user.name "$GIT_USERNAME"
