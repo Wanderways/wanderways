@@ -18,7 +18,8 @@ jobs:
       run: npm install
     - name: Calculating current version
       id: version
-      run: echo "::set-output name name=new_version=$(npx git-conventional-commits version | tr -d '\n')"
+      run: |
+        echo "::set-output name=new_version::$(npx git-conventional-commits version | tr -d '\n')"
     - name: Debug
       run: |
         echo ${{ steps.version.outputs.new_version }}
