@@ -19,7 +19,10 @@ jobs:
     - name: Calculating current version
       run: new_version=$(npx git-conventional-commits version | tr -d '\n')
     - name: Debug
-      run: echo $new_version
+      run: |
+        echo $new_version
+        npx git-conventional-commits version
+        git tag
     - name: Putting version number in files
       run: |
          sed -Ei "s/(version: \").*(\")/\1$new_version\2/g" src/environments/environment.prod.ts
