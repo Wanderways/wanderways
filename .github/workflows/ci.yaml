@@ -14,15 +14,29 @@ jobs:
     - uses: actions/setup-node@master
       with:
         node-version: 18
-    - run: npm install
-    - run: |
-        new_version=$(npx git-conventional-commits version | tr -d '\n')
-        sed -Ei "s/(version: \").*(\")/\1$new_version\2/g" src/environments/environment.prod.ts
+    - name: Install dependencies
+      run: npm install
+    - name: Calculating current version
+      run: new_version=$(npx git-conventional-commits version | tr -d '\n')
+    - name: Putting version number in files
+      run: |
+         sed -Ei "s/(version: \").*(\")/\1$new_version\2/g" src/environments/environment.prod.ts
+    - name: Setting up git config
+      env:
+        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+        GIT_USERNAME: ${{ secrets.GIT_EMAIL }}
+      run: |
+        git config --global user.email "$GIT_EMAIL"
+        git config --global user.name "$GIT_USERNAME"
+    - name: Commiting changes
+      run: |
         git add src/environments/environment.prod.ts
-        git commit -m "Set to version $new_version"
+        git commit -m "ci: Set to version $new_version"
+        git push
+    - name: Tagging version
+      run: |
         git tag "v$new_version"
         git push --tags
-        git push
   firebase-deploy:
     needs: setting-versionning
     runs-on: ubuntu-latest
@@ -31,8 +45,10 @@ jobs:
     - uses: actions/setup-node@master
       with:
         node-version: 18
-    - run: npm install
-    - run: npm run build
+    - name: Install dependencies
+      run: npm install
+    - name: Building
+      run: npm run build
     - uses: w9jds/firebase-action@master
       with:
         args: deploy --only hosting
