@@ -17,15 +17,16 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Calculating current version
-      run: new_version=$(npx git-conventional-commits version | tr -d '\n')
+      id: version
+      run: echo "::set-output name name=new_version=$(npx git-conventional-commits version | tr -d '\n')"
     - name: Debug
       run: |
-        echo $new_version
+        echo ${{ steps.version.outputs.new_version }}
         npx git-conventional-commits version
         git tag
     - name: Putting version number in files
       run: |
-         sed -Ei "s/(version: \").*(\")/\1$new_version\2/g" src/environments/environment.prod.ts
+         sed -Ei "s/(version: \").*(\")/\1${{ steps.version.outputs.new_version }}\2/g" src/environments/environment.prod.ts
     - name: Setting up git config
       env:
         GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
@@ -36,11 +37,11 @@ jobs:
     - name: Commiting changes
       run: |
         git add src/environments/environment.prod.ts
-        git commit -m "ci: Set to version $new_version"
+        git commit -m "ci: Set to version ${{ steps.version.outputs.new_version }}"
         git push
     - name: Tagging version
       run: |
-        git tag "v$new_version"
+        git tag "v${{ steps.version.outputs.new_version }}"
         git push --tags
   firebase-deploy:
     needs: setting-versionning
