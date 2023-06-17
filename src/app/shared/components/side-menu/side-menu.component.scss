@@ -124,7 +124,7 @@
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $small-screen) {
   :host {
     --sidenav-width: 324px;
   }

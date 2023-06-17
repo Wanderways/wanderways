@@ -1,6 +1,6 @@
 <header id="header" #nav [style.position]="position$ | async" [class]="position$ | async" [class.isScrolled]="isScrolled">
   <div id="header-content">
-    <div id="open-sidenav-button-container" matRipple>
+    <div id="open-sidenav-button-container">
       <img id="open-sidenav-button" [style.visibility]="(sidenavService.isDisplayed$ | async) ? 'hidden' : ''"
         (click)="sidenavService.toggleDisplayed()" src="./assets/icons/menu.svg" alt="menu button icon"
         class="svg-current-color header-button" />

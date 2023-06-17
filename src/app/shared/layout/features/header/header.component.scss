@@ -102,9 +102,15 @@
 
 
 @media screen and (max-width : $large-screen) {
-  #header{
+  #header {
     #header-content {
-      margin: 15px 35px;
+      margin: 25px 23px;
     }
+  }
+}
+
+@media screen and (max-width : $small-screen) {
+  #open-sidenav-button {
+    height: 17px;
   }
 }
