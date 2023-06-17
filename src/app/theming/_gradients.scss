@@ -9,3 +9,10 @@ $gradient-candy :linear-gradient(225deg,
 $gradient-violeta :linear-gradient(45deg,
   var(--violetta-primary) 0%,
   var(--violetta-secondary) 100%);
+
+$radial-gradient-dark : radial-gradient(35% 35% at 15% 85%,
+  var(--theme-dark-background-dark) 0%,
+  rgba(0, 0, 0, 0) 100%),
+radial-gradient(60% 60% at 75% 25%,
+  var(--theme-dark-background-dark) 0%,
+  rgba(0, 0, 0, 0) 100%);

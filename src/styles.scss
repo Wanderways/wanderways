@@ -101,20 +101,16 @@ html {
   }
 }
 
-.bg-dark {
-  background-color: var(--theme-dark-background-dark);
-}
-
-
 #app-background {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-image: $gradient-dark;
-  background-color: var(--light-background);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-image: $radial-gradient-dark;
+  background-color: var(--theme-dark-background-light);
+  z-index: -1;
 }
 
 @include customMixins.scrollbar('custom-scrollbar', false);
