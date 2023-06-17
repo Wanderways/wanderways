@@ -29,11 +29,12 @@
 
 :host {
   --sidenav-width: 244px;
+  display: block;
   flex: 0 0 auto;
   z-index: 1000;
   top: 0;
   height: 100vh;
-  background-color: var(--dark-background);
+  background-color: #2E4766;
   @include customMixins.scrollbar('#side-menu-container', false);
 
   #side-menu-container {
@@ -122,22 +123,6 @@
   }
 }
 
-
-/* if backdrop support: blurred */
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  :host {
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-  }
-
-}
-
-/* else */
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  :host {
-    background-color: var(--dark-background);
-  }
-}
 
 @media screen and (min-width: 600px) {
   :host {

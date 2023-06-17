@@ -1,8 +1,6 @@
 @import "/src/app/theming/breakpoints";
 
 app-side-menu {
-  background-color: rgba($color: #263D59, $alpha: 0.8);
-
   header {
     border-radius: 0.5rem;
     display: flex;
@@ -50,7 +48,8 @@ app-side-menu {
       margin-bottom: 14px;
     }
   }
-  .version{
+
+  .version {
     color: #ffffff88;
     font-size: 0.8rem;
   }
