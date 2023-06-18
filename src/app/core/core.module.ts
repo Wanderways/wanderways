@@ -12,6 +12,7 @@ import { TimeTrialComponent } from './games/time-trial/time-trial.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EndGameComponent } from './games/end-game/end-game.component';
+import { MapTileComponent } from '../shared/components/map-tile/map-tile.component';
 
 let components : any[] = [
   HomeComponent,
@@ -34,6 +35,7 @@ let matModules : any[]=[
     ComponentsModule,
     MatExpansionModule,
     ReactiveFormsModule,
+    MapTileComponent,
     ...matModules
   ]
 })

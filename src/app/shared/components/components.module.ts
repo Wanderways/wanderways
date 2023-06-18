@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageSelectorComponent, FilterLanguagePipe } from './language-selector/language-selector.component';
-import { MapTileComponent } from './map-tile/map-tile.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TagDisplayerComponent } from './tag-displayer/tag-displayer.component';
 import { RouterModule } from '@angular/router';
@@ -12,7 +11,6 @@ import { DataListComponent } from './data-list/data-list.component';
 
 const components: any[] = [
   LanguageSelectorComponent,
-  MapTileComponent,
   SideMenuComponent,
   TagDisplayerComponent,
   ProgressBarComponent,
