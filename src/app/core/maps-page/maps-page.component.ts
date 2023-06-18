@@ -14,11 +14,11 @@ import { Observable, of } from 'rxjs';
 })
 export class MapsPageComponent implements OnInit {
 
-  tagGroupList$ : Observable<TagGroup[]> = of([]);
+  tagGroupList$ : Observable<TagGroup[]> = this.tagGroupService.getTagGroup$();
 
-  mapTagList$ : Observable<Tag[]> = of([]);
+  mapTagList$ : Observable<Tag[]> = this.mapTagsService.getTags$();
 
-  mapGroupList$ : Observable<MapGroup[]> = of([]);
+  mapGroupList$ : Observable<MapGroup[]> = this.mapGroupService.getMapGroup$();
 
   displayFilter : boolean = false;
   tagFilterList : Tag[]=[];
@@ -26,15 +26,6 @@ export class MapsPageComponent implements OnInit {
   constructor(private mapGroupService : MapGroupService,
               public mapTagsService : MapTagsService,
               private tagGroupService : TagGroupService) {}
-
-  /**
-   * On component init
-   */
-  ngOnInit(): void {
-    this.mapGroupList$ = this.mapGroupService.getMapGroup$();
-    this.tagGroupList$ = this.tagGroupService.getTagGroup$();
-    this.mapTagList$ = this.mapTagsService.getTags$();
-  }
 
   /**
    * Checks wheter or not a map has a given tag
