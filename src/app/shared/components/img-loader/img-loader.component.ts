@@ -38,7 +38,6 @@ export class ImgLoaderComponent {
    * @returns the transformed image url
    */
   private generateSmallUrl(imgUrl: string): string {
-    let index = /(\w|-)*\.(jpg|.jpeg|png)/.exec(imgUrl)?.index;
-    return imgUrl.slice(0, index) + "small-" + imgUrl.slice(index)
+    return imgUrl.replace(/(S|M|L|XL)\.(jpg|jpeg|png|webp)/, "XS.$2")
   }
 }
