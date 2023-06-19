@@ -12,6 +12,7 @@ import { Component, Input, HostBinding, ElementRef, ViewChild, ViewEncapsulation
 
 export class ImgLoaderComponent {
   @Input() src!: string;
+  @Input() srcset: string = "";
   @Input() alt: string = "";
 
   @ViewChild("full_img", { static: true }) full_img!: ElementRef<HTMLImageElement>;
