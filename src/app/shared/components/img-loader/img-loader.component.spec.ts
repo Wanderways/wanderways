@@ -25,7 +25,7 @@ describe('ImgLoaderComponent', () => {
 
   describe("when the image url exists", () => {
     beforeEach(() => {
-      component.setSrc("/assets/tests/S.jpg");
+      component.setSrc = "/assets/tests/S.jpg";
       fixture.detectChanges();
     });
 

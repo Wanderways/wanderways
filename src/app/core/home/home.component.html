@@ -5,8 +5,8 @@
     <img src="./assets/world.png" alt="Scrolling map part 3">
   </div>
 </div>
-<section>
-  <h1 id="home-welcome">
+<section id="welcome">
+  <h1>
     <ng-container i18n="@@home-welcome-to">
       Welcome to
     </ng-container>
@@ -14,4 +14,27 @@
     Wanderways
   </h1>
   <span id="home-catch-phrase" i18n="@@home-catch-phrase">To learn maps the fun way</span>
+</section>
+<section id="weekly-selection">
+  <h1>
+    <img src="./assets/icons/binoculars.svg">
+    <ng-container i18n="@@home-weekly-selection">
+      Weekly selection
+    </ng-container>
+  </h1>
+  <div class="map-cards">
+    <article *ngFor="let map of mapList$ | async" app-map-tile [map]="map"></article>
+  </div>
+</section>
+
+<section id="most-popular">
+  <h1>
+    <img src="./assets/icons/flag.svg">
+    <ng-container i18n="@@home-most-popular">
+      Most popular
+    </ng-container>
+  </h1>
+  <div class="map-cards">
+    <article *ngFor="let map of mapList$ | async" app-map-tile [map]="map"></article>
+  </div>
 </section>

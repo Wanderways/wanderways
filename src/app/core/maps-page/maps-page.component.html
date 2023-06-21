@@ -16,21 +16,7 @@
     (currentTagList)="currentTagListHandler($event)"></app-tag-displayer>
 </div>
 
-<!-- Map tiles container -->
-<div id="map-tiles-container">
-  <ng-container *ngFor="let tag of mapTagList$ | async">
-    <div *ngIf="isTagFiltered(tag)" class="map-tiles-category-container">
-      <span>{{ tag.displayName }}</span>
-      <div *ngIf="tagHasMap(tag,(mapGroupList$ | async) ?? []) else noMapForTag" class="tag-group">
-        <ng-container *ngFor="let entry of mapGroupList$ | async">
-          <app-map-tile *ngIf="entryHasTag(entry,tag.id)" [mapGroup]="entry"
-            [available]="entry.available"></app-map-tile>
-        </ng-container>
-      </div>
-      <ng-template #noMapForTag>
-        <span i18n="@@map-no-map-for-tag">No map for tag :</span><span>{{ tag.displayName }}</span>
-      </ng-template>
-    </div>
-  </ng-container>
-</div>
-<app-map-generic></app-map-generic>
+<!-- @TODO temporary simplification -->
+<ng-container *ngFor="let map of mapList$ | async">
+  <article app-map-tile  [map]="map"></article>
+</ng-container>

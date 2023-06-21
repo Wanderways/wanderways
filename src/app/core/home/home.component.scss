@@ -1,3 +1,4 @@
+@use "/src/app/theming/customMixins" as customMixins;
 @import "/src/app/theming/breakpoints";
 @import "/src/app/theming/gradients";
 
@@ -6,9 +7,10 @@
   flex-direction: column;
   flex: 1 0 auto;
   width: 100%;
-  z-index: 1;
+  z-index: 0;
 
-  #home-rotating-maps-container {
+  div#home-rotating-maps-container {
+    z-index: 0;
     position: absolute;
     pointer-events: none;
     top: 0;
@@ -18,7 +20,7 @@
     -webkit-user-select: none;
     user-select: none;
 
-    #home-rotating-maps {
+    div#home-rotating-maps {
       display: flex;
       width: 200vw;
       transform: rotate(20deg) translateY(-20px);
@@ -34,41 +36,67 @@
   }
 
   section {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    padding: 4rem 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding-top: 4rem;
+    padding-left: 70px;
     z-index: 1;
 
-    #home-welcome {
+
+    h1 {
       font-family: 'Outfit';
       font-style: normal;
-      font-weight: 500;
-      line-height: 98%;
-      font-size: 5rem;
+      display: flex;
+
+      img {
+        display: inline;
+        height: auto;
+        width: 40px;
+        filter: brightness(100) contrast(0.5);
+        margin-right: 1rem;
+      }
     }
 
-    #home-catch-phrase {
-      margin-top: 1.5rem;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 1.25rem;
-      line-height: 30px;
-      letter-spacing: 0.03rem;
+    &#welcome {
+      padding-right: 70px;
+      padding-bottom: 4rem;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      z-index: 1;
+
+      h1 {
+        font-weight: 500;
+        line-height: 98%;
+        font-size: 5rem;
+      }
+
+      span {
+        margin-top: 1.5rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 30px;
+        letter-spacing: 0.03rem;
+      }
     }
 
 
-    #home-button-see-maps {
-      padding: 0.75rem 1rem;
-      border-radius: 0.5rem;
-      color: #FFFFFF;
-      align-self: flex-end;
-      text-transform: uppercase;
+  @include customMixins.scrollbar('.map-cards', false);
+    div.map-cards {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
     }
 
+    &#most-popular,&#weekly-selection {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+    }
 
   }
 
@@ -87,6 +115,7 @@
 @media screen and (max-width : $medium-screen) {
   section {
     padding: 2rem 45px !important;
+
     #home-welcome {
       font-size: 3rem !important;
     }
@@ -100,14 +129,18 @@
 
 @media screen and (max-width : $small-screen) {
   section {
-    padding: 1.5rem 23px !important;
-    #home-welcome {
-      font-size: 2.40rem !important;
-    }
+    padding: 1.5rem 0 !important;
+    padding-left: 23px !important;
 
-    #home-catch-phrase {
-      margin-top: 0.5rem !important;
-      font-size: 1rem !important;
+    &#welcome {
+      h1 {
+        font-size: 2.40rem !important;
+      }
+
+      span {
+        margin-top: 0.5rem !important;
+        font-size: 1rem !important;
+      }
     }
   }
 }

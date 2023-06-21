@@ -11,8 +11,8 @@ import { Component, Input, HostBinding, ElementRef, ViewChild, ViewEncapsulation
 })
 
 export class ImgLoaderComponent {
-  private src!: string;
-  @Input("src") setSrc(src: string){
+  protected src!: string;
+  @Input("src") set setSrc(src: string) {
     this.src = src;
     this.smallBackgroundImage = `url("${this.generateSmallUrl(this.src)}")`;
     this.full_img.nativeElement.addEventListener("load", (() => { this.imageLoaded = true }).bind(this))

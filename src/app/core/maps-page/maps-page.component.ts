@@ -6,14 +6,16 @@ import { MapTagsService } from 'src/app/shared/services/map-tags/map-tags.servic
 import { TagGroup } from 'src/app/shared/interfaces/tag-group.interface';
 import { TagGroupService } from 'src/app/shared/services/tag-group/tag-group.service';
 import { Observable, of } from 'rxjs';
+import { Map, MapService } from './services/map.service';
 
 @Component({
   selector: 'app-maps-page',
   templateUrl: './maps-page.component.html',
   styleUrls: ['./maps-page.component.scss']
 })
-export class MapsPageComponent implements OnInit {
+export class MapsPageComponent {
 
+  mapList$ : Observable<Map[]> = this.mapService.getMaps$();
   tagGroupList$ : Observable<TagGroup[]> = this.tagGroupService.getTagGroup$();
 
   mapTagList$ : Observable<Tag[]> = this.mapTagsService.getTags$();
@@ -23,7 +25,9 @@ export class MapsPageComponent implements OnInit {
   displayFilter : boolean = false;
   tagFilterList : Tag[]=[];
 
-  constructor(private mapGroupService : MapGroupService,
+  constructor(
+              private mapService : MapService,
+              private mapGroupService : MapGroupService,
               public mapTagsService : MapTagsService,
               private tagGroupService : TagGroupService) {}
 

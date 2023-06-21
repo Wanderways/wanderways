@@ -1,8 +1,10 @@
-<div class="thumbnail-container" [routerLink]="['/sightseeing']" [queryParams]="{'map':mapGroup.
-mapGroupId}">
-    <img class="svg-current-color" src="./assets/maps/map_thumbnail/{{mapGroup.mapGroupId}}.png" alt="Map thumbnail">
-</div>
-<span class="current-color">{{mapGroup.mapDisplayName}}</span>
-<ng-container *ngIf="!available">
-    <div class="map-tile-not-available" i18n="@@map-tile-not-available">Not available yet !</div>
-</ng-container>
+<img-loader src="./assets/thumbnails/{{map?.id}}/S.webp" srcset="./assets/thumbnails/{{map?.id}}/M.webp 2x">
+</img-loader>
+<h1>
+  <img src="./assets/maps/flags/{{map?.id}}/map_flag.svg">
+  <span>{{map?.label}}</span>
+</h1>
+<a>
+  <img src="./assets/icons/pin.svg">
+  <span>Jouer</span>
+</a>
