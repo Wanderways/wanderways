@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed  } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ImgLoaderComponent } from './img-loader.component';
 
@@ -25,15 +25,15 @@ describe('ImgLoaderComponent', () => {
 
   describe("when the image url exists", () => {
     beforeEach(() => {
-      component.src = "./assets/tests/good-img.jpg"
-      component.ngOnInit()
+      component.setSrc("/assets/tests/S.jpg");
       fixture.detectChanges();
     });
 
     it('should set the input url', () => {
-      expect(component.full_img.nativeElement.src).toContain("/assets/tests/good-img.jpg");
-      expect(component.smallBackgroundImage).toContain("small-good-img.jpg");
-      expect(fixture.nativeElement.style.backgroundImage).toContain("small-good-img.jpg");
+      expect(component.full_img.nativeElement.src).toContain("/assets/tests/S.jpg");
+      expect(component.smallBackgroundImage).toContain("XS.jpg");
+      expect(fixture.nativeElement.style.backgroundImage).toContain("XS.jpg");
+
     });
 
     it('should have loaded the full img', () => {

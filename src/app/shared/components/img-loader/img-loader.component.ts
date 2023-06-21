@@ -11,7 +11,12 @@ import { Component, Input, HostBinding, ElementRef, ViewChild, ViewEncapsulation
 })
 
 export class ImgLoaderComponent {
-  @Input() src!: string;
+  private src!: string;
+  @Input("src") setSrc(src: string){
+    this.src = src;
+    this.smallBackgroundImage = `url("${this.generateSmallUrl(this.src)}")`;
+    this.full_img.nativeElement.addEventListener("load", (() => { this.imageLoaded = true }).bind(this))
+  };
   @Input() srcset: string = "";
   @Input() alt: string = "";
 
@@ -23,15 +28,6 @@ export class ImgLoaderComponent {
   imageLoaded = false;
 
   constructor() { }
-
-  ngOnInit() {
-    if (typeof this.src !== "string") {
-      return console.error("A source must be set");
-    }
-
-    this.smallBackgroundImage = `url("${this.generateSmallUrl(this.src)}")`;
-    this.full_img.nativeElement.addEventListener("load", (() => { this.imageLoaded = true }).bind(this))
-  }
 
   /**
    * Take an url such as ./assets/test.jpg and returns ./assets/small-test.jpg
